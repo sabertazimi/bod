@@ -1,0 +1,34 @@
+{
+  "name": "bod",
+  "version": "0.0.1",
+  "description": "Boilerplate CLI App",
+  "bin": {
+    "bod": "bin/bod.js"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "sabertazimi",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "cross-spawn": "^6.0.5",
+    "envinfo": "^7.0.0",
+    "inquirer": "^6.2.2"
+  }
+}

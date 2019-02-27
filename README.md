@@ -1,2 +1,46 @@
-# boi
+# bod
+
 Boilerplate CLI App
+
+## Usage
+
+```bash
+npx bod create
+```
+
+```bash
+Usage: bod <command> [options]
+
+Options:
+  -V, --version                output the version number
+  -h, --help                   output usage information
+
+Commands:
+  create [options] <app-name>  create a new project powered by Create React App and @sabertazimi/react-scripts
+  info                         print debugging information about your environment
+
+  Run bod <command> --help for detailed usage of given command.
+```
+
+### `bod create`
+
+```bash
+Usage: create [options] <app-name>
+
+create a new project powered by Create React App and @sabertazimi/react-scripts
+
+Options:
+  -t, --ts, --typescript  start a new project with TypeScript
+  -h, --help              output usage information
+```
+
+### `bod info`
+
+```bash
+Usage: info [options]
+
+print debugging information about your environment
+
+Options:
+  -h, --help  output usage information
+```
