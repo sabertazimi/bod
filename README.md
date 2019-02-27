@@ -1,11 +1,11 @@
 # bod
 
-Boilerplate CLI App
+Boilerplate CLI App - Create a new project powered by Create React App and @sabertazimi/react-scripts
 
 ## Usage
 
 ```bash
-npx bod create
+npx bod create <app-name> [-t]
 ```
 
 ```bash
