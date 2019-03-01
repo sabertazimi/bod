@@ -1,6 +1,6 @@
 {
   "name": "bod",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Boilerplate CLI App",
   "bin": {
     "bod": "bin/bod.js"
