@@ -10,15 +10,8 @@ program
 program
   .command('create <app-name>')
   .description('create a new project powered by Create React App and @sabertazimi/react-scripts')
-  .option('-t, --ts, --typescript', 'start a new project with TypeScript')
   .action((name) => {
-    let useTypeScript = false;
-
-    if (process.argv.includes('-t') || process.argv.includes('--ts') || process.argv.includes('--typescript')) {
-      useTypeScript = true;
-    }
-
-    require('../lib/create')(name, useTypeScript);
+    require('../lib/create')(name);
   });
 
 program

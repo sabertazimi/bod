@@ -12,12 +12,12 @@ npx bod create <app-name> [-t]
 Usage: bod <command> [options]
 
 Options:
-  -V, --version                output the version number
-  -h, --help                   output usage information
+  -V, --version      output the version number
+  -h, --help         output usage information
 
 Commands:
-  create [options] <app-name>  create a new project powered by Create React App and @sabertazimi/react-scripts
-  info                         print debugging information about your environment
+  create <app-name>  create a new project powered by Create React App and @sabertazimi/react-scripts
+  info               print debugging information about your environment
 
   Run bod <command> --help for detailed usage of given command.
 ```
@@ -30,8 +30,7 @@ Usage: create [options] <app-name>
 create a new project powered by Create React App and @sabertazimi/react-scripts
 
 Options:
-  -t, --ts, --typescript  start a new project with TypeScript
-  -h, --help              output usage information
+  -h, --help  output usage information
 ```
 
 ### `bod info`
