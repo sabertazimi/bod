@@ -1,5 +1,7 @@
 # bod
 
+[![Continuous Integration](https://github.com/sabertazimi/bod/actions/workflows/ci.yml/badge.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
+
 Boilerplate CLI App - Create a new project powered by Create React App and @sabertazimi/react-scripts
 
 ## Usage
