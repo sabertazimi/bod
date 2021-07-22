@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/sabertazimi/bod#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.1.1",
     "commander": "^8.0.0",
     "cross-spawn": "^6.0.5",
     "envinfo": "^7.0.0",
