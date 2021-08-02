@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/sabertazimi/bod/compare/v1.0.0...v1.0.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump version to latest ([e12a33b](https://github.com/sabertazimi/bod/commit/e12a33b0da17400ba5abe8c43aa4e9d196b6bee1))
+
+
+### Building Work
+
+* **deps:** bump chalk from 4.1.1 to 4.1.2 ([a08cd56](https://github.com/sabertazimi/bod/commit/a08cd560344446bdcc5cc6f0376decc5dce3ec2a))
+* **deps:** bump commander from 8.0.0 to 8.1.0 ([68577c4](https://github.com/sabertazimi/bod/commit/68577c49fc0678607b5c71ed4e0da0e756c27f2c))
+
 ## [1.0.0](https://github.com/sabertazimi/bod/compare/v0.5.0...v1.0.0) (2021-08-02)
 
 
