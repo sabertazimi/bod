@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/sabertazimi/bod#readme",
   "dependencies": {
-    "chalk": "^4.1.1",
-    "commander": "^8.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.8.1",
     "inquirer": "^8.1.2"
