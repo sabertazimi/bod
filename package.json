@@ -2,6 +2,10 @@
   "name": "bod",
   "version": "0.5.0",
   "description": "Boilerplate CLI App",
+  "scripts": {
+    "prelease": "standard-version --dry-run -s",
+    "release": "standard-version -s"
+  },
   "bin": {
     "bod": "bin/bod.js"
   },
@@ -27,5 +31,8 @@
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.8.1",
     "inquirer": "^8.1.2"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.1"
   }
 }
