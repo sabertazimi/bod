@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import program from 'commander';
+import { program } from 'commander';
 import chalk from 'chalk';
 import envinfo from 'envinfo';
 import { create } from './index';

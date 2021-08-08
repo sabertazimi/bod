@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 
-async function createCommand(name) {
+async function createCommand(name: string) {
   const command = 'npx';
   const commandArgs = ['create-react-app', name];
 
@@ -10,7 +10,6 @@ async function createCommand(name) {
   ['SIGINT', 'SIGTERM'].forEach(function (sig) {
     process.on(sig, function () {
       console.log(chalk.cyan('\nGracefully shutting down. Please wait...'));
-      devServer.close();
       process.exit();
     });
   });
