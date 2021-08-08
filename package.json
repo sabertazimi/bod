@@ -12,11 +12,12 @@
     "lint:type-check": "tsc --noEmit",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
-    "start": "concurrently \"npm:dev\" \"npm:test:watch\"",
+    "start": "npm run dev",
     "test": "jest -o",
     "test:all": "jest",
     "test:badge": "node scripts/generateJestCoverageBadge.js",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
   },
   "bin": {
     "bod": "dist/bod.js"
