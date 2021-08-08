@@ -59,3 +59,16 @@ typings/
 
 # next.js build output
 .next
+
+.cache/
+build
+dist
+
+# Mac files
+.DS_Store
+
+# Yarn PnP
+.pnp/
+.pnp.js
+
+.vscode/

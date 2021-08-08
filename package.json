@@ -3,23 +3,43 @@
   "version": "1.0.2",
   "description": "Boilerplate CLI App",
   "scripts": {
+    "dev": "ts-node ./lib/cli.ts",
+    "clean": "rimraf ./dist/",
+    "build": "npm run clean && tsc && npm run test:badge",
+    "format": "prettier --write lib/**/*.{ts}",
+    "lint": "npm run lint:style && npm run lint:type-check",
+    "lint:style": "eslint --fix --ext .ts ./lib",
+    "lint:type-check": "tsc --noEmit",
     "prelease": "standard-version --dry-run -s",
-    "release": "standard-version -s"
+    "release": "standard-version -s",
+    "start": "concurrently \"npm:dev\" \"npm:test:watch\"",
+    "test": "jest -o",
+    "test:all": "jest",
+    "test:badge": "node scripts/generateJestCoverageBadge.js",
+    "test:watch": "jest --watch"
   },
   "bin": {
-    "bod": "bin/bod.js"
+    "bod": "dist/cli.js"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "!dist/**/*.test.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git"
   },
   "keywords": [
-    "boilerplate"
+    "boilerplate",
+    "cli",
+    "starter",
+    "typescript"
   ],
-  "author": "sabertazimi",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=8.10"
+    "node": ">=14.0"
   },
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
@@ -28,11 +48,31 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
+    "consola": "^2.15.3",
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.8.1",
     "inquirer": "^8.1.2"
   },
   "devDependencies": {
-    "standard-version": "^9.3.1"
+    "@types/cross-spawn": "^6.0.2",
+    "@types/envinfo": "^7.8.1",
+    "@types/inquirer": "^7.3.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.1",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.3.5"
   }
 }
