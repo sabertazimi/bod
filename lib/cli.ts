@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
+import consola from 'consola';
 import { program } from 'commander';
 import envinfo from 'envinfo';
 import packageJson from '../package.json';
@@ -21,7 +22,7 @@ program
   .command('info')
   .description('print debugging information about your environment')
   .action(() => {
-    console.log(chalk.bold('\nEnvironment Info:'));
+    consola.info('\nEnvironment Info:');
     envinfo
       .run(
         {
@@ -37,28 +38,28 @@ program
           fullTree: true,
         }
       )
-      .then(console.log);
+      .then(consola.info);
   });
 
 // output help information on unknown commands
 program.arguments('<command>').action((cmd) => {
   program.outputHelp();
-  console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`));
-  console.log();
+  consola.error(`  Unknown command ${chalk.yellow(cmd)}.`);
+  consola.log('');
 });
 
 // add some useful info on help
 program.on('--help', () => {
-  console.log();
-  console.log(
+  consola.log('');
+  consola.info(
     `  Run ${chalk.cyan(
       `bod <command> --help`
     )} for detailed usage of given command.`
   );
-  console.log();
+  consola.log('');
 });
 
-program.commands.forEach((c) => c.on('--help', () => console.log()));
+program.commands.forEach((c) => c.on('--help', () => consola.log('')));
 
 program.parse(process.argv);
 
