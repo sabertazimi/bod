@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/sabertazimi/bod/compare/v1.0.2...v2.0.0) (2021-08-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **lockfile:** bump required Node version from 8.0.0 to 14.0.0.
+* **TypeScript:** ship to TypeScript CLI techstack.
+
+### Features
+
+* **CLI-create:** add CreateCommand class ([aba08aa](https://github.com/sabertazimi/bod/commit/aba08aa519799fb2f32ad21293db4cc34681806a))
+* **CLI:** add pretty output with consola ([1a6ea0c](https://github.com/sabertazimi/bod/commit/1a6ea0c3a3d87161a479447efecf964299c3889e))
+* **CLI:** show help after errror ([ffb6aab](https://github.com/sabertazimi/bod/commit/ffb6aabbbee46a2953282860dde044df6b91cd9f))
+* **TypeScript:** setup TypeScript CLI development ([39b2e49](https://github.com/sabertazimi/bod/commit/39b2e492607ec9fd25f70711b22386267f34408a))
+* **TypeScript:** ship to TypeScript code ([e27d8ab](https://github.com/sabertazimi/bod/commit/e27d8abb374ceb3667e2faa57fc36f816e8324c6))
+
+
+### Bug Fixes
+
+* **CLI-create:** add missing return type ([1bfc442](https://github.com/sabertazimi/bod/commit/1bfc4424717a952f528bb7d24eb29bd5cbacb3fb))
+* **CLI-create:** add pretty log support with consola ([f83f115](https://github.com/sabertazimi/bod/commit/f83f115bf71cd9b39d8a2bde36db71df39bd4e99))
+* **CLI:** add missing TS types ([31db0c9](https://github.com/sabertazimi/bod/commit/31db0c9040e56fc805488f36522a360d6829b224))
+* **CLI:** rectify unknown command function ([e42da9c](https://github.com/sabertazimi/bod/commit/e42da9c54f266953207c089b80861ea2df769e9e))
+* **eslint:** rectify all eslint error ([80cc951](https://github.com/sabertazimi/bod/commit/80cc9511b1bd6f8f3e6fec01968f89925f980515))
+* **jest:** rectify imports error ([8f28af6](https://github.com/sabertazimi/bod/commit/8f28af6ccb24083844e17666f5dcd6bb9f5216e9))
+* **tsc:** rectify all TS types error ([8cc2419](https://github.com/sabertazimi/bod/commit/8cc2419eea859d7472c898616ae6a638e5ded7da))
+
+
+### Building Work
+
+* **CI:** add jest testing ([e4d3f9a](https://github.com/sabertazimi/bod/commit/e4d3f9a1ba268d3b10dcdec42b0c4c9f223bff95))
+* **CI:** rename publish CI workflow ([5dfe27f](https://github.com/sabertazimi/bod/commit/5dfe27fe1adee05968c0fba7f99465f108768d32))
+* **deps-dev:** add node-fetch for badge generation ([6160b2d](https://github.com/sabertazimi/bod/commit/6160b2d8d490d81352868e00c807047ff47bde83))
+* **deps-dev:** add rimraf types ([62315e3](https://github.com/sabertazimi/bod/commit/62315e35021b728d1703e6a15b32f3b7d8db73e1))
+* **format:** rectify typo ([bb4783d](https://github.com/sabertazimi/bod/commit/bb4783dbea8cd24e5a78fc043d9fe9ed0fd28898))
+* **JSON:** allow resolve JSON module ([b4b5097](https://github.com/sabertazimi/bod/commit/b4b50977913883ecb3fe9f69db2181154d88afae))
+* **npm:** rectify npm publish files path ([4852db9](https://github.com/sabertazimi/bod/commit/4852db95c37c970636497ac521c11ec66cf836f4))
+* **scripts:** simple start script ([ef58ce2](https://github.com/sabertazimi/bod/commit/ef58ce283cd046296ae831e7c68b5256c001f266))
+* **tsc:** keep comments for bash ([37c5ffe](https://github.com/sabertazimi/bod/commit/37c5ffeaf190c3a39399732d23ea3a2f9b455437))
+
+
+### Testing
+
+* **CLI-create:** add create command basic testing ([cd2b371](https://github.com/sabertazimi/bod/commit/cd2b3713f4fe9e304d3df54b1e4e80faec66e4c6))
+* **CLI-create:** add todo testing ([b8ac28f](https://github.com/sabertazimi/bod/commit/b8ac28f2006a8441a7d2b83fcf6f876e6ca2671e))
+* **CLI-create:** remove temp files before testing ([f195c1e](https://github.com/sabertazimi/bod/commit/f195c1ea6db4d6c5c8b1dadcc04dd09f6c52f5a8))
+
+
+* **lockfile:** sync NPM lockfile ([2e337b2](https://github.com/sabertazimi/bod/commit/2e337b2b70f0ce9061bc7f933177c6cb13358a60))
+
 ### [1.0.2](https://github.com/sabertazimi/bod/compare/v1.0.1...v1.0.2) (2021-08-08)
 
 
