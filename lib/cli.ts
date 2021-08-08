@@ -2,6 +2,7 @@
 
 import program from 'commander';
 import chalk from 'chalk';
+import envinfo from 'envinfo';
 import { create } from './index';
 import packageJson from '../package.json';
 
@@ -19,9 +20,9 @@ program
 program
   .command('info')
   .description('print debugging information about your environment')
-  .action((cmd) => {
+  .action(() => {
     console.log(chalk.bold('\nEnvironment Info:'));
-    require('envinfo')
+    envinfo
       .run(
         {
           System: ['OS', 'CPU'],

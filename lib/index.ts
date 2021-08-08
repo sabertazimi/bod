@@ -84,8 +84,8 @@ async function createCommand(name) {
   }
 }
 
-const create = (name) => {
-  return create(name).catch((err) => {
+const create = (name: string): Promise<void> => {
+  return createCommand(name).catch((err) => {
     console.error(err);
     console.error(chalk.red('\nBod create failed.'));
   });
