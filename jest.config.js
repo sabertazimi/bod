@@ -21,6 +21,7 @@ module.exports = {
     '<rootDir>.*/build',
     '<rootDir>.*/dist',
     '<rootDir>.*/coverage',
+    '<rootDir>.*/.temp',
   ],
   globals: {
     'ts-jest': {
