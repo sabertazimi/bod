@@ -67,6 +67,8 @@ class CreateCommand extends BaseCommand {
       commandArgs.push('--scripts-version', '@sabertazimi/react-scripts');
     }
 
+    // TODO: Feat: add NPM or Yarn choice action
+
     // TypeScript choice
     const { tsAction } = await inquirer.prompt([
       {
@@ -79,8 +81,6 @@ class CreateCommand extends BaseCommand {
         ],
       },
     ]);
-
-    // TODO: Feat: add NPM or Yarn choice action
 
     if (!tsAction) {
       return;
