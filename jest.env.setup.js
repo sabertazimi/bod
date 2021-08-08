@@ -1,6 +1,6 @@
-import path from 'path';
-import dotenv from 'dotenv';
-import consola from 'consola';
+const consola = require('consola');
+const dotenv = require('dotenv');
+const path = require('path');
 
 consola.info('DotEnv setup loaded.');
 dotenv.config({
