@@ -14,7 +14,6 @@
     "lib": ["DOM", "ESNext", "ES2021"],
     "allowJs": true,
     "outDir": "./dist",
-    "removeComments": true,
     "importHelpers": true,
     "isolatedModules": true,
     "strict": true,
