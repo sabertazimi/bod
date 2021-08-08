@@ -10,12 +10,12 @@ import { create } from './index';
 program.version(packageJson.version).usage('<command> [options]');
 
 program
-  .command('create <app-name>')
+  .command('create <appName>')
   .description(
     'create a new project powered by Create React App and @sabertazimi/react-scripts'
   )
-  .action((name: string) => {
-    create(name);
+  .action((appName: string) => {
+    create(appName);
   });
 
 program
@@ -42,8 +42,8 @@ program
   });
 
 // output help information on unknown commands
-program.arguments('<cmd> [env]').action((cmd: string) => {
-  consola.error(`  Unknown command ${chalk.yellow(cmd)}.`);
+program.arguments('<command> [env]').action((command: string) => {
+  consola.error(`  Unknown command ${chalk.yellow(command)}.`);
   consola.log('');
   program.outputHelp();
 });
@@ -61,8 +61,6 @@ program.on('--help', () => {
 
 program.commands.forEach((c: Command) => c.on('--help', () => consola.log('')));
 
-program.parse(process.argv);
+program.showHelpAfterError();
 
-if (!process.argv.slice(2).length) {
-  program.outputHelp();
-}
+program.parse(process.argv);
