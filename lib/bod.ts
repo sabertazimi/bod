@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
+import { Command, program } from 'commander';
 import consola from 'consola';
-import { program } from 'commander';
 import envinfo from 'envinfo';
 import packageJson from '../package.json';
 import { create } from './index';
@@ -14,7 +14,7 @@ program
   .description(
     'create a new project powered by Create React App and @sabertazimi/react-scripts'
   )
-  .action((name) => {
+  .action((name: string) => {
     create(name);
   });
 
@@ -42,7 +42,7 @@ program
   });
 
 // output help information on unknown commands
-program.arguments('<cmd> [env]').action((cmd) => {
+program.arguments('<cmd> [env]').action((cmd: string) => {
   consola.error(`  Unknown command ${chalk.yellow(cmd)}.`);
   consola.log('');
   program.outputHelp();
@@ -59,7 +59,7 @@ program.on('--help', () => {
   consola.log('');
 });
 
-program.commands.forEach((c) => c.on('--help', () => consola.log('')));
+program.commands.forEach((c: Command) => c.on('--help', () => consola.log('')));
 
 program.parse(process.argv);
 
