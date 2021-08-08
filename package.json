@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Boilerplate CLI App",
   "scripts": {
-    "dev": "ts-node ./lib/cli.ts",
+    "dev": "ts-node ./lib/bod.ts",
     "clean": "rimraf ./dist/",
     "build": "npm run clean && tsc && npm run test:badge",
     "format": "prettier --write lib/**/*.ts",
@@ -19,7 +19,7 @@
     "test:watch": "jest --watch"
   },
   "bin": {
-    "bod": "dist/cli.js"
+    "bod": "dist/bod.js"
   },
   "main": "dist/index.js",
   "files": [

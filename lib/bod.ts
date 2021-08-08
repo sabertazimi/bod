@@ -22,7 +22,7 @@ program
   .command('info')
   .description('print debugging information about your environment')
   .action(() => {
-    consola.info('\nEnvironment Info:');
+    consola.info('Environment Info:');
     envinfo
       .run(
         {
@@ -42,10 +42,10 @@ program
   });
 
 // output help information on unknown commands
-program.arguments('<command>').action((cmd) => {
-  program.outputHelp();
+program.arguments('<cmd> [env]').action((cmd) => {
   consola.error(`  Unknown command ${chalk.yellow(cmd)}.`);
   consola.log('');
+  program.outputHelp();
 });
 
 // add some useful info on help
