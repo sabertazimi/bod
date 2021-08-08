@@ -1,3 +1,6 @@
 scripts
 
 jest.*.js
+
+.temp
+temp

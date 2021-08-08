@@ -22,6 +22,7 @@ module.exports = {
     '<rootDir>/dist',
     '<rootDir>/coverage',
     '<rootDir>/.temp',
+    '<rootDir>/temp',
   ],
   globals: {
     'ts-jest': {
