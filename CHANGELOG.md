@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/sabertazimi/bod/compare/v1.0.1...v1.0.2) (2021-08-08)
+
+
+### Building Work
+
+* **CI:** add npm publish CI support ([a437aed](https://github.com/sabertazimi/bod/commit/a437aed3f795024ed1973cec6d62f8006f4997ab))
+
 ### [1.0.1](https://github.com/sabertazimi/bod/compare/v1.0.0...v1.0.1) (2021-08-02)
 
 
