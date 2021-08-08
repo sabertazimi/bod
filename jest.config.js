@@ -18,10 +18,10 @@ module.exports = {
   testPathIgnorePatterns: [
     'node_modules',
     '\\.cache',
-    '<rootDir>.*/build',
-    '<rootDir>.*/dist',
-    '<rootDir>.*/coverage',
-    '<rootDir>.*/.temp',
+    '<rootDir>/build',
+    '<rootDir>/dist',
+    '<rootDir>/coverage',
+    '<rootDir>/.temp',
   ],
   globals: {
     'ts-jest': {
