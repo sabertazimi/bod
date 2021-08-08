@@ -80,6 +80,8 @@ class CreateCommand extends BaseCommand {
       },
     ]);
 
+    // TODO: Feat: add NPM or Yarn choice action
+
     if (!tsAction) {
       return;
     } else if (tsAction === 'yes') {
