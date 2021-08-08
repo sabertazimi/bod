@@ -20,9 +20,9 @@
     "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
   },
   "bin": {
-    "bod": "dist/bod.js"
+    "bod": "dist/lib/bod.js"
   },
-  "main": "dist/index.js",
+  "main": "dist/lib/index.js",
   "files": [
     "dist/**/*",
     "!dist/**/*.test.js"
