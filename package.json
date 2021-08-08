@@ -6,7 +6,7 @@
     "dev": "ts-node ./lib/cli.ts",
     "clean": "rimraf ./dist/",
     "build": "npm run clean && tsc && npm run test:badge",
-    "format": "prettier --write lib/**/*.{ts}",
+    "format": "prettier --write lib/**/*.ts",
     "lint": "npm run lint:style && npm run lint:type-check",
     "lint:style": "eslint --fix --ext .ts ./lib",
     "lint:type-check": "tsc --noEmit",
