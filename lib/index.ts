@@ -1,8 +1,8 @@
-const chalk = require('chalk');
-const spawn = require('cross-spawn');
-const inquirer = require('inquirer');
+import chalk from 'chalk';
+import spawn from 'cross-spawn';
+import inquirer from 'inquirer';
 
-async function create(name) {
+async function createCommand(name) {
   const command = 'npx';
   const commandArgs = ['create-react-app', name];
 
@@ -16,27 +16,37 @@ async function create(name) {
   });
 
   // template choice
-  const { templateAction } = await inquirer.prompt([{
+  const { templateAction } = await inquirer.prompt([
+    {
       name: 'templateAction',
       type: 'list',
-      message: `Use ${chalk.cyan('Simple')} template or ${chalk.cyan('React Only')} template or ${chalk.cyan('React Framework')} template:`,
+      message: `Use ${chalk.cyan('Simple')} template or ${chalk.cyan(
+        'React Only'
+      )} template or ${chalk.cyan('React Framework')} template:`,
       choices: [
         { name: 'Simple', value: 'simple' },
         { name: 'React Only', value: 'only' },
         { name: 'React Framework', value: 'framework' },
-      ]
-  }]);
+      ],
+    },
+  ]);
 
   if (!templateAction) {
     return;
   } else if (templateAction === 'simple') {
     // git clone simple boilerplate from GitHub
     const gitCommand = 'git';
-    const gitArgs = ['clone', 'https://github.com/sabertazimi/boilerplate', name];
+    const gitArgs = [
+      'clone',
+      'https://github.com/sabertazimi/boilerplate',
+      name,
+    ];
     const proc = spawn.sync(gitCommand, gitArgs, { stdio: 'inherit' });
 
     if (proc.status !== 0) {
-      console.error(chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`));
+      console.error(
+        chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`)
+      );
     }
 
     // no need for other processing
@@ -46,15 +56,17 @@ async function create(name) {
   }
 
   // TypeScript choice
-  const { tsAction } = await inquirer.prompt([{
+  const { tsAction } = await inquirer.prompt([
+    {
       name: 'tsAction',
       type: 'list',
       message: `Use ${chalk.cyan('TypeScript')}:`,
       choices: [
         { name: 'Yes', value: 'yes' },
         { name: 'No', value: 'no' },
-      ]
-  }]);
+      ],
+    },
+  ]);
 
   if (!tsAction) {
     return;
@@ -66,13 +78,17 @@ async function create(name) {
   const proc = spawn.sync(command, commandArgs, { stdio: 'inherit' });
 
   if (proc.status !== 0) {
-    console.error(chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`));
+    console.error(
+      chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`)
+    );
   }
 }
 
-module.exports = (name) => {
+const create = (name) => {
   return create(name).catch((err) => {
     console.error(err);
     console.error(chalk.red('\nBod create failed.'));
   });
 };
+
+export { create };
