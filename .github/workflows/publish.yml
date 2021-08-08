@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: NPM Publish
 
 on:
   push:
