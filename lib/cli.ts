@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { program } from 'commander';
 import chalk from 'chalk';
+import { program } from 'commander';
 import envinfo from 'envinfo';
-import { create } from './index';
 import packageJson from '../package.json';
+import { create } from './index';
 
 program.version(packageJson.version).usage('<command> [options]');
 
