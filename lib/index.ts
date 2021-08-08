@@ -17,7 +17,7 @@ class CreateCommand extends BaseCommand {
     this.usage = 'create <app-name>';
   }
 
-  async run(appName: string) {
+  async run(appName: string): Promise<void> {
     const command = 'npx';
     const commandArgs = ['create-react-app', appName];
 
