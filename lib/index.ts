@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+import consola from 'consola';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 
@@ -9,7 +10,7 @@ async function createCommand(name: string) {
   // exit signal
   ['SIGINT', 'SIGTERM'].forEach(function (sig) {
     process.on(sig, function () {
-      console.log(chalk.cyan('\nGracefully shutting down. Please wait...'));
+      consola.info('\nGracefully shutting down. Please wait...');
       process.exit();
     });
   });
@@ -43,9 +44,7 @@ async function createCommand(name: string) {
     const proc = spawn.sync(gitCommand, gitArgs, { stdio: 'inherit' });
 
     if (proc.status !== 0) {
-      console.error(
-        chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`)
-      );
+      consola.error(`\n\`${command} ${commandArgs.join(' ')}\` exited.`);
     }
 
     // no need for other processing
@@ -77,16 +76,14 @@ async function createCommand(name: string) {
   const proc = spawn.sync(command, commandArgs, { stdio: 'inherit' });
 
   if (proc.status !== 0) {
-    console.error(
-      chalk.red(`\n\`${command} ${commandArgs.join(' ')}\` exited.`)
-    );
+    consola.error(`\n\`${command} ${commandArgs.join(' ')}\` exited.`);
   }
 }
 
 const create = (name: string): Promise<void> => {
   return createCommand(name).catch((err) => {
-    console.error(err);
-    console.error(chalk.red('\nBod create failed.'));
+    consola.error(err);
+    consola.error('\nBod create failed.');
   });
 };
 
