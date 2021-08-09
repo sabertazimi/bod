@@ -7,7 +7,14 @@
 [![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/bod/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-Boilerplate CLI App - Create a new project powered by Create React App and @sabertazimi/react-scripts
+Boilerplate CLI App - Create a new project powered by Create React App and @sabertazimi/react-scripts.
+
+## Installation
+
+```bash
+# npm install --save-dev bod
+npm i -D bod
+```
 
 ## Usage
 
@@ -19,14 +26,14 @@ npx bod create <app-name> [-t]
 Usage: bod <command> [options]
 
 Options:
-  -V, --version      output the version number
-  -h, --help         output usage information
+  -v, --version     output the version number
+  -h, --help        display help for command
 
 Commands:
-  create <app-name>  create a new project powered by Create React App and @sabertazimi/react-scripts
-  info               print debugging information about your environment
+  create <appName>  create a new project powered by Create React App and @sabertazimi/react-scripts
+  info              print debugging information about your environment
 
-  Run bod <command> --help for detailed usage of given command.
+ℹ   Run bod <command> --help for detailed usage of given command.
 ```
 
 ### `bod create`
