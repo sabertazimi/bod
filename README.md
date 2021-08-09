@@ -19,7 +19,7 @@ npm i -D bod
 ## Usage
 
 ```bash
-npx bod create <app-name> [-t]
+npx bod create <appName> [-t]
 ```
 
 ```bash
@@ -39,7 +39,7 @@ Commands:
 ### `bod create`
 
 ```bash
-Usage: create [options] <app-name>
+Usage: create [options] <appName>
 
 create a new project powered by Create React App and @sabertazimi/react-scripts
 
