@@ -1,2 +1,1 @@
-scripts/** linguist-detectable=false
-jest.*.js linguist-detectable=false
+*.js linguist-detectable=false
