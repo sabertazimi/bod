@@ -7,7 +7,8 @@ import envinfo from 'envinfo';
 import packageJson from '../package.json';
 import { create } from './index';
 
-program.version(packageJson.version).usage('<command> [options]');
+program.version(packageJson.version, '-v, --version');
+program.usage('<command> [options]');
 
 program
   .command('create <appName>')
@@ -42,7 +43,7 @@ program
   });
 
 // output help information on unknown commands
-program.arguments('<command> [env]').action((command: string) => {
+program.arguments('<command> [options]').action((command: string) => {
   consola.error(`  Unknown command ${chalk.yellow(command)}.`);
   consola.log('');
   program.outputHelp();
@@ -60,7 +61,5 @@ program.on('--help', () => {
 });
 
 program.commands.forEach((c: Command) => c.on('--help', () => consola.log('')));
-
 program.showHelpAfterError();
-
 program.parse(process.argv);
