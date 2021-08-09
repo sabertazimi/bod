@@ -50,6 +50,7 @@ class CreateCommand extends BaseCommand {
     } else if (templateAction === 'simple') {
       // git clone simple boilerplate from GitHub
       const gitCommand = 'git';
+      // TODO: Perf: only clone latest commit for simple boilerplate
       const gitArgs = [
         'clone',
         'https://github.com/sabertazimi/boilerplate',
