@@ -59,7 +59,6 @@ class CreateCommand extends BaseCommand {
       });
     });
 
-    // TODO: Feat: add NPM or Yarn choice action
     await this.processTemplateAction();
     this.processAppPath(appName);
 
