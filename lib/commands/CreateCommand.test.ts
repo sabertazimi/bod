@@ -6,20 +6,23 @@ import CreateCommand from './CreateCommand';
 const appPath = 'temp';
 
 describe('Create', () => {
-  test('should fetch boilerplate from GitHub when [simple] command)', () => {
-    const mockPrompt = jest.spyOn(inquirer, 'prompt').mockImplementation(() => {
-      const promise = new Promise((resolve) => {
-        resolve({ templateAction: 'simple' });
-      });
-      return promise as Promise<unknown> & { ui: PromptUI };
-    });
+  test.each(CreateCommand.TemplateActions)(
+    'should initialize app directory according to template choice [$name]',
+    ({ value }) => {
+      const mockPrompt = jest
+        .spyOn(inquirer, 'prompt')
+        .mockImplementation(() => {
+          const promise = new Promise((resolve) => {
+            resolve({ templateAction: value });
+          });
+          return promise as Promise<unknown> & { ui: PromptUI };
+        });
 
-    rimraf.sync(appPath);
-    const createCommand = new CreateCommand();
-    createCommand.run(appPath);
+      rimraf.sync(appPath);
+      const createCommand = new CreateCommand();
+      createCommand.run(appPath);
 
-    mockPrompt.mockRestore();
-  });
-
-  test.todo('should generate boilerplate via create-react-app');
+      mockPrompt.mockRestore();
+    }
+  );
 });
