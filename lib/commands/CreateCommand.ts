@@ -5,15 +5,12 @@ import inquirer from 'inquirer';
 import BaseCommand from './BaseCommand';
 
 class CreateCommand extends BaseCommand {
-  name: string;
-  description: string;
-  usage: string;
-
   constructor() {
-    super();
-    this.name = 'create';
-    this.description = 'Create a new project';
-    this.usage = 'create <app-name>';
+    super({
+      name: 'create',
+      description: 'Create a new project',
+      usage: 'create <appName>',
+    });
   }
 
   async run(appName: string): Promise<void> {
