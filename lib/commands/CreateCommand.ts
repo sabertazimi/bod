@@ -5,6 +5,12 @@ import inquirer from 'inquirer';
 import BaseCommand from './BaseCommand';
 
 class CreateCommand extends BaseCommand {
+  static readonly TemplateActions = [
+    { name: 'Simple', value: 'simple' },
+    { name: 'React Only', value: 'only' },
+    { name: 'React Framework', value: 'framework' },
+  ];
+
   constructor() {
     super({
       name: 'create',
@@ -33,11 +39,7 @@ class CreateCommand extends BaseCommand {
         message: `Use ${chalk.cyan('Simple')} template or ${chalk.cyan(
           'React Only'
         )} template or ${chalk.cyan('React Framework')} template:`,
-        choices: [
-          { name: 'Simple', value: 'simple' },
-          { name: 'React Only', value: 'only' },
-          { name: 'React Framework', value: 'framework' },
-        ],
+        choices: [...CreateCommand.TemplateActions],
       },
     ]);
 
