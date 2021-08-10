@@ -1,15 +1,46 @@
-import chalk from 'chalk';
 import consola from 'consola';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 import BaseCommand from './BaseCommand';
 
 class CreateCommand extends BaseCommand {
+  private static SimpleBoilerplate =
+    'https://github.com/sabertazimi/boilerplate';
+  private static ReactScripts = '@sabertazimi/react-scripts';
+
   static readonly TemplateActions = [
-    { name: 'Simple', value: 'simple' },
-    { name: 'React Only', value: 'only' },
-    { name: 'React Framework', value: 'framework' },
+    {
+      name: 'Simple',
+      value: 'simple',
+      command: 'git',
+      args: ['clone', '--depth=1', CreateCommand.SimpleBoilerplate],
+    },
+    {
+      name: 'React Only',
+      value: 'only',
+      command: 'npx',
+      args: [
+        'create-react-app',
+        '--typescript',
+        '--scripts-version',
+        'react-scripts',
+      ],
+    },
+    {
+      name: 'React Framework',
+      value: 'framework',
+      command: 'npx',
+      args: [
+        'create-react-app',
+        '--typescript',
+        '--scripts-version',
+        CreateCommand.ReactScripts,
+      ],
+    },
   ];
+
+  private command = 'npx';
+  private commandArgs: string[] = [];
 
   constructor() {
     super({
@@ -19,10 +50,7 @@ class CreateCommand extends BaseCommand {
     });
   }
 
-  async run(appName: string): Promise<void> {
-    const command = 'npx';
-    const commandArgs = ['create-react-app', appName];
-
+  public async run(appName: string): Promise<void> {
     // exit signal
     ['SIGINT', 'SIGTERM'].forEach(function (sig) {
       process.on(sig, function () {
@@ -31,64 +59,41 @@ class CreateCommand extends BaseCommand {
       });
     });
 
-    // template choice
-    const { templateAction } = await inquirer.prompt([
+    // TODO: Feat: add NPM or Yarn choice action
+    await this.processTemplateAction();
+    this.processAppPath(appName);
+
+    const proc = spawn.sync(this.command, this.commandArgs, {
+      stdio: 'inherit',
+    });
+
+    if (proc.status !== 0) {
+      consola.error(
+        `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
+      );
+    }
+  }
+
+  private async processTemplateAction() {
+    const { templateName } = await inquirer.prompt([
       {
-        name: 'templateAction',
+        name: 'templateName',
         type: 'list',
-        message: `Use ${chalk.cyan('Simple')} template or ${chalk.cyan(
-          'React Only'
-        )} template or ${chalk.cyan('React Framework')} template:`,
+        message: 'Select template:',
         choices: [...CreateCommand.TemplateActions],
       },
     ]);
 
-    if (templateAction === 'simple') {
-      // git clone simple boilerplate from GitHub
-      const gitCommand = 'git';
-      // TODO: Perf: only clone latest commit for simple boilerplate
-      const gitArgs = [
-        'clone',
-        'https://github.com/sabertazimi/boilerplate',
-        appName,
-      ];
-      const proc = spawn.sync(gitCommand, gitArgs, { stdio: 'inherit' });
+    const templateAction = CreateCommand.TemplateActions.filter(
+      ({ value }) => value === templateName
+    )[0];
 
-      if (proc.status !== 0) {
-        consola.error(`\n\`${command} ${commandArgs.join(' ')}\` exited.`);
-      }
+    this.command = templateAction.command;
+    this.commandArgs = [...templateAction.args];
+  }
 
-      // no need for other processing
-      return;
-    } else if (templateAction === 'framework') {
-      commandArgs.push('--scripts-version', '@sabertazimi/react-scripts');
-    }
-
-    // TODO: Feat: add NPM or Yarn choice action
-
-    // TypeScript choice
-    const { tsAction } = await inquirer.prompt([
-      {
-        name: 'tsAction',
-        type: 'list',
-        message: `Use ${chalk.cyan('TypeScript')}:`,
-        choices: [
-          { name: 'Yes', value: 'yes' },
-          { name: 'No', value: 'no' },
-        ],
-      },
-    ]);
-
-    if (tsAction === 'yes') {
-      commandArgs.push('--typescript');
-    }
-
-    // start to install boilerplate
-    const proc = spawn.sync(command, commandArgs, { stdio: 'inherit' });
-
-    if (proc.status !== 0) {
-      consola.error(`\n\`${command} ${commandArgs.join(' ')}\` exited.`);
-    }
+  private processAppPath(appName: string) {
+    this.commandArgs.push(appName);
   }
 }
 
