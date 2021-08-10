@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "description": "Boilerplate CLI App",
   "scripts": {
-    "dev": "ts-node ./lib/bod.ts",
+    "build": "npm run clean && npm run compile && npm run test:badge",
     "clean": "rimraf ./dist/",
-    "build": "npm run clean && tsc && npm run test:badge",
+    "compile": "tsc",
+    "dev": "ts-node ./lib/bod.ts",
     "format": "prettier --write lib/**/*.ts",
     "lint": "npm run lint:style && npm run lint:type-check",
     "lint:style": "eslint --fix --ext .ts ./lib",
