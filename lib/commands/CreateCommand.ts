@@ -1,4 +1,3 @@
-import consola from 'consola';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 import BaseCommand from './BaseCommand';
@@ -51,19 +50,9 @@ class CreateCommand extends BaseCommand {
   }
 
   public async run(appName: string): Promise<void> {
-    this.processExit();
     await this.processTemplateAction();
     this.processAppPath(appName);
     this.execute();
-  }
-
-  private processExit() {
-    ['SIGINT', 'SIGTERM'].forEach(function (sig) {
-      process.on(sig, function () {
-        consola.info('\nGracefully shutting down. Please wait...');
-        process.exit();
-      });
-    });
   }
 
   private async processTemplateAction() {
