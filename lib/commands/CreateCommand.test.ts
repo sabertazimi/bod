@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import PromptUI from 'inquirer/lib/ui/prompt';
 import rimraf from 'rimraf';
-import { CreateCommand } from './index';
+import CreateCommand from './CreateCommand';
 
 const appPath = 'temp';
 
@@ -21,8 +21,5 @@ describe('Create', () => {
     mockPrompt.mockRestore();
   });
 
-  test.todo(
-    'should fetch boilerplate with high integrity when [simple] command)'
-  );
   test.todo('should generate boilerplate via create-react-app');
 });
