@@ -5,6 +5,18 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
 
+const ignorePatterns = [
+  'node_modules',
+  '\\.cache',
+  '<rootDir>/build',
+  '<rootDir>/dist',
+  '<rootDir>/coverage',
+  '<rootDir>/.temp',
+  '<rootDir>/temp',
+  '.temp',
+  'temp',
+];
+
 /** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
   collectCoverage: true,
@@ -15,15 +27,8 @@ module.exports = {
   moduleNameMapper: {
     ...paths,
   },
-  testPathIgnorePatterns: [
-    'node_modules',
-    '\\.cache',
-    '<rootDir>/build',
-    '<rootDir>/dist',
-    '<rootDir>/coverage',
-    '<rootDir>/.temp',
-    '<rootDir>/temp',
-  ],
+  testPathIgnorePatterns: [...ignorePatterns],
+  watchPathIgnorePatterns: [...ignorePatterns],
   globals: {
     'ts-jest': {
       tsConfig: 'tsconfig.json',
