@@ -48,8 +48,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **CLI-create:** add create command basic testing ([cd2b371](https://github.com/sabertazimi/bod/commit/cd2b3713f4fe9e304d3df54b1e4e80faec66e4c6))
 * **CLI-create:** add todo testing ([b8ac28f](https://github.com/sabertazimi/bod/commit/b8ac28f2006a8441a7d2b83fcf6f876e6ca2671e))
 * **CLI-create:** remove temp files before testing ([f195c1e](https://github.com/sabertazimi/bod/commit/f195c1ea6db4d6c5c8b1dadcc04dd09f6c52f5a8))
-
-
 * **lockfile:** sync NPM lockfile ([2e337b2](https://github.com/sabertazimi/bod/commit/2e337b2b70f0ce9061bc7f933177c6cb13358a60))
 
 ### [1.0.2](https://github.com/sabertazimi/bod/compare/v1.0.1...v1.0.2) (2021-08-08)
