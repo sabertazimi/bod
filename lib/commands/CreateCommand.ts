@@ -43,9 +43,7 @@ class CreateCommand extends BaseCommand {
       },
     ]);
 
-    if (!templateAction) {
-      return;
-    } else if (templateAction === 'simple') {
+    if (templateAction === 'simple') {
       // git clone simple boilerplate from GitHub
       const gitCommand = 'git';
       // TODO: Perf: only clone latest commit for simple boilerplate
@@ -81,9 +79,7 @@ class CreateCommand extends BaseCommand {
       },
     ]);
 
-    if (!tsAction) {
-      return;
-    } else if (tsAction === 'yes') {
+    if (tsAction === 'yes') {
       commandArgs.push('--typescript');
     }
 
