@@ -51,26 +51,19 @@ class CreateCommand extends BaseCommand {
   }
 
   public async run(appName: string): Promise<void> {
-    // exit signal
+    this.processExit();
+    await this.processTemplateAction();
+    this.processAppPath(appName);
+    this.execute();
+  }
+
+  private processExit() {
     ['SIGINT', 'SIGTERM'].forEach(function (sig) {
       process.on(sig, function () {
         consola.info('\nGracefully shutting down. Please wait...');
         process.exit();
       });
     });
-
-    await this.processTemplateAction();
-    this.processAppPath(appName);
-
-    const proc = spawn.sync(this.command, this.commandArgs, {
-      stdio: 'inherit',
-    });
-
-    if (proc.status !== 0) {
-      consola.error(
-        `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
-      );
-    }
   }
 
   private async processTemplateAction() {
@@ -93,6 +86,18 @@ class CreateCommand extends BaseCommand {
 
   private processAppPath(appName: string) {
     this.commandArgs.push(appName);
+  }
+
+  private execute() {
+    const proc = spawn.sync(this.command, this.commandArgs, {
+      stdio: 'inherit',
+    });
+
+    if (proc.status !== 0) {
+      throw Error(
+        `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
+      );
+    }
   }
 }
 
