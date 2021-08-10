@@ -13,7 +13,7 @@ describe('Create', () => {
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
           const promise = new Promise((resolve) => {
-            resolve({ templateAction: value });
+            resolve({ templateName: value });
           });
           return promise as Promise<unknown> & { ui: PromptUI };
         });
@@ -22,6 +22,7 @@ describe('Create', () => {
       const createCommand = new CreateCommand();
       createCommand.run(appPath);
 
+      rimraf.sync(appPath);
       mockPrompt.mockRestore();
     }
   );
