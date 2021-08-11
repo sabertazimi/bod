@@ -2,7 +2,6 @@
 *.env linguist-detectable=false
 config.js linguist-detectable=false
 *.config.js linguist-detectable=false
-
 jest.*.js linguist-detectable=false
-scripts/*.js linguist-detectable=false
-lib/bod.ts linguist-language=TypeScript
+fixtures/* linguist-detectable=false
+
