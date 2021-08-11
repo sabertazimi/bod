@@ -20,7 +20,8 @@ class CreateCommand extends BaseCommand {
       command: 'npx',
       args: [
         'create-react-app',
-        '--typescript',
+        '--template',
+        'typescript',
         '--scripts-version',
         'react-scripts',
       ],
@@ -31,7 +32,8 @@ class CreateCommand extends BaseCommand {
       command: 'npx',
       args: [
         'create-react-app',
-        '--typescript',
+        '--template',
+        'typescript',
         '--scripts-version',
         CreateCommand.ReactScripts,
       ],
