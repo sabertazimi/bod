@@ -1,6 +1,5 @@
-scripts
+scripts/
+temp/
+.temp/
 
 jest.*.js
-
-.temp
-temp
