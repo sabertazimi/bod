@@ -4,4 +4,3 @@ config.js linguist-detectable=false
 *.config.js linguist-detectable=false
 jest.*.js linguist-detectable=false
 fixtures/* linguist-detectable=false
-
