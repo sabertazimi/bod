@@ -39,5 +39,8 @@
   "homepage": "https://github.com/sabertazimi/bod#readme",
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.1"
   }
 }
