@@ -2,6 +2,63 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/sabertazimi/bod/compare/v2.0.0...v3.0.0) (2021-08-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **react-scripts:** add react-scripts package
+* **monorepo:** change repo to monorepo for all CLI packages
+
+### Features
+
+* **bod-CLI:** add execute permission to bod.ts ([3ece1a5](https://github.com/sabertazimi/bod/commit/3ece1a56c60a3904d13e15f78bdd6f4900de7277))
+* **CLI-BaseCommand:** move common property to BaseCommand ([6958390](https://github.com/sabertazimi/bod/commit/695839023030298378f05603a1f6e5359c49c61a))
+* **CLI-commands:** add commands module ([7d7e7f4](https://github.com/sabertazimi/bod/commit/7d7e7f48863a2a21c14a787fe3844b69ce1a9fb1))
+* **CLI-CreateCommand:** add template actions array ([8d0d5b0](https://github.com/sabertazimi/bod/commit/8d0d5b08bb650d62caf8df1edf23f4d74a3e0f87))
+* **CLI-CreateCommand:** rewrite CreateCommand with TypeScript reuqired ([785eada](https://github.com/sabertazimi/bod/commit/785eadae780a29b0c59b9022d86dc0c492ad5071)), closes [#10](https://github.com/sabertazimi/bod/issues/10)
+* **monorepo:** refactor to monorepo ([7fb1d6c](https://github.com/sabertazimi/bod/commit/7fb1d6c855003d783d2a9b27e11d432808701029))
+* **react-scripts:** add custom react-scripts package ([acb9fae](https://github.com/sabertazimi/bod/commit/acb9faeda5eecb9bdc8b4eb0c9b7511a18b893ec))
+
+
+### Bug Fixes
+
+* **bod-version:** rectify package version path resolution ([771b10d](https://github.com/sabertazimi/bod/commit/771b10d54518141be58362401dc2d8d10d73d4ad))
+* **bod:** rectify publish files structure ([cbf0480](https://github.com/sabertazimi/bod/commit/cbf0480bcb439bb5c5997bdb62b3ae2fd11e44d9))
+* **build:** rectify lint and fomrat script typo ([0a4e240](https://github.com/sabertazimi/bod/commit/0a4e240e45f9e5f98a2e164625c23e0c2d80a904))
+* **CLI-BaseCommand:** add access specifiers ([55e4965](https://github.com/sabertazimi/bod/commit/55e4965c5809f6ac4f65a10052bcfaf2125b811a))
+* **CLI-CreateCommand:** remove redundant exit process ([0d1e08a](https://github.com/sabertazimi/bod/commit/0d1e08a34441ebb9fbd2927a5b2a653ba9bb10ad))
+* **CLI-CreateCommand:** remove redundant type guard ([ad6da21](https://github.com/sabertazimi/bod/commit/ad6da2174f3b6257b2ff9265214bad413f1a182b))
+* **CLI-version:** change '-V' to '-v' ([706e236](https://github.com/sabertazimi/bod/commit/706e236d463b09930e137ce50f7b1021120e099e))
+* **CRA:** rectify publish files structure ([4441608](https://github.com/sabertazimi/bod/commit/4441608ad4ca7ec40d96117ab2263bfb75d5fa82))
+
+
+### Testing
+
+* **CLI-CreateCommand:** add error handle testing ([137bda4](https://github.com/sabertazimi/bod/commit/137bda47da211d9ec587eabb9c31acde699983d5))
+* **CLI-CreateCommand:** rectify inquirer mock ([85e40cd](https://github.com/sabertazimi/bod/commit/85e40cd8fc387e9d1f83a6cd372bf231f63fd13e))
+* **CLI-CreateCommand:** test for all template actions ([7d94e1f](https://github.com/sabertazimi/bod/commit/7d94e1fee10707ad1d8768f3e194d1008a3b530c))
+* **NODE_ENV:** set NODE_ENV to `test` ([17b5850](https://github.com/sabertazimi/bod/commit/17b58504c900eb7833a7596cfb11082085d88861))
+
+
+### Building Work
+
+* **bod-CI:** add badge generation script ([beaea9e](https://github.com/sabertazimi/bod/commit/beaea9e318e3cf28a39504863c837f3676778f5d))
+* **bod:** separate publish `bin` and `main` config ([82c2950](https://github.com/sabertazimi/bod/commit/82c295062ca909f110b774e7f162e09c664118c5))
+* **CI:** add `start` and `test` shorthand scripts ([41d1dea](https://github.com/sabertazimi/bod/commit/41d1deac35ffc860e750928a3ffd57266082baa2))
+* **CI:** rectify test and publish CI script ([ca0cae0](https://github.com/sabertazimi/bod/commit/ca0cae00bc0185ffa1d142c16d4708cc7ebd7f5c))
+* **CI:** separate TypeScript compile script ([70953e0](https://github.com/sabertazimi/bod/commit/70953e0e8850301ad58402305770afbf08519cf3))
+* **CRA-deps:** bump jest from 26.6.0 to 27.0.6 ([4ae73d7](https://github.com/sabertazimi/bod/commit/4ae73d7cb8466d8086138f473fe1f6059bfece52))
+* **deps-dev:** add CI detection support ([f329bf8](https://github.com/sabertazimi/bod/commit/f329bf8d3f2482d0d4c1edb19e1fb1b765209b20))
+* **deps-dev:** bump concurrently from 6.2.0 to 6.2.1 ([bc40a17](https://github.com/sabertazimi/bod/commit/bc40a1785127b57091ab2b7a361264369e21eece))
+* **deps-dev:** bump to latest version ([406fd20](https://github.com/sabertazimi/bod/commit/406fd202d933e83ed1520b2ac8772dccf35fd8c7))
+* **deps-dev:** bump ts-node from 10.1.0 to 10.2.0 ([c4f6252](https://github.com/sabertazimi/bod/commit/c4f6252cf2f1211d62d066584d13cbe33d7daa7c))
+* **deps-dev:** bump tslib from 2.1.0 to 2.3.0 ([fc01bfd](https://github.com/sabertazimi/bod/commit/fc01bfd01a7547c177533727663c686f0453068b))
+* **deps:** move `standard-version` to root package.json ([e135956](https://github.com/sabertazimi/bod/commit/e13595694b9ba44b43753bf1efd5d61437cb7646))
+* **Jest:** add Jest watch ignore patterns ([1ce177a](https://github.com/sabertazimi/bod/commit/1ce177ad36ecba2ab88b8899d42847311d5ed953))
+* **NPM:** ignore test files ([19096d5](https://github.com/sabertazimi/bod/commit/19096d561ef2ea029be526a0b016e7be8935c91a))
+* **version:** add standard version to monorepo ([4e81d4f](https://github.com/sabertazimi/bod/commit/4e81d4f100aa4156eb1e693934ff9d9fc36ef364))
+
 ## [2.0.0](https://github.com/sabertazimi/bod/compare/v1.0.2...v2.0.0) (2021-08-08)
 
 
