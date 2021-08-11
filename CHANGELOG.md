@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/sabertazimi/bod/compare/v3.2.0...v3.3.0) (2021-08-11)
+
+
+### Features
+
+* **CRA:** use next react-dev-utils ([c3f14e0](https://github.com/sabertazimi/bod/commit/c3f14e0d88b1c66b6304bf3ba6f386d9273bfce0))
+
 ## [3.2.0](https://github.com/sabertazimi/bod/compare/v3.1.0...v3.2.0) (2021-08-11)
 
 
