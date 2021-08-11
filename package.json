@@ -1,29 +1,18 @@
 {
   "name": "bod",
+  "private": true,
   "version": "2.0.0",
   "description": "Boilerplate CLI App",
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run test:badge",
-    "clean": "rimraf ./dist/",
-    "compile": "tsc",
-    "dev": "ts-node ./lib/bod.ts",
-    "format": "prettier --write lib/**/*.ts",
-    "lint": "npm run lint:style && npm run lint:type-check",
-    "lint:style": "eslint --fix --ext .ts ./lib",
-    "lint:type-check": "tsc --noEmit",
+    "build": "npm run build -ws --if-present",
+    "format": "npm run build -ws --if-present",
+    "lint": "npm run build -ws --if-present",
+    "publish": "npm publish -ws",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
-    "start": "npm run dev",
-    "test": "jest -o",
-    "test:all": "jest",
-    "test:badge": "node scripts/generateJestCoverageBadge.js",
-    "test:watch": "jest --watch",
-    "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
+    "test": "npm run test -ws --if-present",
+    "test:all": "npm run test:all -ws --if-present"
   },
-  "bin": {
-    "bod": "dist/lib/bod.js"
-  },
-  "main": "dist/lib/index.js",
   "files": [
     "dist/**/*",
     "!dist/**/*.test.js"
@@ -52,37 +41,7 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "homepage": "https://github.com/sabertazimi/bod#readme",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "commander": "^8.1.0",
-    "consola": "^2.15.3",
-    "cross-spawn": "^7.0.3",
-    "envinfo": "^7.8.1",
-    "inquirer": "^8.1.2"
-  },
-  "devDependencies": {
-    "@types/cross-spawn": "^6.0.2",
-    "@types/envinfo": "^7.8.1",
-    "@types/inquirer": "^7.3.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.4.13",
-    "@types/rimraf": "^3.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
-    "ci-info": "^3.2.0",
-    "concurrently": "^6.2.1",
-    "dotenv": "^10.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^27.0.6",
-    "node-fetch": "^2.6.1",
-    "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
-    "standard-version": "^9.3.1",
-    "ts-jest": "^27.0.4",
-    "ts-node": "^10.2.0",
-    "tslib": "^2.3.0",
-    "typescript": "^4.3.5"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }
