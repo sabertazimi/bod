@@ -17,6 +17,14 @@
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },
+  "files": [
+    "bin",
+    "config",
+    "lib",
+    "scripts",
+    "template",
+    "template-typescript"
+  ],
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.14.2",
