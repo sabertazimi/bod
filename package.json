@@ -13,8 +13,12 @@
     "publish": "npm publish -ws",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
-    "test": "npm run test:all -ws --if-present",
-    "start": "npm start -w bod"
+    "start": "npm run start:bod",
+    "start:all": "npm start -ws --if-present",
+    "start:bod": "npm start -w bod",
+    "test": "npm run test:bod",
+    "test:all": "npm run test:all -ws --if-present",
+    "test:bod": "npm run test:watch -w bod"
   },
   "keywords": [
     "boilerplate",
