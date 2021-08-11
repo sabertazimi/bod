@@ -14,9 +14,6 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "bin": {
-    "react-scripts": "./bin/react-scripts.js"
-  },
   "files": [
     "bin",
     "config",
@@ -25,6 +22,9 @@
     "template",
     "template-typescript"
   ],
+  "bin": {
+    "react-scripts": "./bin/react-scripts.js"
+  },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.14.2",
@@ -43,7 +43,7 @@
     "dotenv": "9.0.2",
     "dotenv-expand": "5.1.0",
     "eslint": "^7.30.0",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-react-app": "^7.0.0-next.75",
     "eslint-webpack-plugin": "^2.5.4",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
