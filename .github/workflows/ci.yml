@@ -50,6 +50,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           flag-name: Node ${{ matrix.node-version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
           base-path: packages/bod
+          path-to-lcov: ./packages/bod/coverage/lcov.info
       - name: Building work
         run: |
           npm run build --if-present
