@@ -5,10 +5,13 @@ import { Command, program } from 'commander';
 import consola from 'consola';
 import envinfo from 'envinfo';
 import fs from 'fs';
+import path from 'path';
 import { create } from './index';
 
 const packageJSON = JSON.parse(
-  fs.readFileSync('../package.json', { encoding: 'utf-8' })
+  fs.readFileSync(path.resolve(__dirname, '../package.json'), {
+    encoding: 'utf-8',
+  })
 );
 
 program.version(packageJSON.version, '-v, --version');
