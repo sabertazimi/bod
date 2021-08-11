@@ -1,8 +1,10 @@
 {
-  "name": "bod",
+  "name": "create-bod-app",
   "private": true,
-  "version": "2.0.0",
   "description": "Boilerplate CLI App",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "npm run build -ws --if-present",
     "format": "npm run build -ws --if-present",
@@ -11,14 +13,6 @@
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
     "test": "npm run test:all -ws --if-present"
-  },
-  "files": [
-    "dist/**/*",
-    "!dist/**/*.test.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sabertazimi/bod.git"
   },
   "keywords": [
     "boilerplate",
@@ -36,11 +30,12 @@
   "engines": {
     "node": ">=14.0"
   },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git"
   },
   "homepage": "https://github.com/sabertazimi/bod#readme",
-  "workspaces": [
-    "packages/*"
-  ]
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  }
 }
