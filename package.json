@@ -20,7 +20,8 @@
     "start:bod": "npm start -w bod",
     "test": "npm run test:bod",
     "test:all": "npm run test:all -ws --if-present",
-    "test:bod": "npm run test:watch -w bod"
+    "test:bod": "npm run test:watch -w bod",
+    "test:e2e": "echo e2e"
   },
   "keywords": [
     "boilerplate",
