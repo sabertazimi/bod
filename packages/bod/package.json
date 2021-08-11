@@ -24,10 +24,6 @@
     "bod": "dist/lib/bod.js"
   },
   "main": "dist/lib/index.js",
-  "files": [
-    "dist/**/*",
-    "!dist/**/*.test.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git",

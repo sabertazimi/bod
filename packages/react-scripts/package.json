@@ -14,22 +14,6 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "files": [
-    "bin/**/*.js",
-    "!bin/**/*.test.js",
-    "config/**/*.js",
-    "!config/**/*.test.js",
-    "lib/**/*.js",
-    "!lib/**/*.test.js",
-    "scripts/**/*.js",
-    "!scripts/**/*.test.js",
-    "template/**/*.js",
-    "!template/**/*.test.js",
-    "template-typescript/**/*.js",
-    "!template-typescript/**/*.test.js",
-    "utils/**/*.js",
-    "!utils/**/*.test.js"
-  ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },

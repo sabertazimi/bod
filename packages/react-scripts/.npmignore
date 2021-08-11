@@ -1,1 +1,4 @@
-/fixtures
+fixtures/
+
+*.test.js
+*.yml
