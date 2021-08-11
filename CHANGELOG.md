@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/sabertazimi/bod/compare/v3.4.0...v3.5.0) (2021-08-11)
+
+
+### Bug Fixes
+
+* **CRA-scripts:** hidden eject scripts by default ([20f7889](https://github.com/sabertazimi/bod/commit/20f788913eb47b7da5322d52d5f6064eb3cb83fa))
+* **CRA-template:** rectify reference types path for template ([79f65f8](https://github.com/sabertazimi/bod/commit/79f65f82978e7205d473f241c9385e86a4c2ab13))
+* **CRA-template:** sync version number ([16ed77e](https://github.com/sabertazimi/bod/commit/16ed77e5d83699caa20cf3a934e4e3f09f87a78f))
+
 ## [3.4.0](https://github.com/sabertazimi/bod/compare/v3.3.0...v3.4.0) (2021-08-11)
 
 
