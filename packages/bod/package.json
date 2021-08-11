@@ -30,7 +30,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabertazimi/bod.git"
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/bod"
   },
   "keywords": [
     "boilerplate",
