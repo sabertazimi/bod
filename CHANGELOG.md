@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/sabertazimi/bod/compare/v3.3.0...v3.4.0) (2021-08-11)
+
+
+### Features
+
+* **CRA-template:** add custom CRA template ([a877a96](https://github.com/sabertazimi/bod/commit/a877a964d3a57f64fc9ae5e5bbeb5cd76cc828b9))
+
+
+### Bug Fixes
+
+* **bod-CreateCommand:** add custom React template support ([0e10794](https://github.com/sabertazimi/bod/commit/0e107944ee6b509913a7c6f8c1e1b2d4196dce39))
+* **CRA-eslint:** bump to eslint-config v7 ([876d601](https://github.com/sabertazimi/bod/commit/876d601ba57fffcc8a4f9fed748f88122f784d57))
+* **CRA-scripts:** rectify broken Jest tranformer API ([d880313](https://github.com/sabertazimi/bod/commit/d8803132ee8d66070b6964722cb5917e4ca80d71))
+* **CRA-template:** add custom types definition ([c629988](https://github.com/sabertazimi/bod/commit/c629988d94ef31146b506cc438d032a3591561b7))
+
 ## [3.3.0](https://github.com/sabertazimi/bod/compare/v3.2.0...v3.3.0) (2021-08-11)
 
 
