@@ -19,9 +19,16 @@
     "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
   },
   "bin": {
-    "bod": "dist/lib/bod.js"
+    "bod": "lib/bod.ts"
   },
-  "main": "dist/lib/index.js",
+  "main": "lib/index.ts",
+  "publishConfig": {
+    "bin": {
+      "bod": "dist/lib/bod.js"
+    },
+    "main": "dist/lib/index.js",
+    "typings": "dist/lib/index.d.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git",
