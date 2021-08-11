@@ -4,10 +4,14 @@ import chalk from 'chalk';
 import { Command, program } from 'commander';
 import consola from 'consola';
 import envinfo from 'envinfo';
-import packageJson from '../package.json';
+import fs from 'fs';
 import { create } from './index';
 
-program.version(packageJson.version, '-v, --version');
+const packageJSON = JSON.parse(
+  fs.readFileSync('../package.json', { encoding: 'utf-8' })
+);
+
+program.version(packageJSON.version, '-v, --version');
 program.usage('<command> [options]');
 
 program

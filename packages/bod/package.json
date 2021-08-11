@@ -4,6 +4,7 @@
   "description": "Boilerplate CLI App",
   "scripts": {
     "build": "npm run clean && npm run compile && npm run test:badge",
+    "postbuild": "mkdir -p ../../build && mv build/* ../../build/",
     "clean": "rimraf ./dist/",
     "compile": "tsc",
     "dev": "ts-node ./lib/bod.ts",
@@ -18,16 +19,18 @@
     "test:watch": "jest --watch",
     "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
   },
-  "bin": {
-    "bod": "lib/bod.ts"
-  },
-  "main": "lib/index.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.d.ts"
+  ],
   "publishConfig": {
     "bin": {
-      "bod": "dist/lib/bod.js"
+      "bod": "dist/bod.js"
     },
-    "main": "dist/lib/index.js",
-    "typings": "dist/lib/index.d.ts"
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts"
   },
   "repository": {
     "type": "git",
