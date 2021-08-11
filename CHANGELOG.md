@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/sabertazimi/bod/compare/v3.1.0...v3.2.0) (2021-08-11)
+
+
+### Features
+
+* **CRA-workbox:** add workbox v6 support ([a5b9590](https://github.com/sabertazimi/bod/commit/a5b9590a2840484ffe19242cb6f2093c96bc45ac))
+
+
+### Bug Fixes
+
+* **bod-TypeScript:** rectify typescript template arg ([43eeca4](https://github.com/sabertazimi/bod/commit/43eeca4bb3059abf9b9b8737a170d8d8820cc8e0))
+
 ## [3.1.0](https://github.com/sabertazimi/bod/compare/v3.0.0...v3.1.0) (2021-08-11)
 
 
