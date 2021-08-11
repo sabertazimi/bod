@@ -3,7 +3,8 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 const fetch = require('node-fetch');
 
-const SummaryFilePath = 'coverage/coverage-summary.json';
+const packages = ['packages/bod'];
+const SummaryFilePath = `${packages[0]}/coverage/coverage-summary.json`;
 const OutputBadgePath = 'build';
 const CoverageType = ['statements', 'branches', 'functions', 'lines'];
 const BadgeStyle = [

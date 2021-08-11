@@ -8,6 +8,8 @@
   ],
   "scripts": {
     "build": "npm run build -ws --if-present",
+    "build:badge": "node scripts/generateJestCoverageBadge.js",
+    "postbuild": "npm run build:badge",
     "format": "npm run format -ws --if-present",
     "lint": "npm run lint -ws --if-present",
     "publish": "npm publish -ws",
@@ -45,6 +47,7 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "devDependencies": {
+    "node-fetch": "^2.6.1",
     "standard-version": "^9.3.1"
   }
 }

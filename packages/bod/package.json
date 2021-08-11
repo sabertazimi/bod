@@ -3,8 +3,7 @@
   "version": "3.5.1",
   "description": "Boilerplate CLI App",
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run test:badge",
-    "postbuild": "mkdir -p ../../build && mv build/* ../../build/",
+    "build": "npm run clean && npm run compile",
     "clean": "rimraf ./dist/",
     "compile": "tsc",
     "dev": "ts-node ./lib/bod.ts",
@@ -15,7 +14,6 @@
     "start": "npm run dev",
     "test": "jest -o",
     "test:all": "jest",
-    "test:badge": "node scripts/generateJestCoverageBadge.js",
     "test:watch": "jest --watch",
     "watch": "concurrently \"npm:dev\" \"npm:test:watch\""
   },
@@ -79,7 +77,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.6",
-    "node-fetch": "^2.6.1",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.4",
