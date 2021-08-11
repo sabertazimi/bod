@@ -33,7 +33,7 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app',
         '--template',
-        'typescript',
+        '@sabertazimi/typescript',
         '--scripts-version',
         CreateCommand.ReactScripts,
       ],
