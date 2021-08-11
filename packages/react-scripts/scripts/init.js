@@ -187,6 +187,7 @@ module.exports = function (
       start: 'react-scripts start',
       build: 'react-scripts build',
       test: 'react-scripts test',
+      'test:debug': 'react-scripts --inspect-brk test --runInBand --no-cache',
     },
     templateScripts
   );
