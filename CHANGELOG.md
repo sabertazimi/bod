@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/sabertazimi/bod/compare/v3.0.0...v3.1.0) (2021-08-11)
+
+
+### Bug Fixes
+
+* **bod-bin:** add `bin` config ([5a90200](https://github.com/sabertazimi/bod/commit/5a9020064813046d18c3dbfafb881316088dc095))
+* **CI:** add `npm i` stub files ([d351185](https://github.com/sabertazimi/bod/commit/d351185506b8908178f0d83b15ca08bc3e115b4a))
+
+
+### Building Work
+
+* **Jest-badge:** remove redundant error checking ([c46e242](https://github.com/sabertazimi/bod/commit/c46e242cd8908b614fcd43df1b80805681261600))
+
 ## [3.0.0](https://github.com/sabertazimi/bod/compare/v2.0.0...v3.0.0) (2021-08-11)
 
 
