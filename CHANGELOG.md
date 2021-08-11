@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.1](https://github.com/sabertazimi/bod/compare/v3.5.0...v3.5.1) (2021-08-11)
+
+
+### Bug Fixes
+
+* **CRA-scrtips:** add `test:debug` debugging test script ([7447b54](https://github.com/sabertazimi/bod/commit/7447b540eb9fc15da13bab89b75be55594fd0b40))
+* **CRA-template:** sync version number ([5acdb3f](https://github.com/sabertazimi/bod/commit/5acdb3ff768a84560bd9a1d5d0b2f3de7e6c54e4))
+* **version:**  bump template version when release ([a70734f](https://github.com/sabertazimi/bod/commit/a70734fbeaa669d031e91589750941e4a3e4d605))
+
 ## [3.5.0](https://github.com/sabertazimi/bod/compare/v3.4.0...v3.5.0) (2021-08-11)
 
 
