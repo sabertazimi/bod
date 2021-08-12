@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "node-fetch": "^2.6.1",
-    "standard-version": "^9.3.1"
+    "standard-version": "^9.3.1",
+    "verdaccio": "^5.1.2"
   }
 }
