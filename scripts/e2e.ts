@@ -27,27 +27,33 @@ class Test {
   }
 
   startLocalRegistry() {
+    consola.info('Start verdaccio server ...');
     cp.execSync(
       `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
     cp.execSync(
-      `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`
+      `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`,
+      { stdio: 'inherit' }
     );
-    cp.execSync(`npm set registry "${this.localRegistry}"`);
+    cp.execSync(`npm set registry "${this.localRegistry}"`, {
+      stdio: 'inherit',
+    });
   }
 
   stopLocalRegistry() {
-    cp.execSync(`npm set registry ${this.originalRegistry}`);
+    cp.execSync(`npm set registry ${this.originalRegistry}`, {
+      stdio: 'inherit',
+    });
   }
 
   publishToLocalRegistry() {
     // cp.execSync('git clean -df');
-    cp.execSync('npm run publish');
+    cp.execSync('npm run publish', { stdio: 'inherit' });
   }
 
   cleanUp() {
-    consola.info('Cleaning up.');
-    // cp.execSync('git checkout -- packages/*/package.json');
+    consola.info('Cleaning up ...');
+    cp.execSync('git checkout -- packages/*/package.json');
     this.stopLocalRegistry();
   }
 
@@ -63,7 +69,7 @@ class Test {
   }
 
   handleError(error: Error) {
-    consola.error('ERROR! An error was encountered while executing');
+    consola.error('An error was encountered while executing');
     consola.error(error);
     this.cleanUp();
     consola.info('Exiting with error.');
