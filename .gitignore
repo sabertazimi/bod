@@ -77,6 +77,10 @@ dist
 .temp/
 temp/
 
-htpasswd/
+htpasswd
 storage/
+scripts/htpasswd
+scripts/storage/
+
+.npmrc
 
