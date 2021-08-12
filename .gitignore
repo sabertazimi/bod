@@ -76,3 +76,7 @@ dist
 # testing files
 .temp
 temp
+
+htpasswd
+storage
+
