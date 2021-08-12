@@ -8,10 +8,9 @@ import fs from 'fs';
 import path from 'path';
 import { create } from './index';
 
+const packageJsonPath = path.join(__dirname, '../package.json');
 const packageJson = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '../package.json'), {
-    encoding: 'utf-8',
-  })
+  fs.readFileSync(packageJsonPath, { encoding: 'utf-8' })
 );
 
 program.version(packageJson.version, '-v, --version');
