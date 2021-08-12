@@ -1,13 +1,17 @@
 #!/usr/bin/env node
-'use strict';
 
 const fs = require('fs');
 const path = require('path');
 const cp = require('child_process');
 const consola = require('consola');
 
-const startLocalRegistry = () => {};
+const startLocalRegistry = (configPath) => {
+  const { pid } = cp.exec(`npx verdaccio -c ${configPath}`);
+  process.kill(pid, 'SIGINT');
+};
+
 const stopLocalRegistry = (pid) => {};
+
 const publishToLocalRegistry = () => {};
 
 const cleanup = () => {
@@ -92,6 +96,10 @@ const main = () => {
   const packagesDir = path.join(rootDir, 'packages');
   const cwd = process.cwd();
   consola.info(`Working in directory ${cwd}`);
+
+  const localRegistry = 'http://localhost:4873';
+  const originalRegistry = cp.execSync('npm get registry').toString();
+  const localRegistryConfig = path.join(rootDir, '/scripts/verdaccio.yaml');
 
   handleExit();
 };
