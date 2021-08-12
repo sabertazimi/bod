@@ -10,6 +10,7 @@ storage: ./storage
 auth:
   htpasswd:
     file: ./htpasswd
+    max_users: 1000
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
