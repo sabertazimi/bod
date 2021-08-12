@@ -44,6 +44,7 @@ class Test {
       true
     );
     Test.exec(`npm set registry "${this.localRegistry}"`, true);
+    consola.info(`Setup local registry ${this.localRegistry}.`);
   }
 
   stopLocalRegistry() {
@@ -134,7 +135,7 @@ class Test {
 
   init() {
     this.cwd = process.cwd();
-    consola.info(`Working in directory ${this.cwd}`);
+    consola.info(`Working in directory ${this.cwd}.`);
 
     this.rootPath = path.join(__dirname, '..');
     this.packagesPath = path.join(this.rootPath, 'packages');
