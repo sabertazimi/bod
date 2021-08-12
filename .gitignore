@@ -74,9 +74,9 @@ dist
 .vscode/
 
 # testing files
-.temp
-temp
+.temp/
+temp/
 
-htpasswd
-storage
+htpasswd/
+storage/
 
