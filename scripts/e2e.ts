@@ -28,7 +28,7 @@ class Test {
 
   static exec(command: string, output?: boolean, cwd?: string) {
     return cp.execSync(command, {
-      shell: '/usr/bin/zsh',
+      shell: '/usr/bin/bash',
       stdio: output ? 'inherit' : 'pipe',
       cwd: cwd ?? process.cwd(),
     });
