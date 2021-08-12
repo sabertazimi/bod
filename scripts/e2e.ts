@@ -6,26 +6,43 @@ import fs from 'fs';
 import path from 'path';
 
 class Test {
-  pid: number;
+  appName: string;
+  rootPath: string;
+  packagesPath: string;
+  cwd: string;
+  localRegistry: string;
+  originalRegistry: string;
+  localRegistryConfigPath: string;
+  localRegistryLogPath: string;
 
-  constructor() {
-    this.pid = -1;
+  constructor(appName: string) {
+    this.appName = appName;
+    this.rootPath = '';
+    this.packagesPath = '';
+    this.cwd = '';
+    this.localRegistry = '';
+    this.originalRegistry = '';
+    this.localRegistryConfigPath = '';
+    this.localRegistryLogPath = '';
   }
 
-  startLocalRegistry(configPath: string) {
-    const { pid } = cp.exec(`npx verdaccio -c ${configPath}`);
-
-    if (pid) {
-      this.pid = pid;
-    }
+  startLocalRegistry() {
+    cp.execSync(
+      `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
+    );
+    cp.execSync(
+      `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`
+    );
+    cp.execSync(`npm set registry "${this.localRegistry}"`);
   }
 
   stopLocalRegistry() {
-    return;
+    cp.execSync(`npm set registry ${this.originalRegistry}`);
   }
 
   publishToLocalRegistry() {
-    return;
+    // cp.execSync('git clean -df');
+    cp.execSync('npm run publish');
   }
 
   cleanUp() {
@@ -35,8 +52,8 @@ class Test {
   }
 
   handleSetup() {
-    process.on('SIGINT', this.handleExit);
-    process.on('uncaughtException', this.handleError);
+    process.on('SIGINT', this.handleExit.bind(this));
+    process.on('uncaughtException', this.handleError.bind(this));
   }
 
   handleExit() {
@@ -54,7 +71,7 @@ class Test {
   }
 
   checkGitStatus() {
-    const gitStatus = cp.execSync(`git status --porcelain`).toString();
+    const gitStatus = cp.execSync('git status --porcelain').toString();
 
     if (gitStatus.trim() !== '') {
       consola.info('Please commit your changes before running this script!');
@@ -93,37 +110,45 @@ class Test {
     return scriptsPath;
   }
 
-  runCRA(appPath: string, rootPath: string, scriptsPath: string) {
+  runCRA(scriptsPath: string) {
+    // npx create-react-app appName --template @sabertazimi/typescript --scripts-version @sabertazimi/react-scripts
     cp.execSync(
-      `npx create-react-app ${appPath} --scripts-version ${scriptsPath}`,
+      `npx create-react-app ${this.appName} --scripts-version ${scriptsPath}`,
       {
-        cwd: rootPath,
+        cwd: this.rootPath,
         stdio: 'inherit',
       }
     );
   }
 
+  init() {
+    this.cwd = process.cwd();
+    consola.info(`Working in directory ${this.cwd}`);
+
+    this.rootPath = path.join(__dirname, '..');
+    this.packagesPath = path.join(this.rootPath, 'packages');
+    this.originalRegistry = cp.execSync('npm get registry').toString();
+    this.localRegistry = 'http://localhost:4873';
+    this.localRegistryConfigPath = path.join(
+      this.rootPath,
+      'scripts/verdaccio.yaml'
+    );
+    this.localRegistryLogPath = path.join(this.rootPath, 'registry.log');
+  }
+
   run() {
     this.handleSetup();
-
-    const rootPath = path.join(__dirname, '..');
-    const packagesPath = path.join(rootPath, 'packages');
-    const cwd = process.cwd();
-    consola.info(`Working in directory ${cwd}`);
-
-    const localRegistry = 'http://localhost:4873';
-    const originalRegistry = cp.execSync('npm get registry').toString();
-    const localRegistryConfigPath = path.join(
-      rootPath,
-      '/scripts/verdaccio.yaml'
-    );
-
+    this.checkGitStatus();
+    this.init();
+    this.startLocalRegistry();
+    // this.publishToLocalRegistry();
     this.handleExit();
   }
 }
 
 const main = () => {
-  const test = new Test();
+  const appName = 'temp';
+  const test = new Test(appName);
   test.run();
 };
 
