@@ -1,107 +1,130 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const cp = require('child_process');
-const consola = require('consola');
+import fs from 'fs';
+import path from 'path';
+import cp from 'child_process';
+import consola from 'consola';
 
-const startLocalRegistry = (configPath) => {
-  const { pid } = cp.exec(`npx verdaccio -c ${configPath}`);
-  process.kill(pid, 'SIGINT');
-};
+class Test {
+  pid: number;
 
-const stopLocalRegistry = (pid) => {};
+  constructor() {
+    this.pid = -1;
+  }
 
-const publishToLocalRegistry = () => {};
+  startLocalRegistry(configPath: string) {
+    const { pid } = cp.exec(`npx verdaccio -c ${configPath}`);
 
-const cleanup = () => {
-  consola.info('Cleaning up.');
-  // cp.execSync(`git checkout -- packages/*/package.json`);
-  stopLocalRegistry();
-};
+    if (pid) {
+      this.pid = pid;
+    }
+  }
 
-const handleSetup = () => {
-  process.on('SIGINT', handleExit);
-  process.on('uncaughtException', handleError);
-};
+  stopLocalRegistry() {
+    return;
+  }
 
-const handleExit = () => {
-  cleanup();
-  consola.info('Exiting without error.');
-  process.exit(0);
-};
+  publishToLocalRegistry() {
+    return;
+  }
 
-const handleError = (e) => {
-  consola.error('ERROR! An error was encountered while executing');
-  consola.error(e);
-  cleanup();
-  consola.info('Exiting with error.');
-  process.exit(1);
-};
+  cleanUp() {
+    consola.info('Cleaning up.');
+    // cp.execSync('git checkout -- packages/*/package.json');
+    this.stopLocalRegistry();
+  }
 
-const checkGitStatus = () => {
-  const gitStatus = cp.execSync(`git status --porcelain`).toString();
+  handleSetup() {
+    process.on('SIGINT', this.handleExit);
+    process.on('uncaughtException', this.handleError);
+  }
 
-  if (gitStatus.trim() !== '') {
-    consola.info('Please commit your changes before running this script!');
-    consola.info('Exiting because `git status` is not empty:');
-    consola.log();
-    consola.info(gitStatus);
-    consola.log();
+  handleExit() {
+    this.cleanUp();
+    consola.info('Exiting without error.');
+    process.exit(0);
+  }
+
+  handleError(error: Error) {
+    consola.error('ERROR! An error was encountered while executing');
+    consola.error(error);
+    this.cleanUp();
+    consola.info('Exiting with error.');
     process.exit(1);
   }
-};
 
-const getPackages = () => {
-  const packagePathsByName = {};
+  checkGitStatus() {
+    const gitStatus = cp.execSync(`git status --porcelain`).toString();
 
-  fs.readdirSync(packagesDir).forEach((name) => {
-    const packageDir = path.join(packagesDir, name);
-    const packageJson = path.join(packageDir, 'package.json');
-    if (fs.existsSync(packageJson)) {
-      packagePathsByName[name] = packageDir;
+    if (gitStatus.trim() !== '') {
+      consola.info('Please commit your changes before running this script!');
+      consola.info('Exiting because `git status` is not empty:');
+      consola.log('');
+      consola.info(gitStatus);
+      consola.log('');
+      process.exit(1);
     }
-  });
+  }
 
-  return packagePathsByName;
-};
+  getPackages(packagesPath: string) {
+    const packagePathsByName: { [key: string]: string } = {};
 
-const packReactScripts = () => {
-  const scriptsFileName = cp
-    .execSync(`npm pack`, { cwd: path.join(packagesDir, 'react-scripts') })
-    .toString()
-    .trim();
-  const scriptsPath = path.join(packagesDir, 'react-scripts', scriptsFileName);
-  return scriptsPath;
-};
+    fs.readdirSync(packagesPath).forEach((name) => {
+      const packagePath = path.join(packagesPath, name);
+      const packageJson = path.join(packagePath, 'package.json');
+      if (fs.existsSync(packageJson)) {
+        packagePathsByName[name] = packagePath;
+      }
+    });
 
-const runCRA = () => {
-  const craScriptPath = path.join(packagesDir, 'create-react-app', 'index.js');
+    return packagePathsByName;
+  }
 
-  cp.execSync(
-    `node ${craScriptPath} ${args.join(
-      ' '
-    )} --scripts-version="${scriptsPath}"`,
-    {
-      cwd: rootDir,
-      stdio: 'inherit',
-    }
-  );
-};
+  packReactScripts(packagesPath: string) {
+    const scriptsFileName = cp
+      .execSync(`npm pack`, { cwd: path.join(packagesPath, 'react-scripts') })
+      .toString()
+      .trim();
+    const scriptsPath = path.join(
+      packagesPath,
+      'react-scripts',
+      scriptsFileName
+    );
+    return scriptsPath;
+  }
+
+  runCRA(appPath: string, rootPath: string, scriptsPath: string) {
+    cp.execSync(
+      `npx create-react-app ${appPath} --scripts-version ${scriptsPath}`,
+      {
+        cwd: rootPath,
+        stdio: 'inherit',
+      }
+    );
+  }
+
+  run() {
+    this.handleSetup();
+
+    const rootPath = path.join(__dirname, '..');
+    const packagesPath = path.join(rootPath, 'packages');
+    const cwd = process.cwd();
+    consola.info(`Working in directory ${cwd}`);
+
+    const localRegistry = 'http://localhost:4873';
+    const originalRegistry = cp.execSync('npm get registry').toString();
+    const localRegistryConfigPath = path.join(
+      rootPath,
+      '/scripts/verdaccio.yaml'
+    );
+
+    this.handleExit();
+  }
+}
 
 const main = () => {
-  handleSetup();
-
-  const rootDir = path.join(__dirname, '..');
-  const packagesDir = path.join(rootDir, 'packages');
-  const cwd = process.cwd();
-  consola.info(`Working in directory ${cwd}`);
-
-  const localRegistry = 'http://localhost:4873';
-  const originalRegistry = cp.execSync('npm get registry').toString();
-  const localRegistryConfig = path.join(rootDir, '/scripts/verdaccio.yaml');
-
-  handleExit();
+  const test = new Test();
+  test.run();
 };
 
 main();
