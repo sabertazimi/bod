@@ -1,7 +1,7 @@
+import cp from 'child_process';
 import fs from 'fs';
-import path from 'path';
-import { spawnSync } from 'child_process';
 import fetch from 'node-fetch';
+import path from 'path';
 
 const packages = ['packages/bod'];
 const SummaryFilePath = `${packages[0]}/coverage/coverage-summary.json`;
@@ -53,7 +53,7 @@ const generateCoverageFile = async (
   badgeStyle: string,
   outputDir: string
 ) => {
-  spawnSync('mkdir', ['-p', outputDir]);
+  cp.spawnSync('mkdir', ['-p', outputDir]);
   const badgeUrl = getBadgeUrl(summaryFilePath, coverageType, badgeStyle);
   const output = path.join(outputDir, `coverage-${coverageType}.svg`);
   const file = await downloadBadgeFile(badgeUrl);

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
 import cp from 'child_process';
 import consola from 'consola';
+import fs from 'fs';
+import path from 'path';
 
 class Test {
   pid: number;
