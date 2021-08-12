@@ -26,34 +26,38 @@ class Test {
     this.localRegistryLogPath = '';
   }
 
+  static exec(command: string, output?: boolean, cwd?: string) {
+    return cp.execSync(command, {
+      shell: '/usr/bin/zsh',
+      stdio: output ? 'inherit' : 'pipe',
+      cwd: cwd ?? process.cwd(),
+    });
+  }
+
   startLocalRegistry() {
     consola.info('Start verdaccio server ...');
-    cp.execSync(
+    Test.exec(
       `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
-    cp.execSync(
+    Test.exec(
       `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`,
-      { stdio: 'inherit' }
+      true
     );
-    cp.execSync(`npm set registry "${this.localRegistry}"`, {
-      stdio: 'inherit',
-    });
+    Test.exec(`npm set registry "${this.localRegistry}"`, true);
   }
 
   stopLocalRegistry() {
-    cp.execSync(`npm set registry ${this.originalRegistry}`, {
-      stdio: 'inherit',
-    });
+    Test.exec(`npm set registry ${this.originalRegistry}`, true);
   }
 
   publishToLocalRegistry() {
-    // cp.execSync('git clean -df');
-    cp.execSync('npm run publish', { stdio: 'inherit' });
+    // Test.exec('git clean -df');
+    Test.exec('npm run publish', true);
   }
 
   cleanUp() {
     consola.info('Cleaning up ...');
-    cp.execSync('git checkout -- packages/*/package.json');
+    Test.exec('git checkout -- packages/*/package.json');
     this.stopLocalRegistry();
   }
 
@@ -81,7 +85,7 @@ class Test {
   }
 
   checkGitStatus() {
-    const gitStatus = cp.execSync('git status --porcelain').toString();
+    const gitStatus = Test.exec('git status --porcelain').toString();
 
     if (gitStatus.trim() !== '') {
       consola.info('Please commit your changes before running this script!');
@@ -122,12 +126,10 @@ class Test {
 
   runCRA(scriptsPath: string) {
     // npx create-react-app appName --template @sabertazimi/typescript --scripts-version @sabertazimi/react-scripts
-    cp.execSync(
+    Test.exec(
       `npx create-react-app ${this.appName} --scripts-version ${scriptsPath}`,
-      {
-        cwd: this.rootPath,
-        stdio: 'inherit',
-      }
+      true,
+      this.rootPath
     );
   }
 
@@ -137,7 +139,7 @@ class Test {
 
     this.rootPath = path.join(__dirname, '..');
     this.packagesPath = path.join(this.rootPath, 'packages');
-    this.originalRegistry = cp.execSync('npm get registry').toString();
+    this.originalRegistry = Test.exec('npm get registry').toString();
     this.localRegistry = 'http://localhost:4873';
     this.localRegistryConfigPath = path.join(
       this.rootPath,
