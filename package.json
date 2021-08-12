@@ -9,9 +9,10 @@
   "scripts": {
     "build": "npm run build -ws --if-present",
     "build:badge": "node scripts/generateJestCoverageBadge.js",
-    "postbuild": "npm run build:badge",
+    "e2e": "npm run test:e2e",
     "format": "npm run format -ws --if-present",
     "lint": "npm run lint -ws --if-present",
+    "postbuild": "npm run build:badge",
     "publish": "npm publish -ws",
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
@@ -21,7 +22,7 @@
     "test": "npm run test:bod",
     "test:all": "npm run test:all -ws --if-present",
     "test:bod": "npm run test:watch -w bod",
-    "test:e2e": "echo e2e"
+    "test:e2e": "node scripts/e2e.js"
   },
   "keywords": [
     "boilerplate",

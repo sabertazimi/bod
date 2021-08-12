@@ -44,7 +44,7 @@ jobs:
           npm run test:all --if-present
       - name: E2E testing
         run: |
-          echo 'E2E Testing'
+          npm run e2e
       - name: Coveralls action
         uses: coverallsapp/github-action@1.1.3
         with:
