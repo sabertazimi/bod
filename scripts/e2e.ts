@@ -77,7 +77,7 @@ class Test {
       consola.info('Please commit your changes before running this script!');
       consola.info('Exiting because `git status` is not empty:');
       consola.log('');
-      consola.info(gitStatus);
+      consola.log(gitStatus);
       consola.log('');
       process.exit(1);
     }
