@@ -30,11 +30,11 @@ class Test {
     this.localRegistryLogPath = path.join(this.rootPath, 'registry.log');
   }
 
-  static exec(command: string, cwd?: string) {
+  static exec(command: string, pipe?: boolean, cwd?: string) {
     return cp.execSync(command, {
       shell: '/usr/bin/bash',
+      stdio: pipe ? 'pipe' : 'inherit',
       cwd: cwd ?? process.cwd(),
-      stdio: 'inherit',
     });
   }
 
@@ -47,7 +47,7 @@ class Test {
   }
 
   stopLocalRegistry() {
-    Test.exec(`kill $(lsof -t -i:${this.localPort})`);
+    Test.exec(`kill -9 $(lsof -t -i:${this.localPort})`);
   }
 
   publishToLocalRegistry() {
@@ -55,12 +55,15 @@ class Test {
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
+    Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
     Test.exec(`npm publish -ws --registry ${this.localRegistry}`);
   }
 
   cleanUp() {
     consola.info('Cleaning up ...');
-    Test.exec('git checkout -- packages/*/package.json');
+    Test.exec(
+      'git checkout -- package.json package-lock.json packages/*/package.json'
+    );
     this.stopLocalRegistry();
   }
 
@@ -87,7 +90,7 @@ class Test {
   }
 
   checkGitStatus() {
-    const gitStatus = Test.exec('git status --porcelain').toString();
+    const gitStatus = Test.exec('git status --porcelain', true).toString();
 
     if (gitStatus.trim() !== '') {
       consola.info('Please commit your changes before running this script!');
@@ -115,7 +118,7 @@ class Test {
 
   packReactScripts(packagesPath: string) {
     const scriptsFileName = cp
-      .execSync(`npm pack`, { cwd: path.join(packagesPath, 'react-scripts') })
+      .execSync('npm pack', { cwd: path.join(packagesPath, 'react-scripts') })
       .toString()
       .trim();
     const scriptsPath = path.join(
@@ -130,6 +133,7 @@ class Test {
     // npx create-react-app appName --template @sabertazimi/typescript --scripts-version @sabertazimi/react-scripts
     Test.exec(
       `npx create-react-app ${this.appName} --scripts-version ${scriptsPath}`,
+      false,
       this.rootPath
     );
   }
