@@ -2,13 +2,17 @@ import { SpawnSyncReturns } from 'child_process';
 import { isCI } from 'ci-info';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
+import path from 'path';
 import PromptUI from 'inquirer/lib/ui/prompt';
 import rimraf from 'rimraf';
 import CreateCommand from './CreateCommand';
 
-const appPath = 'temp';
+const appPath = path.join(process.cwd(), 'temp');
 
 describe('Create', () => {
+  beforeEach(() => rimraf.sync(appPath));
+  afterEach(() => rimraf.sync(appPath));
+
   test.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
@@ -26,7 +30,6 @@ describe('Create', () => {
         await createCommand.run(appPath);
       }
 
-      rimraf.sync(appPath);
       mockPrompt.mockRestore();
     }
   );
@@ -51,7 +54,6 @@ describe('Create', () => {
       const createCommand = new CreateCommand();
       await expect(createCommand.run(appPath)).rejects.toThrowError();
 
-      rimraf.sync(appPath);
       mockPrompt.mockRestore();
       mockSpawn.mockRestore();
     }
