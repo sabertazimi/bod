@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.2](https://github.com/sabertazimi/bod/compare/v3.5.1...v3.5.2) (2021-08-12)
+
+
+### :bug: Bug Fixes
+
+* **CI:** rectify coveralls config ([472d07d](https://github.com/sabertazimi/bod/commit/472d07d721ed405fc7b453f929a634c97e3a6037))
+
+
+### :wrench: Testing
+
+* **bod-BaseCommand:** basic testing for BaseCommand ([b5f30d3](https://github.com/sabertazimi/bod/commit/b5f30d387c0035f026475a27f2d38c550be14636))
+
+
+### :rocket: Building Work
+
+* **CI:** add `coveralls` support ([d5a03a5](https://github.com/sabertazimi/bod/commit/d5a03a56986f239aa83f5496f1693eeaa61f5a7c))
+* **Jest-badge:** move badge script to root directory ([4dc4e75](https://github.com/sabertazimi/bod/commit/4dc4e75832d3a27567548aa3e5d9f2776850d496))
+
 ### [3.5.1](https://github.com/sabertazimi/bod/compare/v3.5.0...v3.5.1) (2021-08-11)
 
 
