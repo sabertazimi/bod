@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "npm run build -ws --if-present",
-    "build:badge": "node scripts/badge.js",
+    "build:badge": "ts-node scripts/badge.ts",
     "e2e": "npm run test:e2e",
     "format": "npm run format -ws --if-present",
     "lint": "npm run lint -ws --if-present",
@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.4.13",
+    "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "eslint": "^7.32.0",
