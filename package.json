@@ -49,8 +49,18 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "node-fetch": "^2.6.1",
+    "prettier": "^2.3.2",
     "standard-version": "^9.3.1",
+    "ts-node": "^10.2.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
     "verdaccio": "^5.1.2"
   }
 }
