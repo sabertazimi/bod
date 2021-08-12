@@ -47,7 +47,19 @@ class Test {
   }
 
   stopLocalRegistry() {
+    const localRegistryAuthStorage = path.join(
+      this.rootPath,
+      'scripts/htpasswd'
+    );
+    const localRegistryBundleStorage = path.join(
+      this.rootPath,
+      'scripts/storage'
+    );
+    const localRegistryMetaStorage = path.join(this.rootPath, 'storage');
     Test.exec(`kill -9 $(lsof -t -i:${this.localPort})`);
+    Test.exec(`rm -fr ${localRegistryAuthStorage}`);
+    Test.exec(`rm -fr ${localRegistryBundleStorage}`);
+    Test.exec(`rm -fr ${localRegistryMetaStorage}`);
   }
 
   publishToLocalRegistry() {

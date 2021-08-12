@@ -77,10 +77,14 @@ dist
 .temp/
 temp/
 
-htpasswd
-storage/
+# verdaccio local registry auth storage
 scripts/htpasswd
+
+# verdaccio local registry bundle storage
 scripts/storage/
+
+# verdaccio local registry meta storage
+storage/
 
 .npmrc
 
