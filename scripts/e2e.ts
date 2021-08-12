@@ -64,7 +64,6 @@ class Test {
   handleSetup() {
     process.on('SIGHUP', this.handleExit.bind(this));
     process.on('SIGINT', this.handleExit.bind(this));
-    process.on('SIGKILL', this.handleExit.bind(this));
     process.on('SIGQUIT', this.handleExit.bind(this));
     process.on('SIGTERM', this.handleExit.bind(this));
     process.on('uncaughtException', this.handleError.bind(this));
