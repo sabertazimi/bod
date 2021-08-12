@@ -8,13 +8,13 @@ import fs from 'fs';
 import path from 'path';
 import { create } from './index';
 
-const packageJSON = JSON.parse(
+const packageJson = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../package.json'), {
     encoding: 'utf-8',
   })
 );
 
-program.version(packageJSON.version, '-v, --version');
+program.version(packageJson.version, '-v, --version');
 program.usage('<command> [options]');
 
 program
