@@ -63,12 +63,13 @@ class Test {
   }
 
   publishToLocalRegistry() {
-    // Test.exec('git clean -df');
+    Test.exec('git clean -df');
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
-    Test.exec(`npm publish -ws --registry ${this.localRegistry}`);
+    consola.info(`Publish packages to ${this.localRegistry} ...`);
+    Test.exec(`npm publish -ws --registry ${this.localRegistry}`, true);
   }
 
   cleanUp() {
