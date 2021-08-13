@@ -7,7 +7,7 @@ import PromptUI from 'inquirer/lib/ui/prompt';
 import rimraf from 'rimraf';
 import CreateCommand from './CreateCommand';
 
-const appPath = path.join(process.cwd(), 'temp');
+const appPath = path.join(process.cwd(), 'app');
 
 describe('Create', () => {
   beforeEach(() => rimraf.sync(appPath));

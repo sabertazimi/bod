@@ -199,7 +199,7 @@ class Test {
 }
 
 const main = () => {
-  const appName = 'temp';
+  const appName = 'app';
   const test = new Test(appName);
   test.run();
 };
