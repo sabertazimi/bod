@@ -68,7 +68,7 @@ class Test {
   }
 
   static cmd(cmd: string) {
-    consola.info(`    ${chalk.black.bgGreen('[exec]')}: ${cmd}`);
+    consola.info(`  ${chalk.black.bgGreen('[exec]')}: ${cmd}`);
   }
 
   startLocalRegistry() {
