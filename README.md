@@ -3,14 +3,15 @@
 [![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/bod?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/bod/main/LICENSE)
 
+[![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/bod?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/bod)
 [![Node Version](https://img.shields.io/node/v/bod?logo=node.js&style=for-the-badge)](https://github.com/sabertazimi/bod)
+
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/react-scripts?label=CRA%20Scripts&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
-[![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=CRA%20Template&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
+[![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template?label=JSX%20Template&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template)
+[![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=TSX%20Template&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
 
-[![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/bod?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/bod)
 [![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/bod/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
-
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
