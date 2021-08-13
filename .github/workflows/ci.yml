@@ -39,7 +39,7 @@ jobs:
       - name: Linting
         run: |
           npm run lint --if-present
-      - name: Testing
+      - name: Unit testing
         run: |
           npm run test:all --if-present
       - name: E2E testing
