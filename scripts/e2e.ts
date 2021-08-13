@@ -59,6 +59,10 @@ class Test {
     consola.info(chalk.green(info));
   }
 
+  static success(success: string) {
+    consola.success(chalk.green(success));
+  }
+
   static error(error: string | Error) {
     consola.error(error);
   }
@@ -125,7 +129,7 @@ class Test {
 
   handleExit() {
     this.cleanUp();
-    Test.info('Exiting without error.');
+    Test.success('E2E testing completed.');
     process.exit(0);
   }
 
