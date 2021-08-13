@@ -56,7 +56,7 @@ class Test {
   }
 
   static info(info: string) {
-    consola.info(chalk.green(info));
+    consola.info(chalk.blue(info));
   }
 
   static success(success: string) {
@@ -68,7 +68,7 @@ class Test {
   }
 
   static cmd(cmd: string) {
-    consola.info(`  ${chalk.black.bgGreen('[exec]')}: ${cmd}`);
+    console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
   }
 
   startLocalRegistry() {
@@ -108,7 +108,12 @@ class Test {
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
-    Test.execPipe(`npm publish -ws`);
+    const packages = Test.execPipe(`npm publish -ws`)
+      .toString()
+      .replace('/^[^+].*\n', '') // only keep packages version output
+      .replace(/\+/g, chalk.bgBlue.black('[+]'))
+      .replace(/\n$/, ''); // remove  tailing empty line
+    console.info(packages);
   }
 
   cleanUp() {
