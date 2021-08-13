@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+import chalk from 'chalk';
 import cp from 'child_process';
 import consola from 'consola';
 import fs from 'fs';
@@ -17,12 +16,14 @@ class Test {
   localRegistryLogPath: string;
 
   constructor(appName: string) {
+    Test.info(`Working in directory ${process.cwd()}.`);
     this.appName = appName;
     this.cwd = process.cwd();
-    consola.info(`Working in directory ${this.cwd}.`);
     this.rootPath = path.join(__dirname, '..');
     this.packagesPath = path.join(this.rootPath, 'packages');
-    this.originalRegistry = Test.execPipe('npm config get registry').toString();
+    this.originalRegistry = Test.execPipe('npm config get registry')
+      .toString()
+      .replace(/\n$/, '');
     this.localPort = 4873;
     this.localRegistry = `http://localhost:${this.localPort}`;
     this.localRegistryConfigPath = path.join(
@@ -33,7 +34,7 @@ class Test {
   }
 
   static exec(command: string, cwd?: string) {
-    consola.info(`  [exec]: ${command}.`);
+    Test.cmd(command);
     return cp.execSync(command, {
       shell: '/usr/bin/bash',
       stdio: 'inherit',
@@ -42,6 +43,7 @@ class Test {
   }
 
   static execPipe(command: string, cwd?: string) {
+    Test.cmd(command);
     return cp.execSync(command, {
       shell: '/usr/bin/bash',
       stdio: 'pipe',
@@ -49,8 +51,24 @@ class Test {
     });
   }
 
+  static log(log: string) {
+    consola.log(log);
+  }
+
+  static info(info: string) {
+    consola.info(chalk.green(info));
+  }
+
+  static error(error: string | Error) {
+    consola.error(error);
+  }
+
+  static cmd(cmd: string) {
+    consola.info(`    ${chalk.black.bgGreen('[exec]')}: ${cmd}`);
+  }
+
   startLocalRegistry() {
-    consola.info('Start verdaccio server ...');
+    Test.info('Start verdaccio server ...');
     Test.exec(
       `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
@@ -59,7 +77,7 @@ class Test {
   }
 
   stopLocalRegistry() {
-    consola.info('Clear local registry ...');
+    const localRegistryNpmrcPath = path.join(this.rootPath, '.npmrc');
     const localRegistryAuthStorage = path.join(
       this.rootPath,
       'scripts/htpasswd'
@@ -69,29 +87,32 @@ class Test {
       'scripts/storage'
     );
     const localRegistryMetaStorage = path.join(this.rootPath, 'storage');
+
+    Test.info('Clear local registry ...');
     Test.exec(`npm config set registry "${this.originalRegistry}"`);
     Test.exec(`kill -9 $(lsof -t -i:${this.localPort})`);
+    Test.exec(`rm -fr ${localRegistryNpmrcPath}`);
     Test.exec(`rm -fr ${localRegistryAuthStorage}`);
     Test.exec(`rm -fr ${localRegistryBundleStorage}`);
     Test.exec(`rm -fr ${localRegistryMetaStorage}`);
   }
 
   publishToLocalRegistry() {
-    consola.info(`Publish packages to ${this.localRegistry} ...`);
+    Test.info(`Publish packages to ${this.localRegistry} ...`);
     Test.exec('git clean -df');
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
-    Test.exec(`npm publish -ws`);
+    Test.execPipe(`npm publish -ws`);
   }
 
   cleanUp() {
-    consola.info('Cleaning up ...');
-    Test.exec(
-      'git checkout -- .npmrc package.json package-lock.json packages/*/package.json'
-    );
+    Test.info('Cleaning up ...');
     this.stopLocalRegistry();
+    Test.exec(
+      'git restore package.json package-lock.json packages/*/package.json'
+    );
   }
 
   handleSetup() {
@@ -104,15 +125,15 @@ class Test {
 
   handleExit() {
     this.cleanUp();
-    consola.info('Exiting without error.');
+    Test.info('Exiting without error.');
     process.exit(0);
   }
 
   handleError(error: Error) {
-    consola.error('An error was encountered while executing');
-    consola.error(error);
+    Test.error('An error was encountered while executing');
+    Test.error(error);
     this.cleanUp();
-    consola.error('Exiting with error.');
+    Test.error('Exiting with error.');
     process.exit(1);
   }
 
@@ -120,11 +141,11 @@ class Test {
     const gitStatus = Test.execPipe('git status --porcelain').toString();
 
     if (gitStatus.trim() !== '') {
-      consola.info('Please commit your changes before running this script!');
-      consola.info('Exiting because `git status` is not empty:');
-      consola.log('');
-      consola.log(gitStatus);
-      consola.log('');
+      Test.info('Please commit your changes before running this script!');
+      Test.info('Exiting because `git status` is not empty:');
+      Test.log('');
+      Test.log(gitStatus);
+      Test.log('');
       process.exit(1);
     }
   }
@@ -150,11 +171,13 @@ class Test {
     )
       .toString()
       .trim();
+
     const scriptsPath = path.join(
       packagesPath,
       'react-scripts',
       scriptsFileName
     );
+
     return scriptsPath;
   }
 
