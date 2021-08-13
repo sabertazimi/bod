@@ -10,6 +10,7 @@ class Test {
   cwd: string;
   rootPath: string;
   packagesPath: string;
+  originalRegistry: string;
   localPort: number;
   localRegistry: string;
   localRegistryConfigPath: string;
@@ -21,6 +22,10 @@ class Test {
     consola.info(`Working in directory ${this.cwd}.`);
     this.rootPath = path.join(__dirname, '..');
     this.packagesPath = path.join(this.rootPath, 'packages');
+    this.originalRegistry = Test.exec(
+      'npm config get registry',
+      true
+    ).toString();
     this.localPort = 4873;
     this.localRegistry = `http://localhost:${this.localPort}`;
     this.localRegistryConfigPath = path.join(
@@ -44,6 +49,7 @@ class Test {
       `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
     Test.exec(`grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`);
+    Test.exec(`npm config set registry "${this.localRegistry}"`);
   }
 
   stopLocalRegistry() {
@@ -56,10 +62,13 @@ class Test {
       'scripts/storage'
     );
     const localRegistryMetaStorage = path.join(this.rootPath, 'storage');
+    Test.exec(`npm config set registry "${this.originalRegistry}"`);
+    consola.info('Reset npm registry.');
     Test.exec(`kill -9 $(lsof -t -i:${this.localPort})`);
     Test.exec(`rm -fr ${localRegistryAuthStorage}`);
     Test.exec(`rm -fr ${localRegistryBundleStorage}`);
     Test.exec(`rm -fr ${localRegistryMetaStorage}`);
+    consola.info('Clear all local registry storage files.');
   }
 
   publishToLocalRegistry() {
@@ -69,7 +78,7 @@ class Test {
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
     consola.info(`Publish packages to ${this.localRegistry} ...`);
-    Test.exec(`npm publish -ws --registry ${this.localRegistry}`, true);
+    Test.exec(`npm publish -ws`, true);
   }
 
   cleanUp() {
