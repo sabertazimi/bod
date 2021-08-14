@@ -6,7 +6,7 @@ import path from 'path';
 import rimraf from 'rimraf';
 import CreateCommand, { Action } from './CreateCommand';
 
-const appPath = path.join(process.cwd(), 'app');
+const appPath = path.join(process.cwd(), 'temp');
 
 describe('Create', () => {
   beforeEach(() => rimraf.sync(appPath));
