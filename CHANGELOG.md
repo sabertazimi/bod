@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/sabertazimi/bod/compare/v3.5.2...v3.6.0) (2021-08-14)
+
+
+### :sparkles: Features
+
+* **CRA-template:** add basic jsx template ([aca56e0](https://github.com/sabertazimi/bod/commit/aca56e0e17de1d563d9a28d8197d1ab8ac529ce9))
+* **test-e2e:** setup CRA e2e framework ([1783774](https://github.com/sabertazimi/bod/commit/17837747a2c145c290d3fd06db8f908220994b4f)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **test:** add `verdoccio` for local registry ([439e6d4](https://github.com/sabertazimi/bod/commit/439e6d49c782da7430b6c7e12639644da614c752))
+
+
+### :wrench: Testing
+
+* **bod-CreateCommand:** cleanup app path ([7483427](https://github.com/sabertazimi/bod/commit/748342700b0a984116170d0829169ba879bed082))
+* **CRA-e2e:** add execSync output ([a296c45](https://github.com/sabertazimi/bod/commit/a296c45eea141b305f83a201ce1d09e495dd0756)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** add local registry support ([65cd2ac](https://github.com/sabertazimi/bod/commit/65cd2ac9454427873d79e129a28918076ed783cb)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** add react build/test/start script testing ([a8595de](https://github.com/sabertazimi/bod/commit/a8595defc27b542535c6103533da46a55c4aa5e6)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** bump and revert version when e2e testing ([14c48f4](https://github.com/sabertazimi/bod/commit/14c48f4667f1a4e03975be855fede05f7d684257)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** disable local publish output ([d5e9fb5](https://github.com/sabertazimi/bod/commit/d5e9fb5aa1a00ce54f574de45a3af25082428eea)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** polish verdaccio config ([3e60f17](https://github.com/sabertazimi/bod/commit/3e60f1728f2253db77f88257b7ecf2b3b2f13644)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** pretty e2e testing output ([736a8e9](https://github.com/sabertazimi/bod/commit/736a8e98b0b728c7353d13411d504e791a34c14d)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** publish to local registry ([357f677](https://github.com/sabertazimi/bod/commit/357f677e4ba8a2cf25c16e8460c758aa08fbd68b)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** remove all local registry files ([625c4ff](https://github.com/sabertazimi/bod/commit/625c4ff8c6120c38f7d3d7fc439eb6004c9ebd10)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** rewrite e2e test  with TypeScript ([92f1723](https://github.com/sabertazimi/bod/commit/92f17230c3bfc1ae876c2a34ef29fcacf680727b)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** setup more signal handlers ([9bbd743](https://github.com/sabertazimi/bod/commit/9bbd743755d1cb3c70007566bc133357d536e880)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** setup registry config in `.npmrc` ([477e010](https://github.com/sabertazimi/bod/commit/477e0107dcd1384f88fe137c32ee2e92c45357d6)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** setup verdaccio basic config ([9c10726](https://github.com/sabertazimi/bod/commit/9c10726315e0e23ce48ac17e171a106c3ed5cd6b)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** use `zsh` for execSync ([3170266](https://github.com/sabertazimi/bod/commit/317026681e4881d3748ee8bf852a22a694514c92)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+
+
+### :rocket: Building Work
+
+* **CI:** add tags trigger ([d084f34](https://github.com/sabertazimi/bod/commit/d084f348018fb98678e7ce69f1b24423887aabdf)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CI:** merge `ci` and `publish` into one CI script ([1d36552](https://github.com/sabertazimi/bod/commit/1d365529e795165365316f7b08c8ca4aaf283fb6))
+* **CI:** rename unit testing stage ([a64f4e2](https://github.com/sabertazimi/bod/commit/a64f4e2d066ec90c32736c03cf3efbe0230fc749))
+* **deps-dev:** move common deps to root project ([55aa2d0](https://github.com/sabertazimi/bod/commit/55aa2d0768ebf0aea1922c4eddd76071e677e92a))
+* **deps:** add `chalk` and `consola` package ([0ee957e](https://github.com/sabertazimi/bod/commit/0ee957e8d9daef8c57f6b927e32fd95b6ab3a526)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+
+
+### :bug: Bug Fixes
+
+* **CI:** rectify pulish error after e2e testing ([0e83917](https://github.com/sabertazimi/bod/commit/0e839170c5900a4835344ed4a32df59118f4de77)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** change `zsh` to `bash` ([a47c69e](https://github.com/sabertazimi/bod/commit/a47c69e14f2ce4f15198d961c055771315dbcfbd)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** pretty e2e testing output ([6a305db](https://github.com/sabertazimi/bod/commit/6a305db647d1089fc3a67de1603d2268a919ce01)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** rectify `bod.js` binary mode ([39a8ab0](https://github.com/sabertazimi/bod/commit/39a8ab0b32a9807a64ff05a1be6333597687a650)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **CRA-e2e:** rectify signal handlers error ([b914a51](https://github.com/sabertazimi/bod/commit/b914a51e600229c992839302fc3a5c9a66a260db)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **deps:** rectify invalid workbox-webpack-plugin ([fcd123b](https://github.com/sabertazimi/bod/commit/fcd123bcf390ab5e42cfecc1d2f912e1b383ec82))
+* **test-e2e:** add missing types ([c930153](https://github.com/sabertazimi/bod/commit/c93015358e291a75bf75cf1ff9f86ac45940803e)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **test:** change temporary testing path to `app` ([35c3372](https://github.com/sabertazimi/bod/commit/35c3372e064db260ea155dd5d65ad119833dc510))
+
 ### [3.5.2](https://github.com/sabertazimi/bod/compare/v3.5.1...v3.5.2) (2021-08-12)
 
 

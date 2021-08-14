@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "version": "3.5.2",
+  "version": "3.6.0",
   "description": "Boilerplate CLI App",
   "workspaces": [
     "packages/*"
