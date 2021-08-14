@@ -16,6 +16,10 @@ class BaseCommand {
     this.usage = usage;
   }
 
+  public getName(): string {
+    return this.name;
+  }
+
   public getDescription(): string {
     return this.description;
   }

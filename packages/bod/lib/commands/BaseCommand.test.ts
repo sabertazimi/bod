@@ -7,6 +7,11 @@ const options = {
 };
 
 describe('BaseCommand', () => {
+  test('should have [name] field', () => {
+    const baseCommand = new BaseCommand(options);
+    expect(baseCommand.getName()).toBe(options.name);
+  });
+
   test('should have [description] field', () => {
     const baseCommand = new BaseCommand(options);
     expect(baseCommand.getDescription()).toBe(options.description);
