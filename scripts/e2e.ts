@@ -110,6 +110,7 @@ class Test {
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
+    Test.exec('npm run build');
     const packages = Test.execPipe(`npm publish -ws`)
       .toString()
       .replace('/^[^+].*\n', '') // only keep packages version output
@@ -122,9 +123,7 @@ class Test {
     Test.info('Cleaning up ...');
     this.stopLocalRegistry();
     Test.exec(`rm -fr ${this.appPath}`);
-    Test.exec(
-      'git restore package.json package-lock.json packages/*/package.json'
-    );
+    Test.exec('git restore package.json package-lock.json packages/*');
   }
 
   handleSetup() {
@@ -274,17 +273,17 @@ class Test {
     this.startLocalRegistry();
     this.publishToLocalRegistry();
     this.runTest(
-      'bod',
-      '@sabertazimi/react-scripts',
-      this.checkTsxTemplateIntegrity.bind(this)
-    );
-    this.runTest(
       '@sabertazimi',
       '@sabertazimi/react-scripts',
       this.checkJsxTemplateIntegrity.bind(this)
     );
     this.runTest(
       '@sabertazimi/typescript',
+      '@sabertazimi/react-scripts',
+      this.checkTsxTemplateIntegrity.bind(this)
+    );
+    this.runTest(
+      'bod',
       '@sabertazimi/react-scripts',
       this.checkTsxTemplateIntegrity.bind(this)
     );
