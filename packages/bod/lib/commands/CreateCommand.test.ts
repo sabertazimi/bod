@@ -23,11 +23,6 @@ describe('Create', () => {
           });
           return promise as Promise<unknown> & { ui: PromptUI };
         });
-      const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
-        return {
-          status: 0,
-        } as SpawnSyncReturns<Buffer>;
-      });
 
       const createCommand = new CreateCommand();
       await createCommand.run(appPath);
@@ -41,7 +36,6 @@ describe('Create', () => {
       );
 
       mockPrompt.mockRestore();
-      mockSpawn.mockRestore();
     }
   );
 
