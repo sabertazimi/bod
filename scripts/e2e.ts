@@ -8,6 +8,7 @@ class Test {
   appName: string;
   cwd: string;
   rootPath: string;
+  appPath: string;
   packagesPath: string;
   originalRegistry: string;
   localPort: number;
@@ -20,6 +21,7 @@ class Test {
     this.appName = appName;
     this.cwd = process.cwd();
     this.rootPath = path.join(__dirname, '..');
+    this.appPath = path.join(this.rootPath, this.appName);
     this.packagesPath = path.join(this.rootPath, 'packages');
     this.originalRegistry = Test.execPipe('npm config get registry')
       .toString()
@@ -119,6 +121,7 @@ class Test {
   cleanUp() {
     Test.info('Cleaning up ...');
     this.stopLocalRegistry();
+    Test.exec(`rm -fr ${this.appPath}`);
     Test.exec(
       'git restore package.json package-lock.json packages/*/package.json'
     );
@@ -190,12 +193,54 @@ class Test {
     return scriptsPath;
   }
 
-  runCRA(scriptsPath: string) {
-    // npx create-react-app appName --template @sabertazimi/typescript --scripts-version @sabertazimi/react-scripts
+  runCRA(templatePath: string, scriptsPath: string) {
+    Test.info('Run create-react-app to generate project ...');
     Test.exec(
-      `npx create-react-app ${this.appName} --scripts-version ${scriptsPath}`,
+      `npx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
       this.rootPath
     );
+  }
+
+  exists(filePath: string) {
+    return fs.existsSync(path.join(this.appPath, filePath));
+  }
+
+  checkTemplateIntegrity() {
+    Test.info('Checking template integrity ...');
+
+    const templateAssets =
+      this.exists('node_modules/@sabertazimi/react-scripts') &&
+      this.exists('node_modules/typescript') &&
+      this.exists('tsconfig.json') &&
+      this.exists('src/index.tsx') &&
+      this.exists('src/react-app-env.d.ts');
+
+    if (!templateAssets) {
+      Test.error('CRA template not installed correctly.');
+      process.exit(1);
+    }
+  }
+
+  runBuildScript() {
+    Test.info('Start testing for `react-scripts build` ...');
+    Test.exec('npm run build', this.appPath);
+
+    const buildAssets = this.exists('build');
+
+    if (!buildAssets) {
+      Test.error('CRA `react-scripts build` failed.');
+      process.exit(1);
+    }
+  }
+
+  runTestScript() {
+    Test.info('Start testing for `react-scripts test` ...');
+    Test.exec('CI=true npm run test', this.appPath);
+  }
+
+  runStartScript() {
+    Test.info('Start testing for `react-scripts start` ...');
+    Test.exec('npm start -- --smoke-test', this.appPath);
   }
 
   run() {
@@ -203,6 +248,11 @@ class Test {
     this.checkGitStatus();
     this.startLocalRegistry();
     this.publishToLocalRegistry();
+    this.runCRA('@sabertazimi/typescript', '@sabertazimi/react-scripts');
+    this.checkTemplateIntegrity();
+    this.runBuildScript();
+    this.runTestScript();
+    this.runStartScript();
     this.handleExit();
   }
 }
