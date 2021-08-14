@@ -1,13 +1,11 @@
-import consola from 'consola';
-import { CreateCommand } from './commands';
+import { BaseCommand, CreateCommand, InfoCommand } from './commands';
+
+const CommandFactory = new Map<string, BaseCommand>();
 
 const createCommand = new CreateCommand();
+const infoCommand = new InfoCommand();
 
-const create = (appName: string): Promise<void> => {
-  return createCommand.run(appName).catch((err) => {
-    consola.error(err);
-    consola.error('\nBod create failed.');
-  });
-};
+CommandFactory.set(createCommand.getName(), createCommand);
+CommandFactory.set(infoCommand.getName(), infoCommand);
 
-export { create };
+export { CommandFactory };
