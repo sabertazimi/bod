@@ -5,6 +5,7 @@ import BaseCommand from './BaseCommand';
 class CreateCommand extends BaseCommand {
   private static SimpleBoilerplate =
     'https://github.com/sabertazimi/boilerplate';
+  private static ReactTemplate = '@sabertazimi/typescript';
   private static ReactScripts = '@sabertazimi/react-scripts';
 
   static readonly TemplateActions = [
@@ -33,7 +34,7 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app',
         '--template',
-        '@sabertazimi/typescript',
+        CreateCommand.ReactTemplate,
         '--scripts-version',
         CreateCommand.ReactScripts,
       ],
