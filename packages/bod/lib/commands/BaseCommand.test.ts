@@ -21,4 +21,9 @@ describe('BaseCommand', () => {
     const baseCommand = new BaseCommand(options);
     expect(baseCommand.getUsage()).toBe(options.usage);
   });
+
+  test('should have [run] method', async () => {
+    const baseCommand = new BaseCommand(options);
+    await expect(baseCommand.run()).resolves.toBeUndefined();
+  });
 });

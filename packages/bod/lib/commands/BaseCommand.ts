@@ -16,6 +16,11 @@ class BaseCommand {
     this.usage = usage;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  public async run(_appName?: string): Promise<void> {
+    return;
+  }
+
   public getName(): string {
     return this.name;
   }
