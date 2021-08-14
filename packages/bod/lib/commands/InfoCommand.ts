@@ -11,8 +11,9 @@ class InfoCommand extends BaseCommand {
     });
   }
 
-  public async run(): Promise<void> {
-    consola.info('Environment Info:');
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  public async run(_appName?: string): Promise<void> {
+    consola.info(`Environment information:`);
     const envInfo = await envinfo.run(
       {
         System: ['OS', 'CPU'],
