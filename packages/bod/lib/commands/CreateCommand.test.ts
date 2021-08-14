@@ -9,7 +9,7 @@ import CreateCommand, { Action } from './CreateCommand';
 
 const appPath = path.join(process.cwd(), 'temp');
 
-describe('Create', () => {
+describe('CreateCommand', () => {
   beforeEach(() => rimraf.sync(appPath));
   afterEach(() => rimraf.sync(appPath));
 

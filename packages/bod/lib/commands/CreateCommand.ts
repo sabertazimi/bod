@@ -65,7 +65,7 @@ class CreateCommand extends BaseCommand {
   constructor() {
     super({
       name: 'create',
-      description: 'Create a new project',
+      description: 'Create a new project powered by @sabertazimi/react-scripts',
       usage: 'create <appName>',
     });
   }
