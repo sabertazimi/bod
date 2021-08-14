@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.7.1](https://github.com/sabertazimi/bod/compare/v3.7.0...v3.7.1) (2021-08-14)
+
+
+### :bug: Bug Fixes
+
+* **CRA-scripts:** remove deprecated template placeholder ([fe94602](https://github.com/sabertazimi/bod/commit/fe94602f30a9097ffc9f608ad190c25af70cabb4)), closes [#17](https://github.com/sabertazimi/bod/issues/17)
+
 ## [3.7.0](https://github.com/sabertazimi/bod/compare/v3.6.0...v3.7.0) (2021-08-14)
 
 
