@@ -1,11 +1,10 @@
 import { SpawnSyncReturns } from 'child_process';
-import { isCI } from 'ci-info';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
-import path from 'path';
 import PromptUI from 'inquirer/lib/ui/prompt';
+import path from 'path';
 import rimraf from 'rimraf';
-import CreateCommand from './CreateCommand';
+import CreateCommand, { Action } from './CreateCommand';
 
 const appPath = path.join(process.cwd(), 'app');
 
@@ -24,13 +23,25 @@ describe('Create', () => {
           });
           return promise as Promise<unknown> & { ui: PromptUI };
         });
+      const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
+        return {
+          status: 0,
+        } as SpawnSyncReturns<Buffer>;
+      });
 
       const createCommand = new CreateCommand();
-      if (isCI) {
-        await createCommand.run(appPath);
-      }
+      await createCommand.run(appPath);
+      const { command, args } = CreateCommand.TemplateActions.find(
+        (action) => action.value === value
+      ) as Action;
+      expect(createCommand.getCommand()).toBe(command);
+      expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1);
+      expect(createCommand.getCommandArgs()).toStrictEqual(
+        args.concat(appPath)
+      );
 
       mockPrompt.mockRestore();
+      mockSpawn.mockRestore();
     }
   );
 

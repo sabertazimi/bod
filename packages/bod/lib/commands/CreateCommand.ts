@@ -2,29 +2,47 @@ import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 import BaseCommand from './BaseCommand';
 
-class CreateCommand extends BaseCommand {
-  private static SimpleBoilerplate =
-    'https://github.com/sabertazimi/boilerplate';
-  private static ReactTemplate = '@sabertazimi/typescript';
-  private static ReactScripts = '@sabertazimi/react-scripts';
+interface Action {
+  name: string;
+  value: string;
+  command: string;
+  args: string[];
+}
 
-  static readonly TemplateActions = [
+class CreateCommand extends BaseCommand {
+  static readonly TemplateActions: Action[] = [
     {
       name: 'Simple',
       value: 'simple',
       command: 'git',
-      args: ['clone', '--depth=1', CreateCommand.SimpleBoilerplate],
+      args: [
+        'clone',
+        '--depth=1',
+        'https://github.com/sabertazimi/boilerplate',
+      ],
     },
     {
-      name: 'React Only',
+      name: 'React JSX',
       value: 'only',
       command: 'npx',
       args: [
         'create-react-app',
         '--template',
-        'typescript',
+        '@sabertazimi',
         '--scripts-version',
-        'react-scripts',
+        '@sabertazimi/react-scripts',
+      ],
+    },
+    {
+      name: 'React TSX',
+      value: 'only',
+      command: 'npx',
+      args: [
+        'create-react-app',
+        '--template',
+        '@sabertazimi/typescript',
+        '--scripts-version',
+        '@sabertazimi/react-scripts',
       ],
     },
     {
@@ -34,9 +52,9 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app',
         '--template',
-        CreateCommand.ReactTemplate,
+        'bod',
         '--scripts-version',
-        CreateCommand.ReactScripts,
+        '@sabertazimi/react-scripts',
       ],
     },
   ];
@@ -58,6 +76,14 @@ class CreateCommand extends BaseCommand {
     this.execute();
   }
 
+  public getCommand(): string {
+    return this.command;
+  }
+
+  public getCommandArgs(): string[] {
+    return this.commandArgs;
+  }
+
   private async processTemplateAction() {
     const { templateName } = await inquirer.prompt([
       {
@@ -68,12 +94,12 @@ class CreateCommand extends BaseCommand {
       },
     ]);
 
-    const templateAction = CreateCommand.TemplateActions.filter(
+    const { command, args } = CreateCommand.TemplateActions.find(
       ({ value }) => value === templateName
-    )[0];
+    ) as Action;
 
-    this.command = templateAction.command;
-    this.commandArgs = [...templateAction.args];
+    this.command = command;
+    this.commandArgs = [...args];
   }
 
   private processAppPath(appName: string) {
@@ -93,4 +119,5 @@ class CreateCommand extends BaseCommand {
   }
 }
 
+export type { Action };
 export default CreateCommand;
