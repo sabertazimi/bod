@@ -114,7 +114,7 @@ class Test {
       .toString()
       .replace('/^[^+].*\n', '') // only keep packages version output
       .replace(/\+/g, chalk.bgBlue.black('[+]'))
-      .replace(/\n$/, ''); // remove  tailing empty line
+      .replace(/\n$/, ''); // remove tailing empty line
     console.info(packages);
   }
 
