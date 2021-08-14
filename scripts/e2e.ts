@@ -195,6 +195,7 @@ class Test {
 
   runCRA(templatePath: string, scriptsPath: string) {
     Test.info('Run create-react-app to generate project ...');
+    Test.exec(`rm -fr ${this.appPath}`);
     Test.exec(
       `npx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
       this.rootPath
@@ -205,7 +206,20 @@ class Test {
     return fs.existsSync(path.join(this.appPath, filePath));
   }
 
-  checkTemplateIntegrity() {
+  checkJsxTemplateIntegrity() {
+    Test.info('Checking template integrity ...');
+
+    const templateAssets =
+      this.exists('node_modules/@sabertazimi/react-scripts') &&
+      this.exists('src/index.js') &&
+      this.exists('public/index.html');
+
+    if (!templateAssets) {
+      this.handleError(Error('CRA template not installed correctly.'));
+    }
+  }
+
+  checkTsxTemplateIntegrity() {
     Test.info('Checking template integrity ...');
 
     const templateAssets =
@@ -213,11 +227,11 @@ class Test {
       this.exists('node_modules/typescript') &&
       this.exists('tsconfig.json') &&
       this.exists('src/index.tsx') &&
+      this.exists('public/index.html') &&
       this.exists('src/react-app-env.d.ts');
 
     if (!templateAssets) {
-      Test.error('CRA template not installed correctly.');
-      process.exit(1);
+      this.handleError(Error('CRA template not installed correctly.'));
     }
   }
 
@@ -228,8 +242,7 @@ class Test {
     const buildAssets = this.exists('build');
 
     if (!buildAssets) {
-      Test.error('CRA `react-scripts build` failed.');
-      process.exit(1);
+      this.handleError(Error('CRA `react-scripts build` failed.'));
     }
   }
 
@@ -243,9 +256,13 @@ class Test {
     Test.exec('npm start -- --smoke-test', this.appPath);
   }
 
-  runTest() {
-    this.runCRA('@sabertazimi/typescript', '@sabertazimi/react-scripts');
-    this.checkTemplateIntegrity();
+  runTest(
+    templatePath: string,
+    scriptsPath: string,
+    checkTemplateIntegrity: () => void
+  ) {
+    this.runCRA(templatePath, scriptsPath);
+    checkTemplateIntegrity();
     this.runBuildScript();
     this.runTestScript();
     this.runStartScript();
@@ -256,7 +273,21 @@ class Test {
     this.checkGitStatus();
     this.startLocalRegistry();
     this.publishToLocalRegistry();
-    this.runTest();
+    this.runTest(
+      'bod',
+      '@sabertazimi/react-scripts',
+      this.checkTsxTemplateIntegrity.bind(this)
+    );
+    this.runTest(
+      '@sabertazimi',
+      '@sabertazimi/react-scripts',
+      this.checkJsxTemplateIntegrity.bind(this)
+    );
+    this.runTest(
+      '@sabertazimi/typescript',
+      '@sabertazimi/react-scripts',
+      this.checkTsxTemplateIntegrity.bind(this)
+    );
     this.handleExit();
   }
 }
