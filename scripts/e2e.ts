@@ -243,16 +243,20 @@ class Test {
     Test.exec('npm start -- --smoke-test', this.appPath);
   }
 
-  run() {
-    this.handleSetup();
-    this.checkGitStatus();
-    this.startLocalRegistry();
-    this.publishToLocalRegistry();
+  runTest() {
     this.runCRA('@sabertazimi/typescript', '@sabertazimi/react-scripts');
     this.checkTemplateIntegrity();
     this.runBuildScript();
     this.runTestScript();
     this.runStartScript();
+  }
+
+  run() {
+    this.handleSetup();
+    this.checkGitStatus();
+    this.startLocalRegistry();
+    this.publishToLocalRegistry();
+    this.runTest();
     this.handleExit();
   }
 }
