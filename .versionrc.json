@@ -29,6 +29,10 @@
       "type": "json"
     },
     {
+      "filename": "packages/cra-template-bod/package.json",
+      "type": "json"
+    },
+    {
       "filename": "packages/cra-template-typescript/package.json",
       "type": "json"
     },
