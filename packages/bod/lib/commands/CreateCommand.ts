@@ -23,7 +23,7 @@ class CreateCommand extends BaseCommand {
     },
     {
       name: 'React JSX',
-      value: 'only',
+      value: 'jsx',
       command: 'npx',
       args: [
         'create-react-app',
@@ -35,7 +35,7 @@ class CreateCommand extends BaseCommand {
     },
     {
       name: 'React TSX',
-      value: 'only',
+      value: 'tsx',
       command: 'npx',
       args: [
         'create-react-app',
