@@ -96,7 +96,7 @@ class Test {
 
     Test.info('Clear local registry ...');
     Test.exec(`npm config set registry "${this.originalRegistry}"`);
-    Test.exec(`kill -9 $(lsof -t -i:${this.localPort})`);
+    Test.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
     Test.exec(`rm -fr ${localRegistryNpmrcPath}`);
     Test.exec(`rm -fr ${localRegistryAuthStorage}`);
     Test.exec(`rm -fr ${localRegistryBundleStorage}`);
@@ -110,6 +110,7 @@ class Test {
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
+    Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
     const packages = Test.execPipe(`npm publish -ws`)
       .toString()
