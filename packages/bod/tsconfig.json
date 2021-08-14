@@ -1,14 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "include": ["./lib/**/*"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "dist",
-    "public",
-    "coverage",
-    "__mocks__"
-  ],
+  "exclude": ["node_modules", "build", "dist", "coverage", "__mocks__"],
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./",

@@ -1,4 +1,6 @@
 {
+  "include": ["scripts"],
+  "exclude": ["node_modules", "build"],
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
