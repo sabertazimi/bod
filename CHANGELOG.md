@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/sabertazimi/bod/compare/v3.6.0...v3.7.0) (2021-08-14)
+
+
+### :rocket: Building Work
+
+* **deps-dev:** add `ci-info` package ([e00613b](https://github.com/sabertazimi/bod/commit/e00613b4fe66fa0405f93bd8324dddc2f5e07805)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **deps-dev:** remove `ci-info` package ([9df7b24](https://github.com/sabertazimi/bod/commit/9df7b24d853f923729c787136fedc26e8136122e)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+
+
+### :wrench: Testing
+
+* **bod-CreateCommand:** add correct exit testing ([67ba3f1](https://github.com/sabertazimi/bod/commit/67ba3f1e528d00fc8f4707d35191e4abb785f108)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-CreateCommand:** add CreateCommand execution testing ([77d7345](https://github.com/sabertazimi/bod/commit/77d7345821c14d55e34717942bcea351c2c23e79)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+* **bod-InfoCommand:** add testing for `Info` command ([345e375](https://github.com/sabertazimi/bod/commit/345e375769791f8472832e924898d6cbfcbd3846)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod:** refactor commands testing ([069a432](https://github.com/sabertazimi/bod/commit/069a43206429e62ec4baeef2d7680b5fe87e37b7)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **CRA-e2e:** add all CRA tempalte testing ([530fd33](https://github.com/sabertazimi/bod/commit/530fd33e6a6d6788984ac6dad88e7bfa33801031)), closes [#14](https://github.com/sabertazimi/bod/issues/14)
+
+
+### :bug: Bug Fixes
+
+* **bod-BaseCommand:** add `getName` method ([00f29a2](https://github.com/sabertazimi/bod/commit/00f29a2181e0e1f3e5ad79fe5a02ea28fd30bed4)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-CreateCommand:** change command description ([15d7b48](https://github.com/sabertazimi/bod/commit/15d7b48b5e919edc3a0afce9140e2bc9d43cf540)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-CreateCommand:** rectify same action value ([0d2f744](https://github.com/sabertazimi/bod/commit/0d2f74430e37c8ff4507554d903ce2566b192673)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-InfoCommand:** add `appName` for interface consistence ([3621da0](https://github.com/sabertazimi/bod/commit/3621da0b36b58390d24ed418998073815d5ae587)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **test-bod:** rectify appPath to `temp` (ignored) ([d970526](https://github.com/sabertazimi/bod/commit/d97052650077d648505f669468f1b88784f657b7)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **test-e2e:** skip `kill` command error ([757c439](https://github.com/sabertazimi/bod/commit/757c4393a04bd2910073f3c2bf0a3f25aacfe288)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+
+
+### :sparkles: Features
+
+* **bod-CLI:** register commands with `Iterator` pattern ([cf5ced8](https://github.com/sabertazimi/bod/commit/cf5ced85a272f4115023eec09e05f54446bc7c80)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-CreateCommand:** add more template actions ([13436c4](https://github.com/sabertazimi/bod/commit/13436c4c7f7223d94fe21c979734f912edd645be)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-e2e:** add e2e testing for bod-cli ([60ceea5](https://github.com/sabertazimi/bod/commit/60ceea5731239dabf9cb8a8917416d4b47d7e247)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod-InfoCommand:** add `Info` command ([9f2d104](https://github.com/sabertazimi/bod/commit/9f2d104bc08f45f09aa74b80dcc57f8be2b9e0fb)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **bod:** rewrite bod-cli with factory pattern ([5b28228](https://github.com/sabertazimi/bod/commit/5b282287019612f1eab9fc3a4ca8800fcc28a95d)), closes [#15](https://github.com/sabertazimi/bod/issues/15)
+* **CRA-template:** add default bod template ([e772033](https://github.com/sabertazimi/bod/commit/e772033c7f73f146f584ab2e63684927ad9866f3)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
 ## [3.6.0](https://github.com/sabertazimi/bod/compare/v3.5.2...v3.6.0) (2021-08-14)
 
 
