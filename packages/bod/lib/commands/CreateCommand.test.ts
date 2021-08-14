@@ -1,4 +1,5 @@
 import { SpawnSyncReturns } from 'child_process';
+import { isCI } from 'ci-info';
 import spawn from 'cross-spawn';
 import inquirer from 'inquirer';
 import PromptUI from 'inquirer/lib/ui/prompt';
@@ -25,6 +26,41 @@ describe('Create', () => {
         });
 
       const createCommand = new CreateCommand();
+
+      if (isCI) {
+        await createCommand.run(appPath);
+        const { command, args } = CreateCommand.TemplateActions.find(
+          (action) => action.value === value
+        ) as Action;
+        expect(createCommand.getCommand()).toBe(command);
+        expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1);
+        expect(createCommand.getCommandArgs()).toStrictEqual(
+          args.concat(appPath)
+        );
+      }
+
+      mockPrompt.mockRestore();
+    }
+  );
+
+  test.each(CreateCommand.TemplateActions)(
+    'should exit correctly via template choice [$name]',
+    async ({ value }) => {
+      const mockPrompt = jest
+        .spyOn(inquirer, 'prompt')
+        .mockImplementation(() => {
+          const promise = new Promise((resolve) => {
+            resolve({ templateName: value });
+          });
+          return promise as Promise<unknown> & { ui: PromptUI };
+        });
+      const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
+        return {
+          status: 0,
+        } as SpawnSyncReturns<Buffer>;
+      });
+
+      const createCommand = new CreateCommand();
       await createCommand.run(appPath);
       const { command, args } = CreateCommand.TemplateActions.find(
         (action) => action.value === value
@@ -36,6 +72,7 @@ describe('Create', () => {
       );
 
       mockPrompt.mockRestore();
+      mockSpawn.mockRestore();
     }
   );
 
