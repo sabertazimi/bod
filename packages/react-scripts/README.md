@@ -10,8 +10,10 @@
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
+This package includes scripts and configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
+
 Please refer to its documentation:
 
-- [Getting Started](https://facebook.github.io/create-react-app/docs/getting-started) – How to create a new app.
-- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
+- [User Guide](https://github.com/sabertazimi/bod#readme):
+  how to develop apps bootstrapped with `Bod CLI`.
+- [React Create App documentation](https://cra.link).

@@ -10,7 +10,7 @@
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-This is the official base template for [Create React App](https://github.com/facebook/create-react-app).
+This is the official base template for [Bod CLI](https://github.com/sabertazimi/bod).
 
 If you don't specify a template (for example, `--template typescript`),
 this template will be used by default.

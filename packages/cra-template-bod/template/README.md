@@ -1,8 +1,18 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
+[![LICENSE](https://img.shields.io/github/license/sabertazimi/bod?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/bod/main/LICENSE)
 
-## Available Scripts
+[![Node Version](https://img.shields.io/node/v/cra-template-bod?logo=node.js&style=for-the-badge)](https://www.npmjs.com/package/cra-template-bod)
+[![NPM Version](https://img.shields.io/npm/v/cra-template-bod?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/cra-template-bod)
+
+[![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/bod/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
+[![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
+[![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
+
+This project was bootstrapped with [Bod CLI](https://github.com/sabertazimi/bod).
+
+## Development
 
 In the project directory, you can run:
 
@@ -17,30 +27,25 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://create-react-app.dev/docs/running-tests)
+for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React in production mode
+and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://cra.link/deployment) for more information.
 
-### `npm run eject`
+## Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can learn more in the
+[Bod](https://github.com/sabertazimi/bod) GitHub repository.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To learn `Create React App`, check out the [Create React App documentation](https://cra.link).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn `React`, check out the [React documentation](https://reactjs.org).
