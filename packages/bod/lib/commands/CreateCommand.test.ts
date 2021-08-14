@@ -13,38 +13,17 @@ describe('CreateCommand', () => {
   beforeEach(() => rimraf.sync(appPath));
   afterEach(() => rimraf.sync(appPath));
 
-  test.each(CreateCommand.TemplateActions)(
-    'should initialize app directory via template choice [$name]',
-    async ({ value }) => {
-      const mockPrompt = jest
-        .spyOn(inquirer, 'prompt')
-        .mockImplementation(() => {
-          const promise = new Promise((resolve) => {
-            resolve({ templateName: value });
-          });
-          return promise as Promise<unknown> & { ui: PromptUI };
-        });
-
-      const createCommand = new CreateCommand();
-
-      if (isCI) {
-        await createCommand.run(appPath);
-        const { command, args } = CreateCommand.TemplateActions.find(
-          (action) => action.value === value
-        ) as Action;
-        expect(createCommand.getCommand()).toBe(command);
-        expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1);
-        expect(createCommand.getCommandArgs()).toStrictEqual(
-          args.concat(appPath)
-        );
-      }
-
-      mockPrompt.mockRestore();
-    }
-  );
+  test('should extends [BaseCommand] fields', () => {
+    const createCommand = new CreateCommand();
+    expect(createCommand.getName()).toBe('create');
+    expect(createCommand.getDescription()).toBe(
+      'Create a new project powered by @sabertazimi/react-scripts'
+    );
+    expect(createCommand.getUsage()).toBe('create <appName>');
+  });
 
   test.each(CreateCommand.TemplateActions)(
-    'should exit correctly via template choice [$name]',
+    'should get correct command/args and invoke [inquirer] via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
@@ -61,7 +40,7 @@ describe('CreateCommand', () => {
       });
 
       const createCommand = new CreateCommand();
-      await createCommand.run(appPath);
+      await expect(createCommand.run(appPath)).resolves.toBeUndefined();
       const { command, args } = CreateCommand.TemplateActions.find(
         (action) => action.value === value
       ) as Action;
@@ -70,6 +49,8 @@ describe('CreateCommand', () => {
       expect(createCommand.getCommandArgs()).toStrictEqual(
         args.concat(appPath)
       );
+      expect(mockPrompt).toBeCalledTimes(1);
+      expect(mockSpawn).toBeCalledTimes(1);
 
       mockPrompt.mockRestore();
       mockSpawn.mockRestore();
@@ -95,9 +76,34 @@ describe('CreateCommand', () => {
 
       const createCommand = new CreateCommand();
       await expect(createCommand.run(appPath)).rejects.toThrowError();
+      expect(mockPrompt).toBeCalledTimes(1);
+      expect(mockSpawn).toBeCalledTimes(1);
 
       mockPrompt.mockRestore();
       mockSpawn.mockRestore();
+    }
+  );
+
+  test.each(CreateCommand.TemplateActions)(
+    'should initialize app directory via template choice [$name]',
+    async ({ value }) => {
+      const mockPrompt = jest
+        .spyOn(inquirer, 'prompt')
+        .mockImplementation(() => {
+          const promise = new Promise((resolve) => {
+            resolve({ templateName: value });
+          });
+          return promise as Promise<unknown> & { ui: PromptUI };
+        });
+
+      const createCommand = new CreateCommand();
+
+      if (isCI) {
+        await expect(createCommand.run(appPath)).resolves.toBeUndefined();
+        expect(mockPrompt).toBeCalledTimes(1);
+      }
+
+      mockPrompt.mockRestore();
     }
   );
 });
