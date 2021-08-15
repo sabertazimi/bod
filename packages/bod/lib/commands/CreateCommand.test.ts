@@ -28,7 +28,7 @@ describe('CreateCommand', () => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise((resolve) => {
+          const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
           return promise as Promise<unknown> & { ui: PromptUI };
@@ -42,7 +42,7 @@ describe('CreateCommand', () => {
       const createCommand = new CreateCommand();
       await expect(createCommand.run(appPath)).resolves.toBeUndefined();
       const { command, args } = CreateCommand.TemplateActions.find(
-        (action) => action.value === value
+        action => action.value === value
       ) as Action;
       expect(createCommand.getCommand()).toBe(command);
       expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1);
@@ -63,7 +63,7 @@ describe('CreateCommand', () => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise((resolve) => {
+          const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
           return promise as Promise<unknown> & { ui: PromptUI };
@@ -90,7 +90,7 @@ describe('CreateCommand', () => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise((resolve) => {
+          const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
           return promise as Promise<unknown> & { ui: PromptUI };
