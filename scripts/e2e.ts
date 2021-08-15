@@ -3,6 +3,7 @@ import cp from 'child_process';
 import consola from 'consola';
 import fs from 'fs';
 import path from 'path';
+import { isCI } from 'ci-info';
 
 class Test {
   appName: string;
@@ -165,7 +166,7 @@ class Test {
   getPackages(packagesPath: string) {
     const packagePathsByName: { [key: string]: string } = {};
 
-    fs.readdirSync(packagesPath).forEach((name) => {
+    fs.readdirSync(packagesPath).forEach(name => {
       const packagePath = path.join(packagesPath, name);
       const packageJson = path.join(packagePath, 'package.json');
       if (fs.existsSync(packageJson)) {
@@ -273,16 +274,20 @@ class Test {
     this.checkGitStatus();
     this.startLocalRegistry();
     this.publishToLocalRegistry();
-    this.runTest(
-      '@sabertazimi',
-      '@sabertazimi/react-scripts',
-      this.checkJsxTemplateIntegrity.bind(this)
-    );
-    this.runTest(
-      '@sabertazimi/typescript',
-      '@sabertazimi/react-scripts',
-      this.checkTsxTemplateIntegrity.bind(this)
-    );
+    if (isCI) {
+      this.runTest(
+        '@sabertazimi',
+        '@sabertazimi/react-scripts',
+        this.checkJsxTemplateIntegrity.bind(this)
+      );
+    }
+    if (isCI) {
+      this.runTest(
+        '@sabertazimi/typescript',
+        '@sabertazimi/react-scripts',
+        this.checkTsxTemplateIntegrity.bind(this)
+      );
+    }
     this.runTest(
       'bod',
       '@sabertazimi/react-scripts',
