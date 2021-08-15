@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/sabertazimi/bod/compare/v3.8.1...v3.9.0) (2021-08-15)
+
+
+### :sparkles: Features
+
+* **template-bod:** add complete React source structure ([28235b8](https://github.com/sabertazimi/bod/commit/28235b8be2e552f428cb315ebc95ed621847e81b)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-bod:** build template folder and template.json ([fa10a7d](https://github.com/sabertazimi/bod/commit/fa10a7d2c382ba64945d4855181f4e0b038c26dd)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-build:** build template folder ([46d84b4](https://github.com/sabertazimi/bod/commit/46d84b4f37782fa498b1fbfc258f12f9222f116c)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+### :bug: Bug Fixes
+
+* **CRA-e2e:** add more log for e2e testing ([275f482](https://github.com/sabertazimi/bod/commit/275f4820255475d7e413dfefaba8448cd110c410))
+* **CRA-start:** change local template presets ([39df716](https://github.com/sabertazimi/bod/commit/39df71617cfccc33c072dca4fe606f6b02472806)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+* **template-bod:** add `Bod` CLI link in `App` component ([e517a2c](https://github.com/sabertazimi/bod/commit/e517a2c6bca6f42fdc126b72aee5e50220be8f62)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-bod:** update `template.json` to date ([ea32226](https://github.com/sabertazimi/bod/commit/ea32226d5960edd0cf2f975f1ab44d31552970fd)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-build:** start to write template-build script ([eb9e68c](https://github.com/sabertazimi/bod/commit/eb9e68c96277a5ee6513f96bb031853d327243d7)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
 ### [3.8.1](https://github.com/sabertazimi/bod/compare/v3.8.0...v3.8.1) (2021-08-15)
 
 
