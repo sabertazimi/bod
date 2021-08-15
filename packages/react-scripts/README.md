@@ -12,6 +12,17 @@
 
 This package includes scripts and configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
 
+## Features
+
+Compare with original `react-scripts` built by `facebook`:
+
+- All original features shipped.
+- Add `stylelint` support for `start` and `build`.
+- Add `webpack-bundle-analyzer` support for `build`.
+- Add `prettier` binding for both `eslint` and `stylelint`.
+
+## Find More
+
 Please refer to its documentation:
 
 - [User Guide](https://github.com/sabertazimi/bod#readme):
