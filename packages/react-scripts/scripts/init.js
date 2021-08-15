@@ -210,7 +210,7 @@ module.exports = function (
 
   // Setup the stylelint config
   appPackage.stylelint = {
-    extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+    extends: ['stylelint-config-standard', 'stylelint-prettier/recommended'],
   };
 
   // Setup the prettier config
