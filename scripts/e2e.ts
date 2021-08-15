@@ -105,14 +105,16 @@ class Test {
   }
 
   publishToLocalRegistry() {
-    Test.info(`Publish packages to ${this.localRegistry} ...`);
+    Test.info(`Log into local registry ${this.localRegistry} ...`);
     Test.exec('git clean -df');
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
+    Test.info('Bump packages version ...');
     Test.exec('npx standard-version --skip.changelog --skip.commit --skip.tag');
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
+    Test.info(`Publish packages to ${this.localRegistry} ...`);
     const packages = Test.execPipe(`npm publish -ws`)
       .toString()
       .replace('/^[^+].*\n', '') // only keep packages version output
@@ -151,6 +153,7 @@ class Test {
   }
 
   checkGitStatus() {
+    Test.info('Check git status ...');
     const gitStatus = Test.execPipe('git status --porcelain').toString();
 
     if (gitStatus.trim() !== '') {
