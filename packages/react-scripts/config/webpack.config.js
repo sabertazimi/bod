@@ -24,6 +24,7 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const paths = require('./paths');
 const modules = require('./modules');
@@ -58,6 +59,7 @@ const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 
 const emitErrorsAsWarnings = process.env.ESLINT_NO_DEV_ERRORS === 'true';
 const disableESLintPlugin = process.env.DISABLE_ESLINT_PLUGIN === 'true';
+const disableStyleLintPlugin = process.env.DISABLE_STYLELINT_PLUGIN === 'true';
 
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
@@ -763,6 +765,18 @@ module.exports = function (webpackEnv) {
               }),
             },
           },
+        }),
+      !disableStyleLintPlugin &&
+        new StyleLintPlugin({
+          extensions: ['css', 'scss', 'sass'],
+          stylelintPath: require.resolve('stylelint'),
+          failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
+          context: paths.appSrc,
+          cache: true,
+          cacheLocation: path.resolve(
+            paths.appNodeModules,
+            '.cache/.stylelintcache'
+          ),
         }),
       isEnvProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
     ].filter(Boolean),

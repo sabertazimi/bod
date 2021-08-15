@@ -205,7 +205,22 @@ module.exports = function (
 
   // Setup the eslint config
   appPackage.eslintConfig = {
-    extends: 'react-app',
+    extends: ['react-app', 'react-app/jest', 'plugin:prettier/recommended'],
+  };
+
+  // Setup the stylelint config
+  appPackage.stylelint = {
+    extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+  };
+
+  // Setup the prettier config
+  appPackage.prettier = {
+    arrowParens: 'avoid',
+    printWidth: 80,
+    semi: true,
+    singleQuote: true,
+    tabWidth: 2,
+    trailingComma: 'es5',
   };
 
   // Setup the browsers list
