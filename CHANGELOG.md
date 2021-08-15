@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.8.0](https://github.com/sabertazimi/bod/compare/v3.7.1...v3.8.0) (2021-08-15)
+
+
+### :rocket: Building Work
+
+* **ESLint-TypeScript:** disable `require` lint check for JS ([ddc7e06](https://github.com/sabertazimi/bod/commit/ddc7e0665e0544e3d7a182130d754b90d015b2dc)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+
+
+### :sparkles: Features
+
+* **CRA-scripts:** add `webpack-bundle-analyzer` for production mode ([b68ed16](https://github.com/sabertazimi/bod/commit/b68ed1633e8177ef39b42feefecdebc46e50dc6c)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+* **CRA-scripts:** add stylelint and prettier support ([849eec6](https://github.com/sabertazimi/bod/commit/849eec6499aa41fa0b4184904c58b09c68a38e65)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+
+
+### :bug: Bug Fixes
+
+* **CRA-e2e:** only test cra-bod-template in local environment ([420e3f3](https://github.com/sabertazimi/bod/commit/420e3f33c699bcab3e8e0b1261399603ee0e38d6))
+* **template-eslint:** bind `prettier` with `eslint` ([f38e445](https://github.com/sabertazimi/bod/commit/f38e445ba0b4db9779cd8c09f2fe8b39b23445c8)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
 ### [3.7.1](https://github.com/sabertazimi/bod/compare/v3.7.0...v3.7.1) (2021-08-14)
 
 
