@@ -12,18 +12,63 @@
 
 This is the official React template for [Bod CLI](https://github.com/sabertazimi/bod).
 
-To use this template, add `--template bod` when creating a new app.
+## Bod CLI
+
+This template is shipped with **Bod** CLI out of box:
+
+```bash
+npx bod create my-app
+```
+
+## Development
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://create-react-app.dev/docs/running-tests)
+for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode
+and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://cra.link/deployment) for more information.
+
+## Create React App
+
+To use this template with Create React App,
+add `--template bod` when creating a new app.
 
 For example:
 
-```sh
+```bash
 npx create-react-app my-app --template bod 
+```
 
-# or
-
+```bash
 yarn create react-app my-app --template bod
 ```
 
-For more information, please refer to:
+## Reference
 
-- [User Guide](https://github.com/sabertazimi/bod#readme).
+You can learn more in the
+[Bod](https://github.com/sabertazimi/bod) GitHub repository.
+
+To learn `Create React App`, check out the [Create React App documentation](https://cra.link).
+
+To learn `React`, check out the [React documentation](https://reactjs.org).
