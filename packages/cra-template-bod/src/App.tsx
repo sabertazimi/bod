@@ -18,6 +18,14 @@ function App() {
         >
           Learn React
         </a>
+        <a
+          className="App-link"
+          href="https://github.com/sabertazimi/bod"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn Bod CLI
+        </a>
       </header>
     </div>
   );
