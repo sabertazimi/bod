@@ -118,7 +118,7 @@ class Test {
     const packages = Test.execPipe(`npm publish -ws`)
       .toString()
       .replace('/^[^+].*\n', '') // only keep packages version output
-      .replace(/\+/g, chalk.bgBlue.black('[+]'))
+      .replace(/\+/g, `    ${chalk.bgBlue.black('[+]')}`)
       .replace(/\n$/, ''); // remove tailing empty line
     console.info(packages);
   }

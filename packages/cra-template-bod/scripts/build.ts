@@ -6,7 +6,7 @@ import path from 'path';
 const rootPath = path.join(__dirname, '..');
 
 const exec = (cmd: string) => {
-  console.info(`${chalk.bgGreen.black('[exec]')}: ${cmd}`);
+  console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
   return cp.execSync(cmd, {
     shell: '/usr/bin/bash',
     stdio: 'inherit',
