@@ -30,7 +30,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@sabertazimi/react-scripts": "^3.8.1",
+    "@sabertazimi/react-scripts": "^3.9.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
