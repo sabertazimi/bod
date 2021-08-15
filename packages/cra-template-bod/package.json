@@ -7,7 +7,7 @@
     "template",
     "typescript"
   ],
-  "description": "The base TypeScript template for Create React App.",
+  "description": "The base TypeScript template for Bod CLI.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabertazimi/bod.git",

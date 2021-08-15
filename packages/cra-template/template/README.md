@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Bod CLI
 
 [![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/bod?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/bod/main/LICENSE)
@@ -10,7 +10,7 @@
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Bod CLI](https://github.com/sabertazimi/bod).
 
 ## Available Scripts
 
@@ -51,7 +51,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Bod CLI documentation](https://github.com/sabertazimi/bod#readme).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 

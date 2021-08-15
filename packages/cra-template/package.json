@@ -6,7 +6,7 @@
     "create-react-app",
     "template"
   ],
-  "description": "The base template for Create React App.",
+  "description": "The base template for Bod CLI.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabertazimi/bod.git",
