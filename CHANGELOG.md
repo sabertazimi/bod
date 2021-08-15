@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.8.1](https://github.com/sabertazimi/bod/compare/v3.8.0...v3.8.1) (2021-08-15)
+
+
+### :bug: Bug Fixes
+
+* **CRA-stylelint:** add `stylelint-prettier` support ([0cc45d2](https://github.com/sabertazimi/bod/commit/0cc45d2f4c86704b6b480bc7dadeb4c53f6f2dfd)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+* **template-eslint:** add `prettier` bind to `eslint` ([2dde927](https://github.com/sabertazimi/bod/commit/2dde927cb2894d65bd7da82491b964c71e73b680)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-eslint:** remove redundant eslint config ([87d7272](https://github.com/sabertazimi/bod/commit/87d727210920129a6390fa83cb3c82f747e317d0)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
 ## [3.8.0](https://github.com/sabertazimi/bod/compare/v3.7.1...v3.8.0) (2021-08-15)
 
 
