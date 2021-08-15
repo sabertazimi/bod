@@ -25,8 +25,8 @@
     "template.json"
   ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run build && react-scripts start",
+    "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
     "test": "react-scripts test"
   },
   "dependencies": {
