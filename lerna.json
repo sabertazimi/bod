@@ -12,17 +12,13 @@
       "license": "MIT"
     },
     "publish": {
-      "message": "chore(release): %s",
-      "registry": "https://registry.npmjs.org",
-      "tempTag": true
+      "registry": "https://registry.npmjs.org"
     },
     "version": {
       "allowBranch": "main",
       "changelogPreset": "angular",
       "conventionalCommits": true,
-      "message": "chore(release): %s",
-      "sign-git-commit": true,
-      "sign-git-tag": true
+      "message": "chore(release): %s"
     }
   },
   "ignoreChanges": [
