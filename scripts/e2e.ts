@@ -113,15 +113,14 @@ class Test {
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
     Test.info(`Publish packages to ${this.localRegistry} ...`);
-    Test.exec(
+    const packages = Test.execPipe(
       'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
-    );
-    // const packages = Test.execPipe(`npm publish -ws`)
-    //   .toString()
-    //   .replace('/^[^+].*\n', '') // only keep packages version output
-    //   .replace(/\+/g, `    ${chalk.bgBlue.black('[+]')}`)
-    //   .replace(/\n$/, ''); // remove tailing empty line
-    // console.info(packages);
+    )
+      .toString()
+      .replace('/^[^-].*\n', '') // only keep packages version output
+      .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
+      .replace(/\n$/, ''); // remove tailing empty line
+    console.info(packages);
   }
 
   cleanUp() {
