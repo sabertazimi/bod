@@ -110,6 +110,7 @@ class Test {
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
+    Test.info('Bump packages version ...');
     Test.exec(
       'npx lerna version patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --yes'
     );
@@ -128,7 +129,9 @@ class Test {
     Test.info('Cleaning up ...');
     this.stopLocalRegistry();
     Test.exec(`rm -fr ${this.appPath}`);
-    Test.exec('git restore package.json package-lock.json packages/*');
+    Test.exec(
+      'git restore lerna.json package.json package-lock.json packages/*'
+    );
   }
 
   handleSetup() {
