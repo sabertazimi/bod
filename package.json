@@ -13,7 +13,7 @@
     "format": "npm run format -ws --if-present",
     "lint": "npm run lint -ws --if-present",
     "postbuild": "npm run build:badge",
-    "publish": "lerna publish from-git --yes",
+    "publish": "lerna publish from-git --ignore-scripts --yes",
     "release": "lerna version --sign-git-commit --sign-git-tag",
     "start": "npm run start:template",
     "start:all": "npm start -ws --if-present",
