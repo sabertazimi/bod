@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.3](https://github.com/sabertazimi/bod/compare/v3.9.2...v3.9.3) (2021-08-16)
+
+
+### Bug Fixes
+
+* **CI:** enable publish in tag branch ([ba1c2ab](https://github.com/sabertazimi/bod/commit/ba1c2ab7fa7562c3e050a115773590d64a96ccc7))
+
+
+
+
+
 ## [3.9.2](https://github.com/sabertazimi/bod/compare/v3.9.1...v3.9.2) (2021-08-16)
 
 
