@@ -11,6 +11,9 @@
       "homepage": "https://github.com/sabertazimi/bod",
       "license": "MIT"
     },
+    "run": {
+      "stream": true
+    },
     "version": {
       "allowBranch": "main",
       "changelogPreset": "angular",
