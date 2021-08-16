@@ -23,17 +23,20 @@ Boilerplate CLI App - Create a new project powered by
 and
 [bod](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod) template.
 
-## Installation
+## Bod CLI
+
+### Installation
 
 ```bash
 # npm install --save-dev bod
 npm i -D bod
 ```
 
-## Usage
+### Usage
 
 ```bash
 npx bod create <appName>
+npx bod info
 ```
 
 ```bash
@@ -50,27 +53,47 @@ Commands:
 ℹ   Run bod <command> --help for detailed usage of given command.
 ```
 
-### `bod create`
+More details on package
+[bod](https://github.com/sabertazimi/bod/tree/main/packages/bod).
+
+## Bod Template
+
+The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod).
+
+### Start with Template
+
+This template is shipped with
+[**Bod CLI**](https://github.com/sabertazimi/bod/tree/main/packages/bod) out of box:
 
 ```bash
-Usage: create [options] <appName>
-
-create a new project powered by Create React App and @sabertazimi/react-scripts
-
-Options:
-  -h, --help  output usage information
+# Select option `React Framework`
+npx bod create my-app
 ```
 
-### `bod info`
+Or use with Create React App:
 
 ```bash
-Usage: info [options]
-
-print debugging information about your environment
-
-Options:
-  -h, --help  output usage information
+npx create-react-app my-app --template bod 
 ```
+
+More available scripts on package
+[cra-template-bod](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
+
+### Custom Template
+
+You can custom bod template by clone this monorepo
+(with package [@sabertazimi/react-scripts](https://github.com/sabertazimi/bod/tree/main/packages/react-scripts)).
+
+```bash
+git clone --depth=1 https://github.com/sabertazimi/bod
+cd bod
+npm i
+npm run start:template
+```
+
+`@sabertazimi/react-scripts`
+will set local package `cra-template-bod` to default React template,
+and start a `webpack-dev-server` on port `3000`.
 
 ## Contact
 

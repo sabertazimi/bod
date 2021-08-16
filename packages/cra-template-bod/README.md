@@ -10,13 +10,15 @@
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-This is the official React template for [Bod CLI](https://github.com/sabertazimi/bod).
+This is the official React template for [**Bod CLI**](https://github.com/sabertazimi/bod).
 
 ## Bod CLI
 
-This template is shipped with **Bod** CLI out of box:
+This template is shipped with
+[**Bod CLI**](https://github.com/sabertazimi/bod) out of box:
 
 ```bash
+# Select option `React Framework`
 npx bod create my-app
 ```
 
