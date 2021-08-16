@@ -27,7 +27,7 @@
   "scripts": {
     "start": "npm run build && react-scripts start",
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
-    "test": "react-scripts test"
+    "test": "npm run build && react-scripts test"
   },
   "dependencies": {
     "@sabertazimi/react-scripts": "^3.9.1",
