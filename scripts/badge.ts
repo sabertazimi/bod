@@ -1,4 +1,5 @@
 import cp from 'child_process';
+import consola from 'consola';
 import fs from 'fs';
 import fetch from 'node-fetch';
 import path from 'path';
@@ -19,7 +20,15 @@ const getCoveragePercentage = (
   summaryFilePath: string,
   coverageType: string
 ) => {
-  const summary = fs.readFileSync(summaryFilePath, 'utf8');
+  let summary = '';
+
+  try {
+    summary = fs.readFileSync(summaryFilePath, 'utf8');
+  } catch (error) {
+    consola.error(error);
+    return 0;
+  }
+
   return JSON.parse(summary)['total'][coverageType]['pct'];
 };
 
