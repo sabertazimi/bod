@@ -11,9 +11,6 @@
       "homepage": "https://github.com/sabertazimi/bod",
       "license": "MIT"
     },
-    "publish": {
-      "registry": "https://registry.npmjs.org"
-    },
     "version": {
       "allowBranch": "main",
       "changelogPreset": "angular",

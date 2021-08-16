@@ -110,9 +110,8 @@ class Test {
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
-    Test.info('Bump packages version ...');
     Test.exec(
-      'npx lerna version patch --no-changelog --no-commit-hooks --no-git-tag-version --no-push --yes'
+      'npx lerna version patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --yes'
     );
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
