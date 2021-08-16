@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.2](https://github.com/sabertazimi/bod/compare/v3.9.1...v3.9.2) (2021-08-16)
+
+
+### Bug Fixes
+
+* **tempalte-test:** build `template` folder before testing ([4ba04a8](https://github.com/sabertazimi/bod/commit/4ba04a856bdc892d408310c88c35942129d95020))
+* **template-deps:** bump deps to latest version ([c2f5186](https://github.com/sabertazimi/bod/commit/c2f5186c8fe0f57c9d7fe1d8acd4f47dc314c1cd))
+
+
+
+
+
 ## [3.9.1](https://github.com/sabertazimi/bod/compare/v3.9.0...v3.9.1) (2021-08-16)
 
 **Note:** Version bump only for package cra-template-bod

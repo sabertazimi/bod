@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.2](https://github.com/sabertazimi/bod/compare/v3.9.1...v3.9.2) (2021-08-16)
+
+
+### Bug Fixes
+
+* **CRA-e2e:** change `lerna version` to `lerna publish` ([02646c6](https://github.com/sabertazimi/bod/commit/02646c6c4d7de96809fbce46f66c8058acb09799))
+* **CRA-e2e:** force version dump ([8ae27d1](https://github.com/sabertazimi/bod/commit/8ae27d1766578abeb28b2696a7466fa6a88e93b9))
+* **CRA-e2e:** remove standard-version package ([f7a8325](https://github.com/sabertazimi/bod/commit/f7a8325c4d6698ebe0d2710b91cc9243fdff9260))
+* **CRA-e2e:** restore `lerna.json` file ([63457b3](https://github.com/sabertazimi/bod/commit/63457b3bbab213f829ac27d3bb21a61da23c7438))
+* **Jest-badge:** format error message when badge generation ([518a2e9](https://github.com/sabertazimi/bod/commit/518a2e92486e39d8485c0b77bf0970db3bc259e1))
+* **lerna:** rectify lerna config ([fe8e743](https://github.com/sabertazimi/bod/commit/fe8e743e9b4dac2c495ca71597f0192ce4d79abb))
+* **tempalte-test:** build `template` folder before testing ([4ba04a8](https://github.com/sabertazimi/bod/commit/4ba04a856bdc892d408310c88c35942129d95020))
+* **template-deps:** bump deps to latest version ([c2f5186](https://github.com/sabertazimi/bod/commit/c2f5186c8fe0f57c9d7fe1d8acd4f47dc314c1cd))
+
+
+
+
+
 ## [3.9.1](https://github.com/sabertazimi/bod/compare/v3.9.0...v3.9.1) (2021-08-16)
 
 

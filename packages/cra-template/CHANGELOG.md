@@ -5,12 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.9.2](https://github.com/sabertazimi/bod/compare/v3.9.1...v3.9.2) (2021-08-16)
 
-**Note:** Version bump only for package bod
-
-
-
-
-
-## [3.9.1](https://github.com/sabertazimi/bod/compare/v3.9.0...v3.9.1) (2021-08-16)
-
-**Note:** Version bump only for package bod
+**Note:** Version bump only for package @sabertazimi/cra-template
