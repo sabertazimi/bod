@@ -39,6 +39,7 @@ jobs:
       - name: Installation
         run: |
           npm ci
+          npm remove -g yarn
       - name: Linting
         run: |
           npm run lint --if-present
