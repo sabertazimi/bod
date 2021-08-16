@@ -25,7 +25,7 @@ const getCoveragePercentage = (
   try {
     summary = fs.readFileSync(summaryFilePath, 'utf8');
   } catch (error) {
-    consola.error(error);
+    consola.error(error.message);
     return 0;
   }
 
