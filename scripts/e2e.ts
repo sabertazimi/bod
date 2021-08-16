@@ -110,19 +110,18 @@ class Test {
     Test.exec(
       `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
     );
-    Test.info('Bump packages version ...');
-    Test.exec(
-      'npx lerna version patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --yes'
-    );
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
     Test.info(`Publish packages to ${this.localRegistry} ...`);
-    const packages = Test.execPipe(`npm publish -ws`)
-      .toString()
-      .replace('/^[^+].*\n', '') // only keep packages version output
-      .replace(/\+/g, `    ${chalk.bgBlue.black('[+]')}`)
-      .replace(/\n$/, ''); // remove tailing empty line
-    console.info(packages);
+    Test.exec(
+      'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
+    );
+    // const packages = Test.execPipe(`npm publish -ws`)
+    //   .toString()
+    //   .replace('/^[^+].*\n', '') // only keep packages version output
+    //   .replace(/\+/g, `    ${chalk.bgBlue.black('[+]')}`)
+    //   .replace(/\n$/, ''); // remove tailing empty line
+    // console.info(packages);
   }
 
   cleanUp() {
