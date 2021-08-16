@@ -18,10 +18,10 @@
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
 Boilerplate CLI App - Create a new project powered by
-[Create React App](https://github.com/facebook/create-react-app),
+Create React App,
 [@sabertazimi/react-scripts](https://github.com/sabertazimi/bod/tree/main/packages/react-scripts)
 and
-[bod](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod) template.
+[bod template](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
 
 ## Bod CLI
 
