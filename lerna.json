@@ -1,0 +1,28 @@
+{
+  "version": "3.9.0",
+  "npmClient": "npm",
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    },
+    "create": {
+      "homepage": "https://github.com/sabertazimi/bod",
+      "license": "MIT"
+    },
+    "publish": {
+      "message": "chore(release): %s",
+      "registry": "https://registry.npmjs.org",
+      "tempTag": true
+    },
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "exact": true,
+      "message": "chore(release): %s"
+    }
+  },
+  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"],
+  "useWorkspaces": true,
+  "packages": ["packages/*"]
+}

@@ -3,6 +3,7 @@
 [![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/bod?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/bod/main/LICENSE)
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/bod?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/bod)
+[![Lerna](https://img.shields.io/github/lerna-json/v/sabertazimi/bod?logo=npm&style=for-the-badge)](https://github.com/lerna/lerna)
 
 [![Node Version](https://img.shields.io/node/v/bod?logo=node.js&style=for-the-badge)](https://github.com/sabertazimi/bod)
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
