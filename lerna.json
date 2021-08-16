@@ -15,6 +15,7 @@
       "stream": true
     },
     "version": {
+      "allowBranch": "main",
       "changelogPreset": "angular",
       "conventionalCommits": true,
       "message": "chore(release): %s"
