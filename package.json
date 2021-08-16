@@ -20,7 +20,7 @@
     "start:bod": "npm start -w bod",
     "start:template": "npm start -w cra-template-bod",
     "test": "npm run test:bod",
-    "test:all": "lerna run test:all",
+    "test:all": "lerna run test",
     "test:bod": "npm run test:watch -w bod",
     "test:e2e": "ts-node scripts/e2e.ts"
   },

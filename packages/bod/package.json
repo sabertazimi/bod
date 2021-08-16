@@ -12,8 +12,7 @@
     "lint:style": "eslint --fix --ext .ts ./lib",
     "lint:type-check": "tsc --noEmit",
     "start": "npm run dev",
-    "test": "jest -o",
-    "test:all": "jest",
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "files": [
