@@ -1,9 +1,11 @@
 {
-  "version": "3.9.0",
+  "version": "3.9.1",
   "npmClient": "npm",
   "command": {
     "bootstrap": {
-      "npmClientArgs": ["--no-package-lock"]
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     },
     "create": {
       "homepage": "https://github.com/sabertazimi/bod",
@@ -23,7 +25,13 @@
       "sign-git-tag": true
     }
   },
-  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md"],
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
   "useWorkspaces": true,
-  "packages": ["packages/*"]
+  "packages": [
+    "packages/*"
+  ]
 }

@@ -1,3 +1,20 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.9.1](https://github.com/sabertazimi/bod/compare/v3.9.0...v3.9.1) (2021-08-16)
+
+
+### Bug Fixes
+
+* **build:** catch bdage generation error ([6954ac6](https://github.com/sabertazimi/bod/commit/6954ac6791de44d42820bc2a3d89482f1cad1874))
+* **deps:** update caiuse-lite database ([f90d6e2](https://github.com/sabertazimi/bod/commit/f90d6e25aebae0f3f28e313b8f3cfde39e20ee37))
+
+
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
