@@ -18,8 +18,8 @@ Compare with original `react-scripts` built by `facebook`:
 
 - All original features shipped.
 - Add `stylelint` support for `start` and `build`.
-- Add `webpack-bundle-analyzer` support for `build`.
 - Add `prettier` binding for both `eslint` and `stylelint`.
+- Add `webpack-bundle-analyzer` support for `build`.
 
 ## Find More
 

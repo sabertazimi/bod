@@ -28,7 +28,6 @@ and
 ### Installation
 
 ```bash
-# npm install --save-dev bod
 npm i -D bod
 ```
 
