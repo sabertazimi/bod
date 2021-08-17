@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/sabertazimi/bod/compare/v3.9.6...v4.0.0) (2021-08-17)
+
+
+### Documentation
+
+* **README:** format code ([8ca8473](https://github.com/sabertazimi/bod/commit/8ca847378c7773fbac34dd892c7123872b4650a9))
+
+
+### BREAKING CHANGES
+
+* **README:** bump to v4
+
+
+
+
+
 ## [3.9.6](https://github.com/sabertazimi/bod/compare/v3.9.5...v3.9.6) (2021-08-17)
 
 
