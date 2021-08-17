@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
+
+
+### Bug Fixes
+
+* **template-bod:** add more keywords to template.json ([ff2719f](https://github.com/sabertazimi/bod/commit/ff2719fb76c972aaa2c5bdca8defc10a9569a448))
+
+
+
+
+
 ## [4.0.1](https://github.com/sabertazimi/bod/compare/v4.0.0...v4.0.1) (2021-08-17)
 
 **Note:** Version bump only for package cra-template-bod

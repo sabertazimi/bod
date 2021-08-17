@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
+
+
+### Bug Fixes
+
+* **CRA-init:** add `lint` and `https start` scripts ([aa57b5f](https://github.com/sabertazimi/bod/commit/aa57b5f877461513fe5e64f28f6c59177fe8e253))
+* **deps-ddp:** remove duplicated packages ([fbf1c63](https://github.com/sabertazimi/bod/commit/fbf1c63fb6e65b86e96b68353fb26733f822a6a9))
+* **Jest-badge:** rectify path resolution ([e5c1e44](https://github.com/sabertazimi/bod/commit/e5c1e44e876b2848ce5792e689f9339db3f3ddb4))
+* **template-bod:** add more keywords to template.json ([ff2719f](https://github.com/sabertazimi/bod/commit/ff2719fb76c972aaa2c5bdca8defc10a9569a448))
+
+
+
+
+
 ## [4.0.1](https://github.com/sabertazimi/bod/compare/v4.0.0...v4.0.1) (2021-08-17)
 
 **Note:** Version bump only for package create-bod-app
