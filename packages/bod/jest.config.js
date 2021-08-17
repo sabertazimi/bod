@@ -31,7 +31,7 @@ module.exports = {
   watchPathIgnorePatterns: [...ignorePatterns],
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.json',
+      tsconfig: 'tsconfig.json',
     },
   },
   setupFiles: ['<rootDir>/jest.env.setup.js'],
