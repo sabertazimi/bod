@@ -4,9 +4,13 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import path from 'path';
 
+const rootPath = path.join(__dirname, '..');
 const packages = ['packages/bod'];
-const SummaryFilePath = `${packages[0]}/coverage/coverage-summary.json`;
-const OutputBadgePath = 'build';
+const SummaryFilePath = path.join(
+  rootPath,
+  `${packages[0]}/coverage/coverage-summary.json`
+);
+const OutputBadgePath = path.join(rootPath, 'build');
 const CoverageType = ['statements', 'branches', 'functions', 'lines'];
 const BadgeStyle = [
   'for-the-badge',
