@@ -285,8 +285,6 @@ class Test {
         '@sabertazimi/react-scripts',
         this.checkJsxTemplateIntegrity.bind(this)
       );
-    }
-    if (isCI) {
       this.runTest(
         '@sabertazimi/typescript',
         '@sabertazimi/react-scripts',
