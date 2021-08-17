@@ -24,6 +24,8 @@
     "test:e2e": "ts-node scripts/e2e.ts"
   },
   "keywords": [
+    "bod",
+    "bod-cli",
     "boilerplate",
     "cli",
     "create-react-app",

@@ -2,6 +2,9 @@
   "name": "cra-template-bod",
   "version": "4.0.0",
   "keywords": [
+    "bod",
+    "bod-cli",
+    "bod-template",
     "react",
     "create-react-app",
     "template",

@@ -2,6 +2,9 @@
   "name": "@sabertazimi/cra-template-typescript",
   "version": "4.0.0",
   "keywords": [
+    "bod",
+    "bod-cli",
+    "bod-template",
     "react",
     "create-react-app",
     "template",

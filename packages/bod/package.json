@@ -32,6 +32,8 @@
     "directory": "packages/bod"
   },
   "keywords": [
+    "bod",
+    "bod-cli",
     "boilerplate",
     "cli",
     "create-react-app",

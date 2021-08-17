@@ -1,6 +1,13 @@
 {
   "name": "@sabertazimi/react-scripts",
   "version": "4.0.0",
+  "keywords": [
+    "bod",
+    "bod-cli",
+    "react",
+    "create-react-app",
+    "react-scripts"
+  ],
   "description": "Configuration and scripts for Bod CLI.",
   "repository": {
     "type": "git",
