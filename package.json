@@ -12,7 +12,7 @@
     "format": "lerna run format",
     "lint": "lerna run lint",
     "postbuild": "npm run build:badge",
-    "publish": "lerna publish from-package --ignore-scripts --yes",
+    "publish": "lerna publish from-package --no-verify-access --ignore-scripts --yes",
     "release": "lerna version --sign-git-commit --sign-git-tag",
     "start": "npm run start:template",
     "start:all": "lerna run start",
