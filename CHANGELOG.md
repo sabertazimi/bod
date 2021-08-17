@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.5](https://github.com/sabertazimi/bod/compare/v3.9.4...v3.9.5) (2021-08-17)
+
+
+### Bug Fixes
+
+* **lerna-publish:** publish from package ([4dc7e05](https://github.com/sabertazimi/bod/commit/4dc7e05cb668474749bec80a26211e3ab00fc1f9))
+
+
+
+
+
 ## [3.9.4](https://github.com/sabertazimi/bod/compare/v3.9.3...v3.9.4) (2021-08-17)
 
 
