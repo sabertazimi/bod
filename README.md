@@ -28,6 +28,10 @@ and
 ### Installation
 
 ```bash
+# Global installation
+npm i -g bod
+
+# Local installation
 npm i -D bod
 ```
 

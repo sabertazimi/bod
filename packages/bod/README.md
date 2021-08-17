@@ -15,7 +15,10 @@ Boilerplate CLI App - Create a new project powered by Create React App and @sabe
 ## Installation
 
 ```bash
-# npm install --save-dev bod
+# Global installation
+npm i -g bod
+
+# Local installation
 npm i -D bod
 ```
 
