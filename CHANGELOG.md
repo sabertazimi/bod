@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.6](https://github.com/sabertazimi/bod/compare/v3.9.5...v3.9.6) (2021-08-17)
+
+
+### Bug Fixes
+
+* **CI:** rectify NPM automation tokens error ([2e292c4](https://github.com/sabertazimi/bod/commit/2e292c472beb3e2dbc02f7c682bf3c86e008ef28))
+
+
+
+
+
 ## [3.9.5](https://github.com/sabertazimi/bod/compare/v3.9.4...v3.9.5) (2021-08-17)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "cra-template-bod",
-  "version": "3.9.5",
+  "version": "3.9.6",
   "keywords": [
     "react",
     "create-react-app",
@@ -30,7 +30,7 @@
     "test": "npm run build && react-scripts test"
   },
   "dependencies": {
-    "@sabertazimi/react-scripts": "^3.9.5",
+    "@sabertazimi/react-scripts": "^3.9.6",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
