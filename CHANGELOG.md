@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.4](https://github.com/sabertazimi/bod/compare/v3.9.3...v3.9.4) (2021-08-17)
+
+
+### Bug Fixes
+
+* **CI:** reattach HEAD ([54648ba](https://github.com/sabertazimi/bod/commit/54648bab09ba5eadbbd8de44fec0260c8c69326a))
+* **CI:** reattach HEAD ([4638572](https://github.com/sabertazimi/bod/commit/4638572c6eb9df815cc18324f1da132a2ca85a8f))
+* **lerna-publish:** enable unstaged files in git ([b32ba25](https://github.com/sabertazimi/bod/commit/b32ba25b6a6cb4517e8e638d711e6d045d7d01cf))
+* **lerna:** disable bump verion beyond main branch ([89a4bdd](https://github.com/sabertazimi/bod/commit/89a4bddb0cbd8e4b0783e099510cd78f4e4d6a9c))
+* **lerna:** enable widden version bump ([b71a591](https://github.com/sabertazimi/bod/commit/b71a591f4ea3145689f2de76e637e38e831d0529))
+
+
+
+
+
 ## [3.9.3](https://github.com/sabertazimi/bod/compare/v3.9.2...v3.9.3) (2021-08-16)
 
 
