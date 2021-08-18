@@ -8,6 +8,7 @@
   "scripts": {
     "build": "lerna run build",
     "build:badge": "ts-node scripts/badge.ts",
+    "clean": "lerna clean --yes",
     "e2e": "npm run test:e2e",
     "format": "lerna run format",
     "lint": "lerna run lint",
