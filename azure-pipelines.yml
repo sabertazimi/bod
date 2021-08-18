@@ -16,6 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    git switch -C main
+  displayName: 'Reattach HEAD'
+
+- script: |
     npm ci
     rm $(which yarn)
     rm $(which yarnpkg)
