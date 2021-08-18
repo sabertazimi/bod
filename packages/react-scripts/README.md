@@ -17,9 +17,19 @@ This package includes scripts and configuration used by [Bod CLI](https://github
 Compare with original `react-scripts` built by `facebook`:
 
 - All original features shipped.
-- Add `stylelint` support for `start` and `build`.
-- Add `prettier` binding for both `eslint` and `stylelint`.
-- Add `webpack-bundle-analyzer` support for `build`.
+- Latest dependencies via [GitHub dependabot](https://github.com/dependabot).
+- Add
+  [stylelint](https://github.com/stylelint/stylelint)
+  support for `start` and `build`.
+- Add
+  [prettier](https://github.com/prettier/prettier)
+  binding for both
+  [eslint](https://github.com/prettier/eslint-plugin-prettier)
+  and
+  [stylelint](https://github.com/prettier/stylelint-prettier).
+- Add
+  [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+  support for `build`.
 
 ## Find More
 
