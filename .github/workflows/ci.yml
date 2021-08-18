@@ -85,7 +85,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
           echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
-          git commit -a -m "chore(CI): stage generated files for lerna publish"
           npm run publish --if-present
         env:
           NPM_CONFIG_USERCONFIG: .npmrc
