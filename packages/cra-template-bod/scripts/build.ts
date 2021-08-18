@@ -47,12 +47,11 @@ const buildJson = () => {
   };
 
   // Remove ignored deps
-  appPackageJson.package.dependencies = Object.keys(
-    appPackageJson.package.dependencies
-  )
+  const appDeps = appPackageJson.package.dependencies;
+  appPackageJson.package.dependencies = Object.keys(appDeps)
     .filter((dep: string) => !ignoreDeps.includes(dep))
     .reduce((deps: { [key: string]: string }, dep: string) => {
-      deps[dep] = appPackageJson.package.dependencies[dep];
+      deps[dep] = appDeps[dep];
       return deps;
     }, {});
 
