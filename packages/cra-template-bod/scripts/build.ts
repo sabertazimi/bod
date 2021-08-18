@@ -28,9 +28,6 @@ const buildJson = () => {
   const packageJson = JSON.parse(
     fs.readFileSync(path.join(rootPath, 'package.json'), 'utf8')
   );
-  const appPackageJson = JSON.parse(
-    fs.readFileSync(path.join(rootPath, 'template.json'), 'utf8')
-  );
 
   const ignoreDeps = [
     '@sabertazimi/react-scripts',
@@ -38,25 +35,31 @@ const buildJson = () => {
     'react',
     'react-dom',
   ];
-  const appScripts = { ...appPackageJson.package.scripts };
 
-  // Merge package.json
-  appPackageJson.package = {
-    ...appPackageJson.package,
-    ...packageJson,
-  };
-
-  // Remove ignored deps
-  const appDeps = appPackageJson.package.dependencies;
-  appPackageJson.package.dependencies = Object.keys(appDeps)
+  // Remove ignored dependencies
+  const appDeps = Object.keys(packageJson.dependencies)
     .filter((dep: string) => !ignoreDeps.includes(dep))
     .reduce((deps: { [key: string]: string }, dep: string) => {
-      deps[dep] = appDeps[dep];
+      deps[dep] = packageJson.dependencies[dep];
       return deps;
     }, {});
 
-  // Keep app scripts
-  appPackageJson.package.scripts = appScripts;
+  // Keep 'template:xxx' scripts
+  const appScripts = Object.keys(packageJson.scripts)
+    .filter((script: string) => script.startsWith('template:'))
+    .reduce((scripts: { [key: string]: string }, script: string) => {
+      const scriptName = script.slice(script.indexOf(':') + 1);
+      scripts[scriptName] = packageJson.scripts[script];
+      return scripts;
+    }, {});
+
+  const appPackageJson = {
+    package: {
+      ...packageJson,
+      dependencies: { ...appDeps },
+      scripts: { ...appScripts },
+    },
+  };
 
   // Write updated package.json
   fs.writeFileSync(
@@ -65,5 +68,9 @@ const buildJson = () => {
   );
 };
 
-buildTemplate();
-buildJson();
+const main = () => {
+  buildTemplate();
+  buildJson();
+};
+
+main();
