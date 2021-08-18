@@ -168,37 +168,6 @@ class Test {
     }
   }
 
-  getPackages(packagesPath: string) {
-    const packagePathsByName: { [key: string]: string } = {};
-
-    fs.readdirSync(packagesPath).forEach(name => {
-      const packagePath = path.join(packagesPath, name);
-      const packageJson = path.join(packagePath, 'package.json');
-      if (fs.existsSync(packageJson)) {
-        packagePathsByName[name] = packagePath;
-      }
-    });
-
-    return packagePathsByName;
-  }
-
-  packReactScripts(packagesPath: string) {
-    const scriptsFileName = Test.execPipe(
-      'npm pack',
-      path.join(packagesPath, 'react-scripts')
-    )
-      .toString()
-      .trim();
-
-    const scriptsPath = path.join(
-      packagesPath,
-      'react-scripts',
-      scriptsFileName
-    );
-
-    return scriptsPath;
-  }
-
   runCRA(templatePath: string, scriptsPath: string) {
     Test.info('Run create-react-app to generate project ...');
     Test.exec(`rm -fr ${this.appPath}`);
