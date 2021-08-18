@@ -7,7 +7,7 @@
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/react-scripts?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
 
 [![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/bod/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
-[![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=jest&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
+[![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=coveralls&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
 This package includes scripts and configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
