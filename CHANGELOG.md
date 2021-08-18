@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
+
+
+### Bug Fixes
+
+* **CI-azure:** rectify lerna error on azure pipeline ([78708ec](https://github.com/sabertazimi/bod/commit/78708ec1a6292dab55c233089f5aaa5681b2ed83))
+* **CRA:** remove unnecessary files inclusion ([a1af6eb](https://github.com/sabertazimi/bod/commit/a1af6eb76962bdb674505e9d6ce529652ba7f3f7))
+* **template-build:** autogenerate template.json (include scripts field) ([6f05d4f](https://github.com/sabertazimi/bod/commit/6f05d4f86efd855a5d8e8d8565e8b8196234c8f0))
+* **template-css:** enable postcss normalize by default ([3d7842e](https://github.com/sabertazimi/bod/commit/3d7842e08a9172b856e76b5e33a0dca1544c40f0)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template:** update deps to date ([7ba2320](https://github.com/sabertazimi/bod/commit/7ba23208fc42fb580467ee8fbebcf37a46b24db2))
+* **test-bod:** change timeout from 5s to 20s ([64b9fc4](https://github.com/sabertazimi/bod/commit/64b9fc4dad4638207e77a1e207f21accf7d68f16))
+
+
+### Performance Improvements
+
+* **template-build:** improve template building script ([1c18e43](https://github.com/sabertazimi/bod/commit/1c18e4302464e224736194d1cb5da5d633fcd692))
+
+
+
+
+
 ## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
 
 

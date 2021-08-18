@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
+
+
+### Bug Fixes
+
+* **test-bod:** change timeout from 5s to 20s ([64b9fc4](https://github.com/sabertazimi/bod/commit/64b9fc4dad4638207e77a1e207f21accf7d68f16))
+
+
+
+
+
 ## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
 
 **Note:** Version bump only for package bod

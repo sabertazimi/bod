@@ -1,6 +1,6 @@
 {
   "name": "bod",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Boilerplate CLI App",
   "scripts": {
     "build": "npm run clean && npm run compile",

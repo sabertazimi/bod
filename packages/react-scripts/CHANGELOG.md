@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
+
+
+### Bug Fixes
+
+* **CRA:** remove unnecessary files inclusion ([a1af6eb](https://github.com/sabertazimi/bod/commit/a1af6eb76962bdb674505e9d6ce529652ba7f3f7))
+
+
+
+
+
 ## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
 
 

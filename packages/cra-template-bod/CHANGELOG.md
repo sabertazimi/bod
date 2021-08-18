@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
+
+
+### Bug Fixes
+
+* **template-build:** autogenerate template.json (include scripts field) ([6f05d4f](https://github.com/sabertazimi/bod/commit/6f05d4f86efd855a5d8e8d8565e8b8196234c8f0))
+* **template-css:** enable postcss normalize by default ([3d7842e](https://github.com/sabertazimi/bod/commit/3d7842e08a9172b856e76b5e33a0dca1544c40f0)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+### Performance Improvements
+
+* **template-build:** improve template building script ([1c18e43](https://github.com/sabertazimi/bod/commit/1c18e4302464e224736194d1cb5da5d633fcd692))
+
+
+
+
+
 ## [4.0.2](https://github.com/sabertazimi/bod/compare/v4.0.1...v4.0.2) (2021-08-17)
 
 
