@@ -6,10 +6,10 @@
     "build": "npm run clean && npm run compile",
     "clean": "rimraf ./dist/",
     "compile": "tsc",
-    "dev": "ts-node ./lib/bod.ts",
-    "format": "prettier --write lib/**/*.ts",
+    "dev": "ts-node ./src/bod.ts",
+    "format": "prettier --write src/**/*.ts",
     "lint": "npm run lint:style && npm run lint:type-check",
-    "lint:style": "eslint --fix --ext .ts ./lib",
+    "lint:style": "eslint --fix --ext .ts ./src",
     "lint:type-check": "tsc --noEmit",
     "start": "npm run dev",
     "test": "jest",
@@ -22,7 +22,7 @@
     "!dist/**/*.test.d.ts"
   ],
   "bin": {
-    "bod": "dist/bod.js"
+    "bod": "bin/bod.js"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
