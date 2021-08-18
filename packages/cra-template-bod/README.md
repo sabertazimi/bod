@@ -54,16 +54,18 @@ See the section about [deployment](https://cra.link/deployment) for more informa
 ## Create React App
 
 To use this template with Create React App,
-add `--template bod` when creating a new app.
+add
+`--template bod --scripts-version @sabertazimi/react-scripts`
+when creating a new app.
 
 For example:
 
 ```bash
-npx create-react-app my-app --template bod 
+npx create-react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
 ```
 
 ```bash
-yarn create react-app my-app --template bod
+yarn create react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
 ```
 
 ## Reference

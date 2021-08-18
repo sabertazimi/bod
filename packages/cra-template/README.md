@@ -12,7 +12,7 @@
 
 This is the official base template for [Bod CLI](https://github.com/sabertazimi/bod).
 
-If you don't specify a template (for example, `--template typescript`),
+If you don't specify a template (for example, `--template bod`),
 this template will be used by default.
 
 For more information, please refer to:

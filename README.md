@@ -76,7 +76,7 @@ npx bod create my-app
 Or use with Create React App:
 
 ```bash
-npx create-react-app my-app --template bod 
+npx create-react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
 ```
 
 More available scripts on package
