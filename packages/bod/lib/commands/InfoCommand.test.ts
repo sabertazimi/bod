@@ -2,6 +2,8 @@ import InfoCommand from './InfoCommand';
 import consola from 'consola';
 
 describe('InfoCommand', () => {
+  jest.setTimeout(20000);
+
   test('should extends [BaseCommand] fields', () => {
     const infoCommand = new InfoCommand();
     expect(infoCommand.getName()).toBe('info');
