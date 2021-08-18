@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
+
+
+### Bug Fixes
+
+* **bod-bin:** create bin/bod.js as binary file ([6ff644e](https://github.com/sabertazimi/bod/commit/6ff644ef2e15b1aef2b34d1237d625c68b93ca61))
+
+
+
+
+
 ## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
 
 

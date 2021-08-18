@@ -1,6 +1,6 @@
 {
   "name": "cra-template-bod",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "keywords": [
     "bod",
     "bod-cli",
@@ -36,7 +36,7 @@
     "template:test": "react-scripts test"
   },
   "dependencies": {
-    "@sabertazimi/react-scripts": "^4.0.3",
+    "@sabertazimi/react-scripts": "^4.0.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",

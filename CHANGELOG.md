@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
+
+
+### Bug Fixes
+
+* **bod-bin:** create bin/bod.js as binary file ([6ff644e](https://github.com/sabertazimi/bod/commit/6ff644ef2e15b1aef2b34d1237d625c68b93ca61))
+* **CI-publish:** remove CI commit for building result ([f9aae34](https://github.com/sabertazimi/bod/commit/f9aae34957cf28021af0e9feaed05af170e49f44))
+* **CRA-e2e:** remove redundant code ([3736a50](https://github.com/sabertazimi/bod/commit/3736a50383932545c2f120f47eab687b0cf54e07))
+
+
+
+
+
 ## [4.0.3](https://github.com/sabertazimi/bod/compare/v4.0.2...v4.0.3) (2021-08-18)
 
 
