@@ -128,7 +128,7 @@ use meaningful order:
       "cursor",
       "content",
       "quotes"
-    ],
+    ]
   }
 }
 ```
