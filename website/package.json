@@ -4,6 +4,7 @@
   "scripts": {
     "build": "docusaurus build",
     "clear": "docusaurus clear",
+    "postbuild": "cp -fr build ../",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },
