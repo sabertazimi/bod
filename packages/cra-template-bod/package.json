@@ -58,7 +58,7 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-standard",
+      "stylelint-config-bod",
       "stylelint-prettier/recommended"
     ]
   },
