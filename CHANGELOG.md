@@ -27,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **eslint-config:** add eslint config forked from CRA ([e604ad2](https://github.com/sabertazimi/bod/commit/e604ad220e9fa16cfaa52486dc66ec4212d9ee0d))
 * **GitHub-pages:** add documentation site with docusaurus ([07bcd1f](https://github.com/sabertazimi/bod/commit/07bcd1fa5079789b646fc3e3f1a94515fcef5182))
 * **GitHub-pages:** generate React demo to GitHub Pages directory ([400ee90](https://github.com/sabertazimi/bod/commit/400ee9085448e1de106ed74ceabfe76828a71f99))
-* **styelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
+* **stylelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
 * **stylelint-bod:** add stylelint config for `bod` ([0c2f61d](https://github.com/sabertazimi/bod/commit/0c2f61d25843ea8a4b93a56ad5bf7cacad864db8))
 * **stylelint-sass:** add sass stylelint config package ([989ac22](https://github.com/sabertazimi/bod/commit/989ac22581b745ec00e6392eb6a20a56d34677e0))
 

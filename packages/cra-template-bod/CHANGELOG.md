@@ -15,7 +15,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **styelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
+* **stylelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
 
 
 

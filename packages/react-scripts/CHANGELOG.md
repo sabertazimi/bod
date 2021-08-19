@@ -17,7 +17,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **CRA-start:** bump webpack-dev-server to 4.0.0 ([84c8cd9](https://github.com/sabertazimi/bod/commit/84c8cd95d834f3f5f3a00933d36b3668ce236117))
-* **styelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
+* **stylelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
 
 
 
