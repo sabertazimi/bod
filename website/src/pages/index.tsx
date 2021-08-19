@@ -19,7 +19,7 @@ function HomepageHeader(): JSX.Element {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            Getting Started - 5min ⏱️
           </Link>
         </div>
       </div>
