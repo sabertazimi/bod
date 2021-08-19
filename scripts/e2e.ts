@@ -105,9 +105,8 @@ class Test {
   }
 
   publishToLocalRegistry() {
-    Test.info(`Log into local registry ${this.localRegistry} ...`);
-    Test.exec('git clean -df');
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
+    Test.exec('git clean -df');
     Test.exec('npm run build');
     Test.info(`Publish packages to ${this.localRegistry} ...`);
     const packages = Test.execPipe(
