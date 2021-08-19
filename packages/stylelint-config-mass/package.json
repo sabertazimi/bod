@@ -1,0 +1,40 @@
+{
+  "name": "stylelint-config-mass",
+  "version": "2.1.0",
+  "description": "A stylelint config based on stylelint-config-sass-guidelines for mass.css",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/stylelint-config-mass"
+  },
+  "keywords": [
+    "bod",
+    "bod-cli",
+    "create-react-app",
+    "react",
+    "react-scripts",
+    "stylelint",
+    "stylelint-config",
+    "stylelint-order",
+    "stylelint-scss",
+    "stylelint-config-sass-guidelines",
+    "css",
+    "scss",
+    "sass",
+    "guidelines"
+  ],
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod#readme",
+  "dependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
+  }
+}
