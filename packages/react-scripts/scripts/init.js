@@ -207,7 +207,7 @@ module.exports = function (
 
   // Setup the eslint config
   appPackage.eslintConfig = {
-    extends: ['react-app', 'react-app/jest', 'plugin:prettier/recommended'],
+    extends: ['bod', 'bod/jest', 'plugin:prettier/recommended'],
   };
 
   // Setup the stylelint config
