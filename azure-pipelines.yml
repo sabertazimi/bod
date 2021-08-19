@@ -52,9 +52,3 @@ steps:
   - script: |
       npm run build --if-present
     displayName: 'Building work'
-
-  - script: |
-      cd website/
-      npm ci
-      npm run build
-    displayName: 'Build documentation'
