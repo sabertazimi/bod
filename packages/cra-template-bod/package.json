@@ -11,6 +11,7 @@
     "typescript"
   ],
   "description": "The base TypeScript template for Bod CLI.",
+  "homepage": "https://sabertazimi.github.io/bod/bod",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabertazimi/bod.git",
