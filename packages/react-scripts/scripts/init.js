@@ -191,6 +191,7 @@ module.exports = function (
       'start:https': 'HTTPS=true react-scripts start',
       test: 'react-scripts test',
       'test:debug': 'react-scripts --inspect-brk test --runInBand --no-cache',
+      'test:node': 'react-scripts test --env=node',
     },
     templateScripts
   );
