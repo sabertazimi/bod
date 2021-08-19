@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-mass",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A stylelint config based on stylelint-config-sass-guidelines for mass.css",
   "main": "index.js",
   "repository": {
