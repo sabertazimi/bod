@@ -248,6 +248,11 @@ class Test {
     this.checkGitStatus();
     this.startLocalRegistry();
     this.publishToLocalRegistry();
+    this.runTest(
+      'bod',
+      '@sabertazimi/react-scripts',
+      this.checkTsxTemplateIntegrity.bind(this)
+    );
     if (isCI) {
       this.runTest(
         '@sabertazimi',
@@ -260,11 +265,6 @@ class Test {
         this.checkTsxTemplateIntegrity.bind(this)
       );
     }
-    this.runTest(
-      'bod',
-      '@sabertazimi/react-scripts',
-      this.checkTsxTemplateIntegrity.bind(this)
-    );
     this.handleExit();
   }
 }
