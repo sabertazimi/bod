@@ -63,7 +63,6 @@
     "eslint-plugin-prettier": "^3.4.0",
     "lerna": "^4.0.0",
     "node-fetch": "^2.6.1",
-    "npm-auth-to-token": "^1.0.0",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
     "tslib": "^2.3.1",

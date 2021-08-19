@@ -107,9 +107,6 @@ class Test {
   publishToLocalRegistry() {
     Test.info(`Log into local registry ${this.localRegistry} ...`);
     Test.exec('git clean -df');
-    Test.exec(
-      `npx npm-auth-to-token -u test -p test -e test@test.com -r ${this.localRegistry}`
-    );
     Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
     Test.exec('npm run build');
     Test.info(`Publish packages to ${this.localRegistry} ...`);
