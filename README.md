@@ -27,6 +27,10 @@ Boilerplate CLI App - Create a new project powered by
 and
 [bod template](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
 
+[**Bod Template**](https://sabertazimi.github.io/bod/bod) |
+[JSX Template](https://sabertazimi.github.io/bod/@sabertazimi) |
+[TSX Template](https://sabertazimi.github.io/bod/@sabertazimi/typescript)
+
 ## Bod CLI
 
 ### Installation
@@ -66,6 +70,12 @@ More details on package
 ## Bod Template
 
 The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod).
+
+### Live Demo
+
+- Bod Template [Demo](https://sabertazimi.github.io/bod/bod).
+- JSX Template [Demo](https://sabertazimi.github.io/bod/@sabertazimi).
+- TSX Template [Demo](https://sabertazimi.github.io/bod/@sabertazimi/typescript).
 
 ### Start with Template
 
