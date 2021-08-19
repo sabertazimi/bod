@@ -9,6 +9,10 @@
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/react-scripts?label=CRA%20Scripts&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
 
+[![NPM Version](https://img.shields.io/npm/v/eslint-config-bod?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/eslint-config-bod)
+[![NPM Version](https://img.shields.io/npm/v/stylelint-config-bod?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-bod)
+[![NPM Version](https://img.shields.io/npm/v/stylelint-config-mass?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-mass)
+
 [![NPM Version](https://img.shields.io/npm/v/cra-template-bod?label=Bod%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/cra-template-bod)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template?label=JSX%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=TSX%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
