@@ -51,7 +51,7 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "devDependencies": {
-    "@types/node": "^16.6.1",
+    "@types/node": "^16.6.2",
     "@types/node-fetch": "^2.5.12",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
