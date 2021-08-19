@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
+
+
+### Bug Fixes
+
+* **CRA-eslint:** change eslint config to `bod` ([a7bd0bd](https://github.com/sabertazimi/bod/commit/a7bd0bd48f2cdf4f5add6d92361cc6eb18c87fc8))
+* **template-css:** rectify css order lint error ([d85347a](https://github.com/sabertazimi/bod/commit/d85347a6934a8bfaaaedd2f8d4200b700fe30d17)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-deploy:** add `homepage` for gh-pages ([55114e2](https://github.com/sabertazimi/bod/commit/55114e2fe72ebe0faa4f2a811c2a2f32414409f2))
+
+
+### Features
+
+* **styelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
+
+
+
+
+
 ## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
 
 **Note:** Version bump only for package cra-template-bod

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
+
+
+### Bug Fixes
+
+* **template-css:** rectify css order lint error ([d85347a](https://github.com/sabertazimi/bod/commit/d85347a6934a8bfaaaedd2f8d4200b700fe30d17)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-deploy:** add `homepage` for gh-pages ([55114e2](https://github.com/sabertazimi/bod/commit/55114e2fe72ebe0faa4f2a811c2a2f32414409f2))
+
+
+
+
+
 ## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

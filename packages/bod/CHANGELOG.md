@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
+
+
+### Bug Fixes
+
+* **packages-homepage:** update bod homepage link ([e0f57cf](https://github.com/sabertazimi/bod/commit/e0f57cf6b3c7c6a2b6bef1579bdafe1eb948df80))
+
+
+
+
+
 ## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
 
 

@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
+
+
+### Bug Fixes
+
+* **CRA-e2e:** ignore local registry login ([851cf2e](https://github.com/sabertazimi/bod/commit/851cf2e741bbd1c46407d24c9ca568244d2a1625))
+* **CRA-e2e:** remove local registry login log ([b83d9c3](https://github.com/sabertazimi/bod/commit/b83d9c3df1b4b0c31473d96e6fa9c5828245439b))
+* **CRA-eslint:** change eslint config to `bod` ([a7bd0bd](https://github.com/sabertazimi/bod/commit/a7bd0bd48f2cdf4f5add6d92361cc6eb18c87fc8))
+* **CRA-init:** add `build --profile` script ([842c7ec](https://github.com/sabertazimi/bod/commit/842c7ecbccf3c3aebb67277a71de1019d528594b)), closes [#18](https://github.com/sabertazimi/bod/issues/18)
+* **CRA-init:** add `node` env test script ([dd084d9](https://github.com/sabertazimi/bod/commit/dd084d9d1b0c01f795b37e838f009d5cc74bed6b))
+* **CRA-scripts:** change eslint config to `bod` ([e6d984e](https://github.com/sabertazimi/bod/commit/e6d984e066e969d7a8b8d9a095eacdc6ecad2950))
+* **packages-homepage:** update bod homepage link ([e0f57cf](https://github.com/sabertazimi/bod/commit/e0f57cf6b3c7c6a2b6bef1579bdafe1eb948df80))
+* **stylelint-sass:** bump stylelint config to 2.2.0 ([3f7cd26](https://github.com/sabertazimi/bod/commit/3f7cd2693a58fd89d6db4dc54df2c12938c7c5ee))
+* **template-css:** rectify css order lint error ([d85347a](https://github.com/sabertazimi/bod/commit/d85347a6934a8bfaaaedd2f8d4200b700fe30d17)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-deploy:** add `homepage` for gh-pages ([55114e2](https://github.com/sabertazimi/bod/commit/55114e2fe72ebe0faa4f2a811c2a2f32414409f2))
+* **website-edit:** rectify GitHub edit link ([eb11d70](https://github.com/sabertazimi/bod/commit/eb11d70352fccc1921b1242cb0424f3b1672cf07))
+
+
+### Features
+
+* **CRA-start:** bump webpack-dev-server to 4.0.0 ([84c8cd9](https://github.com/sabertazimi/bod/commit/84c8cd95d834f3f5f3a00933d36b3668ce236117))
+* **eslint-config:** add eslint config forked from CRA ([e604ad2](https://github.com/sabertazimi/bod/commit/e604ad220e9fa16cfaa52486dc66ec4212d9ee0d))
+* **GitHub-pages:** add documentation site with docusaurus ([07bcd1f](https://github.com/sabertazimi/bod/commit/07bcd1fa5079789b646fc3e3f1a94515fcef5182))
+* **GitHub-pages:** generate React demo to GitHub Pages directory ([400ee90](https://github.com/sabertazimi/bod/commit/400ee9085448e1de106ed74ceabfe76828a71f99))
+* **styelint-bod:** change stylelint to `bod` ([9543984](https://github.com/sabertazimi/bod/commit/95439841ea1dd52485808ba7e3a4ee8b3ce2de7e))
+* **stylelint-bod:** add stylelint config for `bod` ([0c2f61d](https://github.com/sabertazimi/bod/commit/0c2f61d25843ea8a4b93a56ad5bf7cacad864db8))
+* **stylelint-sass:** add sass stylelint config package ([989ac22](https://github.com/sabertazimi/bod/commit/989ac22581b745ec00e6392eb6a20a56d34677e0))
+
+
+
+
+
 ## [4.0.4](https://github.com/sabertazimi/bod/compare/v4.0.3...v4.0.4) (2021-08-18)
 
 

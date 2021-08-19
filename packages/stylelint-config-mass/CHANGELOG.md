@@ -1,0 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
+
+
+### Bug Fixes
+
+* **packages-homepage:** update bod homepage link ([e0f57cf](https://github.com/sabertazimi/bod/commit/e0f57cf6b3c7c6a2b6bef1579bdafe1eb948df80))
+* **stylelint-sass:** bump stylelint config to 2.2.0 ([3f7cd26](https://github.com/sabertazimi/bod/commit/3f7cd2693a58fd89d6db4dc54df2c12938c7c5ee))
+
+
+### Features
+
+* **stylelint-sass:** add sass stylelint config package ([989ac22](https://github.com/sabertazimi/bod/commit/989ac22581b745ec00e6392eb6a20a56d34677e0))
