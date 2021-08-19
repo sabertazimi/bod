@@ -1,6 +1,6 @@
 module.exports = {
-  'extends': ['stylelint-config-sass-guidelines'],
-  'rules': {
+  extends: ['stylelint-config-sass-guidelines'],
+  rules: {
     'order/properties-order': [
       'position',
       'z-index',
@@ -189,14 +189,15 @@ module.exports = {
       'page-break-after',
       'page-break-inside',
       'pointer-events',
-      'will-change'
+      'will-change',
     ],
     'order/properties-alphabetical-order': null,
-    "selector-class-pattern": [
-      "^[a-z0-9\\-\\_]+$",
+    'selector-class-pattern': [
+      '^[a-z0-9\\-\\_]+$',
       {
-        "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)"
-      }
-    ]
-  }
+        message:
+          'Selector should be written in lowercase with hyphens (selector-class-pattern)',
+      },
+    ],
+  },
 };
