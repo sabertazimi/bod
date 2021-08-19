@@ -93,7 +93,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/docs/',
+          editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
