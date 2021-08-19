@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "homepage": "https://github.com/sabertazimi/bod#readme",
+  "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-recess-order": "^2.5.0",

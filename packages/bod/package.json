@@ -52,7 +52,7 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "homepage": "https://github.com/sabertazimi/bod#readme",
+  "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
