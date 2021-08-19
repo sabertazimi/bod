@@ -32,7 +32,8 @@ set `.stylelintrc.json` to:
 
 Simply add a "rules" key to your config and add your overrides there.
 
-For example, to change the indentation to tabs and turn off the number-leading-zero rule:
+For example,
+to change the indentation to tabs and turn off the number-leading-zero rule:
 
 ```json
 {
@@ -46,7 +47,8 @@ For example, to change the indentation to tabs and turn off the number-leading-z
 
 ## Highlight
 
-disable `order/properties-alphabetical-order` in `stylelint-config-sass-guidelines`, use meaningful order
+disable `order/properties-alphabetical-order` in `stylelint-config-sass-guidelines`,
+use meaningful order:
 
 ```json
 {
