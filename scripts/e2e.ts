@@ -206,7 +206,7 @@ class Test {
     }
   }
 
-  runBuildScript() {
+  runBuildScript(templatePath: string) {
     Test.info('Start testing for `react-scripts build` ...');
     Test.exec('npm run build', this.appPath);
 
@@ -215,6 +215,13 @@ class Test {
     if (!buildAssets) {
       this.handleError(Error('CRA `react-scripts build` failed.'));
     }
+
+    Test.exec(`rm -fr build/${templatePath}`, this.rootPath);
+    Test.exec(`mkdir -p build/${templatePath}`, this.rootPath);
+    Test.exec(
+      `cp -fr ${this.appPath}/build/* build/${templatePath}`,
+      this.rootPath
+    );
   }
 
   runTestScript() {
@@ -234,7 +241,7 @@ class Test {
   ) {
     this.runCRA(templatePath, scriptsPath);
     checkTemplateIntegrity();
-    this.runBuildScript();
+    this.runBuildScript(templatePath);
     this.runTestScript();
     this.runStartScript();
   }
