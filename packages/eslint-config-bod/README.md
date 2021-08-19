@@ -1,4 +1,4 @@
-# eslint-config-react-app
+# eslint-config-bod
 
 This package includes the shareable ESLint configuration used by [Bod CLI](https://github.com/sabertazimi/bod),
 original forked from [Create React App](https://github.com/facebook/create-react-app).
@@ -7,7 +7,7 @@ Please refer to its documentation:
 
 - [Getting Started](https://facebook.github.io/create-react-app/docs/getting-started):
   How to create a new app.
-- [User Guide](https://facebook.github.io/create-react-app/):
+- [User Guide](https://facebook.github.io/create-react-app):
   How to develop apps bootstrapped with Create React App.
 
 ## Usage in Create React App Projects
@@ -28,7 +28,7 @@ Note that when using npm 7 (or greater) this step is not required,
 as npm will automatically install peer dependencies.
 
 ```bash
-npm i -D eslint-config-react-app \
+npm i -D eslint-config-bod \
 @babel/eslint-parser@^7.14.7 \
 @typescript-eslint/eslint-plugin@^4.0.0 \
 @typescript-eslint/parser@^4.0.0 \
@@ -46,12 +46,12 @@ with following contents in the root folder of your project:
 
 ```json
 {
-  "extends": "react-app"
+  "extends": "bod"
 }
 ```
 
 That's it!
-You can override the settings from `eslint-config-react-app`
+You can override the settings from `eslint-config-bod`
 by editing the `.eslintrc.json` file.
 Learn more about
 [configuring ESLint](https://eslint.org/docs/user-guide/configuring)
@@ -74,7 +74,7 @@ to the `extends` array in your ESLint config.
 
 ```json
 {
-  "extends": ["react-app", "react-app/jest"]
+  "extends": ["bod", "bod/jest"]
 }
 ```
 
@@ -107,7 +107,7 @@ you can create an `.eslintrc.json` file in the root of your project with this co
 
 ```json
 {
-  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "extends": ["bod", "plugin:jsx-a11y/recommended"],
   "plugins": ["jsx-a11y"]
 }
 ```
