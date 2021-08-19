@@ -1,0 +1,48 @@
+{
+  "name": "stylelint-config-bod",
+  "version": "4.0.0",
+  "description": "A stylelint config for Bod CLI",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/stylelint-config-bod"
+  },
+  "keywords": [
+    "bod",
+    "bod-cli",
+    "create-react-app",
+    "react",
+    "react-scripts",
+    "a11y",
+    "css",
+    "lint",
+    "linter",
+    "order",
+    "idomatic-css",
+    "standard",
+    "stylelint",
+    "stylelint-a11y",
+    "stylelint-config",
+    "stylelint-order",
+    "stylelint-plugin",
+    "stylelint-standard"
+  ],
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod#readme",
+  "dependencies": {
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.13.0"
+  }
+}
