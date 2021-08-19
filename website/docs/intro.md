@@ -33,6 +33,7 @@ Boilerplate CLI App - Create a new project powered by
 and
 [bod template](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
 
+[**Documentation**](https://sabertazimi.github.io/bod) |
 [**Bod Template**](https://sabertazimi.github.io/bod/bod) |
 [JSX Template](https://sabertazimi.github.io/bod/@sabertazimi) |
 [TSX Template](https://sabertazimi.github.io/bod/@sabertazimi/typescript)
