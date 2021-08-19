@@ -185,6 +185,7 @@ module.exports = function (
   appPackage.scripts = Object.assign(
     {
       build: 'react-scripts build',
+      'build:profile': 'react-scripts build --profile',
       lint: 'stylelint --fix ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src',
       start: 'react-scripts start',
       'start:https': 'HTTPS=true react-scripts start',
