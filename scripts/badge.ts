@@ -1,8 +1,8 @@
 import cp from 'child_process';
-import consola from 'consola';
 import fs from 'fs';
 import fetch from 'node-fetch';
 import path from 'path';
+import * as utils from './utils';
 
 const rootPath = path.join(__dirname, '..');
 const packages = ['packages/bod'];
@@ -28,7 +28,7 @@ const getCoveragePercentage = (
     const summary = fs.readFileSync(summaryFilePath, 'utf8');
     return JSON.parse(summary)['total'][coverageType]['pct'];
   } catch (error) {
-    consola.info(error.message);
+    utils.info(error.message);
     return 0;
   }
 };
@@ -70,7 +70,7 @@ const generateCoverageFile = async (
     const file = await downloadBadgeFile(badgeUrl);
     fs.writeFileSync(output, file, { encoding: 'utf8' });
   } catch (error) {
-    consola.info(error.message);
+    utils.info(error.message);
   }
 };
 
