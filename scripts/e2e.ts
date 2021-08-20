@@ -1,9 +1,8 @@
 import chalk from 'chalk';
-import cp from 'child_process';
-import consola from 'consola';
+import { isCI } from 'ci-info';
 import fs from 'fs';
 import path from 'path';
-import { isCI } from 'ci-info';
+import * as utils from './utils';
 
 class Test {
   appName: string;
@@ -18,13 +17,14 @@ class Test {
   localRegistryLogPath: string;
 
   constructor(appName: string) {
-    Test.info(`Working in directory ${process.cwd()}.`);
+    utils.info(`Working in directory ${process.cwd()}.`);
     this.appName = appName;
     this.cwd = process.cwd();
     this.rootPath = path.join(__dirname, '..');
     this.appPath = path.join(this.rootPath, this.appName);
     this.packagesPath = path.join(this.rootPath, 'packages');
-    this.originalRegistry = Test.execPipe('npm config get registry')
+    this.originalRegistry = utils
+      .execPipe('npm config get registry')
       .toString()
       .replace(/\n$/, '');
     this.localPort = 4873;
@@ -36,51 +36,15 @@ class Test {
     this.localRegistryLogPath = path.join(this.rootPath, 'registry.log');
   }
 
-  static exec(command: string, cwd?: string) {
-    Test.cmd(command);
-    return cp.execSync(command, {
-      shell: '/usr/bin/bash',
-      stdio: 'inherit',
-      cwd: cwd ?? process.cwd(),
-    });
-  }
-
-  static execPipe(command: string, cwd?: string) {
-    Test.cmd(command);
-    return cp.execSync(command, {
-      shell: '/usr/bin/bash',
-      stdio: 'pipe',
-      cwd: cwd ?? process.cwd(),
-    });
-  }
-
-  static log(log: string) {
-    consola.log(log);
-  }
-
-  static info(info: string) {
-    consola.info(chalk.blue(info));
-  }
-
-  static success(success: string) {
-    consola.success(chalk.green(success));
-  }
-
-  static error(error: string | Error) {
-    consola.error(error);
-  }
-
-  static cmd(cmd: string) {
-    console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
-  }
-
   startLocalRegistry() {
-    Test.info('Start verdaccio server ...');
-    Test.exec(
+    utils.info('Start verdaccio server ...');
+    utils.exec(
       `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
-    Test.exec(`grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`);
-    Test.exec(`npm config set registry "${this.localRegistry}"`);
+    utils.exec(
+      `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`
+    );
+    utils.exec(`npm config set registry "${this.localRegistry}"`);
   }
 
   stopLocalRegistry() {
@@ -95,23 +59,24 @@ class Test {
     );
     const localRegistryMetaStorage = path.join(this.rootPath, 'storage');
 
-    Test.info('Clear local registry ...');
-    Test.exec(`npm config set registry "${this.originalRegistry}"`);
-    Test.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
-    Test.exec(`rm -fr ${localRegistryNpmrcPath}`);
-    Test.exec(`rm -fr ${localRegistryAuthStorage}`);
-    Test.exec(`rm -fr ${localRegistryBundleStorage}`);
-    Test.exec(`rm -fr ${localRegistryMetaStorage}`);
+    utils.info('Clear local registry ...');
+    utils.exec(`npm config set registry "${this.originalRegistry}"`);
+    utils.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
+    utils.exec(`rm -fr ${localRegistryNpmrcPath}`);
+    utils.exec(`rm -fr ${localRegistryAuthStorage}`);
+    utils.exec(`rm -fr ${localRegistryBundleStorage}`);
+    utils.exec(`rm -fr ${localRegistryMetaStorage}`);
   }
 
   publishToLocalRegistry() {
-    Test.info('Build monorepo (bod CLI, react-scripts and templates) ...');
-    Test.exec('git clean -df');
-    Test.exec('npm run build');
-    Test.info(`Publish packages to ${this.localRegistry} ...`);
-    const packages = Test.execPipe(
-      'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
-    )
+    utils.info('Build monorepo (bod CLI, react-scripts and templates) ...');
+    utils.exec('git clean -df');
+    utils.exec('npm run build');
+    utils.info(`Publish packages to ${this.localRegistry} ...`);
+    const packages = utils
+      .execPipe(
+        'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
+      )
       .toString()
       .replace('/^[^-].*\n', '') // only keep packages version output
       .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
@@ -120,10 +85,10 @@ class Test {
   }
 
   cleanUp() {
-    Test.info('Cleaning up ...');
+    utils.info('Cleaning up ...');
     this.stopLocalRegistry();
-    Test.exec(`rm -fr ${this.appPath}`);
-    Test.exec(
+    utils.exec(`rm -fr ${this.appPath}`);
+    utils.exec(
       'git restore lerna.json package.json package-lock.json packages/*'
     );
   }
@@ -138,36 +103,36 @@ class Test {
 
   handleExit() {
     this.cleanUp();
-    Test.success('E2E testing completed.');
+    utils.success('E2E testing completed.');
     process.exit(0);
   }
 
   handleError(error: Error) {
-    Test.error('An error was encountered while executing');
-    Test.error(error);
+    utils.error('An error was encountered while executing');
+    utils.error(error);
     this.cleanUp();
-    Test.error('Exiting with error.');
+    utils.error('Exiting with error.');
     process.exit(1);
   }
 
   checkGitStatus() {
-    Test.info('Check git status ...');
-    const gitStatus = Test.execPipe('git status --porcelain').toString();
+    utils.info('Check git status ...');
+    const gitStatus = utils.execPipe('git status --porcelain').toString();
 
     if (gitStatus.trim() !== '') {
-      Test.info('Please commit your changes before running this script!');
-      Test.info('Exiting because `git status` is not empty:');
-      Test.log('');
-      Test.log(gitStatus);
-      Test.log('');
+      utils.info('Please commit your changes before running this script!');
+      utils.info('Exiting because `git status` is not empty:');
+      utils.log('');
+      utils.log(gitStatus);
+      utils.log('');
       process.exit(1);
     }
   }
 
   runCRA(templatePath: string, scriptsPath: string) {
-    Test.info('Run create-react-app to generate project ...');
-    Test.exec(`rm -fr ${this.appPath}`);
-    Test.exec(
+    utils.info('Run create-react-app to generate project ...');
+    utils.exec(`rm -fr ${this.appPath}`);
+    utils.exec(
       `npx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
       this.rootPath
     );
@@ -178,7 +143,7 @@ class Test {
   }
 
   checkJsxTemplateIntegrity() {
-    Test.info('Checking template integrity ...');
+    utils.info('Checking template integrity ...');
 
     const templateAssets =
       this.exists('node_modules/@sabertazimi/react-scripts') &&
@@ -191,7 +156,7 @@ class Test {
   }
 
   checkTsxTemplateIntegrity() {
-    Test.info('Checking template integrity ...');
+    utils.info('Checking template integrity ...');
 
     const templateAssets =
       this.exists('node_modules/@sabertazimi/react-scripts') &&
@@ -207,8 +172,8 @@ class Test {
   }
 
   runBuildScript(templatePath: string) {
-    Test.info('Start testing for `react-scripts build` ...');
-    Test.exec('npm run build', this.appPath);
+    utils.info('Start testing for `react-scripts build` ...');
+    utils.exec('npm run build', this.appPath);
 
     const buildAssets = this.exists('build');
 
@@ -216,22 +181,22 @@ class Test {
       this.handleError(Error('CRA `react-scripts build` failed.'));
     }
 
-    Test.exec(`rm -fr build/${templatePath}`, this.rootPath);
-    Test.exec(`mkdir -p build/${templatePath}`, this.rootPath);
-    Test.exec(
+    utils.exec(`rm -fr build/${templatePath}`, this.rootPath);
+    utils.exec(`mkdir -p build/${templatePath}`, this.rootPath);
+    utils.exec(
       `cp -fr ${this.appPath}/build/* build/${templatePath}`,
       this.rootPath
     );
   }
 
   runTestScript() {
-    Test.info('Start testing for `react-scripts test` ...');
-    Test.exec('CI=true npm run test', this.appPath);
+    utils.info('Start testing for `react-scripts test` ...');
+    utils.exec('CI=true npm run test', this.appPath);
   }
 
   runStartScript() {
-    Test.info('Start testing for `react-scripts start` ...');
-    Test.exec('npm start -- --smoke-test', this.appPath);
+    utils.info('Start testing for `react-scripts start` ...');
+    utils.exec('npm start -- --smoke-test', this.appPath);
   }
 
   runTest(
