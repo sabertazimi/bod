@@ -44,6 +44,14 @@ const buildJson = () => {
       return deps;
     }, {});
 
+  // Remove ignored devDependencies
+  const appDevDeps = Object.keys(packageJson.devDependencies)
+    .filter((dep: string) => !ignoreDeps.includes(dep))
+    .reduce((deps: { [key: string]: string }, dep: string) => {
+      deps[dep] = packageJson.devDependencies[dep];
+      return deps;
+    }, {});
+
   // Keep 'template:xxx' scripts
   const appScripts = Object.keys(packageJson.scripts)
     .filter((script: string) => script.startsWith('template:'))
@@ -57,6 +65,7 @@ const buildJson = () => {
     package: {
       ...packageJson,
       dependencies: { ...appDeps },
+      devDependencies: { ...appDevDeps },
       scripts: { ...appScripts },
     },
   };
