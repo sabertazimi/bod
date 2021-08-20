@@ -5,7 +5,9 @@ const main = () => {
   utils.info(`Working in directory ${process.cwd()}.`);
   const args = process.argv.slice(2);
   const versionMatch = utils
-    .execPipe('npm run release:dry-run')
+    .execPipe(
+      'npx lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
+    )
     .toString()
     .split('\n')
     .join('')

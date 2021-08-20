@@ -16,7 +16,6 @@
     "postbuild": "npm run build:badge",
     "publish": "lerna publish from-package --no-verify-access --ignore-scripts --yes",
     "release": "ts-node scripts/release.ts",
-    "release:dry-run": "lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes",
     "start": "npm run start:template",
     "start:all": "lerna run start",
     "start:bod": "npm start -w bod",
