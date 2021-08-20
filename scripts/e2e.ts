@@ -78,7 +78,6 @@ class Test {
         'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
       )
       .toString()
-      .replace('/^[^-].*\n', '') // only keep packages version output
       .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
       .replace(/\n$/, ''); // remove tailing empty line
     console.info(packages);
