@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/sabertazimi/bod/compare/v5.0.0...v5.0.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* **template-deps:** separate deps and devDeps ([fd62f60](https://github.com/sabertazimi/bod/commit/fd62f60948d001ca5f2357b6ce1e4053ccfe2572)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 # [5.0.0](https://github.com/sabertazimi/bod/compare/v4.0.4...v5.0.0) (2021-08-19)
 
 
