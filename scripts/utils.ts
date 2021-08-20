@@ -22,6 +22,9 @@ const cmd = (cmd: string): void => {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
 };
 
+const isFlag = (args: string[], flag: string): boolean =>
+  Boolean(args.length) && args.some(arg => arg === flag);
+
 const exec = (command: string, cwd?: string): Buffer => {
   cmd(command);
   return cp.execSync(command, {
@@ -40,4 +43,4 @@ const execPipe = (command: string, cwd?: string): Buffer => {
   });
 };
 
-export { log, info, success, error, cmd, exec, execPipe };
+export { log, info, success, error, cmd, isFlag, exec, execPipe };

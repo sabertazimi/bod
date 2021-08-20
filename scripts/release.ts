@@ -1,12 +1,28 @@
+import semver from 'semver';
 import * as utils from './utils';
 
 const main = () => {
   utils.info(`Working in directory ${process.cwd()}.`);
-  const version = utils
+  const args = process.argv.slice(2);
+  const versionMatch = utils
     .execPipe('npm run release:dry-run')
     .toString()
-    .replace('/[^=].*\n', '');
-  console.info(version);
+    .split('\n')
+    .join('')
+    .match(/=>\s\d+\.\d+\.\d+/i);
+
+  if (versionMatch) {
+    const version = semver.clean(versionMatch[0].replace('=> ', ''));
+    utils.exec('npm i');
+    utils.exec(`git commit -a -m "chore(release): v${version}"`);
+    utils.exec(`git tag v${version} -s -m "v${version}"`);
+
+    if (utils.isFlag(args, '--push')) {
+      utils.exec('git push --follow-tags');
+    } else {
+      utils.info('Run `git push --follow-tags origin main` to publish.');
+    }
+  }
 };
 
 main();
