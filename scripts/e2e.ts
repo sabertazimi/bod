@@ -80,7 +80,7 @@ class Test {
       .toString()
       .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
       .replace(/\n$/, ''); // remove tailing empty line
-    console.info(packages);
+    utils.log(packages);
   }
 
   cleanUp() {
