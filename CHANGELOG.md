@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/sabertazimi/bod/compare/v5.0.1...v5.0.2) (2021-08-20)
+
+
+### Bug Fixes
+
+* **Jest-badge:** catch all error ([a33e3fd](https://github.com/sabertazimi/bod/commit/a33e3fd65395f02cdd9e19fc661e74ee9de80b86))
+
+
+
+
+
 ## [5.0.1](https://github.com/sabertazimi/bod/compare/v5.0.0...v5.0.1) (2021-08-20)
 
 
