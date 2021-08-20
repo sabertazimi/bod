@@ -24,8 +24,13 @@ const getCoveragePercentage = (
   summaryFilePath: string,
   coverageType: string
 ) => {
-  const summary = fs.readFileSync(summaryFilePath, 'utf8');
-  return JSON.parse(summary)['total'][coverageType]['pct'];
+  try {
+    const summary = fs.readFileSync(summaryFilePath, 'utf8');
+    return JSON.parse(summary)['total'][coverageType]['pct'];
+  } catch (error) {
+    consola.info(error.message);
+    return 0;
+  }
 };
 
 const getBadgeColor = (percentage: number) => {
@@ -58,24 +63,24 @@ const generateCoverageFile = async (
   badgeStyle: string,
   outputDir: string
 ) => {
-  cp.spawnSync('mkdir', ['-p', outputDir]);
-  const badgeUrl = getBadgeUrl(summaryFilePath, coverageType, badgeStyle);
-  const output = path.join(outputDir, `coverage-${coverageType}.svg`);
-  const file = await downloadBadgeFile(badgeUrl);
-  fs.writeFileSync(output, file, { encoding: 'utf8' });
-};
-
-const main = () => {
   try {
-    generateCoverageFile(
-      SummaryFilePath,
-      CoverageType[3],
-      BadgeStyle[0],
-      OutputBadgePath
-    );
+    cp.spawnSync('mkdir', ['-p', outputDir]);
+    const badgeUrl = getBadgeUrl(summaryFilePath, coverageType, badgeStyle);
+    const output = path.join(outputDir, `coverage-${coverageType}.svg`);
+    const file = await downloadBadgeFile(badgeUrl);
+    fs.writeFileSync(output, file, { encoding: 'utf8' });
   } catch (error) {
     consola.info(error.message);
   }
+};
+
+const main = () => {
+  generateCoverageFile(
+    SummaryFilePath,
+    CoverageType[3],
+    BadgeStyle[0],
+    OutputBadgePath
+  );
 };
 
 main();
