@@ -19,7 +19,7 @@ const main = () => {
     utils.exec(`git commit -a -m "chore(release): v${version}"`);
     utils.exec(`git tag v${version} -s -m "v${version}"`);
 
-    if (utils.isFlag(args, '--push')) {
+    if (utils.isFlag(args, '-p') || utils.isFlag(args, '--push')) {
       utils.exec('git push --follow-tags');
     } else {
       utils.info('Run `git push --follow-tags origin main` to publish.');
