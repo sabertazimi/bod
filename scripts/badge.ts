@@ -24,15 +24,7 @@ const getCoveragePercentage = (
   summaryFilePath: string,
   coverageType: string
 ) => {
-  let summary = '';
-
-  try {
-    summary = fs.readFileSync(summaryFilePath, 'utf8');
-  } catch (error) {
-    consola.info(error.message);
-    return 0;
-  }
-
+  const summary = fs.readFileSync(summaryFilePath, 'utf8');
   return JSON.parse(summary)['total'][coverageType]['pct'];
 };
 
@@ -74,12 +66,16 @@ const generateCoverageFile = async (
 };
 
 const main = () => {
-  generateCoverageFile(
-    SummaryFilePath,
-    CoverageType[3],
-    BadgeStyle[0],
-    OutputBadgePath
-  );
+  try {
+    generateCoverageFile(
+      SummaryFilePath,
+      CoverageType[3],
+      BadgeStyle[0],
+      OutputBadgePath
+    );
+  } catch (error) {
+    consola.info(error.message);
+  }
 };
 
 main();
