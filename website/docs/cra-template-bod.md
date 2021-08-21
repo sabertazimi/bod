@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Bod Template'
+sidebar_label: 'Bod Template (Recommended)'
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Bod StyleLint Config'
+sidebar_label: 'Bod StyleLint Config (Default)'
 sidebar_position: 8
 ---
 
