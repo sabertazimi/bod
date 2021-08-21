@@ -13,7 +13,8 @@ module.exports = {
   organizationName: 'sabertazimi',
   projectName: 'bod',
   themeConfig: {
-    defaultMode: 'dark',
+    respectPrefersColorScheme: true,
+    hideableSidebar: true,
     navbar: {
       title: 'Bod',
       logo: {
@@ -22,10 +23,10 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
+          to: 'intro',
           label: 'Getting Started',
+          position: 'left',
+          activeBasePath: 'intro',
         },
         {
           href: 'https://github.com/sabertazimi/bod',
