@@ -21,6 +21,7 @@ module.exports = {
         alt: 'Bod',
         src: 'img/logo.svg',
       },
+      hideOnScroll: true,
       items: [
         {
           to: 'docs/intro',
