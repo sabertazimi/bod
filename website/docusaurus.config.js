@@ -23,10 +23,59 @@ module.exports = {
       },
       items: [
         {
-          to: 'intro',
+          to: 'docs/intro',
           label: 'Getting Started',
           position: 'left',
-          activeBasePath: 'intro',
+          activeBasePath: 'docs/intro',
+        },
+        {
+          to: 'docs/bod',
+          label: 'Bod CLI',
+          position: 'left',
+          activeBasePath: 'docs/bod',
+        },
+        {
+          to: 'docs/cra-template-bod',
+          label: 'Bod Template',
+          position: 'left',
+          activeBaseRegex: 'docs/cra-template*',
+        },
+        {
+          to: 'docs/react-scripts',
+          label: 'Bod Scripts',
+          position: 'left',
+          activeBasePath: 'docs/react-scripts',
+        },
+        {
+          to: 'docs/eslint-config-bod',
+          label: 'Bod ESLint',
+          position: 'left',
+          activeBasePath: 'docs/eslint-config-bod',
+        },
+        {
+          to: 'docs/stylelint-config-bod',
+          label: 'Bod StyleLint',
+          position: 'left',
+          activeBaseRegex: 'docs/stylelint-config*',
+        },
+        {
+          type: 'dropdown',
+          label: 'Demos',
+          position: 'right',
+          items: [
+            {
+              label: 'Bod Template',
+              href: 'https://sabertazimi.github.io/bod/bod',
+            },
+            {
+              label: 'JSX Template',
+              href: 'https://sabertazimi.github.io/bod/@sabertazimi',
+            },
+            {
+              label: 'TSX Template',
+              href: 'https://sabertazimi.github.io/bod/@sabertazimi/typescript',
+            },
+          ],
         },
         {
           href: 'https://github.com/sabertazimi/bod',
