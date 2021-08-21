@@ -20,7 +20,7 @@ function App() {
         </a>
         <a
           className="App-link"
-          href="https://github.com/sabertazimi/bod"
+          href="https://sabertazimi.github.io/bod"
           target="_blank"
           rel="noopener noreferrer"
         >
