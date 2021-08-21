@@ -1,5 +1,5 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -13,6 +13,7 @@ module.exports = {
   organizationName: 'sabertazimi',
   projectName: 'bod',
   themeConfig: {
+    defaultMode: 'dark',
     navbar: {
       title: 'Bod',
       logo: {
@@ -80,11 +81,36 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Sabertazimi. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sabertazimi.`,
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+      additionalLanguages: [
+        'cmake',
+        'csharp',
+        'csv',
+        'docker',
+        'haskell',
+        'http',
+        'java',
+        'kotlin',
+        'latex',
+        'lisp',
+        'lua',
+        'matlab',
+        'perl',
+        'php',
+        'regex',
+        'ruby',
+        'scala',
+        'scheme',
+        'swift',
+        'tcl',
+        'verilog',
+        'vhdl',
+        'vim',
+      ],
     },
   },
   presets: [
