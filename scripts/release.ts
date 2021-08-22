@@ -16,7 +16,7 @@ const main = () => {
   if (versionMatch) {
     const version = semver.clean(versionMatch[0].replace('=> ', ''));
     utils.exec('npm i');
-    utils.exec(`git commit -a -m "chore(release): v${version}"`);
+    utils.exec(`git commit -a -m "chore(release): ${version}"`);
     utils.exec(`git tag v${version} -s -m "v${version}"`);
 
     if (utils.isFlag(args, '-p') || utils.isFlag(args, '--push')) {
