@@ -12,6 +12,36 @@ module.exports = {
   favicon: 'img/logo.svg',
   organizationName: 'sabertazimi',
   projectName: 'bod',
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsDir: "docs",
+        docsRouteBasePath: "docs",
+        language: ["en", "zh"],
+        hashed: true,
+      },
+    ],
+  ],
   themeConfig: {
     respectPrefersColorScheme: true,
     hideableSidebar: true,
@@ -164,20 +194,4 @@ module.exports = {
       ],
     },
   },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
 };
