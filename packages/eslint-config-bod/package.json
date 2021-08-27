@@ -23,7 +23,7 @@
     "@babel/core": "7.15.0",
     "@babel/eslint-parser": "^7.14.7",
     "@rushstack/eslint-patch": "^1.0.6",
-    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.0.0",
     "babel-preset-react-app": "11.0.0-next.75",
     "confusing-browser-globals": "2.0.0-next.75",
