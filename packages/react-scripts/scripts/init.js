@@ -190,6 +190,7 @@ module.exports = function (
       start: 'react-scripts start',
       'start:https': 'HTTPS=true react-scripts start',
       test: 'react-scripts test',
+      'test:coverage': 'react-scripts test --coverage',
       'test:debug': 'react-scripts --inspect-brk test --runInBand --no-cache',
       'test:node': 'react-scripts test --env=node',
     },
