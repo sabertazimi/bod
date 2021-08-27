@@ -52,7 +52,7 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "devDependencies": {
-    "@types/node": "^16.7.1",
+    "@types/node": "^16.7.4",
     "@types/node-fetch": "^2.5.12",
     "@types/semver": "^7.3.8",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
