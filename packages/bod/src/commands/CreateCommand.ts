@@ -72,7 +72,7 @@ class CreateCommand extends BaseCommand {
 
   public async run(appName: string): Promise<void> {
     await this.processTemplateAction();
-    this.processAppPath(appName);
+    this.resolveAppPath(appName);
     this.execute();
   }
 
@@ -102,7 +102,7 @@ class CreateCommand extends BaseCommand {
     this.commandArgs = [...args];
   }
 
-  private processAppPath(appName: string) {
+  private resolveAppPath(appName: string) {
     this.commandArgs.push(appName);
   }
 
