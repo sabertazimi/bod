@@ -34,7 +34,9 @@
   },
   "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
-    "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.13.0"
   }
 }
