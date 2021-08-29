@@ -20,6 +20,7 @@ describe('CreateCommand', () => {
       'Create a new project powered by @sabertazimi/react-scripts'
     );
     expect(createCommand.getUsage()).toBe('create <appName>');
+    expect(createCommand.getAlias()).toBe('c');
   });
 
   test.each(CreateCommand.TemplateActions)(

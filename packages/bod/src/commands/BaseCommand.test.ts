@@ -4,6 +4,7 @@ const options = {
   name: 'base',
   description: 'Base command description',
   usage: 'base',
+  alias: 'c',
 };
 
 describe('BaseCommand', () => {
@@ -20,6 +21,16 @@ describe('BaseCommand', () => {
   test('should have [usage] field', () => {
     const baseCommand = new BaseCommand(options);
     expect(baseCommand.getUsage()).toBe(options.usage);
+  });
+
+  test('should have [alias] field', () => {
+    const baseCommand = new BaseCommand(options);
+    expect(baseCommand.getAlias()).toBe(options.alias);
+  });
+
+  test('should set [alias] field to first character of [name] field by default', () => {
+    const baseCommand = new BaseCommand({ ...options, alias: undefined });
+    expect(baseCommand.getAlias()).toBe(options.name[0]);
   });
 
   test('should have [run] method', async () => {

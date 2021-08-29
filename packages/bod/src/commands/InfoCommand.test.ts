@@ -11,6 +11,7 @@ describe('InfoCommand', () => {
       'Print debugging information about your environment'
     );
     expect(infoCommand.getUsage()).toBe('info');
+    expect(infoCommand.getAlias()).toBe('i');
   });
 
   test('should print environment variables', async () => {
