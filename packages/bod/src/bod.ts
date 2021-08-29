@@ -11,11 +11,11 @@ const packageJson = JSON.parse(
 );
 
 program.version(packageJson.version, '-v, --version');
-program.usage('<command> [options]');
 
 for (const command of CommandFactory.values()) {
   program
     .command(command.getUsage())
+    .alias(command.getAlias())
     .description(command.getDescription())
     .action(async (appName: string) => {
       try {
@@ -26,13 +26,6 @@ for (const command of CommandFactory.values()) {
       }
     });
 }
-
-// output help information on unknown commands
-program.arguments('<command> [options]').action((command: string) => {
-  consola.error(`  Unknown command ${chalk.yellow(command)}.`);
-  consola.log('');
-  program.outputHelp();
-});
 
 // add some useful info on help
 program.on('--help', () => {

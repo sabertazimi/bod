@@ -16,7 +16,7 @@
     "postbuild": "npm run build:badge",
     "publish": "lerna publish from-package --no-verify-access --ignore-scripts --yes",
     "release": "ts-node scripts/release.ts --push",
-    "start": "npm run start:template",
+    "start": "npm run start:bod",
     "start:all": "lerna run start",
     "start:bod": "npm start -w bod",
     "start:template": "npm start -w cra-template-bod",
