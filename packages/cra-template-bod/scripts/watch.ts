@@ -14,11 +14,9 @@ chokidar
   ])
   .on('change', file => {
     try {
-      if (path.resolve(file) === path.join(path.join(rootPath, '.gitignore'))) {
+      if (path.resolve(file) === path.join(rootPath, '.gitignore')) {
         exec('cp -fr .gitignore template/gitignore');
-      } else if (
-        path.resolve(file) === path.join(path.join(rootPath, 'package.json'))
-      ) {
+      } else if (path.resolve(file) === path.join(rootPath, 'package.json')) {
         buildJson();
       } else {
         exec(
