@@ -10,7 +10,7 @@
     "template",
     "typescript"
   ],
-  "description": "The base TypeScript template for Bod CLI.",
+  "description": "The advanced TypeScript template for Bod CLI.",
   "homepage": "https://sabertazimi.github.io/bod/bod",
   "repository": {
     "type": "git",

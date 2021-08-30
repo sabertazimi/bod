@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-bod",
   "version": "5.1.0",
-  "description": "ESLint configuration used by Bod CLI",
+  "description": "ESLint configuration used by Bod CLI.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabertazimi/bod.git",

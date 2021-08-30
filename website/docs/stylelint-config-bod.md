@@ -15,7 +15,7 @@ sidebar_position: 8
 [![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=coveralls&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
-A stylelint config [Bod CLI](https://github.com/sabertazimi/bod)
+This package includes the shareable StyleLint configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
 
 ## Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-mass",
   "version": "5.1.0",
-  "description": "A stylelint config based on stylelint-config-sass-guidelines for mass.css",
+  "description": "StyleLint configuration based on `stylelint-config-sass-guidelines` used by Bod CLI.",
   "main": "index.js",
   "repository": {
     "type": "git",
