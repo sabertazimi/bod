@@ -32,6 +32,9 @@ Compare with original `react-scripts` built by `facebook`:
   [eslint](https://github.com/prettier/eslint-plugin-prettier)
   and
   [stylelint](https://github.com/prettier/stylelint-prettier).
+- Add elegant
+  [progressbar](https://github.com/unjs/webpackbar)
+  for `start` and `build`.
 - Add
   [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
   support for `build`.

@@ -26,6 +26,7 @@ const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent')
 const ESLintPlugin = require('eslint-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const WebpackBar = require('webpackbar');
 const paths = require('./paths');
 const modules = require('./modules');
 const getClientEnvironment = require('./env');
@@ -779,6 +780,7 @@ module.exports = function (webpackEnv) {
           ),
         }),
       isEnvProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+      new WebpackBar(),
     ].filter(Boolean),
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
