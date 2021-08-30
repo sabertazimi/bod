@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/sabertazimi/bod/compare/v5.0.2...v5.1.0) (2021-08-30)
+
+
+### Bug Fixes
+
+* **CRA-init:** add Jest coverage script ([79e6c1b](https://github.com/sabertazimi/bod/commit/79e6c1be97714a1cebc0387c8db492d8a5db3c9e))
+
+
+### Features
+
+* **CRA-scripts:** add elegant progressbar for `start` and `build` ([0c31a3c](https://github.com/sabertazimi/bod/commit/0c31a3c7cff13a4050f0e645347e89e948f04eb5))
+
+
+
+
+
 ## [5.0.2](https://github.com/sabertazimi/bod/compare/v5.0.1...v5.0.2) (2021-08-20)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts

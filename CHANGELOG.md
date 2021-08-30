@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/sabertazimi/bod/compare/v5.0.2...v5.1.0) (2021-08-30)
+
+
+### Bug Fixes
+
+* **CRA-init:** add Jest coverage script ([79e6c1b](https://github.com/sabertazimi/bod/commit/79e6c1be97714a1cebc0387c8db492d8a5db3c9e))
+* **docusaurus-navbar:** rectify active class for navbar links ([978e6a4](https://github.com/sabertazimi/bod/commit/978e6a403220f0a5bbe67c704c8eb05280ced91b))
+* **stylelint-sass:** change `stylelint` to `peerDependencies` ([ff0e629](https://github.com/sabertazimi/bod/commit/ff0e629d05e51ba1e23a15426a658f89fb947634))
+* **template-bod:** change Bod CLI link ([843ce40](https://github.com/sabertazimi/bod/commit/843ce402ad84a5c8a37cdea4d737bacf93c21c7e)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **website:** remove redundant pages ([658fbb0](https://github.com/sabertazimi/bod/commit/658fbb068b6ef79823befd2d344363a29fbb63d0))
+
+
+### Features
+
+* **bod:** add `alias` for CLI commands ([9600119](https://github.com/sabertazimi/bod/commit/960011901f6d39e54b7140d66ed371ecdbe2672c))
+* **CRA-scripts:** add elegant progressbar for `start` and `build` ([0c31a3c](https://github.com/sabertazimi/bod/commit/0c31a3c7cff13a4050f0e645347e89e948f04eb5))
+
+
+
+
+
 ## [5.0.2](https://github.com/sabertazimi/bod/compare/v5.0.1...v5.0.2) (2021-08-20)
 
 

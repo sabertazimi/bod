@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/sabertazimi/bod/compare/v5.0.2...v5.1.0) (2021-08-30)
+
+
+### Bug Fixes
+
+* **stylelint-sass:** change `stylelint` to `peerDependencies` ([ff0e629](https://github.com/sabertazimi/bod/commit/ff0e629d05e51ba1e23a15426a658f89fb947634))
+
+
+
+
+
 ## [5.0.2](https://github.com/sabertazimi/bod/compare/v5.0.1...v5.0.2) (2021-08-20)
 
 **Note:** Version bump only for package stylelint-config-mass

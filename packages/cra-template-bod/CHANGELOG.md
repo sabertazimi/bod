@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/sabertazimi/bod/compare/v5.0.2...v5.1.0) (2021-08-30)
+
+
+### Bug Fixes
+
+* **template-bod:** change Bod CLI link ([843ce40](https://github.com/sabertazimi/bod/commit/843ce402ad84a5c8a37cdea4d737bacf93c21c7e)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 ## [5.0.2](https://github.com/sabertazimi/bod/compare/v5.0.1...v5.0.2) (2021-08-20)
 
 **Note:** Version bump only for package cra-template-bod
