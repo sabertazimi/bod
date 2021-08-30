@@ -30,8 +30,9 @@
   ],
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
-    "start": "npm run build && react-scripts start",
-    "test": "npm run build && react-scripts test",
+    "start": "npm run build && concurrently \"npm:template:start\" \"npm:watch\"",
+    "test": "npm run build && npm run template:test",
+    "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",
     "template:build": "react-scripts build",
     "template:start": "react-scripts start",
     "template:test": "react-scripts test"
