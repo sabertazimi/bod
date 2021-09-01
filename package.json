@@ -9,6 +9,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "build:badge": "ts-node scripts/badge.ts",
+    "canary": "ts-node scripts/canary.ts",
     "clean": "lerna clean --yes",
     "e2e": "npm run test:e2e",
     "format": "lerna run format",
