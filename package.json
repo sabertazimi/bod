@@ -15,7 +15,6 @@
     "format": "lerna run format",
     "lint": "lerna run lint",
     "postbuild": "npm run build:badge",
-    "publish": "lerna publish from-package --no-verify-access --ignore-scripts --yes",
     "release": "ts-node scripts/release.ts --push",
     "start": "npm run start:template",
     "start:all": "lerna run start",

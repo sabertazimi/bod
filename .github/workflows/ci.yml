@@ -75,7 +75,7 @@ jobs:
         run: |
           cd website/
           npm ci
-          npm run build
+          npm run build --if-present
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -90,7 +90,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
           echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
-          npm run publish --if-present
+          npx lerna publish from-package --no-verify-access --ignore-scripts --yes
         env:
           NPM_CONFIG_USERCONFIG: .npmrc
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
