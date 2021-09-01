@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Bod StyleLint Config (Sass)'
+sidebar_label: 'Bod StyleLint Configuration (Sass)'
 sidebar_position: 9
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Bod ESLint Config'
+sidebar_label: 'Bod ESLint Configuration'
 sidebar_position: 7
 ---
 
