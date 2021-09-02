@@ -17,6 +17,13 @@ sidebar_position: 3
 
 This is the official React template for [**Bod CLI**](https://github.com/sabertazimi/bod).
 
+Based on templates:
+
+- [React](https://github.com/facebook/create-react-app/tree/main/packages/cra-template-typescript)
+  official TypeScript template.
+- [Redux](https://github.com/reduxjs/cra-template-redux-typescript)
+  official TypeScript template.
+
 ## Bod CLI
 
 This template is shipped with
