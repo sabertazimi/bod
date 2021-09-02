@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import { Counter } from './containers';
 import logo from './logo.svg';
@@ -8,7 +9,11 @@ const App = (): JSX.Element => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
+        <Switch>
+          <Route path="/">
+            <Counter />
+          </Route>
+        </Switch>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
