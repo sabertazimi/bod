@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/sabertazimi/bod/compare/v5.1.0...v5.2.0) (2021-09-02)
+
+
+### Bug Fixes
+
+* **template-bod:** change title name ([b439a99](https://github.com/sabertazimi/bod/commit/b439a9974d24391698c45ea3dd80ab890edeee04)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+### Features
+
+* **template-bod:** add redux support ([0fcff82](https://github.com/sabertazimi/bod/commit/0fcff82a08a1b8a5f18e4a8fbf87a54df8f09c23)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 # [5.1.0](https://github.com/sabertazimi/bod/compare/v5.0.2...v5.1.0) (2021-08-30)
 
 
