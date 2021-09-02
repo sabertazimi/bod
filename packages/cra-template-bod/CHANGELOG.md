@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/sabertazimi/bod/compare/v5.2.0...v5.3.0) (2021-09-02)
+
+
+### Features
+
+* **template-bod:** add `react-router` support ([8cfb459](https://github.com/sabertazimi/bod/commit/8cfb459591306b8abebd8d0793728f845d7e12e3)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 # [5.2.0](https://github.com/sabertazimi/bod/compare/v5.1.0...v5.2.0) (2021-09-02)
 
 
