@@ -38,7 +38,7 @@
     "babel-jest": "^27.1.0",
     "babel-loader": "8.2.2",
     "babel-plugin-named-asset-import": "^0.3.7",
-    "babel-preset-react-app": "^10.0.0",
+    "babel-preset-react-app": "^11.0.0-next.81",
     "bfj": "^7.0.2",
     "browserslist": "^4.16.6",
     "camelcase": "^6.2.0",

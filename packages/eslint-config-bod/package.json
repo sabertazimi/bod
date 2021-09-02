@@ -25,7 +25,7 @@
     "@rushstack/eslint-patch": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
-    "babel-preset-react-app": "11.0.0-next.75",
+    "babel-preset-react-app": "11.0.0-next.81",
     "confusing-browser-globals": "2.0.0-next.75",
     "eslint-plugin-flowtype": "^5.9.2",
     "eslint-plugin-import": "^2.24.2",
