@@ -75,7 +75,7 @@ class Test {
     utils.info(`Publish packages to ${this.localRegistry} ...`);
     const packages = utils
       .execPipe(
-        'npx lerna publish patch --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
+        'npx lerna publish prerelease --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
       )
       .toString()
       .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
