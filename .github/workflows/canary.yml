@@ -52,6 +52,7 @@ jobs:
         run: |
           npm run build --if-present
       - name: Publish canary release to NPM registry
+        if: startsWith(github.event.head_commit.message, 'chore') != true
         run: |
           echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
           npm run canary --if-present
