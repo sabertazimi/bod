@@ -1,0 +1,85 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.row > button {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.value {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 78px;
+}
+
+.button,
+.asyncButton {
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  font-size: 32px;
+  color: rgb(112, 76, 182);
+  cursor: pointer;
+  background: none;
+  background-color: rgba(112, 76, 182, 0.1);
+  border: 2px solid transparent;
+  border-radius: 2px;
+  outline: none;
+  appearance: none;
+}
+
+.asyncButton {
+  position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button,
+  .asyncButton {
+    transition: all 0.15s;
+  }
+}
+
+.button:hover,
+.button:focus,
+.asyncButton:hover,
+.asyncButton:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.button:active,
+.asyncButton:active {
+  background-color: rgba(112, 76, 182, 0.2);
+}
+
+.asyncButton::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(112, 76, 182, 0.15);
+  opacity: 0;
+}
+
+.asyncButton:active::after {
+  width: 0%;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .asyncButton::after {
+    transition: width 1s linear, opacity 0.5s ease 1s;
+  }
+
+  .asyncButton:active::after {
+    transition: 0s;
+  }
+}

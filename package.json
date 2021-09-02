@@ -22,7 +22,8 @@
     "test": "npm run test:bod",
     "test:all": "lerna run test",
     "test:bod": "npm run test:watch -w bod",
-    "test:e2e": "ts-node scripts/e2e.ts"
+    "test:e2e": "ts-node scripts/e2e.ts",
+    "test:template": "npm run test -w cra-template-bod"
   },
   "keywords": [
     "bod",
