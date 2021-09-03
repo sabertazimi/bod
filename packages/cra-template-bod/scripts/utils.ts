@@ -19,6 +19,7 @@ const buildTemplate = () => {
   exec('mkdir -p template');
   exec('cp -fr public template/');
   exec('cp -fr src template/');
+  exec('cp -fr .env template/');
   exec('cp -fr tsconfig.json template/');
   exec('cp -fr README.md template/');
   exec('cp -fr .gitignore template/gitignore');
