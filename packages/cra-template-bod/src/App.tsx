@@ -43,7 +43,7 @@ const App = (): JSX.Element => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bod CLI
+            Bod App
           </a>
         </span>
       </header>

@@ -17,5 +17,5 @@ test('renders learn react link', () => {
   expect(getByText(/learn/i)).toBeInTheDocument();
   expect(getByText(/react/i)).toBeInTheDocument();
   expect(getByText(/redux/i)).toBeInTheDocument();
-  expect(getByText(/bod cli/i)).toBeInTheDocument();
+  expect(getByText(/bod/i)).toBeInTheDocument();
 });
