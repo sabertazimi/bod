@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.1](https://github.com/sabertazimi/bod/compare/v5.3.0...v5.3.1) (2021-09-03)
+
+
+### Bug Fixes
+
+* **template-bod:** rename `store` to `stores` directory ([4a2d9e9](https://github.com/sabertazimi/bod/commit/4a2d9e9580c237c34271bc2cb1f5ead524a10334))
+
+
+
+
+
 # [5.3.0](https://github.com/sabertazimi/bod/compare/v5.2.0...v5.3.0) (2021-09-02)
 
 
