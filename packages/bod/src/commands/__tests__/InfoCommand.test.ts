@@ -1,5 +1,5 @@
-import InfoCommand from './InfoCommand';
 import consola from 'consola';
+import InfoCommand from '../InfoCommand';
 
 describe('InfoCommand', () => {
   jest.setTimeout(20000);

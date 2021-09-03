@@ -5,7 +5,7 @@ import inquirer from 'inquirer';
 import PromptUI from 'inquirer/lib/ui/prompt';
 import path from 'path';
 import rimraf from 'rimraf';
-import CreateCommand, { Action } from './CreateCommand';
+import CreateCommand, { Action } from '../CreateCommand';
 
 const appPath = path.join(process.cwd(), 'temp');
 
