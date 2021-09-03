@@ -71,7 +71,7 @@ jobs:
         uses: coverallsapp/github-action@1.1.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          flag-name: Node ${{ matrix.node-version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+          flag-name: Node ${{ matrix.node-version }} ${{ matrix.os }} ${{ matrix.architecture }}
           base-path: packages/bod
           path-to-lcov: ./packages/bod/coverage/lcov.info
       - name: Archive production artifacts
