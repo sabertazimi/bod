@@ -12,6 +12,11 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
+      - name: Initialize git config
+        run: |
+          git config --global core.autocrlf false
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
