@@ -28,10 +28,7 @@ const getCoveragePercentage = (
     const summary = fs.readFileSync(summaryFilePath, 'utf8');
     return JSON.parse(summary)['total'][coverageType]['pct'];
   } catch (error) {
-    if (error instanceof Error) {
-      utils.info(error.message);
-    }
-    
+    if (error instanceof Error) utils.info(error.message);
     return 0;
   }
 };
@@ -73,9 +70,7 @@ const generateCoverageFile = async (
     const file = await downloadBadgeFile(badgeUrl);
     fs.writeFileSync(output, file, { encoding: 'utf8' });
   } catch (error) {
-    if (error instanceof Error) {
-      utils.info(error.message);
-    }
+    if (error instanceof Error) utils.info(error.message);
   }
 };
 

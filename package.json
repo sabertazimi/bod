@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "badge": "ts-node scripts/badge.ts",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "canary": "ts-node scripts/canary.ts",
@@ -13,7 +14,6 @@
     "e2e": "npm run test:e2e",
     "format": "lerna run format",
     "lint": "lerna run lint",
-    "postbuild": "ts-node scripts/badge.ts",
     "release": "ts-node scripts/release.ts --push",
     "start": "npm run start:template",
     "start:all": "lerna run start",
