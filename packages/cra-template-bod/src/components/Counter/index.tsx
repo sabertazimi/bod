@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppDispatch } from '../../store';
+import { AppDispatch } from '../../stores';
 import styles from './index.module.css';
 
 interface CounterProps {
