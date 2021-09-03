@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.2](https://github.com/sabertazimi/bod/compare/v5.3.1...v5.3.2) (2021-09-03)
+
+
+### Bug Fixes
+
+* **template-bod:** change baner title ([23829fb](https://github.com/sabertazimi/bod/commit/23829fbd0272c68872fa825953d2648cf9da31e9))
+* **template-bod:** disable production source map ([cf62764](https://github.com/sabertazimi/bod/commit/cf6276413f511793b17c532916be6be6eed0ed4a))
+
+
+
+
+
 ## [5.3.1](https://github.com/sabertazimi/bod/compare/v5.3.0...v5.3.1) (2021-09-03)
 
 
