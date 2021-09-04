@@ -8,13 +8,11 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
 const ignorePatterns = [
   'node_modules',
   '\\.cache',
-  '<rootDir>/build',
-  '<rootDir>/dist',
-  '<rootDir>/coverage',
-  '<rootDir>/.temp',
-  '<rootDir>/temp',
-  '.temp',
-  'temp',
+  '<rootDir>.*/build',
+  '<rootDir>.*/dist',
+  '<rootDir>.*/coverage',
+  '<rootDir>.*/temp',
+  '<rootDir>.*/.temp',
 ];
 
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
