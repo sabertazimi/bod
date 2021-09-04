@@ -1,6 +1,6 @@
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
-
 const { compilerOptions } = require('./tsconfig.json');
+
 const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
@@ -17,7 +17,7 @@ const ignorePatterns = [
   'temp',
 ];
 
-/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
