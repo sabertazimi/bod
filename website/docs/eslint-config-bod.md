@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod ESLint Configuration'
 sidebar_position: 7
+tags: [ESLint]
 ---
 
 # eslint-config-bod

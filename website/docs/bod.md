@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod CLI'
 sidebar_position: 2
+tags: [CLI]
 ---
 
 # Bod CLI

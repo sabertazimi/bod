@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'JSX Template'
 sidebar_position: 4
+tags: [React, Template]
 ---
 
 # cra-template

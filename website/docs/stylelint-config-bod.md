@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod StyleLint Configuration (Default)'
 sidebar_position: 8
+tags: [StyleLint, CSS]
 ---
 
 # stylelint-config-bod

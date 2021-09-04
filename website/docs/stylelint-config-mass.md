@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod StyleLint Configuration (Sass)'
 sidebar_position: 9
+tags: [StyleLint, Sass]
 ---
 
 # stylelint-config-mass

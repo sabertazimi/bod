@@ -1,6 +1,11 @@
 ---
+author: Sabertazimi
+authorTitle: Web Developer
+authorURL: https://github.com/sabertazimi
+authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod Template (Recommended)'
 sidebar_position: 3
+tags: [React, TypeScript, Template]
 ---
 
 # cra-template-bod
