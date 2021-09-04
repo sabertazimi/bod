@@ -5,11 +5,7 @@ import path from 'path';
 import * as utils from './utils';
 
 const rootPath = path.join(__dirname, '..');
-const packages = ['packages/bod'];
-const SummaryFilePath = path.join(
-  rootPath,
-  `${packages[0]}/coverage/coverage-summary.json`
-);
+const SummaryFilePath = path.join(rootPath, 'coverage/coverage-summary.json');
 const OutputBadgePath = path.join(rootPath, 'build');
 const CoverageType = ['statements', 'branches', 'functions', 'lines'];
 const BadgeStyle = [

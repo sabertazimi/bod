@@ -17,9 +17,6 @@ const ignorePatterns = [
 
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  collectCoverage: true,
-  coverageDirectory: 'coverage',
-  coverageReporters: ['json-summary', 'lcov', 'text', 'clover'],
   preset: 'ts-jest',
   testEnvironment: 'node',
   moduleNameMapper: {
