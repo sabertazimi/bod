@@ -11,7 +11,7 @@
     "build": "lerna run build",
     "canary": "ts-node scripts/canary.ts",
     "clean": "lerna clean --yes",
-    "e2e": "npm run test:e2e",
+    "e2e": "ts-node scripts/e2e.ts",
     "format": "lerna run format",
     "lint": "lerna run lint",
     "release": "ts-node scripts/release.ts --push",
@@ -19,11 +19,8 @@
     "start:all": "lerna run start",
     "start:bod": "npm start -w bod",
     "start:template": "npm start -w cra-template-bod",
-    "test": "npm run test:bod",
-    "test:all": "lerna run test",
-    "test:bod": "npm run test:watch -w bod",
-    "test:e2e": "ts-node scripts/e2e.ts",
-    "test:template": "npm run test -w cra-template-bod"
+    "test": "jest --watch",
+    "test:all": "lerna run test && jest"
   },
   "keywords": [
     "bod",
