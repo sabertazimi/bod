@@ -1,7 +1,8 @@
 import chokidar from 'chokidar';
 import consola from 'consola';
+import fs from 'fs';
 import path from 'path';
-import { buildJson, exec, rootPath } from './utils';
+import { buildJson, rootPath } from './utils';
 
 chokidar
   .watch([
@@ -15,16 +16,19 @@ chokidar
   ])
   .on('change', file => {
     try {
+      consola.info(`Rebuild ${file} ...`);
+
       if (path.resolve(file) === path.join(rootPath, '.gitignore')) {
-        exec('cp -fr .gitignore template/gitignore');
+        fs.copyFileSync(
+          path.join(rootPath, '.gitignore'),
+          path.join(rootPath, 'template/gitignore')
+        );
       } else if (path.resolve(file) === path.join(rootPath, 'package.json')) {
         buildJson();
       } else {
-        exec(
-          `cp -fr ${path.resolve(file)} ${path.join(
-            'template',
-            path.relative(rootPath, path.resolve(file))
-          )}`
+        fs.copyFileSync(
+          path.resolve(file),
+          path.join('template', path.relative(rootPath, path.resolve(file)))
         );
       }
     } catch (err) {
