@@ -123,6 +123,11 @@ npm run start:template
 will set local package `cra-template-bod` to default React template,
 and start a `webpack-dev-server` on port `3000`.
 
+## Contributing
+
+Contributions are greatly appreciated.
+Please fork this repository and open a pull request.
+
 ## Contact
 
 [![Email](https://img.shields.io/badge/-Gmail-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sabertazimi@gmail.com)
