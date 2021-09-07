@@ -17,6 +17,8 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: '../docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
           showLastUpdateAuthor: true,
@@ -35,7 +37,7 @@ module.exports = {
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
-        docsDir: 'docs',
+        docsDir: '../docs',
         docsRouteBasePath: 'docs',
         language: ['en', 'zh'],
         hashed: true,
