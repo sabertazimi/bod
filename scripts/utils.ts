@@ -25,6 +25,20 @@ const cmd = (cmd: string): void => {
 const isFlag = (args: string[], flag: string): boolean =>
   Boolean(args.length) && args.some(arg => arg === flag);
 
+const checkGitStatus = (): void => {
+  info('Check git status ...');
+  const gitStatus = execPipe('git status --porcelain').toString();
+
+  if (gitStatus.trim() !== '') {
+    info('Please commit your changes before running this script!');
+    info('Exiting because `git status` is not empty:');
+    log('');
+    log(gitStatus);
+    log('');
+    process.exit(1);
+  }
+};
+
 const exec = (command: string, cwd?: string): Buffer => {
   cmd(command);
   return cp.execSync(command, {
@@ -43,4 +57,14 @@ const execPipe = (command: string, cwd?: string): Buffer => {
   });
 };
 
-export { log, info, success, error, cmd, isFlag, exec, execPipe };
+export {
+  log,
+  info,
+  success,
+  error,
+  cmd,
+  isFlag,
+  checkGitStatus,
+  exec,
+  execPipe,
+};

@@ -114,20 +114,6 @@ class Test {
     process.exit(1);
   }
 
-  checkGitStatus() {
-    utils.info('Check git status ...');
-    const gitStatus = utils.execPipe('git status --porcelain').toString();
-
-    if (gitStatus.trim() !== '') {
-      utils.info('Please commit your changes before running this script!');
-      utils.info('Exiting because `git status` is not empty:');
-      utils.log('');
-      utils.log(gitStatus);
-      utils.log('');
-      process.exit(1);
-    }
-  }
-
   runCRA(templatePath: string, scriptsPath: string) {
     utils.info('Run create-react-app to generate project ...');
     utils.exec(`rm -fr ${this.appPath}`);
@@ -212,7 +198,7 @@ class Test {
 
   run() {
     this.handleSetup();
-    this.checkGitStatus();
+    utils.checkGitStatus();
     this.startLocalRegistry();
     this.publishToLocalRegistry();
     this.runTest(

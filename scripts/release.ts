@@ -2,6 +2,7 @@ import semver from 'semver';
 import * as utils from './utils';
 
 const main = () => {
+  utils.checkGitStatus();
   utils.info(`Working in directory ${process.cwd()}.`);
   const args = process.argv.slice(2);
   const versionMatch = utils
@@ -16,6 +17,7 @@ const main = () => {
   if (versionMatch) {
     const version = semver.clean(versionMatch[0].replace('=> ', ''));
     utils.exec('npm i');
+    utils.exec('git add .');
     utils.exec(`git commit -a -m "chore(release): ${version}"`);
     utils.exec(`git tag v${version} -s -m "v${version}"`);
 
