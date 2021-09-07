@@ -4,6 +4,8 @@ import styles from './index.module.css';
 
 interface CounterProps {
   count: number;
+  incrementAmount: string;
+  onIncrementAmountChange: (value: string) => void;
   onDecrement: () => ReturnType<AppDispatch>;
   onIncrement: () => ReturnType<AppDispatch>;
   onIncrementAsync: () => ReturnType<AppDispatch>;
@@ -13,6 +15,8 @@ interface CounterProps {
 
 const Counter = ({
   count,
+  incrementAmount,
+  onIncrementAmountChange,
   onDecrement,
   onIncrement,
   onIncrementAsync,
@@ -38,6 +42,12 @@ const Counter = ({
       </button>
     </div>
     <div className={styles.row}>
+      <input
+        className={styles.textbox}
+        aria-label="Set increment amount"
+        value={incrementAmount}
+        onChange={e => onIncrementAmountChange(e.target.value)}
+      />
       <button className={styles.button} onClick={onIncrementByAmount}>
         Add Amount
       </button>

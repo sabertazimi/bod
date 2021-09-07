@@ -30,6 +30,9 @@
   ],
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
+    "lint": "npm run lint:style && npm run lint:type-check",
+    "lint:style": "stylelint --fix ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:type-check": "tsc --noEmit",
     "start": "npm run build && concurrently \"npm:template:start\" \"npm:watch\"",
     "test": "npm run build && CI=true npm run template:test",
     "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",
