@@ -1,5 +1,7 @@
 import chalk from 'chalk';
 import cp from 'child_process';
+import chokidar from 'chokidar';
+import consola from 'consola';
 import fs from 'fs';
 import path from 'path';
 
@@ -78,4 +80,4 @@ const buildJson = () => {
   );
 };
 
-export { rootPath, exec, buildTemplate, buildJson };
+export { chalk, chokidar, consola, rootPath, exec, buildTemplate, buildJson };

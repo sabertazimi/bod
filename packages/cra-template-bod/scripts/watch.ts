@@ -1,8 +1,6 @@
-import chokidar from 'chokidar';
-import consola from 'consola';
 import fs from 'fs';
 import path from 'path';
-import { buildJson, rootPath } from './utils';
+import { buildJson, chokidar, consola, rootPath } from './utils';
 
 chokidar
   .watch([
