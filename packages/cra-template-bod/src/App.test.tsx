@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import store from './stores';
 
-test('renders learn react link', () => {
+test('renders learn React, Redux and Bod links', () => {
   const { getByText } = render(
     <Provider store={store}>
       <BrowserRouter>
