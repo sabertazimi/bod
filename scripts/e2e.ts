@@ -76,7 +76,7 @@ class Test {
         'npx lerna publish prerelease --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
       )
       .toString()
-      .replace(/\s+-/g, `\n    ${utils.chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
+      .replace(/\s+-/g, `\n    ${utils.color.bgBlue.black('[+]')}`) // `[+] package@version` format
       .replace(/\n$/, ''); // remove tailing empty line
     utils.log(packages);
   }

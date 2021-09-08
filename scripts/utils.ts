@@ -61,7 +61,7 @@ const execPipe = (command: string, cwd?: string): Buffer => {
 };
 
 export {
-  chalk,
+  chalk as color,
   fetch,
   isCI,
   semver,
