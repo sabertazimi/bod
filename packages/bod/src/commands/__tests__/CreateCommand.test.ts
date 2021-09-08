@@ -1,6 +1,6 @@
 import { SpawnSyncReturns } from 'child_process';
 import path from 'path';
-import { inquirer, isCI, PromptUI, rimraf, spawn } from '../../utils';
+import { inquirer, isCI, rimraf, spawn } from '../../utils';
 import CreateCommand, { Action } from '../CreateCommand';
 
 const appPath = path.join(process.cwd(), 'temp');
@@ -28,7 +28,8 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          return promise as Promise<unknown> & { ui: PromptUI };
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          return promise as Promise<unknown> & { ui: any };
         });
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -63,7 +64,8 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          return promise as Promise<unknown> & { ui: PromptUI };
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          return promise as Promise<unknown> & { ui: any };
         });
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -90,7 +92,8 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          return promise as Promise<unknown> & { ui: PromptUI };
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          return promise as Promise<unknown> & { ui: any };
         });
 
       const createCommand = new CreateCommand();
