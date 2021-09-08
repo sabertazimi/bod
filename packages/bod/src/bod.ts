@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { CommandFactory } from './index';
-import { color, Command, printer, program } from './utils';
+import { color, printer, program } from './utils';
 
 const packageJsonPath = path.join(__dirname, '../package.json');
 const packageJson = JSON.parse(
@@ -36,6 +36,5 @@ program.on('--help', () => {
   printer.log('');
 });
 
-program.commands.forEach((c: Command) => c.on('--help', () => printer.log('')));
 program.showHelpAfterError();
 program.parse(process.argv);

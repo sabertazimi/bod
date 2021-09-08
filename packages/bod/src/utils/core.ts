@@ -1,4 +1,6 @@
-import { Command, program } from 'commander';
+import { Command } from 'commander';
 import inquirer from 'inquirer';
 
-export { Command, program, inquirer };
+const program = new Command();
+
+export { inquirer, program };
