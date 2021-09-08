@@ -1,10 +1,8 @@
-#
 # This is based on verdaccio default config file.
-# It allows all users to do anything,
-# so don't use it on production systems.
-#
+# It allows all users to do anything.
+# Don't use it on production systems.
 
-# path to a directory with all packages
+# Path to a directory with all packages.
 storage: ./storage
 
 auth:
@@ -20,25 +18,24 @@ uplinks:
     agent_options:
       keepAlive: true
       # Avoid exceeding the max sockets that are allocated per VM.
-      # https://docs.microsoft.com/en-us/azure/app-service/app-service-web-nodejs-best-practices-and-troubleshoot-guide#my-node-application-is-making-excessive-outbound-calls
       maxSockets: 40
       maxFreeSockets: 10
 
 packages:
   '@*/*':
-    # scoped packages
+    # Scoped packages.
     access: $all
     publish: $all
     proxy: npmjs
 
   '**':
-    # allow all known users to publish packages
+    # Allow all known users to publish packages.
     access: $all
     publish: $all
     proxy: npmjs
 logs:
   - { type: stdout, format: pretty, level: warn }
 
-# See https://github.com/verdaccio/verdaccio/issues/301
+# See https://github.com/verdaccio/verdaccio/issues/301.
 server:
   keepAliveTimeout: 0
