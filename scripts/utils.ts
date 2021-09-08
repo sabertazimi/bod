@@ -1,6 +1,9 @@
 import chalk from 'chalk';
 import cp from 'child_process';
+import { isCI } from 'ci-info';
 import consola from 'consola';
+import fetch from 'node-fetch';
+import semver from 'semver';
 
 const log = (log: string): void => {
   consola.log(log);
@@ -58,6 +61,10 @@ const execPipe = (command: string, cwd?: string): Buffer => {
 };
 
 export {
+  chalk,
+  fetch,
+  isCI,
+  semver,
   log,
   info,
   success,

@@ -1,5 +1,3 @@
-import chalk from 'chalk';
-import { isCI } from 'ci-info';
 import fs from 'fs';
 import path from 'path';
 import * as utils from './utils';
@@ -78,7 +76,7 @@ class Test {
         'npx lerna publish prerelease --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --yes'
       )
       .toString()
-      .replace(/\s+-/g, `\n    ${chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
+      .replace(/\s+-/g, `\n    ${utils.chalk.bgBlue.black('[+]')}`) // `[+] package@version` format
       .replace(/\n$/, ''); // remove tailing empty line
     utils.log(packages);
   }
@@ -206,7 +204,7 @@ class Test {
       '@sabertazimi/react-scripts',
       this.checkTsxTemplateIntegrity.bind(this)
     );
-    if (isCI) {
+    if (utils.isCI) {
       this.runTest(
         '@sabertazimi',
         '@sabertazimi/react-scripts',

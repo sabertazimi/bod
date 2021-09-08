@@ -1,6 +1,5 @@
 import cp from 'child_process';
 import fs from 'fs';
-import fetch from 'node-fetch';
 import path from 'path';
 import * as utils from './utils';
 
@@ -48,7 +47,7 @@ const getBadgeUrl = (
 };
 
 const downloadBadgeFile = async (url: string) => {
-  const response = await fetch(url);
+  const response = await utils.fetch(url);
   const data = await response.text();
   return data;
 };

@@ -1,4 +1,3 @@
-import semver from 'semver';
 import * as utils from './utils';
 
 const main = () => {
@@ -15,7 +14,7 @@ const main = () => {
     .match(/=>\s\d+\.\d+\.\d+/i);
 
   if (versionMatch) {
-    const version = semver.clean(versionMatch[0].replace('=> ', ''));
+    const version = utils.semver.clean(versionMatch[0].replace('=> ', ''));
     utils.exec('npm i');
     utils.exec('git add .');
     utils.exec(`git commit -a -m "chore(release): ${version}"`);
