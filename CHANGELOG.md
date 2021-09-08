@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.4](https://github.com/sabertazimi/bod/compare/v5.3.3...v5.3.4) (2021-09-08)
+
+
+### Bug Fixes
+
+* **template-bod:** separate UI and hooks logic ([64c1e16](https://github.com/sabertazimi/bod/commit/64c1e16a0edb622d32121807c598b365c0768e39))
+
+
+
+
+
 ## [5.3.3](https://github.com/sabertazimi/bod/compare/v5.3.2...v5.3.3) (2021-09-05)
 
 
