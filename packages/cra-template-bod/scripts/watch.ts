@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { buildJson, chokidar, consola, rootPath } from './utils';
+import { buildJson, chokidar, printer, rootPath } from './utils';
 
 chokidar
   .watch([
@@ -14,7 +14,7 @@ chokidar
   ])
   .on('change', file => {
     try {
-      consola.info(`Rebuild ${file} ...`);
+      printer.info(`Rebuild ${file} ...`);
 
       if (path.resolve(file) === path.join(rootPath, '.gitignore')) {
         fs.copyFileSync(
@@ -30,6 +30,6 @@ chokidar
         );
       }
     } catch (err) {
-      if (err instanceof Error) consola.error(err.message);
+      if (err instanceof Error) printer.error(err.message);
     }
   });

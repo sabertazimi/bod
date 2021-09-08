@@ -80,4 +80,4 @@ const buildJson = () => {
   );
 };
 
-export { chalk, chokidar, consola, rootPath, exec, buildTemplate, buildJson };
+export { chokidar, consola as printer, rootPath, buildTemplate, buildJson };
