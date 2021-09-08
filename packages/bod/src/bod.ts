@@ -1,9 +1,7 @@
-import chalk from 'chalk';
-import { Command, program } from 'commander';
-import consola from 'consola';
 import fs from 'fs';
 import path from 'path';
 import { CommandFactory } from './index';
+import { color, Command, printer, program } from './utils';
 
 const packageJsonPath = path.join(__dirname, '../package.json');
 const packageJson = JSON.parse(
@@ -21,7 +19,7 @@ for (const command of CommandFactory.values()) {
       try {
         await command.run(appName);
       } catch (error) {
-        consola.error(error);
+        printer.error(error);
         program.outputHelp();
       }
     });
@@ -29,15 +27,15 @@ for (const command of CommandFactory.values()) {
 
 // add some useful info on help
 program.on('--help', () => {
-  consola.log('');
-  consola.info(
-    `  Run ${chalk.cyan(
+  printer.log('');
+  printer.info(
+    `  Run ${color.cyan(
       `bod <command> --help`
     )} for detailed usage of given command.`
   );
-  consola.log('');
+  printer.log('');
 });
 
-program.commands.forEach((c: Command) => c.on('--help', () => consola.log('')));
+program.commands.forEach((c: Command) => c.on('--help', () => printer.log('')));
 program.showHelpAfterError();
 program.parse(process.argv);

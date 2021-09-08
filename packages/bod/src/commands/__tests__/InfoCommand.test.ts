@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { printer } from '../../utils';
 import InfoCommand from '../InfoCommand';
 
 describe('InfoCommand', () => {
@@ -15,16 +15,16 @@ describe('InfoCommand', () => {
   });
 
   test('should print environment variables', async () => {
-    const mockConsolaInfo = jest
-      .spyOn(consola, 'info')
+    const mockConsoleInfo = jest
+      .spyOn(printer, 'info')
       .mockImplementation(() => {
         return;
       });
 
     const infoCommand = new InfoCommand();
     await expect(infoCommand.run()).resolves.toBeUndefined();
-    expect(mockConsolaInfo).toHaveBeenCalledTimes(2);
+    expect(mockConsoleInfo).toHaveBeenCalledTimes(2);
 
-    mockConsolaInfo.mockRestore();
+    mockConsoleInfo.mockRestore();
   });
 });

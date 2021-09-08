@@ -1,10 +1,6 @@
 import { SpawnSyncReturns } from 'child_process';
-import { isCI } from 'ci-info';
-import spawn from 'cross-spawn';
-import inquirer from 'inquirer';
-import PromptUI from 'inquirer/lib/ui/prompt';
 import path from 'path';
-import rimraf from 'rimraf';
+import { inquirer, isCI, PromptUI, rimraf, spawn } from '../../utils';
 import CreateCommand, { Action } from '../CreateCommand';
 
 const appPath = path.join(process.cwd(), 'temp');

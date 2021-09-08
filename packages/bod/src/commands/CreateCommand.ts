@@ -1,5 +1,4 @@
-import spawn from 'cross-spawn';
-import inquirer from 'inquirer';
+import { inquirer, spawn } from '../utils';
 import BaseCommand from './BaseCommand';
 
 interface Action {

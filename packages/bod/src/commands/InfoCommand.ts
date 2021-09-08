@@ -1,5 +1,4 @@
-import consola from 'consola';
-import envinfo from 'envinfo';
+import { envinfo, printer } from '../utils';
 import BaseCommand from './BaseCommand';
 
 class InfoCommand extends BaseCommand {
@@ -13,7 +12,7 @@ class InfoCommand extends BaseCommand {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public async run(_appName?: string): Promise<void> {
-    consola.info(`Environment information:`);
+    printer.info(`Environment information:`);
     const envInfo = await envinfo.run(
       {
         System: ['OS', 'CPU'],
@@ -28,7 +27,7 @@ class InfoCommand extends BaseCommand {
         fullTree: true,
       }
     );
-    consola.info(envInfo);
+    printer.info(envInfo);
   }
 }
 
