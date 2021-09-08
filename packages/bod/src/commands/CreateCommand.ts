@@ -84,7 +84,7 @@ class CreateCommand extends BaseCommand {
     return this.commandArgs;
   }
 
-  private async processTemplateAction() {
+  private async processTemplateAction(): Promise<void> {
     const { templateName } = await inquirer.prompt([
       {
         name: 'templateName',
@@ -102,11 +102,11 @@ class CreateCommand extends BaseCommand {
     this.commandArgs = [...args];
   }
 
-  private resolveAppPath(appName: string) {
+  private resolveAppPath(appName: string): void {
     this.commandArgs.push(appName);
   }
 
-  private execute() {
+  private execute(): void {
     const proc = spawn.sync(this.command, this.commandArgs, {
       stdio: 'inherit',
     });
