@@ -36,7 +36,7 @@ npm i -D bod
 ## Usage
 
 ```bash
-npx bod create <appName>
+bod create <appName>
 ```
 
 ```bash
@@ -47,8 +47,9 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  create <appName>  create a new project powered by Create React App and @sabertazimi/react-scripts
-  info              print debugging information about your environment
+  create|c <appName>  Create a new project powered by @sabertazimi/react-scripts
+  info|i              Print debugging information about your environment
+  help [command]      display help for command
 
 ℹ   Run bod <command> --help for detailed usage of given command.
 ```
@@ -56,23 +57,23 @@ Commands:
 ### `bod create`
 
 ```bash
-Usage: create [options] <appName>
+Usage: create|c [options] <appName>
 
-create a new project powered by Create React App and @sabertazimi/react-scripts
+create a new project powered by @sabertazimi/react-scripts
 
 Options:
-  -h, --help  output usage information
+  -h, --help  display help for command
 ```
 
 ### `bod info`
 
 ```bash
-Usage: info [options]
+Usage: info|i [options]
 
 print debugging information about your environment
 
 Options:
-  -h, --help  output usage information
+  -h, --help  display help for command
 ```
 
 ## Contact

@@ -57,8 +57,8 @@ npm i -D bod
 ### Usage
 
 ```bash
-npx bod create <appName>
-npx bod info
+bod create <appName>
+bod info
 ```
 
 ```bash
@@ -69,8 +69,9 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  create <appName>  create a new project powered by Create React App and @sabertazimi/react-scripts
-  info              print debugging information about your environment
+  create|c <appName>  Create a new project powered by @sabertazimi/react-scripts
+  info|i              Print debugging information about your environment
+  help [command]      display help for command
 
 ℹ   Run bod <command> --help for detailed usage of given command.
 ```
@@ -95,7 +96,7 @@ This template is shipped with
 
 ```bash
 # Select option `React Framework`
-npx bod create my-app
+bod create my-app
 ```
 
 Or use with Create React App:
