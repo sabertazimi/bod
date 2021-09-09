@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.5](https://github.com/sabertazimi/bod/compare/v5.3.4...v5.3.5) (2021-09-09)
+
+
+### Bug Fixes
+
+* **bod-CLI:** aggregate all 3rd-party libraries to `utils` ([7d37b91](https://github.com/sabertazimi/bod/commit/7d37b9123381d1a8478f23ee417cc3b5824ef1a4))
+* **bod-CLI:** create new instance from `Commander` ([bba2c35](https://github.com/sabertazimi/bod/commit/bba2c35350769bfaf2ea9e0dc73926f7495b786a))
+* **bod-CLI:** includes `bin/bod.js` when package building ([cd64b61](https://github.com/sabertazimi/bod/commit/cd64b618af56fffaf0ce9826da049bf1fa833327))
+* **bod-CLI:** remove `PromptUI` class exports ([4f311ca](https://github.com/sabertazimi/bod/commit/4f311cac33427b3f4dbcba1692e9e6a71395a437))
+* **bod-CLI:** setup `__BOD__` environment variable ([46922a4](https://github.com/sabertazimi/bod/commit/46922a4baf41762f35b2fd631c7a38f5dcfc1fbb))
+
+
+
+
+
 ## [5.3.4](https://github.com/sabertazimi/bod/compare/v5.3.3...v5.3.4) (2021-09-08)
 
 **Note:** Version bump only for package bod
