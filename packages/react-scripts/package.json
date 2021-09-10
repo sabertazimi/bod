@@ -87,7 +87,7 @@
     "webpack-dev-server": "^4.2.0",
     "webpack-manifest-plugin": "^4.0.2",
     "webpackbar": "^5.0.0-3",
-    "workbox-webpack-plugin": "^6.2.4"
+    "workbox-webpack-plugin": "^6.3.0"
   },
   "devDependencies": {
     "react": "^17.0.1",
