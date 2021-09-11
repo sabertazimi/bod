@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.6](https://github.com/sabertazimi/bod/compare/v5.3.5...v5.3.6) (2021-09-11)
+
+
+### Bug Fixes
+
+* **template-bod:** enable `src` path alias via tsconfig `baseUrl` ([fb4e5e3](https://github.com/sabertazimi/bod/commit/fb4e5e3a65713d259d5eea4a08d0dcdb363c5f5f))
+
+
+
+
+
 ## [5.3.5](https://github.com/sabertazimi/bod/compare/v5.3.4...v5.3.5) (2021-09-09)
 
 **Note:** Version bump only for package cra-template-bod

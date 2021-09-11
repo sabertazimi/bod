@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.6](https://github.com/sabertazimi/bod/compare/v5.3.5...v5.3.6) (2021-09-11)
+
+
+### Bug Fixes
+
+* **CRA-paths:** rectify `appPath` for local template development ([e3c5dee](https://github.com/sabertazimi/bod/commit/e3c5deeb0f3dd58f1229922f914966821e37ab90))
+
+
+
+
+
 ## [5.3.5](https://github.com/sabertazimi/bod/compare/v5.3.4...v5.3.5) (2021-09-09)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts
