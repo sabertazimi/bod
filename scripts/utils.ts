@@ -25,9 +25,6 @@ const cmd = (cmd: string): void => {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
 };
 
-const isFlag = (args: string[], flag: string): boolean =>
-  Boolean(args.length) && args.some(arg => arg === flag);
-
 const checkGitStatus = (): void => {
   info('Check git status ...');
   const gitStatus = execPipe('git status --porcelain').toString();
@@ -70,7 +67,6 @@ export {
   success,
   error,
   cmd,
-  isFlag,
   checkGitStatus,
   exec,
   execPipe,
