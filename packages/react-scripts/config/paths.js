@@ -124,7 +124,7 @@ if (
   const templatePath = '../cra-template-bod/template';
   module.exports = {
     dotenv: resolveOwn(`${templatePath}/.env`),
-    appPath: resolveApp('.'),
+    appPath: resolveApp('template'),
     appBuild: resolveOwn(path.join('../..', buildPath)),
     appPublic: resolveOwn(`${templatePath}/public`),
     appHtml: resolveOwn(`${templatePath}/public/index.html`),
