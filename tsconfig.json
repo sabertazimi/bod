@@ -1,6 +1,16 @@
 {
   "include": ["scripts"],
-  "exclude": ["node_modules", "build"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "coverage",
+    "dist",
+    "__mocks__",
+    "tests",
+    "typings",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ],
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
