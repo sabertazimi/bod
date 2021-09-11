@@ -1,6 +1,8 @@
 import { SpawnSyncReturns } from 'child_process';
+import { isCI } from 'ci-info';
 import path from 'path';
-import { inquirer, isCI, rimraf, spawn } from '../../utils';
+import rimraf from 'rimraf';
+import { inquirer, spawn } from '../../utils';
 import CreateCommand, { Action } from '../CreateCommand';
 
 const appPath = path.join(process.cwd(), 'temp');
