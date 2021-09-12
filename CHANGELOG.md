@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.8](https://github.com/sabertazimi/bod/compare/v5.3.7...v5.3.8) (2021-09-12)
+
+
+### Bug Fixes
+
+* **template-bod:** improve template git ignore file ([f42d4a1](https://github.com/sabertazimi/bod/commit/f42d4a15e65a291b57d0368767ceb07704e01651))
+
+
+
+
+
 ## [5.3.7](https://github.com/sabertazimi/bod/compare/v5.3.6...v5.3.7) (2021-09-12)
 
 

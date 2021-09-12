@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bod",
-  "version": "5.3.7",
+  "version": "5.3.8",
   "description": "ESLint configuration used by Bod CLI.",
   "repository": {
     "type": "git",
