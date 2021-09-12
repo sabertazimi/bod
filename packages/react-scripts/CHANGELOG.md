@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.7](https://github.com/sabertazimi/bod/compare/v5.3.6...v5.3.7) (2021-09-12)
+
+
+### Bug Fixes
+
+* **CRA-init:** remove explicit `lint` script ([43bdb0d](https://github.com/sabertazimi/bod/commit/43bdb0dcabfb74ea94b37819504c293577209e77))
+
+
+
+
+
 ## [5.3.6](https://github.com/sabertazimi/bod/compare/v5.3.5...v5.3.6) (2021-09-11)
 
 
