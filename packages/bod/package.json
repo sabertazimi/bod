@@ -61,11 +61,11 @@
     "inquirer": "^8.1.2"
   },
   "devDependencies": {
-    "@types/cross-spawn": "^6.0.2",
-    "@types/envinfo": "^7.8.1",
-    "@types/inquirer": "^8.1.1",
-    "@types/rimraf": "^3.0.2",
-    "ci-info": "^3.2.0",
-    "rimraf": "^3.0.2"
+    "@types/cross-spawn": "6.0.2",
+    "@types/envinfo": "7.8.1",
+    "@types/inquirer": "8.1.1",
+    "@types/rimraf": "3.0.2",
+    "ci-info": "3.2.0",
+    "rimraf": "3.0.2"
   }
 }

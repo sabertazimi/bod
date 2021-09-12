@@ -22,18 +22,18 @@
   "dependencies": {
     "@babel/core": "7.15.5",
     "@babel/eslint-parser": "^7.15.4",
-    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/eslint-patch": "1.0.6",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "babel-preset-react-app": "11.0.0-next.81",
     "confusing-browser-globals": "2.0.0-next.75",
-    "eslint-plugin-flowtype": "^5.9.2",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.0.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-flowtype": "5.9.2",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-jest": "24.4.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.25.1",
     "eslint-plugin-react-hooks": "^4.0.8",
-    "eslint-plugin-testing-library": "^4.12.2"
+    "eslint-plugin-testing-library": "4.12.2"
   },
   "engines": {
     "node": ">=14.0.0"
