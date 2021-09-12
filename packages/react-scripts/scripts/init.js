@@ -186,7 +186,6 @@ module.exports = function (
     {
       build: 'react-scripts build',
       'build:profile': 'react-scripts build --profile',
-      lint: 'stylelint --fix ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src',
       start: 'react-scripts start',
       'start:https': 'HTTPS=true react-scripts start',
       test: 'react-scripts test',
