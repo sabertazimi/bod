@@ -1,7 +1,0 @@
-{
-  "extends": ["config:base", ":preserveSemverRanges"],
-  "assignees": ["sabertazimi"],
-  "dependencyDashboard": false,
-  "labels": ["dependencies"],
-  "schedule": ["every weekend"]
-}
