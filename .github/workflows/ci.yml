@@ -29,20 +29,18 @@ jobs:
       - name: Installation
         run: |
           npm ci
-          rm $(which yarn)
-          rm $(which yarnpkg)
       - name: Linting
         run: |
           npm run lint
 
   test-unit:
-    name: Unit testing on Node ${{ matrix.node-version }} ${{ matrix.architecture }} ${{ matrix.os }}
+    name: Unit testing on Node/${{ matrix.package-manager }} ${{ matrix.node-version }} ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest]
         node-version: [14, 16]
-        architecture: [x64]
+        package-manager: [npm, yarn]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -52,13 +50,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          architecture: ${{ matrix.architecture }}
+          architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'npm'
       - name: Installation
         run: |
           npm i -g npm
           npm ci
+      - name: Remove yarnpkg
+        if: ${{ matrix.package-manager == 'npm' }}
+        run: |
           rm $(which yarn)
           rm $(which yarnpkg)
       - name: Unit testing
@@ -67,25 +68,25 @@ jobs:
           npm run badge
       - name: Coveralls action
         uses: coverallsapp/github-action@1.1.3
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'npm' }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          flag-name: Node ${{ matrix.node-version }} ${{ matrix.os }} ${{ matrix.architecture }}
+          flag-name: Node ${{ matrix.node-version }} ${{ matrix.os }}
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'npm' }}
         with:
           name: badges
           path: build
 
   test-e2e:
-    name: E2E testing on Node ${{ matrix.node-version }} ${{ matrix.architecture }} ${{ matrix.os }}
+    name: E2E testing on Node/${{ matrix.package-manager }} ${{ matrix.node-version }} ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest]
         node-version: [14, 16]
-        architecture: [x64]
+        package-manager: [npm, yarn]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -101,13 +102,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          architecture: ${{ matrix.architecture }}
+          architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'npm'
       - name: Installation
         run: |
           npm i -g npm
           npm ci
+      - name: Remove yarnpkg
+        if: ${{ matrix.package-manager == 'npm' }}
+        run: |
           rm $(which yarn)
           rm $(which yarnpkg)
       - name: E2E testing
@@ -115,7 +119,7 @@ jobs:
           npm run e2e
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'npm' }}
         with:
           name: demos
           path: build
@@ -178,8 +182,6 @@ jobs:
       - name: Installation
         run: |
           npm ci
-          rm $(which yarn)
-          rm $(which yarnpkg)
       - name: Building work
         run: |
           npm run build
