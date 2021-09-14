@@ -38,8 +38,6 @@ jobs:
       - name: Installation
         run: |
           npm ci
-          rm $(which yarn)
-          rm $(which yarnpkg)
       - name: Building work
         run: |
           npm run build
