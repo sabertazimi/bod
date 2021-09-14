@@ -57,6 +57,7 @@ jobs:
           cache: 'npm'
       - name: Installation
         run: |
+          npm i -g npm
           npm ci
           rm $(which yarn)
           rm $(which yarnpkg)
@@ -105,6 +106,7 @@ jobs:
           cache: 'npm'
       - name: Installation
         run: |
+          npm i -g npm
           npm ci
           rm $(which yarn)
           rm $(which yarnpkg)
