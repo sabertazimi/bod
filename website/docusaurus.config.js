@@ -19,7 +19,7 @@ module.exports = {
         docs: {
           path: '../docs',
           routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.config.js'),
           editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
