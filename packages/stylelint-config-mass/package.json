@@ -37,6 +37,6 @@
     "stylelint-config-sass-guidelines": "^8.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.13.0"
+    "stylelint": "^13.13.1"
   }
 }
