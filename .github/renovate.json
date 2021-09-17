@@ -11,6 +11,10 @@
       "enabled": false
     },
     {
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    }
+    {
       "matchUpdateTypes": [
         "minor",
         "patch",
