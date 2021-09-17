@@ -13,7 +13,7 @@
     {
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "widen"
-    }
+    },
     {
       "matchUpdateTypes": [
         "minor",
