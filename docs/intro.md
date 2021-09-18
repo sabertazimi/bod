@@ -16,7 +16,7 @@ sidebar_position: 1
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/bod?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/bod)
 
 [![CI](https://img.shields.io/github/workflow/status/sabertazimi/bod/CI/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
-[![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/bod?logo=coveralls&style=for-the-badge)](https://coveralls.io/github/sabertazimi/bod)
+[![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/bod/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
 [![Lerna](https://img.shields.io/github/lerna-json/v/sabertazimi/bod?logo=npm&style=for-the-badge)](https://github.com/lerna/lerna)
