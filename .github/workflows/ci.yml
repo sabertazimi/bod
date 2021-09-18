@@ -66,12 +66,9 @@ jobs:
         run: |
           npm run test:all
           npm run badge
-      - name: Coveralls action
-        uses: coverallsapp/github-action@1.1.3
+      - name: Coverage report action
+        uses: codecov/codecov-action@v2
         if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'npm' }}
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          flag-name: Node ${{ matrix.node-version }} ${{ matrix.os }}
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'npm' }}
