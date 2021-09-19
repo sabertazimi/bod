@@ -15,7 +15,7 @@ const main = () => {
 
   if (versionMatch) {
     const version = utils.semver.clean(versionMatch[0].replace('=> ', ''));
-    utils.exec('npm i');
+    utils.exec('yarn');
     utils.exec('git add .');
     utils.exec(`git commit -a -m "chore(release): ${version}"`);
     utils.exec(`git tag v${version} -s -m "v${version}"`);
