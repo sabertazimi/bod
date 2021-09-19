@@ -184,7 +184,7 @@ class Test {
 
   runStartScript() {
     utils.info('Start testing for `react-scripts start` ...');
-    utils.exec('yarn --smoke-test', this.appPath);
+    utils.exec('yarn start --smoke-test', this.appPath);
   }
 
   runTest(
