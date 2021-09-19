@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.9](https://github.com/sabertazimi/bod/compare/v5.3.8...v5.3.9) (2021-09-19)
+
+
+### Bug Fixes
+
+* **CI:** switch from `npm` to `yarn` ([1e8261b](https://github.com/sabertazimi/bod/commit/1e8261b490ef7d804c08d19f23445471349a521c))
+* **CRA-deps:** remove all `pinned` deps ([f285cd4](https://github.com/sabertazimi/bod/commit/f285cd46b4a4fd58cf277672721aca33604e5af2)), closes [csstools/postcss-normalize#60](https://github.com/csstools/postcss-normalize/issues/60)
+* **deps:** update dependency @babel/eslint-parser to ^7.15.7 ([#154](https://github.com/sabertazimi/bod/issues/154)) ([9082409](https://github.com/sabertazimi/bod/commit/90824091c799ea14feb8168b33f1ec2876a36089))
+* **deps:** update dependency @mdx-js/react to ^1.6.22 ([#147](https://github.com/sabertazimi/bod/issues/147)) ([d3a5d60](https://github.com/sabertazimi/bod/commit/d3a5d600844494dc871d7ef4483b6f690e7d926c))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to v0.5.1 ([#148](https://github.com/sabertazimi/bod/issues/148)) ([18fd995](https://github.com/sabertazimi/bod/commit/18fd9952b6154cd5203f00ff957a29c4f7403590))
+* **deps:** update dependency browserslist to ^4.17.0 ([#150](https://github.com/sabertazimi/bod/issues/150)) ([a98320d](https://github.com/sabertazimi/bod/commit/a98320d61235cb950662cdd1290080b5c9ea8744))
+* **deps:** update dependency css-loader to v6.3.0 ([#167](https://github.com/sabertazimi/bod/issues/167)) ([37c6506](https://github.com/sabertazimi/bod/commit/37c65065ca0c6f690dcb07a6e487141d5db028db))
+* **deps:** update dependency eslint to ^7.32.0 ([#151](https://github.com/sabertazimi/bod/issues/151)) ([f0f176d](https://github.com/sabertazimi/bod/commit/f0f176dd6404a2ee78b4b798ed505cbad87cdf80))
+* **deps:** update dependency eslint-plugin-flowtype to v6 ([#164](https://github.com/sabertazimi/bod/issues/164)) ([4d0494f](https://github.com/sabertazimi/bod/commit/4d0494f28a6113a749d80be641160bb42a8455da))
+* **deps:** update dependency eslint-plugin-jest to ^24.4.2 ([#153](https://github.com/sabertazimi/bod/issues/153)) ([240631b](https://github.com/sabertazimi/bod/commit/240631b402878ad55e1970b1a8424d5954535b53))
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.4.1 ([#155](https://github.com/sabertazimi/bod/issues/155)) ([e01f619](https://github.com/sabertazimi/bod/commit/e01f6195d12a392afcd23d0b9076a18418b03300))
+* **deps:** update dependency eslint-plugin-react to ^7.25.2 ([#156](https://github.com/sabertazimi/bod/issues/156)) ([c5a489b](https://github.com/sabertazimi/bod/commit/c5a489baebfd4cf102a1e0f03a98b3c99f491397))
+* **deps:** update dependency inquirer to v8 ([#165](https://github.com/sabertazimi/bod/issues/165)) ([31fad60](https://github.com/sabertazimi/bod/commit/31fad60e0fcf608f8412d33fcf18456a28b6c519))
+* **deps:** update dependency postcss-normalize to v10.0.1 ([#157](https://github.com/sabertazimi/bod/issues/157)) ([ca41191](https://github.com/sabertazimi/bod/commit/ca41191afc56c5b4a9753a26b9280adb7bfb37a4))
+* **deps:** update dependency prettier to ^2.4.1 ([#158](https://github.com/sabertazimi/bod/issues/158)) ([d6bb4c6](https://github.com/sabertazimi/bod/commit/d6bb4c6d05890da1fc52dd702746c1650ddfd2ad))
+* **deps:** update dependency webpack to ^5.53.0 ([#162](https://github.com/sabertazimi/bod/issues/162)) ([4cafbd1](https://github.com/sabertazimi/bod/commit/4cafbd11891b45698f03f033cfee50e0b3fd49e1))
+* **deps:** update dependency webpack-dev-server to ^4.2.1 ([#159](https://github.com/sabertazimi/bod/issues/159)) ([ff43314](https://github.com/sabertazimi/bod/commit/ff433141503f933ec5be9a746843f9b443c2bb89))
+* **deps:** update react monorepo ([#160](https://github.com/sabertazimi/bod/issues/160)) ([3c51539](https://github.com/sabertazimi/bod/commit/3c51539f4f25f5a047547fd02f144f4053065fdb))
+* **template-bod:** add snapshot testing ([9108af3](https://github.com/sabertazimi/bod/commit/9108af3c5bbf4508d5049676ad3da22401b6a734))
+
+
+
+
+
 ## [5.3.8](https://github.com/sabertazimi/bod/compare/v5.3.7...v5.3.8) (2021-09-12)
 
 

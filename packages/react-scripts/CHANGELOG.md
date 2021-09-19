@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.9](https://github.com/sabertazimi/bod/compare/v5.3.8...v5.3.9) (2021-09-19)
+
+
+### Bug Fixes
+
+* **CRA-deps:** remove all `pinned` deps ([f285cd4](https://github.com/sabertazimi/bod/commit/f285cd46b4a4fd58cf277672721aca33604e5af2)), closes [csstools/postcss-normalize#60](https://github.com/csstools/postcss-normalize/issues/60)
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to v0.5.1 ([#148](https://github.com/sabertazimi/bod/issues/148)) ([18fd995](https://github.com/sabertazimi/bod/commit/18fd9952b6154cd5203f00ff957a29c4f7403590))
+* **deps:** update dependency browserslist to ^4.17.0 ([#150](https://github.com/sabertazimi/bod/issues/150)) ([a98320d](https://github.com/sabertazimi/bod/commit/a98320d61235cb950662cdd1290080b5c9ea8744))
+* **deps:** update dependency css-loader to v6.3.0 ([#167](https://github.com/sabertazimi/bod/issues/167)) ([37c6506](https://github.com/sabertazimi/bod/commit/37c65065ca0c6f690dcb07a6e487141d5db028db))
+* **deps:** update dependency eslint to ^7.32.0 ([#151](https://github.com/sabertazimi/bod/issues/151)) ([f0f176d](https://github.com/sabertazimi/bod/commit/f0f176dd6404a2ee78b4b798ed505cbad87cdf80))
+* **deps:** update dependency postcss-normalize to v10.0.1 ([#157](https://github.com/sabertazimi/bod/issues/157)) ([ca41191](https://github.com/sabertazimi/bod/commit/ca41191afc56c5b4a9753a26b9280adb7bfb37a4))
+* **deps:** update dependency prettier to ^2.4.1 ([#158](https://github.com/sabertazimi/bod/issues/158)) ([d6bb4c6](https://github.com/sabertazimi/bod/commit/d6bb4c6d05890da1fc52dd702746c1650ddfd2ad))
+* **deps:** update dependency webpack to ^5.53.0 ([#162](https://github.com/sabertazimi/bod/issues/162)) ([4cafbd1](https://github.com/sabertazimi/bod/commit/4cafbd11891b45698f03f033cfee50e0b3fd49e1))
+* **deps:** update dependency webpack-dev-server to ^4.2.1 ([#159](https://github.com/sabertazimi/bod/issues/159)) ([ff43314](https://github.com/sabertazimi/bod/commit/ff433141503f933ec5be9a746843f9b443c2bb89))
+* **deps:** update react monorepo ([#160](https://github.com/sabertazimi/bod/issues/160)) ([3c51539](https://github.com/sabertazimi/bod/commit/3c51539f4f25f5a047547fd02f144f4053065fdb))
+
+
+
+
+
 ## [5.3.8](https://github.com/sabertazimi/bod/compare/v5.3.7...v5.3.8) (2021-09-12)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts

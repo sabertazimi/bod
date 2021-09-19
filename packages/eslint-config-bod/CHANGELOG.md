@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.9](https://github.com/sabertazimi/bod/compare/v5.3.8...v5.3.9) (2021-09-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/eslint-parser to ^7.15.7 ([#154](https://github.com/sabertazimi/bod/issues/154)) ([9082409](https://github.com/sabertazimi/bod/commit/90824091c799ea14feb8168b33f1ec2876a36089))
+* **deps:** update dependency eslint-plugin-flowtype to v6 ([#164](https://github.com/sabertazimi/bod/issues/164)) ([4d0494f](https://github.com/sabertazimi/bod/commit/4d0494f28a6113a749d80be641160bb42a8455da))
+* **deps:** update dependency eslint-plugin-jest to ^24.4.2 ([#153](https://github.com/sabertazimi/bod/issues/153)) ([240631b](https://github.com/sabertazimi/bod/commit/240631b402878ad55e1970b1a8424d5954535b53))
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.4.1 ([#155](https://github.com/sabertazimi/bod/issues/155)) ([e01f619](https://github.com/sabertazimi/bod/commit/e01f6195d12a392afcd23d0b9076a18418b03300))
+* **deps:** update dependency eslint-plugin-react to ^7.25.2 ([#156](https://github.com/sabertazimi/bod/issues/156)) ([c5a489b](https://github.com/sabertazimi/bod/commit/c5a489baebfd4cf102a1e0f03a98b3c99f491397))
+* **deps:** update react monorepo ([#160](https://github.com/sabertazimi/bod/issues/160)) ([3c51539](https://github.com/sabertazimi/bod/commit/3c51539f4f25f5a047547fd02f144f4053065fdb))
+
+
+
+
+
 ## [5.3.8](https://github.com/sabertazimi/bod/compare/v5.3.7...v5.3.8) (2021-09-12)
 
 **Note:** Version bump only for package eslint-config-bod
