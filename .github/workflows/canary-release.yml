@@ -34,7 +34,7 @@ jobs:
           node-version: 16
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Installation
         run: |
           yarn

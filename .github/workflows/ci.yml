@@ -25,7 +25,7 @@ jobs:
           node-version: 16
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Installation
         run: |
           yarn
@@ -52,7 +52,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Installation
         run: |
           npm i -g npm
@@ -101,7 +101,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Installation
         run: |
           npm i -g npm
@@ -175,7 +175,7 @@ jobs:
           node-version: 16
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Installation
         run: |
           yarn
