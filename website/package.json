@@ -2,7 +2,7 @@
   "name": "bod-website",
   "private": true,
   "scripts": {
-    "build": "docusaurus build && npm run build:post",
+    "build": "docusaurus build && yarn build:post",
     "build:post": "cp -fr build ../",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",

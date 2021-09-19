@@ -28,7 +28,7 @@ jobs:
           cache: 'npm'
       - name: Installation
         run: |
-          npm ci
+          yarn
       - name: Linting
         run: |
           npm run lint
@@ -56,7 +56,7 @@ jobs:
       - name: Installation
         run: |
           npm i -g npm
-          npm ci
+          yarn
       - name: Remove yarnpkg
         if: ${{ matrix.package-manager == 'npm' }}
         run: |
@@ -105,7 +105,7 @@ jobs:
       - name: Installation
         run: |
           npm i -g npm
-          npm ci
+          yarn
       - name: Remove yarnpkg
         if: ${{ matrix.package-manager == 'npm' }}
         run: |
@@ -136,12 +136,12 @@ jobs:
           node-version: 16
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - name: Build documentation
         run: |
           cd website/
-          npm ci
-          npm run build
+          yarn
+          yarn build
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -178,7 +178,7 @@ jobs:
           cache: 'npm'
       - name: Installation
         run: |
-          npm ci
+          yarn
       - name: Building work
         run: |
           npm run build

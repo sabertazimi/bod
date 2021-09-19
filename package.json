@@ -15,10 +15,10 @@
     "format": "lerna run format",
     "lint": "lerna run lint",
     "release": "ts-node scripts/release.ts --push",
-    "start": "npm run start:template",
+    "start": "yarn start:template",
     "start:all": "lerna run start",
-    "start:bod": "npm start -w bod",
-    "start:template": "npm start -w cra-template-bod",
+    "start:bod": "yarn workspace bod start",
+    "start:template": "yarn workspace cra-template-bod start",
     "test": "jest --watch",
     "test:all": "lerna run test && jest"
   },

@@ -1,6 +1,6 @@
 {
   "version": "5.3.8",
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "bootstrap": {
       "npmClientArgs": [

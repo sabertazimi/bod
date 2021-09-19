@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
       - name: Installation
         run: |
-          npm ci
+          yarn
       - name: Building work
         run: |
           npm run build
