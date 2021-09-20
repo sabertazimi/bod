@@ -184,11 +184,9 @@ jobs:
       - name: Publish to NPM registry
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
-          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
           npx lerna publish from-package --no-verify-access --ignore-scripts --yes
         env:
-          NPM_CONFIG_USERCONFIG: .npmrc
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   deploy:

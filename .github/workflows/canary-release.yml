@@ -44,9 +44,7 @@ jobs:
       - name: Publish canary release to NPM registry
         if: startsWith(github.event.head_commit.message, 'chore') == false
         run: |
-          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
           yarn canary
         env:
-          NPM_CONFIG_USERCONFIG: .npmrc
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
