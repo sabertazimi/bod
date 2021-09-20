@@ -6,7 +6,7 @@ const main = () => {
   const isPush = process.argv.includes('-p') || process.argv.includes('--push');
   const versionMatch = utils
     .execPipe(
-      'npx lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
+      'yarn lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
     )
     .toString()
     .split('\n')

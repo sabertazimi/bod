@@ -185,7 +185,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
-          npx lerna publish from-package --no-verify-access --ignore-scripts --yes
+          yarn lerna publish from-package --no-verify-access --ignore-scripts --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

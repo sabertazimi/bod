@@ -42,7 +42,7 @@ class Test {
   startLocalRegistry() {
     utils.info('Start verdaccio server ...');
     utils.exec(
-      `nohup npx verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
+      `nohup yarn verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
     utils.exec(
       `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`
@@ -84,7 +84,7 @@ class Test {
     utils.info(`Publish packages to ${this.localRegistry} ...`);
     const packages = utils
       .execPipe(
-        'npx lerna publish prerelease --canary --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --no-verify-access --yes'
+        'yarn lerna publish prerelease --canary --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --no-verify-access --yes'
       )
       .toString()
       .replace(/\s+-/g, `\n    ${utils.color.bgBlue.black('[+]')}`) // `[+] package@version` format
@@ -125,7 +125,7 @@ class Test {
     utils.info('Run create-react-app to generate project ...');
     utils.exec(`rm -fr ${this.appPath}`);
     utils.exec(
-      `npx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
+      `yarn dlx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
       this.rootPath
     );
   }
