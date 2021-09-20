@@ -55,7 +55,6 @@ jobs:
           cache: 'yarn'
       - name: Installation
         run: |
-          npm i -g npm
           yarn
       - name: Choose package manager for CRA
         if: ${{ matrix.package-manager == 'yarn' }}
@@ -103,7 +102,6 @@ jobs:
           cache: 'yarn'
       - name: Installation
         run: |
-          npm i -g npm
           yarn
       - name: Choose package manager for CRA
         if: ${{ matrix.package-manager == 'yarn' }}
