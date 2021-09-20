@@ -54,7 +54,6 @@ class Test {
   }
 
   stopLocalRegistry() {
-    const localRegistryNpmrcPath = path.join(this.rootPath, '.npmrc');
     const localRegistryAuthStorage = path.join(
       this.rootPath,
       'scripts/htpasswd'
@@ -71,7 +70,6 @@ class Test {
       `yarn config set npmRegistryServer "${this.originalYarnRegistry}" --home`
     );
     utils.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
-    utils.exec(`rm -fr ${localRegistryNpmrcPath}`);
     utils.exec(`rm -fr ${localRegistryAuthStorage}`);
     utils.exec(`rm -fr ${localRegistryBundleStorage}`);
     utils.exec(`rm -fr ${localRegistryMetaStorage}`);
