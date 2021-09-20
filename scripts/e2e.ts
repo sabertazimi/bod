@@ -27,7 +27,7 @@ class Test {
       .toString()
       .replace(/\n$/, '');
     this.originalYarnRegistry = utils
-      .execPipe('yarn config get registry')
+      .execPipe('yarn config get npmRegistryServer')
       .toString()
       .replace(/\n$/, '');
     this.localPort = 4873;
@@ -48,7 +48,9 @@ class Test {
       `grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`
     );
     utils.exec(`npm config set registry="${this.localRegistry}"`);
-    utils.exec(`yarn config set registry "${this.localRegistry}"`);
+    utils.exec(
+      `yarn config set npmRegistryServer "${this.localRegistry}" --home`
+    );
   }
 
   stopLocalRegistry() {
@@ -65,7 +67,9 @@ class Test {
 
     utils.info('Clear local registry ...');
     utils.exec(`npm config set registry="${this.originalNpmRegistry}"`);
-    utils.exec(`yarn config set registry "${this.originalYarnRegistry}"`);
+    utils.exec(
+      `yarn config set npmRegistryServer "${this.originalYarnRegistry}" --home`
+    );
     utils.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
     utils.exec(`rm -fr ${localRegistryNpmrcPath}`);
     utils.exec(`rm -fr ${localRegistryAuthStorage}`);

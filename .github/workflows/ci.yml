@@ -111,7 +111,7 @@ jobs:
           echo Choose package manager for CRA v5
       - name: E2E testing
         run: |
-          npm run e2e
+          yarn e2e
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
@@ -135,11 +135,12 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
+      - name: Installation
+        run: |
+          yarn
       - name: Build documentation
         run: |
-          cd website/
-          yarn
-          yarn build
+          yarn build:docs
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -184,6 +185,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
           echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> .npmrc
+          yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
           npx lerna publish from-package --no-verify-access --ignore-scripts --yes
         env:
           NPM_CONFIG_USERCONFIG: .npmrc
