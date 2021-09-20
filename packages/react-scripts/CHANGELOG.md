@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.10](https://github.com/sabertazimi/bod/compare/v5.3.9...v5.3.10) (2021-09-20)
+
+
+### Bug Fixes
+
+* **NPM-bin:** rename `bin` field ([9dbf09c](https://github.com/sabertazimi/bod/commit/9dbf09cf447fb67f615d26f1b5744af2642be7c1))
+
+
+
+
+
 ## [5.3.9](https://github.com/sabertazimi/bod/compare/v5.3.8...v5.3.9) (2021-09-19)
 
 

@@ -3780,7 +3780,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sabertazimi/react-scripts@^5.3.9, @sabertazimi/react-scripts@workspace:packages/react-scripts":
+"@sabertazimi/react-scripts@^5.3.10, @sabertazimi/react-scripts@workspace:packages/react-scripts":
   version: 0.0.0-use.local
   resolution: "@sabertazimi/react-scripts@workspace:packages/react-scripts"
   dependencies:
@@ -3800,7 +3800,7 @@ __metadata:
     dotenv: ^9.0.2
     dotenv-expand: ^5.1.0
     eslint: ^7.32.0
-    eslint-config-bod: ^5.3.9
+    eslint-config-bod: ^5.3.10
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     eslint-webpack-plugin: ^3.0.1
@@ -3833,7 +3833,7 @@ __metadata:
     source-map-loader: ^3.0.0
     style-loader: ^3.2.1
     stylelint: ^13.13.1
-    stylelint-config-bod: ^5.3.9
+    stylelint-config-bod: ^5.3.10
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
     stylelint-webpack-plugin: ^3.0.1
@@ -7561,7 +7561,7 @@ __metadata:
   resolution: "cra-template-bod@workspace:packages/cra-template-bod"
   dependencies:
     "@reduxjs/toolkit": ~1.5.1
-    "@sabertazimi/react-scripts": ^5.3.9
+    "@sabertazimi/react-scripts": ^5.3.10
     "@testing-library/dom": ^8.5.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.0
@@ -9086,7 +9086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@^5.3.9, eslint-config-bod@workspace:packages/eslint-config-bod":
+"eslint-config-bod@^5.3.10, eslint-config-bod@workspace:packages/eslint-config-bod":
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:
@@ -19922,7 +19922,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@^5.3.9, stylelint-config-bod@workspace:packages/stylelint-config-bod":
+"stylelint-config-bod@^5.3.10, stylelint-config-bod@workspace:packages/stylelint-config-bod":
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
