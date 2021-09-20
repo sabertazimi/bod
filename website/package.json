@@ -2,7 +2,7 @@
   "name": "bod-website",
   "private": true,
   "scripts": {
-    "build": "docusaurus build && yarn build:post",
+    "build:docs": "docusaurus build && yarn build:post",
     "build:post": "cp -fr build ../",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
@@ -40,6 +40,7 @@
     "@types/react": "^17.0.21",
     "@types/react-helmet": "^6.1.2",
     "@types/react-router-dom": "^5.1.9",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "webpack": "^5.53.0"
   }
 }

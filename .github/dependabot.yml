@@ -12,19 +12,7 @@ updates:
       day: "sunday"
       time: "14:00"
       timezone: "Asia/Shanghai"
-    open-pull-requests-limit: 30
-    versioning-strategy: increase
-    assignees:
-      - 'sabertazimi'
-
-  - package-ecosystem: 'npm'
-    directory: '/website'
-    schedule:
-      interval: 'weekly'
-      day: "sunday"
-      time: "14:00"
-      timezone: "Asia/Shanghai"
-    open-pull-requests-limit: 30
+    open-pull-requests-limit: 10
     versioning-strategy: increase
     assignees:
       - 'sabertazimi'
