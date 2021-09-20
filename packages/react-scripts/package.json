@@ -27,9 +27,7 @@
     "lib",
     "scripts"
   ],
-  "bin": {
-    "react-scripts": "./bin/react-scripts.js"
-  },
+  "bin": "./bin/react-scripts.js",
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "^7.15.5",

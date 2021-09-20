@@ -20,9 +20,7 @@
     "!dist/**/*.test.js",
     "!dist/**/*.test.d.ts"
   ],
-  "bin": {
-    "bod": "bin/bod.js"
-  },
+  "bin": "bin/bod.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
