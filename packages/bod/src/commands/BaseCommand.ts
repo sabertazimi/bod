@@ -19,10 +19,7 @@ class BaseCommand {
     this.alias = alias ?? this.name[0];
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  public async run(_appName?: string): Promise<void> {
-    return;
-  }
+  public async run(_appName?: string): Promise<void> {}
 
   public getName(): string {
     return this.name;

@@ -1,6 +1,6 @@
 import { SpawnSyncReturns } from 'child_process';
-import { isCI } from 'ci-info';
 import path from 'path';
+import { isCI } from 'ci-info';
 import rimraf from 'rimraf';
 import { inquirer, spawn } from '../../utils';
 import CreateCommand, { Action } from '../CreateCommand';
@@ -101,7 +101,9 @@ describe('CreateCommand', () => {
       const createCommand = new CreateCommand();
 
       if (isCI) {
+        // eslint-disable-next-line jest/no-conditional-expect
         await expect(createCommand.run(appPath)).resolves.toBeUndefined();
+        // eslint-disable-next-line jest/no-conditional-expect
         expect(mockPrompt).toBeCalledTimes(1);
       }
 

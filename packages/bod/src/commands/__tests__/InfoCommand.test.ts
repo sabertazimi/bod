@@ -17,9 +17,7 @@ describe('InfoCommand', () => {
   test('should print environment variables', async () => {
     const mockConsoleInfo = jest
       .spyOn(printer, 'info')
-      .mockImplementation(() => {
-        return;
-      });
+      .mockImplementation(jest.fn());
 
     const infoCommand = new InfoCommand();
     await expect(infoCommand.run()).resolves.toBeUndefined();

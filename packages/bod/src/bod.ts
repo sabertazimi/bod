@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { CommandFactory } from './index';
 import { color, printer, program } from './utils';
+import { CommandFactory } from './index';
 
 const packageJsonPath = path.join(__dirname, '../package.json');
 const packageJson = JSON.parse(

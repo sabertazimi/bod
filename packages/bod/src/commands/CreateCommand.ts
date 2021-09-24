@@ -111,7 +111,7 @@ class CreateCommand extends BaseCommand {
     });
 
     if (proc.status !== 0) {
-      throw Error(
+      throw new Error(
         `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
       );
     }
