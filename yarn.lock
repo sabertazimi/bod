@@ -4454,7 +4454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^8.1.1":
+"@types/inquirer@npm:^8.1.2":
   version: 8.1.2
   resolution: "@types/inquirer@npm:8.1.2"
   dependencies:
@@ -6297,7 +6297,7 @@ __metadata:
   dependencies:
     "@types/cross-spawn": ^6.0.2
     "@types/envinfo": ^7.8.1
-    "@types/inquirer": ^8.1.1
+    "@types/inquirer": ^8.1.2
     "@types/rimraf": ^3.0.2
     chalk: ^4.1.2
     ci-info: ^3.2.0
