@@ -1,11 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
+import MountainSVG from '../../static/img/undraw_docusaurus_mountain.svg';
+import TreeSVG from '../../static/img/undraw_docusaurus_tree.svg';
+import ReactSVG from '../../static/img/undraw_docusaurus_react.svg';
 import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: MountainSVG,
     description: (
       <>
         Bod was designed from the ground up to be easily installed and used to
@@ -15,14 +18,14 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: TreeSVG,
     description: (
       <>Bod lets you focus on your code. App boilerplate is out of box.</>
     ),
   },
   {
     title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: ReactSVG,
     description: (
       <>
         Extend or customize template by reusing React. Bod can be extended while
