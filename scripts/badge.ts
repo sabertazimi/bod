@@ -21,7 +21,7 @@ const getCoveragePercentage = (
 ) => {
   try {
     const summary = fs.readFileSync(summaryFilePath, 'utf8');
-    return JSON.parse(summary)['total'][coverageType]['pct'];
+    return JSON.parse(summary).total[coverageType].pct;
   } catch (error) {
     if (error instanceof Error) utils.error(error.message);
     return 0;

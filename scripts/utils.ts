@@ -1,5 +1,5 @@
-import chalk from 'chalk';
 import cp from 'child_process';
+import chalk from 'chalk';
 import { isCI } from 'ci-info';
 import consola from 'consola';
 import fetch from 'node-fetch';
