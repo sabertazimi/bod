@@ -50,9 +50,12 @@ const reactRefreshWebpackPluginRuntimeEntry = require.resolve(
 );
 const babelRuntimeEntry = require.resolve('babel-preset-react-app');
 const babelRuntimeEntryHelpers = require.resolve(
-  '@babel/runtime/helpers/esm/assertThisInitialized'
+  '@babel/runtime/helpers/esm/assertThisInitialized',
+  { paths: [babelRuntimeEntry] }
 );
-const babelRuntimeRegenerator = require.resolve('@babel/runtime/regenerator');
+const babelRuntimeRegenerator = require.resolve('@babel/runtime/regenerator', {
+  paths: [babelRuntimeEntry],
+});
 
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
 // makes for a smoother build process.
@@ -333,7 +336,7 @@ module.exports = function (webpackEnv) {
           enforce: 'pre',
           exclude: /@babel(?:\/|\\{1,2})runtime/,
           test: /\.(js|mjs|jsx|ts|tsx|css)$/,
-          use: 'source-map-loader',
+          loader: require.resolve('source-map-loader'),
         },
         {
           // "oneOf" will traverse all following loaders until one will
@@ -368,7 +371,7 @@ module.exports = function (webpackEnv) {
               test: /\.svg$/,
               use: [
                 {
-                  loader: '@svgr/webpack',
+                  loader: require.resolve('@svgr/webpack'),
                   options: {
                     prettier: false,
                     svgo: false,
@@ -380,7 +383,7 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 {
-                  loader: 'file-loader',
+                  loader: require.resolve('file-loader'),
                   options: {
                     name: 'static/media/[name].[hash].[ext]',
                   },
