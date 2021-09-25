@@ -73,7 +73,7 @@
     "sass-loader": "^12.1.0",
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-bod": "^5.3.10",
     "stylelint-config-prettier": "^8.0.2",
