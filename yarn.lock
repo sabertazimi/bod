@@ -7691,7 +7691,7 @@ __metadata:
     eslint: ^7.32.0
     jest: ^27.2.0
     lerna: ^4.0.0
-    node-fetch: ^2.6.2
+    node-fetch: ^2.6.5
     prettier: ^2.4.1
     semver: ^7.3.5
     stylelint: ^13.13.1
@@ -15056,7 +15056,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.2":
+"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.5":
   version: 2.6.5
   resolution: "node-fetch@npm:2.6.5"
   dependencies:
