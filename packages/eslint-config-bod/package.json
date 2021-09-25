@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/core": "7.15.5",
     "@babel/eslint-parser": "^7.15.7",
-    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/eslint-patch": "^1.0.7",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "babel-preset-react-app": "11.0.0-next.81",
