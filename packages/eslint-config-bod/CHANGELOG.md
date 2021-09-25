@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.11](https://github.com/sabertazimi/bod/compare/v5.3.10...v5.3.11) (2021-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @rushstack/eslint-patch to ^1.0.7 ([#180](https://github.com/sabertazimi/bod/issues/180)) ([9336cf9](https://github.com/sabertazimi/bod/commit/9336cf97a65cc65abb84525b01a84cded920e931))
+* **deps:** update dependency eslint-plugin-flowtype to ^6.1.0 ([#182](https://github.com/sabertazimi/bod/issues/182)) ([f081b8e](https://github.com/sabertazimi/bod/commit/f081b8e72a934b0b4fc3389f1a02732de0e89715))
+* **deps:** update dependency eslint-plugin-react to ^7.26.0 ([#183](https://github.com/sabertazimi/bod/issues/183)) ([812949f](https://github.com/sabertazimi/bod/commit/812949f82c6143a903267827326c4c9ed5217e18))
+* **deps:** update dependency eslint-plugin-testing-library to ^4.12.4 ([#184](https://github.com/sabertazimi/bod/issues/184)) ([c144511](https://github.com/sabertazimi/bod/commit/c144511f5f30019eaa6c99779ddf4ee74576321a))
+* **deps:** update typescript-eslint monorepo to ^4.31.2 ([#188](https://github.com/sabertazimi/bod/issues/188)) ([25fac55](https://github.com/sabertazimi/bod/commit/25fac55b6b952bb15a597d8c798d2bc4a945b9b9))
+
+
+
+
+
 ## [5.3.10](https://github.com/sabertazimi/bod/compare/v5.3.9...v5.3.10) (2021-09-20)
 
 **Note:** Version bump only for package eslint-config-bod

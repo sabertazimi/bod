@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.11](https://github.com/sabertazimi/bod/compare/v5.3.10...v5.3.11) (2021-09-25)
+
+
+### Bug Fixes
+
+* **CRA-Jest:** remove redundant `jest-circus` configuration ([971fa11](https://github.com/sabertazimi/bod/commit/971fa11174f4833af91f241b8195023c9520089b))
+* **CRA-webpack:** allow CORS on `webpack-dev-server` ([4929511](https://github.com/sabertazimi/bod/commit/4929511748b66f194bffa11dac248665c3fe2f0f))
+* **CRA-webpack:** resolve dependency issues in webpack configuration ([b4a2770](https://github.com/sabertazimi/bod/commit/b4a2770642f63a1b0499c3adbe71c9913e338c02))
+* **deps:** update dependency browserslist to ^4.17.1 ([#181](https://github.com/sabertazimi/bod/issues/181)) ([4d8af97](https://github.com/sabertazimi/bod/commit/4d8af97a09d48275df0c54a9a4033e363ba36d8b))
+* **deps:** update dependency dotenv to v10 ([#190](https://github.com/sabertazimi/bod/issues/190)) ([8446378](https://github.com/sabertazimi/bod/commit/8446378a363994df01ece50095c64ef9f2a05eda))
+* **deps:** update dependency postcss to ^8.3.7 ([#185](https://github.com/sabertazimi/bod/issues/185)) ([59cba0b](https://github.com/sabertazimi/bod/commit/59cba0b10a96bc2e11f59c4e3b0b4b3f93751c0f))
+* **deps:** update dependency postcss to ^8.3.8 ([#191](https://github.com/sabertazimi/bod/issues/191)) ([f9978fe](https://github.com/sabertazimi/bod/commit/f9978fe3d4ef96d709ce88d19759479b48fe2778))
+* **deps:** update dependency style-loader to ^3.3.0 ([#186](https://github.com/sabertazimi/bod/issues/186)) ([5637415](https://github.com/sabertazimi/bod/commit/56374152c6cb0f9d204469d995c1fe85d7f0810f))
+* **deps:** update dependency webpack-dev-server to ^4.3.0 ([#193](https://github.com/sabertazimi/bod/issues/193)) ([6fe4363](https://github.com/sabertazimi/bod/commit/6fe4363cc4660e80e074880a1e72f1163610372c))
+* **deps:** update jest monorepo to ^27.2.1 ([#187](https://github.com/sabertazimi/bod/issues/187)) ([29cd93d](https://github.com/sabertazimi/bod/commit/29cd93d8732f2f1d7ee14f92d07a1a23f2ff9773))
+* **deps:** update jest monorepo to ^27.2.2 ([#192](https://github.com/sabertazimi/bod/issues/192)) ([200e3d5](https://github.com/sabertazimi/bod/commit/200e3d55e9c5e517225645dce791b1780e8f0de1))
+
+
+
+
+
 ## [5.3.10](https://github.com/sabertazimi/bod/compare/v5.3.9...v5.3.10) (2021-09-20)
 
 
