@@ -7699,7 +7699,7 @@ __metadata:
     ts-node: ^10.2.1
     tslib: ^2.3.1
     typescript: ^4.4.3
-    verdaccio: ^5.1.5
+    verdaccio: ^5.1.6
   languageName: unknown
   linkType: soft
 
@@ -21893,7 +21893,7 @@ typescript@^4.4.3:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.1.5":
+"verdaccio@npm:^5.1.6":
   version: 5.1.6
   resolution: "verdaccio@npm:5.1.6"
   dependencies:
