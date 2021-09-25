@@ -4641,7 +4641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:^5.1.9":
+"@types/react-router-dom@npm:^5.3.0":
   version: 5.3.0
   resolution: "@types/react-router-dom@npm:5.3.0"
   dependencies:
@@ -6278,7 +6278,7 @@ __metadata:
     "@tsconfig/docusaurus": ^1.0.4
     "@types/react": ^17.0.24
     "@types/react-helmet": ^6.1.2
-    "@types/react-router-dom": ^5.1.9
+    "@types/react-router-dom": ^5.3.0
     clsx: ^1.1.1
     file-loader: ^6.2.0
     nodejieba: ^2.5.2
@@ -7660,7 +7660,7 @@ __metadata:
     "@types/react": ^17.0.24
     "@types/react-dom": ^17.0.9
     "@types/react-redux": ^7.1.18
-    "@types/react-router-dom": ^5.1.9
+    "@types/react-router-dom": ^5.3.0
     "@types/react-test-renderer": ^17.0.1
     react: ^17.0.2
     react-dom: ^17.0.2
