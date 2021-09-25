@@ -3902,7 +3902,7 @@ __metadata:
     jest-resolve: ^27.2.0
     jest-watch-typeahead: ^0.6.4
     mini-css-extract-plugin: ^2.3.0
-    postcss: ^8.3.6
+    postcss: ^8.3.7
     postcss-flexbugs-fixes: ^5.0.2
     postcss-loader: ^6.1.1
     postcss-normalize: ^10.0.1
@@ -17312,7 +17312,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.2.4, postcss@npm:^8.3.5, postcss@npm:^8.3.6":
+"postcss@npm:^8.2.15, postcss@npm:^8.2.4, postcss@npm:^8.3.5, postcss@npm:^8.3.7":
   version: 8.3.7
   resolution: "postcss@npm:8.3.7"
   dependencies:
