@@ -1796,17 +1796,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/stylelint-config@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/stylelint-config@npm:1.1.1"
+"@dg-scripts/stylelint-config@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/stylelint-config@npm:1.1.2"
   dependencies:
-    stylelint-config-bod: ^5.3.10
+    stylelint-config-bod: ^5.3.11
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
   peerDependencies:
     prettier: ^2.4.0
     stylelint: ^13.13.0
-  checksum: a0611f2a358c05fcfce5bcf42048c40cc15bf89118ae06b9066fdbada8d9fc5f767fe965c371f7b170ae092c6f01af49d3484311620e2238a6acd1b772dc49f2
+  checksum: fdfc538d77037ddbb7a7eb9efa689c08f2221dc197e03b2adc32ec749d0f661a1e4b7becec06500e8cc8e150b13ad0ccaf7f6ae2f35dbe5e8182676e693c463c
   languageName: node
   linkType: hard
 
@@ -7684,7 +7684,7 @@ __metadata:
   resolution: "create-bod-app@workspace:."
   dependencies:
     "@dg-scripts/eslint-config": ^1.1.1
-    "@dg-scripts/stylelint-config": ^1.1.1
+    "@dg-scripts/stylelint-config": ^1.1.2
     "@types/jest": ^27.0.2
     "@types/node": ^16.9.4
     "@types/node-fetch": ^2.5.12
@@ -20260,7 +20260,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@^5.3.10, stylelint-config-bod@^5.3.11, stylelint-config-bod@workspace:packages/stylelint-config-bod":
+"stylelint-config-bod@^5.3.11, stylelint-config-bod@workspace:packages/stylelint-config-bod":
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
