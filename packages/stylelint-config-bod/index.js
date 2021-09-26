@@ -4,4 +4,19 @@ module.exports = {
     'stylelint-config-recess-order',
     'stylelint-a11y/recommended',
   ],
+  rules: {
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'tailwind',
+          'apply',
+          'layer',
+          'variants',
+          'responsive',
+          'screen',
+        ],
+      },
+    ],
+  },
 };
