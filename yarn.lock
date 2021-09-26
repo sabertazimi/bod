@@ -1721,78 +1721,78 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-basic@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/eslint-config-basic@npm:1.1.1"
+"@dg-scripts/eslint-config-basic@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/eslint-config-basic@npm:1.1.2"
   dependencies:
     eslint-config-standard: ^16.0.3
     eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-html: ^6.1.2
+    eslint-plugin-html: ^6.2.0
     eslint-plugin-import: ^2.24.2
-    eslint-plugin-jsonc: ^1.6.0
+    eslint-plugin-jsonc: ^1.7.0
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.0
     eslint-plugin-unicorn: ^36.0.0
-    eslint-plugin-yml: ^0.10.0
-    jsonc-eslint-parser: ^1.3.1
+    eslint-plugin-yml: ^0.10.1
+    jsonc-eslint-parser: ^1.4.1
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
     eslint: ^7.32.0
-  checksum: c7c7441d028aaa63af61193a2573f4a2c2a809f1d8bdb03d5bed91cafc9a66b61105a283cea3d0919fa19c8d32d38467f9758206e72c54759bcda4bfd960fc34
+  checksum: 855e0ee8e9a392080a718d7570e6bd25092bcd8876894a7fc78af22d0b9ebf83f554e7e25c56a63b218c8cec612e891a12e1c651adb0d042a6f8fefc055d39ae
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-react@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/eslint-config-react@npm:1.1.1"
+"@dg-scripts/eslint-config-react@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/eslint-config-react@npm:1.1.2"
   dependencies:
-    eslint-config-bod: ^5.3.10
+    eslint-config-bod: ^5.3.11
   peerDependencies:
     eslint: ^7.32.0
-  checksum: bb8dab98f158a3612ea33e11503ceae6926a853342f458876fdefb40eb8e1b879d412f22463929fd3595a7c58dc1f0fed15be4d89d7a958b9f543e331b878474
+  checksum: a498e21614106409da4dec3ebbc3452bfd487f0c31136f5c64662847c589cb5d0429d84d406fa4355c771f53578658c682b9938c6cdf68cb61fd52b1bb6a1afc
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-ts@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/eslint-config-ts@npm:1.1.1"
+"@dg-scripts/eslint-config-ts@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/eslint-config-ts@npm:1.1.2"
   dependencies:
-    "@dg-scripts/eslint-config-basic": ^1.1.1
+    "@dg-scripts/eslint-config-basic": ^1.1.2
     "@typescript-eslint/eslint-plugin": ^4.31.2
     "@typescript-eslint/parser": ^4.31.2
   peerDependencies:
     eslint: ^7.32.0
     typescript: ^4.0.0
-  checksum: 4d7ddf0310f4b59b7e440b5ab424059b0ac2c086dd4d4fc872aecba9faeb9987dc224601f6178c4e1e8003474a521ab89d869acd03f8fc7d1aaa4b27781b29be
+  checksum: 604cf0ac34fd2563af0b9f17b454a080917a5b59839e3ad9544a89dc3ed3c996b6b62db3fe734f06ffc5465e02837956bdbc946689bb0db37ba6eb94ba4d5058
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-vue@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/eslint-config-vue@npm:1.1.1"
+"@dg-scripts/eslint-config-vue@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/eslint-config-vue@npm:1.1.2"
   dependencies:
-    "@dg-scripts/eslint-config-ts": ^1.1.1
-    eslint-plugin-vue: ^7.17.0
+    "@dg-scripts/eslint-config-ts": ^1.1.2
+    eslint-plugin-vue: ^7.18.0
   peerDependencies:
     eslint: ^7.32.0
     typescript: ^4.0.0
-  checksum: 51c32b778c65318cd282e394c5c96b6064b3a0595aa6f56c36d185d4a0e4e8fa887b2775384ab03eb3f1971a0f2e838e1e76482e05baf74bd3c24adb4e64eefa
+  checksum: 3eb00e183985a90372b8f510de60cfb748ef815a16b5c080d084a6ffcb57ed366ad24dbb4e485ed68bab4283e299bd981774ddf99c34940677e3a1ab468f547f
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@dg-scripts/eslint-config@npm:1.1.1"
+"@dg-scripts/eslint-config@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@dg-scripts/eslint-config@npm:1.1.2"
   dependencies:
-    "@dg-scripts/eslint-config-react": ^1.1.1
-    "@dg-scripts/eslint-config-vue": ^1.1.1
+    "@dg-scripts/eslint-config-react": ^1.1.2
+    "@dg-scripts/eslint-config-vue": ^1.1.2
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
   peerDependencies:
     eslint: ^7.32.0
     prettier: ^2.4.0
     typescript: ^4.0.0
-  checksum: e92fab72f0ffd756f8b0e8f54113becfa4b961ad8054b06415a9d79fd633871cafbfe2f7120c338aa58cd62aff2d948d5edeaf9b86e2c375c77a4083281aec0e
+  checksum: 42e7310aa250602c6e0f171aa6dc2b34f6818cd9499f70efc5b84d2ce25723f69bcf639a881e0d79d6908b273bed62578d31c3c3ab7e9cf5bc77927dd94f2f02
   languageName: node
   linkType: hard
 
@@ -7683,7 +7683,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-bod-app@workspace:."
   dependencies:
-    "@dg-scripts/eslint-config": ^1.1.1
+    "@dg-scripts/eslint-config": ^1.1.2
     "@dg-scripts/stylelint-config": ^1.1.2
     "@types/jest": ^27.0.2
     "@types/node": ^16.9.4
@@ -9180,7 +9180,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@^5.3.10, eslint-config-bod@^5.3.11, eslint-config-bod@workspace:packages/eslint-config-bod":
+"eslint-config-bod@^5.3.11, eslint-config-bod@workspace:packages/eslint-config-bod":
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:
@@ -9292,7 +9292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-html@npm:^6.1.2":
+"eslint-plugin-html@npm:^6.2.0":
   version: 6.2.0
   resolution: "eslint-plugin-html@npm:6.2.0"
   dependencies:
@@ -9341,7 +9341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:^1.6.0":
+"eslint-plugin-jsonc@npm:^1.7.0":
   version: 1.7.0
   resolution: "eslint-plugin-jsonc@npm:1.7.0"
   dependencies:
@@ -9481,7 +9481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^7.17.0":
+"eslint-plugin-vue@npm:^7.18.0":
   version: 7.18.0
   resolution: "eslint-plugin-vue@npm:7.18.0"
   dependencies:
@@ -9495,7 +9495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-yml@npm:^0.10.0":
+"eslint-plugin-yml@npm:^0.10.1":
   version: 0.10.1
   resolution: "eslint-plugin-yml@npm:0.10.1"
   dependencies:
@@ -13377,7 +13377,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jsonc-eslint-parser@npm:^1.3.1, jsonc-eslint-parser@npm:^1.4.1":
+"jsonc-eslint-parser@npm:^1.4.1":
   version: 1.4.1
   resolution: "jsonc-eslint-parser@npm:1.4.1"
   dependencies:
