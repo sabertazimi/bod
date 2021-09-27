@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.12](https://github.com/sabertazimi/bod/compare/v5.3.11...v5.3.12) (2021-09-27)
+
+
+### Bug Fixes
+
+* **CRA:** bump all CRA deps to `next` version ([85b0ce4](https://github.com/sabertazimi/bod/commit/85b0ce4038fda271bb52522de29bdd83b12f5f00))
+* **stylelint-bod:** disable `at-rule-no-unknown` on tailwind directive ([be7bcc0](https://github.com/sabertazimi/bod/commit/be7bcc0b48673efeac6a94366641889dfc9118a9))
+
+
+
+
+
 ## [5.3.11](https://github.com/sabertazimi/bod/compare/v5.3.10...v5.3.11) (2021-09-25)
 
 
