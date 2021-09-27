@@ -9,7 +9,7 @@
     "dev": "ts-node ./src/bod.ts",
     "format": "prettier --write src/**/*.ts",
     "lint": "yarn lint:style && yarn lint:type-check",
-    "lint:style": "eslint --fix --ext .ts ./src",
+    "lint:style": "eslint --ext .ts ./src",
     "lint:type-check": "tsc --noEmit",
     "start": "yarn dev"
   },

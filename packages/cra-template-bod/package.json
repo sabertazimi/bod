@@ -31,7 +31,7 @@
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
     "lint": "yarn lint:style && yarn lint:type-check",
-    "lint:style": "stylelint --fix ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:style": "stylelint ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:type-check": "tsc --noEmit",
     "start": "yarn build && concurrently \"yarn:template:start\" \"yarn:watch\"",
     "test": "yarn build && CI=true yarn template:test",
