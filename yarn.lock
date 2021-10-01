@@ -4454,13 +4454,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/inquirer@npm:^8.1.2":
-  version: 8.1.2
-  resolution: "@types/inquirer@npm:8.1.2"
+"@types/inquirer@npm:^8.1.3":
+  version: 8.1.3
+  resolution: "@types/inquirer@npm:8.1.3"
   dependencies:
     "@types/through": "*"
     rxjs: ^7.2.0
-  checksum: 973728132759bbd158331938e9ae8bfca1fd75ebb77a6d77b749df108a8c7b463b6a242df016eaa240fe47f2252ae2e3fb0bf7530f6eeffbed9b9b373e61620d
+  checksum: b2f9914d1380e60a9a6d890abdd24078db63069a4bd974e77a00c5660bf5cab33a60fba6f02b56f1b2e6418e287e4697361b12cb85704b13e76f1a23c934d203
   languageName: node
   linkType: hard
 
@@ -6297,7 +6297,7 @@ __metadata:
   dependencies:
     "@types/cross-spawn": ^6.0.2
     "@types/envinfo": ^7.8.1
-    "@types/inquirer": ^8.1.2
+    "@types/inquirer": ^8.1.3
     "@types/rimraf": ^3.0.2
     chalk: ^4.1.2
     ci-info: ^3.2.0
