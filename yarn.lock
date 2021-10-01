@@ -7311,14 +7311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "concurrently@npm:6.2.1"
+"concurrently@npm:^6.2.2":
+  version: 6.2.2
+  resolution: "concurrently@npm:6.2.2"
   dependencies:
     chalk: ^4.1.0
     date-fns: ^2.16.1
     lodash: ^4.17.21
-    read-pkg: ^5.2.0
     rxjs: ^6.6.3
     spawn-command: ^0.0.2-1
     supports-color: ^8.1.0
@@ -7326,7 +7325,7 @@ __metadata:
     yargs: ^16.2.0
   bin:
     concurrently: bin/concurrently.js
-  checksum: 818ad5ac708df146948a2c4ac8c6a3845040454d13a4bab952ed02a52c167b5c04832d935b460e9549c239d6d05252132a94a8b2437ec9de0fff240b29225d14
+  checksum: 42e4eb4a0f72e7d20db48c256284ed8e25b52c72d152a60cd46a2257bc8bb92365494b82f6f342080484126319f612d4c76b5448ee2d3432d0cd8fa0e17b6dfe
   languageName: node
   linkType: hard
 
@@ -7685,7 +7684,7 @@ __metadata:
     chalk: ^4.1.2
     chokidar: ^3.5.2
     ci-info: ^3.2.0
-    concurrently: ^6.2.1
+    concurrently: ^6.2.2
     consola: ^2.15.3
     dotenv: ^10.0.0
     eslint: ^7.32.0
