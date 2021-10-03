@@ -9181,7 +9181,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:
-    "@babel/core": 7.15.5
+    "@babel/core": ^7.15.5
     "@babel/eslint-parser": ^7.15.7
     "@rushstack/eslint-patch": ^1.0.7
     "@typescript-eslint/eslint-plugin": ^4.32.0
