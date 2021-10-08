@@ -3878,7 +3878,7 @@ __metadata:
     babel-jest: ^27.2.4
     babel-loader: ^8.2.2
     babel-plugin-named-asset-import: ^1.0.0-next.fb6e6f70
-    babel-preset-react-app: ^11.0.0-next.81
+    babel-preset-react-app: ^11.0.0-next.91
     bfj: ^7.0.2
     browserslist: ^4.17.2
     camelcase: ^6.2.0
@@ -6100,9 +6100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-react-app@npm:^11.0.0-next.81":
-  version: 11.0.0-next.81
-  resolution: "babel-preset-react-app@npm:11.0.0-next.81"
+"babel-preset-react-app@npm:^11.0.0-next.91":
+  version: 11.0.0-next.91
+  resolution: "babel-preset-react-app@npm:11.0.0-next.91"
   dependencies:
     "@babel/core": ^7.14.6
     "@babel/plugin-proposal-class-properties": ^7.14.5
@@ -6120,7 +6120,7 @@ __metadata:
     "@babel/runtime": ^7.14.5
     babel-plugin-macros: ^3.1.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
-  checksum: d78d7e1f2f561c83ad4a7a3e5afc26187049dfc7cb76bb03d2359c9195cb603a22e5cc787d6e26829c681bad5f1ecaa6d4e87d15c4ed6d750e66fa130beb22da
+  checksum: c140e3b3b8d13dbaecc25437be6dcce13ecbda52d54f152967d13173041047d1ae7cc621b9c8b81051c9b220a1625ee121d63849a54f35e1a9fcd41f573e5fbb
   languageName: node
   linkType: hard
 
@@ -9187,7 +9187,7 @@ __metadata:
     "@rushstack/eslint-patch": ^1.0.7
     "@typescript-eslint/eslint-plugin": ^4.32.0
     "@typescript-eslint/parser": ^4.32.0
-    babel-preset-react-app: ^11.0.0-next.81
+    babel-preset-react-app: ^11.0.0-next.91
     confusing-browser-globals: ^2.0.0-next.fb6e6f70
     eslint-plugin-flowtype: ^6.1.0
     eslint-plugin-import: ^2.24.2
