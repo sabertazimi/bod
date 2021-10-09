@@ -3918,7 +3918,7 @@ __metadata:
     prompts: ^2.4.2
     react: ^17.0.2
     react-app-polyfill: ^3.0.0-next.81
-    react-dev-utils: ^12.0.0-next.37
+    react-dev-utils: ^12.0.0-next.47
     react-dom: ^17.0.2
     react-refresh: ^0.10.0
     resolve: ^1.20.0
@@ -5266,7 +5266,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"address@npm:1.1.2, address@npm:^1.0.1":
+"address@npm:1.1.2, address@npm:^1.0.1, address@npm:^1.1.2":
   version: 1.1.2
   resolution: "address@npm:1.1.2"
   checksum: d966deee6ab9a0f96ed1d25dc73e91a248f64479c91f9daeb15237b8e3c39a02faac4e6afe8987ef9e5aea60a1593cef5882b7456ab2e6196fc0229a93ec39c2
@@ -6432,7 +6432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.0, browserslist@npm:^4.16.6, browserslist@npm:^4.17.1, browserslist@npm:^4.17.3, browserslist@npm:^4.6.4":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.12.0, browserslist@npm:^4.14.5, browserslist@npm:^4.16.0, browserslist@npm:^4.16.5, browserslist@npm:^4.16.6, browserslist@npm:^4.17.1, browserslist@npm:^4.17.3, browserslist@npm:^4.6.4":
   version: 4.17.3
   resolution: "browserslist@npm:4.17.3"
   dependencies:
@@ -6695,7 +6695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.4.1":
+"chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -8523,7 +8523,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-port-alt@npm:1.1.6":
+"detect-port-alt@npm:1.1.6, detect-port-alt@npm:^1.1.6":
   version: 1.1.6
   resolution: "detect-port-alt@npm:1.1.6"
   dependencies:
@@ -10154,6 +10154,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"filesize@npm:^6.1.0":
+  version: 6.4.0
+  resolution: "filesize@npm:6.4.0"
+  checksum: 83619b0a656225e84ba9a73271b80091629c0e88c2936c1ebd36fff96fb0e2fbae0273c2caccd522c02bc1a32ad9eba869c28c6b2c36e06187d25fd298c3dfe8
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^4.0.0":
   version: 4.0.0
   resolution: "fill-range@npm:4.0.0"
@@ -10328,9 +10335,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fork-ts-checker-webpack-plugin@npm:6.0.5":
-  version: 6.0.5
-  resolution: "fork-ts-checker-webpack-plugin@npm:6.0.5"
+"fork-ts-checker-webpack-plugin@npm:^6.0.5":
+  version: 6.3.4
+  resolution: "fork-ts-checker-webpack-plugin@npm:6.3.4"
   dependencies:
     "@babel/code-frame": ^7.8.3
     "@types/json-schema": ^7.0.5
@@ -10339,12 +10346,23 @@ __metadata:
     cosmiconfig: ^6.0.0
     deepmerge: ^4.2.2
     fs-extra: ^9.0.0
+    glob: ^7.1.6
     memfs: ^3.1.2
     minimatch: ^3.0.4
     schema-utils: 2.7.0
     semver: ^7.3.2
     tapable: ^1.0.0
-  checksum: 9a3e86e0817ed3304025608d8a548d95b04fdd3bc49a7f1a17145698ba8ce80b550c636baf55c75dad593a20941a99c9b9f16410286ffbc6b85e55352919c8f8
+  peerDependencies:
+    eslint: ">= 6"
+    typescript: ">= 2.7"
+    vue-template-compiler: "*"
+    webpack: ">= 4"
+  peerDependenciesMeta:
+    eslint:
+      optional: true
+    vue-template-compiler:
+      optional: true
+  checksum: ad84ccbc990c086e86e988f556bd8a28f5a94e358f044889698d78b4d13d106f61da121081d2cdf58d84f972a2635826c035e5ef70138b92558cec7cf0c7f3a1
   languageName: node
   linkType: hard
 
@@ -10917,7 +10935,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gzip-size@npm:5.1.1":
+"gzip-size@npm:5.1.1, gzip-size@npm:^5.1.1":
   version: 5.1.1
   resolution: "gzip-size@npm:5.1.1"
   dependencies:
@@ -11633,13 +11651,6 @@ fsevents@^1.2.7:
   version: 8.0.1
   resolution: "immer@npm:8.0.1"
   checksum: 63d875c04882b862481a0a692816e5982975a47a57619698bc1bb52963ad3b624911991708b2b81a7af6fdac15083d408e43932d83a6a61216e5a4503efd4095
-  languageName: node
-  linkType: hard
-
-"immer@npm:8.0.4":
-  version: 8.0.4
-  resolution: "immer@npm:8.0.4"
-  checksum: 9d3b28df1ac5bf6918c611e71c15bdb136588c21a3431100448f21325fef9b055cc9a44fe8b023f0c5ecbc66a2ba38f403c9a67d581f613b49d0e4ff15564f79
   languageName: node
   linkType: hard
 
@@ -16350,7 +16361,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pkg-up@npm:3.1.0":
+"pkg-up@npm:3.1.0, pkg-up@npm:^3.1.0":
   version: 3.1.0
   resolution: "pkg-up@npm:3.1.0"
   dependencies:
@@ -17516,7 +17527,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prompts@npm:^2.0.1, prompts@npm:^2.4.1, prompts@npm:^2.4.2":
+"prompts@npm:^2.0.1, prompts@npm:^2.4.0, prompts@npm:^2.4.1, prompts@npm:^2.4.2":
   version: 2.4.2
   resolution: "prompts@npm:2.4.2"
   dependencies:
@@ -17833,35 +17844,35 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dev-utils@npm:^12.0.0-next.37":
-  version: 12.0.0-next.37
-  resolution: "react-dev-utils@npm:12.0.0-next.37"
+"react-dev-utils@npm:^12.0.0-next.47":
+  version: 12.0.0-next.47
+  resolution: "react-dev-utils@npm:12.0.0-next.47"
   dependencies:
     "@babel/code-frame": ^7.10.4
-    address: 1.1.2
-    browserslist: 4.14.2
-    chalk: 2.4.2
-    cross-spawn: 7.0.3
-    detect-port-alt: 1.1.6
-    escape-string-regexp: 2.0.0
-    filesize: 6.1.0
-    find-up: 4.1.0
-    fork-ts-checker-webpack-plugin: 6.0.5
-    global-modules: 2.0.0
-    globby: 11.0.1
-    gzip-size: 5.1.1
-    immer: 8.0.4
-    is-root: 2.1.0
-    loader-utils: 2.0.0
+    address: ^1.1.2
+    browserslist: ^4.16.5
+    chalk: ^2.4.2
+    cross-spawn: ^7.0.3
+    detect-port-alt: ^1.1.6
+    escape-string-regexp: ^2.0.0
+    filesize: ^6.1.0
+    find-up: ^4.1.0
+    fork-ts-checker-webpack-plugin: ^6.0.5
+    global-modules: ^2.0.0
+    globby: ^11.0.1
+    gzip-size: ^5.1.1
+    immer: ^9.0.6
+    is-root: ^2.1.0
+    loader-utils: ^2.0.0
     open: ^7.0.2
-    pkg-up: 3.1.0
-    prompts: 2.4.0
-    react-error-overlay: 7.0.0-next.44+25f516f8
-    recursive-readdir: 2.2.2
-    shell-quote: 1.7.2
-    strip-ansi: 6.0.0
-    text-table: 0.2.0
-  checksum: ba19bebeec1d2bf29157dd18395a8733a7cc3a0ae939f85d246d0819bda52cf6f6f876fdbe39880e12a519305c1f632b878a9e36a0daddc0206c4964c6582a71
+    pkg-up: ^3.1.0
+    prompts: ^2.4.0
+    react-error-overlay: 7.0.0-next.54+1465357b
+    recursive-readdir: ^2.2.2
+    shell-quote: ^1.7.2
+    strip-ansi: ^6.0.0
+    text-table: ^0.2.0
+  checksum: affdd7536ca5ab73720a8d54662286c2e946ca112abfe3701992b338cc8d3f39f7d48d702de10fa538c3eae7c328af6cd07dc4ad3f5864c8f3ea939e28f6c82d
   languageName: node
   linkType: hard
 
@@ -17878,10 +17889,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-error-overlay@npm:7.0.0-next.44+25f516f8":
-  version: 7.0.0-next.44
-  resolution: "react-error-overlay@npm:7.0.0-next.44"
-  checksum: dc4aeb06e59b3dec6f5a0b274bb56e26b4a856b0472972092fa45a6bf33e25728fdfb2a44aa63d03131ebab0361b00d54a17ca14d74bf9d063f2950c4e422e69
+"react-error-overlay@npm:7.0.0-next.54+1465357b":
+  version: 7.0.0-next.54
+  resolution: "react-error-overlay@npm:7.0.0-next.54"
+  checksum: 1d016364956e62b0585f4dd7d33510bb96ae968ac65ca71d481e344c625ff78a967a716495e77493e5c7bb9a8800f801af9b03959fbab6001d4d2822ed3a6789
   languageName: node
   linkType: hard
 
@@ -18298,7 +18309,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"recursive-readdir@npm:2.2.2":
+"recursive-readdir@npm:2.2.2, recursive-readdir@npm:^2.2.2":
   version: 2.2.2
   resolution: "recursive-readdir@npm:2.2.2"
   dependencies:
@@ -19409,7 +19420,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:1.7.2":
+"shell-quote@npm:1.7.2, shell-quote@npm:^1.7.2":
   version: 1.7.2
   resolution: "shell-quote@npm:1.7.2"
   checksum: efad426fb25d8a54d06363f1f45774aa9e195f62f14fa696d542b44bfe418ab41206448b63af18d726c62e099e66d9a3f4f44858b9ea2ce4b794b41b802672d1
