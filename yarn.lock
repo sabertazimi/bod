@@ -3780,7 +3780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reduxjs/toolkit@npm:~1.6.2":
+"@reduxjs/toolkit@npm:^1.6.2":
   version: 1.6.2
   resolution: "@reduxjs/toolkit@npm:1.6.2"
   dependencies:
@@ -7694,7 +7694,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cra-template-bod@workspace:packages/cra-template-bod"
   dependencies:
-    "@reduxjs/toolkit": ~1.6.2
+    "@reduxjs/toolkit": ^1.6.2
     "@sabertazimi/react-scripts": ^5.3.12
     "@testing-library/dom": ^8.7.2
     "@testing-library/jest-dom": ^5.14.1
