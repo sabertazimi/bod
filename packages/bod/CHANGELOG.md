@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency inquirer to ^8.2.0 ([#237](https://github.com/sabertazimi/bod/issues/237)) ([68809ae](https://github.com/sabertazimi/bod/commit/68809ae3ce2dbd319bb1318889098ed9a3d1a454))
+
+
+
+
+
 ## [5.3.12](https://github.com/sabertazimi/bod/compare/v5.3.11...v5.3.12) (2021-09-27)
 
 

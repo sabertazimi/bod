@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
+
+
+### Bug Fixes
+
+* **deps:** update babel monorepo to ^7.15.8 ([#223](https://github.com/sabertazimi/bod/issues/223)) ([708b295](https://github.com/sabertazimi/bod/commit/708b2957eac764af958446793670b3d3383df5dd))
+* **deps:** update dependency babel-preset-react-app to ^11.0.0-next.91 ([#224](https://github.com/sabertazimi/bod/issues/224)) ([1fe9bfc](https://github.com/sabertazimi/bod/commit/1fe9bfc796728510c27ca175abf36501e43533c1))
+* **deps:** update dependency confusing-browser-globals to ^2.0.0-next.fb6e6f70 ([#206](https://github.com/sabertazimi/bod/issues/206)) ([526d3cf](https://github.com/sabertazimi/bod/commit/526d3cf8b6f6dac25a4523e120f6da60326b4ea2))
+* **deps:** update dependency eslint-plugin-jest to ^24.5.0 ([#212](https://github.com/sabertazimi/bod/issues/212)) ([3d62e15](https://github.com/sabertazimi/bod/commit/3d62e15c70c6419b0198a39d167c60997fb6cd76))
+* **deps:** update dependency eslint-plugin-jest to ^24.5.2 ([#226](https://github.com/sabertazimi/bod/issues/226)) ([1d3d934](https://github.com/sabertazimi/bod/commit/1d3d934835b28880596998eea5459df7ad30fec3))
+* **deps:** update dependency eslint-plugin-jest to ^24.6.0 ([#241](https://github.com/sabertazimi/bod/issues/241)) ([bbbd794](https://github.com/sabertazimi/bod/commit/bbbd7948b308c3624628ab94297fff787ab979e5))
+* **deps:** update dependency eslint-plugin-jest to ^24.7.0 ([#244](https://github.com/sabertazimi/bod/issues/244)) ([e6d7545](https://github.com/sabertazimi/bod/commit/e6d75452d7767b00bca1e2b9aa725e204b2ab363))
+* **deps:** update dependency eslint-plugin-react to ^7.26.1 ([#207](https://github.com/sabertazimi/bod/issues/207)) ([ae1746f](https://github.com/sabertazimi/bod/commit/ae1746f5518934c1ed724ba513218affbd4a21a8))
+* **deps:** update typescript-eslint monorepo to ^4.32.0 ([#213](https://github.com/sabertazimi/bod/issues/213)) ([1286025](https://github.com/sabertazimi/bod/commit/128602518f3d2ce53dbd44a946c490481db327f9))
+* **deps:** update typescript-eslint monorepo to ^4.33.0 ([#239](https://github.com/sabertazimi/bod/issues/239)) ([52cab04](https://github.com/sabertazimi/bod/commit/52cab04415688d87467b7ba1bc1646bf610b4db9))
+* **eslint-bod:** bump eslint-plugin-jest to v25 ([#246](https://github.com/sabertazimi/bod/issues/246)) ([2b37b55](https://github.com/sabertazimi/bod/commit/2b37b55e0ae3a007258dda2a2e1386e86b3a2978))
+
+
+
+
+
 ## [5.3.12](https://github.com/sabertazimi/bod/compare/v5.3.11...v5.3.12) (2021-09-27)
 
 

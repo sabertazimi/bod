@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
+
+
+### Bug Fixes
+
+* **CRA-scripts:** add `autoprefixer` to deps list ([349990d](https://github.com/sabertazimi/bod/commit/349990dfedad9d29d5fa35c4826dcd4b7f8f5d40))
+* **CRA-utils:** remove package tree verification ([a571ace](https://github.com/sabertazimi/bod/commit/a571ace92adde3219c12dc7993c30547550dbb8c))
+* **deps:** update babel monorepo to ^7.15.8 ([#223](https://github.com/sabertazimi/bod/issues/223)) ([708b295](https://github.com/sabertazimi/bod/commit/708b2957eac764af958446793670b3d3383df5dd))
+* **deps:** update dependency babel-plugin-named-asset-import to ^1.0.0-next.fb6e6f70 ([#204](https://github.com/sabertazimi/bod/issues/204)) ([9293d3c](https://github.com/sabertazimi/bod/commit/9293d3c8ecd3a007db9974af0356b655eaf79ab8))
+* **deps:** update dependency babel-preset-react-app to ^11.0.0-next.91 ([#224](https://github.com/sabertazimi/bod/issues/224)) ([1fe9bfc](https://github.com/sabertazimi/bod/commit/1fe9bfc796728510c27ca175abf36501e43533c1))
+* **deps:** update dependency browserslist to ^4.17.2 ([#205](https://github.com/sabertazimi/bod/issues/205)) ([7f96c0a](https://github.com/sabertazimi/bod/commit/7f96c0a221d094af55c739f3add32f473d1489ec))
+* **deps:** update dependency browserslist to ^4.17.3 ([#225](https://github.com/sabertazimi/bod/issues/225)) ([3fa9064](https://github.com/sabertazimi/bod/commit/3fa9064399a63e2b2397feeac023ee6e07d70c8a))
+* **deps:** update dependency css-loader to ^6.4.0 ([#240](https://github.com/sabertazimi/bod/issues/240)) ([d3f2a7a](https://github.com/sabertazimi/bod/commit/d3f2a7aa21b7c000e62c0909306aba2fa4faec7f))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.1.1 ([#236](https://github.com/sabertazimi/bod/issues/236)) ([d5966be](https://github.com/sabertazimi/bod/commit/d5966bec4bd80a8bf43da86bd0604b492e8a693e))
+* **deps:** update dependency jest-watch-typeahead to ^0.6.5 ([#208](https://github.com/sabertazimi/bod/issues/208)) ([43ed7f0](https://github.com/sabertazimi/bod/commit/43ed7f07e01b495440d75615008b5a5490677413))
+* **deps:** update dependency jest-watch-typeahead to v1 ([#214](https://github.com/sabertazimi/bod/issues/214)) ([685c384](https://github.com/sabertazimi/bod/commit/685c384b3e3dd7b437552724d1bf0b17793a8c3a))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.2 ([#238](https://github.com/sabertazimi/bod/issues/238)) ([099c3a7](https://github.com/sabertazimi/bod/commit/099c3a71ab5d5e1a58d3f7678d3f9a99cb453879))
+* **deps:** update dependency postcss to ^8.3.9 ([#227](https://github.com/sabertazimi/bod/issues/227)) ([41cee94](https://github.com/sabertazimi/bod/commit/41cee9438339497b91a4d1e30366ff8c86984587))
+* **deps:** update dependency prompts to ^2.4.2 ([#228](https://github.com/sabertazimi/bod/issues/228)) ([02f7b5a](https://github.com/sabertazimi/bod/commit/02f7b5a8c7e584a1d5e953284b2869aeb23494bd))
+* **deps:** update dependency react-app-polyfill to ^3.0.0-next.91 ([#229](https://github.com/sabertazimi/bod/issues/229)) ([22a7aa9](https://github.com/sabertazimi/bod/commit/22a7aa91de0724bf6c9a44022ecc5cb2d4d9e153))
+* **deps:** update dependency react-dev-utils to ^12.0.0-next.47 ([#230](https://github.com/sabertazimi/bod/issues/230)) ([6057a8b](https://github.com/sabertazimi/bod/commit/6057a8b10453dfa68789cc3fe9e266ddeabe5468))
+* **deps:** update dependency webpack-dev-server to ^4.3.1 ([#232](https://github.com/sabertazimi/bod/issues/232)) ([be7ba87](https://github.com/sabertazimi/bod/commit/be7ba87a0e56d080a1820140b4102588829e709d))
+* **deps:** update jest monorepo to ^27.2.4 ([#209](https://github.com/sabertazimi/bod/issues/209)) ([4c21e48](https://github.com/sabertazimi/bod/commit/4c21e48372a897061bf8b8cee7210675282018b6))
+* **deps:** update jest monorepo to ^27.2.5 ([#233](https://github.com/sabertazimi/bod/issues/233)) ([242e5d2](https://github.com/sabertazimi/bod/commit/242e5d2d2b692c5770d4dae1fd534519ad2753a2))
+* **template-bod:** change paths for local template development ([#166](https://github.com/sabertazimi/bod/issues/166)) ([d40ba22](https://github.com/sabertazimi/bod/commit/d40ba2257ca3035bca114c581117839483858652)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+### Features
+
+* **CRA-css:** add `tailwind.css` support ([e35a050](https://github.com/sabertazimi/bod/commit/e35a050609fdbeff4bb70dd521fd10e99ded075b))
+
+
+
+
+
 ## [5.3.12](https://github.com/sabertazimi/bod/compare/v5.3.11...v5.3.12) (2021-09-27)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @reduxjs/toolkit to ~1.6.2 ([#235](https://github.com/sabertazimi/bod/issues/235)) ([bd938cd](https://github.com/sabertazimi/bod/commit/bd938cdcdce0b9a84ea083843c23f0ba17f7baf1))
+* **deps:** update dependency web-vitals to ^2.1.1 ([#231](https://github.com/sabertazimi/bod/issues/231)) ([ff62447](https://github.com/sabertazimi/bod/commit/ff62447134282124cf9ac990a6e1658bf249113c))
+* **template-bod:** change paths for local template development ([#166](https://github.com/sabertazimi/bod/issues/166)) ([d40ba22](https://github.com/sabertazimi/bod/commit/d40ba2257ca3035bca114c581117839483858652)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+* **template-bod:** widen `@reduxjs/toolkit` version ([296ede8](https://github.com/sabertazimi/bod/commit/296ede825fa58e874381b219e4ce9ccaf503463e))
+
+
+### Features
+
+* **CRA-css:** add `tailwind.css` support ([e35a050](https://github.com/sabertazimi/bod/commit/e35a050609fdbeff4bb70dd521fd10e99ded075b))
+
+
+
+
+
 ## [5.3.12](https://github.com/sabertazimi/bod/compare/v5.3.11...v5.3.12) (2021-09-27)
 
 **Note:** Version bump only for package cra-template-bod
