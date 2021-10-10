@@ -2,7 +2,7 @@
 
 exports[`App should render correctly (snapshot) 1`] = `
 <div
-  className="App"
+  className="text-center bg-white"
 >
   <header
     className="App-header"

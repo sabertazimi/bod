@@ -7,6 +7,7 @@ chokidar
     path.join(rootPath, 'public'),
     path.join(rootPath, 'src'),
     path.join(rootPath, '.env'),
+    path.join(rootPath, 'tailwind.config.js'),
     path.join(rootPath, 'tsconfig.json'),
     path.join(rootPath, 'README.md'),
     path.join(rootPath, '.gitignore'),

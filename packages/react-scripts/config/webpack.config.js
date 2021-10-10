@@ -140,6 +140,7 @@ module.exports = function (webpackEnv) {
             // https://github.com/facebook/create-react-app/issues/2677
             ident: 'postcss',
             plugins: [
+              'tailwindcss',
               'postcss-flexbugs-fixes',
               [
                 'postcss-preset-env',

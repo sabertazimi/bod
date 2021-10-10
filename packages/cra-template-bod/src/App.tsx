@@ -6,7 +6,7 @@ import logo from './logo.svg';
 
 const App = (): JSX.Element => {
   return (
-    <div className="App">
+    <div className="text-center bg-white">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Switch>
