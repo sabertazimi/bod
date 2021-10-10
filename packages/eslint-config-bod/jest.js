@@ -31,7 +31,7 @@ module.exports = {
         'jest/no-jasmine-globals': 'error',
         'jest/no-jest-import': 'error',
         'jest/no-mocks-import': 'error',
-        'jest/valid-describe': 'error',
+        'jest/valid-describe-callback': 'error',
         'jest/valid-expect': 'error',
         'jest/valid-expect-in-promise': 'error',
         'jest/valid-title': 'warn',
