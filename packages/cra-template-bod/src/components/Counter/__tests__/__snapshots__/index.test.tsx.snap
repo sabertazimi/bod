@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter should render correctly (snapshot) 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <button
+      aria-label="Decrement value"
+      className="button"
+      onClick={[MockFunction]}
+    >
+      -
+    </button>
+    <span
+      className="value"
+    >
+      0
+    </span>
+    <button
+      aria-label="Increment value"
+      className="button"
+      onClick={[MockFunction]}
+    >
+      +
+    </button>
+  </div>
+  <div
+    className="row"
+  >
+    <input
+      aria-label="Set increment amount"
+      className="textbox"
+      onChange={[Function]}
+      value="2"
+    />
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      Add Amount
+    </button>
+    <button
+      className="asyncButton"
+      onClick={[MockFunction]}
+    >
+      Add Async
+    </button>
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      Add If Odd
+    </button>
+  </div>
+</div>
+`;

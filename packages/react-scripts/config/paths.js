@@ -121,10 +121,10 @@ if (
   !reactScriptsLinked &&
   __dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1
 ) {
-  const templatePath = '../cra-template-bod/template';
+  const templatePath = '../cra-template-bod';
   module.exports = {
     dotenv: resolveOwn(`${templatePath}/.env`),
-    appPath: resolveApp('template'),
+    appPath: resolveApp('.'),
     appBuild: resolveOwn(path.join('../..', buildPath)),
     appPublic: resolveOwn(`${templatePath}/public`),
     appHtml: resolveOwn(`${templatePath}/public/index.html`),
