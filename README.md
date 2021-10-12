@@ -120,6 +120,11 @@ and start a `webpack-dev-server` on port `3000`.
 Contributions are greatly appreciated.
 Please fork this repository and open a pull request.
 
+## Credits
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+
 ## Contact
 
 [![Email](https://img.shields.io/badge/-Gmail-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sabertazimi@gmail.com)

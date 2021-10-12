@@ -1,0 +1,43 @@
+{
+  "name": "@dg-scripts/eslint-config-react",
+  "version": "1.2.0",
+  "description": "ESLint React configuration used by dg-scripts.",
+  "keywords": [
+    "dg-scripts",
+    "lint",
+    "linter",
+    "standard",
+    "eslint"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/eslint-config-react"
+  },
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod",
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || >=8.0.0"
+  },
+  "dependencies": {
+    "eslint-config-bod": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "react": "^17.0.2"
+  }
+}

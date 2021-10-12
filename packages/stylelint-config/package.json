@@ -1,0 +1,54 @@
+{
+  "name": "@dg-scripts/stylelint-config",
+  "version": "1.2.0",
+  "description": "StyleLint configuration used by dg-scripts.",
+  "keywords": [
+    "dg-scripts",
+    "a11y",
+    "css",
+    "lint",
+    "linter",
+    "order",
+    "idomatic-css",
+    "prettier",
+    "standard",
+    "stylelint",
+    "stylelint-a11y",
+    "stylelint-config",
+    "stylelint-order",
+    "stylelint-plugin",
+    "stylelint-prettier",
+    "stylelint-standard"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/stylelint-config"
+  },
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod",
+  "peerDependencies": {
+    "prettier": "^2.4.0",
+    "stylelint": "^13.13.0"
+  },
+  "dependencies": {
+    "stylelint-config-bod": "^5.3.12",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1"
+  }
+}

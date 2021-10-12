@@ -1721,10 +1721,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-basic@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/eslint-config-basic@npm:1.2.0"
+"@dg-scripts/eslint-config-basic@^1.2.0, @dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
+    eslint: ^7.32.0
     eslint-config-standard: ^16.0.3
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
@@ -1738,77 +1739,79 @@ __metadata:
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
-  checksum: 666c1fd6b6e48868d94d272fd807a11135ba4c18637454005d4f36e67466558e5ae2a15058933ef7750c39dce9cc031697902f004b6e665bd74e42e2ac7e0cf9
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
-"@dg-scripts/eslint-config-react@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/eslint-config-react@npm:1.2.0"
+"@dg-scripts/eslint-config-react@^1.2.0, @dg-scripts/eslint-config-react@workspace:packages/eslint-config-react":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    eslint-config-bod: ^5.4.0
+    eslint: ^7.32.0
+    eslint-config-bod: ^5.4.1
+    react: ^17.0.2
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
-  checksum: d25bf7453275fd942ebac28761698fe297db1aa56f8b61a67b74fe31e272a84b7271301ce694b032e0b4886db39947db5c64fab50a1642b644d3096f58a6769e
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
-"@dg-scripts/eslint-config-ts@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/eslint-config-ts@npm:1.2.0"
+"@dg-scripts/eslint-config-ts@^1.2.0, @dg-scripts/eslint-config-ts@workspace:packages/eslint-config-ts":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/eslint-config-ts@workspace:packages/eslint-config-ts"
   dependencies:
     "@dg-scripts/eslint-config-basic": ^1.2.0
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
+    eslint: ^7.32.0
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
     typescript: ^4.0.0
-  checksum: b25eac3be54605a83f896fdabab501b48b1349ec0a509d8a63a0449345c9cbf5ed9c82c3558827cbfcb2886b12a838d7afc74755dd07fb9b2d1f20f941d1331b
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
-"@dg-scripts/eslint-config-vue@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/eslint-config-vue@npm:1.2.0"
+"@dg-scripts/eslint-config-vue@^1.2.0, @dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
     "@dg-scripts/eslint-config-ts": ^1.2.0
+    eslint: ^7.32.0
     eslint-plugin-vue: ^7.19.1
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
     typescript: ^4.0.0
-  checksum: 52dfbe3ea25a28c6ca0a764a5962f21534a432d748058757f26d11898503e0a68a2a443ceae009bb02555c4e2c49d18e3f3776071ab4ab4b410a097895d0abfa
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
-"@dg-scripts/eslint-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/eslint-config@npm:1.2.0"
+"@dg-scripts/eslint-config@*, @dg-scripts/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/eslint-config@workspace:packages/eslint-config"
   dependencies:
     "@dg-scripts/eslint-config-react": ^1.2.0
     "@dg-scripts/eslint-config-vue": ^1.2.0
+    eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
+    prettier: ^2.4.1
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
     prettier: ^2.4.0
     typescript: ^4.0.0
-  checksum: 8e23cadd41a00aceffd916d71244c18b59d9cced9062a0cf97e12ca36866f9095dfcc0bee3cd6afa7ad6d976f88f0e529f54a1d3c7685e3bf3d67ec4990e35dc
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
-"@dg-scripts/stylelint-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@dg-scripts/stylelint-config@npm:1.2.0"
+"@dg-scripts/stylelint-config@*, @dg-scripts/stylelint-config@workspace:packages/stylelint-config":
+  version: 0.0.0-use.local
+  resolution: "@dg-scripts/stylelint-config@workspace:packages/stylelint-config"
   dependencies:
+    prettier: ^2.4.1
+    stylelint: ^13.13.1
     stylelint-config-bod: ^5.3.12
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
   peerDependencies:
     prettier: ^2.4.0
     stylelint: ^13.13.0
-  checksum: bc985be58a8e5416d499998d228b8bf6eca7ad29ca674b0de590636b41169141458bd1d4d923a2ef4a108fd74edfe688f051c02d14b38a29ef7d394929146a2f
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
 "@docsearch/css@npm:3.0.0-alpha.40":
   version: 3.0.0-alpha.40
@@ -7782,8 +7785,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-bod-app@workspace:."
   dependencies:
-    "@dg-scripts/eslint-config": ^1.2.0
-    "@dg-scripts/stylelint-config": ^1.2.0
+    "@dg-scripts/eslint-config": "*"
+    "@dg-scripts/stylelint-config": "*"
     "@types/jest": ^27.0.2
     "@types/node": ^16.9.4
     "@types/node-fetch": ^2.5.12
@@ -9331,7 +9334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@^5.4.0, eslint-config-bod@^5.4.1, eslint-config-bod@workspace:packages/eslint-config-bod":
+"eslint-config-bod@^5.4.1, eslint-config-bod@workspace:packages/eslint-config-bod":
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:

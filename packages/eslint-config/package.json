@@ -1,0 +1,50 @@
+{
+  "name": "@dg-scripts/eslint-config",
+  "version": "1.2.0",
+  "description": "ESLint configuration used by dg-scripts.",
+  "keywords": [
+    "dg-scripts",
+    "lint",
+    "linter",
+    "prettier",
+    "standard",
+    "eslint",
+    "eslint-prettier"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/eslint-config"
+  },
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "homepage": "https://github.com/sabertazimi/bod",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || >=8.0.0",
+    "prettier": "^2.4.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@dg-scripts/eslint-config-react": "^1.2.0",
+    "@dg-scripts/eslint-config-vue": "^1.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1"
+  }
+}
