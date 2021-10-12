@@ -1729,7 +1729,7 @@ __metadata:
     eslint-config-standard: ^16.0.3
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
-    eslint-plugin-import: ^2.24.2
+    eslint-plugin-import: ^2.25.1
     eslint-plugin-jsonc: ^1.7.0
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.0
@@ -9346,7 +9346,7 @@ __metadata:
     babel-preset-react-app: ^11.0.0-next.91
     confusing-browser-globals: ^2.0.0-next.91
     eslint-plugin-flowtype: ^6.1.0
-    eslint-plugin-import: ^2.24.2
+    eslint-plugin-import: ^2.25.1
     eslint-plugin-jest: ^25.0.5
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.26.1
@@ -9456,7 +9456,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.24.2":
+"eslint-plugin-import@npm:^2.25.1":
   version: 2.25.1
   resolution: "eslint-plugin-import@npm:2.25.1"
   dependencies:
