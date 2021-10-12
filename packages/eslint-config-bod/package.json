@@ -26,7 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "babel-preset-react-app": "^11.0.0-next.91",
-    "confusing-browser-globals": "^2.0.0-next.fb6e6f70",
+    "confusing-browser-globals": "^2.0.0-next.91",
     "eslint-plugin-flowtype": "^6.1.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^25.0.5",

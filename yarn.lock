@@ -7460,7 +7460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"confusing-browser-globals@npm:^2.0.0-next.fb6e6f70":
+"confusing-browser-globals@npm:^2.0.0-next.91":
   version: 2.0.0-next.fb6e6f70
   resolution: "confusing-browser-globals@npm:2.0.0-next.fb6e6f70"
   checksum: 8be5a9745daec343bdd70ad586e21f486dd58e440449cda460637de726c7cfe4acd9932807d1a689a255e8bc6fb805155b489a0e1e2644effeabbe8db68e9e1b
@@ -9341,7 +9341,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
     babel-preset-react-app: ^11.0.0-next.91
-    confusing-browser-globals: ^2.0.0-next.fb6e6f70
+    confusing-browser-globals: ^2.0.0-next.91
     eslint-plugin-flowtype: ^6.1.0
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jest: ^25.0.5
