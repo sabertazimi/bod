@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.1](https://github.com/sabertazimi/bod/compare/v5.4.0...v5.4.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps:** bump `[@typescript-eslint](https://github.com/typescript-eslint)` to v5 ([99e3268](https://github.com/sabertazimi/bod/commit/99e3268f25f9c013e7c161281ad3176b22b87194))
+* **deps:** bump `confusing-browser-globals` to 2.0.0-next.91 ([52debb6](https://github.com/sabertazimi/bod/commit/52debb63e44a52ba8ac4142501863d3cca4406e2))
+* **deps:** bump babel-plugin-named-asset-import to 1.0.0-next.91 ([3855133](https://github.com/sabertazimi/bod/commit/38551339bd93049fee13ab80049093c801e0ad7e))
+* **deps:** update dependency eslint-plugin-jest to ^25.0.5 ([#245](https://github.com/sabertazimi/bod/issues/245)) ([800747a](https://github.com/sabertazimi/bod/commit/800747a6c5fca7ebf18664ce1079451639cd6978))
+
+
+
+
+
 # [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
 
 

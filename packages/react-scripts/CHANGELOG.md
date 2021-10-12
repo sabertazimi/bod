@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.1](https://github.com/sabertazimi/bod/compare/v5.4.0...v5.4.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps:** bump babel-plugin-named-asset-import to 1.0.0-next.91 ([3855133](https://github.com/sabertazimi/bod/commit/38551339bd93049fee13ab80049093c801e0ad7e))
+
+
+
+
+
 # [5.4.0](https://github.com/sabertazimi/bod/compare/v5.3.12...v5.4.0) (2021-10-10)
 
 

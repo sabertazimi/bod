@@ -3877,7 +3877,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sabertazimi/react-scripts@^5.4.0, @sabertazimi/react-scripts@workspace:packages/react-scripts":
+"@sabertazimi/react-scripts@^5.4.1, @sabertazimi/react-scripts@workspace:packages/react-scripts":
   version: 0.0.0-use.local
   resolution: "@sabertazimi/react-scripts@workspace:packages/react-scripts"
   dependencies:
@@ -3898,7 +3898,7 @@ __metadata:
     dotenv: ^10.0.0
     dotenv-expand: ^5.1.0
     eslint: ^7.32.0
-    eslint-config-bod: ^5.4.0
+    eslint-config-bod: ^5.4.1
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     eslint-webpack-plugin: ^3.0.1
@@ -3930,7 +3930,7 @@ __metadata:
     source-map-loader: ^3.0.0
     style-loader: ^3.3.0
     stylelint: ^13.13.1
-    stylelint-config-bod: ^5.4.0
+    stylelint-config-bod: ^5.4.1
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
     stylelint-webpack-plugin: ^3.0.1
@@ -7756,7 +7756,7 @@ __metadata:
   resolution: "cra-template-bod@workspace:packages/cra-template-bod"
   dependencies:
     "@reduxjs/toolkit": ^1.6.2
-    "@sabertazimi/react-scripts": ^5.4.0
+    "@sabertazimi/react-scripts": ^5.4.1
     "@testing-library/dom": ^8.7.2
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.2
@@ -9331,7 +9331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@^5.4.0, eslint-config-bod@workspace:packages/eslint-config-bod":
+"eslint-config-bod@^5.4.0, eslint-config-bod@^5.4.1, eslint-config-bod@workspace:packages/eslint-config-bod":
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:
@@ -20629,7 +20629,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@^5.3.12, stylelint-config-bod@^5.4.0, stylelint-config-bod@workspace:packages/stylelint-config-bod":
+"stylelint-config-bod@^5.3.12, stylelint-config-bod@^5.4.1, stylelint-config-bod@workspace:packages/stylelint-config-bod":
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
