@@ -1721,7 +1721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/eslint-config-basic@^1.2.0, @dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic":
+"@dg-scripts/eslint-config-basic@^5.5.0, @dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic":
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
@@ -1742,23 +1742,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dg-scripts/eslint-config-react@^1.2.0, @dg-scripts/eslint-config-react@workspace:packages/eslint-config-react":
+"@dg-scripts/eslint-config-react@^5.5.0, @dg-scripts/eslint-config-react@workspace:packages/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
     eslint: ^7.32.0
-    eslint-config-bod: ^5.4.1
+    eslint-config-bod: ^5.5.0
     react: ^17.0.2
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
   languageName: unknown
   linkType: soft
 
-"@dg-scripts/eslint-config-ts@^1.2.0, @dg-scripts/eslint-config-ts@workspace:packages/eslint-config-ts":
+"@dg-scripts/eslint-config-ts@^5.5.0, @dg-scripts/eslint-config-ts@workspace:packages/eslint-config-ts":
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-ts@workspace:packages/eslint-config-ts"
   dependencies:
-    "@dg-scripts/eslint-config-basic": ^1.2.0
+    "@dg-scripts/eslint-config-basic": ^5.5.0
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^7.32.0
@@ -1768,11 +1768,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dg-scripts/eslint-config-vue@^1.2.0, @dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue":
+"@dg-scripts/eslint-config-vue@^5.5.0, @dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue":
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
-    "@dg-scripts/eslint-config-ts": ^1.2.0
+    "@dg-scripts/eslint-config-ts": ^5.5.0
     eslint: ^7.32.0
     eslint-plugin-vue: ^7.19.1
   peerDependencies:
@@ -1785,8 +1785,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config@workspace:packages/eslint-config"
   dependencies:
-    "@dg-scripts/eslint-config-react": ^1.2.0
-    "@dg-scripts/eslint-config-vue": ^1.2.0
+    "@dg-scripts/eslint-config-react": ^5.5.0
+    "@dg-scripts/eslint-config-vue": ^5.5.0
     eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
@@ -1804,7 +1804,7 @@ __metadata:
   dependencies:
     prettier: ^2.4.1
     stylelint: ^13.13.1
-    stylelint-config-bod: ^5.3.12
+    stylelint-config-bod: ^5.5.0
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
   peerDependencies:
@@ -3880,7 +3880,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sabertazimi/react-scripts@^5.4.1, @sabertazimi/react-scripts@workspace:packages/react-scripts":
+"@sabertazimi/react-scripts@^5.5.0, @sabertazimi/react-scripts@workspace:packages/react-scripts":
   version: 0.0.0-use.local
   resolution: "@sabertazimi/react-scripts@workspace:packages/react-scripts"
   dependencies:
@@ -3901,7 +3901,7 @@ __metadata:
     dotenv: ^10.0.0
     dotenv-expand: ^5.1.0
     eslint: ^7.32.0
-    eslint-config-bod: ^5.4.1
+    eslint-config-bod: ^5.5.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     eslint-webpack-plugin: ^3.0.1
@@ -3933,7 +3933,7 @@ __metadata:
     source-map-loader: ^3.0.0
     style-loader: ^3.3.0
     stylelint: ^13.13.1
-    stylelint-config-bod: ^5.4.1
+    stylelint-config-bod: ^5.5.0
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
     stylelint-webpack-plugin: ^3.0.1
@@ -7759,7 +7759,7 @@ __metadata:
   resolution: "cra-template-bod@workspace:packages/cra-template-bod"
   dependencies:
     "@reduxjs/toolkit": ^1.6.2
-    "@sabertazimi/react-scripts": ^5.4.1
+    "@sabertazimi/react-scripts": ^5.5.0
     "@testing-library/dom": ^8.7.2
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.2
@@ -9334,7 +9334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bod@^5.4.1, eslint-config-bod@workspace:packages/eslint-config-bod":
+"eslint-config-bod@^5.5.0, eslint-config-bod@workspace:packages/eslint-config-bod":
   version: 0.0.0-use.local
   resolution: "eslint-config-bod@workspace:packages/eslint-config-bod"
   dependencies:
@@ -20632,7 +20632,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@^5.3.12, stylelint-config-bod@^5.4.1, stylelint-config-bod@workspace:packages/stylelint-config-bod":
+"stylelint-config-bod@^5.5.0, stylelint-config-bod@workspace:packages/stylelint-config-bod":
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
