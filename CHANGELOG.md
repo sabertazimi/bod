@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://github.com/sabertazimi/bod/compare/v5.5.0...v5.5.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **eslint-bod:** widen `eslint` peerDependencies to v8 ([53e217a](https://github.com/sabertazimi/bod/commit/53e217aeb15a623b44bcde9791a207aae04ceabd))
+
+
+
+
+
 # [5.5.0](https://github.com/sabertazimi/bod/compare/v5.4.1...v5.5.0) (2021-10-12)
 
 
