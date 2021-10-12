@@ -26,10 +26,10 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
-      - name: Installation
+      - name: Install dependencies
         run: |
           yarn
-      - name: Linting
+      - name: Run lint testing
         run: |
           yarn lint
 
@@ -53,18 +53,18 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
-      - name: Installation
+      - name: Install dependencies
         run: |
           yarn
       - name: Choose package manager for CRA
         if: ${{ matrix.package-manager == 'yarn' }}
         run: |
           echo Choose package manager for CRA v5
-      - name: Unit testing
+      - name: Run unit testing
         run: |
           yarn test:all
           yarn badge
-      - name: Coverage report action
+      - name: Run coverage report action
         uses: codecov/codecov-action@v2
         if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
       - name: Archive production artifacts
@@ -100,14 +100,14 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
-      - name: Installation
+      - name: Install dependencies
         run: |
           yarn
       - name: Choose package manager for CRA
         if: ${{ matrix.package-manager == 'yarn' }}
         run: |
           echo Choose package manager for CRA v5
-      - name: E2E testing
+      - name: Run E2E testing
         run: |
           yarn e2e
       - name: Archive production artifacts
@@ -133,7 +133,7 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
-      - name: Installation
+      - name: Install dependencies
         run: |
           yarn
       - name: Build documentation
@@ -173,10 +173,10 @@ jobs:
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
-      - name: Installation
+      - name: Install dependencies
         run: |
           yarn
-      - name: Building work
+      - name: Build packages
         run: |
           yarn build
       - name: Publish to NPM registry
