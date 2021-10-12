@@ -9353,7 +9353,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-testing-library: ^4.12.4
   peerDependencies:
-    eslint: ^7.30.0
+    eslint: ^7.32.0 || >=8.0.0
   languageName: unknown
   linkType: soft
 
