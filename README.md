@@ -122,8 +122,8 @@ Please fork this repository and open a pull request.
 
 ## Credits
 
-- [create-react-app](https://github.com/facebook/create-react-app)
-- [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+- [create-react-app](https://github.com/facebook/create-react-app).
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ## Contact
 
