@@ -1,11 +1,6 @@
 name: Canary Release
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'packages/**'
+on: workflow_dispatch
 
 jobs:
   publish:
