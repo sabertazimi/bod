@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
+
+
+### Bug Fixes
+
+* **deps:** bump @rushstack/eslint-patch to 1.0.8 ([507054b](https://github.com/sabertazimi/bod/commit/507054bf9b2b7881c88d9356268bf0202253b102))
+* **deps:** bump eslint-plugin-import to 2.25.x ([4056231](https://github.com/sabertazimi/bod/commit/4056231e1191ddb210fe2ca08b4e6ca88f44a1be)), closes [#247](https://github.com/sabertazimi/bod/issues/247) [#242](https://github.com/sabertazimi/bod/issues/242)
+* **deps:** bump eslint-plugin-jest to 25.0.6 ([6a8bf88](https://github.com/sabertazimi/bod/commit/6a8bf88befbabbd5a9e0b7fe88d9363194b9f742)), closes [#247](https://github.com/sabertazimi/bod/issues/247) [#242](https://github.com/sabertazimi/bod/issues/242)
+* **deps:** bump eslint-plugin-unicorn to v37 ([4ec237c](https://github.com/sabertazimi/bod/commit/4ec237ce06d18dc7b562c9b9c4256ac339bfc371))
+* **eslint-bod:** drop `eslint-plugin-flowtype` support ([4e2a2e4](https://github.com/sabertazimi/bod/commit/4e2a2e43cbe9c5fe6fb8d9c7861b13b2e6febbc9)), closes [#247](https://github.com/sabertazimi/bod/issues/247) [#242](https://github.com/sabertazimi/bod/issues/242)
+* **eslint-bod:** rectify ESLint Babel preset resolution ([1d6300f](https://github.com/sabertazimi/bod/commit/1d6300f655a1f555df5c82bd0ea57210290f4e9c))
+
+
+
+
+
 ## [5.5.1](https://github.com/sabertazimi/bod/compare/v5.5.0...v5.5.1) (2021-10-12)
 
 
