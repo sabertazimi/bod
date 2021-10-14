@@ -3861,10 +3861,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/eslint-patch@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@rushstack/eslint-patch@npm:1.0.7"
-  checksum: 2b013723a2ea9c2f2ebbdef5f085d70ad5cf4a88c6d429f949fca05939c93b49a6d84c9582cd03b01e27956eedfa903ed7b92741f588cd043ab46ef134d6e719
+"@rushstack/eslint-patch@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "@rushstack/eslint-patch@npm:1.0.8"
+  checksum: e1c4e2d8317db712a4f24510eacb98c13fd18632eaffae0096a359ab02021ce44c35f614d489741e57f4b0f2d8b11b4b95cdc00aa57753d840d0ba512a5c609e
   languageName: node
   linkType: hard
 
@@ -9340,7 +9340,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.15.8
     "@babel/eslint-parser": ^7.15.8
-    "@rushstack/eslint-patch": ^1.0.7
+    "@rushstack/eslint-patch": ^1.0.8
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
     babel-preset-react-app: ^11.0.0-next.91
