@@ -5,7 +5,9 @@
     "build:docs": "docusaurus build && yarn build:post",
     "build:post": "cp -fr build ../",
     "clear": "docusaurus clear",
-    "lint": "eslint --ext .ts,.tsx ./src && stylelint ./src/**/*.css",
+    "lint": "yarn lint:style && yarn lint:type-check",
+    "lint:style": "eslint --ext .ts,.tsx ./src && stylelint ./src/**/*.css",
+    "lint:type-check": "tsc --noEmit",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },
