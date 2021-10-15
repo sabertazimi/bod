@@ -4661,21 +4661,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-helmet@npm:*":
+"@types/react-helmet@npm:*, @types/react-helmet@npm:^6.1.3":
   version: 6.1.4
   resolution: "@types/react-helmet@npm:6.1.4"
   dependencies:
     "@types/react": "*"
   checksum: 62f506297de26c39fc37383dccd7630253a66b2e3eb94d81ea9e6cd615fba57aee5453f6acd4b3e88dc0363f74a29305c483404899d1554f08bee8f4e716aa81
-  languageName: node
-  linkType: hard
-
-"@types/react-helmet@npm:^6.1.3":
-  version: 6.1.3
-  resolution: "@types/react-helmet@npm:6.1.3"
-  dependencies:
-    "@types/react": "*"
-  checksum: 3d9f04fe42997e6f42333c43d13bc7de84b7e14d126d054f4e968098fcced33470dfcb6d8fab0adf73226b08f6ff49730b81b2e7f3979ceb184efef7de632abd
   languageName: node
   linkType: hard
 
@@ -4742,14 +4733,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.27":
-  version: 17.0.27
-  resolution: "@types/react@npm:17.0.27"
+"@types/react@npm:*, @types/react@npm:^17.0.30":
+  version: 17.0.30
+  resolution: "@types/react@npm:17.0.30"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3a1147d963c16dc9bbea5afb20c4be94f2389cf4eca4c5fbe9b02f3406bd9957602c0459ea017c95f8c3d523221f572e8bd842f94654835776d4c2923357f9dc
+  checksum: e3aaac1b8fda6e3622b75db0bd7d8dc412c2f2b77a00afdd32cae8c71fb0b1ca6926ab1fbe1c536dd51d96c0ba372738993837a8df1637637aaab7b86e421b7f
   languageName: node
   linkType: hard
 
@@ -6476,7 +6467,7 @@ __metadata:
     "@mdx-js/react": ^1.6.22
     "@svgr/webpack": ^5.5.0
     "@tsconfig/docusaurus": ^1.0.4
-    "@types/react": ^17.0.27
+    "@types/react": ^17.0.30
     "@types/react-helmet": ^6.1.3
     "@types/react-router-dom": ^5.3.1
     clsx: ^1.1.1
@@ -7829,17 +7820,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.18.0":
+"core-js@npm:^3.18.0, core-js@npm:^3.6.5":
   version: 3.18.3
   resolution: "core-js@npm:3.18.3"
   checksum: 4aa5017992c18b0a09ded6c7dbf3c3880b27b6ade97a522dba332f52381466978d441317e5aad49f0684e9241aecc450e3e72c550ddaccfc9fb1e69c5908e53c
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^3.6.5":
-  version: 3.18.2
-  resolution: "core-js@npm:3.18.2"
-  checksum: 4a09d170d8135a1f1c458f6aef786ba18bfb81fa6dab106561dd5379b9d175400ed012c2a30eee921b6e5bd53842ce32fb02ffd57d2984e157de622d9439dc5c
   languageName: node
   linkType: hard
 
@@ -7905,7 +7889,7 @@ __metadata:
     "@testing-library/user-event": ^13.3.0
     "@types/jest": ^27.0.2
     "@types/node": ^16.9.4
-    "@types/react": ^17.0.27
+    "@types/react": ^17.0.30
     "@types/react-dom": ^17.0.9
     "@types/react-redux": ^7.1.19
     "@types/react-router-dom": ^5.3.1
