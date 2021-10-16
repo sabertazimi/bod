@@ -16,6 +16,9 @@
     "index.js",
     "jest.js"
   ],
+  "scripts": {
+    "lint": "eslint . --config=index.js --ext .js"
+  },
   "peerDependencies": {
     "eslint": "^7.32.0"
   },
