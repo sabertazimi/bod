@@ -9457,7 +9457,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
-    eslint-plugin-testing-library: ^4.12.4
+    eslint-plugin-testing-library: ^5.0.0-alpha.9
   peerDependencies:
     eslint: ^7.32.0 || >=8.0.0
   languageName: unknown
@@ -9695,14 +9695,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^4.12.4":
-  version: 4.12.4
-  resolution: "eslint-plugin-testing-library@npm:4.12.4"
+"eslint-plugin-testing-library@npm:^5.0.0-alpha.9":
+  version: 5.0.0-alpha.9
+  resolution: "eslint-plugin-testing-library@npm:5.0.0-alpha.9"
   dependencies:
     "@typescript-eslint/experimental-utils": ^4.30.0
   peerDependencies:
     eslint: ^7.5.0
-  checksum: 8b4c65b22dd3c2bdcd51db590b0c931b9ae8f6a23b4008047e78fa3b9dde30bfc58e3539a9788a07183d23cbf40ec49f892af9ba0fc4f0d850c0eb81560627b7
+  checksum: 01f190d9bb9a832eb64374430aa6be3bb67c6e94ff0b089678f669a229f08eb0974bb32d72200010902fa9ba592c8bd14d0ef46cd7bbcdafc453b74e6daed876
   languageName: node
   linkType: hard
 
