@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
+
+**Note:** Version bump only for package @sabertazimi/cra-template-typescript
+
+
+
+
+
 ## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
 
 **Note:** Version bump only for package @sabertazimi/cra-template-typescript

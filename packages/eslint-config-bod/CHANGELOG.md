@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
+
+
+### Bug Fixes
+
+* **deps-eslint:** bump eslint-plugin-jest to 25.2.1 ([e9c6f70](https://github.com/sabertazimi/bod/commit/e9c6f700aaf4729326814ef831fc1c33709bba91)), closes [#247](https://github.com/sabertazimi/bod/issues/247) [#242](https://github.com/sabertazimi/bod/issues/242)
+* **deps:** update dependency eslint to v8 ([#242](https://github.com/sabertazimi/bod/issues/242)) ([f8e0034](https://github.com/sabertazimi/bod/commit/f8e0034b58221a7afa385c11214814882769e513))
+* **eslint-bod:** remove redundant statement ([ebb2c91](https://github.com/sabertazimi/bod/commit/ebb2c9153cda6b816c437a6dad394c7853b48340))
+* **eslint-bod:** temporary remove eslint-plugin-testing-library ([36b835f](https://github.com/sabertazimi/bod/commit/36b835fe3442226f14aa74cf38eb737a127f8048)), closes [testing-library/eslint-plugin-testing-library#462](https://github.com/testing-library/eslint-plugin-testing-library/issues/462)
+* **eslint-deps:** bump eslint-plugin-testing-library to v5.0.0-alpha ([39d7496](https://github.com/sabertazimi/bod/commit/39d74965256c1a1c767941529dfde4d00d2a9a10))
+
+
+
+
+
 ## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
 
 

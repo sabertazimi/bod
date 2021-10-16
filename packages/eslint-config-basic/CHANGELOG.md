@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint to v8 ([#242](https://github.com/sabertazimi/bod/issues/242)) ([f8e0034](https://github.com/sabertazimi/bod/commit/f8e0034b58221a7afa385c11214814882769e513))
+
+
+
+
+
 ## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
 
 

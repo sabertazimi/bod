@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency web-vitals to ^2.1.2 ([#257](https://github.com/sabertazimi/bod/issues/257)) ([e59336f](https://github.com/sabertazimi/bod/commit/e59336f76bf05726d5dc5993986322a5f1f37409))
+
+
+
+
+
 ## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
 
 **Note:** Version bump only for package cra-template-bod

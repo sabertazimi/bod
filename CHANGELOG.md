@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
+
+
+### Bug Fixes
+
+* **deps-eslint:** bump eslint-plugin-jest to 25.2.1 ([e9c6f70](https://github.com/sabertazimi/bod/commit/e9c6f700aaf4729326814ef831fc1c33709bba91)), closes [#247](https://github.com/sabertazimi/bod/issues/247) [#242](https://github.com/sabertazimi/bod/issues/242)
+* **deps:** update dependency browserslist to ^4.17.4 ([#255](https://github.com/sabertazimi/bod/issues/255)) ([643718e](https://github.com/sabertazimi/bod/commit/643718e2b12542a8578f74081c3942feb92e16ce))
+* **deps:** update dependency eslint to v8 ([#242](https://github.com/sabertazimi/bod/issues/242)) ([f8e0034](https://github.com/sabertazimi/bod/commit/f8e0034b58221a7afa385c11214814882769e513))
+* **deps:** update dependency html-webpack-plugin to ^5.4.0 ([#260](https://github.com/sabertazimi/bod/issues/260)) ([7780664](https://github.com/sabertazimi/bod/commit/77806647413c647d55dd7b5c1b1da45421bde0d0))
+* **deps:** update dependency postcss-loader to ^6.2.0 ([#261](https://github.com/sabertazimi/bod/issues/261)) ([43d2e49](https://github.com/sabertazimi/bod/commit/43d2e4902f24afe201ea568160a055bdcfb08473))
+* **deps:** update dependency sass-loader to ^12.2.0 ([#262](https://github.com/sabertazimi/bod/issues/262)) ([2c13c2d](https://github.com/sabertazimi/bod/commit/2c13c2d8d621098b5f457822d6c5a690de25d797))
+* **deps:** update dependency stylelint-config-prettier to v9 ([#264](https://github.com/sabertazimi/bod/issues/264)) ([00de7ad](https://github.com/sabertazimi/bod/commit/00de7ad2e88c8d5367d7fe5815dd2f844577d7b1))
+* **deps:** update dependency tailwindcss to ^2.2.17 ([#256](https://github.com/sabertazimi/bod/issues/256)) ([219c75a](https://github.com/sabertazimi/bod/commit/219c75a408badc50fa9ea82f8322f50aef1e1b04))
+* **deps:** update dependency web-vitals to ^2.1.2 ([#257](https://github.com/sabertazimi/bod/issues/257)) ([e59336f](https://github.com/sabertazimi/bod/commit/e59336f76bf05726d5dc5993986322a5f1f37409))
+* **deps:** update dependency webpack-bundle-analyzer to ^4.5.0 ([#263](https://github.com/sabertazimi/bod/issues/263)) ([3b2df55](https://github.com/sabertazimi/bod/commit/3b2df55aac71434785c1f888db2f5cf58d4abb88))
+* **eslint-bod:** remove redundant statement ([ebb2c91](https://github.com/sabertazimi/bod/commit/ebb2c9153cda6b816c437a6dad394c7853b48340))
+* **eslint-bod:** temporary remove eslint-plugin-testing-library ([36b835f](https://github.com/sabertazimi/bod/commit/36b835fe3442226f14aa74cf38eb737a127f8048)), closes [testing-library/eslint-plugin-testing-library#462](https://github.com/testing-library/eslint-plugin-testing-library/issues/462)
+* **eslint-deps:** bump eslint-plugin-testing-library to v5.0.0-alpha ([39d7496](https://github.com/sabertazimi/bod/commit/39d74965256c1a1c767941529dfde4d00d2a9a10))
+
+
+
+
+
 ## [5.5.2](https://github.com/sabertazimi/bod/compare/v5.5.1...v5.5.2) (2021-10-14)
 
 
