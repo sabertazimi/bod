@@ -7900,7 +7900,7 @@ __metadata:
     react-router-dom: ^5.3.0
     react-test-renderer: ^17.0.2
     typescript: ^4.4.4
-    web-vitals: ^2.1.1
+    web-vitals: ^2.1.2
   languageName: unknown
   linkType: soft
 
@@ -22673,7 +22673,7 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^2.1.1":
+"web-vitals@npm:^2.1.2":
   version: 2.1.2
   resolution: "web-vitals@npm:2.1.2"
   checksum: 488c93a514504ad0a056d3afc41ef143494e5562e08175c0122f704ea3d3c08a1f62de445042ed51a1937d49bf868a50842e20066fe3dc99677937e5625ffa3e
