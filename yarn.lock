@@ -1738,7 +1738,7 @@ __metadata:
     jsonc-eslint-parser: ^1.4.1
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
   languageName: unknown
   linkType: soft
 
@@ -1750,7 +1750,7 @@ __metadata:
     eslint-config-bod: ^5.5.2
     react: ^17.0.2
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
   languageName: unknown
   linkType: soft
 
@@ -1763,7 +1763,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^7.32.0
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
     typescript: ^4.0.0
   languageName: unknown
   linkType: soft
@@ -1776,7 +1776,7 @@ __metadata:
     eslint: ^7.32.0
     eslint-plugin-vue: ^7.19.1
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
     typescript: ^4.0.0
   languageName: unknown
   linkType: soft
@@ -1792,7 +1792,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.4.1
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
     prettier: ^2.4.0
     typescript: ^4.0.0
   languageName: unknown
@@ -9459,7 +9459,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-testing-library: ^5.0.0-alpha.9
   peerDependencies:
-    eslint: ^7.32.0 || >=8.0.0
+    eslint: ^7.32.0
   languageName: unknown
   linkType: soft
 
