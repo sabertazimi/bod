@@ -42,9 +42,5 @@
     "@dg-scripts/eslint-config-vue": "^5.5.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "prettier": "^2.4.1"
   }
 }

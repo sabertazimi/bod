@@ -40,8 +40,5 @@
     "@dg-scripts/eslint-config-basic": "^5.5.2",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0"
   }
 }

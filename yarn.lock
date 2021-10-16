@@ -1725,7 +1725,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
-    eslint: ^7.32.0
     eslint-config-standard: ^16.0.3
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
@@ -1746,7 +1745,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    eslint: ^7.32.0
     eslint-config-bod: ^5.5.2
     react: ^17.0.2
   peerDependencies:
@@ -1761,7 +1759,6 @@ __metadata:
     "@dg-scripts/eslint-config-basic": ^5.5.2
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
-    eslint: ^7.32.0
   peerDependencies:
     eslint: ^7.32.0
     typescript: ^4.0.0
@@ -1773,7 +1770,6 @@ __metadata:
   resolution: "@dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
     "@dg-scripts/eslint-config-ts": ^5.5.2
-    eslint: ^7.32.0
     eslint-plugin-vue: ^7.19.1
   peerDependencies:
     eslint: ^7.32.0
@@ -1787,10 +1783,8 @@ __metadata:
   dependencies:
     "@dg-scripts/eslint-config-react": ^5.5.2
     "@dg-scripts/eslint-config-vue": ^5.5.2
-    eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
-    prettier: ^2.4.1
   peerDependencies:
     eslint: ^7.32.0
     prettier: ^2.4.0
