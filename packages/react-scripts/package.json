@@ -83,7 +83,7 @@
     "tailwindcss": "^2.2.17",
     "terser-webpack-plugin": "^5.2.4",
     "webpack": "^5.58.2",
-    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "^4.3.1",
     "webpack-manifest-plugin": "^4.0.2",
     "webpackbar": "^5.0.0-3",
