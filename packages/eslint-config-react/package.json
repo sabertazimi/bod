@@ -31,7 +31,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --config=index.js"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0 || ^8.0.0"
   },
   "dependencies": {
     "eslint-config-bod": "^5.5.2"
