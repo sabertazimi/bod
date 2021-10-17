@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
+
+
+### Bug Fixes
+
+* **eslint-bod:** enable eslint-plugin-testing-library again ([#266](https://github.com/sabertazimi/bod/issues/266)) ([9e6844f](https://github.com/sabertazimi/bod/commit/9e6844fac25af1990cc5b5bace01062fa0d3fd90))
+* **eslint-deps:** bump eslint-plugin-testing-library to 5.0.0-alpha.10 ([1dcbf64](https://github.com/sabertazimi/bod/commit/1dcbf64a98827527d3a7c81921b43c1ec34e1630))
+
+
+
+
+
 ## [5.5.3](https://github.com/sabertazimi/bod/compare/v5.5.2...v5.5.3) (2021-10-16)
 
 
