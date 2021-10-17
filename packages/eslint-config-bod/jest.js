@@ -13,7 +13,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 // and we try not to use "ERROR" level at all.
 
 module.exports = {
-  plugins: ['jest'],
+  plugins: ['jest', 'testing-library'],
   overrides: [
     {
       files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
@@ -33,6 +33,14 @@ module.exports = {
         'jest/valid-expect': 'error',
         'jest/valid-expect-in-promise': 'error',
         'jest/valid-title': 'warn',
+
+        // https://github.com/testing-library/eslint-plugin-testing-library
+        'testing-library/await-async-query': 'error',
+        'testing-library/await-async-utils': 'error',
+        'testing-library/no-await-sync-query': 'warn',
+        'testing-library/no-dom-import': ['error', 'react'],
+        'testing-library/no-wait-for-empty-callback': 'error',
+        'testing-library/no-wait-for-snapshot': 'error',
       },
     },
   ],
