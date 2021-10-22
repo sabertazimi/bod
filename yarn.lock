@@ -4665,15 +4665,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-redux@npm:^7.1.16, @types/react-redux@npm:^7.1.19":
-  version: 7.1.19
-  resolution: "@types/react-redux@npm:7.1.19"
+"@types/react-redux@npm:^7.1.16, @types/react-redux@npm:^7.1.20":
+  version: 7.1.20
+  resolution: "@types/react-redux@npm:7.1.20"
   dependencies:
     "@types/hoist-non-react-statics": ^3.3.0
     "@types/react": "*"
     hoist-non-react-statics: ^3.3.0
     redux: ^4.0.0
-  checksum: 32a1b21f6a5e45cd6e78fdb4b86974ea444a35539c3c1270d66132527b2c45051f9642a3e2296616c72407dc019d0629c0183bcca64fbf3ba19443484cb70df7
+  checksum: 5e0405d0d312f1b5e2dd48ab5833d3226295931fe8d276bd0891fafe4dd7ba9efbc74b1e8b30685ba96e9dc1a63d57444ae335785ce6fda96900d5fc9f800dcf
   languageName: node
   linkType: hard
 
@@ -7792,7 +7792,7 @@ __metadata:
     "@types/node": ^16.9.4
     "@types/react": ^17.0.31
     "@types/react-dom": ^17.0.10
-    "@types/react-redux": ^7.1.19
+    "@types/react-redux": ^7.1.20
     "@types/react-router-dom": ^5.3.1
     "@types/react-test-renderer": ^17.0.1
     react: ^17.0.2
