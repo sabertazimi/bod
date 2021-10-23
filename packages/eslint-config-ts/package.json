@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@dg-scripts/eslint-config-basic": "^5.5.4",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0"
   }
 }
