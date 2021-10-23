@@ -40,7 +40,7 @@
   "homepage": "https://github.com/sabertazimi/bod",
   "peerDependencies": {
     "prettier": "^2.4.0",
-    "stylelint": "^13.13.0"
+    "stylelint": "^13.13.0 || ^14.0.0"
   },
   "dependencies": {
     "stylelint-config-bod": "^5.5.4",
@@ -49,6 +49,6 @@
   },
   "devDependencies": {
     "prettier": "^2.4.1",
-    "stylelint": "^13.13.1"
+    "stylelint": "^14.0.0"
   }
 }
