@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** bump stylelint to v14 ([0e17fdc](https://github.com/sabertazimi/bod/commit/0e17fdc8bd184fd85309e023bb6733804738776f))
+* **deps:** update dependency babel-loader to ^8.2.3 ([#275](https://github.com/sabertazimi/bod/issues/275)) ([479408a](https://github.com/sabertazimi/bod/commit/479408a61587b7db8b69338210ca08262aa309f2))
+* **deps:** update dependency commander to ^8.3.0 ([#286](https://github.com/sabertazimi/bod/issues/286)) ([e4a13a8](https://github.com/sabertazimi/bod/commit/e4a13a8ce93e67c459e31a4a09acd32cc76131c2))
+* **deps:** update dependency eslint to ^8.1.0 ([#287](https://github.com/sabertazimi/bod/issues/287)) ([8b2bf11](https://github.com/sabertazimi/bod/commit/8b2bf117c882ff7bc627b3030e8634df66fe7e87))
+* **deps:** update dependency eslint-plugin-jest to ^25.2.2 ([#267](https://github.com/sabertazimi/bod/issues/267)) ([82f42fa](https://github.com/sabertazimi/bod/commit/82f42fa0053d63a4cb9de43bf0839c6a4c597838))
+* **deps:** update dependency eslint-plugin-promise to ^5.1.1 ([#276](https://github.com/sabertazimi/bod/issues/276)) ([ed91578](https://github.com/sabertazimi/bod/commit/ed91578486b5e3968e2fdfdd85c05b65c37aec5f))
+* **deps:** update dependency eslint-plugin-vue to ^7.20.0 ([#288](https://github.com/sabertazimi/bod/issues/288)) ([5e3158c](https://github.com/sabertazimi/bod/commit/5e3158c98dc0a7f4eca09d5f7b2e5b4f2b32407f))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.3 ([#277](https://github.com/sabertazimi/bod/issues/277)) ([303c4aa](https://github.com/sabertazimi/bod/commit/303c4aaf424614f69a71a690dc8be833773ec63d))
+* **deps:** update dependency postcss to ^8.3.11 ([#278](https://github.com/sabertazimi/bod/issues/278)) ([141169c](https://github.com/sabertazimi/bod/commit/141169ca5229eb159b793325cec98ed97bb3262e))
+* **deps:** update dependency style-loader to ^3.3.1 ([#279](https://github.com/sabertazimi/bod/issues/279)) ([6dcbe73](https://github.com/sabertazimi/bod/commit/6dcbe7314769d550b4b65c631a8490bb1e59bdc7))
+* **deps:** update docusaurus monorepo to v2.0.0-beta.8 ([#280](https://github.com/sabertazimi/bod/issues/280)) ([6bad90d](https://github.com/sabertazimi/bod/commit/6bad90dea50c867420ac3f3d417ffd947a36edef))
+* **deps:** update jest monorepo to ^27.3.1 ([#281](https://github.com/sabertazimi/bod/issues/281)) ([44ddb11](https://github.com/sabertazimi/bod/commit/44ddb110f8fe6be2797444f86f5d8ddb6ab130e6))
+* **deps:** update typescript-eslint monorepo to ^5.1.0 ([#289](https://github.com/sabertazimi/bod/issues/289)) ([22338da](https://github.com/sabertazimi/bod/commit/22338da44f926671027db8131c18e74f5ef007f9))
+* **stylelint-bod:** add scss stylelint plugin ([6259858](https://github.com/sabertazimi/bod/commit/62598581c4c9f9665a7b24dd32d8785a805b163e))
+* **stylelint-html:** add postcss-html support for stylelint ([8a02b32](https://github.com/sabertazimi/bod/commit/8a02b32a64663985fea1c60b0274ac84a3707e76))
+* **template-bod:** update snapshots ([e7ad6cd](https://github.com/sabertazimi/bod/commit/e7ad6cd09a88367d5e3400db318d74f6b2fac581))
+* **template-css:** format css code via stylelint v14 ([d514d44](https://github.com/sabertazimi/bod/commit/d514d44d02f23c392b9d5f5621ba109c14a7d97d))
+* **template:** add `tailwind.css` configuration support ([#270](https://github.com/sabertazimi/bod/issues/270)) ([48b2f30](https://github.com/sabertazimi/bod/commit/48b2f30f6bcb17aa4a22439d1b9852f26675a262)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 

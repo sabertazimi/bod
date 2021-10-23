@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **template-css:** format css code via stylelint v14 ([d514d44](https://github.com/sabertazimi/bod/commit/d514d44d02f23c392b9d5f5621ba109c14a7d97d))
+* **template:** add `tailwind.css` configuration support ([#270](https://github.com/sabertazimi/bod/issues/270)) ([48b2f30](https://github.com/sabertazimi/bod/commit/48b2f30f6bcb17aa4a22439d1b9852f26675a262)), closes [#19](https://github.com/sabertazimi/bod/issues/19)
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package @sabertazimi/cra-template-typescript

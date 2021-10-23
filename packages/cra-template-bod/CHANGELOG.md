@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **template-bod:** update snapshots ([e7ad6cd](https://github.com/sabertazimi/bod/commit/e7ad6cd09a88367d5e3400db318d74f6b2fac581))
+* **template-css:** format css code via stylelint v14 ([d514d44](https://github.com/sabertazimi/bod/commit/d514d44d02f23c392b9d5f5621ba109c14a7d97d))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package cra-template-bod

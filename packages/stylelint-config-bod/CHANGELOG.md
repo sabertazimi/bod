@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** bump stylelint to v14 ([0e17fdc](https://github.com/sabertazimi/bod/commit/0e17fdc8bd184fd85309e023bb6733804738776f))
+* **stylelint-bod:** add scss stylelint plugin ([6259858](https://github.com/sabertazimi/bod/commit/62598581c4c9f9665a7b24dd32d8785a805b163e))
+* **stylelint-html:** add postcss-html support for stylelint ([8a02b32](https://github.com/sabertazimi/bod/commit/8a02b32a64663985fea1c60b0274ac84a3707e76))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package stylelint-config-bod

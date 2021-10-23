@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^25.2.2 ([#267](https://github.com/sabertazimi/bod/issues/267)) ([82f42fa](https://github.com/sabertazimi/bod/commit/82f42fa0053d63a4cb9de43bf0839c6a4c597838))
+* **deps:** update typescript-eslint monorepo to ^5.1.0 ([#289](https://github.com/sabertazimi/bod/issues/289)) ([22338da](https://github.com/sabertazimi/bod/commit/22338da44f926671027db8131c18e74f5ef007f9))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 

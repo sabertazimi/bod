@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-promise to ^5.1.1 ([#276](https://github.com/sabertazimi/bod/issues/276)) ([ed91578](https://github.com/sabertazimi/bod/commit/ed91578486b5e3968e2fdfdd85c05b65c37aec5f))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-basic

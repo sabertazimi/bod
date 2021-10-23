@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** bump stylelint to v14 ([0e17fdc](https://github.com/sabertazimi/bod/commit/0e17fdc8bd184fd85309e023bb6733804738776f))
+* **deps:** update dependency babel-loader to ^8.2.3 ([#275](https://github.com/sabertazimi/bod/issues/275)) ([479408a](https://github.com/sabertazimi/bod/commit/479408a61587b7db8b69338210ca08262aa309f2))
+* **deps:** update dependency eslint to ^8.1.0 ([#287](https://github.com/sabertazimi/bod/issues/287)) ([8b2bf11](https://github.com/sabertazimi/bod/commit/8b2bf117c882ff7bc627b3030e8634df66fe7e87))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.3 ([#277](https://github.com/sabertazimi/bod/issues/277)) ([303c4aa](https://github.com/sabertazimi/bod/commit/303c4aaf424614f69a71a690dc8be833773ec63d))
+* **deps:** update dependency postcss to ^8.3.11 ([#278](https://github.com/sabertazimi/bod/issues/278)) ([141169c](https://github.com/sabertazimi/bod/commit/141169ca5229eb159b793325cec98ed97bb3262e))
+* **deps:** update dependency style-loader to ^3.3.1 ([#279](https://github.com/sabertazimi/bod/issues/279)) ([6dcbe73](https://github.com/sabertazimi/bod/commit/6dcbe7314769d550b4b65c631a8490bb1e59bdc7))
+* **deps:** update jest monorepo to ^27.3.1 ([#281](https://github.com/sabertazimi/bod/issues/281)) ([44ddb11](https://github.com/sabertazimi/bod/commit/44ddb110f8fe6be2797444f86f5d8ddb6ab130e6))
+* **template-css:** format css code via stylelint v14 ([d514d44](https://github.com/sabertazimi/bod/commit/d514d44d02f23c392b9d5f5621ba109c14a7d97d))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts

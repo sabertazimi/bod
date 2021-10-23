@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to ^7.20.0 ([#288](https://github.com/sabertazimi/bod/issues/288)) ([5e3158c](https://github.com/sabertazimi/bod/commit/5e3158c98dc0a7f4eca09d5f7b2e5b4f2b32407f))
+
+
+
+
+
 ## [5.5.4](https://github.com/sabertazimi/bod/compare/v5.5.3...v5.5.4) (2021-10-17)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-vue
