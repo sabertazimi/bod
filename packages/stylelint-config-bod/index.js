@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'stylelint-config-html',
     'stylelint-config-standard',
     'stylelint-config-recess-order',
     'stylelint-a11y/recommended',

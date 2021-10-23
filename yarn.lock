@@ -16861,6 +16861,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"postcss-html@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "postcss-html@npm:1.0.1"
+  dependencies:
+    htmlparser2: ^7.1.2
+    postcss: ^8.3.11
+    postcss-safe-parser: ^6.0.0
+  checksum: 239e7827f4898b4552f4dc2f976b329408fbf8505f9774485dc96534f294247a01fdd3be02302dc55ca8011b172c37e5e6162987b222e9523167da5d8dbafffd
+  languageName: node
+  linkType: hard
+
 "postcss-image-set-function@npm:^3.0.1":
   version: 3.0.1
   resolution: "postcss-image-set-function@npm:3.0.1"
@@ -20507,13 +20518,25 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
+    postcss-html: ^1.0.1
     stylelint-a11y: ^1.2.3
+    stylelint-config-html: ^1.0.0
     stylelint-config-recess-order: ^2.5.0
     stylelint-config-standard: ^23.0.0
   peerDependencies:
     stylelint: ^13.13.0 || ^14.0.0
   languageName: unknown
   linkType: soft
+
+"stylelint-config-html@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "stylelint-config-html@npm:1.0.0"
+  peerDependencies:
+    postcss-html: ^1.0.0
+    stylelint: ">=14.0.0"
+  checksum: 630a7b1dba4f05ba0eeb0b5fcf13ff2be7a0954367bc1bb990f0898a3e22ada4e80ca7bd8b5f796691e084e53b586362eb35bff747d408e81aacd166853fdb1f
+  languageName: node
+  linkType: hard
 
 "stylelint-config-prettier@npm:^9.0.3":
   version: 9.0.3
