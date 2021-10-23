@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config",
-  "version": "5.5.6",
+  "version": "5.5.7",
   "description": "ESLint configuration used by dg-scripts.",
   "keywords": [
     "dg-scripts",
@@ -38,8 +38,8 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
-    "@dg-scripts/eslint-config-react": "^5.5.6",
-    "@dg-scripts/eslint-config-vue": "^5.5.6",
+    "@dg-scripts/eslint-config-react": "^5.5.7",
+    "@dg-scripts/eslint-config-vue": "^5.5.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0"
   }

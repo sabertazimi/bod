@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.7](https://github.com/sabertazimi/bod/compare/v5.5.6...v5.5.7) (2021-10-23)
+
+
+### Bug Fixes
+
+* **stylelint-bod:** rectify wrong rule option value ([077c846](https://github.com/sabertazimi/bod/commit/077c84656b5553cf7c96c8881ab4983247e1e99b))
+
+
+
+
+
 ## [5.5.6](https://github.com/sabertazimi/bod/compare/v5.5.5...v5.5.6) (2021-10-23)
 
 
