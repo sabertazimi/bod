@@ -5,11 +5,11 @@ exports[`App should render correctly (snapshot) 1`] = `
   className="text-center bg-white"
 >
   <header
-    className="App-header"
+    className="app-header"
   >
     <img
       alt="logo"
-      className="App-logo"
+      className="app-logo"
       src="logo.svg"
     />
     <div>
@@ -77,7 +77,7 @@ exports[`App should render correctly (snapshot) 1`] = `
         Learn 
       </span>
       <a
-        className="App-link"
+        className="app-link"
         href="https://reactjs.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -88,7 +88,7 @@ exports[`App should render correctly (snapshot) 1`] = `
         , 
       </span>
       <a
-        className="App-link"
+        className="app-link"
         href="https://redux.js.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -99,7 +99,7 @@ exports[`App should render correctly (snapshot) 1`] = `
         , 
       </span>
       <a
-        className="App-link"
+        className="app-link"
         href="https://sabertazimi.github.io/bod"
         rel="noopener noreferrer"
         target="_blank"
