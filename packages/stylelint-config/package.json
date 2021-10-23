@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/stylelint-config",
-  "version": "5.5.5",
+  "version": "5.5.6",
   "description": "StyleLint configuration used by dg-scripts.",
   "keywords": [
     "dg-scripts",
@@ -43,7 +43,7 @@
     "stylelint": "^13.13.0 || ^14.0.0"
   },
   "dependencies": {
-    "stylelint-config-bod": "^5.5.5",
+    "stylelint-config-bod": "^5.5.6",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-prettier": "^1.2.0"
   },

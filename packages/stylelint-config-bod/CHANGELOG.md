@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.6](https://github.com/sabertazimi/bod/compare/v5.5.5...v5.5.6) (2021-10-23)
+
+
+### Bug Fixes
+
+* **stylelint-bod:** disable `scss/no-global-function-names` rule ([47f1327](https://github.com/sabertazimi/bod/commit/47f13276be041d1dbc47cd428d5077e0556433e9))
+
+
+
+
+
 ## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
 
 

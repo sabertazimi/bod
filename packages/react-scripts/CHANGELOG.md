@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.6](https://github.com/sabertazimi/bod/compare/v5.5.5...v5.5.6) (2021-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency browserslist to ^4.17.5 ([#290](https://github.com/sabertazimi/bod/issues/290)) ([913ce8a](https://github.com/sabertazimi/bod/commit/913ce8ab48f4462e75fcfdf3d95301cf0dc5f63a))
+
+
+
+
+
 ## [5.5.5](https://github.com/sabertazimi/bod/compare/v5.5.4...v5.5.5) (2021-10-23)
 
 
