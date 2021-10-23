@@ -522,6 +522,7 @@ module.exports = function (webpackEnv) {
                 modules: {
                   mode: 'local',
                   getLocalIdent: getCSSModuleLocalIdent,
+                  exportLocalsConvention: 'camelCase',
                 },
               }),
             },

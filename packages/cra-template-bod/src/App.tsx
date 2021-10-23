@@ -7,8 +7,8 @@ import logo from './logo.svg';
 const App = (): JSX.Element => {
   return (
     <div className="text-center bg-white">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <Switch>
           <Route path="/">
             <Counter />
@@ -20,7 +20,7 @@ const App = (): JSX.Element => {
         <span>
           <span>Learn </span>
           <a
-            className="App-link"
+            className="app-link"
             href="https://reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const App = (): JSX.Element => {
           </a>
           <span>, </span>
           <a
-            className="App-link"
+            className="app-link"
             href="https://redux.js.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const App = (): JSX.Element => {
           </a>
           <span>, </span>
           <a
-            className="App-link"
+            className="app-link"
             href="https://sabertazimi.github.io/bod"
             target="_blank"
             rel="noopener noreferrer"
