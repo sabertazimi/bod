@@ -38,7 +38,7 @@
   },
   "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
-    "postcss-html": "^1.0.1",
+    "postcss-html": "^1.0.2",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-recess-order": "^2.5.0",
