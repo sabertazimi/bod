@@ -16861,14 +16861,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss-html@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "postcss-html@npm:1.0.2"
+"postcss-html@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "postcss-html@npm:1.1.0"
   dependencies:
     htmlparser2: ^7.1.2
     postcss: ^8.3.11
     postcss-safe-parser: ^6.0.0
-  checksum: 5742079b41ba8fda3e1d8286a1c2ea3db715593c52d45ca6de859c8ef1d1118696f7babac278521506a7c3041c326b12cb37c617fa9a63a278b5637c25510e82
+  checksum: fe8fd7a099bb97e655fbeed33fce9044d4e9dcacb89d15c8af5c3f476293bb945482309f273d9de22457417a31e5d40f37f1c0feffc4c604d4a7624094a39aa8
   languageName: node
   linkType: hard
 
@@ -20527,7 +20527,7 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "stylelint-config-bod@workspace:packages/stylelint-config-bod"
   dependencies:
-    postcss-html: ^1.0.2
+    postcss-html: ^1.1.0
     stylelint-a11y: ^1.2.3
     stylelint-config-html: ^1.0.0
     stylelint-config-recess-order: ^2.5.0
