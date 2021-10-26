@@ -50,7 +50,7 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.1.0",
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
