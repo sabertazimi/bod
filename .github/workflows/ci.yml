@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn
-      - name: Run lint testing
+      - name: Run linter tests
         run: |
           yarn lint
 
@@ -60,11 +60,11 @@ jobs:
         if: ${{ matrix.package-manager == 'yarn' }}
         run: |
           echo Choose package manager for CRA v5
-      - name: Run unit testing
+      - name: Run unit tests
         run: |
           yarn test:all
           yarn badge
-      - name: Run coverage report action
+      - name: Perform code coverage report action
         uses: codecov/codecov-action@v2
         if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
       - name: Archive production artifacts
@@ -107,7 +107,7 @@ jobs:
         if: ${{ matrix.package-manager == 'yarn' }}
         run: |
           echo Choose package manager for CRA v5
-      - name: Run E2E testing
+      - name: Run E2E tests
         run: |
           yarn e2e
       - name: Archive production artifacts
