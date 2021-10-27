@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-html to ^1.0.2 ([#291](https://github.com/sabertazimi/bod/issues/291)) ([c38059c](https://github.com/sabertazimi/bod/commit/c38059c2323e31e53f982ae1a5c0602137dd9cd3))
+* **deps:** update dependency postcss-html to ^1.1.0 ([#293](https://github.com/sabertazimi/bod/issues/293)) ([b8e15a7](https://github.com/sabertazimi/bod/commit/b8e15a752fc94e1ab3dc1570783902227654f830))
+* **stylelint-bod:** enable `no-global-function-names` rule ([a9d5101](https://github.com/sabertazimi/bod/commit/a9d51010817feb1866002a37f1102282ceae17c8))
+
+
+
+
+
 ## [5.5.7](https://github.com/sabertazimi/bod/compare/v5.5.6...v5.5.7) (2021-10-23)
 
 

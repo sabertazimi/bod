@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
+
+
+### Bug Fixes
+
+* **deps-eslint:** bump eslint-webpack-plugin to 3.1.0 ([df05d4e](https://github.com/sabertazimi/bod/commit/df05d4e698917d8ba86de489b83ea5d60d3025ca))
+
+
+
+
+
 ## [5.5.7](https://github.com/sabertazimi/bod/compare/v5.5.6...v5.5.7) (2021-10-23)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts
