@@ -41,9 +41,6 @@ module.exports = {
     {
       files: ['*.scss', '**/*.scss'],
       extends: ['stylelint-config-standard-scss'],
-      rules: {
-        'scss/no-global-function-names': null,
-      },
     },
   ],
 };
