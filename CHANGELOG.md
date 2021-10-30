@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
+
+
+### Bug Fixes
+
+* **CRA-scripts:** disable `fullySpecified` resolution for `.mjs` files ([b748cbf](https://github.com/sabertazimi/bod/commit/b748cbf08b8296a72946dba9559e8354181f5600))
+* **CRA-scripts:** transform css modules classname to camel case ([303e706](https://github.com/sabertazimi/bod/commit/303e706655863f58263111f8a1dcd06730317713))
+* **deps:** update babel monorepo to ^7.16.0 ([#304](https://github.com/sabertazimi/bod/issues/304)) ([88b078a](https://github.com/sabertazimi/bod/commit/88b078ac8b0ac6d2cb8e8313fabaf2bf4b1011ad))
+* **deps:** update dependency @rushstack/eslint-patch to ^1.0.9 ([#300](https://github.com/sabertazimi/bod/issues/300)) ([37443e0](https://github.com/sabertazimi/bod/commit/37443e0ddbeb787f640faf9d82050deb8e16c7fd))
+* **deps:** update dependency autoprefixer to ^10.4.0 ([#305](https://github.com/sabertazimi/bod/issues/305)) ([a0bf1dd](https://github.com/sabertazimi/bod/commit/a0bf1dddca5e09f4a04a9557deed504ab7007530))
+* **deps:** update dependency css-loader to ^6.5.0 ([#306](https://github.com/sabertazimi/bod/issues/306)) ([01e7623](https://github.com/sabertazimi/bod/commit/01e7623517cc3266e291364c5c12577816175297))
+* **deps:** update dependency eslint-plugin-testing-library to ^5.0.0 ([#301](https://github.com/sabertazimi/bod/issues/301)) ([cf46ec4](https://github.com/sabertazimi/bod/commit/cf46ec410b713d739e1adc1ffa2a9be86e480871))
+* **deps:** update dependency eslint-plugin-vue to v8 ([#313](https://github.com/sabertazimi/bod/issues/313)) ([c2d5e1b](https://github.com/sabertazimi/bod/commit/c2d5e1b9dcb211ef674867c17bb755abc564affd))
+* **deps:** update dependency html-webpack-plugin to ^5.5.0 ([#307](https://github.com/sabertazimi/bod/issues/307)) ([91414e7](https://github.com/sabertazimi/bod/commit/91414e7c5ec40dc71615cf89c25ebcbed0065e17))
+* **deps:** update dependency postcss-html to ^1.2.0 ([#308](https://github.com/sabertazimi/bod/issues/308)) ([ca8e137](https://github.com/sabertazimi/bod/commit/ca8e137a21c5085753ddee28966ff9a4f336e113))
+* **deps:** update dependency react-redux to ^7.2.6 ([#302](https://github.com/sabertazimi/bod/issues/302)) ([c98f900](https://github.com/sabertazimi/bod/commit/c98f9007ae9ace3ac058bdd3a5c8f34100d150f9))
+* **deps:** update dependency sass-loader to ^12.3.0 ([#309](https://github.com/sabertazimi/bod/issues/309)) ([e598817](https://github.com/sabertazimi/bod/commit/e598817718f49b7453dc7093141d4535082babf7))
+* **deps:** update dependency tailwindcss to ^2.2.19 ([#303](https://github.com/sabertazimi/bod/issues/303)) ([86aadc5](https://github.com/sabertazimi/bod/commit/86aadc556ab56fb458a2e2bb6f05752a174aae76))
+* **deps:** update dependency webpack to ^5.61.0 ([#310](https://github.com/sabertazimi/bod/issues/310)) ([ce02dda](https://github.com/sabertazimi/bod/commit/ce02ddaf844c2db0660133d8030aae01abb9d64c))
+* **deps:** update dependency webpack-dev-server to ^4.4.0 ([#311](https://github.com/sabertazimi/bod/issues/311)) ([80cc34c](https://github.com/sabertazimi/bod/commit/80cc34cf89c8bd71df89cf08948fd98d9396ae65))
+* **deps:** update typescript-eslint monorepo to ^5.2.0 ([#312](https://github.com/sabertazimi/bod/issues/312)) ([ae0e7db](https://github.com/sabertazimi/bod/commit/ae0e7dbff9c8b3ce7686507ce25c0127ca27737e))
+
+
+
+
+
 ## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update babel monorepo to ^7.16.0 ([#304](https://github.com/sabertazimi/bod/issues/304)) ([88b078a](https://github.com/sabertazimi/bod/commit/88b078ac8b0ac6d2cb8e8313fabaf2bf4b1011ad))
+* **deps:** update dependency @rushstack/eslint-patch to ^1.0.9 ([#300](https://github.com/sabertazimi/bod/issues/300)) ([37443e0](https://github.com/sabertazimi/bod/commit/37443e0ddbeb787f640faf9d82050deb8e16c7fd))
+* **deps:** update dependency eslint-plugin-testing-library to ^5.0.0 ([#301](https://github.com/sabertazimi/bod/issues/301)) ([cf46ec4](https://github.com/sabertazimi/bod/commit/cf46ec410b713d739e1adc1ffa2a9be86e480871))
+* **deps:** update typescript-eslint monorepo to ^5.2.0 ([#312](https://github.com/sabertazimi/bod/issues/312)) ([ae0e7db](https://github.com/sabertazimi/bod/commit/ae0e7dbff9c8b3ce7686507ce25c0127ca27737e))
+
+
+
+
+
 ## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
 
 **Note:** Version bump only for package eslint-config-bod

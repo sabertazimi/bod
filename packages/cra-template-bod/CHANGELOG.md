@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-redux to ^7.2.6 ([#302](https://github.com/sabertazimi/bod/issues/302)) ([c98f900](https://github.com/sabertazimi/bod/commit/c98f9007ae9ace3ac058bdd3a5c8f34100d150f9))
+
+
+
+
+
 ## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
 
 **Note:** Version bump only for package cra-template-bod

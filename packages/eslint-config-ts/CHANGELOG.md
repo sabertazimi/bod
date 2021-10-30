@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.2.0 ([#312](https://github.com/sabertazimi/bod/issues/312)) ([ae0e7db](https://github.com/sabertazimi/bod/commit/ae0e7dbff9c8b3ce7686507ce25c0127ca27737e))
+
+
+
+
+
 ## [5.5.8](https://github.com/sabertazimi/bod/compare/v5.5.7...v5.5.8) (2021-10-27)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-ts
