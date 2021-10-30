@@ -3,7 +3,6 @@ module.exports = {
     'stylelint-config-html',
     'stylelint-config-standard',
     'stylelint-config-recess-order',
-    'stylelint-a11y/recommended',
   ],
   rules: {
     'at-rule-no-unknown': [

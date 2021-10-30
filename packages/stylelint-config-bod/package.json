@@ -14,7 +14,6 @@
     "create-react-app",
     "react",
     "react-scripts",
-    "a11y",
     "css",
     "lint",
     "linter",
@@ -22,7 +21,6 @@
     "idomatic-css",
     "standard",
     "stylelint",
-    "stylelint-a11y",
     "stylelint-config",
     "stylelint-order",
     "stylelint-plugin",
@@ -39,7 +37,6 @@
   "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
     "postcss-html": "^1.2.0",
-    "stylelint-a11y": "^1.2.3",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-recess-order": "^2.5.0",
     "stylelint-config-standard": "^23.0.0",

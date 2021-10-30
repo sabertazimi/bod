@@ -4,7 +4,6 @@
   "description": "StyleLint configuration used by dg-scripts.",
   "keywords": [
     "dg-scripts",
-    "a11y",
     "css",
     "lint",
     "linter",
@@ -13,7 +12,6 @@
     "prettier",
     "standard",
     "stylelint",
-    "stylelint-a11y",
     "stylelint-config",
     "stylelint-order",
     "stylelint-plugin",
