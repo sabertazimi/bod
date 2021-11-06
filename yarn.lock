@@ -1715,7 +1715,7 @@ __metadata:
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.1
     eslint-plugin-unicorn: ^37.0.1
-    eslint-plugin-yml: ^0.10.1
+    eslint-plugin-yml: ^0.11.0
     jsonc-eslint-parser: ^1.4.1
     yaml-eslint-parser: ^0.4.1
   peerDependencies:
@@ -9257,17 +9257,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-yml@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "eslint-plugin-yml@npm:0.10.1"
+"eslint-plugin-yml@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "eslint-plugin-yml@npm:0.11.0"
   dependencies:
-    debug: ^4.1.1
-    lodash: ^4.17.19
+    debug: ^4.3.2
+    lodash: ^4.17.21
     natural-compare: ^1.4.0
-    yaml-eslint-parser: ^0.4.0
+    yaml-eslint-parser: ^0.5.0
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: db707f2423c92f88806366c0ffe98e044c9d0e98b87e120ff532248c3773d2cc0d161e991f0d7aadb4fa74ee832225a9015a2aedb6211452fcc411801ce00c00
+  checksum: 538ec68aaec5d14e4d348e67ec29ca77855d4c11fd5cd5dcd3e226ef4b1fe1811308ef4ec7884f809c9e2441dee2e7f8a58554b0087ae4a036bcbc6f6b552fa2
   languageName: node
   linkType: hard
 
@@ -21678,7 +21678,7 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"yaml-eslint-parser@npm:^0.4.0, yaml-eslint-parser@npm:^0.4.1":
+"yaml-eslint-parser@npm:^0.4.1":
   version: 0.4.1
   resolution: "yaml-eslint-parser@npm:0.4.1"
   dependencies:
@@ -21686,6 +21686,17 @@ typescript@^4.4.4:
     lodash: ^4.17.20
     yaml: ^1.10.0
   checksum: ea08f38473a9df0196c9f51f6916256593509adf86a9b616fa49da48b2d665cda62b39e479150b699ebb5f8fb87d516a0761fa552436d8da8df4ee9ae2f04d2b
+  languageName: node
+  linkType: hard
+
+"yaml-eslint-parser@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "yaml-eslint-parser@npm:0.5.0"
+  dependencies:
+    eslint-visitor-keys: ^3.0.0
+    lodash: ^4.17.21
+    yaml: ^1.10.2
+  checksum: f4b316407fa3a98e35808c3321617be8d01333df23e5ac5c00b1bd2c497845aeebab4bd506209f38b1e48c3d0483ade8b2c2f0251d131924435ed718d88b2c26
   languageName: node
   linkType: hard
 
