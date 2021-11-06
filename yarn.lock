@@ -1717,7 +1717,7 @@ __metadata:
     eslint-plugin-unicorn: ^37.0.1
     eslint-plugin-yml: ^0.11.0
     jsonc-eslint-parser: ^1.4.1
-    yaml-eslint-parser: ^0.4.1
+    yaml-eslint-parser: ^0.5.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
   languageName: unknown
@@ -21675,17 +21675,6 @@ typescript@^4.4.4:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 343617202af32df2a15a3be36a5a8c0c8545208f3d3dfbc6bb7c3e3b7e8c6f8e7485432e4f3b88da3031a6e20afa7c711eded32ddfb122896ac5d914e75848d5
-  languageName: node
-  linkType: hard
-
-"yaml-eslint-parser@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "yaml-eslint-parser@npm:0.4.1"
-  dependencies:
-    eslint-visitor-keys: ^2.1.0
-    lodash: ^4.17.20
-    yaml: ^1.10.0
-  checksum: ea08f38473a9df0196c9f51f6916256593509adf86a9b616fa49da48b2d665cda62b39e479150b699ebb5f8fb87d516a0761fa552436d8da8df4ee9ae2f04d2b
   languageName: node
   linkType: hard
 
