@@ -42,7 +42,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-unicorn": "^37.0.1",
-    "eslint-plugin-yml": "^0.10.1",
+    "eslint-plugin-yml": "^0.11.0",
     "jsonc-eslint-parser": "^1.4.1",
     "yaml-eslint-parser": "^0.4.1"
   }
