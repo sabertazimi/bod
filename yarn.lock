@@ -1711,7 +1711,7 @@ __metadata:
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jsonc: ^1.7.0
+    eslint-plugin-jsonc: ^2.0.0
     eslint-plugin-node: ^11.1.0
     eslint-plugin-promise: ^5.1.1
     eslint-plugin-unicorn: ^37.0.1
@@ -9100,16 +9100,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "eslint-plugin-jsonc@npm:1.7.0"
+"eslint-plugin-jsonc@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "eslint-plugin-jsonc@npm:2.0.0"
   dependencies:
-    eslint-utils: ^2.1.0 || ^3.0.0
-    jsonc-eslint-parser: ^1.4.1
+    eslint-utils: ^3.0.0
+    jsonc-eslint-parser: ^2.0.1
     natural-compare: ^1.4.0
   peerDependencies:
-    eslint: ">=5.0.0"
-  checksum: 14e700d810af445c1dc4dfacb647708e8b14a2ef643dcd4193fe2828c936710da8b53bfae3a90fb8704c6c58077c3d5989341d773cb14eaf8d658ff0ded29212
+    eslint: ">=6.0.0"
+  checksum: 195f9901298f5ccf24bc7f1a1776657376fcfe4531691a13665edfa1e636f6b25f699ce06ae5461fd41045b941c8cac7d41d27cd0e8bfa99fb3e898f09a23401
   languageName: node
   linkType: hard
 
@@ -9315,7 +9315,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-utils@npm:^2.1.0 || ^3.0.0, eslint-utils@npm:^3.0.0":
+"eslint-utils@npm:^3.0.0":
   version: 3.0.0
   resolution: "eslint-utils@npm:3.0.0"
   dependencies:
@@ -12844,6 +12844,19 @@ __metadata:
     espree: ^6.0.0
     semver: ^6.3.0
   checksum: 46d1ce924c0ddc738102a90a87346030c7928d1ced2997d59f04949f271a328f5a101d13ee744cebfff90382eb663c6be312728fd7edfc29cadbe33e8272673d
+  languageName: node
+  linkType: hard
+
+"jsonc-eslint-parser@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "jsonc-eslint-parser@npm:2.0.2"
+  dependencies:
+    acorn: ^8.5.0
+    eslint-utils: ^3.0.0
+    eslint-visitor-keys: ^3.0.0
+    espree: ^9.0.0
+    semver: ^7.3.5
+  checksum: c0da34c374cd650535610c9c030623c29ff3e958f7ef200181d8d31d42721222439d1af94a777e771aeaab66cd0ca08cd3cf351478ead450496c90c5afb04edf
   languageName: node
   linkType: hard
 
