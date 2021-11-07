@@ -1782,7 +1782,7 @@ __metadata:
     stylelint: ^14.0.1
     stylelint-config-bod: ^5.5.9
     stylelint-config-prettier: ^9.0.3
-    stylelint-prettier: ^1.2.0
+    stylelint-prettier: ^2.0.0
   peerDependencies:
     prettier: ^2.4.0
     stylelint: ^13.13.0 || ^14.0.0
@@ -3937,7 +3937,7 @@ __metadata:
     stylelint: ^14.0.1
     stylelint-config-bod: ^5.5.9
     stylelint-config-prettier: ^9.0.3
-    stylelint-prettier: ^1.2.0
+    stylelint-prettier: ^2.0.0
     stylelint-webpack-plugin: ^3.1.0
     tailwindcss: ^2.2.19
     terser-webpack-plugin: ^5.2.4
@@ -19289,15 +19289,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-prettier@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "stylelint-prettier@npm:1.2.0"
+"stylelint-prettier@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "stylelint-prettier@npm:2.0.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
-    prettier: ">= 0.11.0"
-    stylelint: ">= 9.2.1"
-  checksum: 8bc3cf7277e0a92e59fa7bf96fde90720f7e43676be3de8a595da05429a11a3677553d4b742a038517ddd41ae1a88ce2c0f7d1676c7c7278c15d4b1c73f173be
+    prettier: ">=2.0.0"
+    stylelint: ">=14.0.0"
+  checksum: 6ce7628517a492e0c2e6104f654c9bc710f1aaf035c8b5274e187b68e8d510e70bae5ded2cb65df76aa01096460b9dfe02f844fea13bfba7e3dcca13baec2ff4
   languageName: node
   linkType: hard
 
