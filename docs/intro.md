@@ -23,13 +23,9 @@ sidebar_position: 1
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/react-scripts?label=CRA%20Scripts&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
 
-[![NPM Version](https://img.shields.io/npm/v/eslint-config-bod?label=ESLint&logo=eslint&style=for-the-badge)](https://www.npmjs.com/package/eslint-config-bod)
-[![NPM Version](https://img.shields.io/npm/v/stylelint-config-bod?label=StyleLint&logo=stylelint&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-bod)
-[![NPM Version](https://img.shields.io/npm/v/stylelint-config-mass?label=StyleLint&logo=sass&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-mass)
-
+[![NPM Version](https://img.shields.io/npm/v/@dg-scripts/eslint-config?label=ESLint&logo=eslint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/eslint-config)
+[![NPM Version](https://img.shields.io/npm/v/@dg-scripts/stylelint-config?label=StyleLint&logo=stylelint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/stylelint-config)
 [![NPM Version](https://img.shields.io/npm/v/cra-template-bod?label=Bod%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/cra-template-bod)
-[![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template?label=JSX%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template)
-[![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=TSX%20Template&logo=react&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
 
 Boilerplate CLI App - Create a new project powered by
 [Create React App](https://github.com/facebook/create-react-app),
