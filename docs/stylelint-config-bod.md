@@ -59,14 +59,12 @@ to change the indentation to tabs and turn off the number-leading-zero rule:
 ## Features
 
 - Based on `stylelint-config-standard`.
-- A11Y check.
 - Idiomatic order.
 
 ## Reference
 
 - [CSS Standard](https://github.com/stylelint/stylelint-config-standard)
 - [CSS Order](https://github.com/stormwarning/stylelint-config-recess-order)
-- [CSS A11Y](https://github.com/YozhikM/stylelint-a11y)
 
 ## Contact
 
