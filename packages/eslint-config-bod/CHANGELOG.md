@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps-eslint:** bump eslint-plugin-react-hooks to 4.3.0 ([f3a7a23](https://github.com/sabertazimi/bod/commit/f3a7a23c8dacacc72f7ed13a61ff53922c3cfa04)), closes [#314](https://github.com/sabertazimi/bod/issues/314)
+* **deps:** update dependency @rushstack/eslint-patch to ^1.1.0 ([#327](https://github.com/sabertazimi/bod/issues/327)) ([4646b40](https://github.com/sabertazimi/bod/commit/4646b409d19c98a8142eb9e6a518157da5e57e0c))
+* **deps:** update dependency eslint-plugin-jest to ^25.2.3 ([#320](https://github.com/sabertazimi/bod/issues/320)) ([ab52a59](https://github.com/sabertazimi/bod/commit/ab52a593f013e260d4188cb73b9efb6347d43179))
+* **deps:** update typescript-eslint monorepo to ^5.3.0 ([#333](https://github.com/sabertazimi/bod/issues/333)) ([834a99b](https://github.com/sabertazimi/bod/commit/834a99b889939eb30b307c829b66e3a9c92360c3))
+* **eslint-deps:** bump eslint-plugin-jsx-a11y to 6.5.1 ([e840733](https://github.com/sabertazimi/bod/commit/e8407333a1ced07949527c1311b5fa3be800186d))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps-eslint:** bump eslint-plugin-react-hooks to 4.3.0 ([f3a7a23](https://github.com/sabertazimi/bod/commit/f3a7a23c8dacacc72f7ed13a61ff53922c3cfa04)), closes [#314](https://github.com/sabertazimi/bod/issues/314)
+* **deps:** update dependency @rushstack/eslint-patch to ^1.1.0 ([#327](https://github.com/sabertazimi/bod/issues/327)) ([4646b40](https://github.com/sabertazimi/bod/commit/4646b409d19c98a8142eb9e6a518157da5e57e0c))
+* **deps:** update dependency browserslist to ^4.17.6 ([#318](https://github.com/sabertazimi/bod/issues/318)) ([1f2d6b8](https://github.com/sabertazimi/bod/commit/1f2d6b8bb5861a0de4588095134b6fe9a1f7efc5))
+* **deps:** update dependency css-loader to ^6.5.1 ([#319](https://github.com/sabertazimi/bod/issues/319)) ([5914717](https://github.com/sabertazimi/bod/commit/59147179d74db05050f1e1922503b2a94cf900c2))
+* **deps:** update dependency eslint to ^8.2.0 ([#328](https://github.com/sabertazimi/bod/issues/328)) ([188e403](https://github.com/sabertazimi/bod/commit/188e4031e78fa9dd2027a7a086deb25618a8da09))
+* **deps:** update dependency eslint-plugin-jest to ^25.2.3 ([#320](https://github.com/sabertazimi/bod/issues/320)) ([ab52a59](https://github.com/sabertazimi/bod/commit/ab52a593f013e260d4188cb73b9efb6347d43179))
+* **deps:** update dependency eslint-plugin-jsonc to v2 ([#334](https://github.com/sabertazimi/bod/issues/334)) ([263e414](https://github.com/sabertazimi/bod/commit/263e414d2a8fa35579b17d28cec883a2dd5b5f8d))
+* **deps:** update dependency eslint-plugin-unicorn to v38 ([#335](https://github.com/sabertazimi/bod/issues/335)) ([8623a63](https://github.com/sabertazimi/bod/commit/8623a63218068550b7e7c019feecbf93da3a0744))
+* **deps:** update dependency eslint-plugin-yml to ^0.11.0 ([#329](https://github.com/sabertazimi/bod/issues/329)) ([a920cd6](https://github.com/sabertazimi/bod/commit/a920cd65dc36e65a838af0d4eb5a9f3de556139c))
+* **deps:** update dependency jsonc-eslint-parser to v2 ([#336](https://github.com/sabertazimi/bod/issues/336)) ([75f2555](https://github.com/sabertazimi/bod/commit/75f25554e109892ae226969f58756ae26bc942a5))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.4 ([#321](https://github.com/sabertazimi/bod/issues/321)) ([7deb562](https://github.com/sabertazimi/bod/commit/7deb5628eda6fc5e938cb25fd6a2c185f4e61e89))
+* **deps:** update dependency react-router-dom to v6 ([#337](https://github.com/sabertazimi/bod/issues/337)) ([96488b4](https://github.com/sabertazimi/bod/commit/96488b4e9343a0f98498e44594e4e6a66546043d))
+* **deps:** update dependency stylelint-config-standard-scss to ^2.0.1 ([#322](https://github.com/sabertazimi/bod/issues/322)) ([ae94cc1](https://github.com/sabertazimi/bod/commit/ae94cc1e0ddce479d5d7d47c479b7469957c6001))
+* **deps:** update dependency stylelint-prettier to v2 ([#338](https://github.com/sabertazimi/bod/issues/338)) ([5baa9b9](https://github.com/sabertazimi/bod/commit/5baa9b9790b5d8fd334515596f8d5e926b14ab44))
+* **deps:** update dependency stylelint-webpack-plugin to ^3.1.0 ([#330](https://github.com/sabertazimi/bod/issues/330)) ([dc8f504](https://github.com/sabertazimi/bod/commit/dc8f504d81841841d79d0b47e0c4c8c2b8aa22dc))
+* **deps:** update dependency webpack to ^5.62.1 ([#331](https://github.com/sabertazimi/bod/issues/331)) ([0c66859](https://github.com/sabertazimi/bod/commit/0c66859691d0182ce805961512240e50d609cdd6))
+* **deps:** update dependency webpackbar to ^5.0.2 ([#323](https://github.com/sabertazimi/bod/issues/323)) ([89bed93](https://github.com/sabertazimi/bod/commit/89bed9355a3cec3ed7fbf456979be32011ad075d))
+* **deps:** update dependency yaml-eslint-parser to ^0.5.0 ([#332](https://github.com/sabertazimi/bod/issues/332)) ([8201c13](https://github.com/sabertazimi/bod/commit/8201c138a260a3f41727c41c97b51d601bb34f40))
+* **deps:** update docusaurus monorepo to v2.0.0-beta.9 ([#324](https://github.com/sabertazimi/bod/issues/324)) ([141581d](https://github.com/sabertazimi/bod/commit/141581d69f9ec85107323a8a66aefecf0c68b1d3))
+* **deps:** update typescript-eslint monorepo to ^5.3.0 ([#333](https://github.com/sabertazimi/bod/issues/333)) ([834a99b](https://github.com/sabertazimi/bod/commit/834a99b889939eb30b307c829b66e3a9c92360c3))
+* **eslint-deps:** bump eslint-plugin-jsx-a11y to 6.5.1 ([e840733](https://github.com/sabertazimi/bod/commit/e8407333a1ced07949527c1311b5fa3be800186d))
+* **stylelint-bod:** remove deprecated `stylelint-a11y` ([9c992b4](https://github.com/sabertazimi/bod/commit/9c992b47bd3e89cd51549dda7cc039c23c8b11ef))
+* **stylelint:** bump stylelint-config-recess-order to v3 ([6c84a04](https://github.com/sabertazimi/bod/commit/6c84a047a7267b78e340fab9df2235235a8851a2))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 

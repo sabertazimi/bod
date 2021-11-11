@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-prettier to v2 ([#338](https://github.com/sabertazimi/bod/issues/338)) ([5baa9b9](https://github.com/sabertazimi/bod/commit/5baa9b9790b5d8fd334515596f8d5e926b14ab44))
+* **stylelint-bod:** remove deprecated `stylelint-a11y` ([9c992b4](https://github.com/sabertazimi/bod/commit/9c992b47bd3e89cd51549dda7cc039c23c8b11ef))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 **Note:** Version bump only for package @dg-scripts/stylelint-config

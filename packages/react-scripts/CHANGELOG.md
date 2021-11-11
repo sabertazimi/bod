@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency browserslist to ^4.17.6 ([#318](https://github.com/sabertazimi/bod/issues/318)) ([1f2d6b8](https://github.com/sabertazimi/bod/commit/1f2d6b8bb5861a0de4588095134b6fe9a1f7efc5))
+* **deps:** update dependency css-loader to ^6.5.1 ([#319](https://github.com/sabertazimi/bod/issues/319)) ([5914717](https://github.com/sabertazimi/bod/commit/59147179d74db05050f1e1922503b2a94cf900c2))
+* **deps:** update dependency eslint to ^8.2.0 ([#328](https://github.com/sabertazimi/bod/issues/328)) ([188e403](https://github.com/sabertazimi/bod/commit/188e4031e78fa9dd2027a7a086deb25618a8da09))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.4 ([#321](https://github.com/sabertazimi/bod/issues/321)) ([7deb562](https://github.com/sabertazimi/bod/commit/7deb5628eda6fc5e938cb25fd6a2c185f4e61e89))
+* **deps:** update dependency stylelint-prettier to v2 ([#338](https://github.com/sabertazimi/bod/issues/338)) ([5baa9b9](https://github.com/sabertazimi/bod/commit/5baa9b9790b5d8fd334515596f8d5e926b14ab44))
+* **deps:** update dependency stylelint-webpack-plugin to ^3.1.0 ([#330](https://github.com/sabertazimi/bod/issues/330)) ([dc8f504](https://github.com/sabertazimi/bod/commit/dc8f504d81841841d79d0b47e0c4c8c2b8aa22dc))
+* **deps:** update dependency webpack to ^5.62.1 ([#331](https://github.com/sabertazimi/bod/issues/331)) ([0c66859](https://github.com/sabertazimi/bod/commit/0c66859691d0182ce805961512240e50d609cdd6))
+* **deps:** update dependency webpackbar to ^5.0.2 ([#323](https://github.com/sabertazimi/bod/issues/323)) ([89bed93](https://github.com/sabertazimi/bod/commit/89bed9355a3cec3ed7fbf456979be32011ad075d))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 

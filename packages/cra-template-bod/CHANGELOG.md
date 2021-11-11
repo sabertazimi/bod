@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-router-dom to v6 ([#337](https://github.com/sabertazimi/bod/issues/337)) ([96488b4](https://github.com/sabertazimi/bod/commit/96488b4e9343a0f98498e44594e4e6a66546043d))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 

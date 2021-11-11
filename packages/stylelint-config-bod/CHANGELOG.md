@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard-scss to ^2.0.1 ([#322](https://github.com/sabertazimi/bod/issues/322)) ([ae94cc1](https://github.com/sabertazimi/bod/commit/ae94cc1e0ddce479d5d7d47c479b7469957c6001))
+* **stylelint-bod:** remove deprecated `stylelint-a11y` ([9c992b4](https://github.com/sabertazimi/bod/commit/9c992b47bd3e89cd51549dda7cc039c23c8b11ef))
+* **stylelint:** bump stylelint-config-recess-order to v3 ([6c84a04](https://github.com/sabertazimi/bod/commit/6c84a047a7267b78e340fab9df2235235a8851a2))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 

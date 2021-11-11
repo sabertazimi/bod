@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsonc to v2 ([#334](https://github.com/sabertazimi/bod/issues/334)) ([263e414](https://github.com/sabertazimi/bod/commit/263e414d2a8fa35579b17d28cec883a2dd5b5f8d))
+* **deps:** update dependency eslint-plugin-unicorn to v38 ([#335](https://github.com/sabertazimi/bod/issues/335)) ([8623a63](https://github.com/sabertazimi/bod/commit/8623a63218068550b7e7c019feecbf93da3a0744))
+* **deps:** update dependency eslint-plugin-yml to ^0.11.0 ([#329](https://github.com/sabertazimi/bod/issues/329)) ([a920cd6](https://github.com/sabertazimi/bod/commit/a920cd65dc36e65a838af0d4eb5a9f3de556139c))
+* **deps:** update dependency jsonc-eslint-parser to v2 ([#336](https://github.com/sabertazimi/bod/issues/336)) ([75f2555](https://github.com/sabertazimi/bod/commit/75f25554e109892ae226969f58756ae26bc942a5))
+* **deps:** update dependency yaml-eslint-parser to ^0.5.0 ([#332](https://github.com/sabertazimi/bod/issues/332)) ([8201c13](https://github.com/sabertazimi/bod/commit/8201c138a260a3f41727c41c97b51d601bb34f40))
+
+
+
+
+
 ## [5.5.9](https://github.com/sabertazimi/bod/compare/v5.5.8...v5.5.9) (2021-10-30)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-basic
