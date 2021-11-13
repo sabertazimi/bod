@@ -5720,10 +5720,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:3.2.1":
-  version: 3.2.1
-  resolution: "async@npm:3.2.1"
-  checksum: fcd6dc73d36bdb0e5bf978ea27832136cc8116cef15e0a2dc9a5c63f362c5f82363996a349bf3046d590587b7f30614ac340a4f3db6d48780a07f40f81941e0c
+"async@npm:3.2.2":
+  version: 3.2.2
+  resolution: "async@npm:3.2.2"
+  checksum: 90712c98df0c6d0ef0190f8bee9797bf6c7035a1317c9a036b80306a8d2246396b3ee356b4540ff349e29e625fafa25d4f04e11b6ac1c5f6b4c74c803e641137
   languageName: node
   linkType: hard
 
@@ -7502,7 +7502,7 @@ __metadata:
     ts-node: ^10.4.0
     tslib: ^2.3.1
     typescript: ^4.4.4
-    verdaccio: ^5.2.0
+    verdaccio: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -13898,12 +13898,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:2.5.2, mime@npm:^2.3.1":
-  version: 2.5.2
-  resolution: "mime@npm:2.5.2"
+"mime@npm:2.6.0, mime@npm:^2.3.1":
+  version: 2.6.0
+  resolution: "mime@npm:2.6.0"
   bin:
     mime: cli.js
-  checksum: dd3c93d433d41a09f6a1cfa969b653b769899f3bd573e7bfcea33bdc8b0cc4eba57daa2f95937369c2bd2b6d39d62389b11a4309fe40d1d3a1b736afdedad0ff
+  checksum: 1497ba7b9f6960694268a557eae24b743fd2923da46ec392b042469f4b901721ba0adcf8b0d3c2677839d0e243b209d76e5edcbd09cfdeffa2dfb6bb4df4b862
   languageName: node
   linkType: hard
 
@@ -20710,10 +20710,10 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"validator@npm:13.6.0":
-  version: 13.6.0
-  resolution: "validator@npm:13.6.0"
-  checksum: 1f9f813228a709d993b965813ad9d8ce009717bec64f57a0ac40d5f50ef781ee47260f85741e125775823fb31aa3beb7f974e0f5fb1afe9bc4615b7fadd7f8bb
+"validator@npm:13.7.0":
+  version: 13.7.0
+  resolution: "validator@npm:13.7.0"
+  checksum: 2b83283de1222ca549a7ef57f46e8d49c6669213348db78b7045bce36a3b5843ff1e9f709ebf74574e06223461ee1f264f8cc9a26a0060a79a27de079d8286ef
   languageName: node
   linkType: hard
 
@@ -20763,9 +20763,9 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "verdaccio@npm:5.2.0"
+"verdaccio@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "verdaccio@npm:5.2.2"
   dependencies:
     "@verdaccio/commons-api": 10.0.1
     "@verdaccio/local-storage": 10.0.7
@@ -20773,7 +20773,7 @@ typescript@^4.4.4:
     "@verdaccio/streams": 10.0.0
     "@verdaccio/ui-theme": 3.2.1
     JSONStream: 1.3.5
-    async: 3.2.1
+    async: 3.2.2
     body-parser: 1.19.0
     clipanion: 3.1.0
     compression: 1.7.4
@@ -20795,7 +20795,7 @@ typescript@^4.4.4:
     lunr-mutable-indexes: 2.3.2
     marked: 2.1.3
     memoizee: 0.4.15
-    mime: 2.5.2
+    mime: 2.6.0
     minimatch: 3.0.4
     mkdirp: 1.0.4
     mv: 2.1.1
@@ -20805,12 +20805,12 @@ typescript@^4.4.4:
     pretty-ms: ^7.0.1
     request: 2.88.0
     semver: 7.3.5
-    validator: 13.6.0
+    validator: 13.7.0
     verdaccio-audit: 10.0.2
     verdaccio-htpasswd: 10.0.0
   bin:
     verdaccio: bin/verdaccio
-  checksum: 0d6e394aa7de82ca95c2b00e358e67d1a1f00f2267764eb79cff2170242329933957e916a31c5e609beb73470dbcb8af3dd88876850b4d8b826f9623937da3d2
+  checksum: fbeae43b644517e554ff4df6bd9ae829a21d710a604ede3e7ee0aa121f9391facb81af95b7fc5d8193e4567a0f01e89488347a1ea84eacc8e052640d8453f79d
   languageName: node
   linkType: hard
 
