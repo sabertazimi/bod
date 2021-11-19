@@ -31,7 +31,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.2",
     "@svgr/webpack": "^5.5.0",
     "autoprefixer": "^10.4.0",
     "babel-jest": "^27.3.1",
