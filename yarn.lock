@@ -3913,7 +3913,7 @@ __metadata:
     jest: ^27.3.1
     jest-resolve: ^27.3.1
     jest-watch-typeahead: ^1.0.0
-    mini-css-extract-plugin: ^2.4.4
+    mini-css-extract-plugin: ^2.4.5
     postcss: ^8.3.11
     postcss-flexbugs-fixes: ^5.0.2
     postcss-loader: ^6.2.0
@@ -13944,14 +13944,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^2.4.4":
-  version: 2.4.4
-  resolution: "mini-css-extract-plugin@npm:2.4.4"
+"mini-css-extract-plugin@npm:^2.4.5":
+  version: 2.4.5
+  resolution: "mini-css-extract-plugin@npm:2.4.5"
   dependencies:
-    schema-utils: ^3.1.0
+    schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^5.0.0
-  checksum: afc3c2d364096b3ec79c910f0b0e0f62b6861b84e0bcdf8c05b267e529b8f4e450984b0fc7afcd1e87616cbefcd688eeef1c41ce3c892a9c313f4dc9132189fb
+  checksum: 09ad56ac33fd960c6a645a2a18b0fee22c34c8e48e91fc48acc5ac3b9c101a5e9ea50d168b94c9fcdf571265271f6e4dd4fea835b2242907d4311b170aff322f
   languageName: node
   linkType: hard
 
