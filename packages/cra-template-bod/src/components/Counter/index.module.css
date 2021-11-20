@@ -67,12 +67,12 @@
   height: 100%;
   content: '';
   background-color: rgb(112 76 182 / 15%);
-  opacity: 0%;
+  opacity: 0;
 }
 
 .async-button:active::after {
   width: 0%;
-  opacity: 100%;
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
