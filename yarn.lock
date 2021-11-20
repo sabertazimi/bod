@@ -1716,7 +1716,7 @@ __metadata:
     eslint-plugin-promise: ^5.1.1
     eslint-plugin-unicorn: ^38.0.1
     eslint-plugin-yml: ^0.11.0
-    jsonc-eslint-parser: ^2.0.2
+    jsonc-eslint-parser: ^2.0.4
     yaml-eslint-parser: ^0.5.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
@@ -12848,16 +12848,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-eslint-parser@npm:^2.0.1, jsonc-eslint-parser@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "jsonc-eslint-parser@npm:2.0.2"
+"jsonc-eslint-parser@npm:^2.0.1, jsonc-eslint-parser@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "jsonc-eslint-parser@npm:2.0.4"
   dependencies:
     acorn: ^8.5.0
     eslint-utils: ^3.0.0
     eslint-visitor-keys: ^3.0.0
     espree: ^9.0.0
     semver: ^7.3.5
-  checksum: c0da34c374cd650535610c9c030623c29ff3e958f7ef200181d8d31d42721222439d1af94a777e771aeaab66cd0ca08cd3cf351478ead450496c90c5afb04edf
+  checksum: 8e531d277137e8f0a197e34f37ca962a7da3adfd2a6018ea974717551ef424b988ee66a6ee12157426ec8b62cd49dba2e606728537d6a43bb32b472af5b828ce
   languageName: node
   linkType: hard
 
