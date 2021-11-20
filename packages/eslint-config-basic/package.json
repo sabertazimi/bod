@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-unicorn": "^38.0.1",
     "eslint-plugin-yml": "^0.11.0",
-    "jsonc-eslint-parser": "^2.0.2",
+    "jsonc-eslint-parser": "^2.0.4",
     "yaml-eslint-parser": "^0.5.0"
   }
 }
