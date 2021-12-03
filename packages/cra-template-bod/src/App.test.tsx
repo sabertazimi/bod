@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -19,7 +19,7 @@ describe('App', () => {
   });
 
   test('renders learn React, Redux and Bod links', () => {
-    const { getByText } = render(
+    render(
       <Provider store={store}>
         <BrowserRouter>
           <App />
@@ -27,9 +27,9 @@ describe('App', () => {
       </Provider>
     );
 
-    expect(getByText(/learn/i)).toBeInTheDocument();
-    expect(getByText(/react/i)).toBeInTheDocument();
-    expect(getByText(/redux/i)).toBeInTheDocument();
-    expect(getByText(/bod/i)).toBeInTheDocument();
+    expect(screen.getByText(/learn/i)).toBeInTheDocument();
+    expect(screen.getByText(/react/i)).toBeInTheDocument();
+    expect(screen.getByText(/redux/i)).toBeInTheDocument();
+    expect(screen.getByText(/bod/i)).toBeInTheDocument();
   });
 });
