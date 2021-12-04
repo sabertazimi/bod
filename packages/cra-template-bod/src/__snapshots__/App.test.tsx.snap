@@ -7,10 +7,9 @@ exports[`App should render correctly (snapshot) 1`] = `
   <header
     className="app-header"
   >
-    <img
-      alt="logo"
+    <logo.svg
       className="app-logo"
-      src="logo.svg"
+      title="logo"
     />
     <div>
       <div
