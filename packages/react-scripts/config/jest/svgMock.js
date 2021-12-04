@@ -1,3 +1,3 @@
 const ReactComponent = 'svg';
-export default ReactComponent;
+module.exports = ReactComponent;
 
