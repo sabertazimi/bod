@@ -2,13 +2,13 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Counter } from './containers';
-import logo from './logo.svg';
+import Logo from './logo.svg';
 
 const App = (): JSX.Element => {
   return (
     <div className="text-center bg-white">
       <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
+        <Logo className="app-logo" title="logo" />
         <Routes>
           <Route path="/" element={<Counter />} />
         </Routes>
