@@ -7,7 +7,7 @@ exports[`App should render correctly (snapshot) 1`] = `
   <header
     className="app-header"
   >
-    <logo.svg
+    <svg
       className="app-logo"
       title="logo"
     />
