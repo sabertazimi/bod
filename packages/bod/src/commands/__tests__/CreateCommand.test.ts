@@ -5,7 +5,7 @@ import rimraf from 'rimraf';
 import { inquirer, spawn } from '../../utils';
 import CreateCommand, { Action } from '../CreateCommand';
 
-const appPath = path.join(process.cwd(), 'temp');
+const appPath = path.join(process.cwd(), '..', 'bod-unit-tests');
 
 describe('CreateCommand', () => {
   beforeEach(() => rimraf.sync(appPath));

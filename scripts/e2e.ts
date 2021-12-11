@@ -20,7 +20,7 @@ class Test {
     this.appName = appName;
     this.cwd = process.cwd();
     this.rootPath = path.join(__dirname, '..');
-    this.appPath = path.join(this.rootPath, this.appName);
+    this.appPath = path.join(this.rootPath, '..', this.appName);
     this.packagesPath = path.join(this.rootPath, 'packages');
     this.originalNpmRegistry = utils
       .execPipe('npm config get registry')
@@ -49,7 +49,13 @@ class Test {
     );
     utils.exec(`npm config set registry="${this.localRegistry}"`);
     utils.exec(
+      `yarn config set nodeLinker node-modules --home`
+    );
+    utils.exec(
       `yarn config set npmRegistryServer "${this.localRegistry}" --home`
+    );
+    utils.exec(
+      `yarn config set unsafeHttpWhitelist localhost --home`
     );
   }
 
@@ -67,7 +73,13 @@ class Test {
     utils.info('Clear local registry ...');
     utils.exec(`npm config set registry="${this.originalNpmRegistry}"`);
     utils.exec(
+      `yarn config unset nodeLinker --home`
+    );
+    utils.exec(
       `yarn config set npmRegistryServer "${this.originalYarnRegistry}" --home`
+    );
+    utils.exec(
+      `yarn config unset unsafeHttpWhitelist --home`
     );
     utils.exec(`kill -9 $(lsof -t -i:${this.localPort}) || true`);
     utils.exec(`rm -fr ${localRegistryAuthStorage}`);
@@ -124,7 +136,7 @@ class Test {
     utils.exec(`rm -fr ${this.appPath}`);
     utils.exec(
       `yarn dlx create-react-app@next ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
-      this.rootPath
+      path.join(this.rootPath, '..')
     );
   }
 
@@ -228,7 +240,7 @@ class Test {
 }
 
 const main = () => {
-  const appName = 'app';
+  const appName = 'bod-e2e-tests';
   const test = new Test(appName);
   test.run();
 };
