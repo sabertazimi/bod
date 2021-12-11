@@ -64,7 +64,7 @@
     "concurrently": "^6.4.0",
     "consola": "^2.15.3",
     "dotenv": "^10.0.0",
-    "eslint": "^8.4.0",
+    "eslint": "^8.4.1",
     "jest": "^27.4.3",
     "lerna": "^4.0.0",
     "node-fetch": "^2.6.6",
