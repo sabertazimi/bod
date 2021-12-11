@@ -366,9 +366,9 @@ module.exports = function (
   }
 
   // Create git commit if git repo was initialized
-  if (initializedGit && tryGitCommit(appPath)) {
+  if (initializedGit) {
     console.log();
-    console.log('Created git commit.');
+    console.log('Please create your first git commit.');
   }
 
   // Display the most elegant way to cd.
