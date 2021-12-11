@@ -3935,7 +3935,7 @@ __metadata:
     prompts: ^2.4.2
     react: ^17.0.2
     react-app-polyfill: ^3.0.0-next.102
-    react-dev-utils: ^12.0.0-next.47
+    react-dev-utils: ^12.0.0-next.58
     react-dom: ^17.0.2
     react-refresh: ^0.11.0
     resolve: ^1.20.0
@@ -9894,6 +9894,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"filesize@npm:^8.0.6":
+  version: 8.0.6
+  resolution: "filesize@npm:8.0.6"
+  checksum: a16d7bd88c943ff55185559eabd4e9779d531b281a39a4a884659fd6f58bd29c20337ad7d58dc5492477df484bb9579a7ca6ad77e57a25908a51f8224790aaa3
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^7.0.1":
   version: 7.0.1
   resolution: "fill-range@npm:7.0.1"
@@ -10027,9 +10034,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fork-ts-checker-webpack-plugin@npm:^6.0.5":
-  version: 6.4.0
-  resolution: "fork-ts-checker-webpack-plugin@npm:6.4.0"
+"fork-ts-checker-webpack-plugin@npm:^6.0.5, fork-ts-checker-webpack-plugin@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "fork-ts-checker-webpack-plugin@npm:6.5.0"
   dependencies:
     "@babel/code-frame": ^7.8.3
     "@types/json-schema": ^7.0.5
@@ -10054,7 +10061,7 @@ __metadata:
       optional: true
     vue-template-compiler:
       optional: true
-  checksum: feba541453d4bdeaa743388541e125204789369920909f0152b11cfd1801a75fb2f6c708eae0174c9810ab4334fa21dea761037629440a647046581e7df62b8c
+  checksum: 95d145ab7936445f3a9bfa4116ef73537f97196cfaa3f5b24473dff36d034e839d3b0e034a23beefc9619eceb7a9866816bfd55afd1968e955eb3b3f8cfc35ed
   languageName: node
   linkType: hard
 
@@ -11245,10 +11252,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immer@npm:^9.0.6":
-  version: 9.0.6
-  resolution: "immer@npm:9.0.6"
-  checksum: 75da22f3b32f3f14604eb389b4f50e84a14f2e42f306f0cbe4d2969aed54ec7fda9a7e9ca42ebae2ba73ec9bb6ec1001fafbac535accaf03860054ab0f7e8388
+"immer@npm:^9.0.6, immer@npm:^9.0.7":
+  version: 9.0.7
+  resolution: "immer@npm:9.0.7"
+  checksum: 3655ad64bf5ab5adf2854f7d2a9ad543f2cd995fcd169b6f10294f41fdb2cbcbd44d8beaa3e01b3c0b6149001190e57f6ab2cd735e6a929780b7462f2e973c9b
   languageName: node
   linkType: hard
 
@@ -13192,6 +13199,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loader-utils@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "loader-utils@npm:3.2.0"
+  checksum: c7b9a8dc4b3bc19e9ef563c48e3a18ea9f8bb2da1ad38a12e4b88358cfba5f148a7baf12d78fe78ffcb718ce1e062ab31fcf5c148459f1247a672a4213471e80
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^2.0.0":
   version: 2.0.0
   resolution: "locate-path@npm:2.0.0"
@@ -14879,7 +14893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open@npm:^8.0.9":
+"open@npm:^8.0.9, open@npm:^8.4.0":
   version: 8.4.0
   resolution: "open@npm:8.4.0"
   dependencies:
@@ -16916,7 +16930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dev-utils@npm:12.0.0-next.47, react-dev-utils@npm:^12.0.0-next.47":
+"react-dev-utils@npm:12.0.0-next.47":
   version: 12.0.0-next.47
   resolution: "react-dev-utils@npm:12.0.0-next.47"
   dependencies:
@@ -16948,6 +16962,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dev-utils@npm:^12.0.0-next.58":
+  version: 12.0.0-next.58
+  resolution: "react-dev-utils@npm:12.0.0-next.58"
+  dependencies:
+    "@babel/code-frame": ^7.16.0
+    address: ^1.1.2
+    browserslist: ^4.18.1
+    chalk: ^4.1.2
+    cross-spawn: ^7.0.3
+    detect-port-alt: ^1.1.6
+    escape-string-regexp: ^4.0.0
+    filesize: ^8.0.6
+    find-up: ^5.0.0
+    fork-ts-checker-webpack-plugin: ^6.5.0
+    global-modules: ^2.0.0
+    globby: ^11.0.4
+    gzip-size: ^6.0.0
+    immer: ^9.0.7
+    is-root: ^2.1.0
+    loader-utils: ^3.2.0
+    open: ^8.4.0
+    pkg-up: ^3.1.0
+    prompts: ^2.4.2
+    react-error-overlay: 7.0.0-next.65+657739fb
+    recursive-readdir: ^2.2.2
+    shell-quote: ^1.7.3
+    strip-ansi: ^6.0.1
+    text-table: ^0.2.0
+  checksum: 9632a9d700262d180aa8c4957dc170e9f739269d2ac7433320a79abc72c7ff37a39e3a3b7f03771ecbb7cd5a1da7fcf2a95205baf6f03146f674c8caa3983af9
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
@@ -16965,6 +17011,13 @@ __metadata:
   version: 7.0.0-next.54
   resolution: "react-error-overlay@npm:7.0.0-next.54"
   checksum: 1d016364956e62b0585f4dd7d33510bb96ae968ac65ca71d481e344c625ff78a967a716495e77493e5c7bb9a8800f801af9b03959fbab6001d4d2822ed3a6789
+  languageName: node
+  linkType: hard
+
+"react-error-overlay@npm:7.0.0-next.65+657739fb":
+  version: 7.0.0-next.65
+  resolution: "react-error-overlay@npm:7.0.0-next.65"
+  checksum: 26dd82c6399fafb6b6e91d1e15d776b30ae4e389a384c1e0ae65042fcb74f48940b7efc14c113f32407b8b50384c65bb4e84bcdaec3e68873fc73c143b6f064f
   languageName: node
   linkType: hard
 
@@ -18417,7 +18470,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:^1.7.2":
+"shell-quote@npm:^1.7.2, shell-quote@npm:^1.7.3":
   version: 1.7.3
   resolution: "shell-quote@npm:1.7.3"
   checksum: aca58e73a3a5d933d02e0bdddedc53ee14f7c2ec264f97ac915b9d4482d077a38e422aa664631d60a672cd3cdb4054eb2e6c0303f54882453dacb6483e482d34
