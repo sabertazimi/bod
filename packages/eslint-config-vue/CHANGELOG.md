@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to ^8.1.1 ([#370](https://github.com/sabertazimi/bod/issues/370)) ([79fc367](https://github.com/sabertazimi/bod/commit/79fc367eea51ebb24e69bacad2d017bd5b7372fd))
+* **deps:** update dependency eslint-plugin-vue to ^8.2.0 ([#423](https://github.com/sabertazimi/bod/issues/423)) ([84fc29d](https://github.com/sabertazimi/bod/commit/84fc29db11d96d4b3e8e2c026b7c4a7c8c7b8972))
+* **eslint-vue:** disable `vue/multi-word-component-names` ([d506aac](https://github.com/sabertazimi/bod/commit/d506aac0a8849af85a37896461c3501929840ee5))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-vue

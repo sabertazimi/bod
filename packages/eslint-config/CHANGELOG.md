@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+**Note:** Version bump only for package @dg-scripts/eslint-config
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config

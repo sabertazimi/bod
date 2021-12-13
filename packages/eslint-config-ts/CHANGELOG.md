@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.3.1 ([#350](https://github.com/sabertazimi/bod/issues/350)) ([800f5b3](https://github.com/sabertazimi/bod/commit/800f5b328176bf4fb14fe50276dc8eda97731fd5))
+* **deps:** update typescript-eslint monorepo to ^5.4.0 ([#373](https://github.com/sabertazimi/bod/issues/373)) ([d5b3e65](https://github.com/sabertazimi/bod/commit/d5b3e650e3103a0d98adeacb37d41577f69be21a))
+* **deps:** update typescript-eslint monorepo to ^5.5.0 ([#402](https://github.com/sabertazimi/bod/issues/402)) ([7b42067](https://github.com/sabertazimi/bod/commit/7b42067f90c00b25b1d540544a96307b59328682))
+* **deps:** update typescript-eslint monorepo to ^5.6.0 ([#427](https://github.com/sabertazimi/bod/issues/427)) ([85c95d6](https://github.com/sabertazimi/bod/commit/85c95d691679b5792995c5d53f46e7200c0b9841))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 

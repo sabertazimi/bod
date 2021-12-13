@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-html to ^1.3.0 ([#391](https://github.com/sabertazimi/bod/issues/391)) ([ad3d567](https://github.com/sabertazimi/bod/commit/ad3d567b00d214e0cc1078c257b8064098d385c0))
+* **deps:** update dependency stylelint-config-standard to v24 ([#375](https://github.com/sabertazimi/bod/issues/375)) ([e6c1287](https://github.com/sabertazimi/bod/commit/e6c1287eb69271af8a1f43c6e37aeac1e9766957))
+* **deps:** update dependency stylelint-config-standard-scss to v3 ([#379](https://github.com/sabertazimi/bod/issues/379)) ([4d6fdd4](https://github.com/sabertazimi/bod/commit/4d6fdd46bcfd951ff8e906db0eef9caa21470ae6))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 

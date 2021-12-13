@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/eslint-parser to ^7.16.3 ([#342](https://github.com/sabertazimi/bod/issues/342)) ([6f8ec75](https://github.com/sabertazimi/bod/commit/6f8ec75c9974fc5ac22acd75652106d4b477abb2))
+* **deps:** update dependency babel-preset-react-app to ^11.0.0-next.102 ([#414](https://github.com/sabertazimi/bod/issues/414)) ([f905ff3](https://github.com/sabertazimi/bod/commit/f905ff38f881a28b385c9833f14e5e3816f49bf4))
+* **deps:** update dependency eslint-plugin-import to ^2.25.3 ([#344](https://github.com/sabertazimi/bod/issues/344)) ([de5dfac](https://github.com/sabertazimi/bod/commit/de5dfac22a6ffe3a7d4cc8dedb4ab4b1ed03e9a7))
+* **deps:** update dependency eslint-plugin-jest to ^25.2.4 ([#345](https://github.com/sabertazimi/bod/issues/345)) ([84472b0](https://github.com/sabertazimi/bod/commit/84472b076dcc5ba25761cbbe05c478d8508c6c75))
+* **deps:** update dependency eslint-plugin-jest to ^25.3.0 ([#389](https://github.com/sabertazimi/bod/issues/389)) ([3250408](https://github.com/sabertazimi/bod/commit/325040868b9c152f2053692aa7dfbd8aa5937c13))
+* **deps:** update dependency eslint-plugin-react to ^7.27.1 ([#364](https://github.com/sabertazimi/bod/issues/364)) ([376cea9](https://github.com/sabertazimi/bod/commit/376cea94c5822e11dfb012b841efb4fa0190cad5))
+* **deps:** update dependency eslint-plugin-testing-library to ^5.0.1 ([#398](https://github.com/sabertazimi/bod/issues/398)) ([3320c11](https://github.com/sabertazimi/bod/commit/3320c118c506e09193fd239d7c75037536fdc99a))
+* **deps:** update typescript-eslint monorepo to ^5.3.1 ([#350](https://github.com/sabertazimi/bod/issues/350)) ([800f5b3](https://github.com/sabertazimi/bod/commit/800f5b328176bf4fb14fe50276dc8eda97731fd5))
+* **deps:** update typescript-eslint monorepo to ^5.4.0 ([#373](https://github.com/sabertazimi/bod/issues/373)) ([d5b3e65](https://github.com/sabertazimi/bod/commit/d5b3e650e3103a0d98adeacb37d41577f69be21a))
+* **deps:** update typescript-eslint monorepo to ^5.5.0 ([#402](https://github.com/sabertazimi/bod/issues/402)) ([7b42067](https://github.com/sabertazimi/bod/commit/7b42067f90c00b25b1d540544a96307b59328682))
+* **deps:** update typescript-eslint monorepo to ^5.6.0 ([#427](https://github.com/sabertazimi/bod/issues/427)) ([85c95d6](https://github.com/sabertazimi/bod/commit/85c95d691679b5792995c5d53f46e7200c0b9841))
+
+
+### Features
+
+* **eslint-bod:** add more testing-library linter rules ([#396](https://github.com/sabertazimi/bod/issues/396)) ([9420ac9](https://github.com/sabertazimi/bod/commit/9420ac973a6661a84a271166af3f5346856576ef))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 

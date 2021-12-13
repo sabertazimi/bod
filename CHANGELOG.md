@@ -3,6 +3,96 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **ci-tests:** rectify CRA installation error ([#418](https://github.com/sabertazimi/bod/issues/418)) ([4af4a7d](https://github.com/sabertazimi/bod/commit/4af4a7d17d2470e710b5dd64186325c26bae28c8))
+* **CRA-jest:** add SVG component mock file ([a376c22](https://github.com/sabertazimi/bod/commit/a376c226c6af0de7bfb61ac99a590bc4dfa7dfb0))
+* **CRA-jest:** rectify SVG mock file ([9a5b1e1](https://github.com/sabertazimi/bod/commit/9a5b1e1687fb5cfd57c1e17e855c39c266ad687f))
+* **CRA-jest:** transform SVG file to React component ([fef5059](https://github.com/sabertazimi/bod/commit/fef505918dfe84c88d7b91330d5387c6a7db0863))
+* **CRA-types:** update type definition for SVG components ([bfa4188](https://github.com/sabertazimi/bod/commit/bfa4188df636254f9728f0d4ac8f5260f03ee439))
+* **CRA-webpack:** disable overlay for warnings ([8521d15](https://github.com/sabertazimi/bod/commit/8521d15f1f1c0d4eee37b82efe78ca1693374578))
+* **CRA-webpack:** remove `file-loader` for SVG files ([0621d42](https://github.com/sabertazimi/bod/commit/0621d42d26924b6ff0beb17a85108a6e526c5564))
+* **CRA-webpack:** update svgr configuration to svgr v6 ([#429](https://github.com/sabertazimi/bod/issues/429)) ([0881d77](https://github.com/sabertazimi/bod/commit/0881d776e9237b7cd62e444d6e94c3b811e86aa2))
+* **deps:** update dependency @babel/eslint-parser to ^7.16.3 ([#342](https://github.com/sabertazimi/bod/issues/342)) ([6f8ec75](https://github.com/sabertazimi/bod/commit/6f8ec75c9974fc5ac22acd75652106d4b477abb2))
+* **deps:** update dependency @easyops-cn/docusaurus-search-local to ^0.20.0 ([#352](https://github.com/sabertazimi/bod/issues/352)) ([dd1cdce](https://github.com/sabertazimi/bod/commit/dd1cdcea8a01bb6b1c7b1ecd0076eb7e89ad25c5))
+* **deps:** update dependency @easyops-cn/docusaurus-search-local to ^0.21.0 ([#407](https://github.com/sabertazimi/bod/issues/407)) ([edff1c2](https://github.com/sabertazimi/bod/commit/edff1c250f18643325ce01fbad7e78d3c4187582))
+* **deps:** update dependency @easyops-cn/docusaurus-search-local to ^0.21.1 ([#413](https://github.com/sabertazimi/bod/issues/413)) ([5cac303](https://github.com/sabertazimi/bod/commit/5cac303b337914d204f26e8caa722b263ccff587))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.2 ([#360](https://github.com/sabertazimi/bod/issues/360)) ([c5753f1](https://github.com/sabertazimi/bod/commit/c5753f1dd61837513b1821204c119d621989a68c))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.3 ([#395](https://github.com/sabertazimi/bod/issues/395)) ([246ed6d](https://github.com/sabertazimi/bod/commit/246ed6d9f726cf29efd0532cfb7a9a83d9ba0777))
+* **deps:** update dependency @reduxjs/toolkit to ^1.7.0 ([#422](https://github.com/sabertazimi/bod/issues/422)) ([a487f3f](https://github.com/sabertazimi/bod/commit/a487f3f878b459c8dc3c2304a085d1374b5e8031))
+* **deps:** update dependency @svgr/webpack to ^6.1.2 ([#432](https://github.com/sabertazimi/bod/issues/432)) ([f5f1393](https://github.com/sabertazimi/bod/commit/f5f13932ff4740a5b5b4771daff0f1dbae90cf23))
+* **deps:** update dependency @svgr/webpack to v6 ([#404](https://github.com/sabertazimi/bod/issues/404)) ([b6fa3d5](https://github.com/sabertazimi/bod/commit/b6fa3d509d33ba1953d29e25d5e6ee5c15fbdcd0))
+* **deps:** update dependency babel-preset-react-app to ^11.0.0-next.102 ([#414](https://github.com/sabertazimi/bod/issues/414)) ([f905ff3](https://github.com/sabertazimi/bod/commit/f905ff38f881a28b385c9833f14e5e3816f49bf4))
+* **deps:** update dependency browserslist to ^4.18.0 ([#356](https://github.com/sabertazimi/bod/issues/356)) ([ef3e3b1](https://github.com/sabertazimi/bod/commit/ef3e3b1f9143e3102e2a124b0d66c0bd8051226b))
+* **deps:** update dependency browserslist to ^4.18.1 ([#361](https://github.com/sabertazimi/bod/issues/361)) ([8767b6d](https://github.com/sabertazimi/bod/commit/8767b6d96d7da6cf49e90d478dcebcfbeb003f21))
+* **deps:** update dependency camelcase to ^6.2.1 ([#362](https://github.com/sabertazimi/bod/issues/362)) ([f55ae67](https://github.com/sabertazimi/bod/commit/f55ae675ec1ac5cd1e610c11c3ed7130c374d595))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.1.3 ([#343](https://github.com/sabertazimi/bod/issues/343)) ([abe6310](https://github.com/sabertazimi/bod/commit/abe63106abeb8aa433fbe89f6f295e523637cc07))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.1.4 ([#363](https://github.com/sabertazimi/bod/issues/363)) ([51befcd](https://github.com/sabertazimi/bod/commit/51befcd2b60e9c3f55011a6761303fad2de0137e))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.2.0 ([#388](https://github.com/sabertazimi/bod/issues/388)) ([21416d5](https://github.com/sabertazimi/bod/commit/21416d5d50500a3f262875a99d3da782a1c626d6))
+* **deps:** update dependency eslint to ^8.3.0 ([#377](https://github.com/sabertazimi/bod/issues/377)) ([d6e7cb2](https://github.com/sabertazimi/bod/commit/d6e7cb2686a8e97e31af61301e982809347cbe2e))
+* **deps:** update dependency eslint to ^8.4.0 ([#405](https://github.com/sabertazimi/bod/issues/405)) ([abaecd3](https://github.com/sabertazimi/bod/commit/abaecd35734cc0385b288f049e923e9984a33b5e))
+* **deps:** update dependency eslint to ^8.4.1 ([#415](https://github.com/sabertazimi/bod/issues/415)) ([f1f8e9f](https://github.com/sabertazimi/bod/commit/f1f8e9f59f23aa7783942386d6fd546a4eefdc9c))
+* **deps:** update dependency eslint-plugin-import to ^2.25.3 ([#344](https://github.com/sabertazimi/bod/issues/344)) ([de5dfac](https://github.com/sabertazimi/bod/commit/de5dfac22a6ffe3a7d4cc8dedb4ab4b1ed03e9a7))
+* **deps:** update dependency eslint-plugin-jest to ^25.2.4 ([#345](https://github.com/sabertazimi/bod/issues/345)) ([84472b0](https://github.com/sabertazimi/bod/commit/84472b076dcc5ba25761cbbe05c478d8508c6c75))
+* **deps:** update dependency eslint-plugin-jest to ^25.3.0 ([#389](https://github.com/sabertazimi/bod/issues/389)) ([3250408](https://github.com/sabertazimi/bod/commit/325040868b9c152f2053692aa7dfbd8aa5937c13))
+* **deps:** update dependency eslint-plugin-promise to ^5.2.0 ([#400](https://github.com/sabertazimi/bod/issues/400)) ([e2f18fe](https://github.com/sabertazimi/bod/commit/e2f18fe59d29ee63e9c23fd999f8540ce960031e))
+* **deps:** update dependency eslint-plugin-react to ^7.27.1 ([#364](https://github.com/sabertazimi/bod/issues/364)) ([376cea9](https://github.com/sabertazimi/bod/commit/376cea94c5822e11dfb012b841efb4fa0190cad5))
+* **deps:** update dependency eslint-plugin-testing-library to ^5.0.1 ([#398](https://github.com/sabertazimi/bod/issues/398)) ([3320c11](https://github.com/sabertazimi/bod/commit/3320c118c506e09193fd239d7c75037536fdc99a))
+* **deps:** update dependency eslint-plugin-unicorn to ^38.0.1 ([#346](https://github.com/sabertazimi/bod/issues/346)) ([348f5dd](https://github.com/sabertazimi/bod/commit/348f5dda1d61576ccc97ac072965683ae51b39e3))
+* **deps:** update dependency eslint-plugin-unicorn to v39 ([#378](https://github.com/sabertazimi/bod/issues/378)) ([50b3699](https://github.com/sabertazimi/bod/commit/50b3699902778c71bb38ca15072084c9434c79b7))
+* **deps:** update dependency eslint-plugin-vue to ^8.1.1 ([#370](https://github.com/sabertazimi/bod/issues/370)) ([79fc367](https://github.com/sabertazimi/bod/commit/79fc367eea51ebb24e69bacad2d017bd5b7372fd))
+* **deps:** update dependency eslint-plugin-vue to ^8.2.0 ([#423](https://github.com/sabertazimi/bod/issues/423)) ([84fc29d](https://github.com/sabertazimi/bod/commit/84fc29db11d96d4b3e8e2c026b7c4a7c8c7b8972))
+* **deps:** update dependency eslint-plugin-yml to ^0.12.0 ([#371](https://github.com/sabertazimi/bod/issues/371)) ([a7c8728](https://github.com/sabertazimi/bod/commit/a7c87284d9538a05eae777c90ed5f3f4a31807b9))
+* **deps:** update dependency eslint-webpack-plugin to ^3.1.1 ([#347](https://github.com/sabertazimi/bod/issues/347)) ([77fd249](https://github.com/sabertazimi/bod/commit/77fd249beb37cb2d5f12cbc8b904da8130e35912))
+* **deps:** update dependency jsonc-eslint-parser to ^2.0.4 ([#365](https://github.com/sabertazimi/bod/issues/365)) ([e0d9050](https://github.com/sabertazimi/bod/commit/e0d90506696f6f57952469447268a053d983490e))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.5 ([#366](https://github.com/sabertazimi/bod/issues/366)) ([30dee40](https://github.com/sabertazimi/bod/commit/30dee40a39efef0c4609e2589baff0fb1935fe01))
+* **deps:** update dependency postcss to ^8.4.3 ([#390](https://github.com/sabertazimi/bod/issues/390)) ([cf5550d](https://github.com/sabertazimi/bod/commit/cf5550d12b31a8e8ffb043d8f0c7dbcdfee5ca91))
+* **deps:** update dependency postcss to ^8.4.4 ([#394](https://github.com/sabertazimi/bod/issues/394)) ([02d9e44](https://github.com/sabertazimi/bod/commit/02d9e44b5bbb11458806d2b6229856574d52b32b))
+* **deps:** update dependency postcss-html to ^1.3.0 ([#391](https://github.com/sabertazimi/bod/issues/391)) ([ad3d567](https://github.com/sabertazimi/bod/commit/ad3d567b00d214e0cc1078c257b8064098d385c0))
+* **deps:** update dependency postcss-loader to ^6.2.1 ([#384](https://github.com/sabertazimi/bod/issues/384)) ([4bf4077](https://github.com/sabertazimi/bod/commit/4bf40773ab192be89c23ffd5f72ff2eaa0b8be0e))
+* **deps:** update dependency postcss-preset-env to v7 ([#374](https://github.com/sabertazimi/bod/issues/374)) ([06bacf8](https://github.com/sabertazimi/bod/commit/06bacf88bcd4ba9e466c3578273bd1933e62ab42))
+* **deps:** update dependency react-app-polyfill to ^3.0.0-next.102 ([#416](https://github.com/sabertazimi/bod/issues/416)) ([1db2261](https://github.com/sabertazimi/bod/commit/1db2261f39abd0e1a6c1954d81d442ecc3e67e17))
+* **deps:** update dependency react-dev-utils to ^12.0.0-next.58 ([#417](https://github.com/sabertazimi/bod/issues/417)) ([c3210b4](https://github.com/sabertazimi/bod/commit/c3210b491c224707e98be3544f10ed7b972a5a57))
+* **deps:** update dependency react-refresh to ^0.11.0 ([#353](https://github.com/sabertazimi/bod/issues/353)) ([87bf3fc](https://github.com/sabertazimi/bod/commit/87bf3fcf6c37dfc88c87c832f200c8553d4dc8ce))
+* **deps:** update dependency react-router-dom to ^6.0.2 ([#348](https://github.com/sabertazimi/bod/issues/348)) ([b57754d](https://github.com/sabertazimi/bod/commit/b57754dc5f56337c20e94e0956911e5988c5097c))
+* **deps:** update dependency react-router-dom to ^6.1.0 ([#424](https://github.com/sabertazimi/bod/issues/424)) ([5e0bbdd](https://github.com/sabertazimi/bod/commit/5e0bbdd1b691c31a5a6369bdfc36e7097bef34f1))
+* **deps:** update dependency react-router-dom to ^6.1.1 ([#430](https://github.com/sabertazimi/bod/issues/430)) ([fed52f2](https://github.com/sabertazimi/bod/commit/fed52f2e6aaf4a8d5f3e30903cd0708cd41fe21f))
+* **deps:** update dependency sass-loader to ^12.4.0 ([#425](https://github.com/sabertazimi/bod/issues/425)) ([c84ad28](https://github.com/sabertazimi/bod/commit/c84ad28dfefa97f696947b3007c8a7eecf5c9b47))
+* **deps:** update dependency stylelint-config-standard to v24 ([#375](https://github.com/sabertazimi/bod/issues/375)) ([e6c1287](https://github.com/sabertazimi/bod/commit/e6c1287eb69271af8a1f43c6e37aeac1e9766957))
+* **deps:** update dependency stylelint-config-standard-scss to v3 ([#379](https://github.com/sabertazimi/bod/issues/379)) ([4d6fdd4](https://github.com/sabertazimi/bod/commit/4d6fdd46bcfd951ff8e906db0eef9caa21470ae6))
+* **deps:** update dependency tailwindcss to v3 ([#428](https://github.com/sabertazimi/bod/issues/428)) ([f5a2242](https://github.com/sabertazimi/bod/commit/f5a2242d8e2626f654d55ab2bb9915f7f920d503))
+* **deps:** update dependency terser-webpack-plugin to ^5.2.5 ([#349](https://github.com/sabertazimi/bod/issues/349)) ([42459c2](https://github.com/sabertazimi/bod/commit/42459c2fc83a8f6d7da78c22612fb976b25c78ef))
+* **deps:** update dependency webpack to ^5.64.0 ([#354](https://github.com/sabertazimi/bod/issues/354)) ([00dc4a2](https://github.com/sabertazimi/bod/commit/00dc4a2fb4c5d5f284bb645a530dddb7673b6480))
+* **deps:** update dependency webpack to ^5.64.1 ([#367](https://github.com/sabertazimi/bod/issues/367)) ([4d8e597](https://github.com/sabertazimi/bod/commit/4d8e5973389b858d45996ca5569e92c1f028f5e6))
+* **deps:** update dependency webpack to ^5.64.2 ([#376](https://github.com/sabertazimi/bod/issues/376)) ([96cf49e](https://github.com/sabertazimi/bod/commit/96cf49e8ada76835c834b001b3dc29b1eddcc281))
+* **deps:** update dependency webpack to ^5.64.4 ([#385](https://github.com/sabertazimi/bod/issues/385)) ([36291b1](https://github.com/sabertazimi/bod/commit/36291b13a9eb33a03b60dd37fbb0b3488bb19e6d))
+* **deps:** update dependency webpack to ^5.65.0 ([#426](https://github.com/sabertazimi/bod/issues/426)) ([458bfec](https://github.com/sabertazimi/bod/commit/458bfeca6eba5d76d1ad78c3917baff3e8d5c219))
+* **deps:** update dependency webpack-dev-server to ^4.5.0 ([#355](https://github.com/sabertazimi/bod/issues/355)) ([017923b](https://github.com/sabertazimi/bod/commit/017923b76b0c9f6e187848819ad2a0b3485eefe8))
+* **deps:** update dependency webpack-dev-server to ^4.6.0 ([#392](https://github.com/sabertazimi/bod/issues/392)) ([780bfed](https://github.com/sabertazimi/bod/commit/780bfed362eb645e4966c9f6bd9b5e51977a43dd))
+* **deps:** update dependency workbox-webpack-plugin to ^6.4.1 ([#372](https://github.com/sabertazimi/bod/issues/372)) ([7c9cbe1](https://github.com/sabertazimi/bod/commit/7c9cbe177a93d95172b573d5a98fbe7540219286))
+* **deps:** update dependency workbox-webpack-plugin to ^6.4.2 ([#399](https://github.com/sabertazimi/bod/issues/399)) ([467eb75](https://github.com/sabertazimi/bod/commit/467eb750c58554e3cb11f85d0f7f7bef912f2410))
+* **deps:** update docusaurus monorepo to v2.0.0-beta.13 ([#419](https://github.com/sabertazimi/bod/issues/419)) ([a061be4](https://github.com/sabertazimi/bod/commit/a061be455998c1e6e168e1fec50e70bedc62c8a0))
+* **deps:** update jest monorepo ([#401](https://github.com/sabertazimi/bod/issues/401)) ([7d071cc](https://github.com/sabertazimi/bod/commit/7d071ccf92fdc5f8419330a66225c7fa7a97e9eb))
+* **deps:** update jest monorepo to ^27.4.4 ([#420](https://github.com/sabertazimi/bod/issues/420)) ([ed1386f](https://github.com/sabertazimi/bod/commit/ed1386fa28eb8883da9d9be63be771433786cf02))
+* **deps:** update typescript-eslint monorepo to ^5.3.1 ([#350](https://github.com/sabertazimi/bod/issues/350)) ([800f5b3](https://github.com/sabertazimi/bod/commit/800f5b328176bf4fb14fe50276dc8eda97731fd5))
+* **deps:** update typescript-eslint monorepo to ^5.4.0 ([#373](https://github.com/sabertazimi/bod/issues/373)) ([d5b3e65](https://github.com/sabertazimi/bod/commit/d5b3e650e3103a0d98adeacb37d41577f69be21a))
+* **deps:** update typescript-eslint monorepo to ^5.5.0 ([#402](https://github.com/sabertazimi/bod/issues/402)) ([7b42067](https://github.com/sabertazimi/bod/commit/7b42067f90c00b25b1d540544a96307b59328682))
+* **deps:** update typescript-eslint monorepo to ^5.6.0 ([#427](https://github.com/sabertazimi/bod/issues/427)) ([85c95d6](https://github.com/sabertazimi/bod/commit/85c95d691679b5792995c5d53f46e7200c0b9841))
+* **eslint-vue:** disable `vue/multi-word-component-names` ([d506aac](https://github.com/sabertazimi/bod/commit/d506aac0a8849af85a37896461c3501929840ee5))
+* **template-SVG:** import SVG files as React components ([f0084e1](https://github.com/sabertazimi/bod/commit/f0084e1f4234ece379c7bd296006567265b1883f))
+
+
+### Features
+
+* **eslint-bod:** add more testing-library linter rules ([#396](https://github.com/sabertazimi/bod/issues/396)) ([9420ac9](https://github.com/sabertazimi/bod/commit/9420ac973a6661a84a271166af3f5346856576ef))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **template-SVG:** import SVG files as React components ([f0084e1](https://github.com/sabertazimi/bod/commit/f0084e1f4234ece379c7bd296006567265b1883f))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 **Note:** Version bump only for package @sabertazimi/cra-template-typescript

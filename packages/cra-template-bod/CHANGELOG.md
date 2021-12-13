@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @reduxjs/toolkit to ^1.7.0 ([#422](https://github.com/sabertazimi/bod/issues/422)) ([a487f3f](https://github.com/sabertazimi/bod/commit/a487f3f878b459c8dc3c2304a085d1374b5e8031))
+* **deps:** update dependency react-router-dom to ^6.0.2 ([#348](https://github.com/sabertazimi/bod/issues/348)) ([b57754d](https://github.com/sabertazimi/bod/commit/b57754dc5f56337c20e94e0956911e5988c5097c))
+* **deps:** update dependency react-router-dom to ^6.1.0 ([#424](https://github.com/sabertazimi/bod/issues/424)) ([5e0bbdd](https://github.com/sabertazimi/bod/commit/5e0bbdd1b691c31a5a6369bdfc36e7097bef34f1))
+* **deps:** update dependency react-router-dom to ^6.1.1 ([#430](https://github.com/sabertazimi/bod/issues/430)) ([fed52f2](https://github.com/sabertazimi/bod/commit/fed52f2e6aaf4a8d5f3e30903cd0708cd41fe21f))
+* **deps:** update dependency stylelint-config-standard to v24 ([#375](https://github.com/sabertazimi/bod/issues/375)) ([e6c1287](https://github.com/sabertazimi/bod/commit/e6c1287eb69271af8a1f43c6e37aeac1e9766957))
+* **template-SVG:** import SVG files as React components ([f0084e1](https://github.com/sabertazimi/bod/commit/f0084e1f4234ece379c7bd296006567265b1883f))
+
+
+### Features
+
+* **eslint-bod:** add more testing-library linter rules ([#396](https://github.com/sabertazimi/bod/issues/396)) ([9420ac9](https://github.com/sabertazimi/bod/commit/9420ac973a6661a84a271166af3f5346856576ef))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **ci-tests:** rectify CRA installation error ([#418](https://github.com/sabertazimi/bod/issues/418)) ([4af4a7d](https://github.com/sabertazimi/bod/commit/4af4a7d17d2470e710b5dd64186325c26bae28c8))
+
+
+
+
+
 ## [5.5.10](https://github.com/sabertazimi/bod/compare/v5.5.9...v5.5.10) (2021-11-11)
 
 **Note:** Version bump only for package bod
