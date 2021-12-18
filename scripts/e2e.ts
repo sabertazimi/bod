@@ -135,7 +135,7 @@ class Test {
     utils.info('Run create-react-app to generate project ...');
     utils.exec(`rm -fr ${this.appPath}`);
     utils.exec(
-      `yarn dlx create-react-app@next ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
+      `yarn dlx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
       path.join(this.rootPath, '..')
     );
   }
