@@ -1,9 +1,10 @@
-import { SpawnSyncReturns } from 'child_process';
+import type { SpawnSyncReturns } from 'child_process';
 import path from 'path';
 import { isCI } from 'ci-info';
 import rimraf from 'rimraf';
 import { inquirer, spawn } from '../../utils';
-import CreateCommand, { Action } from '../CreateCommand';
+import type { Action } from '../CreateCommand';
+import CreateCommand from '../CreateCommand';
 
 const appPath = path.join(process.cwd(), '..', 'bod-unit-tests');
 
