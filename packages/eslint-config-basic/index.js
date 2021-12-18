@@ -173,6 +173,21 @@ module.exports = {
     'template-curly-spacing': 'error',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'generator-star-spacing': 'off',
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
+      },
+    ],
 
     // best-practice
     'array-callback-return': 'error',
@@ -223,5 +238,15 @@ module.exports = {
       { functions: false, classes: false, variables: true },
     ],
     'eslint-comments/disable-enable-pair': 'off',
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: false,
+      },
+    ],
   },
 };
