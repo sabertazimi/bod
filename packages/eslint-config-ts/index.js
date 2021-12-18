@@ -10,14 +10,19 @@ module.exports = {
     'import/named': 'off',
 
     // TS
-    'no-useless-constructor': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/member-delimiter-style': [
       'error',
       { multiline: { delimiter: 'none' } },
     ],
     '@typescript-eslint/type-annotation-spacing': ['error', {}],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports', disallowTypeAnnotations: false },
+    ],
 
+    // Override JS
+    'no-useless-constructor': 'off',
     indent: 'off',
     '@typescript-eslint/indent': ['error', 2],
     'no-unused-vars': 'off',
@@ -27,12 +32,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'warn',
-      {
-        functions: false,
-        classes: false,
-        variables: false,
-        typedefs: false,
-      },
+      { functions: false, classes: false, variables: true },
     ],
 
     // off
@@ -48,5 +48,6 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/no-namespace': 'off',
   },
 };
