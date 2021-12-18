@@ -25,7 +25,7 @@ class CreateCommand extends BaseCommand {
       value: 'jsx',
       command: 'npx',
       args: [
-        'create-react-app@next',
+        'create-react-app',
         '--template',
         '@sabertazimi',
         '--scripts-version',
@@ -37,7 +37,7 @@ class CreateCommand extends BaseCommand {
       value: 'tsx',
       command: 'npx',
       args: [
-        'create-react-app@next',
+        'create-react-app',
         '--template',
         '@sabertazimi/typescript',
         '--scripts-version',
@@ -49,7 +49,7 @@ class CreateCommand extends BaseCommand {
       value: 'framework',
       command: 'npx',
       args: [
-        'create-react-app@next',
+        'create-react-app',
         '--template',
         'bod',
         '--scripts-version',
