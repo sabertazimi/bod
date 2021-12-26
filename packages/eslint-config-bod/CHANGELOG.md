@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* **CRA-deps:** bump all CRA deps to v5 ([#445](https://github.com/sabertazimi/bod/issues/445)) ([96d70fd](https://github.com/sabertazimi/bod/commit/96d70fd14d4186cbe720f78cc3cd08054273a8df))
+* **deps:** update babel monorepo to ^7.16.5 ([#437](https://github.com/sabertazimi/bod/issues/437)) ([21fc515](https://github.com/sabertazimi/bod/commit/21fc51578c8a402c7cd40749e9957121d46b8dde))
+* **deps:** update dependency eslint-plugin-react to ^7.28.0 ([#467](https://github.com/sabertazimi/bod/issues/467)) ([1735aaf](https://github.com/sabertazimi/bod/commit/1735aaf708e5f177bb25c6c274f13b7b6822deb9))
+* **deps:** update typescript-eslint monorepo to ^5.7.0 ([#457](https://github.com/sabertazimi/bod/issues/457)) ([c5f7b49](https://github.com/sabertazimi/bod/commit/c5f7b490cccf6b737ac859ac997542ceb65f825a))
+* **deps:** update typescript-eslint monorepo to ^5.8.0 ([#470](https://github.com/sabertazimi/bod/issues/470)) ([a049382](https://github.com/sabertazimi/bod/commit/a04938208c4d24fca186193fe4a4294e36b32647))
+
+
+
+
+
 # [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
 
 

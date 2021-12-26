@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* **CRA:** use create-react-app v5 release ([#443](https://github.com/sabertazimi/bod/issues/443)) ([d1e6076](https://github.com/sabertazimi/bod/commit/d1e60762808406ea432ae14769f58e022ec1014e))
+* **eslint-config:** add `@typescript-eslint/consistent-type-imports` ([#452](https://github.com/sabertazimi/bod/issues/452)) ([9fc0a7b](https://github.com/sabertazimi/bod/commit/9fc0a7b281373dd13d2fc73787d1d1155ff8ad9d))
+
+
+
+
+
 # [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
 
 

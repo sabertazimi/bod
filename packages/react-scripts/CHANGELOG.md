@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* **CRA-deps:** bump all CRA deps to v5 ([#445](https://github.com/sabertazimi/bod/issues/445)) ([96d70fd](https://github.com/sabertazimi/bod/commit/96d70fd14d4186cbe720f78cc3cd08054273a8df))
+* **CRA-tailwind:** rectify tailwindcss webpack configuration ([#444](https://github.com/sabertazimi/bod/issues/444)) ([5583105](https://github.com/sabertazimi/bod/commit/55831058b448bbdb194772a0126940b6c168ea5d))
+* **deps:** update babel monorepo to ^7.16.5 ([#437](https://github.com/sabertazimi/bod/issues/437)) ([21fc515](https://github.com/sabertazimi/bod/commit/21fc51578c8a402c7cd40749e9957121d46b8dde))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.4 ([#462](https://github.com/sabertazimi/bod/issues/462)) ([c234a86](https://github.com/sabertazimi/bod/commit/c234a869ba191c463b675eba31f3563cbb30e9c9))
+* **deps:** update dependency browserslist to ^4.19.1 ([#449](https://github.com/sabertazimi/bod/issues/449)) ([06a9c54](https://github.com/sabertazimi/bod/commit/06a9c545d774aa71bdb032b29eb1a51e03cf6a6d))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.3.0 ([#453](https://github.com/sabertazimi/bod/issues/453)) ([1ea1600](https://github.com/sabertazimi/bod/commit/1ea1600fdfb4cfd20dc5d4e4033f15fde995d313))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^3.3.1 ([#463](https://github.com/sabertazimi/bod/issues/463)) ([91421fd](https://github.com/sabertazimi/bod/commit/91421fd17065c0ea35a791a031fbae1e50fbdf87))
+* **deps:** update dependency eslint to ^8.5.0 ([#454](https://github.com/sabertazimi/bod/issues/454)) ([7a6a825](https://github.com/sabertazimi/bod/commit/7a6a82558b036f1d1670430f99e64bd3dc245a68))
+* **deps:** update dependency postcss to ^8.4.5 ([#441](https://github.com/sabertazimi/bod/issues/441)) ([8778ad2](https://github.com/sabertazimi/bod/commit/8778ad234c096521c077b9a46f4172a696b2e414))
+* **deps:** update dependency postcss-preset-env to ^7.0.2 ([#442](https://github.com/sabertazimi/bod/issues/442)) ([da00721](https://github.com/sabertazimi/bod/commit/da00721445931c1275c3bc795de7938d3a87316a))
+* **deps:** update dependency postcss-preset-env to ^7.1.0 ([#468](https://github.com/sabertazimi/bod/issues/468)) ([120fa8e](https://github.com/sabertazimi/bod/commit/120fa8ef550cdf3b2faa2fc792e2e40d402405ef))
+* **deps:** update dependency tailwindcss to ^3.0.7 ([#446](https://github.com/sabertazimi/bod/issues/446)) ([e9e5c28](https://github.com/sabertazimi/bod/commit/e9e5c28a631d5856ad00960fff9ac5af3b2659b4))
+* **deps:** update dependency terser-webpack-plugin to ^5.3.0 ([#456](https://github.com/sabertazimi/bod/issues/456)) ([671c6ac](https://github.com/sabertazimi/bod/commit/671c6ac5fbd0b1ec6a80384538620fb20a8a9b83))
+* **deps:** update dependency webpack-dev-server to ^4.7.1 ([#469](https://github.com/sabertazimi/bod/issues/469)) ([f639541](https://github.com/sabertazimi/bod/commit/f639541c3dd8cdbfd06eca61a485f8621652e547))
+* **deps:** update jest monorepo to ^27.4.5 ([#447](https://github.com/sabertazimi/bod/issues/447)) ([ed1fa82](https://github.com/sabertazimi/bod/commit/ed1fa825bc669c57fda0fba5be6d42ff8ffa7114))
+* **eslint-config:** add `@typescript-eslint/consistent-type-imports` ([#452](https://github.com/sabertazimi/bod/issues/452)) ([9fc0a7b](https://github.com/sabertazimi/bod/commit/9fc0a7b281373dd13d2fc73787d1d1155ff8ad9d))
+
+
+
+
+
 # [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
 
 

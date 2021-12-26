@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-promise to v6 ([#458](https://github.com/sabertazimi/bod/issues/458)) ([2fc1217](https://github.com/sabertazimi/bod/commit/2fc12170cea041ea27b2952e0ed101db9aaa5147))
+* **eslint-config:** add `spaced-comment` and `sort-imports` rules ([#451](https://github.com/sabertazimi/bod/issues/451)) ([5279487](https://github.com/sabertazimi/bod/commit/5279487ff146e3d3c5cf4e028a279d314c1c2997))
+
+
+
+
+
 # [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
 
 

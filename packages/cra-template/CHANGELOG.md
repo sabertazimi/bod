@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* **template-tailwind:** rectify tailwindcss configuration ([#450](https://github.com/sabertazimi/bod/issues/450)) ([8885f5b](https://github.com/sabertazimi/bod/commit/8885f5b778994aacccc2b6ec5d9cf908a5cda417))
+
+
+
+
+
 # [5.6.0](https://github.com/sabertazimi/bod/compare/v5.5.10...v5.6.0) (2021-12-13)
 
 
