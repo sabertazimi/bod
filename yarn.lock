@@ -3969,7 +3969,7 @@ __metadata:
     stylelint-config-prettier: ^9.0.3
     stylelint-prettier: ^2.0.0
     stylelint-webpack-plugin: ^3.1.0
-    tailwindcss: ^3.0.12
+    tailwindcss: ^3.0.15
     terser-webpack-plugin: ^5.3.0
     webpack: ^5.65.0
     webpack-bundle-analyzer: ^4.5.0
@@ -19508,9 +19508,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.12":
-  version: 3.0.12
-  resolution: "tailwindcss@npm:3.0.12"
+"tailwindcss@npm:^3.0.15":
+  version: 3.0.15
+  resolution: "tailwindcss@npm:3.0.15"
   dependencies:
     arg: ^5.0.1
     chalk: ^4.1.2
@@ -19531,14 +19531,14 @@ resolve@^2.0.0-next.3:
     postcss-selector-parser: ^6.0.8
     postcss-value-parser: ^4.2.0
     quick-lru: ^5.1.1
-    resolve: ^1.20.0
+    resolve: ^1.21.0
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.0.9
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: d7de0458419ca50409f295831926cf76d2be1385894781c185b8200d3c568b10c7af2c27460582e47d8d4f89eacc7808f67027c1e8bc3820ac285d9497b675bb
+  checksum: acbf45202d3046e87c3a55e80ca93f7344960fb4d0daa3d5f5a2b28e8afd7a26d023f9142632168d1a3076eff701499bed40cafa3823c371de596f42e98ba84d
   languageName: node
   linkType: hard
 
