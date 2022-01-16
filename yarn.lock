@@ -3930,7 +3930,7 @@ __metadata:
     case-sensitive-paths-webpack-plugin: ^2.4.0
     css-loader: ^6.5.1
     css-minimizer-webpack-plugin: ^3.3.1
-    dotenv: ^10.0.0
+    dotenv: ^12.0.4
     dotenv-expand: ^5.1.0
     eslint: ^8.7.0
     eslint-config-bod: ^5.6.1
@@ -7668,7 +7668,7 @@ __metadata:
     ci-info: ^3.3.0
     concurrently: ^7.0.0
     consola: ^2.15.3
-    dotenv: ^10.0.0
+    dotenv: ^12.0.4
     eslint: ^8.7.0
     jest: ^27.4.7
     lerna: ^4.0.0
@@ -8681,10 +8681,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "dotenv@npm:10.0.0"
-  checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
+"dotenv@npm:^12.0.4":
+  version: 12.0.4
+  resolution: "dotenv@npm:12.0.4"
+  checksum: d79a69fae72b5c5785906600ce42388b48bf7ab20bbac8346bac327cc87a68617a09b1b3cd39965210f011ab07ea4641d5952d46f67f4e40a66b9ad76cf456c0
   languageName: node
   linkType: hard
 
