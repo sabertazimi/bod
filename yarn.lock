@@ -1767,7 +1767,7 @@ __metadata:
   resolution: "@dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
     "@dg-scripts/eslint-config-ts": ^5.6.1
-    eslint-plugin-vue: ^8.2.0
+    eslint-plugin-vue: ^8.3.0
   peerDependencies:
     eslint: ^7.32.0 || ^8.0.0
     typescript: ^4.0.0
@@ -9426,9 +9426,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "eslint-plugin-vue@npm:8.2.0"
+"eslint-plugin-vue@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "eslint-plugin-vue@npm:8.3.0"
   dependencies:
     eslint-utils: ^3.0.0
     natural-compare: ^1.4.0
@@ -9436,7 +9436,7 @@ __metadata:
     vue-eslint-parser: ^8.0.1
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-  checksum: 5aa0cdc17ffbc676b4ebd998d59d139a4e4da90897d54e5a389116b334a9dbb6d82ca0e90c653d34b4fe8f2e627431c2ffde11feea4ac0a2d88969255edd83ab
+  checksum: 08337907108472cc9eb5cb7a7fca4689eae634f3fc237e408bf1fea228dcd638cefcbd305946ab4090bc41333aaac204bfe9024eb22f72d7b1a0641b3c066c0a
   languageName: node
   linkType: hard
 
