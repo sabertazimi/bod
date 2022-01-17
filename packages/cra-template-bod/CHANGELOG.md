@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency web-vitals to ^2.1.3 ([#489](https://github.com/sabertazimi/bod/issues/489)) ([3991535](https://github.com/sabertazimi/bod/commit/3991535de49b0bf019faf85a5746d9a8a7f66485))
+
+
+
+
+
 ## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
 
 

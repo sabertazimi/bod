@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **jest-config:** rectify jest utils path ([af86ee5](https://github.com/sabertazimi/bod/commit/af86ee539c01669bd5dc288160eb28d90a240c63))
+
+
+
+
+
 ## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
 
 

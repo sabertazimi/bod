@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **CRA-webpack:** rectify webpack-dev-server deprecation warning ([#482](https://github.com/sabertazimi/bod/issues/482)) ([f751998](https://github.com/sabertazimi/bod/commit/f751998eff52e0f88d3414d6ed938cdefa13f2de))
+* **deps:** update dependency @babel/core to ^7.16.7 ([#471](https://github.com/sabertazimi/bod/issues/471)) ([af231da](https://github.com/sabertazimi/bod/commit/af231da33a763ff8a178d4fc304d2cb675597fb0))
+* **deps:** update dependency @svgr/webpack to ^6.2.0 ([#504](https://github.com/sabertazimi/bod/issues/504)) ([4992f7a](https://github.com/sabertazimi/bod/commit/4992f7a64413570eeb51caff020288f6d9c1769a))
+* **deps:** update dependency autoprefixer to ^10.4.1 ([#472](https://github.com/sabertazimi/bod/issues/472)) ([e16a4b2](https://github.com/sabertazimi/bod/commit/e16a4b284e0599033f711f7be6642b3dde15c689))
+* **deps:** update dependency autoprefixer to ^10.4.2 ([#484](https://github.com/sabertazimi/bod/issues/484)) ([ff53a25](https://github.com/sabertazimi/bod/commit/ff53a2580c83cc445108ae83db5284fc06802610))
+* **deps:** update dependency camelcase to ^6.3.0 ([#481](https://github.com/sabertazimi/bod/issues/481)) ([ed08f96](https://github.com/sabertazimi/bod/commit/ed08f965268eae2eb5c1f571768bea42c0fcbe71))
+* **deps:** update dependency dotenv to v12 ([#517](https://github.com/sabertazimi/bod/issues/517)) ([6862cf2](https://github.com/sabertazimi/bod/commit/6862cf2f24822c3b6bc8a472f4e1f47a66f20799))
+* **deps:** update dependency eslint to ^8.6.0 ([#479](https://github.com/sabertazimi/bod/issues/479)) ([a2abe4f](https://github.com/sabertazimi/bod/commit/a2abe4fe5d5225264570dba32c54d89e7e02f129))
+* **deps:** update dependency eslint to ^8.7.0 ([#510](https://github.com/sabertazimi/bod/issues/510)) ([2f3ba06](https://github.com/sabertazimi/bod/commit/2f3ba067661b625bdab3c866305d226186c867fb))
+* **deps:** update dependency mini-css-extract-plugin to ^2.4.6 ([#486](https://github.com/sabertazimi/bod/issues/486)) ([a90d7a3](https://github.com/sabertazimi/bod/commit/a90d7a3c3fe9cf04f0caa644c3b7fff812c321cf))
+* **deps:** update dependency mini-css-extract-plugin to ^2.5.0 ([#498](https://github.com/sabertazimi/bod/issues/498)) ([9e80725](https://github.com/sabertazimi/bod/commit/9e80725ed6c9dd59c39a94a7da01cef3daa13d2f)), closes [webpack-contrib/mini-css-extract-plugin#896](https://github.com/webpack-contrib/mini-css-extract-plugin/issues/896)
+* **deps:** update dependency mini-css-extract-plugin to ^2.5.1 ([#519](https://github.com/sabertazimi/bod/issues/519)) ([8d917a9](https://github.com/sabertazimi/bod/commit/8d917a987647da56e0cd43970a41536385bfed53))
+* **deps:** update dependency postcss-preset-env to ^7.2.0 ([#491](https://github.com/sabertazimi/bod/issues/491)) ([e9d2fd3](https://github.com/sabertazimi/bod/commit/e9d2fd301e9236749dcc6bf15c8c0399dcea1d7b))
+* **deps:** update dependency postcss-preset-env to ^7.2.3 ([#499](https://github.com/sabertazimi/bod/issues/499)) ([330649a](https://github.com/sabertazimi/bod/commit/330649aef24d7abc687927aa0b6bb6bb65102648))
+* **deps:** update dependency resolve to ^1.21.0 ([#492](https://github.com/sabertazimi/bod/issues/492)) ([8c35ab6](https://github.com/sabertazimi/bod/commit/8c35ab6ddcdcd01da8b73fac3fe32da9df6b2b31))
+* **deps:** update dependency source-map-loader to ^3.0.1 ([#487](https://github.com/sabertazimi/bod/issues/487)) ([a95967a](https://github.com/sabertazimi/bod/commit/a95967a0d8ca98f8cb70179d270a9eb0a59a82b8))
+* **deps:** update dependency stylelint-webpack-plugin to ^3.1.1 ([#500](https://github.com/sabertazimi/bod/issues/500)) ([a6a6ae8](https://github.com/sabertazimi/bod/commit/a6a6ae8b0ae5d261243f24cbbba3fa6f642e0117))
+* **deps:** update dependency tailwindcss to ^3.0.12 ([#488](https://github.com/sabertazimi/bod/issues/488)) ([bc1e4dc](https://github.com/sabertazimi/bod/commit/bc1e4dceaa9303082b4737452c9f578b15bcd021))
+* **deps:** update dependency tailwindcss to ^3.0.15 ([#501](https://github.com/sabertazimi/bod/issues/501)) ([063e622](https://github.com/sabertazimi/bod/commit/063e62267ffe9e8ca313823bbfc7f56cba307841))
+* **deps:** update dependency tailwindcss to ^3.0.8 ([#474](https://github.com/sabertazimi/bod/issues/474)) ([c371931](https://github.com/sabertazimi/bod/commit/c371931eea38c95167257c1236936b681942b5e9))
+* **deps:** update dependency webpack to ^5.66.0 ([#513](https://github.com/sabertazimi/bod/issues/513)) ([01e602b](https://github.com/sabertazimi/bod/commit/01e602b93f6f2cf843f58d11c7ac98484537b1d7))
+* **deps:** update dependency webpack-dev-server to ^4.7.2 ([#475](https://github.com/sabertazimi/bod/issues/475)) ([e09ad44](https://github.com/sabertazimi/bod/commit/e09ad44a324511f597562767adee1dd9f333b607))
+* **deps:** update dependency webpack-dev-server to ^4.7.3 ([#502](https://github.com/sabertazimi/bod/issues/502)) ([cbbc172](https://github.com/sabertazimi/bod/commit/cbbc1722463258db6664149aedfed840abe496b4))
+* **deps:** update dependency webpack-manifest-plugin to ^4.1.1 ([#516](https://github.com/sabertazimi/bod/issues/516)) ([9f06152](https://github.com/sabertazimi/bod/commit/9f06152162ebed04a2fa12c25e179239edb9e86f))
+* **deps:** update jest monorepo ([#490](https://github.com/sabertazimi/bod/issues/490)) ([96ca4c9](https://github.com/sabertazimi/bod/commit/96ca4c9cbeebdfb13773a905169f71aaacfa9ac6))
+
+
+
+
+
 ## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
 
 

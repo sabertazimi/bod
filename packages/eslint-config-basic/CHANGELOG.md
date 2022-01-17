@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import to ^2.25.4 ([#485](https://github.com/sabertazimi/bod/issues/485)) ([a49d502](https://github.com/sabertazimi/bod/commit/a49d5024f5699baa78368a11584d3d8f069c98d5))
+* **deps:** update dependency eslint-plugin-unicorn to ^40.1.0 ([#515](https://github.com/sabertazimi/bod/issues/515)) ([833317a](https://github.com/sabertazimi/bod/commit/833317a45547d77253f5d90b0f2360f078e33da2))
+* **deps:** update dependency eslint-plugin-unicorn to v40 ([#478](https://github.com/sabertazimi/bod/issues/478)) ([6e0f13c](https://github.com/sabertazimi/bod/commit/6e0f13c32984587bdba9d66ed9b949c145f54900))
+* **deps:** update dependency jsonc-eslint-parser to ^2.1.0 ([#506](https://github.com/sabertazimi/bod/issues/506)) ([54f767a](https://github.com/sabertazimi/bod/commit/54f767a411216b2793175739b4a0a1290b0c6e1c))
+* **eslint-config:** add basic and ts eslint rules ([#511](https://github.com/sabertazimi/bod/issues/511)) ([81fb18e](https://github.com/sabertazimi/bod/commit/81fb18e822078bade025a505af09ebfc44f021d9))
+* **eslint:** bump eslint-config-standard to v17 ([#514](https://github.com/sabertazimi/bod/issues/514)) ([6bf4380](https://github.com/sabertazimi/bod/commit/6bf4380be6e725d69e224dc5e96a1c898a186468)), closes [#314](https://github.com/sabertazimi/bod/issues/314)
+
+
+
+
+
 ## [5.6.1](https://github.com/sabertazimi/bod/compare/v5.6.0...v5.6.1) (2021-12-26)
 
 
