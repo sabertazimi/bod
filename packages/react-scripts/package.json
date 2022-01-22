@@ -30,7 +30,7 @@
   "bin": "./bin/react-scripts.js",
   "types": "./lib/react-app.d.ts",
   "dependencies": {
-    "@babel/core": "^7.16.10",
+    "@babel/core": "^7.16.12",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
     "@svgr/webpack": "^6.2.0",
     "autoprefixer": "^10.4.2",
