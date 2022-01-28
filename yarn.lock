@@ -5194,10 +5194,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@verdaccio/ui-theme@npm:6.0.0-6-next.15":
-  version: 6.0.0-6-next.15
-  resolution: "@verdaccio/ui-theme@npm:6.0.0-6-next.15"
-  checksum: b5cca7cb02c81bcf4f5ff243021240750b23818b8fd002fdffa063add38ece2beb904522bfb23e81cb162c151ac8ea2543215422c89c46c17ed49ebd18c51011
+"@verdaccio/ui-theme@npm:6.0.0-6-next.16":
+  version: 6.0.0-6-next.16
+  resolution: "@verdaccio/ui-theme@npm:6.0.0-6-next.16"
+  checksum: 61873d0a95edc45d87fdb19c3361a0bab577ecdf7cf1c6d03bbc8e922bec3de6924f43a00b7cc074921ed2d851f8597a38595abf571116b06a0de07d01da7def
   languageName: node
   linkType: hard
 
@@ -7700,7 +7700,7 @@ __metadata:
     ts-node: ^10.4.0
     tslib: ^2.3.1
     typescript: ^4.5.5
-    verdaccio: ^5.5.0
+    verdaccio: ^5.5.2
   languageName: unknown
   linkType: soft
 
@@ -13682,15 +13682,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:2.1.3":
-  version: 2.1.3
-  resolution: "marked@npm:2.1.3"
-  bin:
-    marked: bin/marked
-  checksum: 21a5ecd4941bc760aba21dfd97185853ec3b464cf707ad971e3ddb3aeb2f44d0deeb36b0889932afdb6f734975a994d92f18815dd0fabadbd902bdaff997cc5b
-  languageName: node
-  linkType: hard
-
 "marked@npm:4.0.10":
   version: 4.0.10
   resolution: "marked@npm:4.0.10"
@@ -13912,7 +13903,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:2.6.0, mime@npm:^2.3.1":
+"mime@npm:3.0.0":
+  version: 3.0.0
+  resolution: "mime@npm:3.0.0"
+  bin:
+    mime: cli.js
+  checksum: f43f9b7bfa64534e6b05bd6062961681aeb406a5b53673b53b683f27fcc4e739989941836a355eef831f4478923651ecc739f4a5f6e20a76487b432bfd4db928
+  languageName: node
+  linkType: hard
+
+"mime@npm:^2.3.1":
   version: 2.6.0
   resolution: "mime@npm:2.6.0"
   bin:
@@ -20578,15 +20578,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "verdaccio@npm:5.5.0"
+"verdaccio@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "verdaccio@npm:5.5.2"
   dependencies:
     "@verdaccio/commons-api": 10.1.0
     "@verdaccio/local-storage": 10.1.1
     "@verdaccio/readme": 10.2.1
     "@verdaccio/streams": 10.1.0
-    "@verdaccio/ui-theme": 6.0.0-6-next.15
+    "@verdaccio/ui-theme": 6.0.0-6-next.16
     JSONStream: 1.3.5
     async: 3.2.3
     body-parser: 1.19.1
@@ -20609,9 +20609,9 @@ resolve@^2.0.0-next.3:
     lodash: 4.17.21
     lru-cache: 6.0.0
     lunr-mutable-indexes: 2.3.2
-    marked: 2.1.3
+    marked: 4.0.10
     memoizee: 0.4.15
-    mime: 2.6.0
+    mime: 3.0.0
     minimatch: 3.0.4
     mkdirp: 1.0.4
     mv: 2.1.1
@@ -20626,7 +20626,7 @@ resolve@^2.0.0-next.3:
     verdaccio-htpasswd: 10.1.0
   bin:
     verdaccio: bin/verdaccio
-  checksum: 4ec7ed592065e2894ed9e205be62ee8c90c3cdb96c232a805127c8cc1dcf9a3de343ec8d6a776dd9ab327521e454bfc2c1826fc3eb8e8472c1518a7785b80a93
+  checksum: 8726dfed12877bd30532db7cb5cae308677c30ac5b3c74c667f6606dff90d43e7179ffbfbefae6929a1b9b3104e292231046a0eb3d937bc1a1db5f76aabd3ef9
   languageName: node
   linkType: hard
 
