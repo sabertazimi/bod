@@ -1730,7 +1730,7 @@ __metadata:
     eslint-plugin-n: ^14.0.0
     eslint-plugin-promise: ^6.0.0
     eslint-plugin-unicorn: ^40.1.0
-    eslint-plugin-yml: ^0.12.0
+    eslint-plugin-yml: ^0.13.0
     jsonc-eslint-parser: ^2.1.0
     yaml-eslint-parser: ^0.5.0
   peerDependencies:
@@ -9352,9 +9352,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-yml@npm:^0.12.0":
-  version: 0.12.0
-  resolution: "eslint-plugin-yml@npm:0.12.0"
+"eslint-plugin-yml@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "eslint-plugin-yml@npm:0.13.0"
   dependencies:
     debug: ^4.3.2
     lodash: ^4.17.21
@@ -9362,7 +9362,7 @@ __metadata:
     yaml-eslint-parser: ^0.5.0
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: 67432347b49dd0c1dff6243a8ae13fb5db4048fda2404becd8c5205ad0286eea3b5bc59ea59532794e226c54591838fe20775298e1ce7aba072da8e43e7a3a4d
+  checksum: f5722c6bc1cb7845d7e3a68df7eabc96ac40697b026a46180f8b93e61bacc5c62aaf8b41631db6120d32553ea06a5f51784ee98b85317dfbdba528b88a8e417e
   languageName: node
   linkType: hard
 
