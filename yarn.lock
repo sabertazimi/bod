@@ -1726,7 +1726,7 @@ __metadata:
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
     eslint-plugin-import: ^2.25.4
-    eslint-plugin-jsonc: ^2.0.0
+    eslint-plugin-jsonc: ^2.1.0
     eslint-plugin-n: ^14.0.0
     eslint-plugin-promise: ^6.0.0
     eslint-plugin-unicorn: ^40.1.0
@@ -9194,16 +9194,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "eslint-plugin-jsonc@npm:2.0.0"
+"eslint-plugin-jsonc@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "eslint-plugin-jsonc@npm:2.1.0"
   dependencies:
     eslint-utils: ^3.0.0
-    jsonc-eslint-parser: ^2.0.1
+    jsonc-eslint-parser: ^2.0.4
     natural-compare: ^1.4.0
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: 195f9901298f5ccf24bc7f1a1776657376fcfe4531691a13665edfa1e636f6b25f699ce06ae5461fd41045b941c8cac7d41d27cd0e8bfa99fb3e898f09a23401
+  checksum: c072a01de7ed5a5efb83ec13348db50439313c8a691f921897b6c38330eac32eba1faa2532fff975bb4e81f6b675a97d8ed6208cb7d0e3730345059742ef6bb5
   languageName: node
   linkType: hard
 
@@ -12840,7 +12840,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-eslint-parser@npm:^2.0.1, jsonc-eslint-parser@npm:^2.1.0":
+"jsonc-eslint-parser@npm:^2.0.4, jsonc-eslint-parser@npm:^2.1.0":
   version: 2.1.0
   resolution: "jsonc-eslint-parser@npm:2.1.0"
   dependencies:
