@@ -1722,7 +1722,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dg-scripts/eslint-config-basic@workspace:packages/eslint-config-basic"
   dependencies:
-    eslint-config-standard: ^17.0.0-0
+    eslint-config-standard: ^17.0.0-1
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
     eslint-plugin-import: ^2.25.4
@@ -9089,15 +9089,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:^17.0.0-0":
-  version: 17.0.0-0
-  resolution: "eslint-config-standard@npm:17.0.0-0"
+"eslint-config-standard@npm:^17.0.0-1":
+  version: 17.0.0-1
+  resolution: "eslint-config-standard@npm:17.0.0-1"
   peerDependencies:
     eslint: ^8.0.1
     eslint-plugin-import: ^2.25.2
     eslint-plugin-n: ^14.0.0
     eslint-plugin-promise: ^6.0.0
-  checksum: 46ebdc2d695a5efedac14cdac63bd255ed7ad523e6c93132963ae4b9145f86013a1503faa86f6a2a26d951adc8129d3ef2e56ad83e818947a6653afef448ea86
+  checksum: a690a14c9a0aaeba63897f204e443f91c4eb084e930facda441fba72e2c28cb81167449e57695f628687e27564a2d438490d965c9568e8eab90cc48161fe1604
   languageName: node
   linkType: hard
 
