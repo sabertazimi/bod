@@ -54,7 +54,7 @@
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "@types/node": "^16.11.25",
     "@types/node-fetch": "^2.6.1",
     "@types/semver": "^7.3.9",
