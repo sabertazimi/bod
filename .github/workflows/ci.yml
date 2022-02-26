@@ -20,7 +20,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           architecture: x64
@@ -47,7 +47,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           architecture: x64
@@ -95,7 +95,7 @@ jobs:
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
       - name: Setup Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           architecture: x64
@@ -128,7 +128,7 @@ jobs:
           submodules: true
           fetch-depth: 0
       - name: Setup Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           architecture: x64
@@ -168,7 +168,7 @@ jobs:
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
       - name: Setup Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           architecture: x64
