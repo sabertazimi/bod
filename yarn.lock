@@ -5235,10 +5235,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@verdaccio/ui-theme@npm:6.0.0-6-next.17":
-  version: 6.0.0-6-next.17
-  resolution: "@verdaccio/ui-theme@npm:6.0.0-6-next.17"
-  checksum: a5dc9b9c9a202276ba1d810f6c531625800d2976055e277af3ef25865a7e51f1e4fb3563bd0faf5f3f43db6099646e58d723ec1f54f29abf7204ccf47166cdcc
+"@verdaccio/ui-theme@npm:6.0.0-6-next.18":
+  version: 6.0.0-6-next.18
+  resolution: "@verdaccio/ui-theme@npm:6.0.0-6-next.18"
+  checksum: 1ccf5d55cff6877f0b2b63c1cafd072b1d55fe0b4aab830da5c4563ab0981b4107d59cfa8af45b38ab4ec2f7690592a573fe9c93add113ee1f2a97b7ad7a1a33
   languageName: node
   linkType: hard
 
@@ -7780,7 +7780,7 @@ __metadata:
     ts-node: ^10.5.0
     tslib: ^2.3.1
     typescript: ^4.5.5
-    verdaccio: ^5.6.1
+    verdaccio: ^5.6.2
   languageName: unknown
   linkType: soft
 
@@ -15464,9 +15464,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:6.13.4":
-  version: 6.13.4
-  resolution: "pino@npm:6.13.4"
+"pino@npm:6.14.0":
+  version: 6.14.0
+  resolution: "pino@npm:6.14.0"
   dependencies:
     fast-redact: ^3.0.0
     fast-safe-stringify: ^2.0.8
@@ -15477,7 +15477,7 @@ __metadata:
     sonic-boom: ^1.0.2
   bin:
     pino: bin.js
-  checksum: 8146f2bcd1657127931be902c6e697b9eb1fe71ba7858efa4076ac4a932b6b98ec047667040235e69f802314f2bcbd3d76e915959780fbc0ba0fa3c1b79c417e
+  checksum: eb13e12e3a3d682abe4a4da426455a9f4e041e55e4fa57d72d9677ee8d188a9c952f69347e728a3761c8262cdce76ef24bee29e1a53ab15aa9c5e851099163d0
   languageName: node
   linkType: hard
 
@@ -20629,15 +20629,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "verdaccio@npm:5.6.1"
+"verdaccio@npm:^5.6.2":
+  version: 5.6.2
+  resolution: "verdaccio@npm:5.6.2"
   dependencies:
     "@verdaccio/commons-api": 10.2.0
     "@verdaccio/local-storage": 10.2.0
     "@verdaccio/readme": 10.3.2
     "@verdaccio/streams": 10.2.0
-    "@verdaccio/ui-theme": 6.0.0-6-next.17
+    "@verdaccio/ui-theme": 6.0.0-6-next.18
     JSONStream: 1.3.5
     async: 3.2.3
     body-parser: 1.19.1
@@ -20666,7 +20666,7 @@ resolve@^2.0.0-next.3:
     minimatch: 3.0.4
     mkdirp: 1.0.4
     mv: 2.1.1
-    pino: 6.13.4
+    pino: 6.14.0
     pkginfo: 0.4.1
     prettier-bytes: ^1.0.4
     pretty-ms: ^7.0.1
@@ -20677,7 +20677,7 @@ resolve@^2.0.0-next.3:
     verdaccio-htpasswd: 10.2.0
   bin:
     verdaccio: bin/verdaccio
-  checksum: 83925caa421164a5f1cd64b9c6ba39168e9c51065436d45afce479caafbaeeadd58a6c9f74f502cde2044613652416f6874f2380a0fc35674f22a1727a6213c7
+  checksum: 8f7bab3dc3caf56ce3c03a0933a4f56cd40419a1291704507f78fa48884b4d1e9ca340b6baceab6aca6dbe24301cdeb841d04a00de2b3d918bbe0722782a8e2a
   languageName: node
   linkType: hard
 
