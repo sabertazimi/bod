@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   publish:
-    name: Publish
+    name: Publishment
     runs-on: ubuntu-latest
     steps:
       - name: Initialize git configuration
