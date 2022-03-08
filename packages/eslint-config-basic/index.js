@@ -11,6 +11,16 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
+    'plugin:markdown/recommended',
+  ],
+  ignorePatterns: [
+    '.cache',
+    '*.min.*',
+    'CHANGELOG.md',
+    'dist',
+    'LICENSE.*',
+    'public',
+    'temp',
   ],
   plugins: ['html', 'unicorn'],
   settings: {
@@ -86,9 +96,21 @@ module.exports = {
       },
     },
     {
-      files: ['scripts/**/*.*'],
+      files: ['scripts/**/*.*', 'cli.*'],
       rules: {
         'no-console': 'off',
+      },
+    },
+    {
+      files: ['**/*.md/*.*'],
+      rules: {
+        'no-unused-vars': 'off',
+        'no-undef': 'off',
+        'no-console': 'off',
+        'no-unused-expressions': 'off',
+        'import/no-unresolved': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-use-before-define': 'off',
       },
     },
   ],
