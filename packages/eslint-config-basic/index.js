@@ -237,6 +237,7 @@ module.exports = {
       { functions: false, classes: false, variables: true },
     ],
     'eslint-comments/disable-enable-pair': 'off',
+    'n/no-callback-literal': 'off',
     'sort-imports': [
       'error',
       {
