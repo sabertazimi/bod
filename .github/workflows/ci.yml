@@ -40,7 +40,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node-version: [14, 16]
-        package-manager: [npm, yarn]
+        package-manager: [yarn]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -82,7 +82,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node-version: [14, 16]
-        package-manager: [npm, yarn]
+        package-manager: [yarn]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
