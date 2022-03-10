@@ -34,7 +34,7 @@ jobs:
           yarn lint
 
   unit:
-    name: Unit testing on Node/${{ matrix.package-manager }} ${{ matrix.node-version }} ${{ matrix.os }}
+    name: Unit testing
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -76,7 +76,7 @@ jobs:
           path: build
 
   e2e:
-    name: E2E testing on Node/${{ matrix.package-manager }} ${{ matrix.node-version }} ${{ matrix.os }}
+    name: E2E testing
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
