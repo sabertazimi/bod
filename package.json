@@ -56,7 +56,6 @@
     "@dg-scripts/stylelint-config": "*",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.26",
-    "@types/node-fetch": "^2.6.1",
     "@types/semver": "^7.3.9",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
@@ -67,7 +66,6 @@
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
     "lerna": "^4.0.0",
-    "node-fetch": "^2.6.7",
     "prettier": "^2.5.1",
     "semver": "^7.3.5",
     "stylelint": "^14.5.3",
@@ -75,6 +73,7 @@
     "ts-node": "^10.7.0",
     "tslib": "^2.3.1",
     "typescript": "^4.6.2",
+    "undici": "^4.15.1",
     "verdaccio": "^5.7.1"
   }
 }
