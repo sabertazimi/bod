@@ -4891,16 +4891,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.6.1":
-  version: 2.6.1
-  resolution: "@types/node-fetch@npm:2.6.1"
-  dependencies:
-    "@types/node": "*"
-    form-data: ^3.0.0
-  checksum: a3e5d7f413d1638d795dff03f7b142b1b0e0c109ed210479000ce7b3ea11f9a6d89d9a024c96578d9249570c5fe5287a5f0f4aaba98199222230196ff2d6b283
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*, @types/node@npm:^17.0.5":
   version: 17.0.21
   resolution: "@types/node@npm:17.0.21"
@@ -7897,7 +7887,6 @@ __metadata:
     "@dg-scripts/stylelint-config": "*"
     "@types/jest": ^27.4.1
     "@types/node": ^16.11.26
-    "@types/node-fetch": ^2.6.1
     "@types/semver": ^7.3.9
     chalk: ^4.1.2
     chokidar: ^3.5.3
@@ -7908,7 +7897,6 @@ __metadata:
     eslint: ^8.11.0
     jest: ^27.5.1
     lerna: ^4.0.0
-    node-fetch: ^2.6.7
     prettier: ^2.5.1
     semver: ^7.3.5
     stylelint: ^14.5.3
@@ -7916,6 +7904,7 @@ __metadata:
     ts-node: ^10.7.0
     tslib: ^2.3.1
     typescript: ^4.6.2
+    undici: ^4.15.1
     verdaccio: ^5.7.1
   languageName: unknown
   linkType: soft
@@ -14546,7 +14535,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.7":
+"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -20302,6 +20291,13 @@ resolve@^2.0.0-next.3:
     has-symbols: ^1.0.2
     which-boxed-primitive: ^1.0.2
   checksum: 89d950e18fb45672bc6b3c961f1e72c07beb9640c7ceed847b571ba6f7d2af570ae1a2584cfee268b9d9ea1e3293f7e33e0bc29eaeb9f8e8a0bab057ff9e6bba
+  languageName: node
+  linkType: hard
+
+"undici@npm:^4.15.1":
+  version: 4.15.1
+  resolution: "undici@npm:4.15.1"
+  checksum: 13b264d4966de105e211e1ca9433e2d8be5fcfe85e4cafea6b97c4685df3364bc8bc9e9b27796ce400e8a1e45e92a65b1453fcb499557e4f5c013af18f194852
   languageName: node
   linkType: hard
 

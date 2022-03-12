@@ -2,7 +2,7 @@ import cp from 'child_process';
 import chalk from 'chalk';
 import { isCI } from 'ci-info';
 import consola from 'consola';
-import fetch from 'node-fetch';
+import { fetch } from 'undici';
 import semver from 'semver';
 
 const log = (log: string): void => {
