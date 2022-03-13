@@ -34,7 +34,7 @@ jobs:
           yarn lint
 
   unit:
-    name: Unit testing
+    name: Unit Testing
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -76,7 +76,7 @@ jobs:
           path: build
 
   e2e:
-    name: E2E testing
+    name: E2E Testing
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
