@@ -12,12 +12,12 @@
     "eslint-typescript"
   ],
   "license": "MIT",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git",
     "directory": "packages/eslint-config-ts"
   },
-  "author": "sabertazimi <sabertazimi@gmail.com>",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
