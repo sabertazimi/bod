@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to ^8.4.0 ([#599](https://github.com/sabertazimi/bod/issues/599)) ([8defa83](https://github.com/sabertazimi/bod/commit/8defa83023710d1fcbda911175456c09be448c92))
+* **deps:** update dependency eslint-config-prettier to ^8.5.0 ([#630](https://github.com/sabertazimi/bod/issues/630)) ([ad65e30](https://github.com/sabertazimi/bod/commit/ad65e309b874fca0011db65ff5e5b8303f26b178))
+* **eslint-config:** improve rules configuration ([#660](https://github.com/sabertazimi/bod/issues/660)) ([bbdb0c0](https://github.com/sabertazimi/bod/commit/bbdb0c02e4aab8c6ef3206f18d96e29503b28032))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config

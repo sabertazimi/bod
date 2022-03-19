@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#664](https://github.com/sabertazimi/bod/issues/664)) ([23aca0d](https://github.com/sabertazimi/bod/commit/23aca0d9cdf7de8bf3cf4c6b5a3ffb321662b980))
+* **deps:** update typescript-eslint monorepo to ^5.10.0 ([#530](https://github.com/sabertazimi/bod/issues/530)) ([96a1a6b](https://github.com/sabertazimi/bod/commit/96a1a6be00d77e6b30ac1d5de1950bfacda133e6))
+* **deps:** update typescript-eslint monorepo to ^5.10.1 ([#542](https://github.com/sabertazimi/bod/issues/542)) ([f51cc7e](https://github.com/sabertazimi/bod/commit/f51cc7e72591d239ee49371efb391151b8fd3075))
+* **deps:** update typescript-eslint monorepo to ^5.10.2 ([#563](https://github.com/sabertazimi/bod/issues/563)) ([32da7f8](https://github.com/sabertazimi/bod/commit/32da7f84605b07a50365bd67cc71b96e4a3aa3dc))
+* **deps:** update typescript-eslint monorepo to ^5.11.0 ([#578](https://github.com/sabertazimi/bod/issues/578)) ([fb2ce72](https://github.com/sabertazimi/bod/commit/fb2ce72c450de6111c1e82f2e2c9df2a367e5361))
+* **deps:** update typescript-eslint monorepo to ^5.12.0 ([#597](https://github.com/sabertazimi/bod/issues/597)) ([8e7ab8f](https://github.com/sabertazimi/bod/commit/8e7ab8f81cdc5ed06a8adb7727ac3d9cd893e8b9))
+* **deps:** update typescript-eslint monorepo to ^5.12.1 ([#606](https://github.com/sabertazimi/bod/issues/606)) ([e4e5a26](https://github.com/sabertazimi/bod/commit/e4e5a26b02be44837c89f1dcf0483a2f2ac88ebc))
+* **deps:** update typescript-eslint monorepo to ^5.13.0 ([#633](https://github.com/sabertazimi/bod/issues/633)) ([cc06993](https://github.com/sabertazimi/bod/commit/cc069934ca774ba5b4b4007d47d223492e77cf9a))
+* **deps:** update typescript-eslint monorepo to ^5.14.0 ([#652](https://github.com/sabertazimi/bod/issues/652)) ([85f212e](https://github.com/sabertazimi/bod/commit/85f212e18fa06838715e75acd5f11e2a41518be4))
+* **eslint-config:** improve rules configuration ([#660](https://github.com/sabertazimi/bod/issues/660)) ([bbdb0c0](https://github.com/sabertazimi/bod/commit/bbdb0c02e4aab8c6ef3206f18d96e29503b28032))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 

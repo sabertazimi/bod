@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config-react",
-  "version": "5.6.2",
+  "version": "5.7.0",
   "description": "ESLint React configuration used by dg-scripts.",
   "keywords": [
     "dg-scripts",
@@ -34,7 +34,7 @@
     "eslint": "^7.32.0 || ^8.0.0"
   },
   "dependencies": {
-    "eslint-config-bod": "^5.6.2"
+    "eslint-config-bod": "^5.7.0"
   },
   "devDependencies": {
     "react": "^17.0.2"

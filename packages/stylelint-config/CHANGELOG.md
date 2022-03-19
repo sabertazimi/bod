@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#664](https://github.com/sabertazimi/bod/issues/664)) ([23aca0d](https://github.com/sabertazimi/bod/commit/23aca0d9cdf7de8bf3cf4c6b5a3ffb321662b980))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 **Note:** Version bump only for package @dg-scripts/stylelint-config

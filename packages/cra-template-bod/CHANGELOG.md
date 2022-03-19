@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @reduxjs/toolkit to ^1.7.2 ([#556](https://github.com/sabertazimi/bod/issues/556)) ([33d723e](https://github.com/sabertazimi/bod/commit/33d723e2c10354261418d4ffc63f2f98ea865e28))
+* **deps:** update dependency @reduxjs/toolkit to ^1.8.0 ([#628](https://github.com/sabertazimi/bod/issues/628)) ([b8536a4](https://github.com/sabertazimi/bod/commit/b8536a4cb98826b847030a34be7b741be5808b57))
+* **deps:** update dependency react-router-dom to ^6.2.2 ([#621](https://github.com/sabertazimi/bod/issues/621)) ([89e718d](https://github.com/sabertazimi/bod/commit/89e718df02c544246dbeadb0fb9a303eda0104a7))
+* **deps:** update dependency web-vitals to ^2.1.4 ([#527](https://github.com/sabertazimi/bod/issues/527)) ([1f45480](https://github.com/sabertazimi/bod/commit/1f454804d1216e73b697403aa1d817db2cde41b3))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 

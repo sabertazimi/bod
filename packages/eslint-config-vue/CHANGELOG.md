@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to ^8.4.0 ([#548](https://github.com/sabertazimi/bod/issues/548)) ([4b9aab4](https://github.com/sabertazimi/bod/commit/4b9aab43aaeb8b11a92f0d6e89b0760a248df647))
+* **deps:** update dependency eslint-plugin-vue to ^8.4.1 ([#559](https://github.com/sabertazimi/bod/issues/559)) ([a1fa2b0](https://github.com/sabertazimi/bod/commit/a1fa2b08190c9c0c68e29d9671a8bb3faf53856b))
+* **deps:** update dependency eslint-plugin-vue to ^8.5.0 ([#610](https://github.com/sabertazimi/bod/issues/610)) ([4b5c439](https://github.com/sabertazimi/bod/commit/4b5c4396fb858b5e576b5ebb9fb7ae25db9ca7bf))
+* **eslint-config:** improve rules configuration ([#660](https://github.com/sabertazimi/bod/issues/660)) ([bbdb0c0](https://github.com/sabertazimi/bod/commit/bbdb0c02e4aab8c6ef3206f18d96e29503b28032))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 

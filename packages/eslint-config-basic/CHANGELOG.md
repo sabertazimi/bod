@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#664](https://github.com/sabertazimi/bod/issues/664)) ([23aca0d](https://github.com/sabertazimi/bod/commit/23aca0d9cdf7de8bf3cf4c6b5a3ffb321662b980))
+* **deps:** update dependency eslint-config-standard to ^17.0.0-1 ([#557](https://github.com/sabertazimi/bod/issues/557)) ([b57b0ae](https://github.com/sabertazimi/bod/commit/b57b0ae8468f6b73c901ac94db5d686764c6d81d))
+* **deps:** update dependency eslint-plugin-jsonc to ^2.1.0 ([#547](https://github.com/sabertazimi/bod/issues/547)) ([0310620](https://github.com/sabertazimi/bod/commit/0310620d1c8bfe07cef3e3472e44b317d5a975b9))
+* **deps:** update dependency eslint-plugin-jsonc to ^2.2.1 ([#592](https://github.com/sabertazimi/bod/issues/592)) ([bf27560](https://github.com/sabertazimi/bod/commit/bf27560977f778e54d19cb58cc21bdfe7c6b4838))
+* **deps:** update dependency eslint-plugin-n to v15 ([#613](https://github.com/sabertazimi/bod/issues/613)) ([d902851](https://github.com/sabertazimi/bod/commit/d902851ba56d683a1bc0d4f50613f0b4246b99f0))
+* **deps:** update dependency eslint-plugin-unicorn to v41 ([#598](https://github.com/sabertazimi/bod/issues/598)) ([d788fdc](https://github.com/sabertazimi/bod/commit/d788fdc285a66aff56cbd0c12c4bc44b11f7d82b))
+* **deps:** update dependency eslint-plugin-yml to ^0.13.0 ([#549](https://github.com/sabertazimi/bod/issues/549)) ([878c498](https://github.com/sabertazimi/bod/commit/878c4980cf04b5caa34a667cfe76576a6cb31301))
+* **deps:** update dependency eslint-plugin-yml to ^0.14.0 ([#593](https://github.com/sabertazimi/bod/issues/593)) ([f6f5a6a](https://github.com/sabertazimi/bod/commit/f6f5a6a36d140deb6c6b357e0920a04e5101682d))
+* **eslint-basic:** disable `no-callback-literal` rule ([a313c53](https://github.com/sabertazimi/bod/commit/a313c533fa18b5916881ef5347603dc692f94f57))
+* **eslint-config:** improve rules configuration ([#660](https://github.com/sabertazimi/bod/issues/660)) ([bbdb0c0](https://github.com/sabertazimi/bod/commit/bbdb0c02e4aab8c6ef3206f18d96e29503b28032))
+
+
+### Features
+
+* **eslint-basic:** add markdown lint rules ([#638](https://github.com/sabertazimi/bod/issues/638)) ([a5dd8cb](https://github.com/sabertazimi/bod/commit/a5dd8cba04e65be563b62c0a86613147c7ed9cb7))
+
+
+
+
+
 ## [5.6.2](https://github.com/sabertazimi/bod/compare/v5.6.1...v5.6.2) (2022-01-17)
 
 
