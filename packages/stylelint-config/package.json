@@ -36,6 +36,9 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "homepage": "https://github.com/sabertazimi/bod",
+  "scripts": {
+    "lint": "stylelint CHANGELOG.md --config=index.js"
+  },
   "peerDependencies": {
     "prettier": "^2.4.0",
     "stylelint": "^13.13.0 || ^14.0.0"

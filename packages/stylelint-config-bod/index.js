@@ -41,5 +41,9 @@ module.exports = {
       files: ['*.scss', '**/*.scss'],
       extends: ['stylelint-config-standard-scss'],
     },
+    {
+      files: ['*.md', '**/*.md'],
+      customSyntax: 'postcss-markdown',
+    },
   ],
 };
