@@ -49,6 +49,9 @@ module.exports = {
     {
       files: ['*.yaml', '*.yml'],
       parser: 'yaml-eslint-parser',
+      rules: {
+        'spaced-comment': 'off',
+      },
     },
     {
       files: ['package.json'],
@@ -278,6 +281,7 @@ module.exports = {
     ],
     'eslint-comments/disable-enable-pair': 'off',
     'n/no-callback-literal': 'off',
+
     'sort-imports': [
       'error',
       {
@@ -288,5 +292,10 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
+
+    // yml
+    'yml/quotes': 'off',
+    'yml/no-empty-document': 'off',
+    'yml/no-empty-mapping-value': 'off',
   },
 };
