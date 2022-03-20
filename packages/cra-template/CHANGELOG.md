@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+**Note:** Version bump only for package @sabertazimi/cra-template
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

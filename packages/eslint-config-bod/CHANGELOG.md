@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^26.1.2 ([#668](https://github.com/sabertazimi/bod/issues/668)) ([789ebd0](https://github.com/sabertazimi/bod/commit/789ebd0937421ea6c666e3134ff60f658c3cd51b))
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 

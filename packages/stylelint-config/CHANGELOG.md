@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+
+### Features
+
+* **stylelint-config:** add markdown linter support ([#670](https://github.com/sabertazimi/bod/issues/670)) ([3d5caaa](https://github.com/sabertazimi/bod/commit/3d5caaa4fcc40ff8722970e3d1d7c0c209900a69))
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 

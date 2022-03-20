@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+
+### Bug Fixes
+
+* **eslint-config:** change `yml` eslint configuration ([#669](https://github.com/sabertazimi/bod/issues/669)) ([ac8f523](https://github.com/sabertazimi/bod/commit/ac8f523fc19e54a46933d49deb5bbdd451347fa6))
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 

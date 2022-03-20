@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-preset-env to ^7.4.3 ([#667](https://github.com/sabertazimi/bod/issues/667)) ([90757bc](https://github.com/sabertazimi/bod/commit/90757bc4dd629ef580504aadd905b20c3fc3565b))
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 

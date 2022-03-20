@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^26.1.2 ([#668](https://github.com/sabertazimi/bod/issues/668)) ([789ebd0](https://github.com/sabertazimi/bod/commit/789ebd0937421ea6c666e3134ff60f658c3cd51b))
+* **deps:** update dependency postcss-preset-env to ^7.4.3 ([#667](https://github.com/sabertazimi/bod/issues/667)) ([90757bc](https://github.com/sabertazimi/bod/commit/90757bc4dd629ef580504aadd905b20c3fc3565b))
+* **eslint-config:** change `yml` eslint configuration ([#669](https://github.com/sabertazimi/bod/issues/669)) ([ac8f523](https://github.com/sabertazimi/bod/commit/ac8f523fc19e54a46933d49deb5bbdd451347fa6))
+
+
+### Features
+
+* **stylelint-config:** add markdown linter support ([#670](https://github.com/sabertazimi/bod/issues/670)) ([3d5caaa](https://github.com/sabertazimi/bod/commit/3d5caaa4fcc40ff8722970e3d1d7c0c209900a69))
+
+
+
+
+
 # [5.7.0](https://github.com/sabertazimi/bod/compare/v5.6.2...v5.7.0) (2022-03-19)
 
 
