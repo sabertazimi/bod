@@ -56,7 +56,7 @@
     "consola": "^2.15.3",
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.8.1",
-    "inquirer": "^8.2.1"
+    "inquirer": "^8.2.2"
   },
   "devDependencies": {
     "@types/cross-spawn": "^6.0.2",
