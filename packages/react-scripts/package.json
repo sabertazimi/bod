@@ -46,7 +46,7 @@
     "css-minimizer-webpack-plugin": "^3.4.1",
     "dotenv": "^16.0.0",
     "dotenv-expand": "^8.0.3",
-    "eslint": "^8.11.0",
+    "eslint": "^8.12.0",
     "eslint-config-bod": "^5.8.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
