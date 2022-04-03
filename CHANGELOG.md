@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **cra-template:** rectify tailwind directives setup ([#671](https://github.com/sabertazimi/bod/issues/671)) ([14ddcf5](https://github.com/sabertazimi/bod/commit/14ddcf5c04b24d9c08bd9cdda71f3b012a4e2574))
+* **deps:** update dependencies (non-major) ([#672](https://github.com/sabertazimi/bod/issues/672)) ([6539a80](https://github.com/sabertazimi/bod/commit/6539a80a0b1b754345f3760d8ad4d23878c2bf2b))
+* **deps:** update dependencies (non-major) ([#675](https://github.com/sabertazimi/bod/issues/675)) ([8e28de5](https://github.com/sabertazimi/bod/commit/8e28de59ef3a5376a6ba30a9a53a23bc23c3b328))
+* **deps:** update dependency eslint to ^8.12.0 ([#673](https://github.com/sabertazimi/bod/issues/673)) ([3c89ede](https://github.com/sabertazimi/bod/commit/3c89eded2fca23e37ace95d8b88c6b1a9fc7c6d6))
+* **deps:** update dependency eslint-plugin-unicorn to v42 ([#679](https://github.com/sabertazimi/bod/issues/679)) ([f8f8f5b](https://github.com/sabertazimi/bod/commit/f8f8f5b9d94c5a6adeb0a1d4c3436e73d67ce109))
+* **deps:** update react monorepo to v18 ([#680](https://github.com/sabertazimi/bod/issues/680)) ([92ef2b9](https://github.com/sabertazimi/bod/commit/92ef2b9388c24a73cf5cf238493a7e1aa32840fe))
+* **eslint-config:** polish up rules for `md`/`ts`/`vue` files ([#686](https://github.com/sabertazimi/bod/issues/686)) ([6b1fce7](https://github.com/sabertazimi/bod/commit/6b1fce7091807a272e868a85453010972d807217))
+* **template-css:** add tailwind usage ([#684](https://github.com/sabertazimi/bod/issues/684)) ([4fe280d](https://github.com/sabertazimi/bod/commit/4fe280d12c1cc6b5458173dcc597cd01867eb7a2))
+* **template-react:** switch `render` to `createRoot` function ([#683](https://github.com/sabertazimi/bod/issues/683)) ([68c8477](https://github.com/sabertazimi/bod/commit/68c8477a0daebbf2ff5664fff91266591d57535e))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 

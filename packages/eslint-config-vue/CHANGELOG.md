@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **eslint-config:** polish up rules for `md`/`ts`/`vue` files ([#686](https://github.com/sabertazimi/bod/issues/686)) ([6b1fce7](https://github.com/sabertazimi/bod/commit/6b1fce7091807a272e868a85453010972d807217))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-vue

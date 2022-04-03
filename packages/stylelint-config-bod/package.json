@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-bod",
-  "version": "5.8.0",
+  "version": "5.8.1",
   "description": "StyleLint configuration used by Bod CLI.",
   "main": "index.js",
   "repository": {

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#672](https://github.com/sabertazimi/bod/issues/672)) ([6539a80](https://github.com/sabertazimi/bod/commit/6539a80a0b1b754345f3760d8ad4d23878c2bf2b))
+* **deps:** update dependencies (non-major) ([#675](https://github.com/sabertazimi/bod/issues/675)) ([8e28de5](https://github.com/sabertazimi/bod/commit/8e28de59ef3a5376a6ba30a9a53a23bc23c3b328))
+* **deps:** update dependency eslint to ^8.12.0 ([#673](https://github.com/sabertazimi/bod/issues/673)) ([3c89ede](https://github.com/sabertazimi/bod/commit/3c89eded2fca23e37ace95d8b88c6b1a9fc7c6d6))
+* **deps:** update react monorepo to v18 ([#680](https://github.com/sabertazimi/bod/issues/680)) ([92ef2b9](https://github.com/sabertazimi/bod/commit/92ef2b9388c24a73cf5cf238493a7e1aa32840fe))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 

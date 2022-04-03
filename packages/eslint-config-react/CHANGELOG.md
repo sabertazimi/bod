@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v18 ([#680](https://github.com/sabertazimi/bod/issues/680)) ([92ef2b9](https://github.com/sabertazimi/bod/commit/92ef2b9388c24a73cf5cf238493a7e1aa32840fe))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-react

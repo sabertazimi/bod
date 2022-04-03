@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#672](https://github.com/sabertazimi/bod/issues/672)) ([6539a80](https://github.com/sabertazimi/bod/commit/6539a80a0b1b754345f3760d8ad4d23878c2bf2b))
+* **deps:** update dependency eslint-plugin-unicorn to v42 ([#679](https://github.com/sabertazimi/bod/issues/679)) ([f8f8f5b](https://github.com/sabertazimi/bod/commit/f8f8f5b9d94c5a6adeb0a1d4c3436e73d67ce109))
+* **eslint-config:** polish up rules for `md`/`ts`/`vue` files ([#686](https://github.com/sabertazimi/bod/issues/686)) ([6b1fce7](https://github.com/sabertazimi/bod/commit/6b1fce7091807a272e868a85453010972d807217))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 

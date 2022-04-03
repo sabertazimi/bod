@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#672](https://github.com/sabertazimi/bod/issues/672)) ([6539a80](https://github.com/sabertazimi/bod/commit/6539a80a0b1b754345f3760d8ad4d23878c2bf2b))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **cra-template:** rectify tailwind directives setup ([#671](https://github.com/sabertazimi/bod/issues/671)) ([14ddcf5](https://github.com/sabertazimi/bod/commit/14ddcf5c04b24d9c08bd9cdda71f3b012a4e2574))
+* **template-css:** add tailwind usage ([#684](https://github.com/sabertazimi/bod/issues/684)) ([4fe280d](https://github.com/sabertazimi/bod/commit/4fe280d12c1cc6b5458173dcc597cd01867eb7a2))
+* **template-react:** switch `render` to `createRoot` function ([#683](https://github.com/sabertazimi/bod/issues/683)) ([68c8477](https://github.com/sabertazimi/bod/commit/68c8477a0daebbf2ff5664fff91266591d57535e))
+
+
+
+
+
 # [5.8.0](https://github.com/sabertazimi/bod/compare/v5.7.0...v5.8.0) (2022-03-20)
 
 **Note:** Version bump only for package @sabertazimi/cra-template
