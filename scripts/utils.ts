@@ -26,7 +26,7 @@ const cmd = (cmd: string): void => {
 };
 
 const checkGitStatus = (): void => {
-  info('Check git status ...');
+  info('\nCheck git status ...');
   const gitStatus = execPipe('git status --porcelain').toString();
 
   if (gitStatus.trim() !== '') {

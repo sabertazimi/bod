@@ -2,7 +2,7 @@ import * as utils from './utils';
 
 const main = () => {
   utils.checkGitStatus();
-  utils.info(`Working in directory ${process.cwd()}.`);
+  utils.info(`\nWorking in directory ${process.cwd()}.`);
   const isPush = process.argv.includes('-p') || process.argv.includes('--push');
   const versionMatch = utils
     .execPipe(
@@ -23,7 +23,7 @@ const main = () => {
     if (isPush) {
       utils.exec('git push --follow-tags');
     } else {
-      utils.info('Run `git push --follow-tags origin main` to publish.');
+      utils.info('\nRun `git push --follow-tags origin main` to publish.');
     }
   }
 };

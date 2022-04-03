@@ -16,7 +16,7 @@ class Test {
   localRegistryLogPath: string;
 
   constructor(appName: string) {
-    utils.info(`Working in directory ${process.cwd()}.`);
+    utils.info(`\nWorking in directory ${process.cwd()}.`);
     this.appName = appName;
     this.cwd = process.cwd();
     this.rootPath = path.join(__dirname, '..');
@@ -40,7 +40,7 @@ class Test {
   }
 
   startLocalRegistry() {
-    utils.info('Start verdaccio server ...');
+    utils.info('\nStart verdaccio server ...');
     utils.exec(
       `nohup yarn verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
     );
@@ -70,7 +70,7 @@ class Test {
     );
     const localRegistryMetaStorage = path.join(this.rootPath, 'storage');
 
-    utils.info('Clear local registry ...');
+    utils.info('\nClear local registry ...');
     utils.exec(`npm config set registry="${this.originalNpmRegistry}"`);
     utils.exec(
       `yarn config unset nodeLinker --home`
@@ -88,10 +88,10 @@ class Test {
   }
 
   publishToLocalRegistry() {
-    utils.info('Build monorepo (bod CLI, react-scripts and templates) ...');
+    utils.info('\nBuild monorepo (bod CLI, react-scripts and templates) ...');
     utils.exec('git clean -df');
     utils.exec('yarn build');
-    utils.info(`Publish packages to ${this.localRegistry} ...`);
+    utils.info(`\nPublish packages to ${this.localRegistry} ...`);
     const packages = utils
       .execPipe(
         'yarn lerna publish prerelease --canary --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --no-verify-access --yes'
@@ -103,7 +103,7 @@ class Test {
   }
 
   cleanUp() {
-    utils.info('Cleaning up ...');
+    utils.info('\nCleaning up ...');
     this.stopLocalRegistry();
     utils.exec(`rm -fr ${this.appPath}`);
     utils.exec('git restore lerna.json package.json yarn.lock packages/*');
@@ -132,7 +132,7 @@ class Test {
   }
 
   runCRA(templatePath: string, scriptsPath: string) {
-    utils.info('Run create-react-app to generate project ...');
+    utils.info('\nRun create-react-app to generate project ...');
     utils.exec(`rm -fr ${this.appPath}`);
     utils.exec(
       `yarn dlx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
@@ -145,7 +145,7 @@ class Test {
   }
 
   checkJsxTemplateIntegrity() {
-    utils.info('Checking template integrity ...');
+    utils.info('\nChecking template integrity ...');
 
     const templateAssets =
       this.exists('node_modules/@sabertazimi/react-scripts') &&
@@ -158,7 +158,7 @@ class Test {
   }
 
   checkTsxTemplateIntegrity() {
-    utils.info('Checking template integrity ...');
+    utils.info('\nChecking template integrity ...');
 
     const templateAssets =
       this.exists('node_modules/@sabertazimi/react-scripts') &&
@@ -174,7 +174,7 @@ class Test {
   }
 
   runBuildScript(templatePath: string) {
-    utils.info('Start testing for `react-scripts build` ...');
+    utils.info('\nStart testing for `react-scripts build` ...');
     utils.exec('yarn build', this.appPath);
 
     const buildAssets = this.exists('build');
@@ -192,12 +192,12 @@ class Test {
   }
 
   runTestScript() {
-    utils.info('Start testing for `react-scripts test` ...');
+    utils.info('\nStart testing for `react-scripts test` ...');
     utils.exec('CI=true yarn test', this.appPath);
   }
 
   runStartScript() {
-    utils.info('Start testing for `react-scripts start` ...');
+    utils.info('\nStart testing for `react-scripts start` ...');
     utils.exec('yarn start --smoke-test', this.appPath);
   }
 
