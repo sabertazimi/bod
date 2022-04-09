@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "@dg-scripts/eslint-config-ts": "^5.8.1",
-    "eslint-plugin-vue": "^8.5.0"
+    "eslint-plugin-vue": "^8.6.0"
   }
 }
