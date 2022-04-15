@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { axe } from 'jest-axe';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -15,7 +16,22 @@ describe('App', () => {
         </BrowserRouter>
       </Provider>
     ).toJSON();
+
     expect(tree).toMatchSnapshot();
+  });
+
+  test('Should render accessibility guidelines (AXE)', async () => {
+    const { container } = render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    );
+
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 
   test('renders learn React, Redux and Bod links', () => {
