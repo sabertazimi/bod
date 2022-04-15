@@ -55,7 +55,7 @@
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
     "@types/jest": "^27.4.1",
-    "@types/node": "^16.11.26",
+    "@types/node": "^16.11.27",
     "@types/semver": "^7.3.9",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
@@ -67,13 +67,13 @@
     "jest": "^27.5.1",
     "lerna": "^4.0.0",
     "prettier": "^2.6.2",
-    "semver": "^7.3.6",
-    "stylelint": "^14.6.1",
+    "semver": "^7.3.7",
+    "stylelint": "^14.7.0",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3",
     "undici": "^5.0.0",
-    "verdaccio": "^5.8.0"
+    "verdaccio": "^5.9.0"
   }
 }
