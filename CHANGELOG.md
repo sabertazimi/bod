@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#689](https://github.com/sabertazimi/bod/issues/689)) ([22e6e33](https://github.com/sabertazimi/bod/commit/22e6e33834f3919a615b4ba4f480d761aad8faa7))
+* **deps:** update dependencies (non-major) ([#695](https://github.com/sabertazimi/bod/issues/695)) ([b7eb29f](https://github.com/sabertazimi/bod/commit/b7eb29f0ee4fb7d6bb1d79a2dbc98d00a74610fe))
+* **deps:** update dependency fs-extra to ^10.1.0 ([#700](https://github.com/sabertazimi/bod/issues/700)) ([9ac76cb](https://github.com/sabertazimi/bod/commit/9ac76cb6e5ba16b4c44794bcc5635a66c40d32a3))
+* **deps:** update dependency react-redux to v8 ([#699](https://github.com/sabertazimi/bod/issues/699)) ([c15387b](https://github.com/sabertazimi/bod/commit/c15387b5261d193b0436b01bac8347b6a603a22c))
+* **deps:** update dependency react-refresh to ^0.12.0 ([#685](https://github.com/sabertazimi/bod/issues/685)) ([47802a7](https://github.com/sabertazimi/bod/commit/47802a7c3aefe238c2f163946830bc8247e5699f))
+* **template-bod:** add `rejected` case for `counterSlice` ([#688](https://github.com/sabertazimi/bod/issues/688)) ([977e518](https://github.com/sabertazimi/bod/commit/977e51858c7a6f1c90d50fb3d55d25b75a1604a3))
+* webpack noise printed only if error or warning ([#694](https://github.com/sabertazimi/bod/issues/694)) ([95e8322](https://github.com/sabertazimi/bod/commit/95e832269a7dd9e332212ee78495bc1e3ca609bf))
+
+
+### Features
+
+* **template-testing:** add AXE a11y testing ([#698](https://github.com/sabertazimi/bod/issues/698)) ([89e7870](https://github.com/sabertazimi/bod/commit/89e78703518a725b7bb5195abbb3dc6164673064))
+
+
+
+
+
 ## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
 
 

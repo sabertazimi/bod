@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
+
+
+### Features
+
+* **template-testing:** add AXE a11y testing ([#698](https://github.com/sabertazimi/bod/issues/698)) ([89e7870](https://github.com/sabertazimi/bod/commit/89e78703518a725b7bb5195abbb3dc6164673064))
+
+
+
+
+
 ## [5.8.1](https://github.com/sabertazimi/bod/compare/v5.8.0...v5.8.1) (2022-04-03)
 
 
