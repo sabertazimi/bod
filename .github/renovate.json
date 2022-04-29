@@ -22,10 +22,6 @@
       "automergeStrategy": "squash",
       "groupName": "dependencies (non-major)",
       "groupSlug": "dependencies"
-    },
-    {
-      "matchSourceUrlPrefixes": ["https://github.com/facebook/react"],
-      "groupName": "react monorepo"
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"],
