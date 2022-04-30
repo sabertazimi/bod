@@ -41,9 +41,9 @@ module.exports = {
       files: ['*.json', '*.json5'],
       parser: 'jsonc-eslint-parser',
       rules: {
-        quotes: ['error', 'double'],
-        'quote-props': ['error', 'always'],
-        'comma-dangle': ['error', 'never'],
+        'jsonc/quotes': ['error', 'double'],
+        'jsonc/quote-props': ['error', 'always'],
+        'jsonc/comma-dangle': ['error', 'never'],
       },
     },
     {
@@ -185,6 +185,7 @@ module.exports = {
         asyncArrow: 'always',
       },
     ],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
 
     // es6
     'no-var': 'error',
