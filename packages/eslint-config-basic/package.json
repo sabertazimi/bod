@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config-basic",
-  "version": "5.9.0",
+  "version": "5.10.0",
   "description": "ESLint basic configuration used by dg-scripts.",
   "keywords": [
     "dg-scripts",

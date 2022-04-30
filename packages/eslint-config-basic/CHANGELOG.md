@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#709](https://github.com/sabertazimi/bod/issues/709)) ([f5093f5](https://github.com/sabertazimi/bod/commit/f5093f593aa54eb05c568ce4d29614bcfabe88c5))
+
+
+### Features
+
+* **eslint-config:** add `no-multiple-empty-lines` lint check ([#715](https://github.com/sabertazimi/bod/issues/715)) ([c9bb259](https://github.com/sabertazimi/bod/commit/c9bb259db703173c331733a124e59ed07a9800c7))
+
+
+
+
+
 # [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
+
+
+### Bug Fixes
+
+* **tempalte-tailwind:** customize css variables ([#708](https://github.com/sabertazimi/bod/issues/708)) ([7429878](https://github.com/sabertazimi/bod/commit/7429878488400f2abf66293042f28655158c6eeb))
+
+
+
+
+
 # [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
 
 

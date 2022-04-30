@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#705](https://github.com/sabertazimi/bod/issues/705)) ([cab1968](https://github.com/sabertazimi/bod/commit/cab19684db820c783cfc73b3cc3c7d4c2936f485))
+* **deps:** update dependencies (non-major) ([#709](https://github.com/sabertazimi/bod/issues/709)) ([f5093f5](https://github.com/sabertazimi/bod/commit/f5093f593aa54eb05c568ce4d29614bcfabe88c5))
+* **deps:** update dependency autoprefixer to ^10.4.5 ([#707](https://github.com/sabertazimi/bod/issues/707)) ([8564538](https://github.com/sabertazimi/bod/commit/8564538c54be2c1dcbf3cefc121e08713205c9b3))
+* **deps:** update dependency postcss to ^8.4.13 ([#714](https://github.com/sabertazimi/bod/issues/714)) ([2c0d3d0](https://github.com/sabertazimi/bod/commit/2c0d3d06d45a88e0742b992241aa1b899db9a691))
+* **deps:** update react monorepo ([#710](https://github.com/sabertazimi/bod/issues/710)) ([a8e4f5a](https://github.com/sabertazimi/bod/commit/a8e4f5a1c91e1d214ab37f784c44e5fb28d72bf4))
+* **tempalte-tailwind:** customize css variables ([#708](https://github.com/sabertazimi/bod/issues/708)) ([7429878](https://github.com/sabertazimi/bod/commit/7429878488400f2abf66293042f28655158c6eeb))
+
+
+### Features
+
+* **CRA-jest:** bump to Jest v28 (major) ([#713](https://github.com/sabertazimi/bod/issues/713)) ([9b104c9](https://github.com/sabertazimi/bod/commit/9b104c931491cbd6e185e162997aa1d01b74cc5e))
+* **eslint-config:** add `no-multiple-empty-lines` lint check ([#715](https://github.com/sabertazimi/bod/issues/715)) ([c9bb259](https://github.com/sabertazimi/bod/commit/c9bb259db703173c331733a124e59ed07a9800c7))
+
+
+
+
+
 # [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
 
 

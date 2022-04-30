@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#709](https://github.com/sabertazimi/bod/issues/709)) ([f5093f5](https://github.com/sabertazimi/bod/commit/f5093f593aa54eb05c568ce4d29614bcfabe88c5))
+* **deps:** update react monorepo ([#710](https://github.com/sabertazimi/bod/issues/710)) ([a8e4f5a](https://github.com/sabertazimi/bod/commit/a8e4f5a1c91e1d214ab37f784c44e5fb28d72bf4))
+* **tempalte-tailwind:** customize css variables ([#708](https://github.com/sabertazimi/bod/issues/708)) ([7429878](https://github.com/sabertazimi/bod/commit/7429878488400f2abf66293042f28655158c6eeb))
+
+
+
+
+
 # [5.9.0](https://github.com/sabertazimi/bod/compare/v5.8.1...v5.9.0) (2022-04-19)
 
 
