@@ -59,6 +59,25 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://cra.link/deployment) for more information.
 
+#### Building for Relative Paths
+
+Specify the `homepage` in your `package.json`:
+
+```json
+{
+  "homepage": "http://mywebsite.com/relativepath"
+}
+```
+
+Change `basename` of `Router`:
+
+```tsx
+<BrowserRouter basename="/calendar"/>
+<Link to="/today"/> // renders <a href="/calendar/today">
+```
+
+See more details [https://create-react-app.dev/docs/deployment/#building-for-relative-paths].
+
 ## Create React App
 
 To use this template with Create React App,
