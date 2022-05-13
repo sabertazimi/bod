@@ -50,19 +50,19 @@
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
-    "@types/jest": "^27.5.0",
-    "@types/node": "^16.11.33",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.35",
     "@types/semver": "^7.3.9",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
-    "ci-info": "^3.3.0",
+    "ci-info": "^3.3.1",
     "concurrently": "^7.1.0",
     "consola": "^2.15.3",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.1",
     "eslint": "^8.15.0",
     "jest": "^28.1.0",
     "lerna": "^4.0.0",
@@ -73,7 +73,7 @@
     "ts-node": "^10.7.0",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
-    "undici": "^5.1.1",
+    "undici": "^5.2.0",
     "verdaccio": "^5.10.2"
   }
 }
