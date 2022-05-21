@@ -70,7 +70,7 @@
     "semver": "^7.3.7",
     "stylelint": "^14.8.3",
     "ts-jest": "^28.0.2",
-    "ts-node": "^10.7.0",
+    "ts-node": "^10.8.0",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
     "undici": "^5.2.0",
