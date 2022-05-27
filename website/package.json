@@ -22,15 +22,15 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.20",
-    "@docusaurus/preset-classic": "2.0.0-beta.20",
-    "@easyops-cn/docusaurus-search-local": "^0.25.0",
+    "@docusaurus/core": "2.0.0-beta.21",
+    "@docusaurus/preset-classic": "2.0.0-beta.21",
+    "@easyops-cn/docusaurus-search-local": "^0.26.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.20",
+    "@docusaurus/module-type-aliases": "2.0.0-beta.21",
     "@tsconfig/docusaurus": "^1.0.5",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   }
 }
