@@ -4696,9 +4696,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^13.2.0":
-  version: 13.2.0
-  resolution: "@testing-library/react@npm:13.2.0"
+"@testing-library/react@npm:^13.3.0":
+  version: 13.3.0
+  resolution: "@testing-library/react@npm:13.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^8.5.0
@@ -4706,7 +4706,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 29f4a97c932a7fd78a55791a0ae0ba8d33c5241acbade98b6714440981e6e3d86a243e0b22161d3323b549ce059c175ae56d6b5053ad44083ab6e40ca211f19e
+  checksum: 98fd8616a7cae0ecfcbe97b5b3c5b91fbafccf449c04875395ccc0e3f0b139e53b3261b9536ec2169a5e2883a1be2098907209064061fe0c2ff21dfbc785dd40
   languageName: node
   linkType: hard
 
@@ -6809,7 +6809,7 @@ __metadata:
     "@types/rimraf": ^3.0.2
     chalk: ^4.1.2
     ci-info: ^3.3.1
-    commander: ^9.2.0
+    commander: ^9.3.0
     consola: ^2.15.3
     cross-spawn: ^7.0.3
     envinfo: ^7.8.1
@@ -7727,10 +7727,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.2.0":
-  version: 9.2.0
-  resolution: "commander@npm:9.2.0"
-  checksum: 7c82e4cd969712aa6d7c055b8351807a7230f9f31ef7ec7881e11a1147511de85adf5d6ccfd200240a118eecf693b220caf6865b8efbcea558a70d35aa9ed711
+"commander@npm:^9.3.0":
+  version: 9.3.0
+  resolution: "commander@npm:9.3.0"
+  checksum: d421ce66fee25792a1470c69aa8d1b86434bf873a96483aa92c8267f81a6f20c6f7c426f5e82f88ac50a8ec4855d3f2787aebcdef8aa559e1080a2337a95a217
   languageName: node
   linkType: hard
 
@@ -8156,7 +8156,7 @@ __metadata:
     "@sabertazimi/react-scripts": ^5.10.0
     "@testing-library/dom": ^8.13.0
     "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^13.2.0
+    "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^14.2.0
     "@types/jest": ^27.5.1
     "@types/jest-axe": ^3.5.3
@@ -9619,7 +9619,7 @@ __metadata:
     babel-preset-react-app: ^10.0.1
     confusing-browser-globals: ^1.0.11
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^26.2.2
+    eslint-plugin-jest: ^26.3.0
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-react: ^7.30.0
     eslint-plugin-react-hooks: ^4.5.0
@@ -9728,9 +9728,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^26.2.2":
-  version: 26.2.2
-  resolution: "eslint-plugin-jest@npm:26.2.2"
+"eslint-plugin-jest@npm:^26.3.0":
+  version: 26.3.0
+  resolution: "eslint-plugin-jest@npm:26.3.0"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
@@ -9741,7 +9741,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: c1299a0bb465196d3c8a26ee892e29398b91bb741fe69ac6b19b54096f795142a152355ca520d80c778fb588ba2282a7c625ef204c17fe65ee94709d16970d46
+  checksum: 584c999067fd894b15a0a4232dc41826c800505cda25fd6beb0f0d624e677e46c8475e084af4b2e4882dd44a940d0bf84fc42a20b7eabe539c522c9539e5bbaf
   languageName: node
   linkType: hard
 
