@@ -65,6 +65,8 @@ const emitErrorsAsWarnings = process.env.ESLINT_NO_DEV_ERRORS === 'true';
 const disableESLintPlugin = process.env.DISABLE_ESLINT_PLUGIN === 'true';
 const disableStyleLintPlugin = process.env.DISABLE_STYLELINT_PLUGIN === 'true';
 
+const enableAnalyzer = process.env.ANALYZE === 'true';
+
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
@@ -812,7 +814,7 @@ module.exports = function (webpackEnv) {
             '.cache/.stylelintcache'
           ),
         }),
-      isEnvProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+      enableAnalyzer && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
       new WebpackBar(),
     ].filter(Boolean),
     // Turn off performance processing because we utilize
