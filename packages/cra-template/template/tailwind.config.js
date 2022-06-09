@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
