@@ -1,6 +1,5 @@
 .row {
-  @apply flex items-center justify-center;
-  @apply mb-4;
+  @apply mb-4 flex items-center justify-center;
 }
 
 .row > button {
@@ -8,22 +7,18 @@
 }
 
 .value {
-  @apply px-4 mt-0.5;
-  @apply text-8xl;
+  @apply mt-0.5 px-4 text-8xl;
 
   font-family: 'Courier New', Courier, monospace;
 }
 
 .textbox {
-  @apply w-16 p-1 mr-1;
-  @apply text-4xl text-center;
-  @apply border border-primary;
+  @apply mr-1 w-16 border border-primary p-1 text-center text-4xl;
 }
 
 .button,
 .async-button {
-  @apply px-3 pb-1;
-  @apply text-4xl;
+  @apply px-3 pb-1 text-4xl;
 
   color: rgb(112 76 182);
   cursor: pointer;

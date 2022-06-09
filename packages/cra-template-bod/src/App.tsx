@@ -5,7 +5,7 @@ import Logo from './logo.svg';
 
 const App = (): JSX.Element => {
   return (
-    <div className="text-center bg-white">
+    <div className="bg-white text-center">
       <header className="app-header">
         <Logo className="app-logo" title="logo" />
         <Routes>
