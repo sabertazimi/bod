@@ -2,6 +2,17 @@
   "name": "@dg-scripts/eslint-config",
   "version": "5.10.0",
   "description": "ESLint configuration used by dg-scripts.",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/sabertazimi/bod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
   "keywords": [
     "dg-scripts",
     "lint",
@@ -11,13 +22,6 @@
     "eslint",
     "eslint-prettier"
   ],
-  "license": "MIT",
-  "author": "sabertazimi <sabertazimi@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sabertazimi/bod.git",
-    "directory": "packages/eslint-config"
-  },
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -25,10 +29,6 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
-  "homepage": "https://github.com/sabertazimi/bod",
   "scripts": {
     "lint": "eslint . --config=index.js"
   },

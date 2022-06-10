@@ -2,31 +2,16 @@
   "name": "bod",
   "version": "5.10.0",
   "description": "Boilerplate CLI App",
-  "scripts": {
-    "build": "yarn clean && yarn compile",
-    "clean": "rimraf ./dist/",
-    "compile": "tsc",
-    "dev": "ts-node ./src/bod.ts",
-    "format": "prettier --write src/**/*.ts",
-    "lint": "yarn lint:style && yarn lint:type-check",
-    "lint:style": "eslint --ext .ts ./src",
-    "lint:type-check": "tsc --noEmit",
-    "start": "yarn dev"
-  },
-  "files": [
-    "bin/bod.js",
-    "dist/**/*.js",
-    "dist/**/*.d.ts",
-    "!dist/**/*.test.js",
-    "!dist/**/*.test.d.ts"
-  ],
-  "bin": "bin/bod.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sabertazimi.github.io/bod",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git",
     "directory": "packages/bod"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
   },
   "keywords": [
     "bod",
@@ -41,15 +26,30 @@
     "template",
     "typescript"
   ],
-  "author": "sabertazimi <sabertazimi@gmail.com>",
-  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": "bin/bod.js",
+  "files": [
+    "bin/bod.js",
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.d.ts"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rimraf ./dist/",
+    "compile": "tsc",
+    "dev": "ts-node ./src/bod.ts",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "yarn lint:style && yarn lint:type-check",
+    "lint:style": "eslint --ext .ts ./src",
+    "lint:type-check": "tsc --noEmit",
+    "start": "yarn dev"
   },
-  "homepage": "https://sabertazimi.github.io/bod",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.3.0",

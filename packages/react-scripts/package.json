@@ -1,6 +1,16 @@
 {
   "name": "@sabertazimi/react-scripts",
   "version": "5.10.0",
+  "description": "Configuration and scripts for Bod CLI.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sabertazimi/bod.git",
+    "directory": "packages/react-scripts"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
   "keywords": [
     "bod",
     "bod-cli",
@@ -8,27 +18,26 @@
     "create-react-app",
     "react-scripts"
   ],
-  "description": "Configuration and scripts for Bod CLI.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sabertazimi/bod.git",
-    "directory": "packages/react-scripts"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
+  "types": "./lib/react-app.d.ts",
+  "bin": "./bin/react-scripts.js",
   "files": [
     "bin",
     "config",
     "lib",
     "scripts"
   ],
-  "bin": "./bin/react-scripts.js",
-  "types": "./lib/react-app.d.ts",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16",
+    "typescript": "^3.2.1 || ^4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "@babel/core": "^7.18.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
@@ -91,21 +100,12 @@
     "webpackbar": "^5.0.2",
     "workbox-webpack-plugin": "^6.5.3"
   },
-  "devDependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
   },
-  "peerDependencies": {
-    "react": ">= 16",
-    "typescript": "^3.2.1 || ^4"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
+  "devDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "browserslist": {
     "production": [

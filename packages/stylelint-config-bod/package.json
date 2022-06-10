@@ -2,11 +2,16 @@
   "name": "stylelint-config-bod",
   "version": "5.10.0",
   "description": "StyleLint configuration used by Bod CLI.",
-  "main": "index.js",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sabertazimi.github.io/bod",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git",
     "directory": "packages/stylelint-config-bod"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
   },
   "keywords": [
     "bod",
@@ -26,15 +31,10 @@
     "stylelint-plugin",
     "stylelint-standard"
   ],
-  "author": "sabertazimi <sabertazimi@gmail.com>",
-  "license": "MIT",
+  "main": "index.js",
   "engines": {
     "node": ">=14.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
-  "homepage": "https://sabertazimi.github.io/bod",
   "scripts": {
     "lint": "stylelint README.md --config=index.js"
   },
