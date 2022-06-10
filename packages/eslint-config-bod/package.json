@@ -2,12 +2,12 @@
   "name": "eslint-config-bod",
   "version": "5.10.0",
   "description": "ESLint configuration used by Bod CLI.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabertazimi/bod.git",
     "directory": "packages/eslint-config-bod"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sabertazimi/bod/issues"
   },
@@ -16,6 +16,9 @@
     "index.js",
     "jest.js"
   ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "lint": "eslint . --config=index.js --ext .js"
   },
@@ -36,8 +39,5 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-testing-library": "^5.5.1"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   }
 }

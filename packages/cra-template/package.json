@@ -1,6 +1,16 @@
 {
   "name": "@sabertazimi/cra-template",
   "version": "5.10.0",
+  "description": "The base template for Bod CLI.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sabertazimi/bod.git",
+    "directory": "packages/cra-template"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
   "keywords": [
     "bod",
     "bod-cli",
@@ -9,21 +19,11 @@
     "create-react-app",
     "template"
   ],
-  "description": "The base template for Bod CLI.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sabertazimi/bod.git",
-    "directory": "packages/cra-template"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }

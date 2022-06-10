@@ -1,6 +1,18 @@
 {
   "name": "cra-template-bod",
   "version": "5.10.0",
+  "description": "The advanced TypeScript template for Bod CLI.",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sabertazimi.github.io/bod/bod",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sabertazimi/bod.git",
+    "directory": "packages/cra-template-bod"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
   "keywords": [
     "bod",
     "bod-cli",
@@ -10,24 +22,13 @@
     "template",
     "typescript"
   ],
-  "description": "The advanced TypeScript template for Bod CLI.",
-  "homepage": "https://sabertazimi.github.io/bod/bod",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sabertazimi/bod.git",
-    "directory": "packages/cra-template-bod"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
   "files": [
     "template",
     "template.json"
   ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
     "lint": "yarn lint:style && yarn lint:type-check",

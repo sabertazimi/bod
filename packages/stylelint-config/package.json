@@ -2,6 +2,17 @@
   "name": "@dg-scripts/stylelint-config",
   "version": "5.10.0",
   "description": "StyleLint configuration used by dg-scripts.",
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/sabertazimi/bod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git",
+    "directory": "packages/stylelint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
   "keywords": [
     "dg-scripts",
     "css",
@@ -18,13 +29,6 @@
     "stylelint-prettier",
     "stylelint-standard"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sabertazimi/bod.git",
-    "directory": "packages/stylelint-config"
-  },
-  "author": "sabertazimi <sabertazimi@gmail.com>",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -32,10 +36,6 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
-  "homepage": "https://github.com/sabertazimi/bod",
   "scripts": {
     "lint": "stylelint CHANGELOG.md --config=index.js"
   },

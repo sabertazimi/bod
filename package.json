@@ -1,11 +1,38 @@
 {
   "name": "create-bod-app",
   "private": true,
+  "packageManager": "yarn@3.2.1",
   "description": "Boilerplate CLI App",
   "workspaces": [
     "packages/*",
     "website"
   ],
+  "author": "sabertazimi <sabertazimi@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://sabertazimi.github.io/bod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabertazimi/bod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sabertazimi/bod/issues"
+  },
+  "keywords": [
+    "bod",
+    "bod-cli",
+    "boilerplate",
+    "cli",
+    "create-react-app",
+    "react",
+    "react-scripts",
+    "starter",
+    "starter-kit",
+    "template",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "badge": "ts-node scripts/badge.ts",
     "bootstrap": "lerna bootstrap",
@@ -24,33 +51,6 @@
     "test": "jest --watch",
     "test:all": "lerna run test && jest"
   },
-  "keywords": [
-    "bod",
-    "bod-cli",
-    "boilerplate",
-    "cli",
-    "create-react-app",
-    "react",
-    "react-scripts",
-    "starter",
-    "starter-kit",
-    "template",
-    "typescript"
-  ],
-  "author": "sabertazimi <sabertazimi@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sabertazimi/bod.git"
-  },
-  "homepage": "https://sabertazimi.github.io/bod",
-  "bugs": {
-    "url": "https://github.com/sabertazimi/bod/issues"
-  },
-  "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
