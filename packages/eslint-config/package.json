@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config",
-  "version": "5.10.0",
+  "version": "5.11.0",
   "description": "ESLint configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -38,8 +38,8 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
-    "@dg-scripts/eslint-config-react": "^5.10.0",
-    "@dg-scripts/eslint-config-vue": "^5.10.0",
+    "@dg-scripts/eslint-config-react": "^5.11.0",
+    "@dg-scripts/eslint-config-vue": "^5.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
   }

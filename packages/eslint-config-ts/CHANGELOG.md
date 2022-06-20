@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#716](https://github.com/sabertazimi/bod/issues/716)) ([973b48c](https://github.com/sabertazimi/bod/commit/973b48c6e46d12e225c34cc5573c22594096490c))
+* **deps:** update dependencies (non-major) ([#725](https://github.com/sabertazimi/bod/issues/725)) ([05e25e1](https://github.com/sabertazimi/bod/commit/05e25e1f1d6f462fffa6d4d40f16f371193e19a8))
+* **deps:** update dependencies (non-major) ([#731](https://github.com/sabertazimi/bod/issues/731)) ([73d448e](https://github.com/sabertazimi/bod/commit/73d448ee1136a45d7e9c8773d2a816d4dd2aa494))
+* **deps:** update dependencies (non-major) ([#743](https://github.com/sabertazimi/bod/issues/743)) ([55befaf](https://github.com/sabertazimi/bod/commit/55befaf77d7065f3ff5c9e91d3e209a8ed973eeb))
+* **deps:** update dependencies (non-major) ([#763](https://github.com/sabertazimi/bod/issues/763)) ([fc48e31](https://github.com/sabertazimi/bod/commit/fc48e315a0426e85d25f004f571774f77ca2d3f0))
+* **eslint-config:** complete typescript overrides ([#724](https://github.com/sabertazimi/bod/issues/724)) ([e5ad1e6](https://github.com/sabertazimi/bod/commit/e5ad1e6f5dd63d2b898673e968db168916573dd0))
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 

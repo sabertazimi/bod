@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **CRA-tailwindcss:** add tailwind prettier sorting support ([#755](https://github.com/sabertazimi/bod/issues/755)) ([757e427](https://github.com/sabertazimi/bod/commit/757e427c71d1f09ce0fa2bf89185973787c6a0ca))
+* **deps:** update dependencies (non-major) ([#716](https://github.com/sabertazimi/bod/issues/716)) ([973b48c](https://github.com/sabertazimi/bod/commit/973b48c6e46d12e225c34cc5573c22594096490c))
+* **deps:** update dependencies (non-major) ([#725](https://github.com/sabertazimi/bod/issues/725)) ([05e25e1](https://github.com/sabertazimi/bod/commit/05e25e1f1d6f462fffa6d4d40f16f371193e19a8))
+* **deps:** update dependencies (non-major) ([#731](https://github.com/sabertazimi/bod/issues/731)) ([73d448e](https://github.com/sabertazimi/bod/commit/73d448ee1136a45d7e9c8773d2a816d4dd2aa494))
+* **deps:** update dependencies (non-major) ([#743](https://github.com/sabertazimi/bod/issues/743)) ([55befaf](https://github.com/sabertazimi/bod/commit/55befaf77d7065f3ff5c9e91d3e209a8ed973eeb))
+* **deps:** update dependencies (non-major) ([#763](https://github.com/sabertazimi/bod/issues/763)) ([fc48e31](https://github.com/sabertazimi/bod/commit/fc48e315a0426e85d25f004f571774f77ca2d3f0))
+* **deps:** update dependency css-minimizer-webpack-plugin to v4 ([#732](https://github.com/sabertazimi/bod/issues/732)) ([9ecd492](https://github.com/sabertazimi/bod/commit/9ecd492e94638484c0c7303347404d5bd84ebbaa))
+* **deps:** update dependency eslint to ^8.16.0 ([#737](https://github.com/sabertazimi/bod/issues/737)) ([0fc9861](https://github.com/sabertazimi/bod/commit/0fc98614a58a79cb6d418879d2277fc262a40fe2))
+* **deps:** update dependency postcss-loader to v7 ([#736](https://github.com/sabertazimi/bod/issues/736)) ([ebf7600](https://github.com/sabertazimi/bod/commit/ebf7600d9775d7fe03af6096fcdd8814a202b4b9))
+* **deps:** update dependency sass-loader to v13 ([#738](https://github.com/sabertazimi/bod/issues/738)) ([9a7546a](https://github.com/sabertazimi/bod/commit/9a7546a5a9ad7747a283dec5f0e1da0b584055f2))
+* **deps:** update dependency source-map-loader to v4 ([#764](https://github.com/sabertazimi/bod/issues/764)) ([fee070d](https://github.com/sabertazimi/bod/commit/fee070d29f957c902eb8488e7a624b3557398e42))
+* **deps:** update dependency stylelint-webpack-plugin to ^3.3.0 ([#733](https://github.com/sabertazimi/bod/issues/733)) ([0063f9c](https://github.com/sabertazimi/bod/commit/0063f9c7787a8e5edd408c79e549d43605770879))
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+* **webpack-config:** add environment switch for bundle analyzer ([#750](https://github.com/sabertazimi/bod/issues/750)) ([ab05e28](https://github.com/sabertazimi/bod/commit/ab05e28c54222e37479a6d55160ab4aa7f447d36))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 

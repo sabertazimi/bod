@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#727](https://github.com/sabertazimi/bod/issues/727)) ([605660e](https://github.com/sabertazimi/bod/commit/605660eff0eed0b94868e603ad66a34a10e671d3))
+* **deps:** update dependencies (non-major) ([#743](https://github.com/sabertazimi/bod/issues/743)) ([55befaf](https://github.com/sabertazimi/bod/commit/55befaf77d7065f3ff5c9e91d3e209a8ed973eeb))
+* **deps:** update dependencies (non-major) ([#763](https://github.com/sabertazimi/bod/issues/763)) ([fc48e31](https://github.com/sabertazimi/bod/commit/fc48e315a0426e85d25f004f571774f77ca2d3f0))
+* **deps:** update dependency eslint-plugin-yml to v1 ([#735](https://github.com/sabertazimi/bod/issues/735)) ([a7329a6](https://github.com/sabertazimi/bod/commit/a7329a66abf716ed2b89ba44f17301e8ace7362a))
+* **deps:** update dependency yaml-eslint-parser to v1 ([#739](https://github.com/sabertazimi/bod/issues/739)) ([b599ffa](https://github.com/sabertazimi/bod/commit/b599ffa8b5cd05cbcb4b7fea4a3bb9de830005e4))
+* **eslint-config:** add missing JSON extension rules ([#722](https://github.com/sabertazimi/bod/issues/722)) ([691c312](https://github.com/sabertazimi/bod/commit/691c312d11881762640c4db9c15a20f8fd8c3c67))
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+* **eslint-config:** rectify broken eslint-config-unicorn rules ([#728](https://github.com/sabertazimi/bod/issues/728)) ([4242a77](https://github.com/sabertazimi/bod/commit/4242a774c4c3266008b807f3d5c9229f7b634255))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 

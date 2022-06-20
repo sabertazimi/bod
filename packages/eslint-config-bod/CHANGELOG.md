@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#716](https://github.com/sabertazimi/bod/issues/716)) ([973b48c](https://github.com/sabertazimi/bod/commit/973b48c6e46d12e225c34cc5573c22594096490c))
+* **deps:** update dependencies (non-major) ([#718](https://github.com/sabertazimi/bod/issues/718)) ([3d8192d](https://github.com/sabertazimi/bod/commit/3d8192d0ede7527aa9703effcfde837bf105c7f0))
+* **deps:** update dependencies (non-major) ([#725](https://github.com/sabertazimi/bod/issues/725)) ([05e25e1](https://github.com/sabertazimi/bod/commit/05e25e1f1d6f462fffa6d4d40f16f371193e19a8))
+* **deps:** update dependencies (non-major) ([#727](https://github.com/sabertazimi/bod/issues/727)) ([605660e](https://github.com/sabertazimi/bod/commit/605660eff0eed0b94868e603ad66a34a10e671d3))
+* **deps:** update dependencies (non-major) ([#731](https://github.com/sabertazimi/bod/issues/731)) ([73d448e](https://github.com/sabertazimi/bod/commit/73d448ee1136a45d7e9c8773d2a816d4dd2aa494))
+* **deps:** update dependencies (non-major) ([#743](https://github.com/sabertazimi/bod/issues/743)) ([55befaf](https://github.com/sabertazimi/bod/commit/55befaf77d7065f3ff5c9e91d3e209a8ed973eeb))
+* **deps:** update dependencies (non-major) ([#763](https://github.com/sabertazimi/bod/issues/763)) ([fc48e31](https://github.com/sabertazimi/bod/commit/fc48e315a0426e85d25f004f571774f77ca2d3f0))
+* **deps:** update dependency eslint-plugin-jest to ^26.2.0 ([#726](https://github.com/sabertazimi/bod/issues/726)) ([26f4d8b](https://github.com/sabertazimi/bod/commit/26f4d8bec17c6a00e56d180583da58a46dd6ab47))
+* **deps:** update dependency eslint-plugin-jest to ^26.2.2 ([#729](https://github.com/sabertazimi/bod/issues/729)) ([33bc7c4](https://github.com/sabertazimi/bod/commit/33bc7c406ee631d3c63d1da81dc948f6cfa3eef0))
+* **deps:** update dependency eslint-plugin-jest to ^26.4.2 ([#747](https://github.com/sabertazimi/bod/issues/747)) ([5cd8609](https://github.com/sabertazimi/bod/commit/5cd860999afd998d93ca54544fd70c9db6993f04))
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#716](https://github.com/sabertazimi/bod/issues/716)) ([973b48c](https://github.com/sabertazimi/bod/commit/973b48c6e46d12e225c34cc5573c22594096490c))
+* **deps:** update dependencies (non-major) ([#743](https://github.com/sabertazimi/bod/issues/743)) ([55befaf](https://github.com/sabertazimi/bod/commit/55befaf77d7065f3ff5c9e91d3e209a8ed973eeb))
+* **deps:** update dependency stylelint-config-standard to v26 ([#759](https://github.com/sabertazimi/bod/issues/759)) ([7899beb](https://github.com/sabertazimi/bod/commit/7899beb5191aefde64504ab2af4f8fbf9870ad42))
+* **deps:** update dependency stylelint-config-standard-scss to v4 ([#745](https://github.com/sabertazimi/bod/issues/745)) ([891ba7e](https://github.com/sabertazimi/bod/commit/891ba7ea1db6324382daae9106390157410a94eb))
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+* **stylelint:** add support for `[@container](https://github.com/container)` query ([#742](https://github.com/sabertazimi/bod/issues/742)) ([9039570](https://github.com/sabertazimi/bod/commit/90395706156ec0a2c04704640b5185dae5960517))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 

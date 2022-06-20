@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **eslint-config:** improve `package.json` sorting ([#758](https://github.com/sabertazimi/bod/issues/758)) ([dd47adc](https://github.com/sabertazimi/bod/commit/dd47adcc7f78a56956421669bb383e9aa0858232))
+* **tailwind-config:** remove legacy tailwind configuration ([#748](https://github.com/sabertazimi/bod/issues/748)) ([027df00](https://github.com/sabertazimi/bod/commit/027df00c9b3e7e9a9b1ac66ce663bcf251c62de0))
+* **template-tailwind:** add tailwind configuration type definition ([#754](https://github.com/sabertazimi/bod/issues/754)) ([63c853e](https://github.com/sabertazimi/bod/commit/63c853e576f1b1749001d5bec83a4610df7fadcb))
+* **template-tailwind:** switch to official tailwind types ([#762](https://github.com/sabertazimi/bod/issues/762)) ([2e20380](https://github.com/sabertazimi/bod/commit/2e20380244e1bde3ce1971a63741dc57aadaf183))
+
+
+
+
+
 # [5.10.0](https://github.com/sabertazimi/bod/compare/v5.9.0...v5.10.0) (2022-04-30)
 
 
