@@ -1884,7 +1884,7 @@ __metadata:
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-html: ^6.2.0
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsonc: ^2.3.0
+    eslint-plugin-jsonc: ^2.3.1
     eslint-plugin-markdown: ^2.2.1
     eslint-plugin-n: ^15.2.3
     eslint-plugin-promise: ^6.0.0
@@ -9684,16 +9684,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "eslint-plugin-jsonc@npm:2.3.0"
+"eslint-plugin-jsonc@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "eslint-plugin-jsonc@npm:2.3.1"
   dependencies:
     eslint-utils: ^3.0.0
     jsonc-eslint-parser: ^2.0.4
     natural-compare: ^1.4.0
   peerDependencies:
     eslint: ">=6.0.0"
-  checksum: 6be0915ccbfe27818552c356d64ca89e2df8c20866673792fd6a37c8d7e919796d4555a195b0010c764387fb1456e942dc956abbcb8bf3fbd43d55faf860419c
+  checksum: 65ae99e7105b77a4f46a9d2a7bdc4da3485b97f1279da10b2ac89044b00408d4635dd76a40dfb7c9effbd98557a19cebe0ce943d0a2619f8dea2f52ed7b07fef
   languageName: node
   linkType: hard
 
