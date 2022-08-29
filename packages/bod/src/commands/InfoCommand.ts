@@ -10,7 +10,6 @@ class InfoCommand extends BaseCommand {
     });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public async run(_appName?: string): Promise<void> {
     printer.info(`Environment information:`);
     const envInfo = await envinfo.run(
