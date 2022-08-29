@@ -31,7 +31,7 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
           return promise as Promise<any> & { ui: any };
         });
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
@@ -67,7 +67,7 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
           return promise as Promise<any> & { ui: any };
         });
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
@@ -95,7 +95,7 @@ describe('CreateCommand', () => {
           const promise = new Promise(resolve => {
             resolve({ templateName: value });
           });
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
           return promise as Promise<any> & { ui: any };
         });
 
