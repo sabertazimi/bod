@@ -54,7 +54,7 @@
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
-    "@types/jest": "^28.1.8",
+    "@types/jest": "^29.0.0",
     "@types/node": "^16.11.56",
     "@types/semver": "^7.3.12",
     "chalk": "^4.1.2",
