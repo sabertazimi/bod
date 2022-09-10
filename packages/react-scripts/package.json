@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.18.13",
+    "@babel/core": "^7.19.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@svgr/webpack": "^6.3.1",
     "autoprefixer": "^10.4.8",
@@ -52,7 +52,7 @@
     "camelcase": "^6.3.0",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^4.1.0",
     "dotenv": "^16.0.2",
     "dotenv-expand": "^9.0.0",
     "eslint": "^8.23.0",
@@ -73,7 +73,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^7.0.1",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^7.8.0",
+    "postcss-preset-env": "^7.8.1",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "prompts": "^2.4.2",
@@ -95,7 +95,7 @@
     "terser-webpack-plugin": "^5.3.6",
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "^4.6.1",
-    "webpack-dev-server": "^4.10.1",
+    "webpack-dev-server": "^4.11.0",
     "webpack-manifest-plugin": "^5.0.0",
     "webpackbar": "^5.0.2",
     "workbox-webpack-plugin": "^6.5.4"
