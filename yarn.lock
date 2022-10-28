@@ -5276,17 +5276,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.5":
-  version: 17.0.24
-  resolution: "@types/node@npm:17.0.24"
-  checksum: 9e7c4f863601b2430b4c2429a89935f22eba692956f5013c90a4c7fb0e1401ed8add8c4307453c5d6b8b985384500f8c3f644427ab88632640cc396159af479a
+"@types/node@npm:*, @types/node@npm:^18.11.7":
+  version: 18.11.7
+  resolution: "@types/node@npm:18.11.7"
+  checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.18.2":
-  version: 16.18.2
-  resolution: "@types/node@npm:16.18.2"
-  checksum: d21bb6614916b88242300abb23f11ae8bdaabd60c8f7c5edac21f3bf4b1f3ebfbd2a9019a664dd28e5b5730145c069074d70e7a2ab063e80a2fa9ab12de9797a
+"@types/node@npm:^17.0.5":
+  version: 17.0.24
+  resolution: "@types/node@npm:17.0.24"
+  checksum: 9e7c4f863601b2430b4c2429a89935f22eba692956f5013c90a4c7fb0e1401ed8add8c4307453c5d6b8b985384500f8c3f644427ab88632640cc396159af479a
   languageName: node
   linkType: hard
 
@@ -8218,7 +8218,7 @@ __metadata:
     "@testing-library/user-event": ^14.4.3
     "@types/jest": ^29.2.0
     "@types/jest-axe": ^3.5.5
-    "@types/node": ^16.18.2
+    "@types/node": ^18.11.7
     "@types/react": ^18.0.24
     "@types/react-dom": ^18.0.8
     "@types/react-test-renderer": ^18.0.0
@@ -8240,7 +8240,7 @@ __metadata:
     "@dg-scripts/eslint-config": "*"
     "@dg-scripts/stylelint-config": "*"
     "@types/jest": ^29.2.0
-    "@types/node": ^16.18.2
+    "@types/node": ^18.11.7
     "@types/semver": ^7.3.13
     chalk: ^4.1.2
     chokidar: ^3.5.3
