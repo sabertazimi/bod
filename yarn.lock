@@ -4518,7 +4518,7 @@ __metadata:
     browserslist: ^4.21.4
     camelcase: ^6.3.0
     case-sensitive-paths-webpack-plugin: ^2.4.0
-    css-loader: ^6.7.1
+    css-loader: ^6.7.2
     css-minimizer-webpack-plugin: ^4.2.2
     dotenv: ^16.0.3
     dotenv-expand: ^9.0.0
@@ -6974,7 +6974,7 @@ __metadata:
     "@types/inquirer": ^8.2.5
     "@types/rimraf": ^3.0.2
     chalk: ^4.1.2
-    ci-info: ^3.6.0
+    ci-info: ^3.6.1
     commander: ^9.4.1
     consola: ^2.15.3
     cross-spawn: ^7.0.3
@@ -7508,10 +7508,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^3.2.0, ci-info@npm:^3.4.0, ci-info@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "ci-info@npm:3.6.0"
-  checksum: c04f55e0a1a3259d4dcfa613757cd737e00892446d0cb3918d2154a4df984adfa83e2b781df5888086b676c9718af530b273908b0d46f4fcc781f660185fcbfc
+"ci-info@npm:^3.2.0, ci-info@npm:^3.4.0, ci-info@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "ci-info@npm:3.6.1"
+  checksum: e463ed7152e795467c298268d58974d5e769fc7a0da2f72a53480042e01809e87908544b883a073391f446f46045b0d656c4a1fda3796c93740cd2be1c2d5f6f
   languageName: node
   linkType: hard
 
@@ -8258,7 +8258,7 @@ __metadata:
     "@types/semver": ^7.3.13
     chalk: ^4.1.2
     chokidar: ^3.5.3
-    ci-info: ^3.6.0
+    ci-info: ^3.6.1
     concurrently: ^7.5.0
     consola: ^2.15.3
     dotenv: ^16.0.3
@@ -8353,21 +8353,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^6.7.1":
-  version: 6.7.1
-  resolution: "css-loader@npm:6.7.1"
+"css-loader@npm:^6.7.1, css-loader@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "css-loader@npm:6.7.2"
   dependencies:
     icss-utils: ^5.1.0
-    postcss: ^8.4.7
+    postcss: ^8.4.18
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
     postcss-modules-values: ^4.0.0
     postcss-value-parser: ^4.2.0
-    semver: ^7.3.5
+    semver: ^7.3.8
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 170fdbc630a05a43679ef60fa97694766b568dbde37adccc0faafa964fc675f08b976bc68837bb73b61d60240e8d2cbcbf51540fe94ebc9dafc56e7c46ba5527
+  checksum: f3c980cc9c033a02e60df7e5a2f33a1e8c2c3dd552f017485d2d81b383be623ae8c4189404e7a4a7403b52744683ae4b516def0f7ccf125c2b198cb647e46543
   languageName: node
   linkType: hard
 
@@ -16731,7 +16731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.14, postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.14, postcss@npm:^8.4.17, postcss@npm:^8.4.18, postcss@npm:^8.4.19, postcss@npm:^8.4.7":
+"postcss@npm:^8.2.14, postcss@npm:^8.3.11, postcss@npm:^8.4.0, postcss@npm:^8.4.14, postcss@npm:^8.4.17, postcss@npm:^8.4.18, postcss@npm:^8.4.19":
   version: 8.4.19
   resolution: "postcss@npm:8.4.19"
   dependencies:
