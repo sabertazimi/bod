@@ -68,7 +68,7 @@
     "lerna": "^6.1.0",
     "prettier": "^2.8.0",
     "semver": "^7.3.8",
-    "stylelint": "^14.15.0",
+    "stylelint": "^14.16.0",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.1",
