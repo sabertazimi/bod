@@ -51,7 +51,7 @@
     "start": "yarn dev"
   },
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.2.0",
     "commander": "^9.4.1",
     "consola": "^2.15.3",
     "cross-spawn": "^7.0.3",
