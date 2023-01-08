@@ -8292,7 +8292,7 @@ __metadata:
     tslib: ^2.4.1
     typescript: ^4.9.4
     undici: ^5.14.0
-    verdaccio: ^5.19.0
+    verdaccio: ^5.19.1
   languageName: unknown
   linkType: soft
 
@@ -20626,9 +20626,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"verdaccio@npm:^5.19.0":
-  version: 5.19.0
-  resolution: "verdaccio@npm:5.19.0"
+"verdaccio@npm:^5.19.1":
+  version: 5.19.1
+  resolution: "verdaccio@npm:5.19.1"
   dependencies:
     "@verdaccio/commons-api": 10.2.0
     "@verdaccio/local-storage": 10.3.1
@@ -20672,7 +20672,7 @@ __metadata:
     verdaccio-htpasswd: 10.5.1
   bin:
     verdaccio: bin/verdaccio
-  checksum: 002c5d6463f802d9179fe2bf53ac5bb527b80f6a483085582e33f0470cd67387d27798dcbf60147a6cf9e3b1401aaaa90fd4fb0675d19e018859cfbc8251e189
+  checksum: 100a5dba253bf7eb6801747a6b9eeb2080f3fb750a74a09cd76477a7678f028f79779909fe9bcc335d8ece01bf9b79819d10ebd7f3a5678c012a9c9ee35f94ff
   languageName: node
   linkType: hard
 
