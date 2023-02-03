@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@3.4.1",
   "description": "Boilerplate CLI App",
   "workspaces": [
     "packages/*",
@@ -72,8 +72,8 @@
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.4",
+    "typescript": "^4.9.5",
     "undici": "^5.16.0",
-    "verdaccio": "^5.19.1"
+    "verdaccio": "^5.20.1"
   }
 }
