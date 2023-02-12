@@ -1,6 +1,6 @@
 {
   "name": "@sabertazimi/react-scripts",
-  "version": "5.11.1",
+  "version": "5.12.0",
   "description": "Configuration and scripts for Bod CLI.",
   "license": "MIT",
   "repository": {
@@ -56,7 +56,7 @@
     "dotenv": "^16.0.3",
     "dotenv-expand": "^10.0.0",
     "eslint": "^8.34.0",
-    "eslint-config-bod": "^5.11.1",
+    "eslint-config-bod": "^5.12.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-webpack-plugin": "^4.0.0",
@@ -87,7 +87,7 @@
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.1",
     "stylelint": "^15.1.0",
-    "stylelint-config-bod": "^5.11.1",
+    "stylelint-config-bod": "^5.12.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-prettier": "^2.0.0",
     "stylelint-webpack-plugin": "^4.0.0",

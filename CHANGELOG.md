@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://github.com/sabertazimi/bod/compare/v5.11.1...v5.12.0) (2023-02-12)
+
+
+### Features
+
+* **eslint-config:** update eslint configuration ([#900](https://github.com/sabertazimi/bod/issues/900)) ([c533b12](https://github.com/sabertazimi/bod/commit/c533b129a7f87ad72456cc01fdaba5301669e9df))
+
+
+
+
+
 ## [5.11.1](https://github.com/sabertazimi/bod/compare/v5.11.0...v5.11.1) (2023-02-12)
 
 
