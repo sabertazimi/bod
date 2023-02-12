@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.13.0](https://github.com/sabertazimi/bod/compare/v5.12.0...v5.13.0) (2023-02-12)
+
+
+### Features
+
+* **stylelint-config:** remove stylelint-config-prettier ([#901](https://github.com/sabertazimi/bod/issues/901)) ([6279d88](https://github.com/sabertazimi/bod/commit/6279d88a0ccf39ab6cf3a44d7f2d54d0acf56297))
+
+
+
+
+
 # [5.12.0](https://github.com/sabertazimi/bod/compare/v5.11.1...v5.12.0) (2023-02-12)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts
