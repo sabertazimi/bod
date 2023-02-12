@@ -15,19 +15,21 @@ const ignorePatterns = [
   '<rootDir>.*/.temp',
 ];
 
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  preset: 'ts-jest',
   testEnvironment: 'node',
   moduleNameMapper: {
     ...paths,
   },
   testPathIgnorePatterns: [...ignorePatterns],
   watchPathIgnorePatterns: [...ignorePatterns],
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        tsconfig: 'tsconfig.json',
+      },
+    ],
   },
   setupFiles: ['<rootDir>/jest.env.setup.js'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
