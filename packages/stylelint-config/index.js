@@ -1,3 +1,7 @@
 module.exports = {
-  extends: ['stylelint-config-bod', 'stylelint-prettier/recommended'],
+  extends: ['stylelint-config-bod'],
+  plugins: ['stylelint-prettier'],
+  rules: {
+    'prettier/prettier': true,
+  },
 };

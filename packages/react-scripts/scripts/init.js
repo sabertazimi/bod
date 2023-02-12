@@ -214,7 +214,11 @@ module.exports = function (
 
   // Setup the stylelint config
   appPackage.stylelint = {
-    extends: ['stylelint-config-bod', 'stylelint-prettier/recommended'],
+    extends: ['stylelint-config-bod'],
+    plugins: ['stylelint-prettier'],
+    rules: {
+      'prettier/prettier': true,
+    },
   };
 
   // Setup the prettier config
