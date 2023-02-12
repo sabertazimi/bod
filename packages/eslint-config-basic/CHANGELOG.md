@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.11.1](https://github.com/sabertazimi/bod/compare/v5.11.0...v5.11.1) (2023-02-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#775](https://github.com/sabertazimi/bod/issues/775)) ([d7cc8ba](https://github.com/sabertazimi/bod/commit/d7cc8bafa870328e0e82ed1cc1b3607db419b6fb))
+* **deps:** update dependencies (non-major) ([#784](https://github.com/sabertazimi/bod/issues/784)) ([81478be](https://github.com/sabertazimi/bod/commit/81478be9301b4329171e0fd2706abd35374a3505))
+* **deps:** update dependencies (non-major) ([#798](https://github.com/sabertazimi/bod/issues/798)) ([6a88dd5](https://github.com/sabertazimi/bod/commit/6a88dd506c57864f862742988f10578e975b8703))
+* **deps:** update dependencies (non-major) ([#802](https://github.com/sabertazimi/bod/issues/802)) ([6f5f9b7](https://github.com/sabertazimi/bod/commit/6f5f9b72a0b6fff601857be5a3a6355801ca5ee0))
+* **deps:** update dependencies (non-major) ([#814](https://github.com/sabertazimi/bod/issues/814)) ([755f377](https://github.com/sabertazimi/bod/commit/755f377d7ce0bb4b0733d0512792d0e87ea42db3))
+* **deps:** update dependencies (non-major) ([#831](https://github.com/sabertazimi/bod/issues/831)) ([7c2446b](https://github.com/sabertazimi/bod/commit/7c2446b4f29731ddbbb4776ade12dbda416e689f))
+* **deps:** update dependencies (non-major) ([#838](https://github.com/sabertazimi/bod/issues/838)) ([d44bae0](https://github.com/sabertazimi/bod/commit/d44bae00cad050d411c6940807bfea40cf1232a2))
+* **deps:** update dependencies (non-major) ([#841](https://github.com/sabertazimi/bod/issues/841)) ([922fe50](https://github.com/sabertazimi/bod/commit/922fe501893debe02c27b8224ce7b23a893a7a9a))
+* **deps:** update dependencies (non-major) ([#846](https://github.com/sabertazimi/bod/issues/846)) ([826d581](https://github.com/sabertazimi/bod/commit/826d5819a0607313195100674f06c065e4d29288))
+* **deps:** update dependencies (non-major) ([#850](https://github.com/sabertazimi/bod/issues/850)) ([1a47ef4](https://github.com/sabertazimi/bod/commit/1a47ef479d5eace11fe65113a672747e3238070c))
+* **deps:** update dependencies (non-major) ([#857](https://github.com/sabertazimi/bod/issues/857)) ([a9821e6](https://github.com/sabertazimi/bod/commit/a9821e64de2704fe70fbaed40bb756b9dc648761))
+* **deps:** update dependencies (non-major) ([#875](https://github.com/sabertazimi/bod/issues/875)) ([16d843c](https://github.com/sabertazimi/bod/commit/16d843c97062c25e39e76efe5df20cae8c8aeac9))
+* **deps:** update dependencies (non-major) ([#880](https://github.com/sabertazimi/bod/issues/880)) ([11b281e](https://github.com/sabertazimi/bod/commit/11b281e40ceeeaee66cde4e84bf43d41350f9f14))
+* **deps:** update dependency eslint-plugin-html to v7 ([#786](https://github.com/sabertazimi/bod/issues/786)) ([0fd7c8b](https://github.com/sabertazimi/bod/commit/0fd7c8b7da9da8031a3e53aca4bfba9f05afb380))
+* **deps:** update dependency eslint-plugin-jsonc to ^2.3.1 ([#773](https://github.com/sabertazimi/bod/issues/773)) ([9fec109](https://github.com/sabertazimi/bod/commit/9fec10953c148a68835db6936d9100d3a64bedb5))
+* **deps:** update dependency eslint-plugin-markdown to v3 ([#783](https://github.com/sabertazimi/bod/issues/783)) ([0b88655](https://github.com/sabertazimi/bod/commit/0b8865571929acccdea13dd0a697b9238207c44b))
+* **deps:** update dependency eslint-plugin-n to ^15.5.0 ([#848](https://github.com/sabertazimi/bod/issues/848)) ([b1d3f91](https://github.com/sabertazimi/bod/commit/b1d3f91318b06ad59a91e26cfc56911c12a40844))
+* **deps:** update dependency eslint-plugin-unicorn to v43 ([#770](https://github.com/sabertazimi/bod/issues/770)) ([ff699d7](https://github.com/sabertazimi/bod/commit/ff699d7d46c1d0e57160291506f87bc4d133d04b))
+* **deps:** update dependency eslint-plugin-unicorn to v44 ([#825](https://github.com/sabertazimi/bod/issues/825)) ([3f4e5cc](https://github.com/sabertazimi/bod/commit/3f4e5cca376c507c952019e9d21950e7be67665e))
+* **deps:** update dependency eslint-plugin-unicorn to v45 ([#856](https://github.com/sabertazimi/bod/issues/856)) ([6d7f4a0](https://github.com/sabertazimi/bod/commit/6d7f4a08d6df21640f7a8b623cc4b138f3033ea8))
+* **deps:** update dependency eslint-plugin-yml to ^1.4.0 ([#870](https://github.com/sabertazimi/bod/issues/870)) ([5aa7e0b](https://github.com/sabertazimi/bod/commit/5aa7e0b68ac60ecea91b6818d0f66cfd91c0b752))
+
+
+
+
+
 # [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
 
 

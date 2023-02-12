@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.11.1](https://github.com/sabertazimi/bod/compare/v5.11.0...v5.11.1) (2023-02-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#775](https://github.com/sabertazimi/bod/issues/775)) ([d7cc8ba](https://github.com/sabertazimi/bod/commit/d7cc8bafa870328e0e82ed1cc1b3607db419b6fb))
+* **deps:** update dependencies (non-major) ([#802](https://github.com/sabertazimi/bod/issues/802)) ([6f5f9b7](https://github.com/sabertazimi/bod/commit/6f5f9b72a0b6fff601857be5a3a6355801ca5ee0))
+* **deps:** update dependencies (non-major) ([#818](https://github.com/sabertazimi/bod/issues/818)) ([bef595e](https://github.com/sabertazimi/bod/commit/bef595e266b3f2c2b1f47565ff6a21deeaeadae0))
+* **deps:** update dependencies (non-major) ([#846](https://github.com/sabertazimi/bod/issues/846)) ([826d581](https://github.com/sabertazimi/bod/commit/826d5819a0607313195100674f06c065e4d29288))
+* **deps:** update dependencies (non-major) ([#855](https://github.com/sabertazimi/bod/issues/855)) ([db2f7d3](https://github.com/sabertazimi/bod/commit/db2f7d3be3e09c060bbcb9ced6126707655ca5d2))
+* **deps:** update dependencies (non-major) ([#880](https://github.com/sabertazimi/bod/issues/880)) ([11b281e](https://github.com/sabertazimi/bod/commit/11b281e40ceeeaee66cde4e84bf43d41350f9f14))
+* **deps:** update dependency eslint-plugin-vue to ^9.5.1 ([#819](https://github.com/sabertazimi/bod/issues/819)) ([d1a25f9](https://github.com/sabertazimi/bod/commit/d1a25f91f8fb3072b4c7fbaf1a8e1890bc2e1977))
+
+
+
+
+
 # [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
 
 

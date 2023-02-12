@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.11.1](https://github.com/sabertazimi/bod/compare/v5.11.0...v5.11.1) (2023-02-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#775](https://github.com/sabertazimi/bod/issues/775)) ([d7cc8ba](https://github.com/sabertazimi/bod/commit/d7cc8bafa870328e0e82ed1cc1b3607db419b6fb))
+* **deps:** update dependencies (non-major) ([#794](https://github.com/sabertazimi/bod/issues/794)) ([287836d](https://github.com/sabertazimi/bod/commit/287836dd7245932672a3470a25df339eb69f7153))
+* **deps:** update dependencies (non-major) ([#823](https://github.com/sabertazimi/bod/issues/823)) ([2767814](https://github.com/sabertazimi/bod/commit/27678148960b662b0297058b2b0dd4f70481e582))
+* **deps:** update dependencies (non-major) ([#846](https://github.com/sabertazimi/bod/issues/846)) ([826d581](https://github.com/sabertazimi/bod/commit/826d5819a0607313195100674f06c065e4d29288))
+* **deps:** update dependencies (non-major) ([#869](https://github.com/sabertazimi/bod/issues/869)) ([888fcf0](https://github.com/sabertazimi/bod/commit/888fcf0691db4c003d455605dd94b0399d4ff2ca))
+* **deps:** update dependency stylelint-config-standard to v27 ([#795](https://github.com/sabertazimi/bod/issues/795)) ([235c280](https://github.com/sabertazimi/bod/commit/235c280ad24faa6aebb1d43fd24e581b778fdc4c))
+* **deps:** update dependency stylelint-config-standard to v28 ([#801](https://github.com/sabertazimi/bod/issues/801)) ([85809da](https://github.com/sabertazimi/bod/commit/85809da110353b08589aa57a8938038c0ba8d85c))
+* **deps:** update dependency stylelint-config-standard to v29 ([#835](https://github.com/sabertazimi/bod/issues/835)) ([c56e7b7](https://github.com/sabertazimi/bod/commit/c56e7b7d7fbf27dcc7b0082443cc9659ed51d2c0))
+* **deps:** update dependency stylelint-config-standard to v30 ([#898](https://github.com/sabertazimi/bod/issues/898)) ([1c3ec63](https://github.com/sabertazimi/bod/commit/1c3ec6396c85b869558aad007cf216b188788c03))
+* **deps:** update dependency stylelint-config-standard-scss to v5 ([#780](https://github.com/sabertazimi/bod/issues/780)) ([3f464a3](https://github.com/sabertazimi/bod/commit/3f464a362c9074d42d0454b9aad91c469b542a73))
+* **deps:** update dependency stylelint-config-standard-scss to v6 ([#844](https://github.com/sabertazimi/bod/issues/844)) ([d437da4](https://github.com/sabertazimi/bod/commit/d437da4ff8dce51e10d9f6483145fda01e2d9de7))
+
+
+
+
+
 # [5.11.0](https://github.com/sabertazimi/bod/compare/v5.10.0...v5.11.0) (2022-06-20)
 
 
