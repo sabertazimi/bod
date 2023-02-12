@@ -20,10 +20,11 @@ module.exports = {
     'LICENSE*',
     'dist',
     'output',
+    'out',
     'coverage',
     'public',
     'temp',
-    'packages-lock.json',
+    'package-lock.json',
     'pnpm-lock.yaml',
     'yarn.lock',
     '__snapshots__',
@@ -146,7 +147,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.js'],
+      files: ['*.js', '*.cjs'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
@@ -231,7 +232,7 @@ module.exports = {
     'prefer-const': [
       'error',
       {
-        destructuring: 'any',
+        destructuring: 'all',
         ignoreReadBeforeAssign: true,
       },
     ],
@@ -307,7 +308,7 @@ module.exports = {
     // includes over indexOf when checking for existence
     'unicorn/prefer-includes': 'error',
     // String methods startsWith/endsWith instead of more complicated stuff
-    'unicorn/prefer-starts-ends-with': 'error',
+    'unicorn/prefer-string-starts-ends-with': 'error',
     // textContent instead of innerText
     'unicorn/prefer-text-content': 'error',
     // Enforce throwing type error when throwing error while checking typeof
