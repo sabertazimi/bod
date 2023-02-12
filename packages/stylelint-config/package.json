@@ -41,7 +41,7 @@
   },
   "peerDependencies": {
     "prettier": "^2.4.0",
-    "stylelint": "^13.13.0 || ^14.0.0"
+    "stylelint": "^13.13.0 || ^14.0.0 || ^15.0.0"
   },
   "dependencies": {
     "stylelint-config-bod": "^5.11.0",
@@ -50,6 +50,6 @@
   },
   "devDependencies": {
     "prettier": "^2.8.4",
-    "stylelint": "^14.16.1"
+    "stylelint": "^15.1.0"
   }
 }
