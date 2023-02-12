@@ -1,7 +1,7 @@
 import type { SpawnSyncReturns } from 'child_process';
 import path from 'path';
 import { isCI } from 'ci-info';
-import rimraf from 'rimraf';
+import { sync } from 'rimraf';
 import { inquirer, spawn } from '../../utils';
 import type { Action } from '../CreateCommand';
 import CreateCommand from '../CreateCommand';
@@ -9,8 +9,8 @@ import CreateCommand from '../CreateCommand';
 const appPath = path.join(process.cwd(), '..', 'bod-unit-tests');
 
 describe('CreateCommand', () => {
-  beforeEach(() => rimraf.sync(appPath));
-  afterEach(() => rimraf.sync(appPath));
+  beforeEach(() => sync(appPath));
+  afterEach(() => sync(appPath));
 
   test('should extends [BaseCommand] fields', () => {
     const createCommand = new CreateCommand();

@@ -74,9 +74,14 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-bod",
-      "stylelint-prettier/recommended"
-    ]
+      "stylelint-config-bod"
+    ],
+    "plugins": [
+      "stylelint-prettier"
+    ],
+    "rules": {
+      "prettier/prettier": true
+    }
   },
   "prettier": {
     "arrowParens": "avoid",
