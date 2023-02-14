@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.2](https://github.com/sabertazimi/bod/compare/v5.13.1...v5.13.2) (2023-02-14)
+
+
+### Bug Fixes
+
+* **stylelint-deps:** update stylelint rules ([#904](https://github.com/sabertazimi/bod/issues/904)) ([01f4f12](https://github.com/sabertazimi/bod/commit/01f4f12062424c7d1291f0e13c70f1c6264ac275))
+
+
+
+
+
 ## [5.13.1](https://github.com/sabertazimi/bod/compare/v5.13.0...v5.13.1) (2023-02-12)
 
 
