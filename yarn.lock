@@ -3977,7 +3977,7 @@ __metadata:
     stylelint: ^15.1.0
     stylelint-config-bod: ^5.13.2
     stylelint-prettier: ^2.0.0
-    stylelint-webpack-plugin: ^4.0.0
+    stylelint-webpack-plugin: ^4.1.0
     tailwindcss: ^3.2.7
     terser-webpack-plugin: ^5.3.6
     webpack: ^5.75.0
@@ -12765,7 +12765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^29.1.2, jest-worker@npm:^29.4.1, jest-worker@npm:^29.4.3":
+"jest-worker@npm:^29.1.2, jest-worker@npm:^29.4.1, jest-worker@npm:^29.4.2, jest-worker@npm:^29.4.3":
   version: 29.4.3
   resolution: "jest-worker@npm:29.4.3"
   dependencies:
@@ -19248,19 +19248,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "stylelint-webpack-plugin@npm:4.0.0"
+"stylelint-webpack-plugin@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "stylelint-webpack-plugin@npm:4.1.0"
   dependencies:
     globby: ^11.1.0
-    jest-worker: ^29.4.1
+    jest-worker: ^29.4.2
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     schema-utils: ^4.0.0
   peerDependencies:
-    stylelint: ^13.0.0 || ^14.0.0
+    stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0
     webpack: ^5.0.0
-  checksum: efa099e59b59aa6302012a93990fb7dd57685a8cf3532a86273bb4f4a09f7dce85340d42925c328fa1964374b813f96e91d0e09d536acf98b8e7cf0c6ca938c7
+  checksum: d09c8c4abffe90eb2df09ce5c71dc33a86f28ca4e8acb0e4544a9a5a77f35de69fb4c8789cb567cf333e33ec8694f1f71ba60210139646095d664ad145cc537c
   languageName: node
   linkType: hard
 
