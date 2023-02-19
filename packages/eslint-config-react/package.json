@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config-react",
-  "version": "5.13.2",
+  "version": "5.13.3",
   "description": "ESLint React configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "eslint": "^7.32.0 || ^8.0.0"
   },
   "dependencies": {
-    "eslint-config-bod": "^5.13.2"
+    "eslint-config-bod": "^5.13.3"
   },
   "devDependencies": {
     "react": "^18.2.0"

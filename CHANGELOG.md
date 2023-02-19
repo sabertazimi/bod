@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.3](https://github.com/sabertazimi/bod/compare/v5.13.2...v5.13.3) (2023-02-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#905](https://github.com/sabertazimi/bod/issues/905)) ([e63b4ef](https://github.com/sabertazimi/bod/commit/e63b4ef5cfaa992a8552212ce49f0634fc0563ab))
+* **deps:** update dependency stylelint-config-recess-order to v4 ([#908](https://github.com/sabertazimi/bod/issues/908)) ([8180a92](https://github.com/sabertazimi/bod/commit/8180a9240a6e6148a81204126660590ed0e35b4f))
+* **deps:** update dependency stylelint-webpack-plugin to ^4.1.0 ([#910](https://github.com/sabertazimi/bod/issues/910)) ([57b702d](https://github.com/sabertazimi/bod/commit/57b702df055a9958f9f9b5b822fcecbd973c1e36))
+
+
+
+
+
 ## [5.13.2](https://github.com/sabertazimi/bod/compare/v5.13.1...v5.13.2) (2023-02-14)
 
 
