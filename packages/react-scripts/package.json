@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.21.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.13",
@@ -86,7 +86,7 @@
     "semver": "^7.3.8",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.1",
-    "stylelint": "^15.1.0",
+    "stylelint": "^15.2.0",
     "stylelint-config-bod": "^5.13.3",
     "stylelint-prettier": "^2.0.0",
     "stylelint-webpack-plugin": "^4.1.0",
