@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "stylelint-config-bod": "^5.13.3",
-    "stylelint-prettier": "^2.0.0"
+    "stylelint-prettier": "^3.0.0"
   },
   "devDependencies": {
     "prettier": "^2.8.4",
