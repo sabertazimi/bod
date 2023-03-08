@@ -1,5 +1,5 @@
-import type { SpawnSyncReturns } from 'child_process';
-import path from 'path';
+import type { SpawnSyncReturns } from 'node:child_process';
+import path from 'node:path';
 import { isCI } from 'ci-info';
 import { sync } from 'rimraf';
 import { inquirer, spawn } from '../../utils';
