@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v46 ([#917](https://github.com/sabertazimi/bod/issues/917)) ([b16d75f](https://github.com/sabertazimi/bod/commit/b16d75f1258db7c43883cbf106f16e38d6a8acbb))
+* **eslint-basic:** add more ignored files ([#921](https://github.com/sabertazimi/bod/issues/921)) ([02cd99a](https://github.com/sabertazimi/bod/commit/02cd99ac68dcbcbf2f2771d8b7869f1c3e804c1b))
+* **eslint-basic:** prefer `node:` protocol ([#920](https://github.com/sabertazimi/bod/issues/920)) ([d514ae9](https://github.com/sabertazimi/bod/commit/d514ae990826aac349e7c6b1b34caa3c42fcacfc))
+
+
+
+
+
 ## [5.13.3](https://github.com/sabertazimi/bod/compare/v5.13.2...v5.13.3) (2023-02-19)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-basic

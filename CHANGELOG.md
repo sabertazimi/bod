@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#911](https://github.com/sabertazimi/bod/issues/911)) ([6dfd9a8](https://github.com/sabertazimi/bod/commit/6dfd9a802e05e05b4807078bf43be50470ee5263))
+* **deps:** update dependency @easyops-cn/docusaurus-search-local to ^0.35.0 ([#918](https://github.com/sabertazimi/bod/issues/918)) ([4c4af28](https://github.com/sabertazimi/bod/commit/4c4af2826c49a0b4a07c0730661c97dfe37440db))
+* **deps:** update dependency eslint to ^8.35.0 ([#915](https://github.com/sabertazimi/bod/issues/915)) ([be39add](https://github.com/sabertazimi/bod/commit/be39add0de3894ceb15375e71519373b904afaab))
+* **deps:** update dependency eslint-plugin-unicorn to v46 ([#917](https://github.com/sabertazimi/bod/issues/917)) ([b16d75f](https://github.com/sabertazimi/bod/commit/b16d75f1258db7c43883cbf106f16e38d6a8acbb))
+* **deps:** update dependency stylelint-prettier to v3 ([#912](https://github.com/sabertazimi/bod/issues/912)) ([1da02d6](https://github.com/sabertazimi/bod/commit/1da02d69be0a757a0234460ed9da30a706ecd9e6))
+* **eslint-basic:** add more ignored files ([#921](https://github.com/sabertazimi/bod/issues/921)) ([02cd99a](https://github.com/sabertazimi/bod/commit/02cd99ac68dcbcbf2f2771d8b7869f1c3e804c1b))
+* **eslint-basic:** prefer `node:` protocol ([#920](https://github.com/sabertazimi/bod/issues/920)) ([d514ae9](https://github.com/sabertazimi/bod/commit/d514ae990826aac349e7c6b1b34caa3c42fcacfc))
+
+
+
+
+
 ## [5.13.3](https://github.com/sabertazimi/bod/compare/v5.13.2...v5.13.3) (2023-02-19)
 
 

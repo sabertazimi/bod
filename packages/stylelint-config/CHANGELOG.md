@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#911](https://github.com/sabertazimi/bod/issues/911)) ([6dfd9a8](https://github.com/sabertazimi/bod/commit/6dfd9a802e05e05b4807078bf43be50470ee5263))
+* **deps:** update dependency stylelint-prettier to v3 ([#912](https://github.com/sabertazimi/bod/issues/912)) ([1da02d6](https://github.com/sabertazimi/bod/commit/1da02d69be0a757a0234460ed9da30a706ecd9e6))
+
+
+
+
+
 ## [5.13.3](https://github.com/sabertazimi/bod/compare/v5.13.2...v5.13.3) (2023-02-19)
 
 **Note:** Version bump only for package @dg-scripts/stylelint-config
