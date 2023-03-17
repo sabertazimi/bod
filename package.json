@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "yarn@3.4.1",
+  "packageManager": "yarn@3.5.0",
   "description": "Boilerplate CLI App",
   "workspaces": [
     "packages/*",
@@ -54,8 +54,8 @@
   "devDependencies": {
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
-    "@types/jest": "^29.4.0",
-    "@types/node": "^18.15.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.3",
     "@types/semver": "^7.3.13",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
@@ -68,12 +68,12 @@
     "lerna": "^6.5.1",
     "prettier": "^2.8.4",
     "semver": "^7.3.8",
-    "stylelint": "^15.2.0",
+    "stylelint": "^15.3.0",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5",
-    "undici": "^5.20.0",
+    "undici": "^5.21.0",
     "verdaccio": "^5.22.1"
   }
 }
