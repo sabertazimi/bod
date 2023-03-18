@@ -82,7 +82,7 @@
     "react-refresh": "^0.14.0",
     "resolve": "^1.22.1",
     "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^13.2.0",
+    "sass-loader": "^13.2.1",
     "semver": "^7.3.8",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.2",
@@ -94,7 +94,7 @@
     "terser-webpack-plugin": "^5.3.7",
     "webpack": "^5.76.2",
     "webpack-bundle-analyzer": "^4.8.0",
-    "webpack-dev-server": "^4.13.0",
+    "webpack-dev-server": "^4.13.1",
     "webpack-manifest-plugin": "^5.0.0",
     "webpackbar": "^5.0.2",
     "workbox-webpack-plugin": "^6.5.4"
