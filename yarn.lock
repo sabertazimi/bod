@@ -2038,7 +2038,7 @@ __metadata:
     jsonc-eslint-parser: ^2.2.0
     yaml-eslint-parser: ^1.2.0
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
+    eslint: ^8.0.0
   languageName: unknown
   linkType: soft
 
@@ -2049,7 +2049,7 @@ __metadata:
     eslint-config-bod: ^5.13.4
     react: ^18.2.0
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
+    eslint: ^8.0.0
   languageName: unknown
   linkType: soft
 
@@ -2061,8 +2061,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.55.0
     "@typescript-eslint/parser": ^5.55.0
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
-    typescript: ^4.0.0 || ^5.0.0
+    eslint: ^8.0.0
+    typescript: ^5.0.0
   languageName: unknown
   linkType: soft
 
@@ -2073,8 +2073,8 @@ __metadata:
     "@dg-scripts/eslint-config-ts": ^5.13.4
     eslint-plugin-vue: ^9.9.0
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
-    typescript: ^4.0.0 || ^5.0.0
+    eslint: ^8.0.0
+    typescript: ^5.0.0
   languageName: unknown
   linkType: soft
 
@@ -2087,9 +2087,9 @@ __metadata:
     eslint-config-prettier: ^8.7.0
     eslint-plugin-prettier: ^4.2.1
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
+    eslint: ^8.0.0
     prettier: ^2.4.0
-    typescript: ^4.0.0 || ^5.0.0
+    typescript: ^5.0.0
   languageName: unknown
   linkType: soft
 
@@ -2103,7 +2103,7 @@ __metadata:
     stylelint-prettier: ^3.0.0
   peerDependencies:
     prettier: ^2.4.0
-    stylelint: ^13.13.0 || ^14.0.0 || ^15.0.0
+    stylelint: ^15.0.0
   languageName: unknown
   linkType: soft
 
@@ -4013,8 +4013,8 @@ __metadata:
     webpackbar: ^5.0.2
     workbox-webpack-plugin: ^6.5.4
   peerDependencies:
-    react: ">= 16"
-    typescript: ^3.2.1 || ^4 || ^5.0.0
+    react: ">= 18"
+    typescript: ^5.0.0
   dependenciesMeta:
     fsevents:
       optional: true
@@ -9210,7 +9210,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-testing-library: ^5.10.2
   peerDependencies:
-    eslint: ^7.32.0 || ^8.0.0
+    eslint: ^8.0.0
   languageName: unknown
   linkType: soft
 
@@ -19231,7 +19231,7 @@ __metadata:
     stylelint-config-standard: ^31.0.0
     stylelint-config-standard-scss: ^7.0.1
   peerDependencies:
-    stylelint: ^13.13.0 || ^14.0.0 || ^15.0.0
+    stylelint: ^15.0.0
   languageName: unknown
   linkType: soft
 

@@ -27,11 +27,11 @@
     "scripts"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "peerDependencies": {
-    "react": ">= 16",
-    "typescript": "^3.2.1 || ^4 || ^5.0.0"
+    "react": ">= 18",
+    "typescript": "^5.0.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
