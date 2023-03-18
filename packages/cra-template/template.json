@@ -1,13 +1,13 @@
 {
   "package": {
     "dependencies": {
-      "web-vitals": "^2.1.4"
+      "web-vitals": "^3.3.0"
     },
     "devDependencies": {
-      "@testing-library/jest-dom": "^5.16.4",
-      "@testing-library/react": "^13.0.0",
-      "@testing-library/user-event": "^14.0.4",
-      "jest-axe": "^6.0.0"
+      "@testing-library/jest-dom": "^5.16.5",
+      "@testing-library/react": "^14.0.0",
+      "@testing-library/user-event": "^14.4.3",
+      "jest-axe": "^7.0.0"
     },
     "homepage": "https://sabertazimi.github.io/bod/@sabertazimi"
   }
