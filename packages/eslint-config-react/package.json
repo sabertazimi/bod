@@ -25,13 +25,13 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --config=index.js"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0 || ^8.0.0"
+    "eslint": "^8.0.0"
   },
   "dependencies": {
     "eslint-config-bod": "^5.13.4"

@@ -34,14 +34,14 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "lint": "stylelint CHANGELOG.md --config=index.js"
   },
   "peerDependencies": {
     "prettier": "^2.4.0",
-    "stylelint": "^13.13.0 || ^14.0.0 || ^15.0.0"
+    "stylelint": "^15.0.0"
   },
   "dependencies": {
     "stylelint-config-bod": "^5.13.4",
