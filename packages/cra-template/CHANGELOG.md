@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* **templates:** update deps ([#930](https://github.com/sabertazimi/bod/issues/930)) ([3b53e5a](https://github.com/sabertazimi/bod/commit/3b53e5a180e18fe89649bb31fd289e185fb454f5))
+
+
+
+
+
 ## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

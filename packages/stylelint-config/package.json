@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/stylelint-config",
-  "version": "5.13.4",
+  "version": "5.13.5",
   "description": "StyleLint configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -44,7 +44,7 @@
     "stylelint": "^15.0.0"
   },
   "dependencies": {
-    "stylelint-config-bod": "^5.13.4",
+    "stylelint-config-bod": "^5.13.5",
     "stylelint-prettier": "^3.0.0"
   },
   "devDependencies": {

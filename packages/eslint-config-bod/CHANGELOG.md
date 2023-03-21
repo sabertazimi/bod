@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#925](https://github.com/sabertazimi/bod/issues/925)) ([3051025](https://github.com/sabertazimi/bod/commit/3051025ae96a527331c1763fee77136bac55cdfb))
+* **eslint-deps:** update tyescript-eslint to ^5.56.0 ([#932](https://github.com/sabertazimi/bod/issues/932)) ([49cfdd1](https://github.com/sabertazimi/bod/commit/49cfdd150fc8bc998499424efabb8ebc6d11d800))
+
+
+
+
+
 ## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
 
 

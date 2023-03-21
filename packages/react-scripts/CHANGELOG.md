@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#923](https://github.com/sabertazimi/bod/issues/923)) ([3668110](https://github.com/sabertazimi/bod/commit/3668110d4313f90116189bf5baa950a2236d0006))
+* **deps:** update dependencies (non-major) ([#925](https://github.com/sabertazimi/bod/issues/925)) ([3051025](https://github.com/sabertazimi/bod/commit/3051025ae96a527331c1763fee77136bac55cdfb))
+* **deps:** update dependencies (non-major) ([#931](https://github.com/sabertazimi/bod/issues/931)) ([e70f349](https://github.com/sabertazimi/bod/commit/e70f3498961f22955249de1c5969f9b85cdcdca3))
+* **deps:** update dependency webpack-dev-server to ^4.13.0 ([#928](https://github.com/sabertazimi/bod/issues/928)) ([85128c8](https://github.com/sabertazimi/bod/commit/85128c85bfab95849d2d7ec64168c25afaaf1564))
+
+
+
+
+
 ## [5.13.4](https://github.com/sabertazimi/bod/compare/v5.13.3...v5.13.4) (2023-03-08)
 
 
