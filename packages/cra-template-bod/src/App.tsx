@@ -18,7 +18,7 @@ const App = (): JSX.Element => {
           <span>Learn </span>
           <a
             className="app-link"
-            href="https://reactjs.org/"
+            href="https://react.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ const App = (): JSX.Element => {
           <span>, </span>
           <a
             className="app-link"
-            href="https://redux.js.org/"
+            href="https://redux.js.org"
             target="_blank"
             rel="noopener noreferrer"
           >

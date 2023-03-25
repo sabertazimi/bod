@@ -68,7 +68,7 @@ See more details [https://create-react-app.dev/docs/deployment/#building-for-rel
 
 You can learn more in the [Bod CLI documentation](https://github.com/sabertazimi/bod#readme).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://react.dev).
 
 ## Contact
 

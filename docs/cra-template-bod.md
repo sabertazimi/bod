@@ -112,7 +112,7 @@ You can learn more in the
 
 To learn `Create React App`, check out the [Create React App documentation](https://cra.link).
 
-To learn `React`, check out the [React documentation](https://reactjs.org).
+To learn `React`, check out the [React documentation](https://react.dev).
 
 ## Contact
 
