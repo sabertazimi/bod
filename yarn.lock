@@ -6960,7 +6960,7 @@ __metadata:
     chalk: ^4.1.2
     ci-info: ^3.8.0
     commander: ^10.0.0
-    consola: ^2.15.3
+    consola: ^3.0.2
     cross-spawn: ^7.0.3
     envinfo: ^7.8.1
     inquirer: ^8.2.5
@@ -8019,6 +8019,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"consola@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "consola@npm:3.0.2"
+  checksum: e82503d738d410e36aca1543a37fb8ca385cd38c86b8fb055086f3df223ab1c353cea4e649b46169b5b7e9a7a61997f2693a57611522331d50a7811a372a816e
+  languageName: node
+  linkType: hard
+
 "console-control-strings@npm:^1.1.0":
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
@@ -8364,7 +8371,7 @@ __metadata:
     chokidar: ^3.5.3
     ci-info: ^3.8.0
     concurrently: ^8.0.1
-    consola: ^2.15.3
+    consola: ^3.0.2
     dotenv: ^16.0.3
     eslint: ^8.38.0
     jest: ^29.5.0

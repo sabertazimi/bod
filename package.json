@@ -61,7 +61,7 @@
     "chokidar": "^3.5.3",
     "ci-info": "^3.8.0",
     "concurrently": "^8.0.1",
-    "consola": "^2.15.3",
+    "consola": "^3.0.2",
     "dotenv": "^16.0.3",
     "eslint": "^8.38.0",
     "jest": "^29.5.0",
