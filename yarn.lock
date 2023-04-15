@@ -2154,7 +2154,7 @@ __metadata:
   resolution: "@dg-scripts/eslint-config-vue@workspace:packages/eslint-config-vue"
   dependencies:
     "@dg-scripts/eslint-config-ts": ^5.13.5
-    eslint-plugin-vue: ^9.10.0
+    eslint-plugin-vue: ^9.11.0
   peerDependencies:
     eslint: ^8.0.0
     typescript: ^5.0.0
@@ -6959,7 +6959,7 @@ __metadata:
     "@types/rimraf": ^3.0.2
     chalk: ^4.1.2
     ci-info: ^3.8.0
-    commander: ^10.0.0
+    commander: ^10.0.1
     consola: ^3.0.2
     cross-spawn: ^7.0.3
     envinfo: ^7.8.1
@@ -7831,10 +7831,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "commander@npm:10.0.0"
-  checksum: 9f6495651f878213005ac744dd87a85fa3d9f2b8b90d1c19d0866d666bda7f735adfd7c2f10dfff345782e2f80ea258f98bb4efcef58e4e502f25f883940acfd
+"commander@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "commander@npm:10.0.1"
+  checksum: 436901d64a818295803c1996cd856621a74f30b9f9e28a588e726b2b1670665bccd7c1a77007ebf328729f0139838a88a19265858a0fa7a8728c4656796db948
   languageName: node
   linkType: hard
 
@@ -10013,9 +10013,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.10.0":
-  version: 9.10.0
-  resolution: "eslint-plugin-vue@npm:9.10.0"
+"eslint-plugin-vue@npm:^9.11.0":
+  version: 9.11.0
+  resolution: "eslint-plugin-vue@npm:9.11.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.3.0
     natural-compare: ^1.4.0
@@ -10026,7 +10026,7 @@ __metadata:
     xml-name-validator: ^4.0.0
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-  checksum: 91c6f1ab59433cfa3ade0e6003ca4a9f3ee50e1fd6b49ad9487805dc582f1865ef27796ff18b89e92f37f9ed39d7bfb8c8ccd029c2b77bb3e26ce9b705713070
+  checksum: 1bcb6cf76831419dbb18b9ef7a71831b69325eab1f83137af7a7ffe2800962af2afae30d5eb94210597e70e9503b698d31af210f0d36c0b3fd9cafc77d2a1895
   languageName: node
   linkType: hard
 
