@@ -46,7 +46,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.11.0",
+    "react-router-dom": "^6.11.1",
     "web-vitals": "^3.3.1"
   },
   "devDependencies": {
@@ -57,9 +57,9 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.1",
     "@types/jest-axe": "^3.5.5",
-    "@types/node": "^18.16.3",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.1",
+    "@types/node": "^18.16.4",
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.4",
     "@types/react-test-renderer": "^18.0.0",
     "jest-axe": "^7.0.1",
     "react-test-renderer": "^18.2.0",
