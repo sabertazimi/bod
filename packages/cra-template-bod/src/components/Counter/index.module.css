@@ -21,13 +21,13 @@
   @apply px-3 pb-1 text-4xl;
 
   color: rgb(112 76 182);
+  appearance: none;
   cursor: pointer;
   background: none;
   background-color: rgb(112 76 182 / 10%);
   border: 2px solid transparent;
   border-radius: 2px;
   outline: none;
-  appearance: none;
 }
 
 .async-button {
