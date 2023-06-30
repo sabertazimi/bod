@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "yarn@3.6.0",
+  "packageManager": "yarn@3.6.1",
   "description": "Boilerplate CLI App",
   "workspaces": [
     "packages/*",
