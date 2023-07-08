@@ -40,15 +40,15 @@
     "lint": "stylelint CHANGELOG.md --config=index.js"
   },
   "peerDependencies": {
-    "prettier": "^2.4.0",
+    "prettier": "^3.0.0",
     "stylelint": "^15.0.0"
   },
   "dependencies": {
     "stylelint-config-bod": "^5.13.5",
-    "stylelint-prettier": "^3.0.0"
+    "stylelint-prettier": "^4.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "stylelint": "^15.10.1"
   }
 }

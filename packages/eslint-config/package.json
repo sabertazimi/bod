@@ -34,13 +34,13 @@
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "prettier": "^2.4.0",
+    "prettier": "^3.0.0",
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "@dg-scripts/eslint-config-react": "^5.13.5",
     "@dg-scripts/eslint-config-vue": "^5.13.5",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^5.0.0-alpha.2"
   }
 }
