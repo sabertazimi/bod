@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#933](https://github.com/sabertazimi/bod/issues/933)) ([fa21516](https://github.com/sabertazimi/bod/commit/fa215162aa96d79a135cd561730121cff171f5e5))
+* **deps:** update dependencies (non-major) ([#939](https://github.com/sabertazimi/bod/issues/939)) ([c78e07f](https://github.com/sabertazimi/bod/commit/c78e07fce46bc0a39ff3c55903e91e93ea85838d))
+* **deps:** update dependencies (non-major) ([#956](https://github.com/sabertazimi/bod/issues/956)) ([3561bc4](https://github.com/sabertazimi/bod/commit/3561bc4dadac7e2729fe811a4932a512c987f01d))
+* **deps:** update dependencies (non-major) ([#959](https://github.com/sabertazimi/bod/issues/959)) ([59fa8d5](https://github.com/sabertazimi/bod/commit/59fa8d5f14eb051753269cf6e99623c6d65bc20c))
+* **deps:** update dependencies (non-major) ([#962](https://github.com/sabertazimi/bod/issues/962)) ([0eb468a](https://github.com/sabertazimi/bod/commit/0eb468a097b9be7440555c389bb8f37261606eec))
+* **deps:** update dependencies (non-major) ([#971](https://github.com/sabertazimi/bod/issues/971)) ([b17dd48](https://github.com/sabertazimi/bod/commit/b17dd48b201c32610ea6c8c3ccb449327b14e861))
+* **deps:** update dependencies (non-major) ([#973](https://github.com/sabertazimi/bod/issues/973)) ([bce9324](https://github.com/sabertazimi/bod/commit/bce9324967316de4866423bb944f45303aa8d318))
+* **deps:** update dependencies (non-major) ([#980](https://github.com/sabertazimi/bod/issues/980)) ([d45a30f](https://github.com/sabertazimi/bod/commit/d45a30f6bad3690b310794793db53dc60a9274b6))
+* **deps:** update dependencies (non-major) ([#982](https://github.com/sabertazimi/bod/issues/982)) ([545c054](https://github.com/sabertazimi/bod/commit/545c05431a7db754f85d57fd1c7d02b1e82a5d9d))
+* **deps:** update dependencies (non-major) ([#991](https://github.com/sabertazimi/bod/issues/991)) ([9ea8861](https://github.com/sabertazimi/bod/commit/9ea8861320b1368710364320d784fe05d813e2b4))
+* **deps:** update dependencies (non-major) ([#994](https://github.com/sabertazimi/bod/issues/994)) ([253d597](https://github.com/sabertazimi/bod/commit/253d5971a6c491a92d3737acd21692d60efad981))
+* **template-bod:** rectify linter error ([#979](https://github.com/sabertazimi/bod/issues/979)) ([aebbab6](https://github.com/sabertazimi/bod/commit/aebbab6f433e05bd56fa28777e91ff258cbe47bc))
+* update React website link ([#937](https://github.com/sabertazimi/bod/issues/937)) ([7e5d022](https://github.com/sabertazimi/bod/commit/7e5d02205f18aba1abd48a0f9a113c92e56d3392))
+
+
+### Features
+
+* **deps:** update prettier to v3 ([#997](https://github.com/sabertazimi/bod/issues/997)) ([93ee6fd](https://github.com/sabertazimi/bod/commit/93ee6fdc784acfb989570c1c9e13ab8a1dd9d1bd))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 

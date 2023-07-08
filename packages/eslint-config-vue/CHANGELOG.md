@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#933](https://github.com/sabertazimi/bod/issues/933)) ([fa21516](https://github.com/sabertazimi/bod/commit/fa215162aa96d79a135cd561730121cff171f5e5))
+* **deps:** update dependencies (non-major) ([#951](https://github.com/sabertazimi/bod/issues/951)) ([28a0637](https://github.com/sabertazimi/bod/commit/28a063779d51c440e598efffc6a83363229e36e0))
+* **deps:** update dependencies (non-major) ([#967](https://github.com/sabertazimi/bod/issues/967)) ([a7d9e27](https://github.com/sabertazimi/bod/commit/a7d9e278e9468c23f766f8b209915a61986cf1e8))
+* **deps:** update dependencies (non-major) ([#971](https://github.com/sabertazimi/bod/issues/971)) ([b17dd48](https://github.com/sabertazimi/bod/commit/b17dd48b201c32610ea6c8c3ccb449327b14e861))
+* **deps:** update dependencies (non-major) ([#973](https://github.com/sabertazimi/bod/issues/973)) ([bce9324](https://github.com/sabertazimi/bod/commit/bce9324967316de4866423bb944f45303aa8d318))
+* **deps:** update dependency eslint-plugin-vue to ^9.15.0 ([#987](https://github.com/sabertazimi/bod/issues/987)) ([7dec7e3](https://github.com/sabertazimi/bod/commit/7dec7e3d99dd12e45ec10d29dabccdaabc551afd))
+* **deps:** update dependency eslint-plugin-vue to ^9.15.1 ([#989](https://github.com/sabertazimi/bod/issues/989)) ([8348329](https://github.com/sabertazimi/bod/commit/83483295dd6417c3616875f1434bc3ac2a18096d))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config-vue

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#933](https://github.com/sabertazimi/bod/issues/933)) ([fa21516](https://github.com/sabertazimi/bod/commit/fa215162aa96d79a135cd561730121cff171f5e5))
+
+
+### Features
+
+* **deps:** update prettier to v3 ([#997](https://github.com/sabertazimi/bod/issues/997)) ([93ee6fd](https://github.com/sabertazimi/bod/commit/93ee6fdc784acfb989570c1c9e13ab8a1dd9d1bd))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config

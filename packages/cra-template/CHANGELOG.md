@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* update React website link ([#937](https://github.com/sabertazimi/bod/issues/937)) ([7e5d022](https://github.com/sabertazimi/bod/commit/7e5d02205f18aba1abd48a0f9a113c92e56d3392))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 

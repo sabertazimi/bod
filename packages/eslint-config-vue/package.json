@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config-vue",
-  "version": "5.13.5",
+  "version": "5.14.0",
   "description": "ESLint Vue configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -35,7 +35,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@dg-scripts/eslint-config-ts": "^5.13.5",
+    "@dg-scripts/eslint-config-ts": "^5.14.0",
     "eslint-plugin-vue": "^9.15.1"
   }
 }

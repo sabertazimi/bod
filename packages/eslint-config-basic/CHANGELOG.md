@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#939](https://github.com/sabertazimi/bod/issues/939)) ([c78e07f](https://github.com/sabertazimi/bod/commit/c78e07fce46bc0a39ff3c55903e91e93ea85838d))
+* **deps:** update dependencies (non-major) ([#967](https://github.com/sabertazimi/bod/issues/967)) ([a7d9e27](https://github.com/sabertazimi/bod/commit/a7d9e278e9468c23f766f8b209915a61986cf1e8))
+* **deps:** update dependencies (non-major) ([#982](https://github.com/sabertazimi/bod/issues/982)) ([545c054](https://github.com/sabertazimi/bod/commit/545c05431a7db754f85d57fd1c7d02b1e82a5d9d))
+* **deps:** update dependency eslint-plugin-n to ^16.0.1 ([#990](https://github.com/sabertazimi/bod/issues/990)) ([77e2612](https://github.com/sabertazimi/bod/commit/77e2612cb623e3c09e4052dbac079b66468ccbce))
+* **deps:** update dependency eslint-plugin-n to v16 ([#972](https://github.com/sabertazimi/bod/issues/972)) ([f5e349d](https://github.com/sabertazimi/bod/commit/f5e349d90fac266bb5138bc311f0eb1ef7bb32b9))
+* **deps:** update dependency eslint-plugin-unicorn to v47 ([#965](https://github.com/sabertazimi/bod/issues/965)) ([b6c7283](https://github.com/sabertazimi/bod/commit/b6c7283598fc770a9361d993ddc7dabe85d99302))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 

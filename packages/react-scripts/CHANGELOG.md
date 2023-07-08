@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#933](https://github.com/sabertazimi/bod/issues/933)) ([fa21516](https://github.com/sabertazimi/bod/commit/fa215162aa96d79a135cd561730121cff171f5e5))
+* **deps:** update dependencies (non-major) ([#939](https://github.com/sabertazimi/bod/issues/939)) ([c78e07f](https://github.com/sabertazimi/bod/commit/c78e07fce46bc0a39ff3c55903e91e93ea85838d))
+* **deps:** update dependencies (non-major) ([#952](https://github.com/sabertazimi/bod/issues/952)) ([ba8c6fe](https://github.com/sabertazimi/bod/commit/ba8c6fedaf2f1ca01a11f8f5ea29e57e093ac934))
+* **deps:** update dependencies (non-major) ([#956](https://github.com/sabertazimi/bod/issues/956)) ([3561bc4](https://github.com/sabertazimi/bod/commit/3561bc4dadac7e2729fe811a4932a512c987f01d))
+* **deps:** update dependencies (non-major) ([#959](https://github.com/sabertazimi/bod/issues/959)) ([59fa8d5](https://github.com/sabertazimi/bod/commit/59fa8d5f14eb051753269cf6e99623c6d65bc20c))
+* **deps:** update dependencies (non-major) ([#962](https://github.com/sabertazimi/bod/issues/962)) ([0eb468a](https://github.com/sabertazimi/bod/commit/0eb468a097b9be7440555c389bb8f37261606eec))
+* **deps:** update dependencies (non-major) ([#966](https://github.com/sabertazimi/bod/issues/966)) ([be72383](https://github.com/sabertazimi/bod/commit/be72383a43412ad7852262b26e620a38a4061fc5))
+* **deps:** update dependencies (non-major) ([#967](https://github.com/sabertazimi/bod/issues/967)) ([a7d9e27](https://github.com/sabertazimi/bod/commit/a7d9e278e9468c23f766f8b209915a61986cf1e8))
+* **deps:** update dependencies (non-major) ([#971](https://github.com/sabertazimi/bod/issues/971)) ([b17dd48](https://github.com/sabertazimi/bod/commit/b17dd48b201c32610ea6c8c3ccb449327b14e861))
+* **deps:** update dependencies (non-major) ([#973](https://github.com/sabertazimi/bod/issues/973)) ([bce9324](https://github.com/sabertazimi/bod/commit/bce9324967316de4866423bb944f45303aa8d318))
+* **deps:** update dependencies (non-major) ([#974](https://github.com/sabertazimi/bod/issues/974)) ([a39b75a](https://github.com/sabertazimi/bod/commit/a39b75a29b40056a3c5a9beda928334d688079b0))
+* **deps:** update dependencies (non-major) ([#975](https://github.com/sabertazimi/bod/issues/975)) ([46bea93](https://github.com/sabertazimi/bod/commit/46bea93ef359a1bd218ddabdf29e83129bca76a5))
+* **deps:** update dependencies (non-major) ([#980](https://github.com/sabertazimi/bod/issues/980)) ([d45a30f](https://github.com/sabertazimi/bod/commit/d45a30f6bad3690b310794793db53dc60a9274b6))
+* **deps:** update dependencies (non-major) ([#982](https://github.com/sabertazimi/bod/issues/982)) ([545c054](https://github.com/sabertazimi/bod/commit/545c05431a7db754f85d57fd1c7d02b1e82a5d9d))
+* **deps:** update dependencies (non-major) ([#984](https://github.com/sabertazimi/bod/issues/984)) ([fb5b2c2](https://github.com/sabertazimi/bod/commit/fb5b2c27e9fff3339535fe6849a127fe97e3a18e))
+* **deps:** update dependencies (non-major) ([#991](https://github.com/sabertazimi/bod/issues/991)) ([9ea8861](https://github.com/sabertazimi/bod/commit/9ea8861320b1368710364320d784fe05d813e2b4))
+* **deps:** update dependencies (non-major) ([#996](https://github.com/sabertazimi/bod/issues/996)) ([3a3bf3e](https://github.com/sabertazimi/bod/commit/3a3bf3e7185f13db7cb6e194a6f57238de3f52db))
+* **deps:** update dependency @svgr/webpack to v7 ([#934](https://github.com/sabertazimi/bod/issues/934)) ([a2e3527](https://github.com/sabertazimi/bod/commit/a2e35276ced5ac8b3e4766256398767f35ee4ce6))
+* **deps:** update dependency @svgr/webpack to v8 ([#969](https://github.com/sabertazimi/bod/issues/969)) ([7167c39](https://github.com/sabertazimi/bod/commit/7167c395f67a7df0b99f1ac4c63e48952e47d9d5))
+* **deps:** update dependency css-minimizer-webpack-plugin to v5 ([#941](https://github.com/sabertazimi/bod/issues/941)) ([8c60df6](https://github.com/sabertazimi/bod/commit/8c60df66e8c061df7939edb66efbfb9f15f7a1a5))
+* **deps:** update dependency dotenv to ^16.3.1 ([#986](https://github.com/sabertazimi/bod/issues/986)) ([bb94e95](https://github.com/sabertazimi/bod/commit/bb94e9571366640efcfad8bf281d183e9091d5c8))
+* **deps:** update dependency postcss to ^8.4.22 ([#955](https://github.com/sabertazimi/bod/issues/955)) ([7006897](https://github.com/sabertazimi/bod/commit/7006897802100e2765ee9c5ad10dca124fcce042))
+* **deps:** update dependency postcss-preset-env to v9 ([#998](https://github.com/sabertazimi/bod/issues/998)) ([65414e7](https://github.com/sabertazimi/bod/commit/65414e71d09d11180b951b155e26f1cd9c9741fd))
+* **deps:** update dependency workbox-webpack-plugin to v7 ([#977](https://github.com/sabertazimi/bod/issues/977)) ([ed20e83](https://github.com/sabertazimi/bod/commit/ed20e83b1a193eef074f5f947b91646f82bfcee2))
+
+
+### Features
+
+* **deps:** update prettier to v3 ([#997](https://github.com/sabertazimi/bod/issues/997)) ([93ee6fd](https://github.com/sabertazimi/bod/commit/93ee6fdc784acfb989570c1c9e13ab8a1dd9d1bd))
+
+
+
+
+
 ## [5.13.5](https://github.com/sabertazimi/bod/compare/v5.13.4...v5.13.5) (2023-03-21)
 
 
