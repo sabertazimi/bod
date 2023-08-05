@@ -55,7 +55,7 @@
     "@dg-scripts/eslint-config": "*",
     "@dg-scripts/stylelint-config": "*",
     "@types/jest": "^29.5.3",
-    "@types/node": "^18.17.2",
+    "@types/node": "^18.17.3",
     "@types/semver": "^7.5.0",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
