@@ -4065,7 +4065,7 @@ __metadata:
     babel-preset-react-app: ^10.0.1
     bfj: ^7.0.2
     browserslist: ^4.21.10
-    camelcase: ^6.3.0
+    camelcase: ^8.0.0
     case-sensitive-paths-webpack-plugin: ^2.4.0
     css-loader: ^6.8.1
     css-minimizer-webpack-plugin: ^5.0.1
@@ -7325,6 +7325,13 @@ __metadata:
   version: 6.3.0
   resolution: "camelcase@npm:6.3.0"
   checksum: 8c96818a9076434998511251dcb2761a94817ea17dbdc37f47ac080bd088fc62c7369429a19e2178b993497132c8cbcf5cc1f44ba963e76782ba469c0474938d
+  languageName: node
+  linkType: hard
+
+"camelcase@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "camelcase@npm:8.0.0"
+  checksum: 6da7abe997af29e80052f17aa21628c7cce14af364cef9f07a2a44d59614dd6f361d405f121938e673424d673697a8c53ad17be8c4b03b0a727307c4db8b5b5e
   languageName: node
   linkType: hard
 
