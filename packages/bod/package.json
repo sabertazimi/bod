@@ -57,7 +57,7 @@
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.10.0",
     "inquirer": "^8.2.6",
-    "tslib": "^2.6.1"
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@types/cross-spawn": "^6.0.2",
