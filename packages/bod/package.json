@@ -60,7 +60,7 @@
     "tslib": "^2.6.2"
   },
   "devDependencies": {
-    "@types/cross-spawn": "^6.0.2",
+    "@types/cross-spawn": "^6.0.3",
     "@types/envinfo": "^7.8.1",
     "@types/inquirer": "^8.2.6",
     "@types/rimraf": "^3.0.2",
