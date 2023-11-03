@@ -55,7 +55,7 @@
     "commander": "^11.1.0",
     "consola": "^3.2.3",
     "cross-spawn": "^7.0.3",
-    "envinfo": "^7.10.0",
+    "envinfo": "^7.11.0",
     "inquirer": "^8.2.6",
     "tslib": "^2.6.2"
   },
