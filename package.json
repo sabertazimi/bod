@@ -63,7 +63,7 @@
     "concurrently": "^8.2.2",
     "consola": "^3.2.3",
     "dotenv": "^16.3.1",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "jest": "^29.7.0",
     "lerna": "^7.4.2",
     "prettier": "^3.0.3",
@@ -73,7 +73,7 @@
     "ts-node": "^10.9.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "undici": "^5.27.1",
+    "undici": "^5.27.2",
     "verdaccio": "^5.27.0"
   }
 }
