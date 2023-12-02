@@ -40,7 +40,7 @@
   "dependencies": {
     "@dg-scripts/eslint-config-react": "^5.14.0",
     "@dg-scripts/eslint-config-vue": "^5.14.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1"
   }
 }
