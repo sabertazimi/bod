@@ -1,8 +1,11 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes } from 'prism-react-renderer';
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+
+const config: Config = {
   title: 'Bod',
   tagline: 'Boilerplate CLI App',
   url: 'https://sabertazimi.github.io',
@@ -19,20 +22,20 @@ module.exports = {
         docs: {
           path: '../docs',
           routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.config.js'),
+          sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/sabertazimi/bod/edit/main/website/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       },
     ],
   ],
   plugins: [
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
+      '@easyops-cn/docusaurus-search-local',
       {
         indexDocs: true,
         indexBlog: false,
@@ -199,5 +202,7 @@ module.exports = {
         'vim',
       ],
     },
-  },
+  } satisfies Preset.ThemeConfig,
 };
+
+export default config;
