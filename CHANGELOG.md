@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1001](https://github.com/sabertazimi/bod/issues/1001)) ([046d35b](https://github.com/sabertazimi/bod/commit/046d35b5d4c15f59e9211107003ebf8fdc11516a))
+* **deps:** update dependencies (non-major) ([#1017](https://github.com/sabertazimi/bod/issues/1017)) ([22fc048](https://github.com/sabertazimi/bod/commit/22fc0484a6471ae8a1b17004f307a6176216be78))
+* **deps:** update dependencies (non-major) ([#1021](https://github.com/sabertazimi/bod/issues/1021)) ([1a5c4ec](https://github.com/sabertazimi/bod/commit/1a5c4ecff8785a37d65a2c0b1235c423cad6c691))
+* **deps:** update dependencies (non-major) ([#1023](https://github.com/sabertazimi/bod/issues/1023)) ([4a72236](https://github.com/sabertazimi/bod/commit/4a72236d309efc62b1cdef3cfa867bbcd20eb0d4))
+* **deps:** update dependencies (non-major) ([#1029](https://github.com/sabertazimi/bod/issues/1029)) ([d09f1fc](https://github.com/sabertazimi/bod/commit/d09f1fc96d0e4e354ea506c7e790a657d937b612))
+* **deps:** update dependencies (non-major) ([#1033](https://github.com/sabertazimi/bod/issues/1033)) ([619173c](https://github.com/sabertazimi/bod/commit/619173c56d602ca1adc4116b86a450d1b579552d))
+* **deps:** update dependencies (non-major) ([#1034](https://github.com/sabertazimi/bod/issues/1034)) ([1559ff4](https://github.com/sabertazimi/bod/commit/1559ff4292d39bf92f95b6f4f0a6edda1c935da7))
+* **deps:** update dependencies (non-major) ([#1036](https://github.com/sabertazimi/bod/issues/1036)) ([ae6025a](https://github.com/sabertazimi/bod/commit/ae6025a271105761d90a8403330205ba088dbf83))
+* **deps:** update dependencies (non-major) ([#1040](https://github.com/sabertazimi/bod/issues/1040)) ([fe1cd2f](https://github.com/sabertazimi/bod/commit/fe1cd2fd95c696a12f178c81f9e84f5241e7cf0a))
+* **deps:** update dependencies (non-major) ([#1042](https://github.com/sabertazimi/bod/issues/1042)) ([22f08b0](https://github.com/sabertazimi/bod/commit/22f08b04f987fb3a9bbccbfb8c0b97165ada5ea1))
+* **deps:** update dependencies (non-major) ([#1044](https://github.com/sabertazimi/bod/issues/1044)) ([cd71804](https://github.com/sabertazimi/bod/commit/cd718043483be91cb45aa691769c7df518031ade))
+* **deps:** update dependencies (non-major) ([#1045](https://github.com/sabertazimi/bod/issues/1045)) ([e89dc14](https://github.com/sabertazimi/bod/commit/e89dc14dcedd5bdb880b701a2635516817bcc6a8))
+* **deps:** update dependencies (non-major) ([#1050](https://github.com/sabertazimi/bod/issues/1050)) ([78054a1](https://github.com/sabertazimi/bod/commit/78054a17bd44856ec1ba1a857f645379b2ec7b53))
+* **deps:** update dependencies (non-major) ([#1059](https://github.com/sabertazimi/bod/issues/1059)) ([9c8b65c](https://github.com/sabertazimi/bod/commit/9c8b65c2b2c770cd2a6a09943779e6d7edd162bb))
+* **deps:** update dependencies (non-major) ([#1061](https://github.com/sabertazimi/bod/issues/1061)) ([a64cdea](https://github.com/sabertazimi/bod/commit/a64cdea7e395805b84c967d9e44c6282a12ee57d))
+* **deps:** update dependencies (non-major) ([#1063](https://github.com/sabertazimi/bod/issues/1063)) ([07e6b63](https://github.com/sabertazimi/bod/commit/07e6b6328df62815bc52e6df36b4cda22647be13))
+* **deps:** update dependencies (non-major) ([#1072](https://github.com/sabertazimi/bod/issues/1072)) ([3373cc7](https://github.com/sabertazimi/bod/commit/3373cc72c66f2297013b1b1db6822ac520113f65))
+* **deps:** update dependency @babel/core to ^7.22.20 ([#1035](https://github.com/sabertazimi/bod/issues/1035)) ([9eb88c0](https://github.com/sabertazimi/bod/commit/9eb88c0e9c6e59115441d7555aaec60b7ae8c2cf))
+* **deps:** update dependency bfj to v8 ([#1031](https://github.com/sabertazimi/bod/issues/1031)) ([2b6533b](https://github.com/sabertazimi/bod/commit/2b6533be6b6e49a09f6a1936500bec475c8dac17))
+* **deps:** update dependency browserslist to ^4.22.2 ([#1067](https://github.com/sabertazimi/bod/issues/1067)) ([119fb9b](https://github.com/sabertazimi/bod/commit/119fb9b9ea2d5eb97780c762d1fd2146cbda4e25))
+* **deps:** update dependency eslint to ^8.48.0 ([#1024](https://github.com/sabertazimi/bod/issues/1024)) ([66b17dc](https://github.com/sabertazimi/bod/commit/66b17dc1ba6a76798d6ff9a54afd9b00bd7856ec))
+* **deps:** update dependency eslint-config-prettier to ^9.1.0 ([#1064](https://github.com/sabertazimi/bod/issues/1064)) ([eaa66fb](https://github.com/sabertazimi/bod/commit/eaa66fb653060386ad950f075654298da08ea09f))
+* **deps:** update dependency eslint-config-prettier to v9 ([#1016](https://github.com/sabertazimi/bod/issues/1016)) ([2e7d863](https://github.com/sabertazimi/bod/commit/2e7d8635a240f9e54e7e3c11fa9df07d7f94fab1))
+* **deps:** update dependency eslint-plugin-jest to ^27.4.2 ([#1041](https://github.com/sabertazimi/bod/issues/1041)) ([be8bfde](https://github.com/sabertazimi/bod/commit/be8bfde62ac4fea754cd1f65c22aafc62831159b))
+* **deps:** update dependency eslint-plugin-react to ^7.33.1 ([#1011](https://github.com/sabertazimi/bod/issues/1011)) ([46c7dd1](https://github.com/sabertazimi/bod/commit/46c7dd1b6da4d0c5aac2a4b8e0df99529864f9f2))
+* **deps:** update dependency eslint-plugin-testing-library to ^6.0.2 ([#1037](https://github.com/sabertazimi/bod/issues/1037)) ([45cfdf6](https://github.com/sabertazimi/bod/commit/45cfdf615d64fc982974c09fd53ac015bfc829f4))
+* **deps:** update dependency eslint-plugin-testing-library to v6 ([#1020](https://github.com/sabertazimi/bod/issues/1020)) ([d5037f8](https://github.com/sabertazimi/bod/commit/d5037f8b2f5d701bb4be2ac7db15ea61a89e17b2))
+* **deps:** update dependency eslint-plugin-unicorn to v48 ([#1005](https://github.com/sabertazimi/bod/issues/1005)) ([e416897](https://github.com/sabertazimi/bod/commit/e416897bbe71ea424f7949bb76fbd055bd61dcf3))
+* **deps:** update dependency eslint-plugin-vue to ^9.16.0 ([#1009](https://github.com/sabertazimi/bod/issues/1009)) ([a316c15](https://github.com/sabertazimi/bod/commit/a316c1501ce137ac08d346e98ab21c17370dcfd5))
+* **deps:** update dependency react-redux to ^8.1.2 ([#1010](https://github.com/sabertazimi/bod/issues/1010)) ([e2b5f6d](https://github.com/sabertazimi/bod/commit/e2b5f6d230eb936315a9ccbd524f0819db76008d))
+* **deps:** update dependency resolve to ^1.22.4 ([#1014](https://github.com/sabertazimi/bod/issues/1014)) ([108f3fd](https://github.com/sabertazimi/bod/commit/108f3fd4591a1a9d21ba827e7dcae1fffac385e3))
+* **deps:** update dependency stylelint-config-standard-scss to v11 ([#1032](https://github.com/sabertazimi/bod/issues/1032)) ([7392f9e](https://github.com/sabertazimi/bod/commit/7392f9e61a81c38376cf44e25844963a1f1534d5))
+* **deps:** update dependency webpack to ^5.89.0 ([#1046](https://github.com/sabertazimi/bod/issues/1046)) ([8550cba](https://github.com/sabertazimi/bod/commit/8550cba3750f4337f62dd55dcb5d78d4fb61f082))
+* **deps:** update docusaurus monorepo to v3 (major) ([#1058](https://github.com/sabertazimi/bod/issues/1058)) ([a74aded](https://github.com/sabertazimi/bod/commit/a74aded5e4b2c117551f9a381ba4a30bb5043d71))
+* **deps:** update typescript-eslint monorepo to v6 ([#1003](https://github.com/sabertazimi/bod/issues/1003)) ([ec9595a](https://github.com/sabertazimi/bod/commit/ec9595af7f9e8d9809f2e81a567dfcf8b2a13257))
+* **stylelint-config:** ship to stylelint v16 ([#1074](https://github.com/sabertazimi/bod/issues/1074)) ([d2062a8](https://github.com/sabertazimi/bod/commit/d2062a88f8773f81aca5395d56d66572422054b0))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 

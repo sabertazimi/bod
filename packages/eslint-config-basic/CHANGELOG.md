@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1021](https://github.com/sabertazimi/bod/issues/1021)) ([1a5c4ec](https://github.com/sabertazimi/bod/commit/1a5c4ecff8785a37d65a2c0b1235c423cad6c691))
+* **deps:** update dependencies (non-major) ([#1023](https://github.com/sabertazimi/bod/issues/1023)) ([4a72236](https://github.com/sabertazimi/bod/commit/4a72236d309efc62b1cdef3cfa867bbcd20eb0d4))
+* **deps:** update dependencies (non-major) ([#1034](https://github.com/sabertazimi/bod/issues/1034)) ([1559ff4](https://github.com/sabertazimi/bod/commit/1559ff4292d39bf92f95b6f4f0a6edda1c935da7))
+* **deps:** update dependencies (non-major) ([#1044](https://github.com/sabertazimi/bod/issues/1044)) ([cd71804](https://github.com/sabertazimi/bod/commit/cd718043483be91cb45aa691769c7df518031ade))
+* **deps:** update dependencies (non-major) ([#1045](https://github.com/sabertazimi/bod/issues/1045)) ([e89dc14](https://github.com/sabertazimi/bod/commit/e89dc14dcedd5bdb880b701a2635516817bcc6a8))
+* **deps:** update dependencies (non-major) ([#1061](https://github.com/sabertazimi/bod/issues/1061)) ([a64cdea](https://github.com/sabertazimi/bod/commit/a64cdea7e395805b84c967d9e44c6282a12ee57d))
+* **deps:** update dependencies (non-major) ([#1072](https://github.com/sabertazimi/bod/issues/1072)) ([3373cc7](https://github.com/sabertazimi/bod/commit/3373cc72c66f2297013b1b1db6822ac520113f65))
+* **deps:** update dependency eslint-plugin-unicorn to v48 ([#1005](https://github.com/sabertazimi/bod/issues/1005)) ([e416897](https://github.com/sabertazimi/bod/commit/e416897bbe71ea424f7949bb76fbd055bd61dcf3))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 

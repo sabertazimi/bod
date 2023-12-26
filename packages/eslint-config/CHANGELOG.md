@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1001](https://github.com/sabertazimi/bod/issues/1001)) ([046d35b](https://github.com/sabertazimi/bod/commit/046d35b5d4c15f59e9211107003ebf8fdc11516a))
+* **deps:** update dependencies (non-major) ([#1045](https://github.com/sabertazimi/bod/issues/1045)) ([e89dc14](https://github.com/sabertazimi/bod/commit/e89dc14dcedd5bdb880b701a2635516817bcc6a8))
+* **deps:** update dependencies (non-major) ([#1072](https://github.com/sabertazimi/bod/issues/1072)) ([3373cc7](https://github.com/sabertazimi/bod/commit/3373cc72c66f2297013b1b1db6822ac520113f65))
+* **deps:** update dependency eslint-config-prettier to ^9.1.0 ([#1064](https://github.com/sabertazimi/bod/issues/1064)) ([eaa66fb](https://github.com/sabertazimi/bod/commit/eaa66fb653060386ad950f075654298da08ea09f))
+* **deps:** update dependency eslint-config-prettier to v9 ([#1016](https://github.com/sabertazimi/bod/issues/1016)) ([2e7d863](https://github.com/sabertazimi/bod/commit/2e7d8635a240f9e54e7e3c11fa9df07d7f94fab1))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 

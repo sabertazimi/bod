@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1001](https://github.com/sabertazimi/bod/issues/1001)) ([046d35b](https://github.com/sabertazimi/bod/commit/046d35b5d4c15f59e9211107003ebf8fdc11516a))
+* **deps:** update dependencies (non-major) ([#1021](https://github.com/sabertazimi/bod/issues/1021)) ([1a5c4ec](https://github.com/sabertazimi/bod/commit/1a5c4ecff8785a37d65a2c0b1235c423cad6c691))
+* **deps:** update dependencies (non-major) ([#1061](https://github.com/sabertazimi/bod/issues/1061)) ([a64cdea](https://github.com/sabertazimi/bod/commit/a64cdea7e395805b84c967d9e44c6282a12ee57d))
+* **deps:** update dependency stylelint-config-standard-scss to v11 ([#1032](https://github.com/sabertazimi/bod/issues/1032)) ([7392f9e](https://github.com/sabertazimi/bod/commit/7392f9e61a81c38376cf44e25844963a1f1534d5))
+* **stylelint-config:** ship to stylelint v16 ([#1074](https://github.com/sabertazimi/bod/issues/1074)) ([d2062a8](https://github.com/sabertazimi/bod/commit/d2062a88f8773f81aca5395d56d66572422054b0))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 

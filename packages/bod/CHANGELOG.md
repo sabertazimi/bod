@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1021](https://github.com/sabertazimi/bod/issues/1021)) ([1a5c4ec](https://github.com/sabertazimi/bod/commit/1a5c4ecff8785a37d65a2c0b1235c423cad6c691))
+* **deps:** update dependencies (non-major) ([#1029](https://github.com/sabertazimi/bod/issues/1029)) ([d09f1fc](https://github.com/sabertazimi/bod/commit/d09f1fc96d0e4e354ea506c7e790a657d937b612))
+* **deps:** update dependencies (non-major) ([#1040](https://github.com/sabertazimi/bod/issues/1040)) ([fe1cd2f](https://github.com/sabertazimi/bod/commit/fe1cd2fd95c696a12f178c81f9e84f5241e7cf0a))
+* **deps:** update dependencies (non-major) ([#1044](https://github.com/sabertazimi/bod/issues/1044)) ([cd71804](https://github.com/sabertazimi/bod/commit/cd718043483be91cb45aa691769c7df518031ade))
+* **deps:** update dependencies (non-major) ([#1045](https://github.com/sabertazimi/bod/issues/1045)) ([e89dc14](https://github.com/sabertazimi/bod/commit/e89dc14dcedd5bdb880b701a2635516817bcc6a8))
+* **deps:** update dependencies (non-major) ([#1061](https://github.com/sabertazimi/bod/issues/1061)) ([a64cdea](https://github.com/sabertazimi/bod/commit/a64cdea7e395805b84c967d9e44c6282a12ee57d))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 

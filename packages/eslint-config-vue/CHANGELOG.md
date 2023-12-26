@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1017](https://github.com/sabertazimi/bod/issues/1017)) ([22fc048](https://github.com/sabertazimi/bod/commit/22fc0484a6471ae8a1b17004f307a6176216be78))
+* **deps:** update dependencies (non-major) ([#1063](https://github.com/sabertazimi/bod/issues/1063)) ([07e6b63](https://github.com/sabertazimi/bod/commit/07e6b6328df62815bc52e6df36b4cda22647be13))
+* **deps:** update dependency eslint-plugin-vue to ^9.16.0 ([#1009](https://github.com/sabertazimi/bod/issues/1009)) ([a316c15](https://github.com/sabertazimi/bod/commit/a316c1501ce137ac08d346e98ab21c17370dcfd5))
+
+
+
+
+
 # [5.14.0](https://github.com/sabertazimi/bod/compare/v5.13.5...v5.14.0) (2023-07-08)
 
 
