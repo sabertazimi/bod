@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.23.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.16",
