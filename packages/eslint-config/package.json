@@ -41,6 +41,6 @@
     "@dg-scripts/eslint-config-react": "^5.14.1",
     "@dg-scripts/eslint-config-vue": "^5.14.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.1"
+    "eslint-plugin-prettier": "^5.1.2"
   }
 }
