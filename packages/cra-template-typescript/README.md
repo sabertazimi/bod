@@ -5,7 +5,7 @@
 
 [![Node Version](https://img.shields.io/node/v/@sabertazimi/cra-template-typescript?logo=node.js&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template-typescript)
-[![CDN](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=CDN&logo=cloudflare&style=for-the-badge)](https://unpkg.com/browse/@sabertazimi/cra-template-typescript@latest/)
+[![CDN](https://img.shields.io/npm/v/@sabertazimi/cra-template-typescript?label=CDN&logo=cloudflare&style=for-the-badge)](https://cdn.jsdelivr.net/npm/@sabertazimi/cra-template-typescript@latest/)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)

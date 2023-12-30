@@ -15,7 +15,7 @@ tags: [React, CLI]
 
 [![Node Version](https://img.shields.io/node/v/@sabertazimi/react-scripts?logo=node.js&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/react-scripts?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/react-scripts)
-[![CDN](https://img.shields.io/npm/v/@sabertazimi/react-scripts?label=CDN&logo=cloudflare&style=for-the-badge)](https://unpkg.com/browse/@sabertazimi/react-scripts@latest/)
+[![CDN](https://img.shields.io/npm/v/@sabertazimi/react-scripts?label=CDN&logo=cloudflare&style=for-the-badge)](https://cdn.jsdelivr.net/npm/@sabertazimi/react-scripts@latest/)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)

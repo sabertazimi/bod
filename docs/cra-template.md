@@ -15,7 +15,7 @@ tags: [React, Template]
 
 [![Node Version](https://img.shields.io/node/v/@sabertazimi/cra-template?logo=node.js&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template)
 [![NPM Version](https://img.shields.io/npm/v/@sabertazimi/cra-template?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@sabertazimi/cra-template)
-[![CDN](https://img.shields.io/npm/v/@sabertazimi/cra-template?label=CDN&logo=cloudflare&style=for-the-badge)](https://unpkg.com/browse/@sabertazimi/cra-template@latest/)
+[![CDN](https://img.shields.io/npm/v/@sabertazimi/cra-template?label=CDN&logo=cloudflare&style=for-the-badge)](https://cdn.jsdelivr.net/npm/@sabertazimi/cra-template@latest/)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)

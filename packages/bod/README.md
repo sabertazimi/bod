@@ -5,7 +5,7 @@
 
 [![Node Version](https://img.shields.io/node/v/bod?logo=node.js&style=for-the-badge)](https://www.npmjs.com/package/bod)
 [![NPM Version](https://img.shields.io/npm/v/bod?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
-[![CDN](https://img.shields.io/npm/v/bod?label=CDN&logo=cloudflare&style=for-the-badge)](https://unpkg.com/browse/bod@latest/)
+[![CDN](https://img.shields.io/npm/v/bod?label=CDN&logo=cloudflare&style=for-the-badge)](https://cdn.jsdelivr.net/npm/bod@latest/)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
