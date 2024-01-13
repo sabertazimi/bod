@@ -42,7 +42,7 @@
     "stylelint": "^15.0.0 || ^16.0.0"
   },
   "dependencies": {
-    "postcss-html": "^1.5.0",
+    "postcss-html": "^1.6.0",
     "postcss-markdown": "^1.2.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recess-order": "^4.4.0",
