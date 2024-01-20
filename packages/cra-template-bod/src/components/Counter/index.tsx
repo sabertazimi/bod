@@ -1,5 +1,4 @@
-import React from 'react';
-import { AppDispatch } from '../../stores';
+import { AppDispatch } from '../../store';
 import styles from './index.module.css';
 
 interface CounterProps {
@@ -8,9 +7,9 @@ interface CounterProps {
   onIncrementAmountChange: (value: string) => void;
   onDecrement: () => ReturnType<AppDispatch>;
   onIncrement: () => ReturnType<AppDispatch>;
-  onIncrementAsync: () => ReturnType<AppDispatch>;
+  onIncrementAsync: () => void;
   onIncrementByAmount: () => ReturnType<AppDispatch>;
-  onIncrementIfOdd: () => ReturnType<AppDispatch>;
+  onIncrementIfOdd: () => void;
 }
 
 const Counter = ({

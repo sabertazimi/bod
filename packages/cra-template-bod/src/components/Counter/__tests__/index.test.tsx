@@ -1,13 +1,12 @@
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
-import { create } from 'react-test-renderer';
 import Counter from '../index';
 
 describe('Counter', () => {
   test('should render correctly (snapshot)', () => {
     const mockClickHandler = jest.fn();
 
-    const tree = create(
+    const { container } = render(
       <Counter
         count={0}
         incrementAmount={'2'}
@@ -18,9 +17,9 @@ describe('Counter', () => {
         onIncrementByAmount={mockClickHandler}
         onIncrementIfOdd={mockClickHandler}
       />
-    ).toJSON();
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   test('Should render accessibility guidelines (AXE)', async () => {
