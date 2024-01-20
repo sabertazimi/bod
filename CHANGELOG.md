@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1075](https://github.com/sabertazimi/bod/issues/1075)) ([e75f127](https://github.com/sabertazimi/bod/commit/e75f1273347faf9831d84b3fc41db0484c549b6c))
+* **deps:** update dependencies (non-major) ([#1085](https://github.com/sabertazimi/bod/issues/1085)) ([52786dc](https://github.com/sabertazimi/bod/commit/52786dcc06796b8032250d129ad64d850aaf4e1c))
+* **deps:** update dependencies (non-major) ([#1089](https://github.com/sabertazimi/bod/issues/1089)) ([a473575](https://github.com/sabertazimi/bod/commit/a47357548fcd8767e42d7ccbe13cc110ffb0f7f3))
+* **deps:** update dependency @babel/core to ^7.23.7 ([#1079](https://github.com/sabertazimi/bod/issues/1079)) ([71ecedb](https://github.com/sabertazimi/bod/commit/71ecedbd725da2cb802b8736f90e09fdffea2259))
+* **deps:** update dependency css-minimizer-webpack-plugin to v6 ([#1090](https://github.com/sabertazimi/bod/issues/1090)) ([12d49b1](https://github.com/sabertazimi/bod/commit/12d49b14122cc7f928f73e578492279c1be47028))
+* **deps:** update dependency eslint-plugin-unicorn to v50 ([#1077](https://github.com/sabertazimi/bod/issues/1077)) ([7d064dd](https://github.com/sabertazimi/bod/commit/7d064dd4cc01b782ee38aa0ca0994e8611e85531))
+* **deps:** update dependency postcss-loader to v8 ([#1091](https://github.com/sabertazimi/bod/issues/1091)) ([30ec426](https://github.com/sabertazimi/bod/commit/30ec4264b85a90fcb3783327b43c64d3ae85dd1f))
+* **deps:** update dependency react-redux to v9 ([#1078](https://github.com/sabertazimi/bod/issues/1078)) ([119d013](https://github.com/sabertazimi/bod/commit/119d0133b2f8428249106f9f2edbfd095ac7167a))
+* **deps:** update dependency sass-loader to v14 ([#1092](https://github.com/sabertazimi/bod/issues/1092)) ([5483804](https://github.com/sabertazimi/bod/commit/54838049e45ff7b36165e304ca3a43e5b2413978))
+* **deps:** update dependency source-map-loader to v5 ([#1093](https://github.com/sabertazimi/bod/issues/1093)) ([efd5c65](https://github.com/sabertazimi/bod/commit/efd5c6579f6a4eabb79dd22c1f01a6012664e185))
+* **deps:** update dependency stylelint-config-standard-scss to v13 ([#1084](https://github.com/sabertazimi/bod/issues/1084)) ([2076a54](https://github.com/sabertazimi/bod/commit/2076a5449efe0c188fd15be484fe60745effd3dd))
+* **deps:** update dependency stylelint-prettier to v5 ([#1080](https://github.com/sabertazimi/bod/issues/1080)) ([b620ae7](https://github.com/sabertazimi/bod/commit/b620ae71984404c50348cf4dcba2d7b733fc64a6))
+* **deps:** update dependency webpackbar to v6 ([#1081](https://github.com/sabertazimi/bod/issues/1081)) ([ab6ba18](https://github.com/sabertazimi/bod/commit/ab6ba187e652043869abf1ab199e413698a77d86))
+* **eslint-config:** disable jsonc/comma-dangle rule ([#1094](https://github.com/sabertazimi/bod/issues/1094)) ([e9c991b](https://github.com/sabertazimi/bod/commit/e9c991b15541984942b044e50df98285473d63bb))
+
+
+
+
+
 ## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
 
 

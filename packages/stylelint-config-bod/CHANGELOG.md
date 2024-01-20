@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1089](https://github.com/sabertazimi/bod/issues/1089)) ([a473575](https://github.com/sabertazimi/bod/commit/a47357548fcd8767e42d7ccbe13cc110ffb0f7f3))
+* **deps:** update dependency stylelint-config-standard-scss to v13 ([#1084](https://github.com/sabertazimi/bod/issues/1084)) ([2076a54](https://github.com/sabertazimi/bod/commit/2076a5449efe0c188fd15be484fe60745effd3dd))
+
+
+
+
+
 ## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
 
 

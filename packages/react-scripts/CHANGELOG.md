@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1075](https://github.com/sabertazimi/bod/issues/1075)) ([e75f127](https://github.com/sabertazimi/bod/commit/e75f1273347faf9831d84b3fc41db0484c549b6c))
+* **deps:** update dependencies (non-major) ([#1085](https://github.com/sabertazimi/bod/issues/1085)) ([52786dc](https://github.com/sabertazimi/bod/commit/52786dcc06796b8032250d129ad64d850aaf4e1c))
+* **deps:** update dependencies (non-major) ([#1089](https://github.com/sabertazimi/bod/issues/1089)) ([a473575](https://github.com/sabertazimi/bod/commit/a47357548fcd8767e42d7ccbe13cc110ffb0f7f3))
+* **deps:** update dependency @babel/core to ^7.23.7 ([#1079](https://github.com/sabertazimi/bod/issues/1079)) ([71ecedb](https://github.com/sabertazimi/bod/commit/71ecedbd725da2cb802b8736f90e09fdffea2259))
+* **deps:** update dependency css-minimizer-webpack-plugin to v6 ([#1090](https://github.com/sabertazimi/bod/issues/1090)) ([12d49b1](https://github.com/sabertazimi/bod/commit/12d49b14122cc7f928f73e578492279c1be47028))
+* **deps:** update dependency postcss-loader to v8 ([#1091](https://github.com/sabertazimi/bod/issues/1091)) ([30ec426](https://github.com/sabertazimi/bod/commit/30ec4264b85a90fcb3783327b43c64d3ae85dd1f))
+* **deps:** update dependency sass-loader to v14 ([#1092](https://github.com/sabertazimi/bod/issues/1092)) ([5483804](https://github.com/sabertazimi/bod/commit/54838049e45ff7b36165e304ca3a43e5b2413978))
+* **deps:** update dependency source-map-loader to v5 ([#1093](https://github.com/sabertazimi/bod/issues/1093)) ([efd5c65](https://github.com/sabertazimi/bod/commit/efd5c6579f6a4eabb79dd22c1f01a6012664e185))
+* **deps:** update dependency stylelint-prettier to v5 ([#1080](https://github.com/sabertazimi/bod/issues/1080)) ([b620ae7](https://github.com/sabertazimi/bod/commit/b620ae71984404c50348cf4dcba2d7b733fc64a6))
+* **deps:** update dependency webpackbar to v6 ([#1081](https://github.com/sabertazimi/bod/issues/1081)) ([ab6ba18](https://github.com/sabertazimi/bod/commit/ab6ba187e652043869abf1ab199e413698a77d86))
+
+
+
+
+
 ## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
 
 

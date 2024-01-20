@@ -1,6 +1,6 @@
 {
   "name": "cra-template-bod",
-  "version": "5.14.1",
+  "version": "5.14.2",
   "description": "The advanced TypeScript template for Bod CLI.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -50,7 +50,7 @@
     "web-vitals": "^3.5.1"
   },
   "devDependencies": {
-    "@sabertazimi/react-scripts": "^5.14.1",
+    "@sabertazimi/react-scripts": "^5.14.2",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",

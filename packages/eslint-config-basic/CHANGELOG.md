@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1075](https://github.com/sabertazimi/bod/issues/1075)) ([e75f127](https://github.com/sabertazimi/bod/commit/e75f1273347faf9831d84b3fc41db0484c549b6c))
+* **deps:** update dependencies (non-major) ([#1089](https://github.com/sabertazimi/bod/issues/1089)) ([a473575](https://github.com/sabertazimi/bod/commit/a47357548fcd8767e42d7ccbe13cc110ffb0f7f3))
+* **deps:** update dependency eslint-plugin-unicorn to v50 ([#1077](https://github.com/sabertazimi/bod/issues/1077)) ([7d064dd](https://github.com/sabertazimi/bod/commit/7d064dd4cc01b782ee38aa0ca0994e8611e85531))
+* **eslint-config:** disable jsonc/comma-dangle rule ([#1094](https://github.com/sabertazimi/bod/issues/1094)) ([e9c991b](https://github.com/sabertazimi/bod/commit/e9c991b15541984942b044e50df98285473d63bb))
+
+
+
+
+
 ## [5.14.1](https://github.com/sabertazimi/bod/compare/v5.14.0...v5.14.1) (2023-12-26)
 
 
