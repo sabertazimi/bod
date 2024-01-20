@@ -1,111 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render correctly (snapshot) 1`] = `
-<div
-  className="bg-white text-center"
->
-  <header
-    className="app-header"
+<div>
+  <div
+    class="bg-white text-center"
   >
-    <svg
-      className="app-logo"
-      title="logo"
-    />
-    <div>
-      <div
-        className="row"
-      >
-        <button
-          aria-label="Decrement value"
-          className="button"
-          onClick={[Function]}
+    <header
+      class="app-header"
+    >
+      <svg
+        class="app-logo"
+        title="logo"
+      />
+      <div>
+        <div
+          class="row"
         >
-          -
-        </button>
-        <span
-          className="value"
+          <button
+            aria-label="Decrement value"
+            class="button"
+          >
+            -
+          </button>
+          <span
+            class="value"
+          >
+            0
+          </span>
+          <button
+            aria-label="Increment value"
+            class="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="row"
         >
-          0
+          <input
+            aria-label="Set increment amount"
+            class="textbox"
+            value="2"
+          />
+          <button
+            class="button"
+          >
+            Add Amount
+          </button>
+          <button
+            class="asyncButton"
+          >
+            Add Async
+          </button>
+          <button
+            class="button"
+          >
+            Add If Odd
+          </button>
+        </div>
+      </div>
+      <p>
+        Edit 
+        <code>
+          src/App.tsx
+        </code>
+         and save to reload.
+      </p>
+      <span>
+        <span>
+          Learn 
         </span>
-        <button
-          aria-label="Increment value"
-          className="button"
-          onClick={[Function]}
+        <a
+          class="app-link"
+          href="https://react.dev"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          +
-        </button>
-      </div>
-      <div
-        className="row"
-      >
-        <input
-          aria-label="Set increment amount"
-          className="textbox"
-          onChange={[Function]}
-          value="2"
-        />
-        <button
-          className="button"
-          onClick={[Function]}
+          React
+        </a>
+        <span>
+          , 
+        </span>
+        <a
+          class="app-link"
+          href="https://redux.js.org"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          Add Amount
-        </button>
-        <button
-          className="asyncButton"
-          onClick={[Function]}
+          Redux
+        </a>
+        <span>
+          , 
+        </span>
+        <a
+          class="app-link"
+          href="https://sabertazimi.github.io/bod"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          Add Async
-        </button>
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          Add If Odd
-        </button>
-      </div>
-    </div>
-    <p>
-      Edit 
-      <code>
-        src/App.tsx
-      </code>
-       and save to reload.
-    </p>
-    <span>
-      <span>
-        Learn 
+          Bod App
+        </a>
       </span>
-      <a
-        className="app-link"
-        href="https://react.dev"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        React
-      </a>
-      <span>
-        , 
-      </span>
-      <a
-        className="app-link"
-        href="https://redux.js.org"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Redux
-      </a>
-      <span>
-        , 
-      </span>
-      <a
-        className="app-link"
-        href="https://sabertazimi.github.io/bod"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Bod App
-      </a>
-    </span>
-  </header>
+    </header>
+  </div>
 </div>
 `;

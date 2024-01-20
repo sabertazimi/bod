@@ -1,8 +1,11 @@
-import counterReducer, {
-  CounterState,
+import { makeStore } from '../../../store';
+import type { CounterState } from '../slice';
+import {
+  counterSlice,
   decrement,
   increment,
   incrementByAmount,
+  selectCount,
 } from '../slice';
 
 describe('counter reducer', () => {
@@ -11,28 +14,40 @@ describe('counter reducer', () => {
     status: 'idle',
   };
 
+  let store = makeStore();
+
+  beforeEach(() => {
+    store = makeStore({ counter: initialState });
+  });
+
   it('should handle initial state', () => {
-    expect(counterReducer(undefined, { type: 'unknown' })).toEqual({
+    expect(counterSlice.reducer(undefined, { type: 'unknown' })).toStrictEqual({
       value: 0,
       status: 'idle',
     });
   });
 
   it('should handle increment', () => {
-    const actual = counterReducer(initialState, increment());
+    expect(selectCount(store.getState())).toBe(3);
 
-    expect(actual.value).toEqual(4);
+    store.dispatch(increment());
+
+    expect(selectCount(store.getState())).toBe(4);
   });
 
   it('should handle decrement', () => {
-    const actual = counterReducer(initialState, decrement());
+    expect(selectCount(store.getState())).toBe(3);
 
-    expect(actual.value).toEqual(2);
+    store.dispatch(decrement());
+
+    expect(selectCount(store.getState())).toBe(2);
   });
 
   it('should handle incrementByAmount', () => {
-    const actual = counterReducer(initialState, incrementByAmount(2));
+    expect(selectCount(store.getState())).toBe(3);
 
-    expect(actual.value).toEqual(5);
+    store.dispatch(incrementByAmount(2));
+
+    expect(selectCount(store.getState())).toBe(5);
   });
 });
