@@ -4371,7 +4371,7 @@ __metadata:
     stylelint: "npm:^16.2.1"
     stylelint-config-bod: "npm:^5.14.2"
     stylelint-prettier: "npm:^5.0.0"
-    stylelint-webpack-plugin: "npm:^4.1.1"
+    stylelint-webpack-plugin: "npm:^5.0.0"
     tailwindcss: "npm:^3.4.1"
     terser-webpack-plugin: "npm:^5.3.10"
     webpack: "npm:^5.90.1"
@@ -22011,19 +22011,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "stylelint-webpack-plugin@npm:4.1.1"
+"stylelint-webpack-plugin@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "stylelint-webpack-plugin@npm:5.0.0"
   dependencies:
     globby: "npm:^11.1.0"
-    jest-worker: "npm:^29.5.0"
+    jest-worker: "npm:^29.7.0"
     micromatch: "npm:^4.0.5"
     normalize-path: "npm:^3.0.0"
-    schema-utils: "npm:^4.0.0"
+    schema-utils: "npm:^4.2.0"
   peerDependencies:
-    stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0
+    stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     webpack: ^5.0.0
-  checksum: 10c0/3ccde5ac47a3fa0363070c4b61db8204fbae49594be2f0f358c3338837cab9948b535b645f727a6d03edd6aa45dd8458ae39435a1d2801aa1fca54db676ec750
+  checksum: 10c0/7fae634ece56b4a65966050ab9f8d1738801dddc6e1604ea8060a6566d49f1756b9967f3c0a6729b9fdd9d973863a8e540dec456969cb55cba7bd5ff254629b4
   languageName: node
   linkType: hard
 
