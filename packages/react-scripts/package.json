@@ -74,7 +74,7 @@
     "postcss-loader": "^8.1.0",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^9.3.0",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "prompts": "^2.4.2",
     "react-app-polyfill": "^3.0.0",
