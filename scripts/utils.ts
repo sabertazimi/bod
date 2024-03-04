@@ -1,4 +1,4 @@
-import cp from 'child_process';
+import cp from 'node:child_process';
 import chalk from 'chalk';
 import { isCI } from 'ci-info';
 import consola from 'consola';
@@ -25,20 +25,6 @@ const cmd = (cmd: string): void => {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`);
 };
 
-const checkGitStatus = (): void => {
-  info('Check git status ...');
-  const gitStatus = execPipe('git status --porcelain').toString();
-
-  if (gitStatus.trim() !== '') {
-    info('Please commit your changes before running this script!');
-    info('Exiting because `git status` is not empty:');
-    log('');
-    log(gitStatus);
-    log('');
-    process.exit(1);
-  }
-};
-
 const exec = (command: string, cwd?: string): Buffer => {
   cmd(command);
   return cp.execSync(command, {
@@ -55,6 +41,20 @@ const execPipe = (command: string, cwd?: string): Buffer => {
     stdio: 'pipe',
     cwd: cwd ?? process.cwd(),
   });
+};
+
+const checkGitStatus = (): void => {
+  info('Check git status ...');
+  const gitStatus = execPipe('git status --porcelain').toString();
+
+  if (gitStatus.trim() !== '') {
+    info('Please commit your changes before running this script!');
+    info('Exiting because `git status` is not empty:');
+    log('');
+    log(gitStatus);
+    log('');
+    process.exit(1);
+  }
 };
 
 export {

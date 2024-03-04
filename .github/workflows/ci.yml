@@ -19,19 +19,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Run linter tests
         run: |
-          yarn lint
+          pnpm lint
 
   unit:
     name: Unit Testing
@@ -39,38 +41,39 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [18]
-        package-manager: [yarn]
+        node-version: [20]
+        package-manager: [pnpm]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: true
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Choose package manager for CRA
-        if: ${{ matrix.package-manager == 'yarn' }}
+        if: ${{ matrix.package-manager == 'pnpm' }}
         run: |
           echo Choose package manager for CRA v5
       - name: Run unit tests
         run: |
-          yarn config set nodeLinker node-modules --home
-          yarn test:all
-          yarn badge
+          pnpm test:all
+          pnpm badge
       - name: Perform code coverage report action
         uses: codecov/codecov-action@v4
-        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
+        if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
-        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
+        if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: badges
           path: build
@@ -81,8 +84,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [18]
-        package-manager: [yarn]
+        node-version: [20]
+        package-manager: [pnpm]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -94,26 +97,28 @@ jobs:
       - name: Reattach HEAD to ref
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Choose package manager for CRA
-        if: ${{ matrix.package-manager == 'yarn' }}
+        if: ${{ matrix.package-manager == 'pnpm' }}
         run: |
           echo Choose package manager for CRA v5
       - name: Run e2e tests
         run: |
-          yarn e2e
+          mv ~/.npmrc ~/.npmrc.bak 2>/dev/null && cp -fr scripts/npmrc ~/.npmrc && pnpm ts-node scripts/e2e.ts && mv ~/.npmrc.bak ~/.npmrc 2>/dev/null
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
-        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'yarn' }}
+        if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: demos
           path: build
@@ -127,19 +132,21 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Build documentation
         run: |
-          yarn build:docs
+          pnpm build:docs
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -167,26 +174,26 @@ jobs:
       - name: Reattach HEAD to ref
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Build packages
         run: |
-          yarn build
+          pnpm build
       - name: Publish to NPM registry
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
-          yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
-          yarn lerna publish from-package --no-verify-access --ignore-scripts --yes
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          pnpm lerna publish from-package --no-verify-access --ignore-scripts --yes
 
   deploy:
     name: Deployment

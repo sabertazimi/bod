@@ -7,9 +7,9 @@ const main = () => {
     .toString()
     .replace('\n', '');
   const canaryVersion = `0.0.0-${commitCount}`;
-  utils.exec(`yarn lerna version ${canaryVersion} --exact --no-push --yes`);
+  utils.exec(`pnpm lerna version ${canaryVersion} --exact --no-push --yes`);
   utils.exec(
-    'yarn lerna publish from-package --dist-tag canary --no-verify-access --ignore-scripts --yes'
+    'pnpm yarn lerna publish from-package --dist-tag canary --no-verify-access --ignore-scripts --yes'
   );
 };
 

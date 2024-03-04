@@ -40,15 +40,15 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "yarn clean && yarn compile",
+    "build": "pnpm clean && pnpm compile",
     "clean": "rimraf ./dist/",
     "compile": "tsc",
     "dev": "ts-node ./src/bod.ts",
     "format": "prettier --write src/**/*.ts",
-    "lint": "yarn lint:style && yarn lint:type-check",
+    "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "eslint --ext .ts ./src",
     "lint:type-check": "tsc --noEmit",
-    "start": "yarn dev"
+    "start": "pnpm dev"
   },
   "dependencies": {
     "chalk": "^4.1.2",
