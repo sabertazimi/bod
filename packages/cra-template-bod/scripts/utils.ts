@@ -35,9 +35,11 @@ const buildJson = () => {
 
   const ignoreDeps = [
     '@sabertazimi/react-scripts',
+    'eslint-config-bod',
     'react-scripts',
     'react',
     'react-dom',
+    'stylelint-config-bod',
   ];
 
   // Remove ignored dependencies

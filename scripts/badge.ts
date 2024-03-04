@@ -1,6 +1,6 @@
-import cp from 'child_process';
-import fs from 'fs';
-import path from 'path';
+import cp from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
 import * as utils from './utils';
 
 const rootPath = path.join(__dirname, '..');
