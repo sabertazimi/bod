@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1096](https://github.com/sabertazimi/bod/issues/1096)) ([4d8e94b](https://github.com/sabertazimi/bod/commit/4d8e94bd2583e003606cfbf64bf3f7ac0f40a70b))
+* **deps:** update dependencies (non-major) ([#1099](https://github.com/sabertazimi/bod/issues/1099)) ([df3ad03](https://github.com/sabertazimi/bod/commit/df3ad03870182606ccafdcc6f35948137f57e119))
+* **deps:** update dependencies (non-major) ([#1110](https://github.com/sabertazimi/bod/issues/1110)) ([b4f9e8d](https://github.com/sabertazimi/bod/commit/b4f9e8dc5e251acd6e504dbc8d69567c8bb00ada))
+* **deps:** update dependencies (non-major) ([#1117](https://github.com/sabertazimi/bod/issues/1117)) ([8ea3e1d](https://github.com/sabertazimi/bod/commit/8ea3e1df8d2137eacdf4b37e235cb2946b3ec7dc))
+* **deps:** update dependency @reduxjs/toolkit to v2 ([#1071](https://github.com/sabertazimi/bod/issues/1071)) ([dbfc777](https://github.com/sabertazimi/bod/commit/dbfc7778ee9e123f8d429e876ebf1e1079bcadf0))
+* **deps:** update dependency commander to v12 ([#1103](https://github.com/sabertazimi/bod/issues/1103)) ([6e1963d](https://github.com/sabertazimi/bod/commit/6e1963def1c5b6dab5aa215bec86007bdb253975))
+* **deps:** update dependency dotenv to ^16.4.2 ([#1108](https://github.com/sabertazimi/bod/issues/1108)) ([5f0c63d](https://github.com/sabertazimi/bod/commit/5f0c63d932f9dcbc455034e01c45657aa323ae1f))
+* **deps:** update dependency dotenv-expand to ^11.0.6 ([#1114](https://github.com/sabertazimi/bod/issues/1114)) ([5d2d115](https://github.com/sabertazimi/bod/commit/5d2d115644958dedb3aa327fac01537171fc70d9))
+* **deps:** update dependency dotenv-expand to v11 ([#1109](https://github.com/sabertazimi/bod/issues/1109)) ([90df310](https://github.com/sabertazimi/bod/commit/90df3103f44bdd5bba7f9567174849fce79dffd8))
+* **deps:** update dependency eslint-plugin-html to v8 ([#1107](https://github.com/sabertazimi/bod/issues/1107)) ([2bb57a9](https://github.com/sabertazimi/bod/commit/2bb57a97d53ec87e903cc3fcbc9850dd7b67e127))
+* **deps:** update dependency eslint-plugin-unicorn to v51 ([#1106](https://github.com/sabertazimi/bod/issues/1106)) ([8c88d10](https://github.com/sabertazimi/bod/commit/8c88d10fb87f05d49c0dbec58276ba43f6920418))
+* **deps:** update dependency stylelint-webpack-plugin to v5 ([#1101](https://github.com/sabertazimi/bod/issues/1101)) ([d5336fe](https://github.com/sabertazimi/bod/commit/d5336fe6808d8313c30dbc096bd6a0afdc14f4a5))
+* **deps:** update dependency webpack-dev-server to v5 ([#1111](https://github.com/sabertazimi/bod/issues/1111)) ([10b6829](https://github.com/sabertazimi/bod/commit/10b682905e7f6dbafb30e1f2fd0026db9313fcd2))
+* **deps:** update typescript-eslint monorepo to v7 ([#1112](https://github.com/sabertazimi/bod/issues/1112)) ([3196e39](https://github.com/sabertazimi/bod/commit/3196e3966b8e72ec84c3ad542269a2c8162a657b))
+
+
+
+
+
 ## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
 
 

@@ -195,10 +195,10 @@ importers:
   packages/eslint-config:
     dependencies:
       '@dg-scripts/eslint-config-react':
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-react
       '@dg-scripts/eslint-config-vue':
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-vue
       eslint:
         specifier: ^8.0.0
@@ -309,7 +309,7 @@ importers:
         specifier: ^8.0.0
         version: 8.57.0
       eslint-config-bod:
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-bod
     devDependencies:
       react:
@@ -319,7 +319,7 @@ importers:
   packages/eslint-config-ts:
     dependencies:
       '@dg-scripts/eslint-config-basic':
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-basic
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.1.0
@@ -337,7 +337,7 @@ importers:
   packages/eslint-config-vue:
     dependencies:
       '@dg-scripts/eslint-config-ts':
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-ts
       eslint:
         specifier: ^8.0.0
@@ -403,7 +403,7 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       eslint-config-bod:
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../eslint-config-bod
       eslint-config-prettier:
         specifier: ^9.1.0
@@ -496,7 +496,7 @@ importers:
         specifier: ^16.2.1
         version: 16.2.1(typescript@5.3.3)
       stylelint-config-bod:
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -546,7 +546,7 @@ importers:
   packages/stylelint-config:
     dependencies:
       stylelint-config-bod:
-        specifier: ^5.14.2
+        specifier: ^5.14.3
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0

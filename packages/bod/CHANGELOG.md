@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1099](https://github.com/sabertazimi/bod/issues/1099)) ([df3ad03](https://github.com/sabertazimi/bod/commit/df3ad03870182606ccafdcc6f35948137f57e119))
+* **deps:** update dependency commander to v12 ([#1103](https://github.com/sabertazimi/bod/issues/1103)) ([6e1963d](https://github.com/sabertazimi/bod/commit/6e1963def1c5b6dab5aa215bec86007bdb253975))
+
+
+
+
+
 ## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
 
 **Note:** Version bump only for package bod

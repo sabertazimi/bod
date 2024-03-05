@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1096](https://github.com/sabertazimi/bod/issues/1096)) ([4d8e94b](https://github.com/sabertazimi/bod/commit/4d8e94bd2583e003606cfbf64bf3f7ac0f40a70b))
+* **deps:** update dependency eslint-plugin-html to v8 ([#1107](https://github.com/sabertazimi/bod/issues/1107)) ([2bb57a9](https://github.com/sabertazimi/bod/commit/2bb57a97d53ec87e903cc3fcbc9850dd7b67e127))
+* **deps:** update dependency eslint-plugin-unicorn to v51 ([#1106](https://github.com/sabertazimi/bod/issues/1106)) ([8c88d10](https://github.com/sabertazimi/bod/commit/8c88d10fb87f05d49c0dbec58276ba43f6920418))
+
+
+
+
+
 ## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
 
 

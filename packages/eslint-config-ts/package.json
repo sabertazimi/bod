@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/eslint-config-ts",
-  "version": "5.14.2",
+  "version": "5.14.3",
   "description": "ESLint TypeScript configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@dg-scripts/eslint-config-basic": "^5.14.2",
+    "@dg-scripts/eslint-config-basic": "^5.14.3",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0"
   }

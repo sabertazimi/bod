@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1096](https://github.com/sabertazimi/bod/issues/1096)) ([4d8e94b](https://github.com/sabertazimi/bod/commit/4d8e94bd2583e003606cfbf64bf3f7ac0f40a70b))
+* **deps:** update dependencies (non-major) ([#1099](https://github.com/sabertazimi/bod/issues/1099)) ([df3ad03](https://github.com/sabertazimi/bod/commit/df3ad03870182606ccafdcc6f35948137f57e119))
+* **deps:** update dependencies (non-major) ([#1110](https://github.com/sabertazimi/bod/issues/1110)) ([b4f9e8d](https://github.com/sabertazimi/bod/commit/b4f9e8dc5e251acd6e504dbc8d69567c8bb00ada))
+* **deps:** update dependencies (non-major) ([#1117](https://github.com/sabertazimi/bod/issues/1117)) ([8ea3e1d](https://github.com/sabertazimi/bod/commit/8ea3e1df8d2137eacdf4b37e235cb2946b3ec7dc))
+* **deps:** update typescript-eslint monorepo to v7 ([#1112](https://github.com/sabertazimi/bod/issues/1112)) ([3196e39](https://github.com/sabertazimi/bod/commit/3196e3966b8e72ec84c3ad542269a2c8162a657b))
+
+
+
+
+
 ## [5.14.2](https://github.com/sabertazimi/bod/compare/v5.14.1...v5.14.2) (2024-01-20)
 
 
