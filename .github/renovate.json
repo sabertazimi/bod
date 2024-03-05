@@ -30,7 +30,7 @@
       "groupSlug": "dependencies"
     }
   ],
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "postUpdateOptions": ["pnpmDedupe"],
   "rangeStrategy": "bump",
   "reviewers": ["sabertazimi"],
   "schedule": ["every weekend"],

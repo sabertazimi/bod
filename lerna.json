@@ -1,6 +1,6 @@
 {
   "version": "5.14.2",
-  "npmClient": "yarn",
+  "npmClient": "pnpm",
   "command": {
     "bootstrap": {
       "npmClientArgs": [
@@ -24,8 +24,5 @@
     "**/__fixtures__/**",
     "**/__tests__/**",
     "**/*.md"
-  ],
-  "packages": [
-    "packages/*"
   ]
 }

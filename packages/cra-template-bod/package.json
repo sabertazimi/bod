@@ -31,11 +31,11 @@
   },
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
-    "lint": "yarn lint:style && yarn lint:type-check",
+    "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "stylelint ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:type-check": "tsc --noEmit",
-    "start": "yarn template:start",
-    "test": "CI=true yarn template:test",
+    "start": "pnpm template:start",
+    "test": "CI=true pnpm template:test",
     "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",
     "template:build": "react-scripts build",
     "template:start": "react-scripts start",
@@ -50,7 +50,7 @@
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "@sabertazimi/react-scripts": "^5.14.2",
+    "@sabertazimi/react-scripts": "workspace:*",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
@@ -60,7 +60,10 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "eslint-config-bod": "workspace:*",
+    "identity-obj-proxy": "^3.0.0",
     "jest-axe": "^8.0.0",
+    "stylelint-config-bod": "workspace:*",
     "typescript": "^5.3.3"
   },
   "eslintConfig": {

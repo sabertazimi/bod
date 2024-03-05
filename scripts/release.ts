@@ -6,7 +6,7 @@ const main = () => {
   const isPush = process.argv.includes('-p') || process.argv.includes('--push');
   const versionMatch = utils
     .execPipe(
-      'yarn lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
+      'pnpm lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
     )
     .toString()
     .split('\n')
@@ -15,7 +15,7 @@ const main = () => {
 
   if (versionMatch) {
     const version = utils.semver.clean(versionMatch[0].replace('=> ', ''));
-    utils.exec('yarn');
+    utils.exec('pnpm install');
     utils.exec('git add .');
     utils.exec(`git commit -a -m "chore(release): ${version}"`);
     utils.exec(`git tag v${version} -s -m "v${version}"`);

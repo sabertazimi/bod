@@ -17,6 +17,8 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0 # Keep `0` for getting canary release version from git history
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
       - name: Reattach HEAD to head ref
         run: git switch -C "$(echo ${{ github.head_ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref != '' }}
@@ -26,20 +28,18 @@ jobs:
       - name: Setup Node environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           architecture: x64
           registry-url: https://registry.npmjs.org/
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
         run: |
-          yarn
+          pnpm install
       - name: Build packages
         run: |
-          yarn build
+          pnpm build
       - name: Publish canary release to NPM registry
         if: startsWith(github.event.head_commit.message, 'chore') == false
         run: |
-          yarn config set npmAuthToken ${NODE_AUTH_TOKEN} --home
-          yarn canary
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          pnpm canary
