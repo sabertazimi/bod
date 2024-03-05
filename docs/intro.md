@@ -44,10 +44,10 @@ and
 
 ```bash
 # Global installation
-npm i -g bod
+npm install -g bod
 
 # Local installation
-npm i -D bod
+npm install -D bod
 ```
 
 ### Usage
