@@ -4,4 +4,4 @@ module.exports = {
     '@dg-scripts/eslint-config-vue',
     'plugin:prettier/recommended',
   ],
-};
+}

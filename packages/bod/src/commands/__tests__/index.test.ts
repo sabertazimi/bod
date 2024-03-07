@@ -1,8 +1,8 @@
-import { BaseCommand, CreateCommand, InfoCommand } from '../index';
+import { BaseCommand, CreateCommand, InfoCommand } from '../index'
 
 describe('Commands', () => {
-  let commands: Set<BaseCommand>;
-  let counts: Map<string, number>;
+  let commands: Set<BaseCommand>
+  let counts: Map<string, number>
 
   beforeEach(() => {
     commands = new Set<BaseCommand>([
@@ -13,56 +13,56 @@ describe('Commands', () => {
       }),
       new CreateCommand(),
       new InfoCommand(),
-    ]);
-    counts = new Map<string, number>();
-  });
+    ])
+    counts = new Map<string, number>()
+  })
 
   afterEach(() => {
-    commands.clear();
-    counts.clear();
-  });
+    commands.clear()
+    counts.clear()
+  })
 
   test('should has unique name', () => {
     for (const command of commands) {
-      const name = command.getName();
-      if (counts.has(name)) counts.set(name, (counts.get(name) as number) + 1);
-      else counts.set(name, 1);
-      expect(command).toBeDefined();
+      const name = command.getName()
+      if (counts.has(name)) counts.set(name, (counts.get(name) as number) + 1)
+      else counts.set(name, 1)
+      expect(command).toBeDefined()
     }
 
     for (const [name, count] of counts) {
-      expect(name).toBeTruthy();
-      expect(count).toBe(1);
+      expect(name).toBeTruthy()
+      expect(count).toBe(1)
     }
-  });
+  })
 
   test('should has unique usage', () => {
     for (const command of commands) {
-      const usage = command.getUsage();
+      const usage = command.getUsage()
       if (counts.has(usage))
-        counts.set(usage, (counts.get(usage) as number) + 1);
-      else counts.set(usage, 1);
-      expect(command).toBeDefined();
+        counts.set(usage, (counts.get(usage) as number) + 1)
+      else counts.set(usage, 1)
+      expect(command).toBeDefined()
     }
 
     for (const [usage, count] of counts) {
-      expect(usage).toBeTruthy();
-      expect(count).toBe(1);
+      expect(usage).toBeTruthy()
+      expect(count).toBe(1)
     }
-  });
+  })
 
   test('should has unique alias', () => {
     for (const command of commands) {
-      const alias = command.getAlias();
+      const alias = command.getAlias()
       if (counts.has(alias))
-        counts.set(alias, (counts.get(alias) as number) + 1);
-      else counts.set(alias, 1);
-      expect(command).toBeDefined();
+        counts.set(alias, (counts.get(alias) as number) + 1)
+      else counts.set(alias, 1)
+      expect(command).toBeDefined()
     }
 
     for (const [alias, count] of counts) {
-      expect(alias).toBeTruthy();
-      expect(count).toBe(1);
+      expect(alias).toBeTruthy()
+      expect(count).toBe(1)
     }
-  });
-});
+  })
+})

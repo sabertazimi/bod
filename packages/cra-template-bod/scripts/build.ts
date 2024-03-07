@@ -1,8 +1,8 @@
-import { buildJson, buildTemplate } from './utils';
+import { buildJson, buildTemplate } from './utils'
 
 const build = () => {
-  buildTemplate();
-  buildJson();
-};
+  buildTemplate()
+  buildJson()
+}
 
-build();
+build()

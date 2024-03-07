@@ -19,7 +19,7 @@
 // This is dangerous as it hides accidentally undefined variables.
 // We blacklist the globals that we deem potentially confusing.
 // To use them, explicitly reference them, e.g. `window.name` or `window.status`.
-const restrictedGlobals = require('confusing-browser-globals');
+const restrictedGlobals = require('confusing-browser-globals')
 
 module.exports = {
   extends: [require.resolve('./base')],
@@ -281,4 +281,4 @@ module.exports = {
     // https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': 'error',
   },
-};
+}

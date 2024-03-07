@@ -1,9 +1,9 @@
-import React from 'react';
-import clsx from 'clsx';
-import MountainSVG from '../../static/img/undraw_docusaurus_mountain.svg';
-import TreeSVG from '../../static/img/undraw_docusaurus_tree.svg';
-import ReactSVG from '../../static/img/undraw_docusaurus_react.svg';
-import styles from './HomepageFeatures.module.css';
+import React from 'react'
+import clsx from 'clsx'
+import MountainSVG from '../../static/img/undraw_docusaurus_mountain.svg'
+import TreeSVG from '../../static/img/undraw_docusaurus_tree.svg'
+import ReactSVG from '../../static/img/undraw_docusaurus_react.svg'
+import styles from './HomepageFeatures.module.css'
 
 const FeatureList = [
   {
@@ -33,7 +33,7 @@ const FeatureList = [
       </>
     ),
   },
-];
+]
 
 function Feature({ Svg, title, description }): JSX.Element {
   return (
@@ -46,7 +46,7 @@ function Feature({ Svg, title, description }): JSX.Element {
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures(): JSX.Element {
@@ -60,5 +60,5 @@ export default function HomepageFeatures(): JSX.Element {
         </div>
       </div>
     </section>
-  );
+  )
 }

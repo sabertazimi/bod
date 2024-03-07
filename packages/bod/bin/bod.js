@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('../dist/bod');
+require('../dist/bod')

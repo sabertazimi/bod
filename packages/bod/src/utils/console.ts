@@ -1,4 +1,4 @@
-import color from 'chalk';
-import printer from 'consola';
+import color from 'chalk'
+import printer from 'consola'
 
-export { color, printer };
+export { color, printer }

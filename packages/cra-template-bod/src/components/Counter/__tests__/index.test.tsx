@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
-import Counter from '../index';
+import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
+import Counter from '../index'
 
 describe('Counter', () => {
   test('should render correctly (snapshot)', () => {
-    const mockClickHandler = jest.fn();
+    const mockClickHandler = jest.fn()
 
     const { container } = render(
       <Counter
@@ -17,13 +17,13 @@ describe('Counter', () => {
         onIncrementByAmount={mockClickHandler}
         onIncrementIfOdd={mockClickHandler}
       />
-    );
+    )
 
-    expect(container).toMatchSnapshot();
-  });
+    expect(container).toMatchSnapshot()
+  })
 
   test('Should render accessibility guidelines (AXE)', async () => {
-    const mockClickHandler = jest.fn();
+    const mockClickHandler = jest.fn()
     const { container } = render(
       <Counter
         count={0}
@@ -35,10 +35,10 @@ describe('Counter', () => {
         onIncrementByAmount={mockClickHandler}
         onIncrementIfOdd={mockClickHandler}
       />
-    );
+    )
 
-    const results = await axe(container);
+    const results = await axe(container)
 
-    expect(results).toHaveNoViolations();
-  });
-});
+    expect(results).toHaveNoViolations()
+  })
+})

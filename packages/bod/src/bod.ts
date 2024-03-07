@@ -1,14 +1,14 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { color, printer, program } from './utils';
-import { CommandFactory } from './index';
+import fs from 'node:fs'
+import path from 'node:path'
+import { color, printer, program } from './utils'
+import { CommandFactory } from './index'
 
-const packageJsonPath = path.join(__dirname, '../package.json');
+const packageJsonPath = path.join(__dirname, '../package.json')
 const packageJson = JSON.parse(
   fs.readFileSync(packageJsonPath, { encoding: 'utf-8' })
-);
+)
 
-program.version(packageJson.version, '-v, --version');
+program.version(packageJson.version, '-v, --version')
 
 for (const command of CommandFactory.values()) {
   program
@@ -17,24 +17,24 @@ for (const command of CommandFactory.values()) {
     .description(command.getDescription())
     .action(async (appName: string) => {
       try {
-        await command.run(appName);
+        await command.run(appName)
       } catch (error) {
-        printer.error(error);
-        program.outputHelp();
+        printer.error(error)
+        program.outputHelp()
       }
-    });
+    })
 }
 
 // add some useful info on help
 program.on('--help', () => {
-  printer.log('');
+  printer.log('')
   printer.info(
     `  Run ${color.cyan(
       `bod <command> --help`
     )} for detailed usage of given command.`
-  );
-  printer.log('');
-});
+  )
+  printer.log('')
+})
 
-program.showHelpAfterError();
-program.parse(process.argv);
+program.showHelpAfterError()
+program.parse(process.argv)

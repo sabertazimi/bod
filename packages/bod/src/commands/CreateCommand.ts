@@ -1,11 +1,11 @@
-import { inquirer, spawn } from '../utils';
-import BaseCommand from './BaseCommand';
+import { inquirer, spawn } from '../utils'
+import BaseCommand from './BaseCommand'
 
 interface Action {
-  name: string;
-  value: string;
-  command: string;
-  args: string[];
+  name: string
+  value: string
+  command: string
+  args: string[]
 }
 
 class CreateCommand extends BaseCommand {
@@ -56,31 +56,31 @@ class CreateCommand extends BaseCommand {
         '@sabertazimi/react-scripts',
       ],
     },
-  ];
+  ]
 
-  private command = 'npx';
-  private commandArgs: string[] = [];
+  private command = 'npx'
+  private commandArgs: string[] = []
 
   constructor() {
     super({
       name: 'create',
       description: 'Create a new project powered by @sabertazimi/react-scripts',
       usage: 'create <appName>',
-    });
+    })
   }
 
   public async run(appName: string): Promise<void> {
-    await this.processTemplateAction();
-    this.resolveAppPath(appName);
-    this.execute();
+    await this.processTemplateAction()
+    this.resolveAppPath(appName)
+    this.execute()
   }
 
   public getCommand(): string {
-    return this.command;
+    return this.command
   }
 
   public getCommandArgs(): string[] {
-    return this.commandArgs;
+    return this.commandArgs
   }
 
   private async processTemplateAction(): Promise<void> {
@@ -91,32 +91,32 @@ class CreateCommand extends BaseCommand {
         message: 'Select template:',
         choices: [...CreateCommand.TemplateActions],
       },
-    ]);
+    ])
 
     const { command, args } = CreateCommand.TemplateActions.find(
       ({ value }) => value === templateName
-    ) as Action;
+    ) as Action
 
-    this.command = command;
-    this.commandArgs = [...args];
+    this.command = command
+    this.commandArgs = [...args]
   }
 
   private resolveAppPath(appName: string): void {
-    this.commandArgs.push(appName);
+    this.commandArgs.push(appName)
   }
 
   private execute(): void {
     const proc = spawn.sync(this.command, this.commandArgs, {
       stdio: 'inherit',
-    });
+    })
 
     if (proc.status !== 0) {
       throw new Error(
         `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
-      );
+      )
     }
   }
 }
 
-export type { Action };
-export default CreateCommand;
+export type { Action }
+export default CreateCommand
