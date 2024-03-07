@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import { Counter } from './containers';
-import Logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import { Counter } from './containers'
+import Logo from './logo.svg'
 
 const App = (): JSX.Element => {
   return (
@@ -45,7 +45,7 @@ const App = (): JSX.Element => {
         </span>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

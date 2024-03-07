@@ -194,7 +194,7 @@ module.exports = {
     'import/no-absolute-path': 'off',
 
     // Common
-    semi: ['error', 'always'],
+    semi: ['error', 'never'],
     curly: ['error', 'multi-or-nest', 'consistent'],
     quotes: ['error', 'single'],
     'quote-props': ['error', 'as-needed'],
@@ -350,4 +350,4 @@ module.exports = {
     'yml/no-empty-document': 'off',
     'yml/no-empty-mapping-value': 'off',
   },
-};
+}

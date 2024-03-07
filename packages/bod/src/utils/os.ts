@@ -1,4 +1,4 @@
-import spawn from 'cross-spawn';
-import envinfo from 'envinfo';
+import spawn from 'cross-spawn'
+import envinfo from 'envinfo'
 
-export { envinfo, spawn };
+export { envinfo, spawn }

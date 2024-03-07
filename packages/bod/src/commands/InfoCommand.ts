@@ -1,5 +1,5 @@
-import { envinfo, printer } from '../utils';
-import BaseCommand from './BaseCommand';
+import { envinfo, printer } from '../utils'
+import BaseCommand from './BaseCommand'
 
 class InfoCommand extends BaseCommand {
   constructor() {
@@ -7,11 +7,11 @@ class InfoCommand extends BaseCommand {
       name: 'info',
       description: 'Print debugging information about your environment',
       usage: 'info',
-    });
+    })
   }
 
   public async run(_appName?: string): Promise<void> {
-    printer.info(`Environment information:`);
+    printer.info(`Environment information:`)
     const envInfo = await envinfo.run(
       {
         System: ['OS', 'CPU'],
@@ -25,9 +25,9 @@ class InfoCommand extends BaseCommand {
         duplicates: true,
         fullTree: true,
       }
-    );
-    printer.info(envInfo);
+    )
+    printer.info(envInfo)
   }
 }
 
-export default InfoCommand;
+export default InfoCommand

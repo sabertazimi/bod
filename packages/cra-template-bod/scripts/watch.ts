@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import { buildJson, chokidar, printer, rootPath } from './utils';
+import fs from 'fs'
+import path from 'path'
+import { buildJson, chokidar, printer, rootPath } from './utils'
 
 chokidar
   .watch([
@@ -15,22 +15,22 @@ chokidar
   ])
   .on('change', file => {
     try {
-      printer.info(`Rebuild ${file} ...`);
+      printer.info(`Rebuild ${file} ...`)
 
       if (path.resolve(file) === path.join(rootPath, '.gitignore')) {
         fs.copyFileSync(
           path.join(rootPath, '.gitignore'),
           path.join(rootPath, 'template/gitignore')
-        );
+        )
       } else if (path.resolve(file) === path.join(rootPath, 'package.json')) {
-        buildJson();
+        buildJson()
       } else {
         fs.copyFileSync(
           path.resolve(file),
           path.join('template', path.relative(rootPath, path.resolve(file)))
-        );
+        )
       }
     } catch (err) {
-      if (err instanceof Error) printer.error(err.message);
+      if (err instanceof Error) printer.error(err.message)
     }
-  });
+  })

@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Counter as CounterComponent } from '../../components';
-import { useAppDispatch, useAppSelector } from '../../hooks';
+import { useState } from 'react'
+import { Counter as CounterComponent } from '../../components'
+import { useAppDispatch, useAppSelector } from '../../hooks'
 import {
   decrement,
   increment,
@@ -8,13 +8,13 @@ import {
   incrementByAmount,
   incrementIfOdd,
   selectCount,
-} from './slice';
+} from './slice'
 
 const Counter = (): JSX.Element => {
-  const dispatch = useAppDispatch();
-  const count = useAppSelector(selectCount);
-  const [incrementAmount, setIncrementAmount] = useState('2');
-  const incrementValue = Number(incrementAmount) || 0;
+  const dispatch = useAppDispatch()
+  const count = useAppSelector(selectCount)
+  const [incrementAmount, setIncrementAmount] = useState('2')
+  const incrementValue = Number(incrementAmount) || 0
 
   return (
     <CounterComponent
@@ -27,7 +27,7 @@ const Counter = (): JSX.Element => {
       onIncrementByAmount={() => dispatch(incrementByAmount(incrementValue))}
       onIncrementIfOdd={() => dispatch(incrementIfOdd(incrementValue))}
     />
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter

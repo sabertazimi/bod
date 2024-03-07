@@ -1,3 +1,2 @@
-const ReactComponent = 'svg';
-module.exports = ReactComponent;
-
+const ReactComponent = 'svg'
+module.exports = ReactComponent

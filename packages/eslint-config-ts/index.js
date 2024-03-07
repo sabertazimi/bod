@@ -1,4 +1,4 @@
-const basic = require('@dg-scripts/eslint-config-basic');
+const basic = require('@dg-scripts/eslint-config-basic')
 
 module.exports = {
   extends: [
@@ -57,7 +57,7 @@ module.exports = {
     'object-curly-spacing': 'off',
     '@typescript-eslint/object-curly-spacing': ['error', 'always'],
     semi: 'off',
-    '@typescript-eslint/semi': ['error', 'always'],
+    '@typescript-eslint/semi': ['error', 'never'],
     quotes: 'off',
     '@typescript-eslint/quotes': ['error', 'single'],
     'space-before-blocks': 'off',
@@ -110,4 +110,4 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-namespace': 'off',
   },
-};
+}

@@ -1,9 +1,9 @@
-import type * as Preset from '@docusaurus/preset-classic';
-import type { Config } from '@docusaurus/types';
-import { themes } from 'prism-react-renderer';
+import type * as Preset from '@docusaurus/preset-classic'
+import type { Config } from '@docusaurus/types'
+import { themes } from 'prism-react-renderer'
 
-const lightCodeTheme = themes.github;
-const darkCodeTheme = themes.dracula;
+const lightCodeTheme = themes.github
+const darkCodeTheme = themes.dracula
 
 const config: Config = {
   title: 'Bod',
@@ -203,6 +203,6 @@ const config: Config = {
       ],
     },
   } satisfies Preset.ThemeConfig,
-};
+}
 
-export default config;
+export default config

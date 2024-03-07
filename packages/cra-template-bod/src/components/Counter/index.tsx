@@ -1,15 +1,15 @@
-import { AppDispatch } from '../../store';
-import styles from './index.module.css';
+import { AppDispatch } from '../../store'
+import styles from './index.module.css'
 
 interface CounterProps {
-  count: number;
-  incrementAmount: string;
-  onIncrementAmountChange: (value: string) => void;
-  onDecrement: () => ReturnType<AppDispatch>;
-  onIncrement: () => ReturnType<AppDispatch>;
-  onIncrementAsync: () => void;
-  onIncrementByAmount: () => ReturnType<AppDispatch>;
-  onIncrementIfOdd: () => void;
+  count: number
+  incrementAmount: string
+  onIncrementAmountChange: (value: string) => void
+  onDecrement: () => ReturnType<AppDispatch>
+  onIncrement: () => ReturnType<AppDispatch>
+  onIncrementAsync: () => void
+  onIncrementByAmount: () => ReturnType<AppDispatch>
+  onIncrementIfOdd: () => void
 }
 
 const Counter = ({
@@ -58,6 +58,6 @@ const Counter = ({
       </button>
     </div>
   </div>
-);
+)
 
-export default Counter;
+export default Counter

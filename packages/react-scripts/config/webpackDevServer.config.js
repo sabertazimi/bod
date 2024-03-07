@@ -6,24 +6,23 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @remove-on-eject-end
-'use strict';
 
-const fs = require('fs');
-const evalSourceMapMiddleware = require('react-dev-utils/evalSourceMapMiddleware');
-const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
-const ignoredFiles = require('react-dev-utils/ignoredFiles');
-const redirectServedPath = require('react-dev-utils/redirectServedPathMiddleware');
-const paths = require('./paths');
-const getHttpsConfig = require('./getHttpsConfig');
+const fs = require('node:fs')
+const evalSourceMapMiddleware = require('react-dev-utils/evalSourceMapMiddleware')
+const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware')
+const ignoredFiles = require('react-dev-utils/ignoredFiles')
+const redirectServedPath = require('react-dev-utils/redirectServedPathMiddleware')
+const paths = require('./paths')
+const getHttpsConfig = require('./getHttpsConfig')
 
-const host = process.env.HOST || '0.0.0.0';
-const sockHost = process.env.WDS_SOCKET_HOST;
-const sockPath = process.env.WDS_SOCKET_PATH; // default: '/ws'
-const sockPort = process.env.WDS_SOCKET_PORT;
+const host = process.env.HOST || '0.0.0.0'
+const sockHost = process.env.WDS_SOCKET_HOST
+const sockPath = process.env.WDS_SOCKET_PATH // default: '/ws'
+const sockPort = process.env.WDS_SOCKET_PORT
 
 module.exports = function (proxy, allowedHost) {
   const disableFirewall =
-    !proxy || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true';
+    !proxy || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true'
   return {
     // WebpackDevServer 2.4.3 introduced a security fix that prevents remote
     // websites from potentially accessing local content through DNS rebinding:
@@ -111,12 +110,12 @@ module.exports = function (proxy, allowedHost) {
     proxy,
     setupMiddlewares(middlewares, devServer) {
       if (!devServer) {
-        throw new Error('webpack-dev-server is not defined!');
+        throw new Error('webpack-dev-server is not defined!')
       }
 
       if (fs.existsSync(paths.proxySetup)) {
         // This registers user provided middleware for proxy reasons
-        require(paths.proxySetup)(devServer.app);
+        require(paths.proxySetup)(devServer.app)
       }
 
       middlewares.unshift(
@@ -131,9 +130,9 @@ module.exports = function (proxy, allowedHost) {
         // We do this in development to avoid hitting the production cache if
         // https://github.com/facebook/create-react-app/issues/2272#issuecomment-302832432
         noopServiceWorkerMiddleware(paths.publicUrlOrPath)
-      );
+      )
 
-      return middlewares;
+      return middlewares
     },
-  };
-};
+  }
+}

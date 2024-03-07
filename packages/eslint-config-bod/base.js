@@ -6,7 +6,7 @@
  */
 
 // Fix eslint shareable config (https://github.com/eslint/eslint/issues/3458)
-require('@rushstack/eslint-patch/modern-module-resolution');
+require('@rushstack/eslint-patch/modern-module-resolution')
 
 // This file contains the minimum ESLint configuration required for Create
 // React App support, and is used as the `baseConfig` for `eslint-loader`
@@ -45,4 +45,4 @@ module.exports = {
     'react/jsx-uses-vars': 'warn',
     'react/jsx-uses-react': 'warn',
   },
-};
+}
