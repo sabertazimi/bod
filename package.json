@@ -50,7 +50,7 @@
     "@dg-scripts/eslint-config": "workspace:*",
     "@dg-scripts/stylelint-config": "workspace:*",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.11.25",
     "@types/semver": "^7.5.8",
     "chalk": "^4.1.2",
     "chokidar": "^3.6.0",
@@ -67,8 +67,8 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3",
-    "undici": "^6.6.2",
+    "typescript": "^5.4.2",
+    "undici": "^6.7.1",
     "verdaccio": "^5.29.2"
   }
 }
