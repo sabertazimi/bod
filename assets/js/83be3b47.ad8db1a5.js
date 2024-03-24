@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbod_website=self.webpackChunkbod_website||[]).push([[371],{3844:e=>{e.exports=JSON.parse('{"label":"ESLint","permalink":"/bod/docs/tags/es-lint","allTagsPath":"/bod/docs/tags","count":1,"items":[{"id":"eslint-config-bod","title":"eslint-config-bod","description":"Author","permalink":"/bod/docs/eslint-config-bod"}],"unlisted":false}')}}]);
