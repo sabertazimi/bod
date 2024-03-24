@@ -86,7 +86,7 @@
     "semver": "^7.6.0",
     "source-map-loader": "^5.0.0",
     "style-loader": "^3.3.4",
-    "stylelint": "^16.2.1",
+    "stylelint": "^16.3.0",
     "stylelint-config-bod": "^5.14.3",
     "stylelint-prettier": "^5.0.0",
     "stylelint-webpack-plugin": "^5.0.0",
