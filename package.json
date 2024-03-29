@@ -63,12 +63,12 @@
     "lerna": "^8.1.2",
     "prettier": "^3.2.5",
     "semver": "^7.6.0",
-    "stylelint": "^16.3.0",
+    "stylelint": "^16.3.1",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
     "typescript": "^5.4.3",
-    "undici": "^6.10.1",
+    "undici": "^6.10.2",
     "verdaccio": "^5.30.2"
   }
 }
