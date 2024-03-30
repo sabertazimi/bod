@@ -98,7 +98,7 @@ bod create my-app
 Or use with Create React App:
 
 ```bash
-npx create-react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
+npm create react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
 ```
 
 More available scripts on package
@@ -124,6 +124,11 @@ and start a `webpack-dev-server` on port `3000`.
 
 Contributions are greatly appreciated.
 Please fork this repository and open a pull request.
+
+## Credits
+
+- [create-react-app](https://github.com/facebook/create-react-app).
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ## Contact
 
