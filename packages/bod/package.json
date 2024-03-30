@@ -46,7 +46,7 @@
     "dev": "ts-node ./src/bod.ts",
     "format": "prettier --write src/**/*.ts",
     "lint": "pnpm lint:style && pnpm lint:type-check",
-    "lint:style": "eslint --ext .ts ./src",
+    "lint:style": "eslint ./src",
     "lint:type-check": "tsc --noEmit",
     "start": "pnpm dev"
   },

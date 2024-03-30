@@ -5,7 +5,7 @@
     "build:docs": "docusaurus build && pnpm build:post",
     "build:post": "cp -fr build ../",
     "clear": "docusaurus clear",
-    "lint": "eslint --ext .ts,.tsx ./src && stylelint ./src/**/*.css",
+    "lint": "eslint ./src && stylelint ./src/**/*.css",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },

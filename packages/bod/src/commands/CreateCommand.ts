@@ -94,7 +94,7 @@ class CreateCommand extends BaseCommand {
     ])
 
     const { command, args } = CreateCommand.TemplateActions.find(
-      ({ value }) => value === templateName
+      ({ value }) => value === templateName,
     ) as Action
 
     this.command = command
@@ -112,7 +112,7 @@ class CreateCommand extends BaseCommand {
 
     if (proc.status !== 0) {
       throw new Error(
-        `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`
+        `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`,
       )
     }
   }

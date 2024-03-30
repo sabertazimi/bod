@@ -32,7 +32,7 @@
   "scripts": {
     "build": "ts-node --project=../../tsconfig.json scripts/build.ts",
     "lint": "pnpm lint:style && pnpm lint:type-check",
-    "lint:style": "stylelint ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:style": "stylelint ./src/**/*.css && eslint ./src",
     "lint:type-check": "tsc --noEmit",
     "start": "pnpm template:start",
     "test": "CI=true pnpm template:test",
@@ -65,13 +65,6 @@
     "jest-axe": "^8.0.0",
     "stylelint-config-bod": "workspace:*",
     "typescript": "^5.4.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "bod",
-      "bod/jest",
-      "plugin:prettier/recommended"
-    ]
   },
   "stylelint": {
     "extends": [

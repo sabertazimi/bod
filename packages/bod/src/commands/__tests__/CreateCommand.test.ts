@@ -1,3 +1,4 @@
+import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
 import path from 'node:path'
 import { isCI } from 'ci-info'
@@ -8,27 +9,27 @@ import CreateCommand from '../CreateCommand'
 
 const appPath = path.join(process.cwd(), '..', 'bod-unit-tests')
 
-describe('CreateCommand', () => {
+describe('createCommand', () => {
   beforeEach(() => sync(appPath))
   afterEach(() => sync(appPath))
 
-  test('should extends [BaseCommand] fields', () => {
+  it('should extends [BaseCommand] fields', () => {
     const createCommand = new CreateCommand()
     expect(createCommand.getName()).toBe('create')
     expect(createCommand.getDescription()).toBe(
-      'Create a new project powered by @sabertazimi/react-scripts'
+      'Create a new project powered by @sabertazimi/react-scripts',
     )
     expect(createCommand.getUsage()).toBe('create <appName>')
     expect(createCommand.getAlias()).toBe('c')
   })
 
-  test.each(CreateCommand.TemplateActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should get correct command/args and invoke [inquirer] via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise(resolve => {
+          const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
 
@@ -43,7 +44,7 @@ describe('CreateCommand', () => {
       const createCommand = new CreateCommand()
       await expect(createCommand.run(appPath)).resolves.toBeUndefined()
       const { command, args } = CreateCommand.TemplateActions.find(
-        action => action.value === value
+        action => action.value === value,
       ) as Action
       expect(createCommand.getCommand()).toBe(command)
       expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1)
@@ -53,16 +54,16 @@ describe('CreateCommand', () => {
 
       mockPrompt.mockRestore()
       mockSpawn.mockRestore()
-    }
+    },
   )
 
-  test.each(CreateCommand.TemplateActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should throw error when exited with non zero via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise(resolve => {
+          const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
 
@@ -81,16 +82,16 @@ describe('CreateCommand', () => {
 
       mockPrompt.mockRestore()
       mockSpawn.mockRestore()
-    }
+    },
   )
 
-  test.each(CreateCommand.TemplateActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
         .mockImplementation(() => {
-          const promise = new Promise(resolve => {
+          const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
 
@@ -100,13 +101,11 @@ describe('CreateCommand', () => {
       const createCommand = new CreateCommand()
 
       if (isCI) {
-        // eslint-disable-next-line jest/no-conditional-expect
         await expect(createCommand.run(appPath)).resolves.toBeUndefined()
-        // eslint-disable-next-line jest/no-conditional-expect
         expect(mockPrompt).toBeCalledTimes(1)
       }
 
       mockPrompt.mockRestore()
-    }
+    },
   )
 })

@@ -1,11 +1,12 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import { color, printer, program } from './utils'
 import { CommandFactory } from './index'
 
 const packageJsonPath = path.join(__dirname, '../package.json')
 const packageJson = JSON.parse(
-  fs.readFileSync(packageJsonPath, { encoding: 'utf-8' })
+  fs.readFileSync(packageJsonPath, { encoding: 'utf-8' }),
 )
 
 program.version(packageJson.version, '-v, --version')
@@ -18,7 +19,8 @@ for (const command of CommandFactory.values()) {
     .action(async (appName: string) => {
       try {
         await command.run(appName)
-      } catch (error) {
+      }
+      catch (error) {
         printer.error(error)
         program.outputHelp()
       }
@@ -30,8 +32,8 @@ program.on('--help', () => {
   printer.log('')
   printer.info(
     `  Run ${color.cyan(
-      `bod <command> --help`
-    )} for detailed usage of given command.`
+      `bod <command> --help`,
+    )} for detailed usage of given command.`,
   )
   printer.log('')
 })
