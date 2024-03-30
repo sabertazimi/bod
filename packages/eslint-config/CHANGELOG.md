@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.16.0](https://github.com/sabertazimi/bod/compare/v5.15.2...v5.16.0) (2024-03-30)
+
+
+### Bug Fixes
+
+* **eslint-config:** change brace-style to '1tbs' ([#1136](https://github.com/sabertazimi/bod/issues/1136)) ([06529a5](https://github.com/sabertazimi/bod/commit/06529a50b59bbeacb3bec4187a8ac240d8c39026))
+
+
+### Features
+
+* **eslint-config:** add optional Next.js support ([#1135](https://github.com/sabertazimi/bod/issues/1135)) ([eeac1bc](https://github.com/sabertazimi/bod/commit/eeac1bcbca17d41e11664a5d8f2212c6778674b3))
+
+
+
+
+
 ## [5.15.2](https://github.com/sabertazimi/bod/compare/v5.15.1...v5.15.2) (2024-03-30)
 
 **Note:** Version bump only for package @dg-scripts/eslint-config
