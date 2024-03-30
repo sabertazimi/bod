@@ -325,7 +325,7 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       eslint-config-bod:
-        specifier: ^5.15.0
+        specifier: ^5.15.1
         version: link:../eslint-config-bod
       eslint-webpack-plugin:
         specifier: ^4.1.0
@@ -412,7 +412,7 @@ importers:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.3)
       stylelint-config-bod:
-        specifier: ^5.15.0
+        specifier: ^5.15.1
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -462,7 +462,7 @@ importers:
   packages/stylelint-config:
     dependencies:
       stylelint-config-bod:
-        specifier: ^5.15.0
+        specifier: ^5.15.1
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0

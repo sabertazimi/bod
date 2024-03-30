@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.15.1](https://github.com/sabertazimi/bod/compare/v5.15.0...v5.15.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **react-scripts:** rectify ReferenceError ([4bb90c0](https://github.com/sabertazimi/bod/commit/4bb90c01b63bbd4ee6177cf40a54603748d155e7))
+
+
+
+
+
 # [5.15.0](https://github.com/sabertazimi/bod/compare/v5.14.3...v5.15.0) (2024-03-30)
 
 

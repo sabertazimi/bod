@@ -1,6 +1,6 @@
 {
   "name": "@sabertazimi/cra-template-typescript",
-  "version": "5.15.0",
+  "version": "5.15.1",
   "description": "The base TypeScript template for Bod CLI.",
   "license": "MIT",
   "repository": {
