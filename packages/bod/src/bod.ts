@@ -1,15 +1,16 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
+import type { PackageJson } from 'type-fest'
 import { color, printer, program } from './utils'
 import { CommandFactory } from './index'
 
 const packageJsonPath = path.join(__dirname, '../package.json')
 const packageJson = JSON.parse(
   fs.readFileSync(packageJsonPath, { encoding: 'utf-8' }),
-)
+) as PackageJson
 
-program.version(packageJson.version, '-v, --version')
+program.version(packageJson.version ?? '0.0.1', '-v, --version')
 
 for (const command of CommandFactory.values()) {
   program

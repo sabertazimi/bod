@@ -84,7 +84,7 @@ class CreateCommand extends BaseCommand {
   }
 
   private async processTemplateAction(): Promise<void> {
-    const { templateName } = await inquirer.prompt([
+    const { templateName } = await inquirer.prompt<{ [key: string]: string }>([
       {
         name: 'templateName',
         type: 'list',
@@ -94,7 +94,7 @@ class CreateCommand extends BaseCommand {
     ])
 
     const { command, args } = CreateCommand.TemplateActions.find(
-      ({ value }) => value === templateName,
+      ({ value }: Action) => value === templateName,
     ) as Action
 
     this.command = command

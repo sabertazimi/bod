@@ -35,14 +35,26 @@
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "next": "^14.0.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0"
   },
+  "peerDependenciesMeta": {
+    "eslint-config-next": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "@antfu/eslint-config": "^2.11.5",
+    "@eslint/eslintrc": "^3.0.2",
     "eslint-plugin-format": "^0.1.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6"
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "local-pkg": "^0.5.0"
   }
 }
