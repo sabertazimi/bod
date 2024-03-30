@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.15.0](https://github.com/sabertazimi/bod/compare/v5.14.3...v5.15.0) (2024-03-30)
+
+
+### Features
+
+* **eslint-config:** ship to flat configuration ([#1133](https://github.com/sabertazimi/bod/issues/1133)) ([3e33201](https://github.com/sabertazimi/bod/commit/3e332013a0f8a7f6d55f068451db0116ec3e62d8))
+
+
+
+
+
 ## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.15.0](https://github.com/sabertazimi/bod/compare/v5.14.3...v5.15.0) (2024-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1127](https://github.com/sabertazimi/bod/issues/1127)) ([7dc792b](https://github.com/sabertazimi/bod/commit/7dc792b9294cd55410249e1e2e00561d96202452))
+* **deps:** update dependencies (non-major) ([#1131](https://github.com/sabertazimi/bod/issues/1131)) ([8822a81](https://github.com/sabertazimi/bod/commit/8822a8101d3da76438225ac2ce8930b163a7a0b3))
+* **deps:** update dependency eslint-plugin-markdown to v4 ([#1123](https://github.com/sabertazimi/bod/issues/1123)) ([b108660](https://github.com/sabertazimi/bod/commit/b108660a18b3e6948eaae56ed33bd9716c91f8c1))
+* **deps:** update dependency eslint-plugin-react to ^7.34.1 ([#1126](https://github.com/sabertazimi/bod/issues/1126)) ([4aaf651](https://github.com/sabertazimi/bod/commit/4aaf651262fe7cad8490791aa6ef5ea9e4c9f34a))
+* **deps:** update dependency stylelint-config-recess-order to v5 ([#1124](https://github.com/sabertazimi/bod/issues/1124)) ([5f1fe0e](https://github.com/sabertazimi/bod/commit/5f1fe0ee82ad5e1ebe36046c1381b4fcf3b19a60))
+
+
+### Features
+
+* **eslint-config:** ship to flat configuration ([#1133](https://github.com/sabertazimi/bod/issues/1133)) ([3e33201](https://github.com/sabertazimi/bod/commit/3e332013a0f8a7f6d55f068451db0116ec3e62d8))
+
+
+
+
+
 ## [5.14.3](https://github.com/sabertazimi/bod/compare/v5.14.2...v5.14.3) (2024-03-05)
 
 
