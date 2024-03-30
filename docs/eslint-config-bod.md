@@ -50,18 +50,18 @@ First, install this package and ESLint.
 npm i -D eslint-config-bod eslint@^8.0.0
 ```
 
-Then create a file named `.eslintrc.json`
+Then create a file named `eslint.config.js`
 with following contents in the root folder of your project:
 
-```json
-{
-  "extends": "bod"
-}
+```ts
+import eslintConfigBod from 'eslint-config-bod'
+
+export default [...eslintConfigBod]
 ```
 
 That's it!
 You can override the settings from `eslint-config-bod`
-by editing the `.eslintrc.json` file.
+by editing the `eslint.config.js` file.
 Learn more about
 [configuring ESLint](https://eslint.org/docs/user-guide/configuring)
 on the ESLint website.
@@ -72,12 +72,6 @@ This config also ships with optional Jest rules for ESLint
 (based on [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest)).
 
 You can enable these rules by adding the Jest config to the `extends` array in your ESLint config.
-
-```json
-{
-  "extends": ["bod", "bod/jest"]
-}
-```
 
 ## Accessibility Checks
 
@@ -102,16 +96,6 @@ plugin are activated:
 - [role-has-required-aria-props](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md)
 - [role-supports-aria-props](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md)
 - [scope](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md)
-
-If you want to enable even more accessibility rules,
-you can create an `.eslintrc.json` file in the root of your project with this content:
-
-```json
-{
-  "extends": ["bod", "plugin:jsx-a11y/recommended"],
-  "plugins": ["jsx-a11y"]
-}
-```
 
 However,
 if you are using
