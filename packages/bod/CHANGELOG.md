@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.15.2](https://github.com/sabertazimi/bod/compare/v5.15.1...v5.15.2) (2024-03-30)
+
+**Note:** Version bump only for package bod
+
+
+
+
+
 ## [5.15.1](https://github.com/sabertazimi/bod/compare/v5.15.0...v5.15.1) (2024-03-30)
 
 **Note:** Version bump only for package bod

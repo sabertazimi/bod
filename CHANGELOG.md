@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.15.2](https://github.com/sabertazimi/bod/compare/v5.15.1...v5.15.2) (2024-03-30)
+
+
+### Bug Fixes
+
+* **templates:** rectify linters error ([#1134](https://github.com/sabertazimi/bod/issues/1134)) ([6a7e01b](https://github.com/sabertazimi/bod/commit/6a7e01be50941edd9b41a740fa7058dbb027f535))
+
+
+
+
+
 ## [5.15.1](https://github.com/sabertazimi/bod/compare/v5.15.0...v5.15.1) (2024-03-30)
 
 
