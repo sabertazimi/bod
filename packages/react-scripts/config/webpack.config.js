@@ -781,7 +781,7 @@ module.exports = function (webpackEnv) {
         // Plugin options
         extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
         formatter: require.resolve('react-dev-utils/eslintFormatter'),
-        eslintPath: require.resolve('eslint'),
+        eslintPath: require.resolve('eslint/use-at-your-own-risk'),
         configType: 'flat',
         failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
         context: paths.appSrc,
@@ -792,7 +792,6 @@ module.exports = function (webpackEnv) {
         ),
         // ESLint class options
         cwd: paths.appPath,
-        resolvePluginsRelativeTo: __dirname,
       }),
       !disableStyleLintPlugin
       && new StyleLintPlugin({
