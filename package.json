@@ -31,20 +31,18 @@
   },
   "scripts": {
     "badge": "ts-node scripts/badge.ts",
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
+    "build": "pnpm -r run build",
     "build:docs": "pnpm --filter bod-website build:docs",
     "canary": "ts-node scripts/canary.ts",
-    "clean": "lerna clean --yes",
-    "format": "lerna run format",
-    "lint": "lerna run lint",
+    "format": "pnpm -r run format",
+    "lint": "pnpm -r run lint",
     "release": "ts-node scripts/release.ts --push",
     "start": "pnpm start:template",
-    "start:all": "lerna run start",
+    "start:all": "pnpm -r run start",
     "start:bod": "pnpm --filter bod start",
     "start:template": "pnpm --filter cra-template-bod start",
     "test": "jest --watch",
-    "test:all": "lerna run test && jest"
+    "test:all": "pnpm -r run test && jest"
   },
   "devDependencies": {
     "@dg-scripts/eslint-config": "workspace:*",
