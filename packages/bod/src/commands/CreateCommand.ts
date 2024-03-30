@@ -27,9 +27,9 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app@latest',
         '--template',
-        '@sabertazimi',
+        '@sabertazimi/cra-template@latest',
         '--scripts-version',
-        '@sabertazimi/react-scripts',
+        '@sabertazimi/react-scripts@latest',
       ],
     },
     {
@@ -39,9 +39,9 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app@latest',
         '--template',
-        '@sabertazimi/typescript',
+        '@sabertazimi/cra-template-typescript@latest',
         '--scripts-version',
-        '@sabertazimi/react-scripts',
+        '@sabertazimi/react-scripts@latest',
       ],
     },
     {
@@ -51,9 +51,9 @@ class CreateCommand extends BaseCommand {
       args: [
         'create-react-app@latest',
         '--template',
-        'bod',
+        'cra-template-bod@latest',
         '--scripts-version',
-        '@sabertazimi/react-scripts',
+        '@sabertazimi/react-scripts@latest',
       ],
     },
   ]
