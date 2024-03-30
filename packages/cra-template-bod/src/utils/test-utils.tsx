@@ -28,7 +28,6 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
    * testing components with unique store requirements or when isolating
    * tests from a global store state. The custom store should be configured
    * to match the structure and middleware of the store used by the application.
-   *
    * @default makeStore(preloadedState)
    */
   store?: AppStore
@@ -37,15 +36,14 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
 /**
  * Renders the given React element with Redux Provider and custom store.
  * This function is useful for testing components that are connected to the Redux store.
- *
- * @param ui - The React component or element to render.
- * @param extendedRenderOptions - Optional configuration options for rendering. This includes `preloadedState` for initial Redux state and `store` for a specific Redux store instance. Any additional properties are passed to React Testing Library's render function.
- * @returns An object containing the Redux store used in the render, User event API for simulating user interactions in tests, and all of React Testing Library's query functions for testing the component.
+ * @param {ReactElement} ui The React component or element to render.
+ * @param {ExtendedRenderOptions} extendedRenderOptions Optional configuration options for rendering. This includes `preloadedState` for initial Redux state and `store` for a specific Redux store instance. Any additional properties are passed to React Testing Library's render function.
+ * @returns {Object} An object containing the Redux store used in the render, User event API for simulating user interactions in tests, and all of React Testing Library's query functions for testing the component.
  */
-export const renderWithProviders = (
+export function renderWithProviders(
   ui: ReactElement,
-  extendedRenderOptions: ExtendedRenderOptions = {}
-) => {
+  extendedRenderOptions: ExtendedRenderOptions = {},
+) {
   const {
     preloadedState = {},
     // Automatically create a store instance if no store was passed in
@@ -53,11 +51,18 @@ export const renderWithProviders = (
     ...renderOptions
   } = extendedRenderOptions
 
-  const Wrapper = ({ children }: PropsWithChildren) => (
-    <Provider store={store}>
-      <BrowserRouter>{children}</BrowserRouter>
-    </Provider>
-  )
+  /**
+   * Wrapper component for testing.
+   * @param {PropsWithChildren} Component The child components to be rendered.
+   * @returns {JSX.Element} The wrapped component.
+   */
+  function Wrapper({ children }: PropsWithChildren) {
+    return (
+      <Provider store={store}>
+        <BrowserRouter>{children}</BrowserRouter>
+      </Provider>
+    )
+  }
 
   // Return an object with the store and all of RTL's query functions
   return {

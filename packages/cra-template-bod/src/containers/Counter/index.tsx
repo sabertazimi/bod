@@ -10,7 +10,11 @@ import {
   selectCount,
 } from './slice'
 
-const Counter = (): JSX.Element => {
+/**
+ * Counter
+ * @returns {JSX.Element} Counter component
+ */
+function Counter(): JSX.Element {
   const dispatch = useAppDispatch()
   const count = useAppSelector(selectCount)
   const [incrementAmount, setIncrementAmount] = useState('2')

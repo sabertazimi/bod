@@ -34,6 +34,7 @@
     "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "stylelint ./src/**/*.css && eslint ./src",
     "lint:type-check": "tsc --noEmit",
+    "lint:fix": "stylelint --fix ./src/**/*.css && eslint --fix ./src",
     "start": "pnpm template:start",
     "test": "CI=true pnpm template:test",
     "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",

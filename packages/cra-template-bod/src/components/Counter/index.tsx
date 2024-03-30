@@ -12,7 +12,12 @@ interface CounterProps {
   onIncrementIfOdd: () => void
 }
 
-const Counter = ({
+/**
+ * Counter
+ * @param {CounterProps} Count props
+ * @returns {JSX.Element} Counter component
+ */
+function Counter({
   count,
   incrementAmount,
   onIncrementAmountChange,
@@ -21,43 +26,45 @@ const Counter = ({
   onIncrementAsync,
   onIncrementByAmount,
   onIncrementIfOdd,
-}: CounterProps): JSX.Element => (
-  <div>
-    <div className={styles.row}>
-      <button
-        className={styles.button}
-        aria-label="Decrement value"
-        onClick={onDecrement}
-      >
-        -
-      </button>
-      <span className={styles.value}>{count}</span>
-      <button
-        className={styles.button}
-        aria-label="Increment value"
-        onClick={onIncrement}
-      >
-        +
-      </button>
+}: CounterProps): JSX.Element {
+  return (
+    <div>
+      <div className={styles.row}>
+        <button
+          className={styles.button}
+          aria-label="Decrement value"
+          onClick={onDecrement}
+        >
+          -
+        </button>
+        <span className={styles.value}>{count}</span>
+        <button
+          className={styles.button}
+          aria-label="Increment value"
+          onClick={onIncrement}
+        >
+          +
+        </button>
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.textbox}
+          aria-label="Set increment amount"
+          value={incrementAmount}
+          onChange={e => onIncrementAmountChange(e.target.value)}
+        />
+        <button className={styles.button} onClick={onIncrementByAmount}>
+          Add Amount
+        </button>
+        <button className={styles.asyncButton} onClick={onIncrementAsync}>
+          Add Async
+        </button>
+        <button className={styles.button} onClick={onIncrementIfOdd}>
+          Add If Odd
+        </button>
+      </div>
     </div>
-    <div className={styles.row}>
-      <input
-        className={styles.textbox}
-        aria-label="Set increment amount"
-        value={incrementAmount}
-        onChange={e => onIncrementAmountChange(e.target.value)}
-      />
-      <button className={styles.button} onClick={onIncrementByAmount}>
-        Add Amount
-      </button>
-      <button className={styles.asyncButton} onClick={onIncrementAsync}>
-        Add Async
-      </button>
-      <button className={styles.button} onClick={onIncrementIfOdd}>
-        Add If Odd
-      </button>
-    </div>
-  </div>
-)
+  )
+}
 
 export default Counter

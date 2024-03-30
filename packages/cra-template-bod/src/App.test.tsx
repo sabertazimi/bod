@@ -21,9 +21,9 @@ describe('App', () => {
   test('renders learn React, Redux and Bod links', () => {
     renderWithProviders(<App />)
 
-    expect(screen.getByText(/learn/i)).toBeInTheDocument()
-    expect(screen.getByText(/react/i)).toBeInTheDocument()
-    expect(screen.getByText(/redux/i)).toBeInTheDocument()
-    expect(screen.getByText(/bod/i)).toBeInTheDocument()
+    expect(screen.getByText(/learn/iu)).toBeInTheDocument()
+    expect(screen.getByText(/react/iu)).toBeInTheDocument()
+    expect(screen.getByText(/redux/iu)).toBeInTheDocument()
+    expect(screen.getByText(/bod/iu)).toBeInTheDocument()
   })
 })

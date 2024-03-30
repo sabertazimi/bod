@@ -10,8 +10,9 @@
 // to ensure that user-provided configs don't need this boilerplate.
 
 const globals = require('globals')
-const eslint = require('@eslint/js')
+const eslintConfigESLint = require('eslint-config-eslint')
 const eslintPluginReact = require('eslint-plugin-react')
+const eslintPluginStylistic = require('@stylistic/eslint-plugin')
 const babelParser = require('@babel/eslint-parser')
 
 /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
@@ -49,7 +50,14 @@ module.exports = [
       '**/components.d.ts',
     ],
   },
-  eslint.configs.recommended,
+  ...eslintConfigESLint,
+  eslintPluginStylistic.configs['disable-legacy'],
+  eslintPluginStylistic.configs.customize({
+    indent: 2,
+    quotes: 'single',
+    semi: false,
+    jsx: true,
+  }),
   {
     languageOptions: {
       sourceType: 'module',
