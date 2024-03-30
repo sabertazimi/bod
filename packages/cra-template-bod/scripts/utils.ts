@@ -1,13 +1,13 @@
+import cp from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
 import chalk from 'chalk'
-import cp from 'child_process'
 import chokidar from 'chokidar'
 import consola from 'consola'
-import fs from 'fs'
-import path from 'path'
 
 const rootPath = path.join(__dirname, '..')
 
-const exec = (cmd: string) => {
+function exec(cmd: string) {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`)
   return cp.execSync(cmd, {
     shell: '/usr/bin/bash',
@@ -16,21 +16,22 @@ const exec = (cmd: string) => {
   })
 }
 
-const buildTemplate = () => {
+function buildTemplate() {
   exec('rm -rf template')
   exec('mkdir -p template')
   exec('cp -fr public template/')
   exec('cp -fr src template/')
   exec('cp -fr .env template/')
+  exec('cp -fr eslint.config.mjs template/')
   exec('cp -fr tailwind.config.js template/')
   exec('cp -fr tsconfig.json template/')
   exec('cp -fr README.md template/')
   exec('cp -fr .gitignore template/gitignore')
 }
 
-const buildJson = () => {
+function buildJson() {
   const packageJson = JSON.parse(
-    fs.readFileSync(path.join(rootPath, 'package.json'), 'utf8')
+    fs.readFileSync(path.join(rootPath, 'package.json'), 'utf8'),
   )
 
   const ignoreDeps = [
@@ -79,7 +80,7 @@ const buildJson = () => {
   // Write updated package.json
   fs.writeFileSync(
     path.join(rootPath, 'template.json'),
-    JSON.stringify(appPackageJson, null, 2)
+    JSON.stringify(appPackageJson, null, 2),
   )
 }
 

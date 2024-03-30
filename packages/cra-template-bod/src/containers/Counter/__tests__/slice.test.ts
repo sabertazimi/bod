@@ -21,6 +21,7 @@ describe('counter reducer', () => {
   })
 
   it('should handle initial state', () => {
+    // eslint-disable-next-line no-undefined -- Disable for testing.
     expect(counterSlice.reducer(undefined, { type: 'unknown' })).toStrictEqual({
       value: 0,
       status: 'idle',

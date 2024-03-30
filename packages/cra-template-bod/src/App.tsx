@@ -3,7 +3,11 @@ import './App.css'
 import { Counter } from './containers'
 import Logo from './logo.svg'
 
-const App = (): JSX.Element => {
+/**
+ * App entry point.
+ * @returns {JSX.Element} App component
+ */
+function App(): JSX.Element {
   return (
     <div className="bg-white text-center">
       <header className="app-header">
@@ -12,7 +16,11 @@ const App = (): JSX.Element => {
           <Route path="/" element={<Counter />} />
         </Routes>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit
+          {' '}
+          <code>src/App.tsx</code>
+          {' '}
+          and save to reload.
         </p>
         <span>
           <span>Learn </span>

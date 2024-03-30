@@ -1,20 +1,20 @@
 import { printer } from '../../utils'
 import InfoCommand from '../InfoCommand'
 
-describe('InfoCommand', () => {
+describe('infoCommand', () => {
   jest.setTimeout(20000)
 
-  test('should extends [BaseCommand] fields', () => {
+  it('should extends [BaseCommand] fields', () => {
     const infoCommand = new InfoCommand()
     expect(infoCommand.getName()).toBe('info')
     expect(infoCommand.getDescription()).toBe(
-      'Print debugging information about your environment'
+      'Print debugging information about your environment',
     )
     expect(infoCommand.getUsage()).toBe('info')
     expect(infoCommand.getAlias()).toBe('i')
   })
 
-  test('should print environment variables', async () => {
+  it('should print environment variables', async () => {
     const mockConsoleInfo = jest
       .spyOn(printer, 'info')
       .mockImplementation(jest.fn())

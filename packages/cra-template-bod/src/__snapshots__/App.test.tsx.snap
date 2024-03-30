@@ -60,11 +60,13 @@ exports[`App should render correctly (snapshot) 1`] = `
         </div>
       </div>
       <p>
-        Edit 
+        Edit
+         
         <code>
           src/App.tsx
         </code>
-         and save to reload.
+         
+        and save to reload.
       </p>
       <span>
         <span>

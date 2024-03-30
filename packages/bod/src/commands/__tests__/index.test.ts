@@ -1,6 +1,6 @@
 import { BaseCommand, CreateCommand, InfoCommand } from '../index'
 
-describe('Commands', () => {
+describe('commands', () => {
   let commands: Set<BaseCommand>
   let counts: Map<string, number>
 
@@ -22,10 +22,11 @@ describe('Commands', () => {
     counts.clear()
   })
 
-  test('should has unique name', () => {
+  it('should has unique name', () => {
     for (const command of commands) {
       const name = command.getName()
-      if (counts.has(name)) counts.set(name, (counts.get(name) as number) + 1)
+      if (counts.has(name))
+        counts.set(name, (counts.get(name) as number) + 1)
       else counts.set(name, 1)
       expect(command).toBeDefined()
     }
@@ -36,7 +37,7 @@ describe('Commands', () => {
     }
   })
 
-  test('should has unique usage', () => {
+  it('should has unique usage', () => {
     for (const command of commands) {
       const usage = command.getUsage()
       if (counts.has(usage))
@@ -51,7 +52,7 @@ describe('Commands', () => {
     }
   })
 
-  test('should has unique alias', () => {
+  it('should has unique alias', () => {
     for (const command of commands) {
       const alias = command.getAlias()
       if (counts.has(alias))

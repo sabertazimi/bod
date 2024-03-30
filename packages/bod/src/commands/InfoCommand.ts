@@ -24,7 +24,7 @@ class InfoCommand extends BaseCommand {
         showNotFound: true,
         duplicates: true,
         fullTree: true,
-      }
+      },
     )
     printer.info(envInfo)
   }

@@ -9,14 +9,14 @@ describe('Counter', () => {
     const { container } = render(
       <Counter
         count={0}
-        incrementAmount={'2'}
+        incrementAmount="2"
         onIncrementAmountChange={mockClickHandler}
         onDecrement={mockClickHandler}
         onIncrement={mockClickHandler}
         onIncrementAsync={mockClickHandler}
         onIncrementByAmount={mockClickHandler}
         onIncrementIfOdd={mockClickHandler}
-      />
+      />,
     )
 
     expect(container).toMatchSnapshot()
@@ -27,14 +27,14 @@ describe('Counter', () => {
     const { container } = render(
       <Counter
         count={0}
-        incrementAmount={'2'}
+        incrementAmount="2"
         onIncrementAmountChange={mockClickHandler}
         onDecrement={mockClickHandler}
         onIncrement={mockClickHandler}
         onIncrementAsync={mockClickHandler}
         onIncrementByAmount={mockClickHandler}
         onIncrementIfOdd={mockClickHandler}
-      />
+      />,
     )
 
     const results = await axe(container)
