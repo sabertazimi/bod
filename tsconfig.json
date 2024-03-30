@@ -21,10 +21,6 @@
     "build",
     "coverage",
     "dist",
-    "__mocks__",
-    "tests",
-    "typings",
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
+    "__mocks__"
   ]
 }

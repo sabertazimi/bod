@@ -14,7 +14,7 @@ const compat = new FlatCompat({
 export default antfu(
   {
     typescript: {
-      tsconfigPath: 'tsconfig.json',
+      tsconfigPath: ['tsconfig.json', 'packages/*/tsconfig.json'],
     },
     react: true,
     formatters: {
