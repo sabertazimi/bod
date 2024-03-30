@@ -35,6 +35,7 @@ export default antfu(
     : {},
   {
     rules: {
+      'style/brace-style': ['error', '1tbs'],
       'ts/prefer-literal-enum-member': [
         'error',
         {

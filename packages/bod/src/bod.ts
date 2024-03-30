@@ -20,8 +20,7 @@ for (const command of CommandFactory.values()) {
     .action(async (appName: string) => {
       try {
         await command.run(appName)
-      }
-      catch (error) {
+      } catch (error) {
         printer.error(error)
         program.outputHelp()
       }
