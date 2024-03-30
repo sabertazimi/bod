@@ -11,37 +11,57 @@ const compat = new FlatCompat({
   resolvePluginsRelativeTo: baseDirectory,
 })
 
+const eslintConfigNext = isPackageExists('next') && isPackageExists('eslint-config-next')
+  ? compat.config({
+    overrides: [
+      {
+        files: '**/*.{ts,tsx}',
+        extends: 'next/core-web-vitals',
+      },
+    ],
+  })
+  : {}
+
+/** @type {import('@antfu/eslint-config').OptionsConfig} */
+const eslintConfigAntfu = {
+  react: true,
+  formatters: {
+    css: true,
+    html: true,
+    markdown: 'prettier',
+  },
+}
+
+/** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
+const eslintConfigRules = {
+  rules: {
+    'style/brace-style': ['error', '1tbs'],
+    'ts/prefer-literal-enum-member': [
+      'error',
+      {
+        allowBitwiseExpressions: true,
+      },
+    ],
+  },
+}
+
+/** @type {import('@antfu/eslint-config').TypedFlatConfigItem[]} */
+const eslintConfig = [
+  eslintConfigNext,
+  eslintConfigRules,
+]
+
 export default antfu(
   {
     typescript: {
       tsconfigPath: ['tsconfig.json', 'packages/*/tsconfig.json'],
     },
-    react: true,
-    formatters: {
-      css: true,
-      html: true,
-      markdown: 'prettier',
-    },
+    ...eslintConfigAntfu,
   },
-  isPackageExists('next') && isPackageExists('eslint-config-next')
-    ? compat.config({
-      overrides: [
-        {
-          files: '**/*.{ts,tsx}',
-          extends: 'next/core-web-vitals',
-        },
-      ],
-    })
-    : {},
-  {
-    rules: {
-      'style/brace-style': ['error', '1tbs'],
-      'ts/prefer-literal-enum-member': [
-        'error',
-        {
-          allowBitwiseExpressions: true,
-        },
-      ],
-    },
-  },
+  ...eslintConfig,
+)
+
+export const disableTypeAware = antfu(
+  eslintConfigAntfu,
+  ...eslintConfig,
 )
