@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.17.0](https://github.com/sabertazimi/bod/compare/v5.16.0...v5.17.0) (2024-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @antfu/eslint-config to ^2.11.6 ([#1139](https://github.com/sabertazimi/bod/issues/1139)) ([623eab5](https://github.com/sabertazimi/bod/commit/623eab59fb89b5e834a189889513a1ce0b0b96c8))
+* **eslint-config:** project config for type-aware rules ([#1138](https://github.com/sabertazimi/bod/issues/1138)) ([b1ab580](https://github.com/sabertazimi/bod/commit/b1ab58095ae9ab65b9498060cca58ff58b1d1002))
+
+
+### Features
+
+* **eslint-config:** config for non type-aware rules ([#1141](https://github.com/sabertazimi/bod/issues/1141)) ([6900b0d](https://github.com/sabertazimi/bod/commit/6900b0de861644c61dd4baf9758ca7740330ccb9))
+
+
+
+
+
 # [5.16.0](https://github.com/sabertazimi/bod/compare/v5.15.2...v5.16.0) (2024-03-30)
 
 

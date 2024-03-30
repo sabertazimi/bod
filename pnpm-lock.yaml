@@ -340,7 +340,7 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       eslint-config-bod:
-        specifier: ^5.16.0
+        specifier: ^5.17.0
         version: link:../eslint-config-bod
       eslint-webpack-plugin:
         specifier: ^4.1.0
@@ -427,7 +427,7 @@ importers:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.3)
       stylelint-config-bod:
-        specifier: ^5.16.0
+        specifier: ^5.17.0
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -477,7 +477,7 @@ importers:
   packages/stylelint-config:
     dependencies:
       stylelint-config-bod:
-        specifier: ^5.16.0
+        specifier: ^5.17.0
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -4043,6 +4043,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -4052,6 +4053,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -4061,6 +4063,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -4070,6 +4073,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -4166,6 +4170,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -4175,6 +4180,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -4184,6 +4190,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -4193,6 +4200,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -4419,6 +4427,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -4428,6 +4437,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -4437,6 +4447,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -4446,6 +4457,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
