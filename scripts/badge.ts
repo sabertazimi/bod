@@ -5,34 +5,30 @@ import * as utils from './utils'
 
 const rootPath = path.join(__dirname, '..')
 const SummaryFilePath = path.join(rootPath, 'coverage/coverage-summary.json')
-const OutputBadgePath = path.join(rootPath, 'build')
+const OutputBadgePath = path.join(rootPath, 'dist')
 const CoverageType = ['statements', 'branches', 'functions', 'lines']
 const BadgeStyle = ['for-the-badge', 'flat', 'flat-square', 'plastic', 'social']
 
-const getCoveragePercentage = (
-  summaryFilePath: string,
-  coverageType: string
-) => {
+function getCoveragePercentage(summaryFilePath: string, coverageType: string) {
   try {
     const summary = fs.readFileSync(summaryFilePath, 'utf8')
     return JSON.parse(summary).total[coverageType].pct
   } catch (error) {
-    if (error instanceof Error) utils.error(error.message)
+    if (error instanceof Error)
+      utils.error(error.message)
     return 0
   }
 }
 
-const getBadgeColor = (percentage: number) => {
-  if (percentage < 80) return 'red'
-  if (percentage < 90) return 'yellow'
+function getBadgeColor(percentage: number) {
+  if (percentage < 80)
+    return 'red'
+  if (percentage < 90)
+    return 'yellow'
   return 'brightgreen'
 }
 
-const getBadgeUrl = (
-  summaryFilePath: string,
-  coverageType: string,
-  badgeStyle: string
-) => {
+function getBadgeUrl(summaryFilePath: string, coverageType: string, badgeStyle: string) {
   const percentage = getCoveragePercentage(summaryFilePath, coverageType)
   const coverage = `${percentage}${encodeURI('%')}`
   const color = getBadgeColor(percentage)
@@ -40,18 +36,13 @@ const getBadgeUrl = (
   return url
 }
 
-const downloadBadgeFile = async (url: string) => {
+async function downloadBadgeFile(url: string) {
   const response = await utils.fetch(url)
   const data = await response.text()
   return data
 }
 
-const generateCoverageFile = async (
-  summaryFilePath: string,
-  coverageType: string,
-  badgeStyle: string,
-  outputDir: string
-) => {
+async function generateCoverageFile(summaryFilePath: string, coverageType: string, badgeStyle: string, outputDir: string) {
   try {
     cp.spawnSync('mkdir', ['-p', outputDir])
     const badgeUrl = getBadgeUrl(summaryFilePath, coverageType, badgeStyle)
@@ -59,16 +50,17 @@ const generateCoverageFile = async (
     const file = await downloadBadgeFile(badgeUrl)
     fs.writeFileSync(output, file, { encoding: 'utf8' })
   } catch (error) {
-    if (error instanceof Error) utils.error(error.message)
+    if (error instanceof Error)
+      utils.error(error.message)
   }
 }
 
-const main = () => {
+function main() {
   generateCoverageFile(
     SummaryFilePath,
     CoverageType[3],
     BadgeStyle[0],
-    OutputBadgePath
+    OutputBadgePath,
   )
 }
 

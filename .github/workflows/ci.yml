@@ -60,10 +60,6 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-      - name: Choose package manager for CRA
-        if: ${{ matrix.package-manager == 'pnpm' }}
-        run: |
-          echo Choose package manager for CRA v5
       - name: Run unit tests
         run: |
           pnpm test:all
@@ -76,7 +72,7 @@ jobs:
         if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: badges
-          path: build
+          path: dist
 
   e2e:
     name: E2E Testing
@@ -109,10 +105,6 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-      - name: Choose package manager for CRA
-        if: ${{ matrix.package-manager == 'pnpm' }}
-        run: |
-          echo Choose package manager for CRA v5
       - name: Run e2e tests
         run: |
           cp -fr scripts/npmrc .npmrc
@@ -123,6 +115,41 @@ jobs:
         with:
           name: demos
           path: build
+
+  build:
+    name: Build Testing
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [20]
+        package-manager: [pnpm]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+      - name: Setup Node environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          architecture: x64
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+      - name: Install dependencies
+        run: |
+          pnpm install
+      - name: Build packages
+        run: |
+          pnpm build
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
+        with:
+          name: webpack
+          path: packages/webpack-template/dist
 
   docs:
     name: Documentation
@@ -200,7 +227,7 @@ jobs:
     name: Deployment
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e, docs]
+    needs: [lint, unit, e2e, build, docs]
     steps:
       - name: Download production artifacts
         uses: actions/download-artifact@v4
@@ -214,6 +241,7 @@ jobs:
           cp -fr badges/* ./build/
           cp -fr demos/* ./build/
           cp -fr docs/* ./build/
+          cp -fr webpack ./build/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
