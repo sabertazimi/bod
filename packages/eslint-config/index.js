@@ -1,7 +1,7 @@
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { isPackageExists } from 'local-pkg'
-import antfu from '@antfu/eslint-config'
+import antfu, { GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
 import { FlatCompat } from '@eslint/eslintrc'
 
 const baseDirectory = path.dirname(fileURLToPath(import.meta.url))
@@ -15,7 +15,7 @@ const eslintConfigNext = isPackageExists('next') && isPackageExists('eslint-conf
   ? compat.config({
     overrides: [
       {
-        files: '**/*.{ts,tsx}',
+        files: [GLOB_TS, GLOB_TSX],
         extends: 'next/core-web-vitals',
       },
     ],
