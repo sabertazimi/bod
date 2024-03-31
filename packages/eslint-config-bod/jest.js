@@ -13,7 +13,7 @@ const globals = require('globals')
 const eslintPluginJest = require('eslint-plugin-jest')
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library')
 
-/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
+/** @type {import('eslint').Linter.FlatConfig} */
 module.exports = {
   files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
   plugins: {

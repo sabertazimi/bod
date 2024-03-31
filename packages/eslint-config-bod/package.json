@@ -12,9 +12,11 @@
     "url": "https://github.com/sabertazimi/bod/issues"
   },
   "files": [
-    "base.js",
+    "advanced.js",
+    "basic.js",
     "index.js",
-    "jest.js"
+    "jest.js",
+    "typescript.js"
   ],
   "engines": {
     "node": ">=18.0.0"
