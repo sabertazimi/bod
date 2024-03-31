@@ -1,6 +1,6 @@
 import * as utils from './utils'
 
-const main = () => {
+function main() {
   utils.checkGitStatus()
   const commitCount = utils
     .execPipe('git rev-list --count HEAD')
@@ -9,7 +9,7 @@ const main = () => {
   const canaryVersion = `0.0.0-${commitCount}`
   utils.exec(`pnpm lerna version ${canaryVersion} --exact --no-push --yes`)
   utils.exec(
-    'pnpm yarn lerna publish from-package --dist-tag canary --no-verify-access --ignore-scripts --yes'
+    'pnpm lerna publish from-package --dist-tag canary --no-verify-access --ignore-scripts --yes',
   )
 }
 
