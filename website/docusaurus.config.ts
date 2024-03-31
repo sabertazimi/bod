@@ -66,31 +66,31 @@ const config: Config = {
           to: 'docs/intro',
           label: 'Getting Started',
           position: 'left',
-          activeBasePath: 'docs/intro',
+          activeBaseRegex: 'docs/intro',
         },
         {
           to: 'docs/bod',
           label: 'Bod CLI',
           position: 'left',
-          activeBasePath: 'docs/bod',
+          activeBaseRegex: 'docs/bod',
         },
         {
           to: 'docs/cra-template-bod',
           label: 'Bod Template',
           position: 'left',
-          activeBaseRegex: 'docs/cra-template*',
+          activeBaseRegex: 'docs/(cra-template*|webpack-template)',
         },
         {
           to: 'docs/react-scripts',
           label: 'Bod Scripts',
           position: 'left',
-          activeBasePath: 'docs/react-scripts',
+          activeBaseRegex: 'docs/react-scripts',
         },
         {
           to: 'docs/eslint-config-bod',
           label: 'Bod ESLint',
           position: 'left',
-          activeBasePath: 'docs/eslint-config-bod',
+          activeBaseRegex: 'docs/eslint-config*',
         },
         {
           to: 'docs/stylelint-config-bod',
@@ -106,6 +106,10 @@ const config: Config = {
             {
               label: 'Bod Template',
               href: 'https://sabertazimi.github.io/bod/bod',
+            },
+            {
+              label: 'Webpack Template',
+              href: 'https://sabertazimi.github.io/bod/webpack',
             },
             {
               label: 'JSX Template',
@@ -142,6 +146,10 @@ const config: Config = {
             {
               label: 'Bod Template',
               href: 'https://sabertazimi.github.io/bod/bod',
+            },
+            {
+              label: 'Webpack Template',
+              href: 'https://sabertazimi.github.io/bod/webpack',
             },
             {
               label: 'JSX Template',

@@ -4,7 +4,7 @@ authorTitle: Web Developer
 authorURL: https://github.com/sabertazimi
 authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'TSX Template'
-sidebar_position: 5
+sidebar_position: 6
 tags: [React, TypeScript, Template]
 ---
 

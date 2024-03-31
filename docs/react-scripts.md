@@ -4,7 +4,7 @@ authorTitle: Web Developer
 authorURL: https://github.com/sabertazimi
 authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod Scripts'
-sidebar_position: 6
+sidebar_position: 7
 tags: [React, CLI]
 ---
 
