@@ -1,4 +1,4 @@
-import { inquirer, spawn } from '../utils'
+import { findPackageManager, inquirer, spawn } from '../utils'
 import BaseCommand from './BaseCommand'
 
 interface Action {
@@ -15,8 +15,8 @@ interface Action {
 class CreateCommand extends BaseCommand {
   static readonly TemplateActions: Action[] = [
     {
-      name: 'Simple',
-      value: 'simple',
+      name: 'Vanilla',
+      value: 'vanilla',
       command: 'git',
       args: ['clone', '--depth=1', 'https://github.com/sabertazimi/bod'],
       postCommands: [
@@ -37,9 +37,10 @@ class CreateCommand extends BaseCommand {
     {
       name: 'React JSX',
       value: 'jsx',
-      command: 'npx',
+      command: 'npm',
       args: [
-        'create-react-app@latest',
+        'create',
+        'react-app@latest',
         '--template',
         '@sabertazimi/cra-template@latest',
         '--scripts-version',
@@ -50,9 +51,10 @@ class CreateCommand extends BaseCommand {
     {
       name: 'React TSX',
       value: 'tsx',
-      command: 'npx',
+      command: 'npm',
       args: [
-        'create-react-app@latest',
+        'create',
+        'react-app@latest',
         '--template',
         '@sabertazimi/cra-template-typescript@latest',
         '--scripts-version',
@@ -62,10 +64,11 @@ class CreateCommand extends BaseCommand {
     },
     {
       name: 'React Framework',
-      value: 'framework',
-      command: 'npx',
+      value: 'react',
+      command: 'npm',
       args: [
-        'create-react-app@latest',
+        'create',
+        'react-app@latest',
         '--template',
         'cra-template-bod@latest',
         '--scripts-version',
@@ -73,9 +76,29 @@ class CreateCommand extends BaseCommand {
       ],
       postCommands: [],
     },
+    {
+      name: 'Vue Framework',
+      value: 'vue',
+      command: 'npm',
+      args: [
+        'create',
+        'vue@latest',
+      ],
+      postCommands: [],
+    },
+    {
+      name: 'Vite Framework',
+      value: 'vite',
+      command: 'npm',
+      args: [
+        'create',
+        'vite@latest',
+      ],
+      postCommands: [],
+    },
   ]
 
-  private command = 'npx'
+  private command = 'npm'
   private commandArgs: string[] = []
   private postCommands: Action['postCommands'] = []
 
@@ -85,6 +108,8 @@ class CreateCommand extends BaseCommand {
       description: 'Create a new project powered by @sabertazimi/react-scripts',
       usage: 'create <appName>',
     })
+
+    this.resolvePackageManager()
   }
 
   public async run(appName: string): Promise<void> {
@@ -120,6 +145,14 @@ class CreateCommand extends BaseCommand {
     this.postCommands = postCommands
   }
 
+  private resolvePackageManager(): void {
+    const packageManager = findPackageManager()
+    CreateCommand.TemplateActions.forEach((action: Action) => {
+      if (action.command === 'npm')
+        action.command = packageManager
+    })
+  }
+
   private resolveAppPath(appName: string): void {
     this.commandArgs.push(appName)
 
@@ -144,7 +177,7 @@ class CreateCommand extends BaseCommand {
       )
     }
 
-    for (const postCommand of this.postCommands) {
+    this.postCommands.forEach((postCommand) => {
       const proc = spawn.sync(postCommand.command, postCommand.args, {
         stdio: 'inherit',
       })
@@ -154,7 +187,7 @@ class CreateCommand extends BaseCommand {
           `\n\`${postCommand.command} ${postCommand.args.join(' ')}\` exited.`,
         )
       }
-    }
+    })
   }
 }
 

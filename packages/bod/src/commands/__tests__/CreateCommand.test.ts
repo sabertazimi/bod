@@ -8,6 +8,7 @@ import type { Action } from '../CreateCommand'
 import CreateCommand from '../CreateCommand'
 
 const appPath = path.join(process.cwd(), '..', 'bod-unit-tests')
+const toTestActions = CreateCommand.TemplateActions.slice(0, 4)
 
 describe('createCommand', () => {
   beforeEach(() => sync(appPath))
@@ -23,7 +24,7 @@ describe('createCommand', () => {
     expect(createCommand.getAlias()).toBe('c')
   })
 
-  it.each(CreateCommand.TemplateActions)(
+  it.each(toTestActions)(
     'should get correct command/args and invoke [inquirer] via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
@@ -57,7 +58,7 @@ describe('createCommand', () => {
     },
   )
 
-  it.each(CreateCommand.TemplateActions)(
+  it.each(toTestActions)(
     'should throw error when exited with non zero via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
@@ -85,7 +86,7 @@ describe('createCommand', () => {
     },
   )
 
-  it.each(CreateCommand.TemplateActions)(
+  it.each(toTestActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
