@@ -43,14 +43,14 @@ describe('createCommand', () => {
 
       const createCommand = new CreateCommand()
       await expect(createCommand.run(appPath)).resolves.toBeUndefined()
-      const { command, args } = CreateCommand.TemplateActions.find(
+      const { command, args, postCommands } = CreateCommand.TemplateActions.find(
         action => action.value === value,
       ) as Action
       expect(createCommand.getCommand()).toBe(command)
       expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1)
       expect(createCommand.getCommandArgs()).toStrictEqual(args.concat(appPath))
-      expect(mockPrompt).toBeCalledTimes(1)
-      expect(mockSpawn).toBeCalledTimes(1)
+      expect(mockPrompt).toHaveBeenCalledTimes(1)
+      expect(mockSpawn).toHaveBeenCalledTimes(postCommands.length + 1)
 
       mockPrompt.mockRestore()
       mockSpawn.mockRestore()
@@ -77,8 +77,8 @@ describe('createCommand', () => {
 
       const createCommand = new CreateCommand()
       await expect(createCommand.run(appPath)).rejects.toThrowError()
-      expect(mockPrompt).toBeCalledTimes(1)
-      expect(mockSpawn).toBeCalledTimes(1)
+      expect(mockPrompt).toHaveBeenCalledTimes(1)
+      expect(mockSpawn).toHaveBeenCalledTimes(1)
 
       mockPrompt.mockRestore()
       mockSpawn.mockRestore()
@@ -102,7 +102,7 @@ describe('createCommand', () => {
 
       if (isCI) {
         await expect(createCommand.run(appPath)).resolves.toBeUndefined()
-        expect(mockPrompt).toBeCalledTimes(1)
+        expect(mockPrompt).toHaveBeenCalledTimes(1)
       }
 
       mockPrompt.mockRestore()
