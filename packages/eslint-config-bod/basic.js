@@ -10,12 +10,12 @@
 // to ensure that user-provided configs don't need this boilerplate.
 
 const globals = require('globals')
+const babelParser = require('@babel/eslint-parser')
 const eslintConfigESLint = require('eslint-config-eslint')
 const eslintPluginReact = require('eslint-plugin-react')
 const eslintPluginStylistic = require('@stylistic/eslint-plugin')
-const babelParser = require('@babel/eslint-parser')
 
-/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
+/** @type {import('eslint').Linter.FlatConfig[]} */
 module.exports = [
   {
     ignores: [
