@@ -37,13 +37,13 @@ you can install it with the following steps.
 First, install this package and ESLint.
 
 ```bash
-npm i -D eslint-config-bod eslint@^8.0.0
+npm i -D eslint-config-bod
 ```
 
 Then create a file named `eslint.config.js`
 with following contents in the root folder of your project:
 
-```ts
+```js
 import eslintConfigBod from 'eslint-config-bod'
 
 export default [...eslintConfigBod]
