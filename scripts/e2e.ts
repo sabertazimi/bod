@@ -1,4 +1,5 @@
 import fs from 'node:fs'
+import process from 'node:process'
 import path from 'node:path'
 import * as utils from './utils'
 
@@ -24,7 +25,7 @@ class Test {
     this.localRegistry = `http://localhost:${this.localPort}/`
     this.localRegistryConfigPath = path.join(
       this.rootPath,
-      'scripts/verdaccio.yaml'
+      'scripts/verdaccio.yaml',
     )
     this.localRegistryLogPath = path.join(this.rootPath, 'registry.log')
   }
@@ -32,7 +33,7 @@ class Test {
   startLocalRegistry() {
     utils.info('Start verdaccio server ...')
     utils.exec(
-      `nohup pnpm verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`
+      `nohup pnpm verdaccio -c ${this.localRegistryConfigPath} &>${this.localRegistryLogPath} &`,
     )
     utils.exec(`grep -q 'http address' <(tail -f ${this.localRegistryLogPath})`)
   }
@@ -40,11 +41,11 @@ class Test {
   stopLocalRegistry() {
     const localRegistryAuthStorage = path.join(
       this.rootPath,
-      'scripts/htpasswd'
+      'scripts/htpasswd',
     )
     const localRegistryBundleStorage = path.join(
       this.rootPath,
-      'scripts/storage'
+      'scripts/storage',
     )
     const localRegistryMetaStorage = path.join(this.rootPath, 'storage')
 
@@ -62,7 +63,7 @@ class Test {
     utils.info(`Publish packages to ${this.localRegistry} ...`)
     const packages = utils
       .execPipe(
-        'pnpm lerna publish prerelease --canary --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --no-verify-access --yes'
+        'pnpm lerna publish prerelease --canary --dist-tag latest --force-publish --no-changelog --no-commit-hooks --no-git-tag-version --no-push --ignore-scripts --no-verify-access --yes',
       )
       .toString()
       .replace(/\s+-/g, `\n    ${utils.color.bgBlue.black('[+]')}`) // `[+] package@version` format
@@ -104,7 +105,7 @@ class Test {
     utils.exec(`rm -fr ${this.appPath}`)
     utils.exec(
       `pnpm dlx create-react-app ${this.appName} --template ${templatePath} --scripts-version ${scriptsPath}`,
-      path.join(this.rootPath, '..')
+      path.join(this.rootPath, '..'),
     )
   }
 
@@ -115,30 +116,28 @@ class Test {
   checkJsxTemplateIntegrity() {
     utils.info('Checking template integrity ...')
 
-    const templateAssets =
-      this.exists('node_modules/@sabertazimi/react-scripts') &&
-      this.exists('src/index.js') &&
-      this.exists('public/index.html')
+    const templateAssets
+      = this.exists('node_modules/@sabertazimi/react-scripts')
+      && this.exists('src/index.js')
+      && this.exists('public/index.html')
 
-    if (!templateAssets) {
+    if (!templateAssets)
       this.handleError(Error('CRA template not installed correctly.'))
-    }
   }
 
   checkTsxTemplateIntegrity() {
     utils.info('Checking template integrity ...')
 
-    const templateAssets =
-      this.exists('node_modules/@sabertazimi/react-scripts') &&
-      this.exists('node_modules/typescript') &&
-      this.exists('tsconfig.json') &&
-      this.exists('src/index.tsx') &&
-      this.exists('public/index.html') &&
-      this.exists('src/react-app-env.d.ts')
+    const templateAssets
+      = this.exists('node_modules/@sabertazimi/react-scripts')
+      && this.exists('node_modules/typescript')
+      && this.exists('tsconfig.json')
+      && this.exists('src/index.tsx')
+      && this.exists('public/index.html')
+      && this.exists('src/react-app-env.d.ts')
 
-    if (!templateAssets) {
+    if (!templateAssets)
       this.handleError(Error('CRA template not installed correctly.'))
-    }
   }
 
   runBuildScript(templatePath: string) {
@@ -147,15 +146,14 @@ class Test {
 
     const buildAssets = this.exists('build')
 
-    if (!buildAssets) {
+    if (!buildAssets)
       this.handleError(Error('CRA `react-scripts build` failed.'))
-    }
 
     utils.exec(`rm -fr build/${templatePath}`, this.rootPath)
     utils.exec(`mkdir -p build/${templatePath}`, this.rootPath)
     utils.exec(
       `cp -fr ${this.appPath}/build/* build/${templatePath}`,
-      this.rootPath
+      this.rootPath,
     )
   }
 
@@ -172,7 +170,7 @@ class Test {
   runTest(
     templatePath: string,
     scriptsPath: string,
-    checkTemplateIntegrity: () => void
+    checkTemplateIntegrity: () => void,
   ) {
     this.runCRA(templatePath, scriptsPath)
     checkTemplateIntegrity()
@@ -189,25 +187,25 @@ class Test {
     this.runTest(
       'bod',
       '@sabertazimi/react-scripts',
-      this.checkTsxTemplateIntegrity.bind(this)
+      this.checkTsxTemplateIntegrity.bind(this),
     )
     if (utils.isCI) {
       this.runTest(
         '@sabertazimi',
         '@sabertazimi/react-scripts',
-        this.checkJsxTemplateIntegrity.bind(this)
+        this.checkJsxTemplateIntegrity.bind(this),
       )
       this.runTest(
         '@sabertazimi/typescript',
         '@sabertazimi/react-scripts',
-        this.checkTsxTemplateIntegrity.bind(this)
+        this.checkTsxTemplateIntegrity.bind(this),
       )
     }
     this.handleExit()
   }
 }
 
-const main = () => {
+function main() {
   const appName = 'bod-e2e-tests'
   const test = new Test(appName)
   test.run()
