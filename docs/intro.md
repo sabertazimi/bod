@@ -35,6 +35,7 @@ and
 
 [**Documentation**](https://sabertazimi.github.io/bod) |
 [**Bod Template**](https://sabertazimi.github.io/bod/bod) |
+[Webpack Template](https://sabertazimi.github.io/bod/webpack) |
 [JSX Template](https://sabertazimi.github.io/bod/@sabertazimi) |
 [TSX Template](https://sabertazimi.github.io/bod/@sabertazimi/typescript)
 
