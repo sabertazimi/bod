@@ -67,6 +67,9 @@ jobs:
       - name: Perform code coverage report action
         uses: codecov/codecov-action@v4
         if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
+        with:
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         if: ${{ matrix.node-version == 20 && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
