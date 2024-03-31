@@ -112,10 +112,10 @@ class CreateCommand extends BaseCommand {
     this.resolvePackageManager()
   }
 
-  public async run(appName: string): Promise<void> {
+  public async run(appName: string, additionalOptions: string[] = []): Promise<void> {
     await this.processTemplateAction()
     this.resolveAppPath(appName)
-    this.execute()
+    this.execute(additionalOptions)
   }
 
   public getCommand(): string {
@@ -166,8 +166,8 @@ class CreateCommand extends BaseCommand {
     })
   }
 
-  private execute(): void {
-    const proc = spawn.sync(this.command, this.commandArgs, {
+  private execute(additionalOptions: string[]): void {
+    const proc = spawn.sync(this.command, [...this.commandArgs, ...additionalOptions], {
       stdio: 'inherit',
     })
 
