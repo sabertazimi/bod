@@ -1,14 +1,12 @@
 import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
-import path from 'node:path'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
 import { inquirer, spawn } from '../../utils'
 import type { Action } from '../CreateCommand'
 import CreateCommand from '../CreateCommand'
 
-const appPath = path.join(process.cwd(), '..', 'bod-unit-tests')
-const toTestActions = CreateCommand.TemplateActions.slice(0, 4)
+const appPath = 'bod-unit-tests'
 
 describe('createCommand', () => {
   beforeEach(() => sync(appPath))
@@ -24,7 +22,7 @@ describe('createCommand', () => {
     expect(createCommand.getAlias()).toBe('c')
   })
 
-  it.each(toTestActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should get correct command/args and invoke [inquirer] via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
@@ -41,12 +39,21 @@ describe('createCommand', () => {
           status: 0,
         } as SpawnSyncReturns<Buffer>
       })
+      const additionalOptions
+        = value === 'vue'
+          ? ['--default']
+          : value === 'vite'
+            ? ['--template', 'vue']
+            : []
 
       const createCommand = new CreateCommand()
-      await expect(createCommand.run(appPath)).resolves.toBeUndefined()
-      const { command, args, postCommands } = CreateCommand.TemplateActions.find(
-        action => action.value === value,
-      ) as Action
+      await expect(
+        createCommand.run(appPath, additionalOptions),
+      ).resolves.toBeUndefined()
+      const { command, args, postCommands }
+        = CreateCommand.TemplateActions.find(
+          action => action.value === value,
+        ) as Action
       expect(createCommand.getCommand()).toBe(command)
       expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1)
       expect(createCommand.getCommandArgs()).toStrictEqual(args.concat(appPath))
@@ -58,7 +65,7 @@ describe('createCommand', () => {
     },
   )
 
-  it.each(toTestActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should throw error when exited with non zero via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
@@ -75,9 +82,15 @@ describe('createCommand', () => {
           status: 1,
         } as SpawnSyncReturns<Buffer>
       })
+      const additionalOptions
+        = value === 'vue'
+          ? ['--default']
+          : value === 'vite'
+            ? ['--template', 'vue']
+            : []
 
       const createCommand = new CreateCommand()
-      await expect(createCommand.run(appPath)).rejects.toThrowError()
+      await expect(createCommand.run(appPath, additionalOptions)).rejects.toThrowError()
       expect(mockPrompt).toHaveBeenCalledTimes(1)
       expect(mockSpawn).toHaveBeenCalledTimes(1)
 
@@ -86,7 +99,7 @@ describe('createCommand', () => {
     },
   )
 
-  it.each(toTestActions)(
+  it.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
       const mockPrompt = jest
@@ -98,11 +111,16 @@ describe('createCommand', () => {
 
           return promise as Promise<any> & { ui: any }
         })
-
+      const additionalOptions
+        = value === 'vue'
+          ? ['--default']
+          : value === 'vite'
+            ? ['--template', 'vue']
+            : []
       const createCommand = new CreateCommand()
 
       if (isCI) {
-        await expect(createCommand.run(appPath)).resolves.toBeUndefined()
+        await expect(createCommand.run(appPath, additionalOptions)).resolves.toBeUndefined()
         expect(mockPrompt).toHaveBeenCalledTimes(1)
       }
 
