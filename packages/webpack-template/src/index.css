@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+:root {
+  --color-primary: #7048e8;
+  --color-secondary: #495057;
+  --color-info: #1c7ed6;
+  --color-success: #37b24d;
+  --color-warning: #f59f00;
+  --color-danger: #f03e3e;
+  --font-stack: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', helvetica,
+    'Open Sans', arial, sans-serif, serif;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  font-family: var(--font-stack);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

@@ -6,6 +6,10 @@ interface Action {
   value: string
   command: string
   args: string[]
+  postCommands: {
+    command: string
+    args: string[]
+  }[]
 }
 
 class CreateCommand extends BaseCommand {
@@ -14,10 +18,20 @@ class CreateCommand extends BaseCommand {
       name: 'Simple',
       value: 'simple',
       command: 'git',
-      args: [
-        'clone',
-        '--depth=1',
-        'https://github.com/sabertazimi/boilerplate',
+      args: ['clone', '--depth=1', 'https://github.com/sabertazimi/bod'],
+      postCommands: [
+        {
+          command: 'mv',
+          args: ['appPath', 'appPath.bak'],
+        },
+        {
+          command: 'mv',
+          args: ['appPath.bak/packages/webpack-template', 'appPath'],
+        },
+        {
+          command: 'rm',
+          args: ['-rf', 'appPath.bak'],
+        },
       ],
     },
     {
@@ -31,6 +45,7 @@ class CreateCommand extends BaseCommand {
         '--scripts-version',
         '@sabertazimi/react-scripts@latest',
       ],
+      postCommands: [],
     },
     {
       name: 'React TSX',
@@ -43,6 +58,7 @@ class CreateCommand extends BaseCommand {
         '--scripts-version',
         '@sabertazimi/react-scripts@latest',
       ],
+      postCommands: [],
     },
     {
       name: 'React Framework',
@@ -55,11 +71,13 @@ class CreateCommand extends BaseCommand {
         '--scripts-version',
         '@sabertazimi/react-scripts@latest',
       ],
+      postCommands: [],
     },
   ]
 
   private command = 'npx'
   private commandArgs: string[] = []
+  private postCommands: Action['postCommands'] = []
 
   constructor() {
     super({
@@ -93,16 +111,26 @@ class CreateCommand extends BaseCommand {
       },
     ])
 
-    const { command, args } = CreateCommand.TemplateActions.find(
+    const { command, args, postCommands } = CreateCommand.TemplateActions.find(
       ({ value }: Action) => value === templateName,
     ) as Action
 
     this.command = command
     this.commandArgs = [...args]
+    this.postCommands = postCommands
   }
 
   private resolveAppPath(appName: string): void {
     this.commandArgs.push(appName)
+
+    // Resolve all 'appPath' in postCommands.
+    CreateCommand.TemplateActions.forEach(({ postCommands }: Action) => {
+      for (const postCommand of postCommands) {
+        postCommand.args = postCommand.args.map((arg) => {
+          return arg.replace('appPath', appName)
+        })
+      }
+    })
   }
 
   private execute(): void {
@@ -114,6 +142,18 @@ class CreateCommand extends BaseCommand {
       throw new Error(
         `\n\`${this.command} ${this.commandArgs.join(' ')}\` exited.`,
       )
+    }
+
+    for (const postCommand of this.postCommands) {
+      const proc = spawn.sync(postCommand.command, postCommand.args, {
+        stdio: 'inherit',
+      })
+
+      if (proc.status !== 0) {
+        throw new Error(
+          `\n\`${postCommand.command} ${postCommand.args.join(' ')}\` exited.`,
+        )
+      }
     }
   }
 }
