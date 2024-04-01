@@ -36,11 +36,11 @@
     "lint:type-check": "tsc --noEmit",
     "lint:fix": "stylelint --fix ./src/**/*.css && eslint --fix ./src",
     "start": "pnpm template:start",
-    "test": "CI=true pnpm template:test",
+    "test": "CI=true pnpm template:test --coverage",
     "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",
     "template:build": "react-scripts build",
     "template:start": "react-scripts start",
-    "template:test": "react-scripts test --coverage"
+    "template:test": "react-scripts test"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",

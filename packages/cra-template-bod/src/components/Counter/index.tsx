@@ -1,4 +1,4 @@
-import { AppDispatch } from '../../store'
+import type { AppDispatch } from '../../store'
 import styles from './index.module.css'
 
 interface CounterProps {
@@ -53,13 +53,25 @@ function Counter({
           value={incrementAmount}
           onChange={e => onIncrementAmountChange(e.target.value)}
         />
-        <button className={styles.button} onClick={onIncrementByAmount}>
+        <button
+          className={styles.button}
+          aria-label="Add Amount"
+          onClick={onIncrementByAmount}
+        >
           Add Amount
         </button>
-        <button className={styles.asyncButton} onClick={onIncrementAsync}>
+        <button
+          className={styles.asyncButton}
+          aria-label="Add Async"
+          onClick={onIncrementAsync}
+        >
           Add Async
         </button>
-        <button className={styles.button} onClick={onIncrementIfOdd}>
+        <button
+          className={styles.button}
+          aria-label="Add If Odd"
+          onClick={onIncrementIfOdd}
+        >
           Add If Odd
         </button>
       </div>
