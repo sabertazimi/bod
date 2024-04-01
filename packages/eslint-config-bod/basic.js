@@ -1,12 +1,6 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
+// @ts-check
 // This file contains the minimum ESLint configuration required for Create
-// React App support, and is used as the `baseConfig` for `eslint-loader`
+// React App support, and is used as the `basicConfig` for `eslint-loader`
 // to ensure that user-provided configs don't need this boilerplate.
 
 const globals = require('globals')
@@ -64,7 +58,7 @@ module.exports = [
       globals: {
         ...globals.browser,
         ...globals.commonjs,
-        ...globals.es6,
+        ...globals.es2015,
         ...globals.jest,
         ...globals.node,
       },

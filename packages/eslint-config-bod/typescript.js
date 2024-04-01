@@ -1,3 +1,4 @@
+// @ts-check
 const tseslint = require('typescript-eslint')
 
 /** @type {import('eslint').Linter.FlatConfig} */
