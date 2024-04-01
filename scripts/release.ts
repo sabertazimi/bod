@@ -1,12 +1,13 @@
+import process from 'node:process'
 import * as utils from './utils'
 
-const main = () => {
+function main() {
   utils.checkGitStatus()
   utils.info(`Working in directory ${process.cwd()}.`)
   const isPush = process.argv.includes('-p') || process.argv.includes('--push')
   const versionMatch = utils
     .execPipe(
-      'pnpm lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes'
+      'pnpm lerna version --force-publish --no-commit-hooks --no-git-tag-version --no-push --yes',
     )
     .toString()
     .split('\n')
@@ -20,11 +21,10 @@ const main = () => {
     utils.exec(`git commit -a -m "chore(release): ${version}"`)
     utils.exec(`git tag v${version} -s -m "v${version}"`)
 
-    if (isPush) {
+    if (isPush)
       utils.exec('git push --follow-tags')
-    } else {
+    else
       utils.info('Run `git push --follow-tags origin main` to publish.')
-    }
   }
 }
 

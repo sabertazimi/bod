@@ -225,6 +225,11 @@ jobs:
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
           pnpm lerna publish from-package --no-verify-access --ignore-scripts --yes
+      - name: Release to GitHub
+        run: |
+          npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   deploy:
     name: Deployment
