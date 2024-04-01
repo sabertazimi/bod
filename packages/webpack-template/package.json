@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/webpack-template",
-  "version": "5.18.0",
+  "version": "5.19.0",
   "packageManager": "pnpm@8.15.5",
   "description": "Minimal webpack boilerplate",
   "author": "sabertazimi",
@@ -53,8 +53,8 @@
     "@babel/plugin-transform-class-properties": "^7.24.1",
     "@babel/plugin-transform-object-rest-spread": "^7.24.1",
     "@babel/preset-env": "^7.24.3",
-    "@dg-scripts/eslint-config": "^5.18.0",
-    "@dg-scripts/stylelint-config": "^5.18.0",
+    "@dg-scripts/eslint-config": "^5.19.0",
+    "@dg-scripts/stylelint-config": "^5.19.0",
     "@svgr/webpack": "^8.1.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.2",

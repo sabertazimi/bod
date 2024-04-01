@@ -343,7 +343,7 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       eslint-config-bod:
-        specifier: ^5.18.0
+        specifier: ^5.19.0
         version: link:../eslint-config-bod
       eslint-webpack-plugin:
         specifier: ^4.1.0
@@ -430,7 +430,7 @@ importers:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.3)
       stylelint-config-bod:
-        specifier: ^5.18.0
+        specifier: ^5.19.0
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -480,7 +480,7 @@ importers:
   packages/stylelint-config:
     dependencies:
       stylelint-config-bod:
-        specifier: ^5.18.0
+        specifier: ^5.19.0
         version: link:../stylelint-config-bod
       stylelint-prettier:
         specifier: ^5.0.0
@@ -533,10 +533,10 @@ importers:
         specifier: ^7.24.3
         version: 7.24.3(@babel/core@7.24.3)
       '@dg-scripts/eslint-config':
-        specifier: ^5.18.0
+        specifier: ^5.19.0
         version: link:../eslint-config
       '@dg-scripts/stylelint-config':
-        specifier: ^5.18.0
+        specifier: ^5.19.0
         version: link:../stylelint-config
       '@svgr/webpack':
         specifier: ^8.1.0

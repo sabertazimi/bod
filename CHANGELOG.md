@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.19.0](https://github.com/sabertazimi/bod/compare/v5.18.0...v5.19.0) (2024-04-01)
+
+
+### Bug Fixes
+
+* **eslint-config:** allow uppercase title for top-level describe ([#1160](https://github.com/sabertazimi/bod/issues/1160)) ([3a08c25](https://github.com/sabertazimi/bod/commit/3a08c2516496b99431119f50b4dd0527fe31a6eb))
+
+
+### Features
+
+* **eslint-config:** add testing-library support ([#1161](https://github.com/sabertazimi/bod/issues/1161)) ([861ee93](https://github.com/sabertazimi/bod/commit/861ee93b9e71ed46f93b9a3927f8444e8591a2c0))
+
+
+
+
+
 # [5.18.0](https://github.com/sabertazimi/bod/compare/v5.17.0...v5.18.0) (2024-04-01)
 
 
