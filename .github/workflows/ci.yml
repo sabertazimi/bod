@@ -199,6 +199,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
+          fetch-depth: 0
       - name: Reattach HEAD to head ref
         run: git switch -C "$(echo ${{ github.head_ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref != '' }}
@@ -225,6 +226,11 @@ jobs:
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
           pnpm lerna publish from-package --no-verify-access --ignore-scripts --yes
+      - name: Release to GitHub
+        run: |
+          npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   deploy:
     name: Deployment

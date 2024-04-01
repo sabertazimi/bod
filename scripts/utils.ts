@@ -1,31 +1,33 @@
+import type { Buffer } from 'node:buffer'
 import cp from 'node:child_process'
+import process from 'node:process'
 import chalk from 'chalk'
 import { isCI } from 'ci-info'
 import consola from 'consola'
-import { fetch } from 'undici'
 import semver from 'semver'
+import { fetch } from 'undici'
 
-const log = (log: string): void => {
+function log(log: string): void {
   consola.log(log)
 }
 
-const info = (info: string): void => {
+function info(info: string): void {
   consola.info(chalk.blue(info))
 }
 
-const success = (success: string): void => {
+function success(success: string): void {
   consola.success(chalk.green(success))
 }
 
-const error = (error: string | Error): void => {
+function error(error: string | Error): void {
   consola.error(error)
 }
 
-const cmd = (cmd: string): void => {
+function cmd(cmd: string): void {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`)
 }
 
-const exec = (command: string, cwd?: string): Buffer => {
+function exec(command: string, cwd?: string): Buffer {
   cmd(command)
   return cp.execSync(command, {
     shell: '/usr/bin/bash',
@@ -34,7 +36,7 @@ const exec = (command: string, cwd?: string): Buffer => {
   })
 }
 
-const execPipe = (command: string, cwd?: string): Buffer => {
+function execPipe(command: string, cwd?: string): Buffer {
   cmd(command)
   return cp.execSync(command, {
     shell: '/usr/bin/bash',
@@ -43,7 +45,7 @@ const execPipe = (command: string, cwd?: string): Buffer => {
   })
 }
 
-const checkGitStatus = (): void => {
+function checkGitStatus(): void {
   info('Check git status ...')
   const gitStatus = execPipe('git status --porcelain').toString()
 
@@ -58,16 +60,16 @@ const checkGitStatus = (): void => {
 }
 
 export {
-  chalk as color,
-  fetch,
-  isCI,
-  semver,
-  log,
-  info,
-  success,
-  error,
-  cmd,
   checkGitStatus,
+  cmd,
+  chalk as color,
+  error,
   exec,
   execPipe,
+  fetch,
+  info,
+  isCI,
+  log,
+  semver,
+  success,
 }
