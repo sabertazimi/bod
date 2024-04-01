@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.18.0](https://github.com/sabertazimi/bod/compare/v5.17.0...v5.18.0) (2024-04-01)
+
+
+### Bug Fixes
+
+* **bod-tempalte:** add webpack tempalte directory ([#1143](https://github.com/sabertazimi/bod/issues/1143)) ([f212277](https://github.com/sabertazimi/bod/commit/f212277afa68c1c88e30124337887cd2a6e136ef))
+
+
+### Features
+
+* **bod-template:** add webpack template ([#1144](https://github.com/sabertazimi/bod/issues/1144)) ([e1c1efd](https://github.com/sabertazimi/bod/commit/e1c1efda93b58db8fec18a5c32b7cb13a09fa62b))
+
+
+
+
+
 # [2.10.0](https://github.com/sabertazimi/boilerplate/compare/v2.9.0...v2.10.0) (2022-05-29)
 
 

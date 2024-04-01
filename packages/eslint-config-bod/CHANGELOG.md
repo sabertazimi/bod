@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.18.0](https://github.com/sabertazimi/bod/compare/v5.17.0...v5.18.0) (2024-04-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import-x to ^0.5.0 ([#1147](https://github.com/sabertazimi/bod/issues/1147)) ([09b11a9](https://github.com/sabertazimi/bod/commit/09b11a9a4fc8427d82913a09bc20b4111f1ed713))
+* **eslint-bod:** refactor eslint-config-bod ([#1148](https://github.com/sabertazimi/bod/issues/1148)) ([40ad717](https://github.com/sabertazimi/bod/commit/40ad717df20133d0b85531b5efee39046868d0dc))
+* **eslint-config-bod:** rectify incorrect es6 globals ([#1158](https://github.com/sabertazimi/bod/issues/1158)) ([cd35e76](https://github.com/sabertazimi/bod/commit/cd35e764a9b7d12d43c7e68e5b5ec15e6c171fd4))
+
+
+
+
+
 # [5.17.0](https://github.com/sabertazimi/bod/compare/v5.16.0...v5.17.0) (2024-03-30)
 
 **Note:** Version bump only for package eslint-config-bod

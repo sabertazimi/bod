@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.18.0](https://github.com/sabertazimi/bod/compare/v5.17.0...v5.18.0) (2024-04-01)
+
+
+### Bug Fixes
+
+* **eslint-config-bod:** rectify incorrect es6 globals ([#1158](https://github.com/sabertazimi/bod/issues/1158)) ([cd35e76](https://github.com/sabertazimi/bod/commit/cd35e764a9b7d12d43c7e68e5b5ec15e6c171fd4))
+* **eslint-config:** disable tsconfig check for markdown codes ([#1157](https://github.com/sabertazimi/bod/issues/1157)) ([59673e2](https://github.com/sabertazimi/bod/commit/59673e22273067cdb2df744a848e5e5ce36fffc9))
+* **eslint-config:** use glob patterns to match files ([#1154](https://github.com/sabertazimi/bod/issues/1154)) ([1900953](https://github.com/sabertazimi/bod/commit/190095338bfd6a713feee4a4f84efdf177975a07))
+
+
+
+
+
 # [5.17.0](https://github.com/sabertazimi/bod/compare/v5.16.0...v5.17.0) (2024-03-30)
 
 

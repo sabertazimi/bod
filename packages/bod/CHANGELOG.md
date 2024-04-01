@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.18.0](https://github.com/sabertazimi/bod/compare/v5.17.0...v5.18.0) (2024-04-01)
+
+
+### Features
+
+* **bod-template:** add webpack template ([#1144](https://github.com/sabertazimi/bod/issues/1144)) ([e1c1efd](https://github.com/sabertazimi/bod/commit/e1c1efda93b58db8fec18a5c32b7cb13a09fa62b))
+* **bod:** add vue and vite template generation ([#1149](https://github.com/sabertazimi/bod/issues/1149)) ([c996e87](https://github.com/sabertazimi/bod/commit/c996e87a6f3745e329bf9283c88fa9c2a0254a47))
+
+
+
+
+
 # [5.17.0](https://github.com/sabertazimi/bod/compare/v5.16.0...v5.17.0) (2024-03-30)
 
 
