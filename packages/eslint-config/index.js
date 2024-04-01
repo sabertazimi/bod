@@ -34,6 +34,12 @@ const eslintConfigMarkdown = {
 const eslintConfigRules = {
   rules: {
     'style/brace-style': ['error', '1tbs'],
+    'test/prefer-lowercase-title': [
+      'error',
+      {
+        ignoreTopLevelDescribe: true,
+      },
+    ],
     'ts/prefer-literal-enum-member': [
       'error',
       {
