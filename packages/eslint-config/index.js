@@ -1,3 +1,4 @@
+// @ts-check
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'

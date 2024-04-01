@@ -1,3 +1,4 @@
+// @ts-check
 const restrictedGlobals = require('confusing-browser-globals')
 const eslintPluginImport = require('eslint-plugin-import-x')
 const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y')
