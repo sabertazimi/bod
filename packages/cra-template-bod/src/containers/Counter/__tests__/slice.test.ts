@@ -4,7 +4,9 @@ import {
   counterSlice,
   decrement,
   increment,
+  incrementAsync,
   incrementByAmount,
+  incrementIfOdd,
   selectCount,
 } from '../slice'
 
@@ -50,5 +52,25 @@ describe('counter reducer', () => {
     store.dispatch(incrementByAmount(2))
 
     expect(selectCount(store.getState())).toBe(5)
+  })
+
+  it('should handle incrementAsync', async () => {
+    expect(selectCount(store.getState())).toBe(3)
+
+    await store.dispatch(incrementAsync(2))
+
+    expect(selectCount(store.getState())).toBe(5)
+  })
+
+  it('should handle incrementIfOdd', () => {
+    expect(selectCount(store.getState())).toBe(3)
+
+    store.dispatch(incrementIfOdd(2))
+
+    expect(selectCount(store.getState())).toBe(5)
+
+    store.dispatch(incrementIfOdd(3))
+
+    expect(selectCount(store.getState())).toBe(8)
   })
 })

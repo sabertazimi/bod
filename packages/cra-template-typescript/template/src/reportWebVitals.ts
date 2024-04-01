@@ -1,18 +1,18 @@
-import type { ReportHandler } from 'web-vitals'
+import type { ReportCallback } from 'web-vitals'
 
 /**
  * Reports web vitals to the provided callback function.
- * @param {ReportHandler} onPerfEntry The callback function to receive the web vitals data.
+ * @param {ReportCallback} onPerfEntry The callback function to receive the web vitals data.
  * @returns {void}
  */
-function reportWebVitals(onPerfEntry?: ReportHandler) {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry)
-      getFID(onPerfEntry)
-      getFCP(onPerfEntry)
-      getLCP(onPerfEntry)
-      getTTFB(onPerfEntry)
+function reportWebVitals(onPerfEntry?: ReportCallback) {
+  if (onPerfEntry && typeof onPerfEntry === 'function') {
+    import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
+      onCLS(onPerfEntry)
+      onFID(onPerfEntry)
+      onFCP(onPerfEntry)
+      onLCP(onPerfEntry)
+      onTTFB(onPerfEntry)
     })
   }
 }

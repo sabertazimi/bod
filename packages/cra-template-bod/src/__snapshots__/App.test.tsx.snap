@@ -43,16 +43,19 @@ exports[`App should render correctly (snapshot) 1`] = `
             value="2"
           />
           <button
+            aria-label="Add Amount"
             class="button"
           >
             Add Amount
           </button>
           <button
+            aria-label="Add Async"
             class="asyncButton"
           >
             Add Async
           </button>
           <button
+            aria-label="Add If Odd"
             class="button"
           >
             Add If Odd
