@@ -1,8 +1,10 @@
 // @ts-check
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_TESTS, GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
+import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_SRC, GLOB_TESTS, GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
 import { FlatCompat } from '@eslint/eslintrc'
+import eslintPluginPromise from 'eslint-plugin-promise'
+import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginTestingLibrary from 'eslint-plugin-testing-library'
 import { isPackageExists } from 'local-pkg'
 
@@ -23,7 +25,7 @@ const eslintConfigNext
         },
       ],
     })
-    : {}
+    : []
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigMarkdown = {
@@ -33,7 +35,7 @@ const eslintConfigMarkdown = {
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigTestingLibrary = {
-  files: GLOB_TESTS,
+  files: [...GLOB_TESTS],
   plugins: {
     'testing-library': eslintPluginTestingLibrary,
   },
@@ -80,6 +82,24 @@ const eslintConfigTestingLibrary = {
 }
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
+const eslintConfigSecurity = {
+  files: [GLOB_SRC],
+  ...eslintPluginSecurity.configs.recommended,
+}
+
+/** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
+const eslintConfigPromise = {
+  files: [GLOB_SRC],
+  plugins: {
+    promise: eslintPluginPromise,
+  },
+  // @ts-expect-error -- Allow assign `string` (error/warn/off) to `RuleEntry`.
+  rules: {
+    ...eslintPluginPromise.configs.recommended.rules,
+  },
+}
+
+/** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigRules = {
   rules: {
     'eslint-comments/require-description': 'error',
@@ -95,9 +115,11 @@ const eslintConfigRules = {
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem[]} */
 const eslintConfig = [
-  eslintConfigNext,
+  ...eslintConfigNext,
   eslintConfigMarkdown,
   eslintConfigTestingLibrary,
+  eslintConfigSecurity,
+  eslintConfigPromise,
   eslintConfigRules,
 ]
 
