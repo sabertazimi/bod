@@ -82,6 +82,7 @@ const eslintConfigTestingLibrary = {
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigRules = {
   rules: {
+    'eslint-comments/require-description': 'error',
     'style/brace-style': ['error', '1tbs'],
     'ts/prefer-literal-enum-member': [
       'error',
