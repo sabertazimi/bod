@@ -84,12 +84,14 @@ const eslintConfigTestingLibrary = {
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigSecurity = {
   files: [GLOB_SRC],
+  ignores: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
   ...eslintPluginSecurity.configs.recommended,
 }
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigPromise = {
   files: [GLOB_SRC],
+  ignores: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
   plugins: {
     promise: eslintPluginPromise,
   },
