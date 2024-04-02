@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.20.0](https://github.com/sabertazimi/bod/compare/v5.19.0...v5.20.0) (2024-04-02)
+
+**Note:** Version bump only for package @dg-scripts/stylelint-config
+
+
+
+
+
 # [5.19.0](https://github.com/sabertazimi/bod/compare/v5.18.0...v5.19.0) (2024-04-01)
 
 **Note:** Version bump only for package @dg-scripts/stylelint-config

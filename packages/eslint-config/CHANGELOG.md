@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.20.0](https://github.com/sabertazimi/bod/compare/v5.19.0...v5.20.0) (2024-04-02)
+
+
+### Bug Fixes
+
+* **eslint-config:** require description rule ([#1162](https://github.com/sabertazimi/bod/issues/1162)) ([58d35e8](https://github.com/sabertazimi/bod/commit/58d35e8211aefe0bde523fba7da57c1b377e65b5))
+
+
+### Features
+
+* **eslint-config:** add security and promise plugins ([#1163](https://github.com/sabertazimi/bod/issues/1163)) ([c9d49cf](https://github.com/sabertazimi/bod/commit/c9d49cfaed1b41364e620b120d359a1d4727868b))
+
+
+
+
+
 # [5.19.0](https://github.com/sabertazimi/bod/compare/v5.18.0...v5.19.0) (2024-04-01)
 
 
