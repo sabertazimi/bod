@@ -1,7 +1,7 @@
 {
   "name": "@dg-scripts/eslint-config",
   "type": "module",
-  "version": "5.20.0",
+  "version": "5.20.1",
   "description": "ESLint configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",

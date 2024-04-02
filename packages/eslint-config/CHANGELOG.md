@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.20.1](https://github.com/sabertazimi/bod/compare/v5.20.0...v5.20.1) (2024-04-02)
+
+
+### Bug Fixes
+
+* **eslint-config:** disable security rules for markdown codes ([#1164](https://github.com/sabertazimi/bod/issues/1164)) ([20987c2](https://github.com/sabertazimi/bod/commit/20987c27aa7b0c2b94fc638a0e92b75cf30817d1))
+
+
+
+
+
 # [5.20.0](https://github.com/sabertazimi/bod/compare/v5.19.0...v5.20.0) (2024-04-02)
 
 

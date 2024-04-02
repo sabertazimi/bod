@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.20.1](https://github.com/sabertazimi/bod/compare/v5.20.0...v5.20.1) (2024-04-02)
+
+**Note:** Version bump only for package stylelint-config-bod
+
+
+
+
+
 # [5.20.0](https://github.com/sabertazimi/bod/compare/v5.19.0...v5.20.0) (2024-04-02)
 
 **Note:** Version bump only for package stylelint-config-bod
