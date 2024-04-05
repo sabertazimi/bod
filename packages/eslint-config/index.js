@@ -98,6 +98,12 @@ const eslintConfigPromise = {
   // @ts-expect-error -- Allow assign `string` (error/warn/off) to `RuleEntry`.
   rules: {
     ...eslintPluginPromise.configs.recommended.rules,
+    'promise/always-return': [
+      'error',
+      {
+        ignoreLastCallback: true,
+      },
+    ],
   },
 }
 
