@@ -94,8 +94,7 @@ const hasJsxRuntime = (() => {
   try {
     require.resolve('react/jsx-runtime')
     return true
-  }
-  catch (e) {
+  } catch (e) {
     return false
   }
 })()
@@ -550,6 +549,7 @@ module.exports = function (webpackEnv) {
                 modules: {
                   mode: 'local',
                   getLocalIdent: getCSSModuleLocalIdent,
+                  namedExport: false,
                   exportLocalsConvention: 'camelCase',
                 },
               }),
