@@ -39,11 +39,11 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-testing-library": "^6.2.1",
     "globals": "^15.0.0",
-    "typescript-eslint": "^7.5.0"
+    "typescript-eslint": "^7.6.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^7.5.0"
+    "@typescript-eslint/utils": "^7.6.0"
   }
 }
