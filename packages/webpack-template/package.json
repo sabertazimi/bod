@@ -1,7 +1,7 @@
 {
   "name": "@dg-scripts/webpack-template",
   "version": "5.20.1",
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@8.15.7",
   "description": "Minimal webpack boilerplate",
   "author": "sabertazimi",
   "license": "MIT",
