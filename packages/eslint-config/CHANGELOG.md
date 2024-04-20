@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.21.0](https://github.com/sabertazimi/bod/compare/v5.20.1...v5.21.0) (2024-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1165](https://github.com/sabertazimi/bod/issues/1165)) ([cb2a01b](https://github.com/sabertazimi/bod/commit/cb2a01bc747bd24ca419501a45a5baf923278dbf))
+* **deps:** update dependencies (non-major) ([#1170](https://github.com/sabertazimi/bod/issues/1170)) ([ed0a2cc](https://github.com/sabertazimi/bod/commit/ed0a2cc5fdc6062ac4605cec66de9269abddacbe))
+* **deps:** update dependencies (non-major) ([#1176](https://github.com/sabertazimi/bod/issues/1176)) ([f33d8ea](https://github.com/sabertazimi/bod/commit/f33d8ea9e936d6ec890d003a83ad69fd4cbce0cb))
+* **deps:** update dependency eslint-plugin-security to v3 ([#1181](https://github.com/sabertazimi/bod/issues/1181)) ([1adb9e0](https://github.com/sabertazimi/bod/commit/1adb9e086488bde2213a15049b4fc54b01d5969b))
+* **eslint-config:** allow last `then` not return ([#1169](https://github.com/sabertazimi/bod/issues/1169)) ([061c950](https://github.com/sabertazimi/bod/commit/061c950bca59c0c7e02ffd9ab49d4699ecf03243))
+
+
+### Features
+
+* **eslint:** migrate from eslint-plugin-react to [@eslint-react](https://github.com/eslint-react) ([#1184](https://github.com/sabertazimi/bod/issues/1184)) ([20836f6](https://github.com/sabertazimi/bod/commit/20836f61127f2a636c5a42198d34bc2f3bde94b8))
+
+
+
+
+
 ## [5.20.1](https://github.com/sabertazimi/bod/compare/v5.20.0...v5.20.1) (2024-04-02)
 
 
