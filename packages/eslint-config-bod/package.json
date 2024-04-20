@@ -30,7 +30,7 @@
   "dependencies": {
     "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.24.1",
-    "@stylistic/eslint-plugin": "^1.7.0",
+    "@stylistic/eslint-plugin": "^1.7.2",
     "babel-preset-react-app": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-eslint": "^9.0.0",
@@ -39,11 +39,11 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^6.2.1",
+    "eslint-plugin-testing-library": "^6.2.2",
     "globals": "^15.0.0",
-    "typescript-eslint": "^7.6.0"
+    "typescript-eslint": "^7.7.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^7.6.0"
+    "@typescript-eslint/utils": "^7.7.0"
   }
 }
