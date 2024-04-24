@@ -39,7 +39,7 @@
     "lint": "stylelint README.md --config=index.js"
   },
   "peerDependencies": {
-    "stylelint": "^15.0.0 || ^16.0.0"
+    "stylelint": "^16.0.0"
   },
   "dependencies": {
     "postcss-html": "^1.6.0",

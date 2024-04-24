@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@9.0.4",
+  "packageManager": "pnpm@9.0.5",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -45,8 +45,8 @@
     "test:all": "pnpm -r run test && jest"
   },
   "devDependencies": {
-    "@dg-scripts/eslint-config": "workspace:*",
-    "@dg-scripts/stylelint-config": "workspace:*",
+    "@dg-scripts/eslint-config": "workspace:^",
+    "@dg-scripts/stylelint-config": "workspace:^",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "@types/semver": "^7.5.8",

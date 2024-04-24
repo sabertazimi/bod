@@ -41,10 +41,10 @@
   },
   "peerDependencies": {
     "prettier": "^3.0.0",
-    "stylelint": "^15.0.0 || ^16.0.0"
+    "stylelint": "^16.0.0"
   },
   "dependencies": {
-    "stylelint-config-bod": "^5.21.0",
+    "stylelint-config-bod": "workspace:^",
     "stylelint-prettier": "^5.0.0"
   },
   "devDependencies": {
