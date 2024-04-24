@@ -51,7 +51,7 @@
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "@sabertazimi/react-scripts": "workspace:*",
+    "@sabertazimi/react-scripts": "workspace:^",
     "@testing-library/dom": "^10.0.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.2",
@@ -61,10 +61,10 @@
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
-    "eslint-config-bod": "workspace:*",
+    "eslint-config-bod": "workspace:^",
     "identity-obj-proxy": "^3.0.0",
     "jest-axe": "^8.0.0",
-    "stylelint-config-bod": "workspace:*",
+    "stylelint-config-bod": "workspace:^",
     "typescript": "^5.4.5"
   },
   "stylelint": {
