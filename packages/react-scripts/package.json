@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.24.4",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.19",
     "babel-jest": "^29.7.0",
