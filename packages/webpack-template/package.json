@@ -74,7 +74,7 @@
     "postcss": "^8.4.38",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^9.5.9",
+    "postcss-preset-env": "^9.5.11",
     "prettier": "^3.2.5",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
