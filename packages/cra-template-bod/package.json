@@ -59,7 +59,7 @@
     "@types/jest": "^29.5.12",
     "@types/jest-axe": "^3.5.9",
     "@types/node": "^20.12.11",
-    "@types/react": "^18.3.1",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "eslint-config-bod": "workspace:^",
     "identity-obj-proxy": "^3.0.0",
