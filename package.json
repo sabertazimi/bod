@@ -67,6 +67,6 @@
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
     "undici": "^6.16.1",
-    "verdaccio": "^5.30.3"
+    "verdaccio": "^5.31.0"
   }
 }
