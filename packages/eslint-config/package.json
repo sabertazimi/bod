@@ -34,7 +34,7 @@
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
+    "eslint": "^8.0.0 || ^9.0.0",
     "eslint-config-next": "^14.0.0",
     "next": "^14.0.0",
     "prettier": "^3.0.0",
