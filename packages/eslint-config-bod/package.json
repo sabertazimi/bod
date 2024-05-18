@@ -41,9 +41,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-testing-library": "^6.2.2",
     "globals": "^15.2.0",
-    "typescript-eslint": "^7.8.0"
+    "typescript-eslint": "^7.9.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^7.8.0"
+    "@typescript-eslint/utils": "^7.9.0"
   }
 }
