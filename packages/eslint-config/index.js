@@ -31,6 +31,9 @@ const eslintConfigNext
 const eslintConfigMarkdown = {
   files: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
   languageOptions: { parserOptions: { project: false, program: null } },
+  rules: {
+    'react/no-leaked-conditional-rendering': 'off',
+  },
 }
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
