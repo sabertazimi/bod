@@ -24,6 +24,12 @@
     "eslint-prettier"
   ],
   "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "package.json"
+  ],
   "publishConfig": {
     "access": "public"
   },
