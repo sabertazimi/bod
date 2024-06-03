@@ -48,7 +48,7 @@
     "stylelint-prettier": "^5.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "stylelint": "^16.6.1"
   }
 }
