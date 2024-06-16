@@ -118,8 +118,8 @@ importers:
         specifier: ^5.0.7
         version: 5.0.7
       type-fest:
-        specifier: ^4.20.0
-        version: 4.20.0
+        specifier: ^4.20.1
+        version: 4.20.1
 
   packages/cra-template: {}
 
@@ -282,8 +282,8 @@ importers:
         specifier: ^6.2.2
         version: 6.2.2(eslint@8.57.0)(typescript@5.4.5)
       globals:
-        specifier: ^15.4.0
-        version: 15.4.0
+        specifier: ^15.5.0
+        version: 15.5.0
       typescript-eslint:
         specifier: ^7.13.0
         version: 7.13.0(eslint@8.57.0)(typescript@5.4.5)
@@ -299,7 +299,7 @@ importers:
         version: 7.24.7
       '@pmmmwh/react-refresh-webpack-plugin':
         specifier: ^0.5.15
-        version: 0.5.15(react-refresh@0.14.2)(type-fest@4.20.0)(webpack-dev-server@5.0.4(webpack@5.92.0))(webpack@5.92.0)
+        version: 0.5.15(react-refresh@0.14.2)(type-fest@4.20.1)(webpack-dev-server@5.0.4(webpack@5.92.0))(webpack@5.92.0)
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.4.5)
@@ -6022,8 +6022,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.4.0:
-    resolution: {integrity: sha512-unnwvMZpv0eDUyjNyh9DH/yxUaRYrEjW/qK4QcdrHg3oO11igUQrCSgODHEqxlKg8v2CD2Sd7UkqqEBoz5U7TQ==}
+  globals@15.5.0:
+    resolution: {integrity: sha512-r7/9tQj5RylGxt/BKGv0D2SvehYvRFYg4ukSNk+EuZxvWI7uK/MJFmOCLq8aKvgh3EVBYFbBlOMAtaITXZr80w==}
     engines: {node: '>=18'}
 
   globalthis@1.0.3:
@@ -10596,8 +10596,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.20.0:
-    resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
+  type-fest@4.20.1:
+    resolution: {integrity: sha512-R6wDsVsoS9xYOpy8vgeBlqpdOyzJ12HNfQhC/aAKWM3YoCV9TtunJzh/QpkMgeDhkoynDcw5f1y+qF9yc/HHyg==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -11430,7 +11430,7 @@ snapshots:
       eslint-plugin-vue: 9.26.0(eslint@8.57.0)
       eslint-plugin-yml: 1.14.0(eslint@8.57.0)
       eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.23)(eslint@8.57.0)
-      globals: 15.4.0
+      globals: 15.5.0
       jsonc-eslint-parser: 2.4.0
       local-pkg: 0.5.0
       parse-gitignore: 2.0.0
@@ -14239,7 +14239,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.20.0)(webpack-dev-server@5.0.4(webpack@5.92.0))(webpack@5.92.0)':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.20.1)(webpack-dev-server@5.0.4(webpack@5.92.0))(webpack@5.92.0)':
     dependencies:
       ansi-html: 0.0.9
       core-js-pure: 3.37.0
@@ -14251,7 +14251,7 @@ snapshots:
       source-map: 0.7.4
       webpack: 5.92.0
     optionalDependencies:
-      type-fest: 4.20.0
+      type-fest: 4.20.1
       webpack-dev-server: 5.0.4(webpack@5.92.0)
 
   '@pnpm/config.env-replace@1.1.0': {}
@@ -17482,7 +17482,7 @@ snapshots:
       eslint: 8.57.0
       eslint-plugin-es-x: 7.6.0(eslint@8.57.0)
       get-tsconfig: 4.7.3
-      globals: 15.4.0
+      globals: 15.5.0
       ignore: 5.3.1
       minimatch: 9.0.4
       semver: 7.6.2
@@ -18410,7 +18410,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.4.0: {}
+  globals@15.5.0: {}
 
   globalthis@1.0.3:
     dependencies:
@@ -24007,7 +24007,7 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.20.0: {}
+  type-fest@4.20.1: {}
 
   type-is@1.6.18:
     dependencies:
