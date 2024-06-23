@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1189](https://github.com/sabertazimi/bod/issues/1189)) ([58dbd2c](https://github.com/sabertazimi/bod/commit/58dbd2cd63b46d4038801d555269d4d8b07c1aa7))
+* **deps:** update dependencies (non-major) ([#1193](https://github.com/sabertazimi/bod/issues/1193)) ([47b7cd6](https://github.com/sabertazimi/bod/commit/47b7cd6f3704661e46c673c37489d36beb0e2127))
+* **deps:** update dependencies (non-major) ([#1194](https://github.com/sabertazimi/bod/issues/1194)) ([9162c4f](https://github.com/sabertazimi/bod/commit/9162c4f16b416f653b6e561e3733e5125ff4b840))
+* **deps:** update dependencies (non-major) ([#1198](https://github.com/sabertazimi/bod/issues/1198)) ([5f52509](https://github.com/sabertazimi/bod/commit/5f52509844b181db0e1b4f785208e33b3a47019c))
+* **deps:** update dependencies (non-major) ([#1206](https://github.com/sabertazimi/bod/issues/1206)) ([496ab0e](https://github.com/sabertazimi/bod/commit/496ab0e088ffaeec562d341ab999c39d2ff3e8f6))
+* **deps:** update dependencies (non-major) ([#1212](https://github.com/sabertazimi/bod/issues/1212)) ([c351a56](https://github.com/sabertazimi/bod/commit/c351a56c7d211d277bf6cf785ad48c166d1501b9))
+* **deps:** update dependencies (non-major) ([#1213](https://github.com/sabertazimi/bod/issues/1213)) ([24b4a06](https://github.com/sabertazimi/bod/commit/24b4a06a516e646a62ba811d5800d8e0e87db003))
+* **deps:** update dependencies (non-major) ([#1219](https://github.com/sabertazimi/bod/issues/1219)) ([a26aff7](https://github.com/sabertazimi/bod/commit/a26aff7ecc63033abb32895c6cbbd62c8c407243))
+* **deps:** update dependencies (non-major) ([#1220](https://github.com/sabertazimi/bod/issues/1220)) ([242ef39](https://github.com/sabertazimi/bod/commit/242ef39aa62b82b021b26c8633619a1cc6b242d4))
+* **deps:** update dependencies (non-major) ([#1221](https://github.com/sabertazimi/bod/issues/1221)) ([dea60b0](https://github.com/sabertazimi/bod/commit/dea60b0167cc88bc6c74f60f89e9cea04d621b59))
+* **deps:** update dependencies (non-major) ([#1222](https://github.com/sabertazimi/bod/issues/1222)) ([2925825](https://github.com/sabertazimi/bod/commit/29258254a48fec66565c1310d0c5453d2301db1d))
+* **deps:** update dependency @antfu/eslint-config to ^2.21.0 ([#1217](https://github.com/sabertazimi/bod/issues/1217)) ([699d288](https://github.com/sabertazimi/bod/commit/699d288511bff95e8a090d4a84430ff7ae532fb8))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.13 ([#1192](https://github.com/sabertazimi/bod/issues/1192)) ([3bff3b0](https://github.com/sabertazimi/bod/commit/3bff3b0963c59cdf2765e2d2b83eea21372c24ec))
+* **deps:** update dependency @stylistic/eslint-plugin to v2 ([#1201](https://github.com/sabertazimi/bod/issues/1201)) ([7834d95](https://github.com/sabertazimi/bod/commit/7834d9593f686355154ecba029341003342d6659))
+* **deps:** update dependency browserslist to ^4.23.1 ([#1218](https://github.com/sabertazimi/bod/issues/1218)) ([f4b0830](https://github.com/sabertazimi/bod/commit/f4b0830a3b57338c88e4320b615db48c562052ad))
+* **deps:** update dependency commander to ^12.1.0 ([#1208](https://github.com/sabertazimi/bod/issues/1208)) ([61585ff](https://github.com/sabertazimi/bod/commit/61585ffd80aa9ad112e8ae3f0d8e5222b95caadc))
+* **deps:** update dependency eslint-plugin-import-x to ^0.5.1 ([#1211](https://github.com/sabertazimi/bod/issues/1211)) ([201fa66](https://github.com/sabertazimi/bod/commit/201fa66bcc90d6ef1d4bcee13f819436d0fa4f0f))
+* **deps:** update dependency eslint-plugin-jest to ^28.3.0 ([#1191](https://github.com/sabertazimi/bod/issues/1191)) ([f3f46fa](https://github.com/sabertazimi/bod/commit/f3f46fa4270aebaa1fd180ae30306ef2cbd88659))
+* **deps:** update dependency eslint-plugin-jest to ^28.5.0 ([#1196](https://github.com/sabertazimi/bod/issues/1196)) ([a7481c2](https://github.com/sabertazimi/bod/commit/a7481c284fd80b3fdb17c728322c17a7980d95dc))
+* **deps:** update dependency web-vitals to v4 ([#1207](https://github.com/sabertazimi/bod/issues/1207)) ([ef8e6ae](https://github.com/sabertazimi/bod/commit/ef8e6ae416e3b43e001fa9976a38fd771e3afebd))
+
+
+
+
+
 ## [5.21.1](https://github.com/sabertazimi/bod/compare/v5.21.0...v5.21.1) (2024-04-24)
 
 **Note:** Version bump only for package create-bod-app

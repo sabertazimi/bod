@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1189](https://github.com/sabertazimi/bod/issues/1189)) ([58dbd2c](https://github.com/sabertazimi/bod/commit/58dbd2cd63b46d4038801d555269d4d8b07c1aa7))
+* **deps:** update dependencies (non-major) ([#1194](https://github.com/sabertazimi/bod/issues/1194)) ([9162c4f](https://github.com/sabertazimi/bod/commit/9162c4f16b416f653b6e561e3733e5125ff4b840))
+* **deps:** update dependencies (non-major) ([#1198](https://github.com/sabertazimi/bod/issues/1198)) ([5f52509](https://github.com/sabertazimi/bod/commit/5f52509844b181db0e1b4f785208e33b3a47019c))
+* **deps:** update dependencies (non-major) ([#1212](https://github.com/sabertazimi/bod/issues/1212)) ([c351a56](https://github.com/sabertazimi/bod/commit/c351a56c7d211d277bf6cf785ad48c166d1501b9))
+* **deps:** update dependencies (non-major) ([#1222](https://github.com/sabertazimi/bod/issues/1222)) ([2925825](https://github.com/sabertazimi/bod/commit/29258254a48fec66565c1310d0c5453d2301db1d))
+
+
+
+
+
 ## [5.21.1](https://github.com/sabertazimi/bod/compare/v5.21.0...v5.21.1) (2024-04-24)
 
 **Note:** Version bump only for package stylelint-config-bod

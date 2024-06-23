@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency web-vitals to v4 ([#1207](https://github.com/sabertazimi/bod/issues/1207)) ([ef8e6ae](https://github.com/sabertazimi/bod/commit/ef8e6ae416e3b43e001fa9976a38fd771e3afebd))
+
+
+
+
+
 ## [5.21.1](https://github.com/sabertazimi/bod/compare/v5.21.0...v5.21.1) (2024-04-24)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

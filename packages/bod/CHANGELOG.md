@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1189](https://github.com/sabertazimi/bod/issues/1189)) ([58dbd2c](https://github.com/sabertazimi/bod/commit/58dbd2cd63b46d4038801d555269d4d8b07c1aa7))
+* **deps:** update dependencies (non-major) ([#1194](https://github.com/sabertazimi/bod/issues/1194)) ([9162c4f](https://github.com/sabertazimi/bod/commit/9162c4f16b416f653b6e561e3733e5125ff4b840))
+* **deps:** update dependencies (non-major) ([#1198](https://github.com/sabertazimi/bod/issues/1198)) ([5f52509](https://github.com/sabertazimi/bod/commit/5f52509844b181db0e1b4f785208e33b3a47019c))
+* **deps:** update dependencies (non-major) ([#1221](https://github.com/sabertazimi/bod/issues/1221)) ([dea60b0](https://github.com/sabertazimi/bod/commit/dea60b0167cc88bc6c74f60f89e9cea04d621b59))
+* **deps:** update dependency commander to ^12.1.0 ([#1208](https://github.com/sabertazimi/bod/issues/1208)) ([61585ff](https://github.com/sabertazimi/bod/commit/61585ffd80aa9ad112e8ae3f0d8e5222b95caadc))
+
+
+
+
+
 ## [5.21.1](https://github.com/sabertazimi/bod/compare/v5.21.0...v5.21.1) (2024-04-24)
 
 **Note:** Version bump only for package bod

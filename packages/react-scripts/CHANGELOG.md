@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1189](https://github.com/sabertazimi/bod/issues/1189)) ([58dbd2c](https://github.com/sabertazimi/bod/commit/58dbd2cd63b46d4038801d555269d4d8b07c1aa7))
+* **deps:** update dependencies (non-major) ([#1194](https://github.com/sabertazimi/bod/issues/1194)) ([9162c4f](https://github.com/sabertazimi/bod/commit/9162c4f16b416f653b6e561e3733e5125ff4b840))
+* **deps:** update dependencies (non-major) ([#1198](https://github.com/sabertazimi/bod/issues/1198)) ([5f52509](https://github.com/sabertazimi/bod/commit/5f52509844b181db0e1b4f785208e33b3a47019c))
+* **deps:** update dependencies (non-major) ([#1206](https://github.com/sabertazimi/bod/issues/1206)) ([496ab0e](https://github.com/sabertazimi/bod/commit/496ab0e088ffaeec562d341ab999c39d2ff3e8f6))
+* **deps:** update dependencies (non-major) ([#1212](https://github.com/sabertazimi/bod/issues/1212)) ([c351a56](https://github.com/sabertazimi/bod/commit/c351a56c7d211d277bf6cf785ad48c166d1501b9))
+* **deps:** update dependencies (non-major) ([#1213](https://github.com/sabertazimi/bod/issues/1213)) ([24b4a06](https://github.com/sabertazimi/bod/commit/24b4a06a516e646a62ba811d5800d8e0e87db003))
+* **deps:** update dependencies (non-major) ([#1219](https://github.com/sabertazimi/bod/issues/1219)) ([a26aff7](https://github.com/sabertazimi/bod/commit/a26aff7ecc63033abb32895c6cbbd62c8c407243))
+* **deps:** update dependencies (non-major) ([#1222](https://github.com/sabertazimi/bod/issues/1222)) ([2925825](https://github.com/sabertazimi/bod/commit/29258254a48fec66565c1310d0c5453d2301db1d))
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.5.13 ([#1192](https://github.com/sabertazimi/bod/issues/1192)) ([3bff3b0](https://github.com/sabertazimi/bod/commit/3bff3b0963c59cdf2765e2d2b83eea21372c24ec))
+* **deps:** update dependency browserslist to ^4.23.1 ([#1218](https://github.com/sabertazimi/bod/issues/1218)) ([f4b0830](https://github.com/sabertazimi/bod/commit/f4b0830a3b57338c88e4320b615db48c562052ad))
+
+
+
+
+
 ## [5.21.1](https://github.com/sabertazimi/bod/compare/v5.21.0...v5.21.1) (2024-04-24)
 
 **Note:** Version bump only for package @sabertazimi/react-scripts
