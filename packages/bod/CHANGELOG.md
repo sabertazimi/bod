@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.3](https://github.com/sabertazimi/bod/compare/v5.21.2...v5.21.3) (2024-07-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1224](https://github.com/sabertazimi/bod/issues/1224)) ([3c6440d](https://github.com/sabertazimi/bod/commit/3c6440db3bdb21c07d1eca31fee61079d106a9fd))
+
+
+
+
+
 ## [5.21.2](https://github.com/sabertazimi/bod/compare/v5.21.1...v5.21.2) (2024-06-23)
 
 
