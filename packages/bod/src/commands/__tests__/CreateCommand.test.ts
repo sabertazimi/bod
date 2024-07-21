@@ -27,7 +27,7 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
-        .mockImplementation(() => {
+        .mockImplementation(async () => {
           const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
@@ -70,7 +70,7 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
-        .mockImplementation(() => {
+        .mockImplementation(async () => {
           const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
@@ -104,7 +104,7 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockPrompt = jest
         .spyOn(inquirer, 'prompt')
-        .mockImplementation(() => {
+        .mockImplementation(async () => {
           const promise = new Promise((resolve) => {
             resolve({ templateName: value })
           })
