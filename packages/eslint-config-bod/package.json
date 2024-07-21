@@ -34,7 +34,7 @@
     "babel-preset-react-app": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-eslint": "^9.0.0",
-    "eslint-plugin-import-x": "^0.5.3",
+    "eslint-plugin-import-x": "^3.0.1",
     "eslint-plugin-jest": "^28.6.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.35.0",
