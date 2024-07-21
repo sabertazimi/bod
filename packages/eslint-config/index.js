@@ -98,7 +98,6 @@ const eslintConfigPromise = {
   plugins: {
     promise: eslintPluginPromise,
   },
-  // @ts-expect-error -- Allow assign `string` (error/warn/off) to `RuleEntry`.
   rules: {
     ...eslintPluginPromise.configs.recommended.rules,
     'promise/always-return': [
@@ -147,7 +146,7 @@ const eslintConfigAntfu = {
 export default antfu(
   {
     typescript: {
-      tsconfigPath: ['tsconfig.json', 'packages/*/tsconfig.json'],
+      tsconfigPath: 'tsconfig.json',
     },
     ...eslintConfigAntfu,
   },
