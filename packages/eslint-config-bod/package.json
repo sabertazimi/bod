@@ -29,21 +29,21 @@
   },
   "dependencies": {
     "@babel/core": "^7.24.9",
-    "@babel/eslint-parser": "^7.24.8",
+    "@babel/eslint-parser": "^7.25.0",
     "@stylistic/eslint-plugin": "^2.3.0",
     "babel-preset-react-app": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-eslint": "^9.0.0",
-    "eslint-plugin-import-x": "^3.0.1",
+    "eslint-plugin-import-x": "^3.1.0",
     "eslint-plugin-jest": "^28.6.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-testing-library": "^6.2.2",
     "globals": "^15.8.0",
-    "typescript-eslint": "^7.16.1"
+    "typescript-eslint": "^7.17.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^7.16.1"
+    "@typescript-eslint/utils": "^7.17.0"
   }
 }
