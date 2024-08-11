@@ -7,8 +7,8 @@
   --color-success: #37b24d;
   --color-warning: #f59f00;
   --color-danger: #f03e3e;
-  --font-stack: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', helvetica,
-    'Open Sans', arial, sans-serif, serif;
+  /* stylelint-disable-next-line prettier/prettier */
+  --font-stack: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', helvetica, 'Open Sans', arial, sans-serif, serif;
 }
 
 body {
