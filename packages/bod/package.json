@@ -48,6 +48,7 @@
     "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "eslint ./src",
     "lint:type-check": "tsc --noEmit",
+    "lint:fix": "eslint --fix ./src",
     "start": "pnpm dev"
   },
   "dependencies": {
@@ -65,6 +66,6 @@
     "@types/inquirer": "^8.2.10",
     "ci-info": "^4.0.0",
     "rimraf": "^6.0.1",
-    "type-fest": "^4.24.0"
+    "type-fest": "^4.25.0"
   }
 }

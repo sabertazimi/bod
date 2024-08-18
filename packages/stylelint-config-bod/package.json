@@ -36,7 +36,8 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "lint": "stylelint README.md --config=index.js"
+    "lint": "stylelint README.md --config=index.js",
+    "lint:fix": "stylelint README.md --config=index.js --fix"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
@@ -50,6 +51,6 @@
     "stylelint-config-standard-scss": "^13.1.0"
   },
   "devDependencies": {
-    "stylelint": "^16.8.1"
+    "stylelint": "^16.8.2"
   }
 }

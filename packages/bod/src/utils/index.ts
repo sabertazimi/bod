@@ -1,5 +1,6 @@
 import process from 'node:process'
 import { color, printer } from './console'
+import type { Answers } from './core'
 import { inquirer, program } from './core'
 import { envinfo, spawn } from './os'
 
@@ -16,3 +17,4 @@ function findPackageManager(): string {
 }
 
 export { color, envinfo, findPackageManager, inquirer, printer, program, spawn }
+export type { Answers }
