@@ -2,6 +2,7 @@ import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
+import type { Answers } from '../../utils'
 import { inquirer, spawn } from '../../utils'
 import type { Action } from '../CreateCommand'
 import CreateCommand from '../CreateCommand'
@@ -32,7 +33,7 @@ describe('createCommand', () => {
             resolve({ templateName: value })
           })
 
-          return promise as Promise<any> & { ui: any }
+          return promise as Promise<Answers>
         })
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -75,7 +76,7 @@ describe('createCommand', () => {
             resolve({ templateName: value })
           })
 
-          return promise as Promise<any> & { ui: any }
+          return promise as Promise<Answers>
         })
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -109,7 +110,7 @@ describe('createCommand', () => {
             resolve({ templateName: value })
           })
 
-          return promise as Promise<any> & { ui: any }
+          return promise as Promise<Answers>
         })
       const additionalOptions
         = value === 'vue'

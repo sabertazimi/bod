@@ -6,6 +6,7 @@
     "build:post": "cp -fr build ../",
     "clear": "docusaurus clear",
     "lint": "eslint ./src && stylelint ./src/**/*.css",
+    "lint:fix": "eslint --fix ./src && stylelint --fix ./src/**/*.css",
     "serve": "docusaurus serve",
     "start": "docusaurus start"
   },

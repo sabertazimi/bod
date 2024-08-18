@@ -37,7 +37,8 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "lint": "stylelint CHANGELOG.md --config=index.js"
+    "lint": "stylelint CHANGELOG.md --config=index.js",
+    "lint:fix": "stylelint CHANGELOG.md --config=index.js --fix"
   },
   "peerDependencies": {
     "prettier": "^3.0.0",

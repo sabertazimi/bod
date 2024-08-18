@@ -36,6 +36,7 @@
     "canary": "ts-node scripts/canary.ts",
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
     "release": "ts-node scripts/release.ts --push",
     "start": "pnpm start:template",
     "start:all": "pnpm -r run start",

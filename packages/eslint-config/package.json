@@ -37,7 +37,8 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "lint": "eslint . --config=index.js"
+    "lint": "eslint . --config=index.js",
+    "lint:fix": "eslint . --config=index.js --fix"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",

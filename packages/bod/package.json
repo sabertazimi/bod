@@ -48,6 +48,7 @@
     "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "eslint ./src",
     "lint:type-check": "tsc --noEmit",
+    "lint:fix": "eslint --fix ./src",
     "start": "pnpm dev"
   },
   "dependencies": {
