@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.8.0",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -49,7 +49,7 @@
     "@dg-scripts/eslint-config": "workspace:^",
     "@dg-scripts/stylelint-config": "workspace:^",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.16.0",
+    "@types/node": "^20.16.1",
     "@types/semver": "^7.5.8",
     "chalk": "^4.1.2",
     "chokidar": "^3.6.0",
@@ -63,11 +63,11 @@
     "prettier": "^3.3.3",
     "semver": "^7.6.3",
     "stylelint": "^16.8.2",
-    "ts-jest": "^29.2.4",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "tslib": "^2.6.3",
+    "tslib": "^2.7.0",
     "typescript": "^5.5.4",
-    "undici": "^6.19.7",
+    "undici": "^6.19.8",
     "verdaccio": "^5.32.1"
   }
 }
