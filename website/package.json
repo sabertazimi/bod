@@ -24,7 +24,7 @@
     "@docusaurus/tsconfig": "3.5.2",
     "@docusaurus/types": "3.5.2",
     "@mdx-js/react": "^3.0.1",
-    "@types/node": "^20.16.1",
+    "@types/node": "^20.16.2",
     "typescript": "^5.5.4"
   },
   "browserslist": {
