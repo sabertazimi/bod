@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.11.0",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -57,7 +57,7 @@
     "concurrently": "^9.0.1",
     "consola": "^3.2.3",
     "dotenv": "^16.4.5",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "jest": "^29.7.0",
     "lerna": "^8.1.8",
     "prettier": "^3.3.3",
