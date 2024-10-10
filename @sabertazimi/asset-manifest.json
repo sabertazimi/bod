@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bod/@sabertazimi/static/css/main.29564053.css",
+    "main.js": "/bod/@sabertazimi/static/js/main.3305a2de.js",
+    "static/js/488.106c1b5e.chunk.js": "/bod/@sabertazimi/static/js/488.106c1b5e.chunk.js",
+    "index.html": "/bod/@sabertazimi/index.html",
+    "main.29564053.css.map": "/bod/@sabertazimi/static/css/main.29564053.css.map",
+    "main.3305a2de.js.map": "/bod/@sabertazimi/static/js/main.3305a2de.js.map",
+    "488.106c1b5e.chunk.js.map": "/bod/@sabertazimi/static/js/488.106c1b5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29564053.css",
+    "static/js/main.3305a2de.js"
+  ]
+}
