@@ -55,7 +55,7 @@
     "chalk": "^4.1.2",
     "commander": "^12.1.0",
     "consola": "^3.2.3",
-    "cross-spawn": "^7.0.3",
+    "cross-spawn": "^7.0.5",
     "envinfo": "^7.14.0",
     "inquirer": "^8.2.6",
     "tslib": "^2.8.1"
