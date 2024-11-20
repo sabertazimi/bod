@@ -1,9 +1,9 @@
+import type { PackageJson } from 'type-fest'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import type { PackageJson } from 'type-fest'
-import { color, printer, program } from './utils'
 import { CommandFactory } from './index'
+import { color, printer, program } from './utils'
 
 const packageJsonPath = path.join(__dirname, '../package.json')
 const packageJson = JSON.parse(

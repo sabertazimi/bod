@@ -1,6 +1,6 @@
+import type { Answers } from 'inquirer'
 import process from 'node:process'
 import { Command } from 'commander'
-import type { Answers } from 'inquirer'
 import inquirer from 'inquirer'
 
 const program = new Command()
