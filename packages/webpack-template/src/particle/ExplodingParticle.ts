@@ -91,4 +91,4 @@ class ExplodingParticle {
 }
 
 export default ExplodingParticle
-export type { Speed, ParticleProps }
+export type { ParticleProps, Speed }

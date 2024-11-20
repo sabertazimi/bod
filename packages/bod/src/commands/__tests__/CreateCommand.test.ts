@@ -1,10 +1,10 @@
 import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
+import type { Answers } from '../../utils'
+import type { Action } from '../CreateCommand'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
-import type { Answers } from '../../utils'
 import { inquirer, spawn } from '../../utils'
-import type { Action } from '../CreateCommand'
 import CreateCommand from '../CreateCommand'
 
 const appPath = 'bod-unit-tests'

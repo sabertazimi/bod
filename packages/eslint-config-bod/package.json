@@ -26,7 +26,7 @@
     "lint:fix": "eslint . --config=index.js --fix"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0 || ^9.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.26.0",
@@ -34,7 +34,7 @@
     "@stylistic/eslint-plugin": "^2.10.1",
     "babel-preset-react-app": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
-    "eslint-config-eslint": "^9.0.0",
+    "eslint-config-eslint": "^11.0.0",
     "eslint-plugin-import-x": "^4.4.2",
     "eslint-plugin-jest": "^28.9.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
