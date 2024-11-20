@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.4](https://github.com/sabertazimi/bod/compare/v5.21.3...v5.21.4) (2024-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1230](https://github.com/sabertazimi/bod/issues/1230)) ([23419f7](https://github.com/sabertazimi/bod/commit/23419f7112d34791514c63ed57859657c1fd9c00))
+* **deps:** update dependencies (non-major) ([#1236](https://github.com/sabertazimi/bod/issues/1236)) ([e0cc31e](https://github.com/sabertazimi/bod/commit/e0cc31ec8ebee81ac8e0cd0b0ec4d17eca5caba5))
+* **deps:** update dependencies (non-major) ([#1238](https://github.com/sabertazimi/bod/issues/1238)) ([bd20f3c](https://github.com/sabertazimi/bod/commit/bd20f3c9ed084a080dcc811128c458516759ecb9))
+* **deps:** update dependencies (non-major) ([#1242](https://github.com/sabertazimi/bod/issues/1242)) ([0382475](https://github.com/sabertazimi/bod/commit/0382475c64abf5bf8a3a8d7b3f4b884b17ada166))
+* **deps:** update dependencies (non-major) ([#1244](https://github.com/sabertazimi/bod/issues/1244)) ([25aed8b](https://github.com/sabertazimi/bod/commit/25aed8bcd39e406b7f79d6eecf290d356f26882d))
+* **deps:** update dependencies (non-major) ([#1245](https://github.com/sabertazimi/bod/issues/1245)) ([b68ff41](https://github.com/sabertazimi/bod/commit/b68ff41ad23f507797c71b6f6802a5843052aecd))
+* **deps:** update dependencies (non-major) ([#1246](https://github.com/sabertazimi/bod/issues/1246)) ([5cdb4a1](https://github.com/sabertazimi/bod/commit/5cdb4a1607ace5495de75873b03c951987f8e8a8))
+* **deps:** update dependencies (non-major) ([#1252](https://github.com/sabertazimi/bod/issues/1252)) ([a33ff18](https://github.com/sabertazimi/bod/commit/a33ff18206bd9da31dad208450e0f00d95289556))
+* **deps:** update dependencies (non-major) ([#1257](https://github.com/sabertazimi/bod/issues/1257)) ([a198e7b](https://github.com/sabertazimi/bod/commit/a198e7b6ce8397a9724c39ecf8f3f23e83f6fdcc))
+* **deps:** update dependencies (non-major) ([#1259](https://github.com/sabertazimi/bod/issues/1259)) ([9ab1c63](https://github.com/sabertazimi/bod/commit/9ab1c63de92e5f82b4d066633e0c0dfaba355ec0))
+* **deps:** update dependencies (non-major) ([#1260](https://github.com/sabertazimi/bod/issues/1260)) ([79ef778](https://github.com/sabertazimi/bod/commit/79ef778c6b2b368fcf982ba773c61513b1921800))
+* **deps:** update dependencies (non-major) ([#1278](https://github.com/sabertazimi/bod/issues/1278)) ([0c92be1](https://github.com/sabertazimi/bod/commit/0c92be1928e06b173d2a757103fa56b362671bb1))
+* **deps:** update dependencies (non-major) ([#1284](https://github.com/sabertazimi/bod/issues/1284)) ([ecd550b](https://github.com/sabertazimi/bod/commit/ecd550bbaa3ddefcaa098b2c789b4e0066d3e5e3))
+* **deps:** update dependency bfj to ^9.1.0 ([#1274](https://github.com/sabertazimi/bod/issues/1274)) ([d4db1d5](https://github.com/sabertazimi/bod/commit/d4db1d5493c86f5f4fcbf96d1c2cc0f4346c9e16))
+* **deps:** update dependency bfj to v9 ([#1266](https://github.com/sabertazimi/bod/issues/1266)) ([5f5dfca](https://github.com/sabertazimi/bod/commit/5f5dfca37df7d75bca36009cce91a3f18826da49))
+* **deps:** update dependency dotenv-expand to v12 ([#1286](https://github.com/sabertazimi/bod/issues/1286)) ([190cce5](https://github.com/sabertazimi/bod/commit/190cce54b1861f537635180d0e9c623ceb246f9d))
+* **deps:** update dependency postcss-normalize to v13 ([#1254](https://github.com/sabertazimi/bod/issues/1254)) ([be0d41d](https://github.com/sabertazimi/bod/commit/be0d41d1eee6d3c3f687aca4addeb2efe36a3f7f))
+
+
+
+
+
 ## [5.21.3](https://github.com/sabertazimi/bod/compare/v5.21.2...v5.21.3) (2024-07-21)
 
 

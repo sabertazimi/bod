@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.4](https://github.com/sabertazimi/bod/compare/v5.21.3...v5.21.4) (2024-11-20)
+
+
+### Bug Fixes
+
+* **templates:** update dependencies for templates ([#1287](https://github.com/sabertazimi/bod/issues/1287)) ([1cb860c](https://github.com/sabertazimi/bod/commit/1cb860c03483c6b39da29784c4bf7d88fcb774a7))
+
+
+
+
+
 ## [5.21.3](https://github.com/sabertazimi/bod/compare/v5.21.2...v5.21.3) (2024-07-21)
 
 **Note:** Version bump only for package @sabertazimi/cra-template

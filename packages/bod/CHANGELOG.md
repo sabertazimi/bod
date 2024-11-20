@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.4](https://github.com/sabertazimi/bod/compare/v5.21.3...v5.21.4) (2024-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1230](https://github.com/sabertazimi/bod/issues/1230)) ([23419f7](https://github.com/sabertazimi/bod/commit/23419f7112d34791514c63ed57859657c1fd9c00))
+* **deps:** update dependencies (non-major) ([#1242](https://github.com/sabertazimi/bod/issues/1242)) ([0382475](https://github.com/sabertazimi/bod/commit/0382475c64abf5bf8a3a8d7b3f4b884b17ada166))
+* **deps:** update dependencies (non-major) ([#1244](https://github.com/sabertazimi/bod/issues/1244)) ([25aed8b](https://github.com/sabertazimi/bod/commit/25aed8bcd39e406b7f79d6eecf290d356f26882d))
+* **deps:** update dependencies (non-major) ([#1245](https://github.com/sabertazimi/bod/issues/1245)) ([b68ff41](https://github.com/sabertazimi/bod/commit/b68ff41ad23f507797c71b6f6802a5843052aecd))
+* **deps:** update dependencies (non-major) ([#1246](https://github.com/sabertazimi/bod/issues/1246)) ([5cdb4a1](https://github.com/sabertazimi/bod/commit/5cdb4a1607ace5495de75873b03c951987f8e8a8))
+* **deps:** update dependencies (non-major) ([#1257](https://github.com/sabertazimi/bod/issues/1257)) ([a198e7b](https://github.com/sabertazimi/bod/commit/a198e7b6ce8397a9724c39ecf8f3f23e83f6fdcc))
+* **deps:** update dependencies (non-major) ([#1278](https://github.com/sabertazimi/bod/issues/1278)) ([0c92be1](https://github.com/sabertazimi/bod/commit/0c92be1928e06b173d2a757103fa56b362671bb1))
+* **deps:** update dependencies (non-major) ([#1282](https://github.com/sabertazimi/bod/issues/1282)) ([cbfb821](https://github.com/sabertazimi/bod/commit/cbfb821a9818e0046eba98ddb5fdbe74462d8b73))
+* **deps:** update dependencies (non-major) ([#1284](https://github.com/sabertazimi/bod/issues/1284)) ([ecd550b](https://github.com/sabertazimi/bod/commit/ecd550bbaa3ddefcaa098b2c789b4e0066d3e5e3))
+
+
+
+
+
 ## [5.21.3](https://github.com/sabertazimi/bod/compare/v5.21.2...v5.21.3) (2024-07-21)
 
 
