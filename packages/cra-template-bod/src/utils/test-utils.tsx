@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import type { PropsWithChildren, ReactElement } from 'react'
 import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router'
 import type { AppStore, RootState } from '../store'
 import { makeStore } from '../store'
 
