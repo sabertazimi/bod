@@ -4,3 +4,11 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom'
 import 'jest-axe/extend-expect'
+
+import { TextEncoder } from 'node:util'
+
+Object.defineProperty(globalThis, 'TextEncoder', {
+  writable: true,
+  configurable: true,
+  value: TextEncoder,
+})
