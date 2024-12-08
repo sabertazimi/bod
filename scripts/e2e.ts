@@ -203,12 +203,32 @@ class Test {
     }
     this.handleExit()
   }
+
+  runBod(templatePath: string) {
+    const bodPath = path.join(this.packagesPath, 'cra-template-bod')
+
+    utils.exec('pnpm --filter cra-template-bod template:build')
+
+    if (!fs.existsSync(path.join(bodPath, 'build'))) {
+      this.handleError(Error('CRA `react-scripts build` failed.'))
+    }
+
+    utils.exec(`rm -fr build/${templatePath}`, this.rootPath)
+    utils.exec(`mkdir -p build/${templatePath}`, this.rootPath)
+    utils.exec(
+      `cp -fr ${bodPath}/build/* build/${templatePath}`,
+      this.rootPath,
+    )
+
+    utils.exec('pnpm --filter cra-template-bod test')
+    utils.exec('pnpm --filter cra-template-bod smoke-test')
+  }
 }
 
 function main() {
   const appName = 'bod-e2e-tests'
   const test = new Test(appName)
-  test.run()
+  test.runBod('bod')
 }
 
 main()

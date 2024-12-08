@@ -38,6 +38,7 @@
     "start": "pnpm template:start",
     "test": "CI=true pnpm template:test --coverage",
     "watch": "ts-node --project=../../tsconfig.json scripts/watch.ts",
+    "smoke-test": "pnpm template:start --smoke-test",
     "template:build": "react-scripts build",
     "template:start": "react-scripts start",
     "template:test": "react-scripts test"

@@ -4,7 +4,7 @@ authorTitle: Web Developer
 authorURL: https://github.com/sabertazimi
 authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Bod StyleLint Configuration'
-sidebar_position: 11
+sidebar_position: 9
 tags: [StyleLint, CSS]
 ---
 

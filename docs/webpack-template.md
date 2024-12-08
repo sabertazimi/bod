@@ -4,7 +4,7 @@ authorTitle: Web Developer
 authorURL: https://github.com/sabertazimi
 authorImageURL: https://github.com/sabertazimi.png
 sidebar_label: 'Webpack Template'
-sidebar_position: 3
+sidebar_position: 4
 tags: [React, Webpack, Template]
 ---
 
