@@ -111,14 +111,6 @@ const config: Config = {
               label: 'Webpack Template',
               href: 'https://sabertazimi.github.io/bod/webpack',
             },
-            {
-              label: 'JSX Template',
-              href: 'https://sabertazimi.github.io/bod/@sabertazimi',
-            },
-            {
-              label: 'TSX Template',
-              href: 'https://sabertazimi.github.io/bod/@sabertazimi/typescript',
-            },
           ],
         },
         {
@@ -150,14 +142,6 @@ const config: Config = {
             {
               label: 'Webpack Template',
               href: 'https://sabertazimi.github.io/bod/webpack',
-            },
-            {
-              label: 'JSX Template',
-              href: 'https://sabertazimi.github.io/bod/@sabertazimi',
-            },
-            {
-              label: 'TSX Template',
-              href: 'https://sabertazimi.github.io/bod/@sabertazimi/typescript',
             },
           ],
         },

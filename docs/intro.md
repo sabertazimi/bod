@@ -35,9 +35,7 @@ and
 
 [**Documentation**](https://sabertazimi.github.io/bod) |
 [**Bod Template**](https://sabertazimi.github.io/bod/bod) |
-[Webpack Template](https://sabertazimi.github.io/bod/webpack) |
-[JSX Template](https://sabertazimi.github.io/bod/@sabertazimi) |
-[TSX Template](https://sabertazimi.github.io/bod/@sabertazimi/typescript)
+[Webpack Template](https://sabertazimi.github.io/bod/webpack)
 
 ## Bod CLI
 
@@ -83,8 +81,7 @@ The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod
 ### Live Demo
 
 - Bod Template [Demo](https://sabertazimi.github.io/bod/bod).
-- JSX Template [Demo](https://sabertazimi.github.io/bod/@sabertazimi).
-- TSX Template [Demo](https://sabertazimi.github.io/bod/@sabertazimi/typescript).
+- Webpack Template [Demo](https://sabertazimi.github.io/bod/webpack).
 
 ### Start with Template
 
