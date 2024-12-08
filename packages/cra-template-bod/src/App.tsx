@@ -5,9 +5,9 @@ import Logo from './logo.svg'
 
 /**
  * App entry point.
- * @returns {JSX.Element} App component
+ * @returns {React.JSX.Element} App component
  */
-function App(): JSX.Element {
+function App(): React.JSX.Element {
   return (
     <div className="bg-white text-center">
       <header className="app-header">

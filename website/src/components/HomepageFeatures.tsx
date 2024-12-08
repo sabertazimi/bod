@@ -1,14 +1,15 @@
 import clsx from 'clsx'
-import React from 'react'
 import MountainSVG from '../../static/img/undraw_docusaurus_mountain.svg'
 import ReactSVG from '../../static/img/undraw_docusaurus_react.svg'
 import TreeSVG from '../../static/img/undraw_docusaurus_tree.svg'
 import styles from './HomepageFeatures.module.css'
 
+type SVG = React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: MountainSVG,
+    Svg: MountainSVG as unknown as SVG,
     description: (
       <>
         Bod was designed from the ground up to be easily installed and used to
@@ -18,14 +19,14 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: TreeSVG,
+    Svg: TreeSVG as unknown as SVG,
     description: (
       <>Bod lets you focus on your code. App boilerplate is out of box.</>
     ),
   },
   {
     title: 'Powered by React',
-    Svg: ReactSVG,
+    Svg: ReactSVG as unknown as SVG,
     description: (
       <>
         Extend or customize template by reusing React. Bod can be extended while
@@ -40,14 +41,14 @@ function Feature({
   title,
   description,
 }: {
-  Svg: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+  Svg: SVG
   title: string
   description: React.ReactNode
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.feature} alt={title} />
+        <Svg className={styles.feature} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -57,7 +58,7 @@ function Feature({
   )
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageFeatures(): React.JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">

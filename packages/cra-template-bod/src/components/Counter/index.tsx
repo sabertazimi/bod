@@ -15,7 +15,7 @@ interface CounterProps {
 /**
  * Counter
  * @param {CounterProps} Count props
- * @returns {JSX.Element} Counter component
+ * @returns {React.JSX.Element} Counter component
  */
 function Counter({
   count,
@@ -26,7 +26,7 @@ function Counter({
   onIncrementAsync,
   onIncrementByAmount,
   onIncrementIfOdd,
-}: CounterProps): JSX.Element {
+}: CounterProps): React.JSX.Element {
   return (
     <div>
       <div className={styles.row}>
