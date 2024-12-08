@@ -12,9 +12,9 @@ import {
 
 /**
  * Counter
- * @returns {JSX.Element} Counter component
+ * @returns {React.JSX.Element} Counter component
  */
-function Counter(): JSX.Element {
+function Counter(): React.JSX.Element {
   const dispatch = useAppDispatch()
   const count = useAppSelector(selectCount)
   const [incrementAmount, setIncrementAmount] = useState('2')
