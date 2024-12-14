@@ -18,13 +18,13 @@ const compat = new FlatCompat({
 const eslintConfigNext
   = isPackageExists('next') && isPackageExists('eslint-config-next')
     ? compat.config({
-      overrides: [
-        {
-          files: [GLOB_TS, GLOB_TSX],
-          extends: 'next/core-web-vitals',
-        },
-      ],
-    })
+        overrides: [
+          {
+            files: [GLOB_TS, GLOB_TSX],
+            extends: 'next/core-web-vitals',
+          },
+        ],
+      })
     : []
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
