@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.5](https://github.com/sabertazimi/bod/compare/v5.21.4...v5.21.5) (2024-12-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1289](https://github.com/sabertazimi/bod/issues/1289)) ([6b000de](https://github.com/sabertazimi/bod/commit/6b000deefc418149cf2a0d0447483a1debbace84)), closes [facebook/docusaurus#10694](https://github.com/facebook/docusaurus/issues/10694)
+* **deps:** update dependencies (non-major) ([#1294](https://github.com/sabertazimi/bod/issues/1294)) ([b21cbb8](https://github.com/sabertazimi/bod/commit/b21cbb8fd8bd21b014f267ec8adb925060d04056))
+* **deps:** update dependencies (non-major) ([#1299](https://github.com/sabertazimi/bod/issues/1299)) ([1dc0560](https://github.com/sabertazimi/bod/commit/1dc0560800fc1b18be547c69d3709b8a8fdba705))
+* **deps:** update dependencies (non-major) ([#1302](https://github.com/sabertazimi/bod/issues/1302)) ([f03da0f](https://github.com/sabertazimi/bod/commit/f03da0ff1d3250d1c326888f9a541ef8bd9fb752))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.17.2 ([#1298](https://github.com/sabertazimi/bod/issues/1298)) ([cbc3009](https://github.com/sabertazimi/bod/commit/cbc30096a614647ec742ef5de1aa988933fc6c75))
+* **deps:** update dependency eslint-plugin-format to ^0.1.3 ([#1297](https://github.com/sabertazimi/bod/issues/1297)) ([a455ec2](https://github.com/sabertazimi/bod/commit/a455ec2079505baa0070ab5ba7249e8d05743451))
+* **deps:** update dependency eslint-plugin-testing-library to v7 ([#1292](https://github.com/sabertazimi/bod/issues/1292)) ([9c207f5](https://github.com/sabertazimi/bod/commit/9c207f5a5bf3e7fadd5d363b28822fb0d57eb011))
+* **deps:** update dependency react-router-dom to v7 ([#1290](https://github.com/sabertazimi/bod/issues/1290)) ([9757ab7](https://github.com/sabertazimi/bod/commit/9757ab7b893e68c47278eeeecac2cf0a4fb34cf7))
+* **deps:** update dependency stylelint-config-standard-scss to v14 ([#1296](https://github.com/sabertazimi/bod/issues/1296)) ([9c659d8](https://github.com/sabertazimi/bod/commit/9c659d8fe54c26dbbf2911daf43f7276efc93bea))
+* **eslint-react:** find variables used in JSX ([#1288](https://github.com/sabertazimi/bod/issues/1288)) ([dc0896b](https://github.com/sabertazimi/bod/commit/dc0896bf39a07ff003733813bf4dc0900d7b9643))
+
+
+
+
+
 ## [5.21.4](https://github.com/sabertazimi/bod/compare/v5.21.3...v5.21.4) (2024-11-20)
 
 

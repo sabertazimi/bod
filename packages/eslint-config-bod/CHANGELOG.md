@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.5](https://github.com/sabertazimi/bod/compare/v5.21.4...v5.21.5) (2024-12-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1289](https://github.com/sabertazimi/bod/issues/1289)) ([6b000de](https://github.com/sabertazimi/bod/commit/6b000deefc418149cf2a0d0447483a1debbace84)), closes [facebook/docusaurus#10694](https://github.com/facebook/docusaurus/issues/10694)
+* **deps:** update dependencies (non-major) ([#1294](https://github.com/sabertazimi/bod/issues/1294)) ([b21cbb8](https://github.com/sabertazimi/bod/commit/b21cbb8fd8bd21b014f267ec8adb925060d04056))
+* **deps:** update dependencies (non-major) ([#1299](https://github.com/sabertazimi/bod/issues/1299)) ([1dc0560](https://github.com/sabertazimi/bod/commit/1dc0560800fc1b18be547c69d3709b8a8fdba705))
+* **deps:** update dependencies (non-major) ([#1302](https://github.com/sabertazimi/bod/issues/1302)) ([f03da0f](https://github.com/sabertazimi/bod/commit/f03da0ff1d3250d1c326888f9a541ef8bd9fb752))
+* **deps:** update dependency eslint-plugin-testing-library to v7 ([#1292](https://github.com/sabertazimi/bod/issues/1292)) ([9c207f5](https://github.com/sabertazimi/bod/commit/9c207f5a5bf3e7fadd5d363b28822fb0d57eb011))
+
+
+
+
+
 ## [5.21.4](https://github.com/sabertazimi/bod/compare/v5.21.3...v5.21.4) (2024-11-20)
 
 
