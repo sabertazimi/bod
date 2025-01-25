@@ -23,11 +23,11 @@
   color: rgb(112 76 182);
   appearance: none;
   cursor: pointer;
+  outline: none;
   background: none;
   background-color: rgb(112 76 182 / 10%);
   border: 2px solid transparent;
   border-radius: 2px;
-  outline: none;
 }
 
 .async-button {
