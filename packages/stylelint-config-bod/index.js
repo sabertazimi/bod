@@ -5,6 +5,14 @@ module.exports = {
     'stylelint-config-recess-order',
   ],
   rules: {
+    'at-rule-no-deprecated': [
+      true,
+      {
+        ignoreAtRules: [
+          'apply',
+        ],
+      },
+    ],
     'at-rule-no-unknown': [
       true,
       {
