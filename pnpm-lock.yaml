@@ -245,8 +245,8 @@ importers:
         specifier: ^7.26.5
         version: 7.26.5(@babel/core@7.26.7)(eslint@9.19.0(jiti@1.21.6))
       '@stylistic/eslint-plugin':
-        specifier: ^2.13.0
-        version: 2.13.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
+        specifier: ^3.0.0
+        version: 3.0.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
       babel-preset-react-app:
         specifier: ^10.0.1
         version: 10.0.1
@@ -2925,12 +2925,6 @@ packages:
 
   '@slorber/remark-comment@1.0.0':
     resolution: {integrity: sha512-RCE24n7jsOj1M0UPvIQCHTe7fI0sFL4S2nwKVWwHyVr/wI/H8GosgsJGyhnsZoGFnD/P2hLf1mSbrrgSLN93NA==}
-
-  '@stylistic/eslint-plugin@2.13.0':
-    resolution: {integrity: sha512-RnO1SaiCFHn666wNz2QfZEFxvmiNRqhzaMXHXxXXKt+MEP7aajlPxUSMIQpKAaJfverpovEYqjBOXDq6dDcaOQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: '>=8.40.0'
 
   '@stylistic/eslint-plugin@3.0.0':
     resolution: {integrity: sha512-9GJI6iBtGjOqSsyCKUvE6Vn7qDT52hbQaoq/SwxH6A1bciymZfvBfHIIrD3E7Koi2sjzOa/MNQ2XOguHtVJOyw==}
@@ -14753,18 +14747,6 @@ snapshots:
       micromark-factory-space: 1.1.0
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
-
-  '@stylistic/eslint-plugin@2.13.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)':
-    dependencies:
-      '@typescript-eslint/utils': 8.21.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
-      eslint: 9.19.0(jiti@1.21.6)
-      eslint-visitor-keys: 4.2.0
-      espree: 10.3.0
-      estraverse: 5.3.0
-      picomatch: 4.0.2
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
 
   '@stylistic/eslint-plugin@3.0.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)':
     dependencies:
