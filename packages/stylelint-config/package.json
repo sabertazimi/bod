@@ -50,6 +50,6 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2",
-    "stylelint": "^16.13.2"
+    "stylelint": "^16.14.0"
   }
 }

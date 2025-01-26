@@ -78,7 +78,7 @@
     "prettier": "^3.4.2",
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
-    "stylelint": "^16.13.2",
+    "stylelint": "^16.14.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "ts-jest": "^29.2.5",
     "ts-loader": "^9.5.2",
