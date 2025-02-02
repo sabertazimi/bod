@@ -191,8 +191,8 @@ importers:
   packages/eslint-config:
     dependencies:
       '@antfu/eslint-config':
-        specifier: ^4.1.0
-        version: 4.1.0(@eslint-react/eslint-plugin@1.26.0(eslint@9.19.0(jiti@1.21.6))(ts-api-utils@2.0.0(typescript@5.7.3))(typescript@5.7.3))(@typescript-eslint/utils@8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3))(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-hooks@5.1.0(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.18(eslint@9.19.0(jiti@1.21.6)))(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
+        specifier: ^4.1.1
+        version: 4.1.1(@eslint-react/eslint-plugin@1.26.0(eslint@9.19.0(jiti@1.21.6))(ts-api-utils@2.0.0(typescript@5.7.3))(typescript@5.7.3))(@typescript-eslint/utils@8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3))(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-hooks@5.1.0(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.18(eslint@9.19.0(jiti@1.21.6)))(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
       '@eslint-react/eslint-plugin':
         specifier: ^1.26.0
         version: 1.26.0(eslint@9.19.0(jiti@1.21.6))(ts-api-utils@2.0.0(typescript@5.7.3))(typescript@5.7.3)
@@ -787,8 +787,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@antfu/eslint-config@4.1.0':
-    resolution: {integrity: sha512-2yainF3mBykqzsxXbHYGuLwm60sRRzQqJdLJd2IfESIGkkIkQfUI3IEGTANGpdWSmiC9jhICP7Y8yY+TSKGUQg==}
+  '@antfu/eslint-config@4.1.1':
+    resolution: {integrity: sha512-5UVRu8uC6Q9e+o49ppafvIfOT3geqo74bZNAZ1Rvx10OF8gkUh7gT6b5yEJkUeej3WHRyVw3kTTgK52To1E+VQ==}
     hasBin: true
     peerDependencies:
       '@eslint-react/eslint-plugin': ^1.19.0
@@ -5270,8 +5270,8 @@ packages:
     resolution: {integrity: sha512-AWmzAfDUUaHYZzGQguHXzh/PkKHfrwttXIglqE0xWSkJDRhionaJVT1+niI1qKYRPn/FE5CHQIZ24L1u5rYSaw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint-config-flat-gitignore@1.0.0:
-    resolution: {integrity: sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA==}
+  eslint-config-flat-gitignore@2.0.0:
+    resolution: {integrity: sha512-9iH+DZO94uxsw5iFjzqa9GfahA5oK3nA1GoJK/6u8evAtooYJMwuSWiLcGDfrdLoqdQ5/kqFJKKuMY/+SAasvg==}
     peerDependencies:
       eslint: ^9.5.0
 
@@ -5284,8 +5284,8 @@ packages:
       typescript:
         optional: true
 
-  eslint-flat-config-utils@2.0.0:
-    resolution: {integrity: sha512-AbpYwI9FBmjF6BQ8UcaDCrM750DWEB6UJzEjQEg+iWFP6UX9rGsUGJlMf7sWbW3dOA0klUEwmWGZa5FoynXU/w==}
+  eslint-flat-config-utils@2.0.1:
+    resolution: {integrity: sha512-brf0eAgQ6JlKj3bKfOTuuI7VcCZvi8ZCD1MMTVoEvS/d38j8cByZViLFALH/36+eqB17ukmfmKq3bWzGvizejA==}
 
   eslint-formatting-reporter@0.0.0:
     resolution: {integrity: sha512-k9RdyTqxqN/wNYVaTk/ds5B5rA8lgoAmvceYN7bcZMBwU7TuXx5ntewJv81eF3pIL/CiJE+pJZm36llG8yhyyw==}
@@ -5841,10 +5841,6 @@ packages:
   find-cache-dir@4.0.0:
     resolution: {integrity: sha512-9ZonPT4ZAK4a+1pUPVPZJapbi7O5qbbJPdYw/NOQWZZbVLdDTYM3A4R9z/DpAM08IDaFGsvPgiGZ82WEwUDWjg==}
     engines: {node: '>=14.16'}
-
-  find-up-simple@1.0.0:
-    resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
-    engines: {node: '>=18'}
 
   find-up@2.1.0:
     resolution: {integrity: sha512-NWzkk0jSJtTt08+FBFMvXoeZnOJD+jTtsRmBYbAIzJdX6l7dLgR7CTubCM5/eDdPUBvLCeVasP1brfVR/9/EZQ==}
@@ -11475,7 +11471,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@4.1.0(@eslint-react/eslint-plugin@1.26.0(eslint@9.19.0(jiti@1.21.6))(ts-api-utils@2.0.0(typescript@5.7.3))(typescript@5.7.3))(@typescript-eslint/utils@8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3))(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-hooks@5.1.0(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.18(eslint@9.19.0(jiti@1.21.6)))(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)':
+  '@antfu/eslint-config@4.1.1(@eslint-react/eslint-plugin@1.26.0(eslint@9.19.0(jiti@1.21.6))(ts-api-utils@2.0.0(typescript@5.7.3))(typescript@5.7.3))(@typescript-eslint/utils@8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3))(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@1.0.1(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-hooks@5.1.0(eslint@9.19.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.18(eslint@9.19.0(jiti@1.21.6)))(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)':
     dependencies:
       '@antfu/install-pkg': 1.0.0
       '@clack/prompts': 0.9.1
@@ -11486,8 +11482,8 @@ snapshots:
       '@typescript-eslint/parser': 8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
       '@vitest/eslint-plugin': 1.1.25(@typescript-eslint/utils@8.22.0(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3))(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3)
       eslint: 9.19.0(jiti@1.21.6)
-      eslint-config-flat-gitignore: 1.0.0(eslint@9.19.0(jiti@1.21.6))
-      eslint-flat-config-utils: 2.0.0
+      eslint-config-flat-gitignore: 2.0.0(eslint@9.19.0(jiti@1.21.6))
+      eslint-flat-config-utils: 2.0.1
       eslint-merge-processors: 1.0.0(eslint@9.19.0(jiti@1.21.6))
       eslint-plugin-antfu: 3.0.0(eslint@9.19.0(jiti@1.21.6))
       eslint-plugin-command: 3.0.0(eslint@9.19.0(jiti@1.21.6))
@@ -17402,11 +17398,10 @@ snapshots:
       - eslint
       - supports-color
 
-  eslint-config-flat-gitignore@1.0.0(eslint@9.19.0(jiti@1.21.6)):
+  eslint-config-flat-gitignore@2.0.0(eslint@9.19.0(jiti@1.21.6)):
     dependencies:
       '@eslint/compat': 1.2.5(eslint@9.19.0(jiti@1.21.6))
       eslint: 9.19.0(jiti@1.21.6)
-      find-up-simple: 1.0.0
 
   eslint-config-next@15.0.3(eslint@9.19.0(jiti@1.21.6))(typescript@5.7.3):
     dependencies:
@@ -17427,7 +17422,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-flat-config-utils@2.0.0:
+  eslint-flat-config-utils@2.0.1:
     dependencies:
       pathe: 2.0.2
 
@@ -18274,8 +18269,6 @@ snapshots:
     dependencies:
       common-path-prefix: 3.0.0
       pkg-dir: 7.0.0
-
-  find-up-simple@1.0.0: {}
 
   find-up@2.1.0:
     dependencies:
