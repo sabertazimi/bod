@@ -464,10 +464,6 @@ importers:
       workbox-webpack-plugin:
         specifier: ^7.3.0
         version: 7.3.0(@types/babel__core@7.20.5)(webpack@5.97.1)
-    optionalDependencies:
-      fsevents:
-        specifier: ^2.3.3
-        version: 2.3.3
     devDependencies:
       react:
         specifier: ^19.0.0
@@ -475,6 +471,10 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+    optionalDependencies:
+      fsevents:
+        specifier: ^2.3.3
+        version: 2.3.3
 
   packages/stylelint-config:
     dependencies:
