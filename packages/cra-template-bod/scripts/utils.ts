@@ -7,6 +7,11 @@ import consola from 'consola'
 
 const rootPath = path.join(__dirname, '..')
 
+/**
+ * Exec util.
+ * @param {string} cmd command to execute
+ * @returns {Object} exec result
+ */
 function exec(cmd: string) {
   console.info(`    ${chalk.bgGreen.black('[exec]')}: ${cmd}`)
   return cp.execSync(cmd, {
@@ -16,36 +21,44 @@ function exec(cmd: string) {
   })
 }
 
+/**
+ * Template build util.
+ * @returns {void}
+ */
 function buildTemplate() {
   exec('rm -rf template')
   exec('mkdir -p template')
   exec('cp -fr public template/')
   exec('cp -fr src template/')
   exec('cp -fr .env template/')
-  exec('cp -fr eslint.config.mjs template/')
+  exec('cp -fr eslint.config.js template/')
   exec('cp -fr tailwind.config.js template/')
   exec('cp -fr tsconfig.json template/')
   exec('cp -fr README.md template/')
   exec('cp -fr .gitignore template/gitignore')
 }
 
+/**
+ * JSON build util.
+ * @returns {void}
+ */
 function buildJson() {
   const packageJson = JSON.parse(
     fs.readFileSync(path.join(rootPath, 'package.json'), 'utf8'),
   )
 
-  const ignoreDeps = [
+  const ignoreDeps = new Set([
     '@sabertazimi/react-scripts',
     'eslint-config-bod',
     'react-scripts',
     'react',
     'react-dom',
     'stylelint-config-bod',
-  ]
+  ])
 
   // Remove ignored dependencies
   const appDeps = Object.keys(packageJson.dependencies)
-    .filter((dep: string) => !ignoreDeps.includes(dep))
+    .filter((dep: string) => !ignoreDeps.has(dep))
     .reduce((deps: { [key: string]: string }, dep: string) => {
       deps[dep] = packageJson.dependencies[dep]
       return deps
@@ -53,7 +66,7 @@ function buildJson() {
 
   // Remove ignored devDependencies
   const appDevDeps = Object.keys(packageJson.devDependencies)
-    .filter((dep: string) => !ignoreDeps.includes(dep))
+    .filter((dep: string) => !ignoreDeps.has(dep))
     .reduce((deps: { [key: string]: string }, dep: string) => {
       deps[dep] = packageJson.devDependencies[dep]
       return deps
