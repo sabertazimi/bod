@@ -39,12 +39,12 @@
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.1.1",
     "globals": "^16.0.0",
-    "typescript-eslint": "^8.24.1"
+    "typescript-eslint": "^8.25.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.24.1"
+    "@typescript-eslint/utils": "^8.25.0"
   }
 }
