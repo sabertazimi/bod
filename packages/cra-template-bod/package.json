@@ -64,7 +64,7 @@
     "@types/react-dom": "^19.0.4",
     "eslint-config-bod": "workspace:^",
     "identity-obj-proxy": "^3.0.0",
-    "jest-axe": "^9.0.0",
+    "jest-axe": "^10.0.0",
     "stylelint-config-bod": "workspace:^",
     "typescript": "^5.8.2"
   },
