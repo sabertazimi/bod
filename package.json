@@ -69,5 +69,8 @@
     "typescript": "^5.8.2",
     "undici": "^7.5.0",
     "verdaccio": "^6.0.5"
+  },
+  "resolutions": {
+    "ts-api-utils": "^2.1.0"
   }
 }
