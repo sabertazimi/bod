@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.10.0",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -49,7 +49,7 @@
     "@dg-scripts/eslint-config": "workspace:^",
     "@dg-scripts/stylelint-config": "workspace:^",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "@types/semver": "^7.7.0",
     "chalk": "^4.1.2",
     "chokidar": "^4.0.3",
