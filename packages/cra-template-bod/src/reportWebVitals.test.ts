@@ -1,4 +1,4 @@
-import { onCLS, onFID, onFCP, onLCP, onTTFB } from 'web-vitals'
+import { onCLS, onFCP, onINP, onLCP, onTTFB } from 'web-vitals'
 import reportWebVitals from './reportWebVitals'
 
 jest.mock('web-vitals', () => {
@@ -8,7 +8,7 @@ jest.mock('web-vitals', () => {
     __esModule: true,
     ...originalModule,
     onCLS: jest.fn(onPerfEntry => onPerfEntry('CLS')),
-    onFID: jest.fn(onPerfEntry => onPerfEntry('FID')),
+    onINP: jest.fn(onPerfEntry => onPerfEntry('INP')),
     onFCP: jest.fn(onPerfEntry => onPerfEntry('FCP')),
     onLCP: jest.fn(onPerfEntry => onPerfEntry('LCP')),
     onTTFB: jest.fn(onPerfEntry => onPerfEntry('TTFB')),
@@ -28,7 +28,7 @@ describe('reportWebVitals', () => {
     reportWebVitals(mockOnPerfEntry as any)
 
     expect(onCLS).not.toHaveBeenCalled()
-    expect(onFID).not.toHaveBeenCalled()
+    expect(onINP).not.toHaveBeenCalled()
     expect(onFCP).not.toHaveBeenCalled()
     expect(onLCP).not.toHaveBeenCalled()
     expect(onTTFB).not.toHaveBeenCalled()
