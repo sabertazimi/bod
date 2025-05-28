@@ -1,9 +1,9 @@
-import cp from 'node:child_process'
-import fs from 'node:fs'
-import path from 'node:path'
 import chalk from 'chalk'
 import chokidar from 'chokidar'
 import consola from 'consola'
+import cp from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
 
 const rootPath = path.join(__dirname, '..')
 
@@ -32,7 +32,6 @@ function buildTemplate() {
   exec('cp -fr src template/')
   exec('cp -fr .env template/')
   exec('cp -fr eslint.config.js template/')
-  exec('cp -fr tailwind.config.js template/')
   exec('cp -fr tsconfig.json template/')
   exec('cp -fr README.md template/')
   exec('cp -fr .gitignore template/gitignore')
@@ -97,4 +96,5 @@ function buildJson() {
   )
 }
 
-export { chokidar, consola as printer, rootPath, buildTemplate, buildJson }
+export { buildJson, buildTemplate, chokidar, consola as printer, rootPath }
+

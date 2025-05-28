@@ -9,23 +9,23 @@
 
 const fs = require('node:fs')
 const path = require('node:path')
-const webpack = require('webpack')
-const resolve = require('resolve')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
-const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin')
-const TerserPlugin = require('terser-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
-const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent')
 const ESLintPlugin = require('eslint-webpack-plugin')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent')
+const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin')
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin')
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
+const resolve = require('resolve')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const webpack = require('webpack')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 const ForkTsCheckerWebpackPlugin
   = process.env.TSC_COMPILE_ON_ERROR === 'true'
     ? require('react-dev-utils/ForkTsCheckerWarningWebpackPlugin')
@@ -35,9 +35,9 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const getCacheIdentifier = require('react-dev-utils/getCacheIdentifier')
 // @remove-on-eject-end
 const WebpackBar = require('webpackbar')
-const paths = require('./paths')
-const modules = require('./modules')
 const getClientEnvironment = require('./env')
+const modules = require('./modules')
+const paths = require('./paths')
 const createEnvironmentHash = require('./webpack/persistentCache/createEnvironmentHash')
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
@@ -163,7 +163,7 @@ module.exports = function (webpackEnv) {
                   'postcss-normalize',
                 ]
               : [
-                  'tailwindcss',
+                  '@tailwindcss/postcss',
                   'postcss-flexbugs-fixes',
                   [
                     'postcss-preset-env',
@@ -241,7 +241,7 @@ module.exports = function (webpackEnv) {
             .relative(paths.appSrc, info.absoluteResourcePath)
             .replace(/\\/g, '/')
         : isEnvDevelopment
-        && (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
+          && (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
     },
     cache: {
       type: 'filesystem',
@@ -648,7 +648,7 @@ module.exports = function (webpackEnv) {
       // https://github.com/facebook/create-react-app/issues/5358
       isEnvProduction
       && shouldInlineRuntimeChunk
-      && new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+[.]js/]),
+      && new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/runtime-.+\.js/]),
       // Makes some environment variables available in index.html.
       // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
       // <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
