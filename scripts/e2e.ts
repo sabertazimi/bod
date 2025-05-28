@@ -1,6 +1,6 @@
 import fs from 'node:fs'
-import process from 'node:process'
 import path from 'node:path'
+import process from 'node:process'
 import * as utils from './utils'
 
 class Test {
@@ -116,10 +116,10 @@ class Test {
   checkJsxTemplateIntegrity() {
     utils.info('Checking template integrity ...')
 
-    const templateAssets
-      = this.exists('node_modules/@sabertazimi/react-scripts')
-      && this.exists('src/index.js')
-      && this.exists('public/index.html')
+    const templateAssets =
+      this.exists('node_modules/@sabertazimi/react-scripts') &&
+      this.exists('src/index.js') &&
+      this.exists('public/index.html')
 
     if (!templateAssets)
       this.handleError(Error('CRA template not installed correctly.'))
@@ -128,13 +128,13 @@ class Test {
   checkTsxTemplateIntegrity() {
     utils.info('Checking template integrity ...')
 
-    const templateAssets
-      = this.exists('node_modules/@sabertazimi/react-scripts')
-      && this.exists('node_modules/typescript')
-      && this.exists('tsconfig.json')
-      && this.exists('src/index.tsx')
-      && this.exists('public/index.html')
-      && this.exists('src/react-app-env.d.ts')
+    const templateAssets =
+      this.exists('node_modules/@sabertazimi/react-scripts') &&
+      this.exists('node_modules/typescript') &&
+      this.exists('tsconfig.json') &&
+      this.exists('src/index.tsx') &&
+      this.exists('public/index.html') &&
+      this.exists('src/react-app-env.d.ts')
 
     if (!templateAssets)
       this.handleError(Error('CRA template not installed correctly.'))
@@ -215,20 +215,33 @@ class Test {
 
     utils.exec(`rm -fr build/${templatePath}`, this.rootPath)
     utils.exec(`mkdir -p build/${templatePath}`, this.rootPath)
-    utils.exec(
-      `cp -fr ${bodPath}/build/* build/${templatePath}`,
-      this.rootPath,
-    )
+    utils.exec(`cp -fr ${bodPath}/build/* build/${templatePath}`, this.rootPath)
 
     utils.exec('pnpm --filter cra-template-bod test')
     utils.exec('pnpm --filter cra-template-bod smoke-test')
   }
+
+  runWebpack(templatePath: string) {
+    const webpackTemplatePath = path.join(this.packagesPath, 'webpack-template')
+
+    utils.exec('pnpm --filter webpack-template build')
+
+    if (!fs.existsSync(path.join(webpackTemplatePath, 'dist'))) {
+      this.handleError(Error('Webpack template build failed.'))
+    }
+
+    utils.exec(`rm -fr build/${templatePath}`, this.rootPath)
+    utils.exec(`mkdir -p build/${templatePath}`, this.rootPath)
+    utils.exec(`cp -fr ${webpackTemplatePath}/dist/* build/${templatePath}`, this.rootPath)
+
+    utils.exec('pnpm --filter webpack-template test')
+  }
 }
 
 function main() {
-  const appName = 'bod-e2e-tests'
+  const appName = 'webpack-e2e-tests'
   const test = new Test(appName)
-  test.runBod('bod')
+  test.runWebpack('webpack-template')
 }
 
 main()
