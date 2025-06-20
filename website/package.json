@@ -13,7 +13,7 @@
   "dependencies": {
     "@docusaurus/core": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
-    "@easyops-cn/docusaurus-search-local": "^0.51.0",
+    "@easyops-cn/docusaurus-search-local": "^0.51.1",
     "clsx": "^2.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -24,7 +24,7 @@
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
     "@mdx-js/react": "^3.1.0",
-    "@types/node": "^22.15.31",
+    "@types/node": "^22.15.32",
     "typescript": "^5.8.3"
   },
   "browserslist": {
