@@ -91,7 +91,7 @@ describe('createCommand', () => {
             : []
 
       const createCommand = new CreateCommand()
-      await expect(createCommand.run(appPath, additionalOptions)).rejects.toThrowError()
+      await expect(createCommand.run(appPath, additionalOptions)).rejects.toThrow()
       expect(mockPrompt).toHaveBeenCalledTimes(1)
       expect(mockSpawn).toHaveBeenCalledTimes(1)
 
