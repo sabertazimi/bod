@@ -64,7 +64,7 @@
     "@types/cross-spawn": "^6.0.6",
     "@types/envinfo": "^7.8.4",
     "@types/inquirer": "^8.2.11",
-    "ci-info": "^4.2.0",
+    "ci-info": "^4.3.0",
     "rimraf": "^6.0.1",
     "type-fest": "^4.41.0"
   }
