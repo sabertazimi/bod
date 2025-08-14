@@ -30,7 +30,6 @@ function cmd(cmd: string): void {
 function exec(command: string, cwd?: string): Buffer {
   cmd(command)
   return cp.execSync(command, {
-    shell: '/usr/bin/bash',
     stdio: 'inherit',
     cwd: cwd ?? process.cwd(),
   })
@@ -39,7 +38,6 @@ function exec(command: string, cwd?: string): Buffer {
 function execPipe(command: string, cwd?: string): Buffer {
   cmd(command)
   return cp.execSync(command, {
-    shell: '/usr/bin/bash',
     stdio: 'pipe',
     cwd: cwd ?? process.cwd(),
   })
