@@ -3,6 +3,120 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.6](https://github.com/sabertazimi/bod/compare/v5.21.5...v5.21.6) (2025-08-14)
+
+
+### Bug Fixes
+
+* **ci:** remove shell config ([6b59cce](https://github.com/sabertazimi/bod/commit/6b59cce2f23c541239da6b992e62f2a0b80c7e60))
+* **deps:** update dependencies (non-major) ([#1305](https://github.com/sabertazimi/bod/issues/1305)) ([f2dcd24](https://github.com/sabertazimi/bod/commit/f2dcd241c9fe2f8c1e6aec3d0a542a188c4bf7b9))
+* **deps:** update dependencies (non-major) ([#1310](https://github.com/sabertazimi/bod/issues/1310)) ([92dc4b2](https://github.com/sabertazimi/bod/commit/92dc4b247c7232b6e8a162d8b26bab42d942bd80))
+* **deps:** update dependencies (non-major) ([#1312](https://github.com/sabertazimi/bod/issues/1312)) ([7d1dcf9](https://github.com/sabertazimi/bod/commit/7d1dcf904070e7c35fe555b0d430aac38ad84356))
+* **deps:** update dependencies (non-major) ([#1314](https://github.com/sabertazimi/bod/issues/1314)) ([9d31ef1](https://github.com/sabertazimi/bod/commit/9d31ef1fe0f0711ec0ec8ea1134b295dcd186402))
+* **deps:** update dependencies (non-major) ([#1318](https://github.com/sabertazimi/bod/issues/1318)) ([8823f35](https://github.com/sabertazimi/bod/commit/8823f35db425f65c11a0df56523f6091d61dfa63))
+* **deps:** update dependencies (non-major) ([#1319](https://github.com/sabertazimi/bod/issues/1319)) ([ec9738c](https://github.com/sabertazimi/bod/commit/ec9738cff692f3893da2416ca3d090215b5fa143))
+* **deps:** update dependencies (non-major) ([#1320](https://github.com/sabertazimi/bod/issues/1320)) ([944fb77](https://github.com/sabertazimi/bod/commit/944fb77b42557ee3e6a4464538b4b5baed4e6813))
+* **deps:** update dependencies (non-major) ([#1325](https://github.com/sabertazimi/bod/issues/1325)) ([7a6fa45](https://github.com/sabertazimi/bod/commit/7a6fa45951b0685fc01fcfc812dd20469e9ed6ff))
+* **deps:** update dependencies (non-major) ([#1330](https://github.com/sabertazimi/bod/issues/1330)) ([2048ab3](https://github.com/sabertazimi/bod/commit/2048ab336f273ef6cff77651a29af1cdaf0b332b))
+* **deps:** update dependencies (non-major) ([#1333](https://github.com/sabertazimi/bod/issues/1333)) ([42c1ee9](https://github.com/sabertazimi/bod/commit/42c1ee9031e32e56cf6b15e2bbc16e588d89fb92))
+* **deps:** update dependencies (non-major) ([#1337](https://github.com/sabertazimi/bod/issues/1337)) ([efbdbf7](https://github.com/sabertazimi/bod/commit/efbdbf73564b55ead3f7b59ec65f3fdbfd2991c4))
+* **deps:** update dependencies (non-major) ([#1339](https://github.com/sabertazimi/bod/issues/1339)) ([a610969](https://github.com/sabertazimi/bod/commit/a6109690d054d2015f40bf25d5df3884cf1e7974))
+* **deps:** update dependencies (non-major) ([#1342](https://github.com/sabertazimi/bod/issues/1342)) ([ab09107](https://github.com/sabertazimi/bod/commit/ab09107fb7e1f6732317fce76322144e1fb947f8))
+* **deps:** update dependencies (non-major) ([#1347](https://github.com/sabertazimi/bod/issues/1347)) ([96cd00c](https://github.com/sabertazimi/bod/commit/96cd00cf208a9292fc76f8d02a04c00ad41db7be))
+* **deps:** update dependencies (non-major) ([#1352](https://github.com/sabertazimi/bod/issues/1352)) ([be8e3d2](https://github.com/sabertazimi/bod/commit/be8e3d2da992cdf43ec8f2811b6da2d5febe141a))
+* **deps:** update dependencies (non-major) ([#1355](https://github.com/sabertazimi/bod/issues/1355)) ([dbc021a](https://github.com/sabertazimi/bod/commit/dbc021a80465f879b76be6321118d74bb93bd0cf))
+* **deps:** update dependencies (non-major) ([#1356](https://github.com/sabertazimi/bod/issues/1356)) ([25f78ee](https://github.com/sabertazimi/bod/commit/25f78ee2eb98b4d3515e9a4920730665f6256375))
+* **deps:** update dependencies (non-major) ([#1361](https://github.com/sabertazimi/bod/issues/1361)) ([cd2af6e](https://github.com/sabertazimi/bod/commit/cd2af6e232166fb482b24ea87e9ea0ca9ed747e9))
+* **deps:** update dependencies (non-major) ([#1364](https://github.com/sabertazimi/bod/issues/1364)) ([aa211c1](https://github.com/sabertazimi/bod/commit/aa211c1de4814fe941576ba7efe255c42b3e5bcd))
+* **deps:** update dependencies (non-major) ([#1365](https://github.com/sabertazimi/bod/issues/1365)) ([98cae51](https://github.com/sabertazimi/bod/commit/98cae512bf4e82083a12daa2a5a2823c708d624f))
+* **deps:** update dependencies (non-major) ([#1368](https://github.com/sabertazimi/bod/issues/1368)) ([a1b9320](https://github.com/sabertazimi/bod/commit/a1b9320db3728c319516215baeb51b1110931c5d))
+* **deps:** update dependencies (non-major) ([#1369](https://github.com/sabertazimi/bod/issues/1369)) ([a598cee](https://github.com/sabertazimi/bod/commit/a598cee1435b6938dceae5fb2b697eec5cb41f06))
+* **deps:** update dependencies (non-major) ([#1371](https://github.com/sabertazimi/bod/issues/1371)) ([7c80ba0](https://github.com/sabertazimi/bod/commit/7c80ba0d0613ea9544ef158b3d33924330ff7b64))
+* **deps:** update dependencies (non-major) ([#1372](https://github.com/sabertazimi/bod/issues/1372)) ([be126ce](https://github.com/sabertazimi/bod/commit/be126ce2bd8fe67fa56a927001279d9bbe11d3a5))
+* **deps:** update dependencies (non-major) ([#1373](https://github.com/sabertazimi/bod/issues/1373)) ([64dd3c9](https://github.com/sabertazimi/bod/commit/64dd3c91cd4ea48b5c696e661332e0ce2fca5975))
+* **deps:** update dependencies (non-major) ([#1376](https://github.com/sabertazimi/bod/issues/1376)) ([0d735df](https://github.com/sabertazimi/bod/commit/0d735df242d957660696b684d3838c53d9e8bf89))
+* **deps:** update dependencies (non-major) ([#1378](https://github.com/sabertazimi/bod/issues/1378)) ([3f88e68](https://github.com/sabertazimi/bod/commit/3f88e685bcef579db791e095a0908687d93c9021))
+* **deps:** update dependencies (non-major) ([#1380](https://github.com/sabertazimi/bod/issues/1380)) ([3e4c8fb](https://github.com/sabertazimi/bod/commit/3e4c8fb4fa7d50eddaa51cba98f127b2405d846d))
+* **deps:** update dependencies (non-major) ([#1384](https://github.com/sabertazimi/bod/issues/1384)) ([793b650](https://github.com/sabertazimi/bod/commit/793b6500c731aeeb2d3b0961ba2158611c028f64))
+* **deps:** update dependencies (non-major) ([#1388](https://github.com/sabertazimi/bod/issues/1388)) ([050b6a6](https://github.com/sabertazimi/bod/commit/050b6a69403ab29ae06e7242f191ced511c9a4fb))
+* **deps:** update dependencies (non-major) ([#1390](https://github.com/sabertazimi/bod/issues/1390)) ([73777f2](https://github.com/sabertazimi/bod/commit/73777f2bf79985a4af6711570df1b7a2ca774e42))
+* **deps:** update dependencies (non-major) ([#1393](https://github.com/sabertazimi/bod/issues/1393)) ([d2e6260](https://github.com/sabertazimi/bod/commit/d2e6260d0271c9cd4701f615a8897dd4e2035ebf))
+* **deps:** update dependencies (non-major) ([#1394](https://github.com/sabertazimi/bod/issues/1394)) ([560383e](https://github.com/sabertazimi/bod/commit/560383e6688b5ea245bb301fcf845dcac9f97be8))
+* **deps:** update dependencies (non-major) ([#1396](https://github.com/sabertazimi/bod/issues/1396)) ([334305e](https://github.com/sabertazimi/bod/commit/334305edfc9dedbdef857f4b0ece49c3ea61676b))
+* **deps:** update dependencies (non-major) ([#1399](https://github.com/sabertazimi/bod/issues/1399)) ([4f41d87](https://github.com/sabertazimi/bod/commit/4f41d873194bab94a5eff47ef5010edbf5632eb1))
+* **deps:** update dependencies (non-major) ([#1402](https://github.com/sabertazimi/bod/issues/1402)) ([b4a28e3](https://github.com/sabertazimi/bod/commit/b4a28e3a1009a6db353cf2c95cfac6b9dfe47633))
+* **deps:** update dependencies (non-major) ([#1406](https://github.com/sabertazimi/bod/issues/1406)) ([e3c0dc9](https://github.com/sabertazimi/bod/commit/e3c0dc90cd40991bcb847d5d2dd2cfa1a324307f))
+* **deps:** update dependencies (non-major) ([#1407](https://github.com/sabertazimi/bod/issues/1407)) ([8201e21](https://github.com/sabertazimi/bod/commit/8201e212990ffb3560ff9f7cbc3f1a99b05baaa2))
+* **deps:** update dependencies (non-major) ([#1409](https://github.com/sabertazimi/bod/issues/1409)) ([9ad8e28](https://github.com/sabertazimi/bod/commit/9ad8e280bdbfc1049a7f95fea985a31dbb36db34))
+* **deps:** update dependencies (non-major) ([#1411](https://github.com/sabertazimi/bod/issues/1411)) ([b40a5e0](https://github.com/sabertazimi/bod/commit/b40a5e04b5afd57729e5615ef87fecdd64799304))
+* **deps:** update dependencies (non-major) ([#1413](https://github.com/sabertazimi/bod/issues/1413)) ([61bc5f8](https://github.com/sabertazimi/bod/commit/61bc5f8cb0177dbc15d610f43c8e5efc28f2c335))
+* **deps:** update dependencies (non-major) ([#1416](https://github.com/sabertazimi/bod/issues/1416)) ([c5d5b8e](https://github.com/sabertazimi/bod/commit/c5d5b8e796120f7e32066c99d38bfc2ea6d145cd))
+* **deps:** update dependencies (non-major) to ^7.26.8 ([#1336](https://github.com/sabertazimi/bod/issues/1336)) ([eac033d](https://github.com/sabertazimi/bod/commit/eac033da22d56a0399d429bbcf6c6ed7294831d7))
+* **deps:** update dependency @antfu/eslint-config to ^4.1.1 ([#1332](https://github.com/sabertazimi/bod/issues/1332)) ([ae0a59c](https://github.com/sabertazimi/bod/commit/ae0a59c0daa04266cba59a806da624ddc868e272))
+* **deps:** update dependency @antfu/eslint-config to ^4.11.0 ([#1363](https://github.com/sabertazimi/bod/issues/1363)) ([e9c34e6](https://github.com/sabertazimi/bod/commit/e9c34e6024bcf85453688296c8789b67fe23854c))
+* **deps:** update dependency @antfu/eslint-config to ^4.2.1 ([#1341](https://github.com/sabertazimi/bod/issues/1341)) ([db310a5](https://github.com/sabertazimi/bod/commit/db310a5c4a0575235d7acdb2ca445899ae97ebd4))
+* **deps:** update dependency @antfu/eslint-config to v4 ([#1328](https://github.com/sabertazimi/bod/issues/1328)) ([09342a2](https://github.com/sabertazimi/bod/commit/09342a2bde3ea50d1cd3359ed8d9cb8e2228f07f))
+* **deps:** update dependency @antfu/eslint-config to v5 ([#1414](https://github.com/sabertazimi/bod/issues/1414)) ([59c2310](https://github.com/sabertazimi/bod/commit/59c2310993ac7054715bb06a23a914907405f624))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.22.0 ([#1309](https://github.com/sabertazimi/bod/issues/1309)) ([b3c9dda](https://github.com/sabertazimi/bod/commit/b3c9ddabfa9168568cd93375cdc328d61e2f8086))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.29.0 ([#1350](https://github.com/sabertazimi/bod/issues/1350)) ([bd1ffcb](https://github.com/sabertazimi/bod/commit/bd1ffcb408f20515ce2597bf90f7c5c5c6a9c8e1))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.34.1 ([#1357](https://github.com/sabertazimi/bod/issues/1357)) ([0143164](https://github.com/sabertazimi/bod/commit/0143164088239f3e22f80ae6bf2afb3ff348d5ab))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.37.3 ([#1362](https://github.com/sabertazimi/bod/issues/1362)) ([5b9fc12](https://github.com/sabertazimi/bod/commit/5b9fc124c335a47e8db135b9003fa4b8d37efced))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.38.4 ([#1366](https://github.com/sabertazimi/bod/issues/1366)) ([d841e05](https://github.com/sabertazimi/bod/commit/d841e05e5e21be2531caac7d84dadaffed1bc725))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.51.2 ([#1395](https://github.com/sabertazimi/bod/issues/1395)) ([623faac](https://github.com/sabertazimi/bod/commit/623faac1596be9c2e8d740ff86670f489f351423))
+* **deps:** update dependency @eslint-react/eslint-plugin to ^1.52.3 ([#1410](https://github.com/sabertazimi/bod/issues/1410)) ([8086704](https://github.com/sabertazimi/bod/commit/808670474d066d1e3135a4fa891afafd0ed8b48a))
+* **deps:** update dependency @stylistic/eslint-plugin to ^3.1.0 ([#1335](https://github.com/sabertazimi/bod/issues/1335)) ([10ff6e7](https://github.com/sabertazimi/bod/commit/10ff6e700ace766a9f9d984b2cd097a2587fbec8))
+* **deps:** update dependency @stylistic/eslint-plugin to v3 ([#1329](https://github.com/sabertazimi/bod/issues/1329)) ([13b5de0](https://github.com/sabertazimi/bod/commit/13b5de03a982db28afa026418b6decc7090890d1))
+* **deps:** update dependency @stylistic/eslint-plugin to v5 ([#1403](https://github.com/sabertazimi/bod/issues/1403)) ([566bd12](https://github.com/sabertazimi/bod/commit/566bd12c4085fc441a620c37f5e418d87506d0ab))
+* **deps:** update dependency babel-loader to v10 ([#1348](https://github.com/sabertazimi/bod/issues/1348)) ([2749037](https://github.com/sabertazimi/bod/commit/274903798b1cf7d0c98f012abe89ddd337a81d05))
+* **deps:** update dependency babel-preset-react-app to ^10.1.0 ([#1340](https://github.com/sabertazimi/bod/issues/1340)) ([2b2abf0](https://github.com/sabertazimi/bod/commit/2b2abf020e1ab63f719a45e6caa40759a9c6b572))
+* **deps:** update dependency bfj to ^9.1.2 ([#1324](https://github.com/sabertazimi/bod/issues/1324)) ([564ed9c](https://github.com/sabertazimi/bod/commit/564ed9c49155998491d9ea57178a689caf76c5d0))
+* **deps:** update dependency commander to v13 ([#1313](https://github.com/sabertazimi/bod/issues/1313)) ([9b558d7](https://github.com/sabertazimi/bod/commit/9b558d713019d5c0f0120aacdb30d3dee5386b33))
+* **deps:** update dependency commander to v14 ([#1386](https://github.com/sabertazimi/bod/issues/1386)) ([66616b2](https://github.com/sabertazimi/bod/commit/66616b26b71685ccceed57a9a3271aa23806a576))
+* **deps:** update dependency eslint to ^9.18.0 ([#1317](https://github.com/sabertazimi/bod/issues/1317)) ([4ad30a1](https://github.com/sabertazimi/bod/commit/4ad30a181beef9450f7b7b8edab0b649507fb17e))
+* **deps:** update dependency eslint to ^9.26.0 ([#1379](https://github.com/sabertazimi/bod/issues/1379)) ([b136e50](https://github.com/sabertazimi/bod/commit/b136e50476fd2c99a883e772f98459f61022db65))
+* **deps:** update dependency eslint-plugin-format to v1 ([#1315](https://github.com/sabertazimi/bod/issues/1315)) ([9f0b9d9](https://github.com/sabertazimi/bod/commit/9f0b9d96bb8451149c431102dd7ad25700ecef5d))
+* **deps:** update dependency eslint-plugin-import-x to ^4.10.6 ([#1375](https://github.com/sabertazimi/bod/issues/1375)) ([eeb4830](https://github.com/sabertazimi/bod/commit/eeb4830168db8bd2249ba584b01cb38cddbb8eb5))
+* **deps:** update dependency eslint-plugin-import-x to ^4.12.2 ([#1385](https://github.com/sabertazimi/bod/issues/1385)) ([df4cda6](https://github.com/sabertazimi/bod/commit/df4cda642ad03644e30d89901972a0cd84930546))
+* **deps:** update dependency eslint-plugin-import-x to ^4.13.0 ([#1389](https://github.com/sabertazimi/bod/issues/1389)) ([d35b134](https://github.com/sabertazimi/bod/commit/d35b134974b8245abec361af4eb2e8e7c4743df0))
+* **deps:** update dependency eslint-plugin-import-x to ^4.7.1 ([#1358](https://github.com/sabertazimi/bod/issues/1358)) ([dab63be](https://github.com/sabertazimi/bod/commit/dab63be6bf13488dd57a53707b95f768f12715d5))
+* **deps:** update dependency eslint-plugin-import-x to ^4.7.2 ([#1359](https://github.com/sabertazimi/bod/issues/1359)) ([9a2ec5e](https://github.com/sabertazimi/bod/commit/9a2ec5ea3d7026ba921f3680bcbbb03e60c323cf))
+* **deps:** update dependency eslint-plugin-import-x to ^4.8.0 ([#1360](https://github.com/sabertazimi/bod/issues/1360)) ([b301992](https://github.com/sabertazimi/bod/commit/b30199276f30c83ee21add822572d7be97b83d81))
+* **deps:** update dependency eslint-plugin-import-x to ^4.9.4 ([#1367](https://github.com/sabertazimi/bod/issues/1367)) ([314ee02](https://github.com/sabertazimi/bod/commit/314ee02e076bca5a203119bdfc2d04639823919d))
+* **deps:** update dependency eslint-plugin-jest to v29 ([#1400](https://github.com/sabertazimi/bod/issues/1400)) ([e6b0fb7](https://github.com/sabertazimi/bod/commit/e6b0fb7d608a5ce151917d8a9c729a7c0b88b876))
+* **deps:** update dependency eslint-webpack-plugin to v5 ([#1349](https://github.com/sabertazimi/bod/issues/1349)) ([fd12219](https://github.com/sabertazimi/bod/commit/fd1221914e4bf84a410a326d85648d3b668ce217))
+* **deps:** update dependency globals to v16 ([#1344](https://github.com/sabertazimi/bod/issues/1344)) ([aa03e23](https://github.com/sabertazimi/bod/commit/aa03e23b2cb4aa08fd9541775457d180c59c03bd))
+* **deps:** update dependency local-pkg to v1 ([#1316](https://github.com/sabertazimi/bod/issues/1316)) ([7e9ca5a](https://github.com/sabertazimi/bod/commit/7e9ca5a35da7799e13e4e1ad742ddb078f87a0dc))
+* **deps:** update dependency postcss-preset-env to ^10.1.6 ([#1374](https://github.com/sabertazimi/bod/issues/1374)) ([29d54df](https://github.com/sabertazimi/bod/commit/29d54dfa456e4b37a4c0a8e18286453da84d421a))
+* **deps:** update dependency prettier to ^3.5.2 ([#1345](https://github.com/sabertazimi/bod/issues/1345)) ([be05d65](https://github.com/sabertazimi/bod/commit/be05d654d0dcfef8439886971fd9f809b6dc8313))
+* **deps:** update dependency react-router to ^7.1.0 ([#1307](https://github.com/sabertazimi/bod/issues/1307)) ([7c9c5ac](https://github.com/sabertazimi/bod/commit/7c9c5ace22b3986fd761437fad27916a7d49c641))
+* **deps:** update dependency react-router to ^7.1.3 ([#1323](https://github.com/sabertazimi/bod/issues/1323)) ([2625b55](https://github.com/sabertazimi/bod/commit/2625b55ac2d1b7060259e8ff7b5e2a14c8b05031))
+* **deps:** update dependency stylelint to ^16.12.0 ([#1304](https://github.com/sabertazimi/bod/issues/1304)) ([bb850c5](https://github.com/sabertazimi/bod/commit/bb850c57cd5dfc95eca68e8afc816b4443a8ed09))
+* **deps:** update dependency stylelint to ^16.14.0 ([#1327](https://github.com/sabertazimi/bod/issues/1327)) ([0249db9](https://github.com/sabertazimi/bod/commit/0249db92b4ed237ac34d1a5bb55e0d1d24e38d0f))
+* **deps:** update dependency stylelint-config-recess-order to v7 ([#1398](https://github.com/sabertazimi/bod/issues/1398)) ([e153262](https://github.com/sabertazimi/bod/commit/e153262cc5acbdbc25375981a23591413561eaa0))
+* **deps:** update dependency stylelint-config-standard to v37 ([#1321](https://github.com/sabertazimi/bod/issues/1321)) ([fad3853](https://github.com/sabertazimi/bod/commit/fad38537f51395de91ae3427539339ac9b4eda79))
+* **deps:** update dependency stylelint-config-standard to v38 ([#1370](https://github.com/sabertazimi/bod/issues/1370)) ([f7bd447](https://github.com/sabertazimi/bod/commit/f7bd447c6609303513faa84edf7173bd21cac638))
+* **deps:** update dependency stylelint-config-standard to v39 ([#1418](https://github.com/sabertazimi/bod/issues/1418)) ([39ce408](https://github.com/sabertazimi/bod/commit/39ce40841dbd0592317738a1c3708ab234b2bbce))
+* **deps:** update dependency stylelint-config-standard-scss to ^15.0.1 ([#1387](https://github.com/sabertazimi/bod/issues/1387)) ([c218562](https://github.com/sabertazimi/bod/commit/c218562e9c25edadb01205443827393533c65d7e))
+* **deps:** update dependency stylelint-config-standard-scss to v15 ([#1383](https://github.com/sabertazimi/bod/issues/1383)) ([de38f70](https://github.com/sabertazimi/bod/commit/de38f701ce8e2e6a0f3bdc56f2522fa971b15380))
+* **deps:** update dependency web-vitals to v5 ([#1381](https://github.com/sabertazimi/bod/issues/1381)) ([cae502c](https://github.com/sabertazimi/bod/commit/cae502cebb0c5bcbfcb8c7806661a5687de8d498))
+* **stylelint:** add tailwind directives ([#1338](https://github.com/sabertazimi/bod/issues/1338)) ([8b207a1](https://github.com/sabertazimi/bod/commit/8b207a11bf67af3212293101e64a60558f524842))
+
+
+* feat!(CRA): remove react-scripts and templates (#1392) ([2f2f746](https://github.com/sabertazimi/bod/commit/2f2f7460692044dd6c26aec6bea293910c3b8f43)), closes [#1392](https://github.com/sabertazimi/bod/issues/1392)
+
+
+### BREAKING CHANGES
+
+* remove `react-scripts` and templates
+
+* ci(e2e): check webpack template
+
+* ci: lockfile maintenance
+
+
+
+
+
 ## [5.21.5](https://github.com/sabertazimi/bod/compare/v5.21.4...v5.21.5) (2024-12-14)
 
 

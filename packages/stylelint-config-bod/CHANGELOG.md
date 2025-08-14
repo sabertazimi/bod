@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.6](https://github.com/sabertazimi/bod/compare/v5.21.5...v5.21.6) (2025-08-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1319](https://github.com/sabertazimi/bod/issues/1319)) ([ec9738c](https://github.com/sabertazimi/bod/commit/ec9738cff692f3893da2416ca3d090215b5fa143))
+* **deps:** update dependencies (non-major) ([#1320](https://github.com/sabertazimi/bod/issues/1320)) ([944fb77](https://github.com/sabertazimi/bod/commit/944fb77b42557ee3e6a4464538b4b5baed4e6813))
+* **deps:** update dependencies (non-major) ([#1330](https://github.com/sabertazimi/bod/issues/1330)) ([2048ab3](https://github.com/sabertazimi/bod/commit/2048ab336f273ef6cff77651a29af1cdaf0b332b))
+* **deps:** update dependencies (non-major) ([#1347](https://github.com/sabertazimi/bod/issues/1347)) ([96cd00c](https://github.com/sabertazimi/bod/commit/96cd00cf208a9292fc76f8d02a04c00ad41db7be))
+* **deps:** update dependencies (non-major) ([#1356](https://github.com/sabertazimi/bod/issues/1356)) ([25f78ee](https://github.com/sabertazimi/bod/commit/25f78ee2eb98b4d3515e9a4920730665f6256375))
+* **deps:** update dependencies (non-major) ([#1364](https://github.com/sabertazimi/bod/issues/1364)) ([aa211c1](https://github.com/sabertazimi/bod/commit/aa211c1de4814fe941576ba7efe255c42b3e5bcd))
+* **deps:** update dependencies (non-major) ([#1369](https://github.com/sabertazimi/bod/issues/1369)) ([a598cee](https://github.com/sabertazimi/bod/commit/a598cee1435b6938dceae5fb2b697eec5cb41f06))
+* **deps:** update dependencies (non-major) ([#1376](https://github.com/sabertazimi/bod/issues/1376)) ([0d735df](https://github.com/sabertazimi/bod/commit/0d735df242d957660696b684d3838c53d9e8bf89))
+* **deps:** update dependencies (non-major) ([#1393](https://github.com/sabertazimi/bod/issues/1393)) ([d2e6260](https://github.com/sabertazimi/bod/commit/d2e6260d0271c9cd4701f615a8897dd4e2035ebf))
+* **deps:** update dependencies (non-major) ([#1396](https://github.com/sabertazimi/bod/issues/1396)) ([334305e](https://github.com/sabertazimi/bod/commit/334305edfc9dedbdef857f4b0ece49c3ea61676b))
+* **deps:** update dependencies (non-major) ([#1399](https://github.com/sabertazimi/bod/issues/1399)) ([4f41d87](https://github.com/sabertazimi/bod/commit/4f41d873194bab94a5eff47ef5010edbf5632eb1))
+* **deps:** update dependencies (non-major) ([#1407](https://github.com/sabertazimi/bod/issues/1407)) ([8201e21](https://github.com/sabertazimi/bod/commit/8201e212990ffb3560ff9f7cbc3f1a99b05baaa2))
+* **deps:** update dependencies (non-major) ([#1411](https://github.com/sabertazimi/bod/issues/1411)) ([b40a5e0](https://github.com/sabertazimi/bod/commit/b40a5e04b5afd57729e5615ef87fecdd64799304))
+* **deps:** update dependencies (non-major) ([#1416](https://github.com/sabertazimi/bod/issues/1416)) ([c5d5b8e](https://github.com/sabertazimi/bod/commit/c5d5b8e796120f7e32066c99d38bfc2ea6d145cd))
+* **deps:** update dependency stylelint to ^16.12.0 ([#1304](https://github.com/sabertazimi/bod/issues/1304)) ([bb850c5](https://github.com/sabertazimi/bod/commit/bb850c57cd5dfc95eca68e8afc816b4443a8ed09))
+* **deps:** update dependency stylelint to ^16.14.0 ([#1327](https://github.com/sabertazimi/bod/issues/1327)) ([0249db9](https://github.com/sabertazimi/bod/commit/0249db92b4ed237ac34d1a5bb55e0d1d24e38d0f))
+* **deps:** update dependency stylelint-config-recess-order to v7 ([#1398](https://github.com/sabertazimi/bod/issues/1398)) ([e153262](https://github.com/sabertazimi/bod/commit/e153262cc5acbdbc25375981a23591413561eaa0))
+* **deps:** update dependency stylelint-config-standard to v37 ([#1321](https://github.com/sabertazimi/bod/issues/1321)) ([fad3853](https://github.com/sabertazimi/bod/commit/fad38537f51395de91ae3427539339ac9b4eda79))
+* **deps:** update dependency stylelint-config-standard to v38 ([#1370](https://github.com/sabertazimi/bod/issues/1370)) ([f7bd447](https://github.com/sabertazimi/bod/commit/f7bd447c6609303513faa84edf7173bd21cac638))
+* **deps:** update dependency stylelint-config-standard to v39 ([#1418](https://github.com/sabertazimi/bod/issues/1418)) ([39ce408](https://github.com/sabertazimi/bod/commit/39ce40841dbd0592317738a1c3708ab234b2bbce))
+* **deps:** update dependency stylelint-config-standard-scss to ^15.0.1 ([#1387](https://github.com/sabertazimi/bod/issues/1387)) ([c218562](https://github.com/sabertazimi/bod/commit/c218562e9c25edadb01205443827393533c65d7e))
+* **deps:** update dependency stylelint-config-standard-scss to v15 ([#1383](https://github.com/sabertazimi/bod/issues/1383)) ([de38f70](https://github.com/sabertazimi/bod/commit/de38f701ce8e2e6a0f3bdc56f2522fa971b15380))
+* **stylelint:** add tailwind directives ([#1338](https://github.com/sabertazimi/bod/issues/1338)) ([8b207a1](https://github.com/sabertazimi/bod/commit/8b207a11bf67af3212293101e64a60558f524842))
+
+
+
+
+
 ## [5.21.5](https://github.com/sabertazimi/bod/compare/v5.21.4...v5.21.5) (2024-12-14)
 
 
