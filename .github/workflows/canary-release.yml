@@ -26,7 +26,7 @@ jobs:
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
       - name: Setup Node environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: lts/*
           check-latest: true
