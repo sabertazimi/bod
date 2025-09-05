@@ -29,9 +29,9 @@
     "eslint": "^9.0.0"
   },
   "dependencies": {
-    "@babel/core": "^7.28.3",
-    "@babel/eslint-parser": "^7.28.0",
-    "@stylistic/eslint-plugin": "^5.2.3",
+    "@babel/core": "^7.28.4",
+    "@babel/eslint-parser": "^7.28.4",
+    "@stylistic/eslint-plugin": "^5.3.1",
     "babel-preset-react-app": "^10.1.0",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-eslint": "^12.0.0",
@@ -40,11 +40,11 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-testing-library": "^7.6.6",
+    "eslint-plugin-testing-library": "^7.6.8",
     "globals": "^16.3.0",
-    "typescript-eslint": "^8.41.0"
+    "typescript-eslint": "^8.42.0"
   },
   "devDependencies": {
-    "@typescript-eslint/utils": "^8.41.0"
+    "@typescript-eslint/utils": "^8.42.0"
   }
 }
