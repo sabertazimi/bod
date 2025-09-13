@@ -56,15 +56,15 @@
     }
   },
   "dependencies": {
-    "@antfu/eslint-config": "^5.2.2",
-    "@eslint-react/eslint-plugin": "^1.53.0",
+    "@antfu/eslint-config": "^5.3.0",
+    "@eslint-react/eslint-plugin": "^1.53.1",
     "@eslint/eslintrc": "^3.3.1",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-testing-library": "^7.6.8",
+    "eslint-plugin-testing-library": "^7.7.0",
     "local-pkg": "^1.1.2"
   }
 }
