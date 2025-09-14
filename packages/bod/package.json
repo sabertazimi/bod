@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "commander": "^14.0.0",
+    "commander": "^14.0.1",
     "consola": "^3.4.2",
     "cross-spawn": "^7.0.6",
     "envinfo": "^7.14.0",
