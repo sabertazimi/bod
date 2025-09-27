@@ -96,8 +96,8 @@ importers:
         specifier: ^7.0.6
         version: 7.0.6
       envinfo:
-        specifier: ^7.14.0
-        version: 7.14.0
+        specifier: ^7.15.0
+        version: 7.15.0
       inquirer:
         specifier: ^8.2.7
         version: 8.2.7(@types/node@22.18.6)
@@ -5369,6 +5369,11 @@ packages:
 
   envinfo@7.14.0:
     resolution: {integrity: sha512-CO40UI41xDQzhLB1hWyqUKgFhs250pNcGbyGKe1l/e4FSaI/+YE4IMG76GDt0In67WLPACIITC+sOi08x4wIvg==}
+    engines: {node: '>=4'}
+    hasBin: true
+
+  envinfo@7.15.0:
+    resolution: {integrity: sha512-chR+t7exF6y59kelhXw5I3849nTy7KIRO+ePdLMhCD+JRP/JvmkenDWP7QSFGlsHX+kxGxdDutOPrmj5j1HR6g==}
     engines: {node: '>=4'}
     hasBin: true
 
@@ -17706,6 +17711,8 @@ snapshots:
 
   envinfo@7.14.0: {}
 
+  envinfo@7.15.0: {}
+
   err-code@2.0.3: {}
 
   error-ex@1.3.2:
@@ -24926,7 +24933,7 @@ snapshots:
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
-      envinfo: 7.14.0
+      envinfo: 7.15.0
       fastest-levenshtein: 1.0.16
       import-local: 3.2.0
       interpret: 3.1.1
