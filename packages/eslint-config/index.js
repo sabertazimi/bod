@@ -1,31 +1,14 @@
 // @ts-check
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_SRC, GLOB_TESTS, GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
-import { FlatCompat } from '@eslint/eslintrc'
+import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_SRC, GLOB_TESTS } from '@antfu/eslint-config'
 import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginTestingLibrary from 'eslint-plugin-testing-library'
 import { isPackageExists } from 'local-pkg'
 
-const baseDirectory = path.dirname(fileURLToPath(import.meta.url))
-
-const compat = new FlatCompat({
-  baseDirectory,
-  resolvePluginsRelativeTo: baseDirectory,
-})
-
 const eslintConfigNext
-  = isPackageExists('next') && isPackageExists('eslint-config-next')
-    ? compat.config({
-        overrides: [
-          {
-            files: [GLOB_TS, GLOB_TSX],
-            extends: 'next/core-web-vitals',
-          },
-        ],
-      })
-    : []
+  = isPackageExists('next') && isPackageExists('@next/eslint-plugin-next')
+    ? { nextjs: true }
+    : { nextjs: false }
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigMarkdown = {
@@ -126,7 +109,6 @@ const eslintConfigRules = {
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem[]} */
 const eslintConfig = [
-  ...eslintConfigNext,
   eslintConfigMarkdown,
   eslintConfigTestingLibrary,
   eslintConfigSecurity,
@@ -137,6 +119,7 @@ const eslintConfig = [
 /** @type {import('@antfu/eslint-config').OptionsConfig} */
 const eslintConfigAntfu = {
   react: true,
+  ...eslintConfigNext,
   formatters: {
     css: true,
     html: true,
