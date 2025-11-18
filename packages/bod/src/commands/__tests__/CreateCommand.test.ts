@@ -1,4 +1,3 @@
-import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
 import type { Answers } from '../../utils'
 import type { Action } from '../CreateCommand'
@@ -38,7 +37,7 @@ describe('createCommand', () => {
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 0,
-        } as SpawnSyncReturns<Buffer>
+        } as SpawnSyncReturns<NonSharedBuffer>
       })
       const additionalOptions
         = value === 'vue'
@@ -81,7 +80,7 @@ describe('createCommand', () => {
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 1,
-        } as SpawnSyncReturns<Buffer>
+        } as SpawnSyncReturns<NonSharedBuffer>
       })
       const additionalOptions
         = value === 'vue'
