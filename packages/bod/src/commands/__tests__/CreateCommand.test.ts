@@ -1,4 +1,3 @@
-import type { Buffer } from 'node:buffer'
 import type { SpawnSyncReturns } from 'node:child_process'
 import type { Answers } from '../../utils'
 import type { Action } from '../CreateCommand'
