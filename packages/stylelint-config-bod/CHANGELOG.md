@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.7](https://github.com/sabertazimi/bod/compare/v5.21.6...v5.21.7) (2025-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1419](https://github.com/sabertazimi/bod/issues/1419)) ([1d2e316](https://github.com/sabertazimi/bod/commit/1d2e316b0857cd1158c77adfcfbe581fc765ce5a))
+* **deps:** update dependencies (non-major) ([#1426](https://github.com/sabertazimi/bod/issues/1426)) ([8828187](https://github.com/sabertazimi/bod/commit/88281874c9c13340d6884b61bf64355cb964e4b5))
+* **deps:** update dependencies (non-major) ([#1439](https://github.com/sabertazimi/bod/issues/1439)) ([0090bb4](https://github.com/sabertazimi/bod/commit/0090bb415e7ed69fbb5d9f3aca1b975d404a3329))
+* **deps:** update dependencies (non-major) ([#1441](https://github.com/sabertazimi/bod/issues/1441)) ([33912b6](https://github.com/sabertazimi/bod/commit/33912b6c10bb75b0382bf0d7178b9b274d1321e0))
+* **deps:** update dependencies (non-major) ([#1445](https://github.com/sabertazimi/bod/issues/1445)) ([ade76b2](https://github.com/sabertazimi/bod/commit/ade76b2644e15bc32afd4f99bfcb34b5f063183b))
+* **deps:** update dependency stylelint-config-standard-scss to v16 ([#1432](https://github.com/sabertazimi/bod/issues/1432)) ([d350878](https://github.com/sabertazimi/bod/commit/d350878db8e064fefd3736eadcb7d94d20c36a94))
+
+
+
+
+
 ## [5.21.6](https://github.com/sabertazimi/bod/compare/v5.21.5...v5.21.6) (2025-08-14)
 
 

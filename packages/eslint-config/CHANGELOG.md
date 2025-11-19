@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.7](https://github.com/sabertazimi/bod/compare/v5.21.6...v5.21.7) (2025-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1419](https://github.com/sabertazimi/bod/issues/1419)) ([1d2e316](https://github.com/sabertazimi/bod/commit/1d2e316b0857cd1158c77adfcfbe581fc765ce5a))
+* **deps:** update dependencies (non-major) ([#1422](https://github.com/sabertazimi/bod/issues/1422)) ([d1fa3b0](https://github.com/sabertazimi/bod/commit/d1fa3b0f45f59d1ed4b04196860240293891e30c))
+* **deps:** update dependencies (non-major) ([#1425](https://github.com/sabertazimi/bod/issues/1425)) ([a97778e](https://github.com/sabertazimi/bod/commit/a97778e73e52f0b196e5ccc46bf864f1fca3d502))
+* **deps:** update dependencies (non-major) ([#1426](https://github.com/sabertazimi/bod/issues/1426)) ([8828187](https://github.com/sabertazimi/bod/commit/88281874c9c13340d6884b61bf64355cb964e4b5))
+* **deps:** update dependencies (non-major) ([#1430](https://github.com/sabertazimi/bod/issues/1430)) ([e6f77bb](https://github.com/sabertazimi/bod/commit/e6f77bb2e0e4621bd5de190dcdf9d4dff1ac6f28))
+* **deps:** update dependencies (non-major) ([#1433](https://github.com/sabertazimi/bod/issues/1433)) ([8d03d9d](https://github.com/sabertazimi/bod/commit/8d03d9d89931ed43992748a7e2d15a94c82899b8))
+* **deps:** update dependencies (non-major) ([#1434](https://github.com/sabertazimi/bod/issues/1434)) ([783afed](https://github.com/sabertazimi/bod/commit/783afed984978e6cf47b01ac60de000525d70ced))
+* **deps:** update dependencies (non-major) ([#1439](https://github.com/sabertazimi/bod/issues/1439)) ([0090bb4](https://github.com/sabertazimi/bod/commit/0090bb415e7ed69fbb5d9f3aca1b975d404a3329))
+* **deps:** update dependencies (non-major) ([#1441](https://github.com/sabertazimi/bod/issues/1441)) ([33912b6](https://github.com/sabertazimi/bod/commit/33912b6c10bb75b0382bf0d7178b9b274d1321e0))
+* **deps:** update dependencies (non-major) ([#1445](https://github.com/sabertazimi/bod/issues/1445)) ([ade76b2](https://github.com/sabertazimi/bod/commit/ade76b2644e15bc32afd4f99bfcb34b5f063183b))
+* **deps:** update dependencies (non-major) ([#1448](https://github.com/sabertazimi/bod/issues/1448)) ([28541cb](https://github.com/sabertazimi/bod/commit/28541cb0d308ba2f0e53010724fb6e95f55d87c4))
+* **deps:** update dependency @antfu/eslint-config to v6 ([#1447](https://github.com/sabertazimi/bod/issues/1447)) ([64aacb9](https://github.com/sabertazimi/bod/commit/64aacb9ecc385311689102cc5381e75f5741af98))
+* **deps:** update dependency eslint-plugin-react-hooks to v6 ([#1440](https://github.com/sabertazimi/bod/issues/1440)) ([567b1de](https://github.com/sabertazimi/bod/commit/567b1def9a49ec959eb3f3d411ca7aea8b5b0cbb))
+* **deps:** update dependency eslint-plugin-react-hooks to v7 ([#1443](https://github.com/sabertazimi/bod/issues/1443)) ([420b5bb](https://github.com/sabertazimi/bod/commit/420b5bb6b5f891cbaa9d53d72d29a05b7e7e99f4))
+* **eslint:** add Next.js app router fixture ([b19b99e](https://github.com/sabertazimi/bod/commit/b19b99e75f063cffc9a898dbd6d696b8d5d63d6f))
+
+
+
+
+
 ## [5.21.6](https://github.com/sabertazimi/bod/compare/v5.21.5...v5.21.6) (2025-08-14)
 
 
