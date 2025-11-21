@@ -57,7 +57,7 @@
     "consola": "^3.4.2",
     "cross-spawn": "^7.0.6",
     "envinfo": "^7.20.0",
-    "inquirer": "^8.2.7",
+    "inquirer": "^13.0.1",
     "tslib": "^2.8.1"
   },
   "devDependencies": {
