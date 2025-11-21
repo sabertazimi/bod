@@ -51,6 +51,9 @@ module.exports = {
         ],
       },
     ],
+    'import-notation': [
+      'string',
+    ],
   },
   overrides: [
     {
