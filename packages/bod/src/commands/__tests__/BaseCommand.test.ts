@@ -1,4 +1,4 @@
-import BaseCommand from '../BaseCommand'
+import BaseCommand from '../BaseCommand.js'
 
 const options = {
   name: 'base',

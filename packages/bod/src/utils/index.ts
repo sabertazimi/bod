@@ -1,8 +1,7 @@
-import type { Answers } from './core'
 import process from 'node:process'
-import { color, printer } from './console'
-import { inquirer, program } from './core'
-import { envinfo, spawn } from './os'
+import { color, printer } from './console.js'
+import { program, select } from './core.js'
+import { envinfo, spawn } from './os.js'
 
 function findPackageManager(): string {
   const userAgent = process.env.npm_config_user_agent ?? ''
@@ -16,5 +15,4 @@ function findPackageManager(): string {
   return packageManager
 }
 
-export { color, envinfo, findPackageManager, inquirer, printer, program, spawn }
-export type { Answers }
+export { color, envinfo, findPackageManager, printer, program, select, spawn }

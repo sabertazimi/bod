@@ -1,5 +1,5 @@
-import type { BaseCommand } from './commands'
-import { CreateCommand, InfoCommand } from './commands'
+import type { BaseCommand } from './commands/index.js'
+import { CreateCommand, InfoCommand } from './commands/index.js'
 
 const CommandFactory = new Map<string, BaseCommand>()
 

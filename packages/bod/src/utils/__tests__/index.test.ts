@@ -1,5 +1,5 @@
 import process from 'node:process'
-import { color, findPackageManager, program } from '../index'
+import { color, findPackageManager, program } from '../index.js'
 
 describe('utils', () => {
   it('should execute chalk correctly', () => {
