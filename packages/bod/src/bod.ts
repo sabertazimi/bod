@@ -2,10 +2,12 @@ import type { PackageJson } from 'type-fest'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { CommandFactory } from './index'
-import { color, printer, program } from './utils'
+import { fileURLToPath } from 'node:url'
+import { CommandFactory } from './index.js'
+import { color, printer, program } from './utils/index.js'
 
-const packageJsonPath = path.join(__dirname, '../package.json')
+const dirname = path.dirname(fileURLToPath(import.meta.url))
+const packageJsonPath = path.join(dirname, '../package.json')
 const packageJson = JSON.parse(
   fs.readFileSync(packageJsonPath, { encoding: 'utf-8' }),
 ) as PackageJson

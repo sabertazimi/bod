@@ -1,5 +1,5 @@
-import { printer } from '../../utils'
-import InfoCommand from '../InfoCommand'
+import { printer } from '../../utils/index.js'
+import InfoCommand from '../InfoCommand.js'
 
 describe('infoCommand', () => {
   jest.setTimeout(20000)

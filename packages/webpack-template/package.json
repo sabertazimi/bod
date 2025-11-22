@@ -35,7 +35,7 @@
     ]
   },
   "scripts": {
-    "badge": "ts-node scripts/badge.ts",
+    "badge": "tsx scripts/badge.ts",
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack serve",
     "lint": "pnpm lint:style && pnpm lint:type-check",
@@ -82,9 +82,9 @@
     "stylelint-webpack-plugin": "^5.0.1",
     "ts-jest": "^29.4.5",
     "ts-loader": "^9.5.4",
-    "ts-node": "^10.9.2",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "tslib": "^2.8.1",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "undici": "^7.16.0",
     "url-loader": "^4.1.1",

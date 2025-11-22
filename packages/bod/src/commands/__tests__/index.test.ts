@@ -1,4 +1,4 @@
-import { BaseCommand, CreateCommand, InfoCommand } from '../index'
+import { BaseCommand, CreateCommand, InfoCommand } from '../index.js'
 
 describe('commands', () => {
   let commands: Set<BaseCommand>

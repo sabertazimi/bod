@@ -1,5 +1,5 @@
-import { findPackageManager, inquirer, spawn } from '../utils'
-import BaseCommand from './BaseCommand'
+import { findPackageManager, select, spawn } from '../utils/index.js'
+import BaseCommand from './BaseCommand.js'
 
 interface Action {
   name: string
@@ -99,14 +99,13 @@ class CreateCommand extends BaseCommand {
   }
 
   private async processTemplateAction(): Promise<void> {
-    const { templateName } = await inquirer.prompt<{ [key: string]: string }>([
-      {
-        name: 'templateName',
-        type: 'list',
-        message: 'Select template:',
-        choices: [...CreateCommand.TemplateActions],
-      },
-    ])
+    const templateName = await select({
+      message: 'Select template:',
+      choices: CreateCommand.TemplateActions.map(action => ({
+        name: action.name,
+        value: action.value,
+      })),
+    })
 
     const { command, args, postCommands } = CreateCommand.TemplateActions.find(
       ({ value }: Action) => value === templateName,

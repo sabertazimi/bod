@@ -1,11 +1,11 @@
 import type { SpawnSyncReturns } from 'node:child_process'
-import type { Answers } from '../../utils'
-import type { Action } from '../CreateCommand'
+import type { Action } from '../CreateCommand.js'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
-import { inquirer, spawn } from '../../utils'
-import CreateCommand from '../CreateCommand'
+import * as utils from '../../utils/index.js'
+import CreateCommand from '../CreateCommand.js'
 
+const { spawn } = utils
 const appPath = 'bod-unit-tests'
 
 describe('createCommand', () => {
@@ -23,17 +23,12 @@ describe('createCommand', () => {
   })
 
   it.each(CreateCommand.TemplateActions)(
-    'should get correct command/args and invoke [inquirer] via template choice [$name]',
+    'should get correct command/args and invoke [select] via template choice [$name]',
     async ({ value }) => {
-      const mockPrompt = jest
-        .spyOn(inquirer, 'prompt')
-        .mockImplementation(async () => {
-          const promise = new Promise((resolve) => {
-            resolve({ templateName: value })
-          })
-
-          return promise as Promise<Answers>
-        })
+      const mockSelect = jest
+        .spyOn(utils, 'select')
+        // @ts-expect-error - Mocking select function
+        .mockImplementation(async () => value)
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 0,
@@ -57,10 +52,10 @@ describe('createCommand', () => {
       expect(createCommand.getCommand()).toBe(command)
       expect(createCommand.getCommandArgs()).toHaveLength(args.length + 1)
       expect(createCommand.getCommandArgs()).toStrictEqual(args.concat(appPath))
-      expect(mockPrompt).toHaveBeenCalledTimes(1)
+      expect(mockSelect).toHaveBeenCalledTimes(1)
       expect(mockSpawn).toHaveBeenCalledTimes(postCommands.length + 1)
 
-      mockPrompt.mockRestore()
+      mockSelect.mockRestore()
       mockSpawn.mockRestore()
     },
   )
@@ -68,15 +63,10 @@ describe('createCommand', () => {
   it.each(CreateCommand.TemplateActions)(
     'should throw error when exited with non zero via template choice [$name]',
     async ({ value }) => {
-      const mockPrompt = jest
-        .spyOn(inquirer, 'prompt')
-        .mockImplementation(async () => {
-          const promise = new Promise((resolve) => {
-            resolve({ templateName: value })
-          })
-
-          return promise as Promise<Answers>
-        })
+      const mockSelect = jest
+        .spyOn(utils, 'select')
+        // @ts-expect-error - Mocking select function
+        .mockImplementation(async () => value)
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 1,
@@ -91,10 +81,10 @@ describe('createCommand', () => {
 
       const createCommand = new CreateCommand()
       await expect(createCommand.run(appPath, additionalOptions)).rejects.toThrow()
-      expect(mockPrompt).toHaveBeenCalledTimes(1)
+      expect(mockSelect).toHaveBeenCalledTimes(1)
       expect(mockSpawn).toHaveBeenCalledTimes(1)
 
-      mockPrompt.mockRestore()
+      mockSelect.mockRestore()
       mockSpawn.mockRestore()
     },
   )
@@ -102,15 +92,10 @@ describe('createCommand', () => {
   it.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
-      const mockPrompt = jest
-        .spyOn(inquirer, 'prompt')
-        .mockImplementation(async () => {
-          const promise = new Promise((resolve) => {
-            resolve({ templateName: value })
-          })
-
-          return promise as Promise<Answers>
-        })
+      const mockSelect = jest
+        .spyOn(utils, 'select')
+        // @ts-expect-error - Mocking select function
+        .mockImplementation(async () => value)
       const additionalOptions
         = value === 'vue'
           ? ['--default']
@@ -121,10 +106,10 @@ describe('createCommand', () => {
 
       if (isCI) {
         await expect(createCommand.run(appPath, additionalOptions)).resolves.toBeUndefined()
-        expect(mockPrompt).toHaveBeenCalledTimes(1)
+        expect(mockSelect).toHaveBeenCalledTimes(1)
       }
 
-      mockPrompt.mockRestore()
+      mockSelect.mockRestore()
     },
   )
 })
