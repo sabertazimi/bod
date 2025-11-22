@@ -27,7 +27,6 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockSelect = jest
         .spyOn(utils, 'select')
-        // @ts-expect-error - Mocking select function
         .mockImplementation(async () => value)
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -65,7 +64,6 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockSelect = jest
         .spyOn(utils, 'select')
-        // @ts-expect-error - Mocking select function
         .mockImplementation(async () => value)
       const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
@@ -94,7 +92,6 @@ describe('createCommand', () => {
     async ({ value }) => {
       const mockSelect = jest
         .spyOn(utils, 'select')
-        // @ts-expect-error - Mocking select function
         .mockImplementation(async () => value)
       const additionalOptions
         = value === 'vue'
