@@ -53,7 +53,7 @@
     "start": "pnpm dev"
   },
   "dependencies": {
-    "@inquirer/prompts": "^7.2.0",
+    "@inquirer/prompts": "^7.10.1",
     "chalk": "^4.1.2",
     "commander": "^14.0.2",
     "consola": "^3.4.2",
