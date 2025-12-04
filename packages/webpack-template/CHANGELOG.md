@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.8](https://github.com/sabertazimi/bod/compare/v5.21.7...v5.21.8) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1453](https://github.com/sabertazimi/bod/issues/1453)) ([98d3ba9](https://github.com/sabertazimi/bod/commit/98d3ba9ce473b2df084b1db55a3498977cdbe11d))
+* **deps:** update dependencies (non-major) ([#1459](https://github.com/sabertazimi/bod/issues/1459)) ([e6eb392](https://github.com/sabertazimi/bod/commit/e6eb392502da1923449d659326a3dab9447fc990))
+* **deps:** update dependency inquirer to v13 ([#1456](https://github.com/sabertazimi/bod/issues/1456)) ([e5f4fd5](https://github.com/sabertazimi/bod/commit/e5f4fd5b90cd4ad453932d7d082d61910018c9da))
+* **stylelint-config:** set import notation to string ([#1452](https://github.com/sabertazimi/bod/issues/1452)) ([f780e46](https://github.com/sabertazimi/bod/commit/f780e46c00c4712578016987a846cbfa546f266d))
+
+
+
+
+
 ## [5.21.7](https://github.com/sabertazimi/bod/compare/v5.21.6...v5.21.7) (2025-11-19)
 
 

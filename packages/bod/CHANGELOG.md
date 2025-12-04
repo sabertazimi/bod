@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.21.8](https://github.com/sabertazimi/bod/compare/v5.21.7...v5.21.8) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1453](https://github.com/sabertazimi/bod/issues/1453)) ([98d3ba9](https://github.com/sabertazimi/bod/commit/98d3ba9ce473b2df084b1db55a3498977cdbe11d))
+* **deps:** update dependencies (non-major) ([#1459](https://github.com/sabertazimi/bod/issues/1459)) ([e6eb392](https://github.com/sabertazimi/bod/commit/e6eb392502da1923449d659326a3dab9447fc990))
+* **deps:** update dependency @inquirer/prompts to ^7.10.1 ([#1457](https://github.com/sabertazimi/bod/issues/1457)) ([56e5755](https://github.com/sabertazimi/bod/commit/56e57551d0b129659853ddccbe4c1682c063f1f4))
+* **deps:** update dependency @inquirer/prompts to v8 ([#1458](https://github.com/sabertazimi/bod/issues/1458)) ([a4e365f](https://github.com/sabertazimi/bod/commit/a4e365f2a88e7c94a3a08469013e1d485ba0118f))
+* **deps:** update dependency inquirer to v13 ([#1456](https://github.com/sabertazimi/bod/issues/1456)) ([e5f4fd5](https://github.com/sabertazimi/bod/commit/e5f4fd5b90cd4ad453932d7d082d61910018c9da))
+
+
+
+
+
 ## [5.21.7](https://github.com/sabertazimi/bod/compare/v5.21.6...v5.21.7) (2025-11-19)
 
 
