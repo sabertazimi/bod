@@ -60,15 +60,15 @@
     "eslint": "^9.39.1",
     "jest": "^30.2.0",
     "lerna": "^9.0.3",
-    "prettier": "^3.7.3",
+    "prettier": "^3.7.4",
     "semver": "^7.7.3",
     "stylelint": "^16.26.1",
-    "ts-jest": "^29.4.5",
+    "ts-jest": "^29.4.6",
     "tslib": "^2.8.1",
-    "tsx": "^4.20.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "undici": "^7.16.0",
-    "verdaccio": "^6.2.3"
+    "verdaccio": "^6.2.4"
   },
   "resolutions": {
     "ts-api-utils": "^2.1.0"
