@@ -16,15 +16,8 @@
 [![NPM Version](https://img.shields.io/npm/v/eslint-config-bod?label=Bod%20ESLint&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/eslint-config-bod)
 [![NPM Version](https://img.shields.io/npm/v/stylelint-config-bod?label=Bod%20StyleLint&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-bod)
 
-Boilerplate CLI App - Create a new project powered by
-[Create React App](https://github.com/facebook/create-react-app),
-[@sabertazimi/react-scripts](https://github.com/sabertazimi/bod/tree/main/packages/react-scripts)
-and
-[bod template](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
-
-[**Documentation**](https://sabertazimi.github.io/bod) |
-[**Bod Template**](https://sabertazimi.github.io/bod/bod) |
-[Webpack Template](https://sabertazimi.github.io/bod/webpack)
+[**Documentation**](https://tazimi.dev/bod) |
+[Webpack Template](https://tazimi.dev/bod/webpack)
 
 ## Bod CLI
 
@@ -69,8 +62,7 @@ The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod
 
 ### Live Demo
 
-- Bod Template [Demo](https://sabertazimi.github.io/bod/bod).
-- Webpack Template [Demo](https://sabertazimi.github.io/bod/webpack).
+- Webpack Template [Demo](https://tazimi.dev/bod/webpack).
 
 ### Start with Template
 
@@ -90,22 +82,6 @@ npm create react-app my-app --template bod --scripts-version @sabertazimi/react-
 
 More available scripts on package
 [cra-template-bod](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
-
-### Custom Template
-
-You can custom bod template by clone this monorepo
-(with package [@sabertazimi/react-scripts](https://github.com/sabertazimi/bod/tree/main/packages/react-scripts)).
-
-```bash
-git clone --depth=1 https://github.com/sabertazimi/bod
-cd bod
-npm i
-npm run start:template
-```
-
-`@sabertazimi/react-scripts`
-will set local package `cra-template-bod` to default React template,
-and start a `webpack-dev-server` on port `3000`.
 
 ## Contributing
 

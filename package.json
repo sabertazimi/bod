@@ -5,7 +5,7 @@
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
-  "homepage": "https://sabertazimi.github.io/bod",
+  "homepage": "https://tazimi.dev/bod",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabertazimi/bod.git"
@@ -41,7 +41,6 @@
     "start": "pnpm start:template",
     "start:all": "pnpm -r run start",
     "start:bod": "pnpm --filter bod start",
-    "start:template": "pnpm --filter cra-template-bod start",
     "test": "jest --watch",
     "test:all": "pnpm -r run test && jest"
   },

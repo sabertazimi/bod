@@ -8,7 +8,7 @@ const darkCodeTheme = themes.dracula
 const config: Config = {
   title: 'Bod',
   tagline: 'Boilerplate CLI App',
-  url: 'https://sabertazimi.github.io',
+  url: 'https://tazimi.dev',
   baseUrl: '/bod/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -75,16 +75,10 @@ const config: Config = {
           activeBaseRegex: 'docs/bod',
         },
         {
-          to: 'docs/cra-template-bod',
-          label: 'Bod Template',
+          to: 'docs/webpack-template',
+          label: 'Webpack Template',
           position: 'left',
-          activeBaseRegex: 'docs/(cra-template*|webpack-template)',
-        },
-        {
-          to: 'docs/react-scripts',
-          label: 'Bod Scripts',
-          position: 'left',
-          activeBaseRegex: 'docs/react-scripts',
+          activeBaseRegex: 'docs/webpack-template',
         },
         {
           to: 'docs/eslint-config-bod',
@@ -104,12 +98,8 @@ const config: Config = {
           position: 'right',
           items: [
             {
-              label: 'Bod Template',
-              href: 'https://sabertazimi.github.io/bod/bod',
-            },
-            {
               label: 'Webpack Template',
-              href: 'https://sabertazimi.github.io/bod/webpack',
+              href: 'https://tazimi.dev/bod/webpack',
             },
           ],
         },
@@ -136,12 +126,8 @@ const config: Config = {
           title: 'Template',
           items: [
             {
-              label: 'Bod Template',
-              href: 'https://sabertazimi.github.io/bod/bod',
-            },
-            {
               label: 'Webpack Template',
-              href: 'https://sabertazimi.github.io/bod/webpack',
+              href: 'https://tazimi.dev/bod/webpack',
             },
           ],
         },
