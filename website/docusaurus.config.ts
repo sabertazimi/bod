@@ -81,14 +81,14 @@ const config: Config = {
           activeBaseRegex: 'docs/webpack-template',
         },
         {
-          to: 'docs/eslint-config-bod',
-          label: 'Bod ESLint',
+          to: 'docs/eslint-config',
+          label: 'ESLint Config',
           position: 'left',
           activeBaseRegex: 'docs/eslint-config*',
         },
         {
-          to: 'docs/stylelint-config-bod',
-          label: 'Bod StyleLint',
+          to: 'docs/stylelint-config',
+          label: 'StyleLint Config',
           position: 'left',
           activeBaseRegex: 'docs/stylelint-config*',
         },
