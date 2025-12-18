@@ -350,8 +350,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **bod-tempalte:** add webpack tempalte directory ([#1143](https://github.com/sabertazimi/bod/issues/1143)) ([f212277](https://github.com/sabertazimi/bod/commit/f212277afa68c1c88e30124337887cd2a6e136ef))
 * **deps:** update dependency eslint-plugin-import-x to ^0.5.0 ([#1147](https://github.com/sabertazimi/bod/issues/1147)) ([09b11a9](https://github.com/sabertazimi/bod/commit/09b11a9a4fc8427d82913a09bc20b4111f1ed713))
-* **eslint-bod:** refactor eslint-config-bod ([#1148](https://github.com/sabertazimi/bod/issues/1148)) ([40ad717](https://github.com/sabertazimi/bod/commit/40ad717df20133d0b85531b5efee39046868d0dc))
-* **eslint-config-bod:** rectify incorrect es6 globals ([#1158](https://github.com/sabertazimi/bod/issues/1158)) ([cd35e76](https://github.com/sabertazimi/bod/commit/cd35e764a9b7d12d43c7e68e5b5ec15e6c171fd4))
 * **eslint-config:** disable tsconfig check for markdown codes ([#1157](https://github.com/sabertazimi/bod/issues/1157)) ([59673e2](https://github.com/sabertazimi/bod/commit/59673e22273067cdb2df744a848e5e5ce36fffc9))
 * **eslint-config:** use glob patterns to match files ([#1154](https://github.com/sabertazimi/bod/issues/1154)) ([1900953](https://github.com/sabertazimi/bod/commit/190095338bfd6a713feee4a4f84efdf177975a07))
 

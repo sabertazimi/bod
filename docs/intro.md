@@ -22,7 +22,6 @@ sidebar_position: 1
 [![NPM Version](https://img.shields.io/npm/v/@dg-scripts/stylelint-config?label=StyleLint&logo=stylelint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/stylelint-config)
 
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
-[![NPM Version](https://img.shields.io/npm/v/eslint-config-bod?label=Bod%20ESLint&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/eslint-config-bod)
 [![NPM Version](https://img.shields.io/npm/v/stylelint-config-bod?label=Bod%20StyleLint&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/stylelint-config-bod)
 
 [**Documentation**](https://tazimi.dev/bod) |
