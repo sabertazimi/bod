@@ -5,7 +5,6 @@ export default defineConfig({
     projects: ['packages/bod'],
     coverage: {
       provider: 'v8',
-      reporter: ['json-summary', 'lcov', 'text', 'clover'],
       reportsDirectory: './coverage',
     },
   },

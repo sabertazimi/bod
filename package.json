@@ -42,7 +42,7 @@
     "start:all": "pnpm -r run start",
     "start:bod": "pnpm --filter bod start",
     "test": "vitest",
-    "test:all": "pnpm -r run test && vitest run"
+    "test:all": "pnpm -r run test && vitest run --coverage"
   },
   "devDependencies": {
     "@dg-scripts/eslint-config": "workspace:^",

@@ -10,7 +10,6 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.ts'],
     coverage: {
       provider: 'v8',
-      reporter: ['json-summary', 'lcov', 'text', 'clover'],
       reportsDirectory: './coverage',
     },
     exclude: [
@@ -27,4 +26,3 @@ export default defineConfig({
     },
   },
 })
-
