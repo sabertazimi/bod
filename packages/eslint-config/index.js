@@ -1,7 +1,5 @@
 // @ts-check
-import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_SRC, GLOB_TESTS } from '@antfu/eslint-config'
-import eslintPluginPromise from 'eslint-plugin-promise'
-import eslintPluginSecurity from 'eslint-plugin-security'
+import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_TESTS } from '@antfu/eslint-config'
 import eslintPluginTestingLibrary from 'eslint-plugin-testing-library'
 import { isPackageExists } from 'local-pkg'
 
@@ -68,31 +66,6 @@ const eslintConfigTestingLibrary = {
 }
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
-const eslintConfigSecurity = {
-  files: [GLOB_SRC],
-  ignores: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
-  ...eslintPluginSecurity.configs.recommended,
-}
-
-/** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
-const eslintConfigPromise = {
-  files: [GLOB_SRC],
-  ignores: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
-  plugins: {
-    promise: eslintPluginPromise,
-  },
-  rules: {
-    ...eslintPluginPromise.configs.recommended.rules,
-    'promise/always-return': [
-      'error',
-      {
-        ignoreLastCallback: true,
-      },
-    ],
-  },
-}
-
-/** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigRules = {
   rules: {
     'eslint-comments/require-description': 'error',
@@ -112,14 +85,16 @@ const eslintConfigRules = {
 const eslintConfig = [
   eslintConfigMarkdown,
   eslintConfigTestingLibrary,
-  eslintConfigSecurity,
-  eslintConfigPromise,
   eslintConfigRules,
 ]
 
 /** @type {import('@antfu/eslint-config').OptionsConfig} */
 const eslintConfigAntfu = {
   react: true,
+  stylistic: true,
+  typescript: {
+    tsconfigPath: 'tsconfig.json',
+  },
   ...eslintConfigNext,
   formatters: {
     css: true,
@@ -128,14 +103,68 @@ const eslintConfigAntfu = {
   },
 }
 
-export default antfu(
-  {
-    typescript: {
-      tsconfigPath: 'tsconfig.json',
+/**
+ * Define ESLint config with default settings.
+ *
+ * Default configuration includes:
+ * - TypeScript support with type-aware rules (tsconfigPath: 'tsconfig.json')
+ * - React support
+ * - Stylistic formatting rules
+ * - Next.js support (auto-detected)
+ * - CSS, HTML, and Markdown formatters
+ *
+ * @param {import('@antfu/eslint-config').OptionsConfig} [options] - ESLint configuration options
+ * @param {...import('@antfu/eslint-config').TypedFlatConfigItem} userConfigs - Additional user-defined flat config items
+ * @returns {ReturnType<typeof antfu>} ESLint flat config composer
+ *
+ * @example
+ * Use default configuration (type-aware rules enabled)
+ * ```js
+ * export { default } from '@dg-scripts/eslint-config'
+ * ```
+ *
+ * @example
+ * Customize TypeScript options
+ * ```js
+ * import { defineConfig } from '@dg-scripts/eslint-config'
+ *
+ * export default defineConfig({
+ *   typescript: {
+ *     tsconfigPath: './path/to/tsconfig.json',
+ *   },
+ * })
+ * ```
+ *
+ * @example
+ * Disable type-aware rules
+ * ```js
+ * import { defineConfig } from '@dg-scripts/eslint-config'
+ *
+ * export default defineConfig({
+ *   typescript: true,
+ * })
+ * ```
+ */
+export function defineConfig(options = {}, ...userConfigs) {
+  return antfu(
+    {
+      ...eslintConfigAntfu,
+      ...options,
     },
-    ...eslintConfigAntfu,
-  },
-  ...eslintConfig,
-)
+    ...eslintConfig,
+    ...userConfigs,
+  )
+}
 
-export const disableTypeAware = antfu(eslintConfigAntfu, ...eslintConfig)
+/**
+ * Default ESLint config with type-aware rules enabled.
+ *
+ * This is equivalent to calling `defineConfig()` without any arguments.
+ * Type-aware rules are enabled by default with `tsconfigPath: 'tsconfig.json'`.
+ *
+ * @example
+ * ```js
+ * export { default } from '@dg-scripts/eslint-config'
+ * ```
+ */
+export default defineConfig()
