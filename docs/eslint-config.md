@@ -31,6 +31,8 @@ npm install -D @dg-scripts/eslint-config
 
 ## Usage
 
+### Basic Usage
+
 Create a file named `eslint.config.js`
 with following contents in the root folder of your project:
 
@@ -38,37 +40,96 @@ with following contents in the root folder of your project:
 export { default } from '@dg-scripts/eslint-config'
 ```
 
-You can override the settings from `@dg-scripts/eslint-config`
-by editing the `eslint.config.js` file:
+### With Custom Options
+
+Use `defineConfig` to customize the configuration:
+
+```js
+import { defineConfig } from '@dg-scripts/eslint-config'
+
+export default defineConfig({
+  // Customize TypeScript options
+  typescript: {
+    tsconfigPath: './path/to/tsconfig.json', // Custom tsconfig path
+  },
+  // Disable some opinionated rules
+  lessOpinionated: true,
+  // Other options from @antfu/eslint-config
+})
+```
+
+### With Additional Rules
+
+You can override or add rules by chaining methods:
 
 ```js
 import eslintConfig from '@dg-scripts/eslint-config'
 
-export default eslintConfig.append(
+export default eslintConfig
+  .append({
+    ignores: ['cypress', 'cypress.config.ts'],
+  })
+  .append({
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  })
+```
+
+Or use `defineConfig` with additional configs:
+
+```js
+import { defineConfig } from '@dg-scripts/eslint-config'
+
+export default defineConfig(
+  {
+    typescript: {
+      tsconfigPath: 'tsconfig.json',
+    },
+  },
   {
     ignores: ['cypress', 'cypress.config.ts'],
   },
-).append({
-  rules: {
-    'react-refresh/only-export-components': 'off',
+  {
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
   },
+)
+```
+
+## Type-Aware Rules
+
+By default, type-aware [rules](https://typescript-eslint.io/getting-started/typed-linting) are **enabled** with `tsconfigPath: 'tsconfig.json'`.
+
+The configuration will automatically look for `tsconfig.json` in your project root.
+If your `tsconfig.json` is in a different location, you can customize it:
+
+```js
+import { defineConfig } from '@dg-scripts/eslint-config'
+
+export default defineConfig({
+  typescript: {
+    tsconfigPath: './path/to/tsconfig.json',
+  },
+})
+```
+
+To disable type-aware rules:
+
+```js
+import { defineConfig } from '@dg-scripts/eslint-config'
+
+export default defineConfig({
+  typescript: true, // Enable TypeScript support without type-aware rules
 })
 ```
 
 ## Next.js
 
-When package `next` and `eslint-config-next` installed in project,
-eslint configuration will enable automatically,
-no need for any additional configuration.
-
-## Disable Type Aware Rules
-
-Type aware [rules](https://typescript-eslint.io/getting-started/typed-linting)
-can opt-out by:
-
-```js
-export { disableTypeAware as default } from '@dg-scripts/eslint-config'
-```
+When package `next` and `@next/eslint-plugin-next` are installed in your project,
+the Next.js configuration will be enabled automatically.
+No additional configuration is required.
 
 ## Contact
 
