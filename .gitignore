@@ -99,3 +99,7 @@ scripts/storage/
 # verdaccio local registry meta storage
 storage/
 .npmrc
+
+# Agent files
+**/.claude/*.local.json
+**/.claude/*.local.md
