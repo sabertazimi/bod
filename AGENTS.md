@@ -38,9 +38,10 @@ pnpm lint:fix
 pnpm format
 
 # Start development servers
-pnpm start           # Start webpack template
-pnpm start:all       # Start all packages
-pnpm start:bod       # Start bod CLI in dev mode
+pnpm start                                       # Start root level development
+pnpm --filter @dg-scripts/webpack-template start # Start webpack template dev server
+pnpm start:all                                   # Start all packages
+pnpm start:bod                                   # Start bod CLI in dev mode
 
 # Build documentation
 pnpm build:docs
@@ -53,9 +54,9 @@ pnpm build:docs
 pnpm --filter <package-name> <command>
 
 # Examples:
-pnpm --filter bod start          # Run bod CLI in development
-pnpm --filter webpack-template dev   # Start webpack dev server
-pnpm --filter eslint-config-bod lint # Lint ESLint config
+pnpm --filter bod start                          # Run bod CLI in development
+pnpm --filter @dg-scripts/webpack-template dev   # Start webpack template dev server
+pnpm --filter eslint-config-bod lint             # Lint ESLint config
 ```
 
 ### Testing
