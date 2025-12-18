@@ -7,8 +7,8 @@ This file provides guidance to code agents when working with code in this reposi
 This is a monorepo using pnpm workspaces with multiple packages:
 
 - `packages/bod/` - Main CLI tool for creating React projects
-- `packages/eslint-config-bod/` - ESLint configuration packages
-- `packages/stylelint-config-bod/` - StyleLint configuration packages
+- `packages/eslint-config/` - ESLint configuration packages
+- `packages/stylelint-config/` - StyleLint configuration packages
 - `packages/webpack-template/` - Webpack-based React template
 - `website/` - Documentation site
 
@@ -56,7 +56,7 @@ pnpm --filter <package-name> <command>
 # Examples:
 pnpm --filter bod start                          # Run bod CLI in development
 pnpm --filter @dg-scripts/webpack-template dev   # Start webpack template dev server
-pnpm --filter eslint-config-bod lint             # Lint ESLint config
+pnpm --filter @dg-scripts/eslint-config lint     # Lint ESLint config
 ```
 
 ### Testing
@@ -96,11 +96,10 @@ pnpm test:all && pnpm badge
 - Production optimization with CSS/JS minification
 - Particle system demonstration code included
 
-### ESLint Config (packages/eslint-config-bod/)
+### ESLint Config (packages/eslint-config/)
 
-- Multiple configurations: basic, advanced, typescript, jest
+- Based on `@antfu/eslint-config`
 - Type-aware linting with TypeScript support
-- React and accessibility rules included
 
 ## Release Process
 
