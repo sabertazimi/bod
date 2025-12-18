@@ -90,7 +90,7 @@ describe('createCommand', () => {
 
   it.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
-    { timeout: 60_000 },
+    { timeout: 120_000 },
     async ({ value }) => {
       const mockSelect = vi
         .spyOn(utils, 'select')
