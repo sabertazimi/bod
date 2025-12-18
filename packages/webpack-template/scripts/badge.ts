@@ -42,7 +42,7 @@ const getBadgeUrl = (
   const percentage = getCoveragePercentage(summaryFilePath, coverageType);
   const coverage = `${percentage}${encodeURI('%')}`;
   const color = getBadgeColor(percentage);
-  const url = `https://img.shields.io/badge/${coverageType}-${coverage}-${color}?logo=jest&style=${badgeStyle}`;
+  const url = `https://img.shields.io/badge/${coverageType}-${coverage}-${color}?logo=vitest&style=${badgeStyle}`;
   return url;
 };
 

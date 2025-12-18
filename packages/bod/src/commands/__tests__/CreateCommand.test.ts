@@ -2,6 +2,7 @@ import type { SpawnSyncReturns } from 'node:child_process'
 import type { Action } from '../CreateCommand.js'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as utils from '../../utils/index.js'
 import CreateCommand from '../CreateCommand.js'
 
@@ -25,10 +26,10 @@ describe('createCommand', () => {
   it.each(CreateCommand.TemplateActions)(
     'should get correct command/args and invoke [select] via template choice [$name]',
     async ({ value }) => {
-      const mockSelect = jest
+      const mockSelect = vi
         .spyOn(utils, 'select')
         .mockImplementation(async () => value)
-      const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
+      const mockSpawn = vi.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 0,
         } as SpawnSyncReturns<NonSharedBuffer>
@@ -62,10 +63,10 @@ describe('createCommand', () => {
   it.each(CreateCommand.TemplateActions)(
     'should throw error when exited with non zero via template choice [$name]',
     async ({ value }) => {
-      const mockSelect = jest
+      const mockSelect = vi
         .spyOn(utils, 'select')
         .mockImplementation(async () => value)
-      const mockSpawn = jest.spyOn(spawn, 'sync').mockImplementation(() => {
+      const mockSpawn = vi.spyOn(spawn, 'sync').mockImplementation(() => {
         return {
           status: 1,
         } as SpawnSyncReturns<NonSharedBuffer>
@@ -90,7 +91,7 @@ describe('createCommand', () => {
   it.each(CreateCommand.TemplateActions)(
     'should initialize app directory via template choice [$name]',
     async ({ value }) => {
-      const mockSelect = jest
+      const mockSelect = vi
         .spyOn(utils, 'select')
         .mockImplementation(async () => value)
       const additionalOptions

@@ -1,3 +1,4 @@
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import ExplodingParticle from '../ExplodingParticle'
 
 describe('explodingParticle', () => {
@@ -7,12 +8,12 @@ describe('explodingParticle', () => {
 
   beforeEach(() => {
     mockContextFunctions = {
-      save: jest.fn(),
-      restore: jest.fn(),
-      beginPath: jest.fn(),
-      closePath: jest.fn(),
-      arc: jest.fn(),
-      fill: jest.fn(),
+      save: vi.fn(),
+      restore: vi.fn(),
+      beginPath: vi.fn(),
+      closePath: vi.fn(),
+      arc: vi.fn(),
+      fill: vi.fn(),
     }
     mockContextProps = {
       fillStyle: '',

@@ -20,7 +20,7 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["./src/**/*", "index.d.ts"],
+  "include": ["./src/**/*", "index.d.ts", "vitest.config.ts", "vitest.setup.ts"],
   "exclude": [
     "node_modules",
     "build",
