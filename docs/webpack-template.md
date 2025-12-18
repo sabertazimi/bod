@@ -38,7 +38,7 @@ on repo [Bod](https://github.com/sabertazimi/bod).
 - `Babel` transpile support.
 - `Webpack` for hot reload development and dedicated building work
   with bundle analysis and elegant progressbar.
-- `Jest` and `Testing Library` for robust unit tests and detailed coverage report.
+- `Vitest` and `Testing Library` for robust unit tests and detailed coverage report.
 - `PostCSS` for CSS auto-prefixer support.
 - `ESLint` with TypeScript parser for TypeScript style check.
 - `StyleLint` with custom rules for CSS style check.
