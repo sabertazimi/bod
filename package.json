@@ -41,15 +41,15 @@
     "start": "pnpm start:template",
     "start:all": "pnpm -r run start",
     "start:bod": "pnpm --filter bod start",
-    "test": "jest --watch",
-    "test:all": "pnpm -r run test && jest"
+    "test": "vitest",
+    "test:all": "pnpm -r run test && vitest run --coverage"
   },
   "devDependencies": {
     "@dg-scripts/eslint-config": "workspace:^",
     "@dg-scripts/stylelint-config": "workspace:^",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
     "@types/semver": "^7.7.1",
+    "@vitest/coverage-v8": "^4.0.16",
     "chalk": "^4.1.2",
     "chokidar": "^5.0.0",
     "ci-info": "^4.3.1",
@@ -57,17 +57,16 @@
     "consola": "^3.4.2",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
-    "jest": "^30.2.0",
     "lerna": "^9.0.3",
     "prettier": "^3.7.4",
     "semver": "^7.7.3",
     "stylelint": "^16.26.1",
-    "ts-jest": "^29.4.6",
     "tslib": "^2.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "undici": "^7.16.0",
-    "verdaccio": "^6.2.4"
+    "verdaccio": "^6.2.4",
+    "vitest": "^4.0.16"
   },
   "resolutions": {
     "ts-api-utils": "^2.1.0"

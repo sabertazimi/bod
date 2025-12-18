@@ -1,3 +1,4 @@
+import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { BaseCommand, CreateCommand, InfoCommand } from '../index.js'
 
 describe('commands', () => {

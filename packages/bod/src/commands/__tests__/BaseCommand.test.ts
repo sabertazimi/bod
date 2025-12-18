@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import BaseCommand from '../BaseCommand.js'
 
 const options = {

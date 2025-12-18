@@ -1,4 +1,5 @@
 import process from 'node:process'
+import { describe, expect, it, vi } from 'vitest'
 import { color, findPackageManager, program } from '../index.js'
 
 describe('utils', () => {
@@ -7,7 +8,7 @@ describe('utils', () => {
   })
 
   it('should execute program correctly', () => {
-    const mockParse = jest.spyOn(program, 'parse').mockImplementation(jest.fn())
+    const mockParse = vi.spyOn(program, 'parse').mockImplementation(vi.fn())
     expect(process.env.__BOD__).toStrictEqual('__BOD__')
     mockParse.mockRestore()
   })
