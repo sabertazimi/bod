@@ -19,7 +19,6 @@ tags: [ESLint]
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Vitest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
-[![Vitest Coverage](http://raw.githubusercontent.com/sabertazimi/bod/refs/heads/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
 This package includes the shareable ESLint configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
 
@@ -156,6 +155,10 @@ export default defineConfig({
 When package `next` and `@next/eslint-plugin-next` are installed in your project,
 the Next.js configuration will be enabled automatically.
 No additional configuration is required.
+
+## Rules
+
+See [ESLint inspector report](https://tazimi.dev/bod/eslint) for more details.
 
 ## Contact
 
