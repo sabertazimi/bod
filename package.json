@@ -37,6 +37,7 @@
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
     "lint:fix": "pnpm -r run lint:fix",
+    "lint:report": "pnpm -r run lint:report",
     "release": "tsx scripts/release.ts --push",
     "start": "pnpm start:template",
     "start:all": "pnpm -r run start",
