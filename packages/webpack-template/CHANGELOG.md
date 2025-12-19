@@ -338,7 +338,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **deps-dev:** bump autoprefixer from 10.3.3 to 10.3.4 ([#92](https://github.com/sabertazimi/boilerplate/issues/92)) ([9103de6](https://github.com/sabertazimi/boilerplate/commit/9103de60e9be8f60fc6feaeaf2c6e6778e9e7859))
 * **deps-dev:** bump clean-webpack-plugin from 3.0.0 to 4.0.0 ([#90](https://github.com/sabertazimi/boilerplate/issues/90)) ([7b5f704](https://github.com/sabertazimi/boilerplate/commit/7b5f704ed6b12a673fc1c2cdf9467a1baa16a78e))
 * **deps-dev:** bump mini-css-extract-plugin from 2.2.1 to 2.2.2 ([#91](https://github.com/sabertazimi/boilerplate/issues/91)) ([0b761da](https://github.com/sabertazimi/boilerplate/commit/0b761da515cbaffd451d394033e5ea4c2aef28c4))
-* **deps-dev:** bump stylelint-config-bod from 5.3.1 to 5.3.3 ([#96](https://github.com/sabertazimi/boilerplate/issues/96)) ([d3552ce](https://github.com/sabertazimi/boilerplate/commit/d3552cead3caa8edc320141bb94048c3e83b9951))
 * **deps-dev:** bump webpack from 5.51.1 to 5.52.0 ([#97](https://github.com/sabertazimi/boilerplate/issues/97)) ([d35b2f1](https://github.com/sabertazimi/boilerplate/commit/d35b2f1065fd91ae98245c8f5db26f81bd210003))
 * **Jest:** enable Jest config intellisense ([01f9140](https://github.com/sabertazimi/boilerplate/commit/01f9140e389f2e9c3e1c59c50afd855490a17b69))
 * **webpack:** enable webpack config intellisense ([2bcb3aa](https://github.com/sabertazimi/boilerplate/commit/2bcb3aab2f12c0d2b00aae80bb9591f6c883f720))

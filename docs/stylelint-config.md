@@ -18,8 +18,8 @@ tags: [StyleLint, CSS]
 [![CDN](https://img.shields.io/npm/v/@dg-scripts/stylelint-config?label=CDN&logo=cloudflare&style=for-the-badge)](https://cdn.jsdelivr.net/npm/@dg-scripts/stylelint-config@latest/)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
-[![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
-[![Jest Coverage](http://raw.githubusercontent.com/sabertazimi/bod/refs/heads/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
+[![Vitest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
+[![Vitest Coverage](http://raw.githubusercontent.com/sabertazimi/bod/refs/heads/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 
 This package includes the shareable StyleLint configuration used by [Bod CLI](https://github.com/sabertazimi/bod).
 
@@ -58,8 +58,13 @@ to change the indentation to tabs and turn off the number-leading-zero rule:
 
 ## Features
 
-- Based on [`stylelint-config-bod`](https://npmjs.com/package/stylelint-config-bod).
-- Prettier Support.
+- CSS Standard with [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard).
+- CSS Property Order with [stylelint-config-recess-order](https://github.com/stormwarning/stylelint-config-recess-order).
+- HTML/Vue Support with [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html).
+- SCSS Support with [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss).
+- Markdown Support with [postcss-markdown](https://github.com/ota-meshi/postcss-markdown).
+- Tailwind CSS Support (ignores Tailwind at-rules).
+- Prettier Integration with [stylelint-prettier](https://github.com/prettier/stylelint-prettier).
 
 ## Reference
 

@@ -162,22 +162,6 @@ importers:
 
   packages/stylelint-config:
     dependencies:
-      stylelint-config-bod:
-        specifier: workspace:^
-        version: link:../stylelint-config-bod
-      stylelint-prettier:
-        specifier: ^5.0.3
-        version: 5.0.3(prettier@3.7.4)(stylelint@16.26.1(typescript@5.9.3))
-    devDependencies:
-      prettier:
-        specifier: ^3.7.4
-        version: 3.7.4
-      stylelint:
-        specifier: ^16.26.1
-        version: 16.26.1(typescript@5.9.3)
-
-  packages/stylelint-config-bod:
-    dependencies:
       postcss-html:
         specifier: ^1.8.0
         version: 1.8.0
@@ -196,7 +180,13 @@ importers:
       stylelint-config-standard-scss:
         specifier: ^16.0.0
         version: 16.0.0(postcss@8.5.6)(stylelint@16.26.1(typescript@5.9.3))
+      stylelint-prettier:
+        specifier: ^5.0.3
+        version: 5.0.3(prettier@3.7.4)(stylelint@16.26.1(typescript@5.9.3))
     devDependencies:
+      prettier:
+        specifier: ^3.7.4
+        version: 3.7.4
       stylelint:
         specifier: ^16.26.1
         version: 16.26.1(typescript@5.9.3)
