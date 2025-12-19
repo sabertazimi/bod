@@ -101,6 +101,10 @@ const config: Config = {
               label: 'Webpack Template',
               href: 'https://tazimi.dev/bod/webpack',
             },
+            {
+              label: 'ESLint Inspector Report',
+              href: 'https://tazimi.dev/bod/eslint',
+            }
           ],
         },
         {
