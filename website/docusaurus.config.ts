@@ -11,10 +11,14 @@ const config: Config = {
   url: 'https://tazimi.dev',
   baseUrl: '/bod/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
   organizationName: 'sabertazimi',
   projectName: 'bod',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
