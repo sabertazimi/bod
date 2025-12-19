@@ -35,6 +35,14 @@ jobs:
       - name: Run linter tests
         run: |
           pnpm lint
+      - name: Build ESLint inspector report
+        run: |
+          pnpm lint:report
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v5
+        with:
+          name: eslint
+          path: packages/eslint-config/dist
 
   unit:
     name: Unit Test
@@ -258,6 +266,7 @@ jobs:
           cp -fr badges/* ./build/
           cp -fr demos/* ./build/
           cp -fr docs/* ./build/
+          cp -fr eslint ./build/
           cp -fr webpack ./build/
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

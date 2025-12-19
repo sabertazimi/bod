@@ -40,7 +40,8 @@
   },
   "scripts": {
     "lint": "eslint . --config=index.js",
-    "lint:fix": "eslint . --config=index.js --fix"
+    "lint:fix": "eslint . --config=index.js --fix",
+    "lint:report": "eslint-config-inspector --config=index.js --outDir=dist build"
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "^16.0.0",
@@ -65,5 +66,8 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "eslint-plugin-testing-library": "^7.13.5",
     "local-pkg": "^1.1.2"
+  },
+  "devDependencies": {
+    "@eslint/config-inspector": "^1.4.2"
   }
 }
