@@ -3,13 +3,9 @@ import antfu, { GLOB_MARKDOWN, GLOB_MARKDOWN_CODE, GLOB_TESTS } from '@antfu/esl
 import eslintPluginTestingLibrary from 'eslint-plugin-testing-library'
 import { isPackageExists } from 'local-pkg'
 
-const eslintConfigNext
-  = isPackageExists('next') && isPackageExists('@next/eslint-plugin-next')
-    ? { nextjs: true }
-    : { nextjs: false }
-
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigMarkdown = {
+  name: '@dg-scripts/markdown/rules',
   files: [GLOB_MARKDOWN_CODE, `${GLOB_MARKDOWN}/**/*.vue`],
   languageOptions: { parserOptions: { project: false, program: null } },
   rules: {
@@ -19,6 +15,7 @@ const eslintConfigMarkdown = {
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigTestingLibrary = {
+  name: '@dg-scripts/testing-library/rules',
   files: [...GLOB_TESTS],
   plugins: {
     'testing-library': eslintPluginTestingLibrary,
@@ -67,6 +64,7 @@ const eslintConfigTestingLibrary = {
 
 /** @type {import('@antfu/eslint-config').TypedFlatConfigItem} */
 const eslintConfigRules = {
+  name: '@dg-scripts/defaults/rules',
   rules: {
     'eslint-comments/require-description': 'error',
     'pnpm/json-enforce-catalog': 'off',
@@ -87,6 +85,11 @@ const eslintConfig = [
   eslintConfigTestingLibrary,
   eslintConfigRules,
 ]
+
+const eslintConfigNext
+  = isPackageExists('next') && isPackageExists('@next/eslint-plugin-next')
+    ? { nextjs: true }
+    : { nextjs: false }
 
 /** @type {import('@antfu/eslint-config').OptionsConfig} */
 const eslintConfigAntfu = {
@@ -143,6 +146,30 @@ const eslintConfigAntfu = {
  * export default defineConfig({
  *   typescript: true,
  * })
+ * ```
+ *
+ * @example
+ * Customize ESLint config
+ * ```js
+ * import { defineConfig } from '@dg-scripts/eslint-config'
+ *
+ * export default defineConfig(
+ *   {
+ *     name: 'base',
+ *     rules: {
+ *       'node/prefer-global/process': 'off',
+ *       'react-refresh/only-export-components': 'off',
+ *     },
+ *   },
+ *   {
+ *     name: 'ui',
+ *     files: ['src/components/ui/*.tsx'],
+ *     rules: {
+ *       'react/no-children-map': 'off',
+ *       'react/no-clone-element': 'off',
+ *     },
+ *   },
+ * )
  * ```
  */
 export function defineConfig(options = {}, ...userConfigs) {
