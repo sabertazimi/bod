@@ -104,7 +104,7 @@ const config: Config = {
             {
               label: 'ESLint Inspector Report',
               href: 'https://tazimi.dev/bod/eslint',
-            }
+            },
           ],
         },
         {
@@ -159,10 +159,7 @@ const config: Config = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
       // https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9-L25
-      additionalLanguages: [
-        'bash',
-        'json',
-      ],
+      additionalLanguages: ['bash', 'json'],
     },
   } satisfies Preset.ThemeConfig,
 }
