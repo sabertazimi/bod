@@ -50,23 +50,7 @@ export default defineConfig({
 
 ### With Additional Rules
 
-You can override or add rules by chaining methods:
-
-```js
-import eslintConfig from '@dg-scripts/eslint-config'
-
-export default eslintConfig
-  .append({
-    ignores: ['cypress', 'cypress.config.ts'],
-  })
-  .append({
-    rules: {
-      'react-refresh/only-export-components': 'off',
-    },
-  })
-```
-
-Or use `defineConfig` with additional configs:
+You can override or add rules by using `defineConfig` with additional configs (recommended):
 
 ```js
 import { defineConfig } from '@dg-scripts/eslint-config'
@@ -78,14 +62,56 @@ export default defineConfig(
     },
   },
   {
+    name: 'cypress',
     ignores: ['cypress', 'cypress.config.ts'],
   },
   {
+    name: 'react',
     rules: {
       'react-refresh/only-export-components': 'off',
     },
   },
 )
+```
+
+```js
+import { defineConfig } from '@dg-scripts/eslint-config'
+
+export default defineConfig(
+  {
+    name: 'base',
+    rules: {
+      'node/prefer-global/process': 'off',
+      'react-refresh/only-export-components': 'off',
+    },
+  },
+  {
+    name: 'ui',
+    files: ['src/components/ui/*.tsx'],
+    rules: {
+      'react/no-children-map': 'off',
+      'react/no-clone-element': 'off',
+    },
+  },
+)
+```
+
+Or by chaining methods (not recommended):
+
+```js
+import eslintConfig from '@dg-scripts/eslint-config'
+
+export default eslintConfig
+  .append({
+    name: 'cypress',
+    ignores: ['cypress', 'cypress.config.ts'],
+  })
+  .append({
+    name: 'react',
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
+  })
 ```
 
 ## Type-Aware Rules

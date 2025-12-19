@@ -147,6 +147,30 @@ const eslintConfigAntfu = {
  *   typescript: true,
  * })
  * ```
+ *
+ * @example
+ * Customize ESLint config
+ * ```js
+ * import { defineConfig } from '@dg-scripts/eslint-config'
+ *
+ * export default defineConfig(
+ *   {
+ *     name: 'base',
+ *     rules: {
+ *       'node/prefer-global/process': 'off',
+ *       'react-refresh/only-export-components': 'off',
+ *     },
+ *   },
+ *   {
+ *     name: 'ui',
+ *     files: ['src/components/ui/*.tsx'],
+ *     rules: {
+ *       'react/no-children-map': 'off',
+ *       'react/no-clone-element': 'off',
+ *     },
+ *   },
+ * )
+ * ```
  */
 export function defineConfig(options = {}, ...userConfigs) {
   return antfu(
