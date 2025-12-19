@@ -10,7 +10,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Vitest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
 
-Boilerplate CLI App - Create a new project powered by Create React App and @sabertazimi/react-scripts.
+Boilerplate CLI App - Create a new project with modern tooling.
 
 ## Installation
 
@@ -36,7 +36,7 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  create|c <appName>  Create a new project powered by @sabertazimi/react-scripts
+  create|c <appName>  Create a new project
   info|i              Print debugging information about your environment
   help [command]      display help for command
 
@@ -48,7 +48,7 @@ Commands:
 ```bash
 Usage: create|c [options] <appName>
 
-create a new project powered by @sabertazimi/react-scripts
+Create a new project
 
 Options:
   -h, --help  display help for command

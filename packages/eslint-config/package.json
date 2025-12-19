@@ -41,7 +41,7 @@
   "scripts": {
     "lint": "eslint . --config=index.js",
     "lint:fix": "eslint . --config=index.js --fix",
-    "lint:report": "eslint-config-inspector --base=/bod/ --config=index.js --outDir=dist build"
+    "lint:report": "eslint-config-inspector --base=/bod/eslint/ --config=index.js --outDir=dist build"
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "^16.0.0",

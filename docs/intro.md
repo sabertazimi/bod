@@ -51,7 +51,7 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  create|c <appName>  Create a new project powered by @sabertazimi/react-scripts
+  create|c <appName>  Create a new project
   info|i              Print debugging information about your environment
   help [command]      display help for command
 
@@ -63,7 +63,7 @@ More details on package
 
 ## Bod Template
 
-The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod).
+The official template for [**Bod CLI**](https://github.com/sabertazimi/bod).
 
 ### Live Demo
 
@@ -71,22 +71,9 @@ The official React template for [**Bod CLI**](https://github.com/sabertazimi/bod
 
 ### Start with Template
 
-This template is shipped with
-[**Bod CLI**](https://github.com/sabertazimi/bod/tree/main/packages/bod) out of box:
-
 ```bash
-# Select option `React Framework`
 bod create my-app
 ```
-
-Or use with Create React App:
-
-```bash
-npm create react-app my-app --template bod --scripts-version @sabertazimi/react-scripts
-```
-
-More available scripts on package
-[cra-template-bod](https://github.com/sabertazimi/bod/tree/main/packages/cra-template-bod).
 
 ## Contributing
 
@@ -95,7 +82,6 @@ Please fork this repository and open a pull request.
 
 ## Credits
 
-- [create-react-app](https://github.com/facebook/create-react-app).
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ## Contact
