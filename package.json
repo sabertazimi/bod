@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.26.1",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@dg-scripts/eslint-config": "workspace:^",
     "@dg-scripts/stylelint-config": "workspace:^",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.10.4",
     "@types/semver": "^7.7.1",
     "@vitest/coverage-v8": "^4.0.16",
     "chalk": "^4.1.2",
@@ -57,7 +57,7 @@
     "concurrently": "^9.2.1",
     "consola": "^3.4.2",
     "dotenv": "^17.2.3",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "lerna": "^9.0.3",
     "prettier": "^3.7.4",
     "semver": "^7.7.3",
