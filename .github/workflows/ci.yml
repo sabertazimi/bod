@@ -39,7 +39,7 @@ jobs:
         run: |
           pnpm lint:report
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: eslint
           path: packages/eslint-config/dist
@@ -81,7 +81,7 @@ jobs:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         if: ${{ matrix.node-version == 'lts/*' && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: badges
@@ -124,7 +124,7 @@ jobs:
           cp -fr scripts/npmrc .npmrc
           pnpm tsx scripts/e2e.ts
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         if: ${{ matrix.node-version == 'lts/*' && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: demos
@@ -160,7 +160,7 @@ jobs:
         run: |
           pnpm build
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         if: ${{ matrix.node-version == 'lts/*' && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
         with:
           name: webpack
@@ -192,7 +192,7 @@ jobs:
         run: |
           pnpm build:docs
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: docs
           path: build
@@ -255,7 +255,7 @@ jobs:
     needs: [lint, unit, e2e, build, docs]
     steps:
       - name: Download production artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
       - name: List production artifacts
         run: |
           ls -R
