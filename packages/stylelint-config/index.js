@@ -4,7 +4,6 @@ module.exports = {
     'stylelint-config-standard',
     'stylelint-config-recess-order',
   ],
-  plugins: ['stylelint-prettier'],
   rules: {
     'at-rule-no-deprecated': [
       true,
@@ -55,7 +54,6 @@ module.exports = {
     'import-notation': [
       'string',
     ],
-    'prettier/prettier': true,
   },
   overrides: [
     {
