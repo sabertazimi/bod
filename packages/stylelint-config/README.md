@@ -53,7 +53,6 @@ to change the indentation to tabs and turn off the number-leading-zero rule:
 - SCSS Support with [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss).
 - Markdown Support with [postcss-markdown](https://github.com/ota-meshi/postcss-markdown).
 - Tailwind CSS Support (ignores Tailwind at-rules).
-- Prettier Integration with [stylelint-prettier](https://github.com/prettier/stylelint-prettier).
 
 ## Reference
 

@@ -22,13 +22,11 @@
     "linter",
     "order",
     "idomatic-css",
-    "prettier",
     "standard",
     "stylelint",
     "stylelint-config",
     "stylelint-order",
     "stylelint-plugin",
-    "stylelint-prettier",
     "stylelint-standard"
   ],
   "main": "index.js",
@@ -43,7 +41,6 @@
     "lint:fix": "stylelint CHANGELOG.md --config=index.js --fix"
   },
   "peerDependencies": {
-    "prettier": "^3.0.0",
     "stylelint": "^16.0.0"
   },
   "dependencies": {
@@ -52,11 +49,9 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recess-order": "^7.4.0",
     "stylelint-config-standard": "^39.0.1",
-    "stylelint-config-standard-scss": "^16.0.0",
-    "stylelint-prettier": "^5.0.3"
+    "stylelint-config-standard-scss": "^16.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
     "stylelint": "^16.26.1"
   }
 }
