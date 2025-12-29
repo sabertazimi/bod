@@ -8,13 +8,14 @@
     "lint": "eslint ./src && stylelint ./src/**/*.css",
     "lint:fix": "eslint --fix ./src && stylelint --fix ./src/**/*.css",
     "serve": "docusaurus serve",
-    "start": "docusaurus start"
+    "dev": "docusaurus start"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@easyops-cn/docusaurus-search-local": "^0.52.2",
     "clsx": "^2.1.1",
+    "katex": "^0.16.27",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
