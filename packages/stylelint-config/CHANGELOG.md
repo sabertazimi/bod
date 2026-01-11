@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/sabertazimi/bod/compare/v6.0.0...v6.1.0) (2026-01-11)
+
+
+### Features
+
+* **stylelint-config:** remove Prettier integration ([#1478](https://github.com/sabertazimi/bod/issues/1478)) ([665ea65](https://github.com/sabertazimi/bod/commit/665ea6548cd7ae13f1115d8a95394fb3f8680bae))
+
+
+
+
+
 # [6.0.0](https://github.com/sabertazimi/bod/compare/v5.21.8...v6.0.0) (2025-12-19)
 
 

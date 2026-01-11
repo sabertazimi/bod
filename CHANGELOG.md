@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/sabertazimi/bod/compare/v6.0.0...v6.1.0) (2026-01-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1473](https://github.com/sabertazimi/bod/issues/1473)) ([9813107](https://github.com/sabertazimi/bod/commit/981310701d61b681f9854791a9bae6aaa426c516))
+* **eslint-config:** add named configuration objects for better debugging ([#1470](https://github.com/sabertazimi/bod/issues/1470)) ([7c65a9f](https://github.com/sabertazimi/bod/commit/7c65a9f27ce79e248ebcb291a6da553156726838))
+
+
+### Features
+
+* **stylelint-config:** remove Prettier integration ([#1478](https://github.com/sabertazimi/bod/issues/1478)) ([665ea65](https://github.com/sabertazimi/bod/commit/665ea6548cd7ae13f1115d8a95394fb3f8680bae))
+
+
+
+
+
 # [6.0.0](https://github.com/sabertazimi/bod/compare/v5.21.8...v6.0.0) (2025-12-19)
 
 
