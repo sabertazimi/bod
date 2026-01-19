@@ -41,7 +41,7 @@
     "lint:fix": "stylelint CHANGELOG.md --config=index.js --fix"
   },
   "peerDependencies": {
-    "stylelint": "^16.0.0"
+    "stylelint": "^16.0.0 || ^17.0.0"
   },
   "dependencies": {
     "postcss-html": "^1.8.1",
@@ -52,6 +52,6 @@
     "stylelint-config-standard-scss": "^16.0.0"
   },
   "devDependencies": {
-    "stylelint": "^16.26.1"
+    "stylelint": "^17.0.0"
   }
 }
