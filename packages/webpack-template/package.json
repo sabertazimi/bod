@@ -77,7 +77,7 @@
     "prettier": "^3.8.0",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
-    "stylelint": "^16.26.1",
+    "stylelint": "^17.0.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "ts-loader": "^9.5.4",
     "tsconfig-paths-webpack-plugin": "^4.2.0",

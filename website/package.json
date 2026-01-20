@@ -27,7 +27,7 @@
     "@mdx-js/react": "^3.1.1",
     "@types/node": "^24.10.9",
     "eslint": "^9.39.2",
-    "stylelint": "^16.26.1",
+    "stylelint": "^17.0.0",
     "typescript": "^5.9.3"
   },
   "browserslist": {
