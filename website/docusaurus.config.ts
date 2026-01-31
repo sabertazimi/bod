@@ -14,6 +14,10 @@ const config: Config = {
   favicon: 'img/logo.svg',
   organizationName: 'sabertazimi',
   projectName: 'bod',
+  future: {
+    v4: true,
+    experimental_faster: true,
+  },
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -52,7 +56,9 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    respectPrefersColorScheme: true,
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     docs: {
       sidebar: {
         hideable: true,
