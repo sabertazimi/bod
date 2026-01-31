@@ -68,8 +68,5 @@
     "undici": "^7.18.2",
     "verdaccio": "^6.2.4",
     "vitest": "^4.0.17"
-  },
-  "resolutions": {
-    "ts-api-utils": "^2.4.0"
   }
 }
