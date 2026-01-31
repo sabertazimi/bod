@@ -1,5 +1,6 @@
 {
   "name": "bod-website",
+  "version": "6.1.0",
   "private": true,
   "scripts": {
     "build:docs": "docusaurus build && pnpm build:post",
@@ -11,8 +12,9 @@
     "dev": "docusaurus start"
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/faster": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
     "@easyops-cn/docusaurus-search-local": "^0.52.2",
     "clsx": "^2.1.1",
     "katex": "^0.16.27",
@@ -20,10 +22,10 @@
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/theme-classic": "^3.9.2",
-    "@docusaurus/tsconfig": "3.9.2",
-    "@docusaurus/types": "3.9.2",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@docusaurus/types": "^3.9.2",
     "@mdx-js/react": "^3.1.1",
     "@types/node": "^24.10.9",
     "eslint": "^9.39.2",
@@ -41,6 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "version": "6.1.0"
+  }
 }
