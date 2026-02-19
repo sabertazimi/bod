@@ -15,11 +15,11 @@
     "@docusaurus/core": "^3.9.2",
     "@docusaurus/faster": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
-    "@easyops-cn/docusaurus-search-local": "^0.52.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.0",
     "clsx": "^2.1.1",
-    "katex": "^0.16.27",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "katex": "^0.16.28",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.9.2",
@@ -27,9 +27,9 @@
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
     "@mdx-js/react": "^3.1.1",
-    "@types/node": "^24.10.9",
+    "@types/node": "^24.10.13",
     "eslint": "^9.39.2",
-    "stylelint": "^17.0.0",
+    "stylelint": "^17.3.0",
     "typescript": "^5.9.3"
   },
   "browserslist": {
