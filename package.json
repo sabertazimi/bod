@@ -57,7 +57,7 @@
     "concurrently": "^9.2.1",
     "consola": "^3.4.2",
     "dotenv": "^17.3.1",
-    "eslint": "^9.39.3",
+    "eslint": "^10.0.2",
     "lerna": "^9.0.4",
     "prettier": "^3.8.1",
     "semver": "^7.7.4",

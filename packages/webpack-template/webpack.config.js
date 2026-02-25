@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const WebpackBar = require('webpackbar')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
@@ -153,11 +152,6 @@ module.exports = {
     }),
     new StyleLintPlugin({
       exclude: ['node_modules', 'build', 'dist', 'coverage'],
-    }),
-    new ESLintPlugin({
-      extensions: ['tsx', 'ts', 'jsx', 'js'],
-      configType: 'flat',
-      eslintPath: 'eslint/use-at-your-own-risk',
     }),
     enableAnalyzer && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
     new WebpackBar(),
