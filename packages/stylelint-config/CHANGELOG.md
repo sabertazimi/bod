@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/sabertazimi/bod/compare/v6.1.0...v6.1.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1479](https://github.com/sabertazimi/bod/issues/1479)) ([50d21f2](https://github.com/sabertazimi/bod/commit/50d21f27258d80b6506e94b9a6cec84fd6a7a432))
+* **deps:** update dependencies (non-major) ([#1487](https://github.com/sabertazimi/bod/issues/1487)) ([fb84d98](https://github.com/sabertazimi/bod/commit/fb84d98af909d8caf5e0326b4daa864ee14b4f31))
+* **deps:** update dependency stylelint-config-standard to v40 ([#1483](https://github.com/sabertazimi/bod/issues/1483)) ([869b685](https://github.com/sabertazimi/bod/commit/869b685bb0aa1f7c46632a9b33c14ed1fd1c579b))
+* **deps:** update dependency stylelint-config-standard-scss to v17 ([#1484](https://github.com/sabertazimi/bod/issues/1484)) ([574dd5d](https://github.com/sabertazimi/bod/commit/574dd5d5b667d6b859c4a5d77951379dd732ab81))
+
+
+
+
+
 # [6.1.0](https://github.com/sabertazimi/bod/compare/v6.0.0...v6.1.0) (2026-01-11)
 
 

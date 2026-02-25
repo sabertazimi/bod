@@ -1,6 +1,6 @@
 {
   "name": "bod-website",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "private": true,
   "scripts": {
     "build:docs": "docusaurus build && pnpm build:post",

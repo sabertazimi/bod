@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/sabertazimi/bod/compare/v6.1.0...v6.1.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1479](https://github.com/sabertazimi/bod/issues/1479)) ([50d21f2](https://github.com/sabertazimi/bod/commit/50d21f27258d80b6506e94b9a6cec84fd6a7a432))
+* **deps:** update dependencies (non-major) ([#1487](https://github.com/sabertazimi/bod/issues/1487)) ([fb84d98](https://github.com/sabertazimi/bod/commit/fb84d98af909d8caf5e0326b4daa864ee14b4f31))
+* **deps:** update dependency @antfu/eslint-config to ^7.1.0 ([#1485](https://github.com/sabertazimi/bod/issues/1485)) ([7fb091b](https://github.com/sabertazimi/bod/commit/7fb091b9c6361b86522528f10f257a561eb064b2))
+* **deps:** update dependency @antfu/eslint-config to v7 ([#1482](https://github.com/sabertazimi/bod/issues/1482)) ([8db0c40](https://github.com/sabertazimi/bod/commit/8db0c40e8d05685c6e2490f915583e45b5f65e17))
+
+
+
+
+
 # [6.1.0](https://github.com/sabertazimi/bod/compare/v6.0.0...v6.1.0) (2026-01-11)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/stylelint-config",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "description": "StyleLint configuration used by dg-scripts.",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
