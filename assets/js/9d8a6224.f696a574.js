@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbod_website=self.webpackChunkbod_website||[]).push([["368"],{2063(e){e.exports=JSON.parse('{"tag":{"label":"React","permalink":"/bod/docs/tags/react","allTagsPath":"/bod/docs/tags","count":1,"items":[{"id":"webpack-template","title":"Webpack Template","description":"Author","permalink":"/bod/docs/webpack-template"}],"unlisted":false}}')}}]);
