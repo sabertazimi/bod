@@ -3,13 +3,17 @@ import { color, printer } from './console.js'
 import { program, select } from './core.js'
 import { envinfo, spawn } from './os.js'
 
+const PNPM_USER_AGENT_RE = /pnpm/
+const YARN_USER_AGENT_RE = /yarn/
+const BUN_USER_AGENT_RE = /bun/
+
 function findPackageManager(): string {
   const userAgent = process.env.npm_config_user_agent ?? ''
-  const packageManager = /pnpm/.test(userAgent)
+  const packageManager = PNPM_USER_AGENT_RE.test(userAgent)
     ? 'pnpm'
-    : /yarn/.test(userAgent)
+    : YARN_USER_AGENT_RE.test(userAgent)
       ? 'yarn'
-      : /bun/.test(userAgent)
+      : BUN_USER_AGENT_RE.test(userAgent)
         ? 'bun'
         : 'npm'
   return packageManager
