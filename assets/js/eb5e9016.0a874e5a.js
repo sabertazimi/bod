@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbod_website=self.webpackChunkbod_website||[]).push([["639"],{3409(s){s.exports=JSON.parse('{"tag":{"label":"CSS","permalink":"/bod/docs/tags/css","allTagsPath":"/bod/docs/tags","count":1,"items":[{"id":"stylelint-config","title":"@dg-scripts/stylelint-config","description":"Author","permalink":"/bod/docs/stylelint-config"}],"unlisted":false}}')}}]);

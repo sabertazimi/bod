@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbod_website=self.webpackChunkbod_website||[]).push([["407"],{3265(e){e.exports=JSON.parse('{"tag":{"label":"CLI","permalink":"/bod/docs/tags/cli","allTagsPath":"/bod/docs/tags","count":1,"items":[{"id":"bod","title":"Bod CLI","description":"Author","permalink":"/bod/docs/bod"}],"unlisted":false}}')}}]);
