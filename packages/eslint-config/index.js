@@ -68,7 +68,6 @@ const eslintConfigRules = {
   rules: {
     'eslint-comments/require-description': 'error',
     'pnpm/json-enforce-catalog': 'off',
-    'react/jsx-uses-vars': 'error',
     'style/brace-style': ['error', '1tbs'],
     'ts/prefer-literal-enum-member': [
       'error',
