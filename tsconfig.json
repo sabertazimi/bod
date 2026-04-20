@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["DOM", "ESNext", "ES2021"],
+    "lib": [
+      "DOM",
+      "ESNext",
+      "ES2021"
+    ],
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
@@ -15,7 +19,10 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["scripts", "packages/*/src"],
+  "include": [
+    "scripts",
+    "packages/*/src"
+  ],
   "exclude": [
     "node_modules",
     "build",
