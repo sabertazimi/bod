@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/sabertazimi/bod/compare/v6.1.1...v6.1.2) (2026-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1495](https://github.com/sabertazimi/bod/issues/1495)) ([15389b7](https://github.com/sabertazimi/bod/commit/15389b7672759478971db20afbcdec015cddbbc7))
+* **deps:** update dependencies (non-major) ([#1505](https://github.com/sabertazimi/bod/issues/1505)) ([c43d27a](https://github.com/sabertazimi/bod/commit/c43d27a031650a078596d9503fc6b620c197f390))
+* **deps:** update dependency @antfu/eslint-config to v8 ([#1510](https://github.com/sabertazimi/bod/issues/1510)) ([366a382](https://github.com/sabertazimi/bod/commit/366a3825a7c80410e2bc019b8c4efbfeb66cf94d))
+* **deps:** update dependency eslint-plugin-format to v2 ([#1503](https://github.com/sabertazimi/bod/issues/1503)) ([e56f20b](https://github.com/sabertazimi/bod/commit/e56f20b33f26154f1f38b545364795e33d8330dd))
+* **deps:** update dependency katex to ^0.16.40 ([#1504](https://github.com/sabertazimi/bod/issues/1504)) ([580ad38](https://github.com/sabertazimi/bod/commit/580ad38436bf60c48b77dffd11b34fcc2370896d))
+
+
+
+
+
 ## [6.1.1](https://github.com/sabertazimi/bod/compare/v6.1.0...v6.1.1) (2026-02-25)
 
 
