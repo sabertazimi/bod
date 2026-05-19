@@ -1,5 +1,22 @@
+minimumReleaseAge: 0
+
 shellEmulator: true
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - '@octokit/endpoint@9.0.6'
+  - detect-port@1.6.1
+  - pino@9.14.0
+  - semver
 
 packages:
   - 'packages/*'
   - website
+
+allowBuilds:
+  '@swc/core': false
+  core-js: false
+  esbuild: false
+  nx: false
+  sharp: false
