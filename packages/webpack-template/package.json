@@ -1,6 +1,6 @@
 {
   "name": "@dg-scripts/webpack-template",
-  "version": "6.1.2",
+  "version": "6.2.0",
   "packageManager": "pnpm@10.33.4",
   "description": "Minimal webpack boilerplate",
   "author": "sabertazimi",

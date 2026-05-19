@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/sabertazimi/bod/compare/v6.1.2...v6.2.0) (2026-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (non-major) ([#1513](https://github.com/sabertazimi/bod/issues/1513)) ([36c0bf2](https://github.com/sabertazimi/bod/commit/36c0bf23ea26ca3940a0f2bf6044bfd55324ab59))
+
+
+### Features
+
+* **deps:** update @antfu/eslint-config to v9 and pnpm to v11 ([#1512](https://github.com/sabertazimi/bod/issues/1512)) ([131d344](https://github.com/sabertazimi/bod/commit/131d34489416e4196d87555646a9b752da27474d))
+
+
+
+
+
 ## [6.1.2](https://github.com/sabertazimi/bod/compare/v6.1.1...v6.1.2) (2026-04-20)
 
 
