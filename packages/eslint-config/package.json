@@ -67,6 +67,6 @@
     "local-pkg": "^1.1.2"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^2.0.1"
+    "@eslint/config-inspector": "^3.0.2"
   }
 }
