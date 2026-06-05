@@ -15,24 +15,14 @@ interface Action {
 class CreateCommand extends BaseCommand {
   static readonly TemplateActions: Action[] = [
     {
-      name: 'Vanilla',
-      value: 'vanilla',
-      command: 'git',
-      args: ['clone', '--depth=1', 'https://github.com/sabertazimi/bod'],
-      postCommands: [
-        {
-          command: 'mv',
-          args: ['appPath', 'appPath.bak'],
-        },
-        {
-          command: 'mv',
-          args: ['appPath.bak/packages/webpack-template', 'appPath'],
-        },
-        {
-          command: 'rm',
-          args: ['-rf', 'appPath.bak'],
-        },
+      name: 'Vite',
+      value: 'vite',
+      command: 'npm',
+      args: [
+        'create',
+        'vite@latest',
       ],
+      postCommands: [],
     },
     {
       name: 'React Framework',
@@ -40,11 +30,7 @@ class CreateCommand extends BaseCommand {
       command: 'npm',
       args: [
         'create',
-        'react-app@latest',
-        '--template',
-        'cra-template-bod@latest',
-        '--scripts-version',
-        '@sabertazimi/react-scripts@latest',
+        'next-app@latest',
       ],
       postCommands: [],
     },
@@ -55,16 +41,6 @@ class CreateCommand extends BaseCommand {
       args: [
         'create',
         'vue@latest',
-      ],
-      postCommands: [],
-    },
-    {
-      name: 'Vite Framework',
-      value: 'vite',
-      command: 'npm',
-      args: [
-        'create',
-        'vite@latest',
       ],
       postCommands: [],
     },

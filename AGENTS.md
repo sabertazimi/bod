@@ -2,124 +2,66 @@
 
 This file provides guidance to coding agents when working with code in this repository.
 
-## Project Structure
+## Project Overview
 
-This is a monorepo using pnpm workspaces with multiple packages:
+Bod is a pnpm + Lerna monorepo containing a CLI scaffolding tool (`bod create <appName>`) and shared linting configs. Node >=18 required, pnpm, TypeScript ES modules.
 
-- `packages/bod/` - Main CLI tool for creating React projects
-- `packages/eslint-config/` - ESLint configuration packages
-- `packages/stylelint-config/` - StyleLint configuration packages
-- `packages/webpack-template/` - Webpack-based React template
-- `website/` - Documentation site
-
-The project follows a monorepo structure where each package is independently versionable and publishable to npm.
-
-## Development Commands
-
-### Root Level Commands
+## Commands
 
 ```bash
-# Install dependencies
-pnpm install
-
-# Run all tests across packages
-pnpm test:all
-
 # Build all packages
 pnpm build
 
-# Lint all packages
-pnpm lint
+# Lint
+pnpm lint          # lint all packages
+pnpm lint:fix      # auto-fix
 
-# Fix linting issues
-pnpm lint:fix
+# Test
+pnpm test          # vitest (watch mode, packages/bod only)
+pnpm test:all      # all packages + coverage
 
-# Format all code
-pnpm format
+# Run a single test file
+pnpm vitest run packages/bod/src/commands/__tests__/CreateCommand.test.ts
 
-# Start development servers
-pnpm start                                       # Start root level development
-pnpm --filter @dg-scripts/webpack-template start # Start webpack template dev server
-pnpm start:all                                   # Start all packages
-pnpm start:bod                                   # Start bod CLI in dev mode
+# Run a specific test by name
+pnpm vitest run -t "should extends"
 
-# Build documentation
-pnpm build:docs
+# Dev (run CLI locally)
+cd packages/bod && pnpm dev
+
+# Release
+pnpm release       # tsx scripts/release.ts --push (Lerna conventional commits)
 ```
 
-### Package-specific Commands
+## Architecture
 
-```bash
-# Work on specific package
-pnpm --filter <package-name> <command>
+**Packages:**
 
-# Examples:
-pnpm --filter bod start                          # Run bod CLI in development
-pnpm --filter @dg-scripts/webpack-template dev   # Start webpack template dev server
-pnpm --filter @dg-scripts/eslint-config lint     # Lint ESLint config
-```
+- `packages/bod` — The CLI tool (`bod` command). Entry: `bin/bod.js` → `src/bod.ts` (commander setup) → `src/index.ts` (CommandFactory registry)
+- `packages/eslint-config` — Shared ESLint flat config (`@dg-scripts/eslint-config`), extends `@antfu/eslint-config`
+- `packages/stylelint-config` — Shared Stylelint config (`@dg-scripts/stylelint-config`)
+- `website` — Docusaurus docs site
 
-### Testing
+**CLI boot flow:**
 
-```bash
-# Run root-level tests
-jest --watch
+1. `bin/bod.js` → `src/bod.ts` creates a commander program, registers all commands from `CommandFactory` (a `Map<string, BaseCommand>`)
+2. Each command extends `BaseCommand` (abstract class with `name`, `description`, `usage`, `alias`, `run()`)
+3. `CreateCommand` — prompts template selection via `@inquirer/prompts`, then spawns the corresponding scaffolding tool (`create-vite`, `create-next-app`, `create-vue`). Auto-detects package manager from `npm_config_user_agent`.
+4. `InfoCommand` — prints env info via `envinfo`
 
-# Run tests for specific package
-pnpm --filter bod test
+**Key utilities** (`packages/bod/src/utils/`):
 
-# Run tests with coverage
-pnpm test:all && pnpm badge
-```
+- `console.ts` — re-exports chalk (`color`) and consola (`printer`)
+- `core.ts` — commander `program` singleton + inquirer `select`
+- `os.ts` — `cross-spawn` (`spawn`) and `envinfo`
+- `index.ts` — barrel export + `findPackageManager()`
 
-## Key Technologies
+**Build scripts** (`scripts/`): `release.ts`, `canary.ts`, `e2e.ts`, `badge.ts` — used in CI for publishing, canary releases, e2e testing (verdaccio), and coverage badges.
 
-- **Package Manager**: pnpm with workspaces
-- **CLI Framework**: Commander.js with Inquirer prompts
-- **Build Tool**: Webpack with TypeScript support
-- **Testing**: Jest with ts-jest
-- **Linting**: ESLint 9.x with TypeScript support, StyleLint for CSS
-- **Documentation**: Custom documentation build system
+## Conventions
 
-## Architecture Notes
-
-### CLI Structure (packages/bod/)
-
-- `src/bod.ts` - Main CLI entry point
-- `src/commands/` - Command implementations (CreateCommand, InfoCommand)
-- `src/utils/` - Utility functions for console output, OS detection, core operations
-
-### Webpack Template (packages/webpack-template/)
-
-- Modern webpack 5 configuration with TypeScript
-- Development server with hot reloading
-- Production optimization with CSS/JS minification
-- Particle system demonstration code included
-
-### ESLint Config (packages/eslint-config/)
-
-- Based on `@antfu/eslint-config`
-- Type-aware linting with TypeScript support
-
-## Release Process
-
-The project uses automated releases with:
-
-- Version bumps via `tsx scripts/release.ts`
-- Lerna for publishing multi-package releases
-- GitHub Actions for CI/CD and npm publishing
-- Automatic changelog generation
-
-## Testing Strategy
-
-- Unit tests for CLI commands and utilities
-- E2E tests for full project creation workflow
-- Coverage reporting via Codecov
-- Automated badge generation for coverage display
-
-## Development Workflow
-
-1. Use `pnpm install` to install dependencies
-2. Run `pnpm lint` and `pnpm test` before committing
-3. Use workspace filtering to work on specific packages
-4. Most packages follow the same script structure: lint, build, test, dev/start
+- **Module system:** `"type": "module"` in all packages. Imports use `.js` extensions in TypeScript source.
+- **Linting:** Root `eslint.config.ts` re-exports from `@dg-scripts/eslint-config`. Single quotes, no semicolons, 2-space indent, 80 char width (see `.prettierrc.json`).
+- **Testing:** Vitest with node environment. Tests live in `__tests__/` directories next to source. Tests mock `spawn.sync` and `select` — real scaffold tests only run in CI (`isCI` guard).
+- **Versioning:** Lerna fixed mode — all packages share the same version in `lerna.json`. Conventional commits with angular preset.
+- **Dependencies:** `bod` is standalone (no dependency on the config packages). Config packages are devDependencies at the monorepo root.

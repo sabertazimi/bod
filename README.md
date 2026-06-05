@@ -7,13 +7,11 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/sabertazimi/bod/ci.yml?branch=main&style=for-the-badge&logo=github)](https://github.com/sabertazimi/bod/actions/workflows/ci.yml)
 [![Vitest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/bod?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/bod)
 
-[![NPM Version](https://img.shields.io/npm/v/@dg-scripts/webpack-template?label=Webpack%20Template&logo=stylelint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/webpack-template)
 [![NPM Version](https://img.shields.io/npm/v/@dg-scripts/eslint-config?label=ESLint&logo=eslint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/eslint-config)
 [![NPM Version](https://img.shields.io/npm/v/@dg-scripts/stylelint-config?label=StyleLint&logo=stylelint&style=for-the-badge)](https://www.npmjs.com/package/@dg-scripts/stylelint-config)
 [![NPM Version](https://img.shields.io/npm/v/bod?label=Bod%20CLI&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/bod)
 
-[**Documentation**](https://tazimi.dev/bod) |
-[Webpack Template](https://tazimi.dev/bod/webpack)
+[**Documentation**](https://tazimi.dev/bod)
 
 ## Bod CLI
 
@@ -55,10 +53,6 @@ More details on package
 ## Bod Template
 
 The official template for [**Bod CLI**](https://github.com/sabertazimi/bod).
-
-### Live Demo
-
-- Webpack Template [Demo](https://tazimi.dev/bod/webpack).
 
 ### Start with Template
 
