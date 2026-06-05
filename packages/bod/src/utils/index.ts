@@ -1,7 +1,7 @@
 import process from 'node:process'
-import { color, printer } from './console.js'
-import { program, select } from './core.js'
-import { envinfo, spawn } from './os.js'
+import { color, printer } from './console.ts'
+import { program, select } from './core.ts'
+import { envinfo, spawn } from './os.ts'
 
 const PNPM_USER_AGENT_RE = /pnpm/
 const YARN_USER_AGENT_RE = /yarn/

@@ -1,6 +1,6 @@
 import process from 'node:process'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { color, findPackageManager, program } from '../index.js'
+import { color, findPackageManager, program } from '../index.ts'
 
 describe('utils', () => {
   const originalUserAgent = process.env.npm_config_user_agent

@@ -1,5 +1,5 @@
 import process from 'node:process'
-import * as utils from './utils'
+import * as utils from './utils.ts'
 
 function main() {
   utils.checkGitStatus()

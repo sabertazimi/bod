@@ -3,8 +3,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
-import { CommandFactory } from './index.js'
-import { color, printer, program } from './utils/index.js'
+import { CommandFactory } from './index.ts'
+import { color, printer, program } from './utils/index.ts'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 const packageJsonPath = path.join(dirname, '../package.json')

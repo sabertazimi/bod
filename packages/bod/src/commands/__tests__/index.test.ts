@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { BaseCommand, CreateCommand, InfoCommand } from '../index.js'
+import { BaseCommand, CreateCommand, InfoCommand } from '../index.ts'
 
 describe('commands', () => {
   let commands: Set<BaseCommand>

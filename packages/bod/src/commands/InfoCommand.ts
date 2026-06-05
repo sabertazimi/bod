@@ -1,5 +1,5 @@
-import { envinfo, printer } from '../utils/index.js'
-import BaseCommand from './BaseCommand.js'
+import { envinfo, printer } from '../utils/index.ts'
+import BaseCommand from './BaseCommand.ts'
 
 class InfoCommand extends BaseCommand {
   constructor() {

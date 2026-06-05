@@ -1,5 +1,5 @@
-import { findPackageManager, select, spawn } from '../utils/index.js'
-import BaseCommand from './BaseCommand.js'
+import { findPackageManager, select, spawn } from '../utils/index.ts'
+import BaseCommand from './BaseCommand.ts'
 
 interface Action {
   name: string
