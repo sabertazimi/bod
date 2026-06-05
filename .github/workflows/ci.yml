@@ -44,8 +44,8 @@ jobs:
           name: eslint
           path: packages/eslint-config/dist
 
-  unit:
-    name: Unit Test
+  test:
+    name: Test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -70,7 +70,7 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-      - name: Run unit tests
+      - name: Run tests
         run: |
           pnpm test:all
           pnpm badge
@@ -87,51 +87,8 @@ jobs:
           name: badges
           path: dist
 
-  e2e:
-    name: E2E Test
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [lts/*]
-        package-manager: [pnpm]
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          submodules: true
-      - name: Reattach HEAD to head ref
-        run: git switch -C "$(echo ${{ github.head_ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
-        if: ${{ github.head_ref != '' }}
-      - name: Reattach HEAD to ref
-        run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
-        if: ${{ github.head_ref == '' }}
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
-      - name: Setup Node environment
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          check-latest: true
-          architecture: x64
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm
-      - name: Install dependencies
-        run: |
-          pnpm install
-      - name: Run e2e tests
-        run: |
-          cp -fr scripts/npmrc .npmrc
-          pnpm tsx scripts/e2e.ts
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v7
-        if: ${{ matrix.node-version == 'lts/*' && matrix.os == 'ubuntu-latest' && matrix.package-manager == 'pnpm' }}
-        with:
-          name: demos
-          path: build
-
   build:
-    name: Build Test
+    name: Build
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -195,7 +152,7 @@ jobs:
     name: Publish
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e]
+    needs: [lint, test]
     permissions:
       id-token: write
       contents: write
@@ -246,7 +203,7 @@ jobs:
     name: Deploy
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e, build, docs]
+    needs: [lint, test, build, docs]
     steps:
       - name: Download production artifacts
         uses: actions/download-artifact@v8
@@ -258,7 +215,6 @@ jobs:
         run: |
           mkdir -p ./build/
           cp -fr badges/* ./build/
-          cp -fr demos/* ./build/
           cp -fr docs/* ./build/
           cp -fr eslint ./build/
       - name: Deploy to GitHub Pages

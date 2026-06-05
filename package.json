@@ -1,7 +1,7 @@
 {
   "name": "create-bod-app",
   "private": true,
-  "packageManager": "pnpm@11.4.0",
+  "packageManager": "pnpm@11.5.0",
   "description": "Boilerplate CLI App",
   "author": "sabertazimi <sabertazimi@gmail.com>",
   "license": "MIT",
@@ -18,13 +18,15 @@
     "bod-cli",
     "boilerplate",
     "cli",
-    "create-react-app",
-    "react",
-    "react-scripts",
     "starter",
     "starter-kit",
     "template",
-    "typescript"
+    "typescript",
+    "eslint",
+    "eslint-config",
+    "stylelint",
+    "stylelint-config",
+    "vite"
   ],
   "engines": {
     "node": ">=18.0.0"
@@ -66,7 +68,6 @@
     "tsx": "^4.22.3",
     "typescript": "^6.0.3",
     "undici": "^8.3.0",
-    "verdaccio": "^6.7.1",
     "vitest": "^4.1.7"
   }
 }
