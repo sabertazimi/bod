@@ -85,12 +85,6 @@ const config: Config = {
           activeBaseRegex: 'docs/bod',
         },
         {
-          to: 'docs/webpack-template',
-          label: 'Webpack Template',
-          position: 'left',
-          activeBaseRegex: 'docs/webpack-template',
-        },
-        {
           to: 'docs/eslint-config',
           label: 'ESLint Config',
           position: 'left',
@@ -107,10 +101,6 @@ const config: Config = {
           label: 'Demos',
           position: 'right',
           items: [
-            {
-              label: 'Webpack Template',
-              href: 'https://tazimi.dev/bod/webpack',
-            },
             {
               label: 'ESLint Inspector Report',
               href: 'https://tazimi.dev/bod/eslint',
@@ -133,15 +123,6 @@ const config: Config = {
             {
               label: 'Tutorial',
               to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Template',
-          items: [
-            {
-              label: 'Webpack Template',
-              href: 'https://tazimi.dev/bod/webpack',
             },
           ],
         },

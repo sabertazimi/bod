@@ -237,11 +237,3 @@ class Test {
     utils.exec('pnpm --filter webpack-template test')
   }
 }
-
-function main() {
-  const appName = 'webpack-e2e-tests'
-  const test = new Test(appName)
-  test.runWebpack('webpack-template')
-}
-
-main()
