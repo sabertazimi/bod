@@ -1,9 +1,9 @@
 import cp from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
-import * as utils from './utils'
+import * as utils from './utils.ts'
 
-const rootPath = path.join(__dirname, '..')
+const rootPath = path.join(import.meta.dirname, '..')
 const SummaryFilePath = path.join(rootPath, 'coverage/coverage-summary.json')
 const OutputBadgePath = path.join(rootPath, 'dist')
 const CoverageType = ['statements', 'branches', 'functions', 'lines']

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
-import { printer } from '../../utils/index.js'
-import InfoCommand from '../InfoCommand.js'
+import { printer } from '../../utils/index.ts'
+import InfoCommand from '../InfoCommand.ts'
 
 describe('infoCommand', () => {
   it('should extends [BaseCommand] fields', () => {

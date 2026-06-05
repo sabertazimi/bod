@@ -17,6 +17,5 @@ packages:
 allowBuilds:
   '@swc/core': false
   core-js: false
-  esbuild: false
   nx: false
   sharp: false

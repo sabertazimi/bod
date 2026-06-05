@@ -1,10 +1,10 @@
 import type { SpawnSyncReturns } from 'node:child_process'
-import type { Action } from '../CreateCommand.js'
+import type { Action } from '../CreateCommand.ts'
 import { isCI } from 'ci-info'
 import { sync } from 'rimraf'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import * as utils from '../../utils/index.js'
-import CreateCommand from '../CreateCommand.js'
+import * as utils from '../../utils/index.ts'
+import CreateCommand from '../CreateCommand.ts'
 
 const { spawn } = utils
 const appPath = 'bod-unit-tests'

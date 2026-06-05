@@ -4,7 +4,7 @@ This file provides guidance to coding agents when working with code in this repo
 
 ## Project Overview
 
-Bod is a pnpm + Lerna monorepo containing a CLI scaffolding tool (`bod create <appName>`) and shared linting configs. Node >=18 required, pnpm, TypeScript ES modules.
+Bod is a pnpm + Lerna monorepo containing a CLI scaffolding tool (`bod create <appName>`) and shared linting configs. Node >=24 required, pnpm, TypeScript ES modules.
 
 ## Commands
 
@@ -30,7 +30,7 @@ pnpm vitest run -t "should extends"
 cd packages/bod && pnpm dev
 
 # Release
-pnpm release       # tsx scripts/release.ts --push (Lerna conventional commits)
+pnpm release       # node scripts/release.ts --push (Lerna conventional commits)
 ```
 
 ## Architecture

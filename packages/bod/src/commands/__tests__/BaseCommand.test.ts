@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import BaseCommand from '../BaseCommand.js'
+import BaseCommand from '../BaseCommand.ts'
 
 const options = {
   name: 'base',

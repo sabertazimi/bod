@@ -1,3 +1,3 @@
-export { default as BaseCommand } from './BaseCommand.js'
-export { default as CreateCommand } from './CreateCommand.js'
-export { default as InfoCommand } from './InfoCommand.js'
+export { default as BaseCommand } from './BaseCommand.ts'
+export { default as CreateCommand } from './CreateCommand.ts'
+export { default as InfoCommand } from './InfoCommand.ts'

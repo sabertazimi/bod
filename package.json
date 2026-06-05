@@ -1,5 +1,6 @@
 {
   "name": "create-bod-app",
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@11.5.0",
   "description": "Boilerplate CLI App",
@@ -29,21 +30,21 @@
     "vite"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
-    "badge": "tsx scripts/badge.ts",
+    "dev": "pnpm dev:bod",
+    "dev:all": "pnpm -r run dev",
+    "dev:bod": "pnpm --filter bod dev",
+    "badge": "node scripts/badge.ts",
     "build": "pnpm -r run build",
     "build:docs": "pnpm --filter bod-website build:docs",
-    "canary": "tsx scripts/canary.ts",
+    "canary": "node scripts/canary.ts",
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
     "lint:fix": "pnpm -r run lint:fix",
     "lint:report": "pnpm -r run lint:report",
-    "release": "tsx scripts/release.ts --push",
-    "start": "pnpm start:template",
-    "start:all": "pnpm -r run start",
-    "start:bod": "pnpm --filter bod start",
+    "release": "node scripts/release.ts --push",
     "test": "vitest",
     "test:all": "pnpm -r run test && vitest run --coverage"
   },
@@ -65,7 +66,6 @@
     "semver": "^7.8.0",
     "stylelint": "^17.12.0",
     "tslib": "^2.8.1",
-    "tsx": "^4.22.3",
     "typescript": "^6.0.3",
     "undici": "^8.3.0",
     "vitest": "^4.1.7"
