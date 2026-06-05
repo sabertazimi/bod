@@ -56,7 +56,7 @@ pnpm release       # tsx scripts/release.ts --push (Lerna conventional commits)
 - `os.ts` — `cross-spawn` (`spawn`) and `envinfo`
 - `index.ts` — barrel export + `findPackageManager()`
 
-**Build scripts** (`scripts/`): `release.ts`, `canary.ts`, `e2e.ts`, `badge.ts` — used in CI for publishing, canary releases, e2e testing (verdaccio), and coverage badges.
+**Build scripts** (`scripts/`): `release.ts`, `canary.ts`, `badge.ts` — used in CI for publishing, canary releases, and coverage badges.
 
 ## Conventions
 

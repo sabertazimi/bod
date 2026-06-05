@@ -90,16 +90,6 @@ dist/
 .temp/
 temp/
 
-# verdaccio local registry auth storage
-scripts/htpasswd
-
-# verdaccio local registry bundle storage
-scripts/storage/
-
-# verdaccio local registry meta storage
-storage/
-.npmrc
-
 # Agent files
 **/.claude/*.local.json
 **/.claude/*.local.md
