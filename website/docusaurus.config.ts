@@ -97,15 +97,9 @@ const config: Config = {
           activeBaseRegex: 'docs/stylelint-config*',
         },
         {
-          type: 'dropdown',
-          label: 'Demos',
+          href: 'https://tazimi.dev/bod/eslint',
+          label: 'ESLint Config Report',
           position: 'right',
-          items: [
-            {
-              label: 'ESLint Inspector Report',
-              href: 'https://tazimi.dev/bod/eslint',
-            },
-          ],
         },
         {
           href: 'https://github.com/sabertazimi/bod',
