@@ -32,7 +32,7 @@ npm install -D @dg-scripts/eslint-config
 
 ### Basic Usage
 
-Create a file named `eslint.config.js`
+Create a file named `eslint.config.ts`
 with following contents in the root folder of your project:
 
 ```js
