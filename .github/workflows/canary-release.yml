@@ -6,6 +6,8 @@ jobs:
   publish:
     name: Publish
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - name: Initialize git configuration
         run: |
@@ -17,14 +19,14 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0 # Keep `0` for getting canary release version from git history
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
       - name: Reattach HEAD to head ref
         run: git switch -C "$(echo ${{ github.head_ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref != '' }}
       - name: Reattach HEAD to ref
         run: git switch -C "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
         if: ${{ github.head_ref == '' }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
       - name: Setup Node environment
         uses: actions/setup-node@v6
         with:
@@ -42,5 +44,4 @@ jobs:
       - name: Publish canary release to NPM registry
         if: startsWith(github.event.head_commit.message, 'chore') == false
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
           pnpm canary
