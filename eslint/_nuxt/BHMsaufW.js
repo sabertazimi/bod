@@ -1,0 +1,1 @@
+import{j as o,a3 as r,J as t,g as n,P as s}from"./CpdG7ysU.js";const p=o({__name:"index",setup(a){return r().replace("/configs"),(e,l)=>(t(),n("div",null,[s(e.$slots,"default")]))}});export{p as default};
