@@ -57,7 +57,7 @@
     "chalk": "^4.1.2",
     "chokidar": "^5.0.0",
     "ci-info": "^4.4.0",
-    "concurrently": "^9.2.4",
+    "concurrently": "^10.0.3",
     "consola": "^3.4.2",
     "dotenv": "^17.4.2",
     "eslint": "^10.7.0",
